@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16N3H7Z0EW008BPM6EB1R",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "FR-4",
+  "statement": "When explicitly migrating accepted policy after reader compatibility is available, the system shall preserve its exact normalized allowance inventory with reproduced legacy input evidence.",
+  "rationale": "Prevent migration from granting authority",
+  "fit_criterion": "Before/after inventories are identical; changed allowances or unavailable replay refuse; migration changes policy representation only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e751ec43d2036f0469168c2a544b0eddb7ade9746125c167c56e6b0084476b1b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

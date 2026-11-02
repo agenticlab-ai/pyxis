@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ04NZXT86NWR8WHGHGZ",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NR-3",
+  "statement": "The vendor-neutral agent surface and cross-CLI portability (AP-25)",
+  "rationale": "the write hook must be authored once, canonically, and wired per CLI by adapters — never forked content",
+  "fit_criterion": "the write-hook knowledge lives on the vendor-neutral surface; each supported CLI's wiring is a pointer/adapter, not a copy; a portability check confirms no CLI-specific content divergence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5ee0327994c9c1e3d3331def1c3d9ca09e7fac8e9940117566d0a8a9b727c71b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.86Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

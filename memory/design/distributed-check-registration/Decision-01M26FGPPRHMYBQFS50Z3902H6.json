@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPRHMYBQFS50Z3902H6",
+  "kind": "Decision",
+  "subject": "design/distributed-check-registration",
+  "family": "decision.3.1.1",
+  "statement": "A check is a descriptor — a stable verb, a one-line help string,\nan applicability flag (whether it requires a history base), and a run behavior\nthat takes a single context value carrying everything a check may read (the repo\nroot, the resolved history base, and the loaded configuration). Bundling the\ninputs behind one context is what lets every check share one run signature\ndespite their heterogeneous needs; a check reads only the fields it uses.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e7fe45f1c2431e4fb123558001a6e9716e399c3db7439060f2a29b4b6a66161c",
+    "source-design:6b20e2c7691634af8abe8fe944c23ca2bf4a6a3af0158ee8674ee882b8e940e9",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNRXX0S9GRA146KH2655"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.56Z",
+  "provenance": {
+    "source": "docs/tech-design/distributed-check-registration.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/distributed-check-registration.md lines 70-75 in section 3.1; sha256:e7fe45f1c2431e4fb123558001a6e9716e399c3db7439060f2a29b4b6a66161c"
+  }
+}

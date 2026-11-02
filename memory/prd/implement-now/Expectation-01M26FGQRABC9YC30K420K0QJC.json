@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQRABC9YC30K420K0QJC",
+  "kind": "Expectation",
+  "subject": "prd/implement-now",
+  "family": "DOD-29",
+  "statement": "The complete local-runtime, native-routing, and configured-review security posture is proven.",
+  "intent": "ABUSE-1..ABUSE-6",
+  "fit_criterion": "abuse-drill report covering every actor/vector, including worker-authored routing policy, artifact forgery/replay/receipt or canonical-state substitution, denied obligation/attempt/receipt-store mutation by both child roles, attribution-secret exclusion, parent/workspace mutation, and reviewer-capability confinement",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2569012cf996627dfba870ada025946af7d515e5c3c8762ef88d9280d46812cb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.634Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBFN8X7XTNDX38B6G5CA1",
+  "kind": "Document",
+  "subject": "brainstorm/impl-review",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/impl-review.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "25cfac3ba70ce250ae913e716db5d195a05e0ca0a14b10e1da4c9ea6c8c6c5fb",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:17Z",
+  "provenance": {
+    "source": "docs/brainstorms/impl-review.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

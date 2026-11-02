@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7KN3H29J3BB5HVCJTS",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "EVT-5",
+  "statement": "`currency_disposition_applied` fires when one valid compatibility disposition clears one stale edge during a gate run",
+  "intent": "`run_id:string`, `feature:string`, `disposition_id:string`, `disposition_fingerprint:string`, `edge_kind:enum{design_dependency,requirement_service}`, `subject_design:string`, `superseded_target:string`, `replacement_target:string`, `subject_fingerprint:string`, `old_target_fingerprint:string`, `replacement_target_fingerprint:string`, `mapping_set_digest:string`, `author_principal:string`, `reviewer_principal:string`, `approval_attestation_id:string`, `approval_authority_policy_id:string`, `approval_authority_policy_fingerprint:string`",
+  "fit_criterion": "M1, M2, M3, audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c675f7259c35f0ae5b00c8c6cbdc03ce24670737f4f9f84fc0f80b5d27acb8d3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.099Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

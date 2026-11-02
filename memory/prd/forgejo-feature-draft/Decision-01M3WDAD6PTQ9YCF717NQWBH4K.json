@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6PTQ9YCF717NQWBH4K",
+  "kind": "Decision",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "R-3",
+  "statement": "Source pre-push readiness blocks initial scaffold.",
+  "rationale": "Stage-aware hook change under FR-7 with normal hook/prepare-lock regression.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

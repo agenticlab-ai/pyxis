@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP15ZQBMYTYABR1WVFE",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NFR-2",
+  "statement": "The server shall bind only the loopback interface, shall expose zero mutating endpoints, and shall refuse requests that lack its session secret or carry an unexpected Host.",
+  "intent": "Security",
+  "fit_criterion": "bind audit shows loopback only; the route table contains no mutating route; a secret-less and a rebound-Host request are each refused; a write-audit across mutation attempts shows zero effects",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c0a99bec5660a15b3a7f68f0f9eb0664a48f47df8c78d3170347314a9e1991cb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.585Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

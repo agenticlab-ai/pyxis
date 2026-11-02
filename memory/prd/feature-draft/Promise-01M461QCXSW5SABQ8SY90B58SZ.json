@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461QCXSW5SABQ8SY90B58SZ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-1",
+  "statement": "An agent seeks an easier requirement — vector: silent requirement edit",
+  "intent": "product intent drifts",
+  "fit_criterion": "FR-8, FR-9, FR-18, UB-1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5f14a9c65a100b7e4232d8ea80b979ab9630d8242a324c692d1b9ba00e17ecb0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZHTZS2G0BX02R6Q2CADSW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:48:24Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

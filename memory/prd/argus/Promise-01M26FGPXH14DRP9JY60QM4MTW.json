@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXH14DRP9JY60QM4MTW",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-11",
+  "statement": "The authority contract shall exist as versioned data at the agent's home, and where an action class is not granted, Argus shall escalate instead of acting.",
+  "rationale": "policy is data, changed by PR (brainstorm:autonomous-developer#D-9, #D-3)",
+  "fit_criterion": "flipping a grant row in data changes the behavior with no prose change",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cbe55cefed00680fb0eb3015bf9f70deec1d70f3ff20b7b3306dee6df519693b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.777Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRNE4ZX9ZE1VNDFX0HT2Z",
+  "kind": "Document",
+  "subject": "design/plan-viewer-v1",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/plan-viewer-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:fd325ee9e441cdff9eee6547a3e888235b777a15420cd3db2304ceead2ec7eff"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCTZ2VJPJ17MDYX73TMKZ"
+    }
+  ],
+  "body_sha256": "fd325ee9e441cdff9eee6547a3e888235b777a15420cd3db2304ceead2ec7eff",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:27Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-viewer-v1.md",
+    "note": "offline reconciliation"
+  }
+}

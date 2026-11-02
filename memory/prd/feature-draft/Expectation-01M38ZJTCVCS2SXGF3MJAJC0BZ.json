@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M38ZJTCVCS2SXGF3MJAJC0BZ",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-9",
+  "statement": "The operator judges the end-to-end fixture's approval request complete and legible",
+  "intent": "G4, FR-18",
+  "fit_criterion": "review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dd4d688d3e0d94d74cb363df90a823b1f34200c9d88ff76c4b14a2df60d0c5bd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:58Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

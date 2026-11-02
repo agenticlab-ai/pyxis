@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390XY68TPDX518DMS5MDJCV",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.11 and §3.13: for a feature with no PRD ledger, plan-new uses the locked version's readiness (design:contract-gate-v2), both reviewers take the draft as subject, and a tech-spec requirement defect becomes an in-draft requirement problem.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZR2WW3DKZB93Q9EQSY85M"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSNRA8ME51XBGVFP21S2D"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:31Z"
+}

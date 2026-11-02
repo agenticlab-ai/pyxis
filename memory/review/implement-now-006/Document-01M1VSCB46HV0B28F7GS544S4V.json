@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCB46HV0B28F7GS544S4V",
+  "kind": "Document",
+  "subject": "review/implement-now-006",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/implement-now-006.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "5a69bcd84c6485d13c17df553dec1cae68ce1641e3bfb3b0510838ed8b53a289",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:45Z",
+  "provenance": {
+    "source": "docs/reviews/implement-now-006.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

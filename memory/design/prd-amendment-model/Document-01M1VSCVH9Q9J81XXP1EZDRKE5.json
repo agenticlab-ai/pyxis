@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCVH9Q9J81XXP1EZDRKE5",
+  "kind": "Document",
+  "subject": "design/prd-amendment-model",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/prd-amendment-model.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "7a65d47d00bdf9b5467675536e23a6ab43fb320a836207fb96344be6ca47e9d8",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:02Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

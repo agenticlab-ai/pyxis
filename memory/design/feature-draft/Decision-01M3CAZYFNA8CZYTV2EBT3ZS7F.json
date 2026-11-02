@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CAZYFNA8CZYTV2EBT3ZS7F",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "in-flight-draft-notice",
+  "statement": "An open draft shows advisory overlap only with other same-repository open draft pull requests, compiling each at a verified pinned head.",
+  "intent": "Let authors see other active work touching the same typed requirement or decision address during a draft.",
+  "rationale": "The notice intersects compiled claim and decision addresses, including typed links, while keeping observations and failures outside readiness and the lock gate.",
+  "fit_criterion": "Two open drafts sharing a requirement or decision show reciprocal notices; a closed branch is excluded and notice failure never changes readiness.",
+  "tags": [
+    "code:internal/draft/inflight",
+    "code:cmd/pyxis"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T13:10:06Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

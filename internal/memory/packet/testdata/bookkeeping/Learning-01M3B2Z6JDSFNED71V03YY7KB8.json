@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "Learning-01M3B2Z6JDSFNED71V03YY7KB8",
+  "kind": "Learning",
+  "subject": "learning/validate-explicit-routes-against-harness-catalogs",
+  "statement": "Planning validates each native role pair against its harness catalog and rejects missing, unsupported, or ambiguous pairs; plangate routes lists the adapter-owned choices without launching a worker.",
+  "learned_from": [
+    "cmd/plangate/main.go"
+  ],
+  "tags": [
+    "code:cmd/plangate",
+    "code:internal/plangate/plan",
+    "code:internal/taskrouting/validate"
+  ],
+  "consequence": "low",
+  "issuer": "agent:native-routing",
+  "created_at": "2026-09-25T01:30:39Z",
+  "provenance": {
+    "source": "cmd/plangate/main.go",
+    "evidence": {
+      "schema_version": "memory-evidence/v1",
+      "locator": "record-introduction",
+      "files": [
+        {
+          "path": "cmd/plangate/main.go",
+          "mode": "100644",
+          "sha256": "d050507838fa5d2ca3179571324c675d504a9dcd1a48af3f99e2ce2524042a50"
+        },
+        {
+          "path": "cmd/plangate/routes.go",
+          "mode": "100644",
+          "sha256": "38178cb2b01eb7e2e1500c69f5ba1b67ed1dff3ae6e1af387e4ed28171b66256"
+        },
+        {
+          "path": "internal/plangate/plan/fold.go",
+          "mode": "100644",
+          "sha256": "07aa1d5fec6e61fc47d28df9c79b4116661b0957df4ea6773154f93e6d275452"
+        },
+        {
+          "path": "internal/plangate/plan/gates.go",
+          "mode": "100644",
+          "sha256": "ea95c1899dd27ac93566add0e397554db14d68c941d53a928ae7cec18a23e31c"
+        },
+        {
+          "path": "internal/plangate/plan/parse.go",
+          "mode": "100644",
+          "sha256": "e5fc7b1acc1e11c7da186e559a9ea218b7655c070da5e14332add3976ec01fdc"
+        },
+        {
+          "path": "internal/plangate/plan/plan.go",
+          "mode": "100644",
+          "sha256": "0b183556def1b37b092b32a20abd8a6435dc6bf05448f267d31b4ab4354c70a6"
+        },
+        {
+          "path": "internal/plangate/plan/precheck.go",
+          "mode": "100644",
+          "sha256": "5f7bf1487742b8710933498009c3e27a409dd73f497b1e146be19036bd08a376"
+        },
+        {
+          "path": "internal/plangate/plan/reg_charter.go",
+          "mode": "100644",
+          "sha256": "7a043845b2b790e10ca0bebfffa80f92026c278a20aa0aecdec2157cb98cccf0"
+        },
+        {
+          "path": "internal/plangate/plan/reg_coverage.go",
+          "mode": "100644",
+          "sha256": "7021ee7fd4d9a9f4df0b2e04491762a4b0d0b91075d0763532834c464c5dc62b"
+        },
+        {
+          "path": "internal/plangate/plan/reg_durability.go",
+          "mode": "100644",
+          "sha256": "9bb467402cafceb066680bffef6201d846faa5ba1bef6e47555308d968ce4ac3"
+        },
+        {
+          "path": "internal/plangate/plan/reg_overlap.go",
+          "mode": "100644",
+          "sha256": "a4dc41eac499d26048e4543dc42e42416771ad6f5b59f0468d86c908e93ee212"
+        },
+        {
+          "path": "internal/plangate/plan/reg_pattern.go",
+          "mode": "100644",
+          "sha256": "bf36faa75e51f6fcd7fd569293460b68e490705b92445ed2d71ba46c62444590"
+        },
+        {
+          "path": "internal/plangate/plan/reg_routing.go",
+          "mode": "100644",
+          "sha256": "7ba2bfbe6f452b022707051f710ea1f270f283257050cbf118be6824462f7a65"
+        },
+        {
+          "path": "internal/plangate/plan/reg_share.go",
+          "mode": "100644",
+          "sha256": "fc856069ac49b12586b37e4ae8c444c3b045c0d556b03f03c086f6616d67c460"
+        },
+        {
+          "path": "internal/plangate/plan/reg_sizing.go",
+          "mode": "100644",
+          "sha256": "5ff823f282710af4e9e9c423049ddcb4f937c695fcc70c0ae5a46e98eb622bde"
+        },
+        {
+          "path": "internal/plangate/plan/reg_traces.go",
+          "mode": "100644",
+          "sha256": "1119f4f71d0d5961345dd0fee0fc08d1caa13168050b9db290aa6e26d80ce9f4"
+        },
+        {
+          "path": "internal/plangate/plan/registry.go",
+          "mode": "100644",
+          "sha256": "eea9a091a2f884b83ecc2f329395da30b1ed234f042c9c480a4f3094c711a474"
+        },
+        {
+          "path": "internal/taskrouting/validate/catalog.go",
+          "mode": "100644",
+          "sha256": "e2ef34f8b6cae8bd80a08bff67e198b54db2917e3749a176538452631a596451"
+        }
+      ],
+      "units": [
+        {
+          "inventory": "pyxis-memory-code-inventory/v3",
+          "digest_domain": "pyxis-memory-code-inventory/v1/unit",
+          "kind": "go-package",
+          "path": "cmd/plangate",
+          "sha256": "029f9e49096214aff6168a79be75f7aba3fcf9cf60b51f4325d5f09c685d3dd1",
+          "files": [
+            "cmd/plangate/main.go",
+            "cmd/plangate/routes.go"
+          ]
+        },
+        {
+          "inventory": "pyxis-memory-code-inventory/v3",
+          "digest_domain": "pyxis-memory-code-inventory/v1/unit",
+          "kind": "go-package",
+          "path": "internal/plangate/plan",
+          "sha256": "348e83caec0a5d65e3ed6d1762b9af225572645f1b67e0732c56532aff2feeb0",
+          "files": [
+            "internal/plangate/plan/fold.go",
+            "internal/plangate/plan/gates.go",
+            "internal/plangate/plan/parse.go",
+            "internal/plangate/plan/plan.go",
+            "internal/plangate/plan/precheck.go",
+            "internal/plangate/plan/reg_charter.go",
+            "internal/plangate/plan/reg_coverage.go",
+            "internal/plangate/plan/reg_durability.go",
+            "internal/plangate/plan/reg_overlap.go",
+            "internal/plangate/plan/reg_pattern.go",
+            "internal/plangate/plan/reg_routing.go",
+            "internal/plangate/plan/reg_share.go",
+            "internal/plangate/plan/reg_sizing.go",
+            "internal/plangate/plan/reg_traces.go",
+            "internal/plangate/plan/registry.go"
+          ]
+        },
+        {
+          "inventory": "pyxis-memory-code-inventory/v3",
+          "digest_domain": "pyxis-memory-code-inventory/v1/unit",
+          "kind": "go-package",
+          "path": "internal/taskrouting/validate",
+          "sha256": "f64542e594be7322fc332de151f3fdb59de80606b4c2802606933fb71a97b3db",
+          "files": [
+            "internal/taskrouting/validate/catalog.go"
+          ]
+        }
+      ]
+    }
+  }
+}

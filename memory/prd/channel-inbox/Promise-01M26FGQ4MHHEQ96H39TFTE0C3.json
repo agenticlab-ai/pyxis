@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4MHHEQ96H39TFTE0C3",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "NFR-5",
+  "statement": "On any internal error, `pyxis inbox` shall exit 0 with no output and no repo-content write.",
+  "intent": "Reliability",
+  "fit_criterion": "fault-injection across parse/fetch/state paths always yields exit 0 and an empty repo diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4169cedb0a98f8e4ca06f18d89860e75a238c98ad126a22fc2ebffcb3127638d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.004Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

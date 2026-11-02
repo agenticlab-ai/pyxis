@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHQCS0WA4Y8HH349R53",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "UB-4",
+  "statement": "If If orientation finds the idea already covered by merged capability or an existing contract, then the system shall present the covering source and, on operator confirmation, end with verdict *covered* and a pointer entry — creating no parallel record content beyond it",
+  "intent": "a short session ending in a pointer, not a duplicate contract",
+  "fit_criterion": "the covered fixture ends with verdict covered, cites the covering document, and its record contains no framings/decisions beyond the ruling",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a3f015e8378d85abe29662ad5bcbbe999d8dc51e768dfeae4afddc10d56b06ab",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.423Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

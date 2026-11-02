@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ4KVM0KGKZ8QRY0FHF",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-8",
+  "statement": "The candidate glossary terms (structure arm, attribution gate, protected path, declared scope) land in `docs/wiki/glossary.md` in the introducing PR",
+  "intent": "brainstorm:argus-boundary-enforcement T-1..T-4",
+  "fit_criterion": "the glossary diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:49db2b56fd13856ca4869f362d217c15181ee0614cce54fa362524577bfee886",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.828Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

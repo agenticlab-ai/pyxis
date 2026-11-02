@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ5F1CGSYZKDW1XFG6VA",
+  "kind": "Need",
+  "subject": "prd/config-driven-portability",
+  "family": "J1",
+  "statement": "When my repo's paths / branch / remote / surfaces differ from Pyxis's own, I want declare them in the repo config and have every part of the engine obey, so I can run the factory against my layout without editing engine code",
+  "rationale": "`brainstorm:…#D-2`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ad57b537edd206b839414eb3b18f8afff8e895660936921004069f1d77f52815",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.031Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

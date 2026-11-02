@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXVF44WPMG18S33FPEK",
+  "kind": "Decision",
+  "subject": "design/wake-channel-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:argus-unattended-drive/ABUSE-3 · prd:argus-unattended-drive/FR-13 · prd:argus-unattended-drive/FR-14 · prd:argus-unattended-drive/FR-15 · prd:argus-unattended-drive/FR-16 · prd:argus-unattended-drive/FR-17 · prd:argus-unattended-drive/NFR-2 · prd:argus-unattended-drive/NFR-4 · prd:argus-unattended-drive/NR-5 · prd:argus-unattended-drive/UB-5 · prd:argus-unattended-drive/UB-7 · prd:argus-unattended-drive/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYKH1ZFTCXZ2HF1JBR2G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1DQR7Q6RFSK7HECYPN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ22WXKGK2WXENBF156Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ23FAG043Q279TD061J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ24NJ06QTEVZACMTYNT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ25N4V53W5MA57V0R48"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ26QTYXKYVSQF6GR2Y4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2WGQDHPHPJR6VYVDM4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2YK3VCC7GFEMDXJYK9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ34VX0XQS2FBCCJCCHV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ39KPN5KC87M4ZS3PW5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ3BWJ32HE4G5SSV9X6N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ3DPQAZT060KKTA289Y"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.835Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-channel-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e"
+  }
+}

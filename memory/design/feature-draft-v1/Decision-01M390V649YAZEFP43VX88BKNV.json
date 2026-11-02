@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390V649YAZEFP43VX88BKNV",
+  "kind": "Decision",
+  "subject": "design/feature-draft-v1",
+  "family": "decision.3.14.1",
+  "statement": "Abandoning an open draft reduces its pull request to one memory Learning stating why, which the operator approves and merges; the branch is then deleted (`design-brainstorm:feature-draft-tech-design#D-16`). The reason is judgment signal kept in git (AP-28), and nothing else from the draft lands.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:060116d11f08edfc12cb85ada6db0530d9fa78054ffa075bfe019dc7a07cfced",
+    "source-design:6756001a6610759571f68c5a19dea52b32c9746d651b534fc23d6f993abd0a76",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PK87J0YRYSDH5T0KPWGW"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:15:01Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-v1.md lines 173-173 in section 3.14; sha256:060116d11f08edfc12cb85ada6db0530d9fa78054ffa075bfe019dc7a07cfced"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3BP5QKBDQH4A9W2E98JW5YB",
+  "kind": "Document",
+  "subject": "source/pyxis-templates-draft-events-template",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/templates/draft-events-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:0cfcc45f8278e0bdf7f05b5e34ffa682b5092e34c110172623f6f93e0898e47a"
+  ],
+  "body_sha256": "0cfcc45f8278e0bdf7f05b5e34ffa682b5092e34c110172623f6f93e0898e47a",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T07:06:16Z",
+  "provenance": {
+    "source": ".pyxis/templates/draft-events-template.md",
+    "note": "offline reconciliation"
+  }
+}

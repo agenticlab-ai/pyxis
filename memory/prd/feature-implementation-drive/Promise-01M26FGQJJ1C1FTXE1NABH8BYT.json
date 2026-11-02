@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJJ1C1FTXE1NABH8BYT",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-13",
+  "statement": "While a feature awaits human review, the feature drive shall persist ownership and progress without requiring a live implementation process.",
+  "rationale": "Human waits may span sessions.",
+  "fit_criterion": "Process termination/restart during every review state preserves owner, proposal, DAG state, and same-machine local affinity.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7283f455783e64eeaf46206ae3a19d4d13cd5606f712fed9a5fbb1b8b72cd67e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.45Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

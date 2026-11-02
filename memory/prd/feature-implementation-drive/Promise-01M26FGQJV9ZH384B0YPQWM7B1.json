@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJV9ZH384B0YPQWM7B1",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-21",
+  "statement": "When a repair proposal lands, the feature drive shall rerun every required e2e scenario on a new candidate merge before restoring final eligibility.",
+  "rationale": "Re-prove the complete feature.",
+  "fit_criterion": "The seeded repair invalidates old evidence; partial rerun cannot unblock; full accepted rerun can.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:221158133d0398105fa785131c29e2ee82507c088de01a98c2e2cda3dfe2a31a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.459Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

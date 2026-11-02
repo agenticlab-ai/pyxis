@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTXWJNBQEFRA0KKH612",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.3.14.1",
+  "statement": "after Q4/Q5 close, the implementation activates the required Q\nsource-map field as one atomic source-repository cutover. Before the shipped\nrevision enables the new `verify-generated` expectation or wires projection\ncongruence, it runs the new fold over every existing ledger whose committed\ngenerated source changes and commits every regenerated\n`effective.source.json` in the same implementation proposal.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e83b4af7f666c949cada33d7cbd707ecbf5a5c652b0c8e5d386eb9eb182ff64f",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.693Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 713-718 in section 3.14; sha256:e83b4af7f666c949cada33d7cbd707ecbf5a5c652b0c8e5d386eb9eb182ff64f"
+  }
+}

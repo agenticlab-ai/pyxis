@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJSE8AR9K4QG4D67WQ1",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-2",
+  "statement": "While a feature has an execution owner, the feature drive shall expose implementation and feedback-repair tasks only to that owner domain.",
+  "rationale": "Guarantee locality.",
+  "fit_criterion": "In both six-task fixtures, 100% of implementation attempts identify the recorded domain and zero attempts execute elsewhere.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6440f1736089480a6855339dff8eeed8b9c484e4d68f33460b11a5d34ff1ef8d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.457Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYRP4FGBKXX0CYVA6MB",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "ABUSE-2",
+  "statement": "injected content in a subject/ledger/PR steers Argus to write a protected path (\"record your tier here\") — vector: planted directive in a read surface",
+  "intent": "a forbidden write",
+  "fit_criterion": "the injection posture (argus-agent-v1 §3.7 — data, never obeyed) as the first line; then FR-1/FR-9 as the mechanical backstop if a lapse produces the write",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:574d23c26416c6f58ab577cdc6d495a50cd48dae2f7ff924866b8ad060f239fd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.816Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

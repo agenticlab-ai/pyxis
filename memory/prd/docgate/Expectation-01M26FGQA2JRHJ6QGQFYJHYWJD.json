@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA2JRHJ6QGQFYJHYWJD",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-2",
+  "statement": "No unwanted-behavior or non-regression row broken",
+  "intent": "UB-1..3, NR-1",
+  "fit_criterion": "suite result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bea11cef48987282785cb1380bc6604888c22caa950295fabc0eb90f24422b5b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.178Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

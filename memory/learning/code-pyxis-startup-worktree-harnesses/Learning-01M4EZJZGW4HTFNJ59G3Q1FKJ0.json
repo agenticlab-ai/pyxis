@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Learning-01M4EZJZGW4HTFNJ59G3Q1FKJ0",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "Plain cursor, cursor . and single existing-folder IDE launches use the shared interactive worktree lifecycle in repositories marked with .pyxis. The editor classifier supplies the selected folder explicitly to the native Cursor executable, including when reusing an existing linked worktree. cursor agent and cursor-agent retain the agent CLI classifier. File opens, multiple folders, diff/merge, extension management, remote commands, unknown options and noninteractive invocations retain native routing.",
+  "intent": "Let manual debugging in the Cursor IDE use the same checkout isolation as interactive agent sessions.",
+  "rationale": "Changing the shell directory alone does not select an IDE workspace. A separate IDE argument classifier can reuse the existing Git lifecycle and optional local-config snapshot while keeping editor and agent command grammars separate.",
+  "fit_criterion": "Real Git and pseudo-terminal tests verify explicit IDE folder arguments, latest-main worktree creation, existing-worktree reuse, window and profile options, original checkout preservation, native pass-through, fetch refusal and exit status. Machine-installer tests exercise fresh zsh loading. A native Cursor IDE launch was confirmed through its workspace diagnostics, and both agent command forms returned the installed CLI version. The full local race suite, vet, targeted lint and document gate passed before publication preparation.",
+  "learned_from": [
+    "scripts/startup/README.md",
+    "scripts/startup/cursor_worktree_test.go",
+    "scripts/startup/installer_test.go",
+    "Cursor 3.20.21 native CLI help and workspace diagnostics"
+  ],
+  "tags": [
+    "code:scripts/startup/cursor-worktree.zsh",
+    "code:scripts/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2H3PAR5FEAQ32D3S8DFGRMN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M2H3MAMAGCRYNZ2NT6YK2RBM"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M2H3MAMRDR3JJ5MN6VR91XC8"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-10-09T00:04:12Z",
+  "provenance": {
+    "source": "scripts/startup/README.md",
+    "note": "Repoints unchanged knowledge to scripts/startup after the launcher moved there from script/startup."
+  }
+}

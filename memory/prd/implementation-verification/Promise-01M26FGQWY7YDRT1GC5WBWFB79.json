@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWY7YDRT1GC5WBWFB79",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-6",
+  "statement": "If a rung's verb is absent from the resolved bindings, then the harness shall skip that rung and record the skip with its reason in the verdict — never silently.",
+  "rationale": "honest degradation is what makes brownfield adoption trustworthy",
+  "fit_criterion": "the probe-less fixture yields `skip:verb-absent` on rung 4 and overall green-degraded; zero fixture paths produce a verdict lacking a record for a configured-but-unbound rung",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:080157372b3bcc44048413364211662376b4dd136b61bc5e6991ffab9befc0d4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.782Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

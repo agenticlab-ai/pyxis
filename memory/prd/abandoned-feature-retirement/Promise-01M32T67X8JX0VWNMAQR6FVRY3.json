@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T67X8JX0VWNMAQR6FVRY3",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-8",
+  "statement": "If If a verifier cannot replay ownership, lifecycle, Git history, evidence, or policy from retained inputs, then the system shall Fail closed without ambient, network, or model fallback",
+  "intent": "unavailable evidence and exact missing input",
+  "fit_criterion": "Missing-object and unknown-schema corpus produces zero accepted transitions in every mode",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:abed1b02cc76a163b2f1f561e6f33485f6be97159ded7230102c82f3134cd755",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:17Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

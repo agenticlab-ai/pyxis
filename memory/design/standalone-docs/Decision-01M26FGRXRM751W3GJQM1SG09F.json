@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXRM751W3GJQM1SG09F",
+  "kind": "Decision",
+  "subject": "design/standalone-docs",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-30.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:e28fe6b36e48f42694b62ebe679ab2f4ad062a0569de817e6aea2576ef16619d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCXEPRSJ84QTGGWBBDD48"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQASGK9JV44QA2KBREWE"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.832Z",
+  "provenance": {
+    "source": "docs/tech-design/standalone-docs.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header e28fe6b36e48f42694b62ebe679ab2f4ad062a0569de817e6aea2576ef16619d"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPYF5KQ2ZJVN45K9DDA",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-10",
+  "statement": "The system shall record the context size in effect at each turn of a recorded process.",
+  "rationale": "context growth is a named target of J2, and is not derivable from token totals",
+  "fit_criterion": "for a harness exposing it, every turn in the record carries a context size; otherwise an FR-4 unavailability",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:86504073878ce23d11cd189fecf335e4c2908f98e94f219747b4d847a4bdef9a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.614Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDJRM19PYVWRYPEHHY9",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "G1",
+  "statement": "We believe a ranked, interrogative, anchor-linked §0; expected result: the reviewer's feedback concentrating where routed — valuable input without the full read",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:638334df369fb2a1bf0538b4ba0fd14ee99d333106c2cbc904072b432647ef40",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.314Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

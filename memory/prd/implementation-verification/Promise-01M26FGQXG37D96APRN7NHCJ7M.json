@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXG37D96APRN7NHCJ7M",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-3",
+  "statement": "The harness shall ship as a single self-contained executable with no runtime dependencies beyond the repo's own declared verbs.",
+  "intent": "Operability",
+  "fit_criterion": "inspection of the release artifact; a clean-machine fixture run with no toolchain beyond the fixture's own",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:799510a2f01953fb8af9e697b044d5f898c5407a3c531eea681571e55739b454",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.8Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

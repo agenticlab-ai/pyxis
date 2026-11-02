@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGRBFP5ZZYP0BFHS5KR",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NFR-3",
+  "statement": "Every degraded mode (offline, rate-limited, parse-defect, dead checker, stale await) shall present distinguishably on the status verb and in events.",
+  "intent": "Operability",
+  "fit_criterion": "the §5.2 drill matrix: each mode's presentation is distinct and named; support runbook maps each to its remedy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6f4add086407ed5728ab0cf179178687d5625af8ccbee7516ec74e42095cbee",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.416Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

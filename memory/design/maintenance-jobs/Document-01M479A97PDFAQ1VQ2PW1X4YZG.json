@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M479A97PDFAQ1VQ2PW1X4YZG",
+  "kind": "Document",
+  "subject": "design/maintenance-jobs",
+  "family": "design",
+  "statement": "Draft tech-spec.md",
+  "body_sha256": "336769ceb48a74d1deb6ac77acddb434415e99f0743140ab060069c01b322bf0",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0A75XMA0CW2ZXDB9KR",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "UB-5",
+  "statement": "If If this feature's own introducing PR adds a class's first gate (the structure arm cannot gate the PR that introduces it), then the system shall rely on operator review as the sole backstop for that one bootstrap PR, per incident I1",
+  "intent": "(operator) an explicit bootstrap-review note in the introducing PR",
+  "fit_criterion": "the introducing PR states the I1 bootstrap exception; the arm gates every subsequent PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:07811590058fc306091aa4c96e78b9312a6eb3e897df9b6ab030011095e17e70",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.866Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

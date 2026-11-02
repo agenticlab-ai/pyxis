@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZB13FP98YBTKGYK9V6",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "J2",
+  "statement": "When an install fails midway, I want find the folder exactly as it was, so I can just fix the cause and re-run",
+  "rationale": "`#F-8`, `#D-5`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4a5e5777d8e51d66af21129384280e0b34d62dc64d1197b64b673f4e2ceb3920",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.859Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

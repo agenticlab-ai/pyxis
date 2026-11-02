@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7QBK7ZE5VXAHHZXDG6",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NFR-5",
+  "statement": "The repo's Go language rules apply in full to every executable artifact this feature ships.",
+  "intent": "Maintainability",
+  "fit_criterion": "gofmt / go vet / golangci-lint clean; `go test -race` green; stdlib-first",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4a065a4f3329680002067d584786ebde89906fc84cc2c0da8630b68b042e8119",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.127Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

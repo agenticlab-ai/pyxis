@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/argus-boundary-enforcement#R2",
+  "feature": "argus-boundary-enforcement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

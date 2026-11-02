@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZN07HXR854AVG0QNHKJ7Y",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-39",
+  "statement": "The system shall treat a feature draft as ready only when every citation in its parts resolves.",
+  "rationale": "Link resolution, carried over from the planning gate (brainstorm:feature-draft#D-20)",
+  "fit_criterion": "A draft holding one dangling citation is refused naming the citation and its location.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cef750af60212b6467a9255e45f24acba3874d0d9f88077df7259ba1a3f2a14c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:10Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

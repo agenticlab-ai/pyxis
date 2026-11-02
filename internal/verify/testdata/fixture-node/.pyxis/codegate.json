@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "stack": "node",
+  "verbs": {
+    "format-check": {"command": "sh codegate-verbs/format-check.sh", "env": {"PATH": {"mode": "pass"}, "HOME": {"mode": "pass"}}},
+    "lint":         {"command": "sh codegate-verbs/lint.sh",         "env": {"PATH": {"mode": "pass"}, "HOME": {"mode": "pass"}}},
+    "build":        {"command": "sh codegate-verbs/build.sh",        "env": {"PATH": {"mode": "pass"}, "HOME": {"mode": "pass"}}},
+    "test":         {"command": "sh codegate-verbs/test.sh",         "env": {"PATH": {"mode": "pass"}, "HOME": {"mode": "pass"}}}
+  }
+}

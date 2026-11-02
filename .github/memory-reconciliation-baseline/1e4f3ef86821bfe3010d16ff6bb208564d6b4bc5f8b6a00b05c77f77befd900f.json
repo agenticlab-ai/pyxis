@@ -1,0 +1,8 @@
+{
+  "code": "prd-projection-divergence",
+  "scope": "prd/review-feedback-capture#WR-6",
+  "feature": "review-feedback-capture",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

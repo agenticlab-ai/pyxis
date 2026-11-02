@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRHBCC53076297ZVC47S",
+  "kind": "Promise",
+  "subject": "prd/skill-command-prefix",
+  "family": "FR-1",
+  "statement": "When a pyxis harness skill is published on the distributable agent surface, the system shall identify it by the single string `pyxis-` concatenated with its pre-rename basename (no shortening), used identically as skill directory basename, frontmatter `name:`, slash-command identity, and matching authoring-guide filename.",
+  "rationale": "J1 + J2 — one namespaced identity",
+  "fit_criterion": "for every skill on the live skills tree after the train, directory basename = frontmatter `name:` = `pyxis-\u003cpre-rename-basename\u003e`; matching authoring guide filename uses the same stem",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b435a489367a40c6fa1b3929567fcc5fd9e2ec589c4f4a0f1f8e6e2b249c7017",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.435Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

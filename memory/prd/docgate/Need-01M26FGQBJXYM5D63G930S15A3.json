@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBJXYM5D63G930S15A3",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "J3",
+  "statement": "When a PR touches a ledger, I want have CI refuse stale projections, edited history, and malformed amendments, so I can trust `effective.md` without reading `docs/prds/\u003cfeature\u003e/` history",
+  "rationale": "prd-amendment-model §2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0252614c98bcd27ea2035505814e4856df8d0699ec0e63c5d40e0f09eb2b4baf",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.226Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

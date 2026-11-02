@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ5ANS6ZQ5XGENYWG3G",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-2",
+  "statement": "Stale and malformed receipts refuse through the normal Pyxis route, and the accepted impersonation risk is visible.",
+  "intent": "FR-3, FR-4; ABUSE-1 through ABUSE-3; M2",
+  "fit_criterion": "Negative fixtures and trust disclosure",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNE3SP1H5PWWDBZHSA1",
+  "kind": "Decision",
+  "subject": "design/argus-write-hook",
+  "family": "decision.3.2.1",
+  "statement": "Each supported CLI is wired to the canonical deny decision through its **own pre-write hook surface**, configured as a per-CLI adapter on the vendor-neutral surface, each explicitly **fail-closed**; a CLI with no honoring hook is listed with the merge-boundary backstop as its guarantee *(design-brainstorm:argus-boundary-enforcement-tech-design#D-4; basis FR-3, UB-2, NR-3)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8d5f0567555c6e37061ad57bfe12ad9e96c1638e50f7e8b025fb4c7dc240fab8",
+    "source-design:dfc6f23a4cc2dece296b198784ba922223f6de3cf3c1852c94d19d33d77b9cde",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMF34NB9FBM4E3AAG4J4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.518Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-write-hook.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-write-hook.md lines 56-56 in section 3.2; sha256:8d5f0567555c6e37061ad57bfe12ad9e96c1638e50f7e8b025fb4c7dc240fab8"
+  }
+}

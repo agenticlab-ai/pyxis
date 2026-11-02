@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3XRQCE7464H29EK4TDB0V81",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-17",
+  "statement": "New feature authoring uses drafts, applicable enabled-repository cutover checks pass, and the approved Pyxis-source legacy-gate bypass remains in force",
+  "intent": "FR-54, FR-55, UB-14, NR-7",
+  "fit_criterion": "enabled-cutover refusal fixtures, source gate fixtures, and inspection of new-feature guidance and frozen-document authoring rules",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:99ddb211b284321c272d3e3e81f568696945a56b2cc7c5f03e81ae4ae07f541d",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M38ZJK83SPESECF3CSNBT6H5"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:11Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMKN8ENE9NGZJYSJSPB3",
+  "kind": "Document",
+  "subject": "prd/local-git-codehost",
+  "family": "prd",
+  "statement": "Draft prd.md",
+  "body_sha256": "0266251fb7d58d4bf3ef4c9f4dd02ee45e24878cba956327c2ca47d844837c20",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

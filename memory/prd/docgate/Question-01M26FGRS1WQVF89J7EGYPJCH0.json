@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRS1WQVF89J7EGYPJCH0",
+  "kind": "Question",
+  "subject": "prd/docgate",
+  "family": "Q2",
+  "statement": "Pre-push hook installation mechanics — pyxis has no workbench installer yet (BENCH-2 is baseline inventory, not built)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Wire phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:05efecbdcd1dc90e708ecfec50d371e21aa3ab5f1e198bbcd7ef85e4c91dde0a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.681Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

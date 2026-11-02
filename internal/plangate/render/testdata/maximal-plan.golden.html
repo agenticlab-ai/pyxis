@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="plangate render">
+<title>Widget capability &amp; &lt;b&gt;maximal&lt;/b&gt; plan 001</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--ink:#e6e9ef;--muted:#9aa3b2;--line:#262b35;
+--accent:#5b9dff;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.wrap{max-width:960px;margin:0 auto;padding:32px 24px 80px;}
+h1.doc-title{font-size:26px;line-height:1.25;margin:0 0 20px;}
+section.block{border-top:1px solid var(--line);padding-top:20px;margin-top:24px;}
+h2.section-head{font-size:19px;margin:0 0 12px;}
+dl.meta{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px 18px;margin:0;}
+dl.meta dt{color:var(--muted);font-weight:600;}
+dl.meta dd{margin:0;min-width:0;overflow-wrap:anywhere;}
+code{background:rgba(255,255,255,.06);border-radius:5px;padding:1px 5px;font-size:.92em;
+font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+.diagram{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px;margin:0;overflow-x:auto;}
+.diagram pre.mermaid{margin:0;padding:0;background:none;display:flex;justify-content:center;}
+.diagram pre.mermaid svg{max-width:100%;height:auto;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:18px 20px;margin:16px 0;}
+.card-head{font-size:17px;line-height:1.35;margin:0 0 12px;overflow-wrap:anywhere;}
+.card-head a.anchor{color:var(--accent);text-decoration:none;
+font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+.card-head a.anchor:hover{text-decoration:underline;}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;}
+.badge{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;
+padding:2px 11px;font-size:12px;color:var(--muted);}
+.badge .badge-k{color:var(--ink);font-weight:600;}
+.card .field{margin:10px 0;}
+.card p.field{overflow-wrap:anywhere;}
+.card .field .k{display:block;color:var(--muted);font-weight:600;font-size:11px;
+text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;}
+.card .field ul{margin:0;padding-left:20px;}
+.card .field li{margin:2px 0;overflow-wrap:anywhere;}
+.card .ptid{margin-top:14px;color:var(--muted);font-size:12px;}
+.empty{color:var(--muted);font-style:italic;margin:0;}
+table.coverage{width:100%;border-collapse:collapse;font-size:14px;}
+table.coverage th{text-align:left;color:var(--muted);font-weight:600;font-size:11px;
+text-transform:uppercase;letter-spacing:.05em;padding:0 12px 8px;border-bottom:1px solid var(--line);}
+table.coverage td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;
+overflow-wrap:anywhere;}
+table.coverage td.req{color:var(--ink);font-weight:600;white-space:nowrap;}
+tr.cov-row.deferred td.req{color:var(--muted);font-weight:400;}
+tr.cov-row.deferred td.cov{color:var(--muted);}
+.defer-tag{display:inline-block;background:rgba(255,255,255,.05);border:1px solid var(--line);
+border-radius:999px;padding:1px 9px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+color:var(--muted);margin-right:6px;}
+a.tasklink{color:var(--accent);text-decoration:none;
+font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em;}
+a.tasklink:hover{text-decoration:underline;}
+ul.flags{list-style:none;margin:0;padding:0;}
+li.flag{padding:9px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere;}
+li.flag:last-child{border-bottom:none;}
+.flag-kind{display:inline-block;background:rgba(255,255,255,.05);border:1px solid var(--line);
+border-radius:999px;padding:2px 11px;font-size:12px;color:var(--ink);font-weight:600;margin-right:4px;}
+.footer{border-top:1px solid var(--line);margin-top:32px;padding-top:16px;
+display:flex;flex-wrap:wrap;gap:6px 20px;color:var(--muted);font-size:12px;}
+</style>
+</head>
+<body>
+<main class="wrap">
+<h1 class="doc-title">Widget capability &amp; &lt;b&gt;maximal&lt;/b&gt; plan 001</h1>
+
+<section class="block" id="header">
+<h2 class="section-head">Plan summary</h2>
+<dl class="meta">
+<dt>Feature</dt><dd>widget</dd>
+<dt>Plan version</dt><dd>001</dd>
+<dt>Dialect</dt><dd><code>harbormaster/fs-spec:v1</code></dd>
+<dt>Status</dt><dd>Draft</dd>
+<dt>Totals</dt><dd>5 task(s) · band sum 660 · largest task 45% of the plan</dd>
+</dl>
+</section>
+
+<section class="block" id="graph">
+<h2 class="section-head">Dependency graph</h2>
+<div class="diagram"><pre class="mermaid">graph TD
+  T1[&#34;T1 — Define the widget model&#34;]
+  T2[&#34;T2 — Serve widget lookups&#34;]
+  T3[&#34;T3 — Query the widget index&#34;]
+  T4[&#34;T4 — Reindex widgets in one batch&#34;]
+  T5[&#34;T5 — Vendor the widget schema bundle&#34;]
+  T1 --&gt; T2
+  T2 --&gt; T3
+  T1 --&gt; T4
+  T1 --&gt; T5
+  classDef fRoot fill:#241a4d,stroke:#7c5cff,stroke-width:2px,color:#e6e9ef
+  classDef fInternal fill:#123047,stroke:#5b9dff,stroke-width:2px,color:#e6e9ef
+  classDef fLeaf fill:#0f3a2e,stroke:#27c093,stroke-width:2px,color:#e6e9ef
+  class T1 fRoot
+  class T2 fInternal
+  class T3,T4,T5 fLeaf
+</pre></div>
+</section>
+
+<section class="block" id="cards">
+<h2 class="section-head">Task charters</h2>
+
+<article class="card" id="T1">
+<h3 class="card-head"><a class="anchor" href="#T1">T1</a> — Define the widget model</h3>
+<div class="badges"><span class="badge"><span class="badge-k">kind</span> behavioral</span> <span class="badge"><span class="badge-k">size band</span> 60–120</span> <span class="badge"><span class="badge-k">foundation</span> high — common-root</span> </div>
+<p class="field"><span class="k">Goal</span>The widget model type exists with closed validation.</p>
+<p class="field"><span class="k">Current behavior</span>No widget model exists; callers hold untyped maps.</p>
+<p class="field"><span class="k">Desired behavior</span>A typed widget model validates closed and rejects an unknown field with a named defect.</p>
+<div class="field"><span class="k">Scope</span><ul><li>the widget model type and its closed validation</li><li>the named defect returned for an unknown field</li></ul></div>
+<div class="field"><span class="k">Out of scope</span><ul><li>persistence of widgets</li></ul></div>
+<div class="field"><span class="k">Acceptance criteria</span><ul><li>validating a widget with an unknown field yields a defect naming the field</li><li>validating a well-formed widget returns no defect</li></ul></div>
+<div class="field"><span class="k">Key interfaces</span><ul><li>`Widget` — the model type callers construct</li></ul></div>
+
+<div class="field"><span class="k">Traces</span><ul><li>prd:widget/FR-1</li><li>design:widget-design#3.1</li></ul></div>
+<div class="ptid">plan-task-id <code>widget/001/T1</code></div>
+</article>
+
+<article class="card" id="T2">
+<h3 class="card-head"><a class="anchor" href="#T2">T2</a> — Serve widget lookups</h3>
+<div class="badges"><span class="badge"><span class="badge-k">kind</span> behavioral</span> <span class="badge"><span class="badge-k">size band</span> 80–160</span> <span class="badge"><span class="badge-k">foundation</span> medium — derived-internal</span> <span class="badge"><span class="badge-k">blocked by</span> T1</span> <span class="badge"><span class="badge-k">overlap accepted</span> shares the serve surface with the reindex batch; both writers run under one lock</span> </div>
+<p class="field"><span class="k">Goal</span>Lookups return the stored widget or a named miss.</p>
+<p class="field"><span class="k">Current behavior</span>No lookup surface exists.</p>
+<p class="field"><span class="k">Desired behavior</span>A lookup returns the widget when present and a named miss when absent, never an empty success.</p>
+<div class="field"><span class="k">Scope</span><ul><li>the lookup behavior over stored widgets</li><li>the named-miss result</li></ul></div>
+<div class="field"><span class="k">Out of scope</span><ul><li>caching of lookup results</li></ul></div>
+<div class="field"><span class="k">Acceptance criteria</span><ul><li>a lookup for a stored widget returns it</li><li>a lookup miss names the widget it did not find</li></ul></div>
+<div class="field"><span class="k">Key interfaces</span><ul><li>`Lookup` — the read surface</li></ul></div>
+
+<div class="field"><span class="k">Traces</span><ul><li>prd:widget/FR-2</li><li>corpus:SCAF-1</li></ul></div>
+<div class="ptid">plan-task-id <code>widget/001/T2</code></div>
+</article>
+
+<article class="card" id="T3">
+<h3 class="card-head"><a class="anchor" href="#T3">T3</a> — Query the widget index</h3>
+<div class="badges"><span class="badge"><span class="badge-k">kind</span> behavioral</span> <span class="badge"><span class="badge-k">size band</span> 100–200</span> <span class="badge"><span class="badge-k">foundation</span> low — derived-leaf</span> <span class="badge"><span class="badge-k">blocked by</span> T2</span> </div>
+<p class="field"><span class="k">Goal</span>A miss reports the queried key so the caller can distinguish absence from error.</p>
+<p class="field"><span class="k">Current behavior</span>A miss returns an empty result indistinguishable from an error.</p>
+<p class="field"><span class="k">Desired behavior</span>A query miss names the key it did not find and reports absence as a first-class outcome.</p>
+<div class="field"><span class="k">Scope</span><ul><li>the query behavior over the index</li><li>the named-miss outcome distinct from an error</li></ul></div>
+<div class="field"><span class="k">Out of scope</span><ul><li>ranking of query results</li></ul></div>
+<div class="field"><span class="k">Acceptance criteria</span><ul><li>a query miss names the key it did not find</li><li>a query hit returns the stored widget</li></ul></div>
+<div class="field"><span class="k">Key interfaces</span><ul><li>`Query` — the index read surface</li></ul></div>
+
+<div class="field"><span class="k">Traces</span><ul><li>prd:widget/UB-1</li></ul></div>
+<div class="ptid">plan-task-id <code>widget/001/T3</code></div>
+</article>
+
+<article class="card" id="T4">
+<h3 class="card-head"><a class="anchor" href="#T4">T4</a> — Reindex widgets in one batch</h3>
+<div class="badges"><span class="badge"><span class="badge-k">kind</span> behavioral</span> <span class="badge"><span class="badge-k">size band</span> 200–400</span> <span class="badge"><span class="badge-k">foundation</span> low — derived-leaf</span> <span class="badge"><span class="badge-k">blocked by</span> T1</span> <span class="badge"><span class="badge-k">size accepted</span> the reindex is one indivisible transaction over the whole store and cannot be split without leaving a half-built index</span> <span class="badge"><span class="badge-k">overlap accepted</span> shares the serve surface with the lookup task; both writers run under one lock</span> </div>
+<p class="field"><span class="k">Goal</span>The whole widget store rebuilds its index atomically.</p>
+<p class="field"><span class="k">Current behavior</span>No reindex exists; a corrupt index has no repair path.</p>
+<p class="field"><span class="k">Desired behavior</span>A reindex rebuilds the index in one transaction and either fully replaces the old index or leaves it untouched on failure.</p>
+<div class="field"><span class="k">Scope</span><ul><li>the atomic reindex over the whole store</li><li>the all-or-nothing replacement on failure</li></ul></div>
+<div class="field"><span class="k">Out of scope</span><ul><li>incremental reindexing</li></ul></div>
+<div class="field"><span class="k">Acceptance criteria</span><ul><li>a completed reindex fully replaces the prior index</li><li>a reindex that fails partway leaves the prior index untouched</li></ul></div>
+<div class="field"><span class="k">Key interfaces</span><ul><li>`Reindex` — the atomic rebuild surface</li></ul></div>
+
+<div class="field"><span class="k">Traces</span><ul><li>prd:widget/FR-2</li><li>design:widget-design#3.1</li></ul></div>
+<div class="ptid">plan-task-id <code>widget/001/T4</code></div>
+</article>
+
+<article class="card" id="T5">
+<h3 class="card-head"><a class="anchor" href="#T5">T5</a> — Vendor the widget schema bundle</h3>
+<div class="badges"><span class="badge"><span class="badge-k">kind</span> mechanical</span> <span class="badge"><span class="badge-k">size band</span> 0–0</span> <span class="badge"><span class="badge-k">foundation</span> low — derived-leaf</span> <span class="badge"><span class="badge-k">blocked by</span> T1</span> </div>
+<p class="field"><span class="k">Goal</span>The pinned upstream widget schema bundle lands unchanged.</p>
+
+
+
+
+<div class="field"><span class="k">Acceptance criteria</span><ul><li>the recorded checksum matches the vendored bundle</li></ul></div>
+
+<div class="field"><span class="k">Provenance</span><ul><li>upstream tag v1.2.3 with its published checksum recorded beside the bundle</li></ul></div>
+<div class="field"><span class="k">Traces</span><ul><li>prd:widget/FR-2</li></ul></div>
+<div class="ptid">plan-task-id <code>widget/001/T5</code></div>
+</article>
+
+</section>
+
+<section class="block" id="coverage">
+<h2 class="section-head">Coverage</h2>
+
+<table class="coverage">
+<thead><tr><th>Requirement</th><th>Coverage</th></tr></thead>
+<tbody>
+
+<tr class="cov-row">
+<td class="req">prd:widget/FR-1</td>
+<td class="cov"><a class="tasklink" href="#T1">T1</a> </td>
+</tr>
+
+<tr class="cov-row">
+<td class="req">prd:widget/FR-2</td>
+<td class="cov"><a class="tasklink" href="#T2">T2</a> <a class="tasklink" href="#T4">T4</a> <a class="tasklink" href="#T5">T5</a> </td>
+</tr>
+
+<tr class="cov-row">
+<td class="req">prd:widget/UB-1</td>
+<td class="cov"><a class="tasklink" href="#T3">T3</a> </td>
+</tr>
+
+<tr class="cov-row deferred">
+<td class="req">prd:widget/FR-3</td>
+<td class="cov"><span class="defer-tag">deferred</span> summaries have no consumer yet; next plan</td>
+</tr>
+
+</tbody>
+</table>
+
+</section>
+
+<section class="block" id="flags">
+<h2 class="section-head">Acceptance flags</h2>
+
+<ul class="flags">
+
+<li class="flag"><span class="flag-kind">overlap accepted</span> <a class="tasklink" href="#T2">T2</a> — shares the serve surface with the reindex batch; both writers run under one lock</li>
+
+<li class="flag"><span class="flag-kind">size accepted</span> <a class="tasklink" href="#T4">T4</a> — the reindex is one indivisible transaction over the whole store and cannot be split without leaving a half-built index</li>
+
+<li class="flag"><span class="flag-kind">overlap accepted</span> <a class="tasklink" href="#T4">T4</a> — shares the serve surface with the lookup task; both writers run under one lock</li>
+
+</ul>
+
+</section>
+
+<footer class="footer">
+<span>plan <code>widget</code> version <code>001</code></span>
+<span>source fingerprint <code>sha256:b0a8df23a097b24295f26af5c2ca3331e3463234114bd8ac3d490521a0fc6309</code></span>
+<span>rendered by <code>plangate/v1</code></span>
+</footer>
+</main>
+<script>
+/* mermaid stub — the real 3.5 MB bundle is inlined at runtime */
+
+</script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</body>
+</html>

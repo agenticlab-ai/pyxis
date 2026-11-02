@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQVVZRP39431PZWJFWQ8X",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-13",
+  "statement": "If If a draft changes after its approval request and before lock, or a local receipt's proposal generation, target, digest, or nonce no longer matches the current request, then the system shall void the approval and require fresh preparation and operator review of the current request",
+  "intent": "the changed field, the stale approval, and the prepare-and-review remedy",
+  "fit_criterion": "Hosted change-after-request behavior is preserved; each local freshness mismatch, H1→H2→H1 included, refuses before landing writes, and a fresh matching receipt permits the normal route",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5640d32254e3fff9b69bb604f39a60e6c79a85517fe010489fe591d86f7e98b8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZQ2E89Q2VCE51VGC746D9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:27Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

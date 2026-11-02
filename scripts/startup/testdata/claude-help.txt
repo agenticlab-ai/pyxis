@@ -1,0 +1,26 @@
+Usage: claude [options] [command] [prompt]
+
+Options:
+  -p, --print  Noninteractive output
+
+Commands:
+  agents [options]             Background sessions
+  attach <id>                  Attach
+  auth                         Authentication
+  auto-mode                    Inspect configuration
+  doctor                       Diagnostics
+  gateway [options]            Gateway
+  import [source]              Import
+  install [target]             Install
+  logs <id>                    Logs
+  mcp                          MCP configuration
+  plugin|plugins               Plugins
+  project                      Project state
+  respawn <id>                 Restart
+  rm <id>                      Remove
+  setup-token                  Authentication
+  stop|kill <id>               Stop
+  ultrareview [target]          Review
+  update|upgrade               Update
+  future-headless|future-alias  Synthetic future command
+                               Continuation text must not become a command.

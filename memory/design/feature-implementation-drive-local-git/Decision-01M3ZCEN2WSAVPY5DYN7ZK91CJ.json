@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCEN2WSAVPY5DYN7ZK91CJ",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:feature-implementation-drive/FR-1 · prd:feature-implementation-drive/FR-10 · prd:feature-implementation-drive/FR-11 · prd:feature-implementation-drive/FR-12 · prd:feature-implementation-drive/FR-13 · prd:feature-implementation-drive/FR-14 · prd:feature-implementation-drive/FR-15 · prd:feature-implementation-drive/FR-16 · prd:feature-implementation-drive/FR-17 · prd:feature-implementation-drive/FR-18 · prd:feature-implementation-drive/FR-19 · prd:feature-implementation-drive/FR-2 · prd:feature-implementation-drive/FR-20 · prd:feature-implementation-drive/FR-21 · prd:feature-implementation-drive/FR-23 · prd:feature-implementation-drive/FR-24 · prd:feature-implementation-drive/FR-25 · prd:feature-implementation-drive/FR-26 · prd:feature-implementation-drive/FR-27 · prd:feature-implementation-drive/FR-28 · prd:feature-implementation-drive/FR-29 · prd:feature-implementation-drive/FR-3 · prd:feature-implementation-drive/FR-30 · prd:feature-implementation-drive/FR-31 · prd:feature-implementation-drive/FR-32 · prd:feature-implementation-drive/FR-4 · prd:feature-implementation-drive/FR-5 · prd:feature-implementation-drive/FR-6 · prd:feature-implementation-drive/FR-8 · prd:feature-implementation-drive/FR-9 · prd:feature-implementation-drive/NFR-1 · prd:feature-implementation-drive/NFR-2 · prd:feature-implementation-drive/NFR-3 · prd:feature-implementation-drive/NFR-4 · prd:feature-implementation-drive/NFR-5 · prd:feature-implementation-drive/NFR-6 · prd:feature-implementation-drive/NFR-7 · prd:feature-implementation-drive/NFR-8 · prd:feature-implementation-drive/NR-1 · prd:feature-implementation-drive/NR-2 · prd:feature-implementation-drive/NR-3 · prd:feature-implementation-drive/NR-4 · prd:feature-implementation-drive/NR-7.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJEG1H50DQZERZPMSXA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJFEPJ1F7EVN0HE99SA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJGEAWKTKVHD5M9QH1C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJH8Q54D4DJYXP7RVKA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJJ1C1FTXE1NABH8BYT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJKBY9A66Z5J4P5CCJR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJMFTREV79HZJ2N989A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJN7ZQ2QNAHKTH5XSQJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJP4PQBD3CG8ZNY3RPD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJQ12TD45GXJPNGHCHK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJRG2A1QGGNMJ1432HW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJSE8AR9K4QG4D67WQ1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJT62J280D7301B1M90"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJV9ZH384B0YPQWM7B1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJX7BTX8Y8AHP38Q3ZA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJYCVQJTHV254T1FVVW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQJZQBPVCB6X303Q9FAB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK0P3J0BZVHA496Q8MS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK187R37XFJQG0VMA5R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK2J22787QSB3TEA67J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK3T0BVM1W183ERCFPG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK4RNYH2JYC3DX7WX7P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK55K4K0SB74WG0MAQW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK623YGY01N40V4Z3WE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK79RSRMXD0PKKCCGE2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQK8HW3C8T2DY23PEPWQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKAHQWY0CBFWTB88JFE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKBJKA06C58QX42CB8W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKS1WWND26QT7RRJ8FM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKTTNJYDKR7VPFC4V0K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKVXTYRFPAKZWZQNGSV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKWSZD3YYRQ4REAJF2X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKXXCXRK902ZAGDZCSH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKY25FCDP15CZKWFBSJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQKZSNS2JS4VQPC22V23"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM06HBEZ87M8T9R278C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM1E9QQWZAWDWNHZ5FB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM255GPEAYZQCZR51AH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM3TPVY28Y2CZGQQAEJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM410SY5WYW30VWVP79"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3Z39W6NGKMS7MGXSZ92RB0R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3Z39XH6BRP2TH5BYXP6T2N9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3Z39YTC5034DN4ERCCC6HE4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:11Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "projected from exact design header ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982"
+  }
+}

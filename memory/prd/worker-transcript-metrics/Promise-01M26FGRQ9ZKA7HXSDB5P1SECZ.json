@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ9ZKA7HXSDB5P1SECZ",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-7",
+  "statement": "The system shall record, for each recorded process, the identity of the task it served, the role it ran in, and the harness, model and effort it ran under.",
+  "rationale": "without these a record cannot be attributed, grouped, or compared *(#D-2)*",
+  "fit_criterion": "every record in the checkpoint batch carries all five, and **all five equal** the corresponding values in that launch's entry in the authoritative launch record (FR-13) — non-emptiness alone is insufficient, since two records with swapped task identities would both pass it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e5a61647b8af4ba68a38aaa8c17b8a5137a1f5a72be68f61eafa6f24a544472",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.625Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

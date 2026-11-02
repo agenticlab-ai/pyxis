@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ2B4K4CFT4DFSCKX4HN",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-6",
+  "statement": "When the merge lane reports a landing, the drive shall accept it only after verifying the merged content at the goal object — the commit an ancestor of the mainline — never from a platform status.",
+  "rationale": "I2's paid lesson; AP-26",
+  "fit_criterion": "a seeded badge-true/mainline-false fixture is caught before closure and triggers UB-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:03c64e0d94590370a1cacc485fc740cffc85c554b738501ba4e71ef6f3dc4ce8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.931Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

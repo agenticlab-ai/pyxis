@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3WDAD7DXV57X6X9GQPKBJMY",
+  "kind": "Document",
+  "subject": "brainstorm/forgejo-feature-draft",
+  "family": "record-001",
+  "statement": "Draft brainstorm/001.md",
+  "body_sha256": "5780487d660110cef00bdaef9c01d1dae63af461d119578b3d2ca43fe971176f",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/planner-driven-model-routing#Q3",
+  "feature": "planner-driven-model-routing",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

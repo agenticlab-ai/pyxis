@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RR3DNRR48RH20XJSJTZN83",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.2.1",
+  "statement": "Every file a release installs carries one of three ownership classes — **engine-verbatim** (converge repairs byte-exact), **repo-owned** (converge validates against its closed schema, never rewrites), **generated** (converge regenerates) — assigned by an **authored class-policy file** committed in the source repo (the human input, AP-24); the release build walks the payload against it and derives the manifest (the aggregate, AP-27). A payload file the policy does not class **fails the release build** (DINV-6). The concrete schemas live in `docs/solution-shapes/installer-without-browser-review.md`.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:82e980e0f7f3bff4d81f0f7f47763516e77d499c5da495b10b087eb5bc84b13a",
+    "source-design:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:34:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 55-55 in section 3.2; sha256:82e980e0f7f3bff4d81f0f7f47763516e77d499c5da495b10b087eb5bc84b13a"
+  }
+}

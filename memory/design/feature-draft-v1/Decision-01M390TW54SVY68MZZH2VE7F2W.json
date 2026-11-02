@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390TW54SVY68MZZH2VE7F2W",
+  "kind": "Decision",
+  "subject": "design/feature-draft-v1",
+  "family": "decision.2.1",
+  "statement": "A feature draft is a pushed branch with a code-host draft pull request, holding the feature's PRD, tech spec, brainstorm records, and review reports as markdown working files. Readiness is computed in memory, and the lock is the operator's enforced code-host approval of the exact version plus its squash merge. Preparing the lock rebases the draft onto the mainline, compiles the working files once into memory records carrying each file's exact text, and removes the working files; the plan is generated from the locked draft afterwards, outside memory (`design-brainstorm:feature-draft-tech-design#D-2`, `#D-3`, `#D-7`, `#D-8`, `#D-11`, `#D-12`, `#D-13`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7b4415bd605463d8ce53e472c4fd9d623fd96baddc9cadf210e9e8b4a30ca333",
+    "source-design:6756001a6610759571f68c5a19dea52b32c9746d651b534fc23d6f993abd0a76",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PK87J0YRYSDH5T0KPWGW"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:51Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-v1.md lines 48-48 in section 2; sha256:7b4415bd605463d8ce53e472c4fd9d623fd96baddc9cadf210e9e8b4a30ca333"
+  }
+}

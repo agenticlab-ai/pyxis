@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRV7RF387633T4VX3X183N",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-8",
+  "statement": "An agent session wants a lock without the operator — vector: writes an approval under the operator's identity, such as a record whose self-declared author is the operator",
+  "intent": "an unread contract reaches execution under a forged approval",
+  "fit_criterion": "hosted: FR-50, FR-51, UB-13; local: FR-50–FR-52",
+  "tags": [
+    "source-unit:116bd3a2cb7031e6f6a8029e7fdacfb7c3b13d73f2ab06319d4646a4e8c2174a",
+    "source:prd-ledger",
+    "reconcile:prd"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZJ8NKGYD9F58PNDY8K10W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:17Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

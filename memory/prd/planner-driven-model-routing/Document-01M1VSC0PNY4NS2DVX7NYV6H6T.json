@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC0PNY4NS2DVX7NYV6H6T",
+  "kind": "Document",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "amendment-003",
+  "statement": "Imported Pyxis source document: docs/prds/planner-driven-model-routing/003-append-first-routing-evidence.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "1c080f01cf65eba8ef3f7bd448784368c457789714bc5ef2f3b63ebd380de526",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:34Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/003-append-first-routing-evidence.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

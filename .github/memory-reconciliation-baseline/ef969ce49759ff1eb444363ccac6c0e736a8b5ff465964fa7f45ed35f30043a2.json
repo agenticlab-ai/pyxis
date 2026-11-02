@@ -1,0 +1,7 @@
+{
+  "code": "dangling-code-scope",
+  "scope": "Decision-01M29C1G8TDKCJ6SS1EC3RETRJ -\u003e scripts/cut-pyxis-release.sh",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

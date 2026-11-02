@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJS3VXAV3935AYCHDSN",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-1",
+  "statement": "The AEC bare origin and agent share an OS account. The agent can edit a server hook and Git refs there. A signed approval can be verified by Pyxis consumers, but it cannot by itself provide the existing hosted route's branch-protection guarantee against direct writes to that origin.",
+  "intent": "Local code-host design review, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKM1PMVW0EVM8GA8PHZ",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "J5",
+  "statement": "When the final feature proposal merges, I want verify delivery and release durable ownership safely, so I can finish with proof rather than a badge or assumption",
+  "rationale": "`brainstorm:feature-implementation-drive#D-13`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:19a8ddcb2e470caff6b185a0d1adb8565fd7fedf036861743e15223c3975e54f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.484Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

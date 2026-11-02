@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGA63N0WSW33S9RZQK0",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-8",
+  "statement": "The GitHub adapter shall keep the aggregate rate of content-writing requests within the platform's published secondary limits and shall surface saturation to callers as backpressure, never as a platform rate-limit error.",
+  "rationale": "the write path is the binding budget (§2.4); N workers land together",
+  "fit_criterion": "a burst fixture replaying nine tasks' write sets concurrently completes with zero platform rate-limit responses; writes are delayed, none dropped",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4ea642e6254a145c7322c57894312a911bfad2ce6d3f9e1790c5f7cd798a7ff1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.402Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDGA49CP2GGHS91G37B",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "a real pyxis feature carried design → review → plan to an operator-accepted reviewed design doc + ordered plan",
+  "fit_criterion": "1 feature accepted at the dogfood checkpoint (the pyxis-feature dogfood run complete)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1a578d373d76edf3dcea3d87292b08edd66bc2845bd6e738cbd33025a92b2a18",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.288Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

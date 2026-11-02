@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMAN1BZ1DE2Y36QWT90N5",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-27",
+  "statement": "While the switch-over is in effect, the system shall refuse every new PRD ledger entry, technical design document, brainstorm record, and review report in Pyxis's own repository.",
+  "rationale": "The document pipeline closes for new contract work (brainstorm:feature-draft#D-6, brainstorm:feature-draft#D-17; Q3 answered by design-brainstorm:feature-draft-tech-design#D-15)",
+  "fit_criterion": "On the released tree, fixtures adding a new PRD base, a PRD amendment, a technical design document, a brainstorm record, or a review report are each refused with a remedy naming the feature draft, while a new plan document is accepted.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f89a10c4a91713d88c2c6587647bfdccbcd27caa71901b047c0675df6d9d63e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:48Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

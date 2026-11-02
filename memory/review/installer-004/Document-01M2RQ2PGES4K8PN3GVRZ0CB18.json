@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2RQ2PGES4K8PN3GVRZ0CB18",
+  "kind": "Document",
+  "subject": "review/installer-004",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/installer-004.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:ad6962619ba2506e23c893b97cc9789034645b0a6f19ad7c3cde15600c996c5b"
+  ],
+  "body_sha256": "ad6962619ba2506e23c893b97cc9789034645b0a6f19ad7c3cde15600c996c5b",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:16:30Z",
+  "provenance": {
+    "source": "docs/reviews/installer-004.md",
+    "note": "offline reconciliation"
+  }
+}

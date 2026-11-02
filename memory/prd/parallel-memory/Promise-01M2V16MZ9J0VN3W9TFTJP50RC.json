@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16MZ9J0VN3W9TFTJP50RC",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "EVT-1",
+  "statement": "memory_acceptance_result fires when Acceptance harness completes a branch-order or adversarial case",
+  "intent": "case: string, pinned inputs: strings, changed paths: string[], record hashes: string[], refusal codes: string[], accepted: bool",
+  "fit_criterion": "M1, M2, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c255b11a528a56de3edf7a32e611a2e9594f980d152c7ed83e768344c94e148b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

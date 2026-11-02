@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V1GCSC8M1FNBJRMFEEJ9G9",
+  "kind": "Decision",
+  "subject": "design/memory-debt-partitions-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:parallel-memory/FR-1 · prd:parallel-memory/FR-2 · prd:parallel-memory/FR-3 · prd:parallel-memory/FR-4 · prd:parallel-memory/FR-5 · prd:parallel-memory/FR-8 · prd:parallel-memory/FR-9 · prd:parallel-memory/NFR-1 · prd:parallel-memory/NFR-2 · prd:parallel-memory/NFR-3 · prd:parallel-memory/NR-1 · prd:parallel-memory/NR-3 · prd:parallel-memory/UB-1 · prd:parallel-memory/UB-2 · prd:parallel-memory/UB-3 · prd:parallel-memory/UB-6.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:adf702946ab6ed63c7ac3918aac5904f27117e4ad654eb7bda6bf81c281e8def",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2V1F5ZJ2F7TDHTARZVBC0FJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N26FY4EXFB7FYB00BSS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N2TJPW4ZPAXGJ5F1X2G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N362FWT03XPHW7TXEHA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N3H7Z0EW008BPM6EB1R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N59JZ27W6BWWCS4AEPE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N655W0KT5KC9C8T7P5C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N6P9WAWAVHGDVX7VCZW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NAS8626KVW6WRXA3X66"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NB5TH34ZSQRE0QB2YSH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NGFGED0DRREN6GJ9RFT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NH88A9B3V5MYCK4NY01"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NJFA0G82WVN3TSCZ3MY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NM6KZVJC8861NBG5N5K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NN2KR5HMMQJXT61WRDK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NS11VMJ8P9Y8TFBJ32S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16P0T7ZAER2YDQT4EVHXH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:57:14Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-debt-partitions-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "projected from exact design header adf702946ab6ed63c7ac3918aac5904f27117e4ad654eb7bda6bf81c281e8def"
+  }
+}

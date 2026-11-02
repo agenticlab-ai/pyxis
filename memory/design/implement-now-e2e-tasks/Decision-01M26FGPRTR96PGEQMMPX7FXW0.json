@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRTR96PGEQMMPX7FXW0",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.2.2",
+  "statement": "that rule takes a second input — whether the feature's harness already existed when the plan was authored — which is a repo-inspection judgment the authoring skill made and **no artifact records**. The executor recovers it from recorded data alone, by comparing the frozen plan's task count against the document's scenario count at the freeze revision: equal means no harness slot was emitted; exactly one more means the harness slot is the plan's first task. Any other relationship is unresolvable and refuses under `UB-14`. Recovering it any other way — re-probing the repository for a harness, or assuming a default — reintroduces exactly the reconstruction this subsection rejects, and its failure is silent: every task still resolves to exactly one scenario, just the wrong one, so the worker is briefed with another scenario's flow and route while the exclusivity invariant still holds.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3f5f636a1bc9553314300ba8c529fb2b0eb64cdf0f05052438bcc136f391b04b",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.626Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 88-88 in section 3.2; sha256:3f5f636a1bc9553314300ba8c529fb2b0eb64cdf0f05052438bcc136f391b04b"
+  }
+}

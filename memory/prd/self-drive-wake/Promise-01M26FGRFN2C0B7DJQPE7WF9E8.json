@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFN2C0B7DJQPE7WF9E8",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-2",
+  "statement": "wake_delivered fires when a wake is handed to a consumer",
+  "intent": "await_id: str, transition: enum, latency_ms: int (medium timestamp → delivery)",
+  "fit_criterion": "M1, M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:95dd66db27fd8b9eb5db5fa037e6aa0c2b837b36e06fcadc611c1a3d1a6b983f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.381Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

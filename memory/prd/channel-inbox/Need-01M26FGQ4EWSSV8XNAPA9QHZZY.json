@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ4EWSSV8XNAPA9QHZZY",
+  "kind": "Need",
+  "subject": "prd/channel-inbox",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "a repo's pin-bump commit lands after its version advisory first fires",
+  "fit_criterion": "median pin-bump within N sessions/days of first firing — N baselined from the internal fleet once live (§7.2 Q1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9165517d0fcadfda1f767b2bb67ab35fd6464e26bb71dfdc9ea2bb89816f9631",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.998Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

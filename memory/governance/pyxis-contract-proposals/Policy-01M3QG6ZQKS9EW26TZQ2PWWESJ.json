@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Policy-01M3QG6ZQKS9EW26TZQ2PWWESJ",
+  "kind": "Policy",
+  "subject": "governance/pyxis-contract-proposals",
+  "family": "docgate-transition",
+  "statement": "During Pyxis's move to semantic memory, its docgate umbrella skips legacy document checks but retains Argus attribution, authority-contract structure, add-only ledger history, and delivery-ledger citation checks; installed document-pipeline repositories continue to run the full umbrella.",
+  "intent": "Let existing-feature corrections proceed without legacy document rules while preserving Argus integrity controls and the memory and code gates.",
+  "rationale": "The operator directed disabling the old document gate; review showed that the active Argus checks protect authorship, authority data, and ledger history and citations independently of those legacy rules.",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T21:12:58Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md",
+    "pr": 1311,
+    "note": "Operator direction and review corrections in the Pyxis #1311 work session on 2026-09-29."
+  }
+}

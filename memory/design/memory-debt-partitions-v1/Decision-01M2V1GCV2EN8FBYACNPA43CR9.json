@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V1GCV2EN8FBYACNPA43CR9",
+  "kind": "Decision",
+  "subject": "design/memory-debt-partitions-v1",
+  "family": "decision.2.1",
+  "statement": "Represent accepted reconciliation debt as a set of separately\naddressed policy files, one per stable finding address. Derive the aggregate\ninventory, counts, and input identities during validation. A normal change\nwith unchanged debt writes no baseline file; reducing debt changes only the\nallowance files for the addresses it actually improves.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c5538fb575f2f08d6daf57c3a2d13d266f0b919dcf41e8f772a643cce1aa4f48",
+    "source-design:adf702946ab6ed63c7ac3918aac5904f27117e4ad654eb7bda6bf81c281e8def",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2V1F5ZJ2F7TDHTARZVBC0FJ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:57:14Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-debt-partitions-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "exact Decision evidence at docs/tech-design/memory-debt-partitions-v1.md lines 65-69 in section 2; sha256:c5538fb575f2f08d6daf57c3a2d13d266f0b919dcf41e8f772a643cce1aa4f48"
+  }
+}

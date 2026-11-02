@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDG69BF7RT22GCPXQNF",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-8",
+  "statement": "The gate convention shall include the sampled full read: at least one full-document read within every five consecutive §0 gates, performed after that gate's §0 pass, its additional findings recorded as outside-§0 items.",
+  "rationale": "the capture rate needs a denominator; sampling is the standing audit move (brainstorm:gate-attention#D-5)",
+  "fit_criterion": "every run of five consecutive §0 gates in the window contains ≥ 1 sampled full read; each sample's outside-§0 items (possibly zero) recorded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f889dd033b78265228ee7f95e79e550da015977ac064ba7a35b9b4e1930fa39a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.312Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

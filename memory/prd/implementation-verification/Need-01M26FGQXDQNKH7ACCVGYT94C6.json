@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQXDQNKH7ACCVGYT94C6",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "M4",
+  "statement": "M4: G3",
+  "intent": "local↔remote verdict parity on the same commit",
+  "fit_criterion": "1 advisory GitHub Actions run whose verdict matches the local verdict rung-for-rung, by the portability checkpoint (before launch gate)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e85675bd99d5c7d68027fe937010c352880ca9ff8bd4e8ce00c4f5f06a4eddd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.797Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

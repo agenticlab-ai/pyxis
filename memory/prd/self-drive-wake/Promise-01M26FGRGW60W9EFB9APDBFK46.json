@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGW60W9EFB9APDBFK46",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NR-2",
+  "statement": "Existing write paths (proposal opening, comments, lease/claim refs) keep working under the new throttle",
+  "rationale": "the guard must shape traffic, not break it",
+  "fit_criterion": "existing executor e2e fixtures pass with the throttle active",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:110eb57f107bc7883e63dba39db7e0f467e9aaf88664870e53b1b3c77949ae0c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.42Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

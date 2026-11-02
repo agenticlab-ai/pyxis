@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4WADRA94ADBV3B3VYC",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-5",
+  "statement": "If If the seen-ledger is missing or unreadable, then the system shall treat it as empty (re-show advisories) rather than crash, and still emit blocking bulletins",
+  "intent": "possibly a re-shown advisory",
+  "fit_criterion": "a corrupt seen-ledger fixture yields a clean run: advisories re-shown, blocking emitted, exit 0",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c803326250fe0e470b532db98b7991684f10ca88a57c1794f258509f65337197",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.012Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

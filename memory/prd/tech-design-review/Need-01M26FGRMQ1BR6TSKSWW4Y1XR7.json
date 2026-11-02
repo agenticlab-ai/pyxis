@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRMQ1BR6TSKSWW4Y1XR7",
+  "kind": "Need",
+  "subject": "prd/tech-design-review",
+  "family": "J2",
+  "statement": "When a design supersedes another, I want verify the supersession's integrity — carry-forward, genuine contradiction, no stranded dependents, so I can evolve the decision graph without silent loss",
+  "rationale": "brainstorm:tech-design-review#D-1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6c741d44937aaf1096e8b8d7474a75a342a10c59ead014ff54e42335fd3ff097",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.543Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

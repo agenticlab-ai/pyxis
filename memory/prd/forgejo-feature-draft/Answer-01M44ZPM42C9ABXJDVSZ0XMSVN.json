@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M44ZPM42C9ABXJDVSZ0XMSVN",
+  "kind": "Answer",
+  "subject": "prd/forgejo-feature-draft",
+  "statement": "Answer verbatim: “ok, your proposa is aproved.” The immediately preceding proposal retained exact-version human approval and stale/mistaken-approval protection while simplifying comprehensive privileged-bypass enforcement. The operator's original acceptance objective allows the simplest practical ordinary single-user workflow; the published proposal explained that the stronger factory guarantee requires an explicit governing-contract revision. Apply the simpler model to installed Forgejo: authenticated configured-human exact-head review and independent merged-content/ancestry verification remain mandatory for a lock; direct/force pushes, privileged merges and path exceptions are trusted repository governance. Existing GitHub approval/protection behavior is preserved. This scoped compatibility change to frozen feature-draft §3.9/DINV-1 binds only after the revised v2 draft is separately human-locked; no frozen artifact, authority tier, Source merge permission or current lock approval changes.",
+  "intent": "operator",
+  "rationale": "2026-10-04",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M44ZPM41WEYM9QF177DDHTAM"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX6XJB0BZEASYFX6DQN",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "J1",
+  "statement": "When a check fails mid-implementation, I want get compact, actionable feedback in seconds, so I can fix and advance without burning turns on log archaeology",
+  "rationale": "`brainstorm:implementation-verification#D-8`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:18ed81b3f9be72f88ad7fea13ed6179fc7105d52c0e4d1e8da814d8a5d14371f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.79Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB5AWHJCVA1XZ4SDVMS",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-41",
+  "statement": "When fold state, source-map projection, checkpoint materialization, or repair routing tests whether an ID prefix is registered and addressable, docgate shall use membership in its version-pinned addressable table-schema registry—the registry represented by `schema.TableSchemas`—and shall not infer addressability from membership in the lexical ID-token registry represented by `schema.Prefixes`.",
+  "rationale": "`F` is intentionally recognized as a citation token but has no addressable table schema; treating the two registries as equivalent invents governance and an impossible repair obligation for flow prose",
+  "fit_criterion": "an exact registry fixture proves every table-schema key is prefix-eligible for addressability outside §0; `F1` still parses as a lexical token but the real workbench-ui and planner-driven-model-routing F1..F5 rows remain absent from fold state and source maps and require no DOD-7 repair proof; a non-§0 G/J/M/R/EVT/Q/ABUSE/EVAL/NG/WR row remains addressable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fecd44af36e28f415de648a84ec9264a84674d82e8558c24b2d626b9ef809602",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.213Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

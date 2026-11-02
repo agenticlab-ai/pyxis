@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2RQ2PFHAREQPY0VRDFKHVCN",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-14",
+  "statement": "If a required installation prerequisite, including git, is missing, then the system shall name the missing prerequisite and its remediation, claim no success, and leave doctor red; absence of Node.js or npm alone is not a failure",
+  "intent": "a named prerequisite failure when a live prerequisite is absent",
+  "fit_criterion": "removing git produces its named remediation and a doctor finding; removing only Node.js and npm permits init and doctor to complete",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc298ede4c667e6a5bd1bc7ece29c8df374d2597cf457a5bd644ef465fe4dc78",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGR1ZSBZ0CK5T2Z6CR635"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:16:30Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "note": "compiled from sha256:20433aec6e8ba6071760aee119e53dd41014bfc79024155057aca4b95faa4bb5"
+  }
+}

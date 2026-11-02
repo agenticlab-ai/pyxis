@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M5BCPSCD9KYKH713A2MEV",
+  "kind": "Decision",
+  "subject": "design/read-to-rule-tech-design-v1",
+  "family": "decision.3.3.1",
+  "statement": "tech-design-new gains one additive step: §0 is written **last**, after §1–§7 and Principles are stable, from the design's own content — each ranked call lifted from a `**Decision:**` callout and its displaced `#ALT-n`, each number from an acceptance/DINV bound, each open question from §7, every routed item anchored per DINV-1. §0 is never generated — it re-litigates nothing of `read-to-rule-v1`'s frozen ruling that §0 is authored, not folded.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:bacfbb60afb443279f02b6b13c556ad941152b8d6d8cda8b691be0004a3f5ecc",
+    "source-design:17a803f8ab34444bc2ce676b48baa6a98a8489e6262d14555910164c83859a2f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPV8XFKAGZJBNV1KW09M"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRTBYER6EZ8Y13JDTZMGM"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:08Z",
+  "provenance": {
+    "source": "docs/tech-design/read-to-rule-tech-design-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/read-to-rule-tech-design-v1.md lines 80-80 in section 3.3; sha256:bacfbb60afb443279f02b6b13c556ad941152b8d6d8cda8b691be0004a3f5ecc"
+  }
+}

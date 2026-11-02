@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJJZX8NECNDGFDH0YTN",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-16",
+  "statement": "When the authority's language conflicts with the glossary or overloads a term, the skill shall challenge it at that moment and record the resolution as a candidate glossary entry.",
+  "rationale": "stage 3 coins design vocabulary (this feature's own session coined *seam*'s entry)",
+  "fit_criterion": "on a seeded term-collision fixture, the challenge occurs and a complete candidate entry lands",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4954666630b996ced3a44fbfb3b42e1385a63e0bdf947c81ae8dd1a4419dea92",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.474Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

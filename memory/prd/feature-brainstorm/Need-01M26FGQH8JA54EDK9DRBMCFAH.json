@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQH8JA54EDK9DRBMCFAH",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "J1",
+  "statement": "When I have a raw idea worth contracting, I want be grilled one question at a time, each with a recommended answer, facts looked up not asked, so I can resolve the product decisions without authoring documents myself",
+  "rationale": "2026-07-07 lwt session; product-vision §1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:842c8626f4d658030f22b5c4cacee4de662cb7244ffcb31bde1663644ec9bd8c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.408Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

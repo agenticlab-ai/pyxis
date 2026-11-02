@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2VNDYWRGDFTK0AAFRZVHFFH",
+  "kind": "Learning",
+  "subject": "learning/explicit-rebase-reconciliation",
+  "statement": "After a rebase, a replacement that explicitly reconciles both the current mainline head and its superseded ancestor admits the complete lineage without treating the deliberately replaced ancestor as an unreconciled moved head.",
+  "intent": "Keep explicit reconciliation usable without regenerating unrelated immutable branch records.",
+  "rationale": "The Lavish removal rebase reproduced a false effective-set-moved finding for a new plangate anchor superseding both branch and current mainline anchors. Omitted current heads, dependency-only links, revoked ancestors, and invalid relation chains remain refused.",
+  "tags": [
+    "code:internal/memory/packet"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T01:45:26Z",
+  "provenance": {
+    "source": "internal/memory/packet/packet.go"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BV7H1RGYH0Q1WZXE45B2SN",
+  "kind": "Learning",
+  "subject": "learning/forgejo-installation-and-verified-distribution",
+  "statement": "Forgejo installation, adoption, convergence, bootstrap, release publication, artifact resolution, and upgrade retain the existing checksum and upload-or-verify trust chain while selecting their independently configured provider. Unconfigured distribution remains R2; repository distribution requires an explicit release binding.",
+  "intent": "Make a fresh or existing repository installable from Forgejo without weakening pinned artifact integrity, overwriting operator state, or silently reviving an implicit GitHub mirror.",
+  "rationale": "A normal code repository is not an artifact source unless it contains the complete Pyxis release set. Forgejo release attachments are returned as a complete unpaginated set, so an assumed first page can omit valid binaries. Source releases must verify the real source tag, every bound GitHub release operation must retain its explicit repository, and fresh clones need a tracked empty PRD registry marker because Git does not preserve empty directories. Provider metadata must survive upgrade restarts, and failed setup must restore prior Git credential settings.",
+  "fit_criterion": "Native init and rollback tests pass; a fresh clone of an installed fixture passes the docs gate while an operator-owned ignored marker is preserved; bootstrap authenticates and checksum-verifies its binaries; large attachment sets remain complete; release reruns verify existing bytes and refuse tampering; artifact binding and upgrade-restart tests preserve provider selection; R2 default and explicit repository publication regressions pass.",
+  "learned_from": [
+    "internal/installer/forgejo_flow_test.go#TestForgejoInitNativeFlowAndCredentialRollback",
+    "internal/installer/clone_gate_test.go#TestFreshInstalledClonePassesDocsGate",
+    "internal/installer/clone_gate_test.go#TestInitPreservesExistingIgnoredRegistryMarker",
+    "internal/release/forgejo_bootstrap_test.go#TestForgejoBootstrapAndInstallerAuthenticateAndVerify",
+    "internal/forgerelease/release_test.go#TestReleaseAttachmentsAreAnUnpaginatedCompleteSet",
+    "internal/release/forgejo_test.go#TestForgejoPublishVerifiesRerunAndNeverClobbers",
+    "internal/release/publish_bindings_test.go#TestBoundPublishUploadOrVerifyConverges",
+    "internal/upgrade/forgejo_test.go#TestForgejoUpgradePinsAndSourceSurviveRestart"
+  ],
+  "tags": [
+    "forgejo",
+    "installation",
+    "artifact-integrity",
+    "code:.pyxis/scripts/pyxis-bootstrap.sh",
+    "code:install.sh",
+    "code:cmd/pyxis-release",
+    "code:internal/adopt",
+    "code:internal/converge",
+    "code:internal/forgerelease",
+    "code:internal/installer",
+    "code:internal/payload",
+    "code:internal/preflight",
+    "code:internal/release",
+    "code:internal/releaseenv",
+    "code:internal/resolve",
+    "code:internal/upgrade",
+    "code:internal/wire"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:18:55Z",
+  "provenance": {
+    "source": ".pyxis/integrations.md",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616"
+  }
+}

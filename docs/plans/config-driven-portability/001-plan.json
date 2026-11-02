@@ -1,0 +1,400 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Config-driven portability — plan 001",
+  "feature": "config-driven-portability",
+  "prd": "docs/prds/config-driven-portability",
+  "design": "docs/tech-design/config-driven-portability-v1.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Make every target-facing surface resolve from repo config (phase-1 portability)",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Resolve target-facing doc paths from config",
+      "goal": "Every target-facing document path the engine reads or writes resolves from the repo config's closed path schema, with today's value as the default.",
+      "current": "A set of target-facing doc paths is hardcoded in gate checks and the argus boundary as string literals, while sibling doc paths are already config keys; a repo laying its docs out differently is dishonored.",
+      "desired": "The target-facing doc paths that are not yet config keys become keys under the closed path schema, each defaulting to its current value; every consumer reads the configured path from the config it holds (threaded in where a consumer hardcodes without one). A config that relocates a doc path is honored by every gate and verb; a config that sets no non-default value behaves exactly as before.",
+      "scope": [
+        "Add the missing target-facing doc-path keys to the closed path schema with current-value defaults.",
+        "Replace each hardcoded target-facing doc-path literal with a read of the configured value; thread the config into consumers that lack one."
+      ],
+      "out_of_scope": [
+        "The default branch, remote, and CLI-surface pointers (own tasks).",
+        "System-tree-internal paths — they never collide with a target and stay as-is."
+      ],
+      "acceptance": [
+        "With a config relocating a target-facing doc path, every base-free gate check and verb reads and writes at the configured location.",
+        "A literal scan finds no target-facing doc-path literal in engine code outside the schema defaults.",
+        "A config setting no non-default value produces behavior byte-identical to before for these paths."
+      ],
+      "key_interfaces": [
+        "The config `Config` struct and its `Defaults()` — the path schema it exposes.",
+        "The gate-check and boundary consumers that resolve a doc path."
+      ],
+      "traces": [
+        "prd:config-driven-portability/FR-1",
+        "prd:config-driven-portability/FR-6",
+        "prd:config-driven-portability/NFR-1",
+        "design:config-driven-portability-v1#3.2",
+        "design:config-driven-portability-v1#DINV-1"
+      ],
+      "touches": [
+        "internal/docgate/config/config.go · internal/docgate/gate (checks that join a doc path) · internal/argus/boundary/boundary.go"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 220
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Resolve default branch and remote from config, including the runtime-resolving hooks",
+      "goal": "The default branch and the git remote resolve from the repo config wherever the engine references them, and the git-hooks resolve them at runtime through the engine binary rather than carrying literals.",
+      "current": "The default branch is captured in config but honored nowhere; branch and remote are hardcoded across the merge-base resolution, the lane, the implement-now flow, the workspace, and the plan tracker, and the pre-push git-hook bakes a branch literal into its invocation.",
+      "desired": "The remote becomes a top-level config scalar beside the existing branch scalar, both defaulting to their current values; every Go consumer resolves branch and remote from config. The git-hooks stay byte-identical in every repository and drop their branch/remote literals — the pre-push hook invokes the engine binary without a baked merge-base, and the binary resolves branch and remote from config. Invoking the hook's resolution under two configs with different values yields the two configured values.",
+      "scope": [
+        "Add the remote config scalar with a current-value default; resolve branch and remote from config in every Go consumer that references them.",
+        "Remove the branch/remote literals from the git-hook sources; resolve them in the engine binary the hook already invokes."
+      ],
+      "out_of_scope": [
+        "The installed CI workflow (its trigger cannot resolve at runtime — own task).",
+        "The doc-path keys (T1)."
+      ],
+      "acceptance": [
+        "With a config setting a non-default branch and an explicit remote, the merge-base resolution, the lane, the implement-now flow, the workspace, and the plan tracker all reference the configured values.",
+        "No `main`/`origin` literal remains in engine branch/remote resolution or in the git-hook sources.",
+        "The hook's runtime resolution under two configs with different branch/remote yields the two configured values.",
+        "A default config produces behavior byte-identical to before."
+      ],
+      "key_interfaces": [
+        "The config `Config` struct — the branch and remote scalars.",
+        "The merge-base / lane / implement-now / workspace / plan-tracker branch-remote consumers.",
+        "The engine binary's branch/remote resolution the hooks delegate to."
+      ],
+      "traces": [
+        "prd:config-driven-portability/FR-2",
+        "prd:config-driven-portability/FR-6",
+        "design:config-driven-portability-v1#3.1",
+        "design:config-driven-portability-v1#DINV-4",
+        "design:config-driven-portability-v1#A-7"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/docgate/config/config.go · internal/docgate/gate/mergebase.go · cmd/lane · cmd/implement-now · internal/executor/workspace · cmd/plangate · the operand git-hook sources"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 230
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Derive the surface-pointer and skeleton-target maps from config",
+      "goal": "The CLI-surface pointers and the governance-skeleton targets are computed as a pure function of the configured CLI-surface knob and the path schema, with no cached or materialized derived state.",
+      "current": "The surface-pointer map and the skeleton-target map are hardcoded literal maps, so a repo with non-default surface pointers or governing-doc paths is dishonored.",
+      "desired": "Both maps are computed at each use from the CLI-surface knob and the relevant path config; they carry no cached state. A config with non-default surface pointers or governing-doc paths yields the correctly derived maps at converge, doctor, and seed.",
+      "scope": [
+        "Replace the literal surface-pointer and skeleton-target maps with pure functions of the CLI-surface knob and the path config."
+      ],
+      "out_of_scope": [
+        "The doc-path and branch/remote keys themselves (T1/T2) — this task consumes them.",
+        "Any cache or materialized derived state — explicitly excluded."
+      ],
+      "acceptance": [
+        "With non-default surface pointers and governing-doc paths in config, the derived maps resolve to the configured targets.",
+        "The maps hold no cached state — successive calls under changed config yield changed results.",
+        "A default config yields the current maps, byte-identical."
+      ],
+      "key_interfaces": [
+        "The surface-pointer derivation and the skeleton-target derivation — functions of the CLI-surface knob and the path schema."
+      ],
+      "traces": [
+        "prd:config-driven-portability/FR-3",
+        "design:config-driven-portability-v1#3.2",
+        "design:config-driven-portability-v1#DINV-1"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/converge/doctor.go · internal/payload/payload.go"
+      ],
+      "size_band": {
+        "lo": 60,
+        "hi": 140
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Render the installed CI workflow from config as a generated surface",
+      "goal": "The installed CI workflow is a generated-class surface converge renders from config — its branch, remote, and path references substituted — re-rendered on config change and reported as drift by doctor when hand-edited.",
+      "current": "The installed workflow is an engine-verbatim static file that bakes its branch reference; a repo with a non-default branch gets a workflow that triggers and diffs against the wrong branch.",
+      "desired": "The class policy declares the installed workflow generated; converge renders it from a shipped template, substituting branch, remote, and any referenced path from config, using the existing seed-time substitution mechanism. A config change re-renders it on the next converge; a hand-edited generated workflow is named as drift by doctor and repaired by converge. The rendered workflow carries no branch, remote, or path literal absent from config.",
+      "scope": [
+        "Reclass the installed workflow to the generated ownership class in the class policy.",
+        "Render it from a template at converge with config substitution; regenerate on drift."
+      ],
+      "out_of_scope": [
+        "The git-hooks (they resolve at runtime — T2).",
+        "Migrating an already-installed operand's old-class workflow across the class change — an upgrade concern, phase-2.",
+        "The workflow's CI-runner value — left a default (design open question)."
+      ],
+      "acceptance": [
+        "The rendered workflow carries no branch, remote, or path literal absent from config, for a non-default config.",
+        "A config change re-renders the workflow on the next converge.",
+        "A hand-edited generated workflow is named as drift by doctor and repaired by converge.",
+        "A default config renders the current workflow, byte-identical."
+      ],
+      "key_interfaces": [
+        "The ownership class-policy entry for the installed workflow.",
+        "The converge render/substitution path and the shipped workflow template."
+      ],
+      "traces": [
+        "prd:config-driven-portability/FR-4",
+        "prd:config-driven-portability/FR-2",
+        "prd:config-driven-portability/UB-3",
+        "prd:config-driven-portability/NFR-2",
+        "design:config-driven-portability-v1#3.1",
+        "design:config-driven-portability-v1#DINV-4",
+        "design:config-driven-portability-v1#A-5",
+        "design:config-driven-portability-v1#A-6"
+      ],
+      "blocked_by": [
+        "T1",
+        "T2"
+      ],
+      "touches": [
+        "internal/converge · internal/payload · the installed-workflow overlay + its shipped template · the ownership class-policy"
+      ],
+      "size_band": {
+        "lo": 130,
+        "hi": 230
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "Fold cross-field config validation into load with lexical containment",
+      "goal": "Config load refuses a cross-field-inconsistent configuration by name, before any resolution — a config path that is absolute, escapes the repository root, or is not repository-relative, and a reference to an absent surface — reusing the closed-schema fail-closed refusal.",
+      "current": "The closed schema refuses unknown keys, but a configured path value is not checked for repository containment; a value aiming a gate outside the tree would be resolved.",
+      "desired": "Loading a configuration validates every path-typed value lexically — absolute, parent-escaping, or non-relative values are refused by name with no partial application — and the unknown-key refusal is preserved. Symlinks are not resolved (same-principal threat model). The engine never joins a config path as an absolute location.",
+      "scope": [
+        "Fold the lexical-containment and referenced-surface checks into the config load, failing closed by name before any resolution."
+      ],
+      "out_of_scope": [
+        "Resolving symlinks on config paths — deliberately excluded (non-hermetic; no privilege boundary in the same-principal model).",
+        "Relaxing the existing unknown-key refusal — it is preserved unchanged."
+      ],
+      "acceptance": [
+        "Each of an absolute, an escaping, a non-relative, and an unknown-key config is refused by name at load, with no partial resolution.",
+        "A configuration with only valid repository-relative paths loads unchanged.",
+        "The existing unknown-key refusal still fires after the extension."
+      ],
+      "key_interfaces": [
+        "The config load/parse entry — where the closed-schema refusal already lives."
+      ],
+      "traces": [
+        "prd:config-driven-portability/FR-5",
+        "prd:config-driven-portability/UB-1",
+        "prd:config-driven-portability/UB-2",
+        "prd:config-driven-portability/ABUSE-1",
+        "prd:config-driven-portability/NR-2",
+        "prd:config-driven-portability/NFR-3",
+        "design:config-driven-portability-v1#3.3",
+        "design:config-driven-portability-v1#DINV-3",
+        "design:config-driven-portability-v1#A-4"
+      ],
+      "blocked_by": [
+        "T2"
+      ],
+      "touches": [
+        "internal/docgate/config/config.go (the load/validation path)"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 190
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "The self-host acceptance harness, coherence inspection, and non-regression proof",
+      "goal": "CI proves the coherence property end to end: the engine runs green over its own corpus relocated under a non-default config, no target-facing literal remains, and a default config is byte-identical.",
+      "current": "No proof exists that every target-facing surface honors config; a missed literal coincidentally matches the default and hides.",
+      "desired": "A CI self-host job, in a throwaway checkout, applies a non-default config and relocates the corpus to the configured locations (doc corpora moved, default branch renamed, explicit remote set, surface pointers moved), then runs the full gate, the local gate, and doctor, and must be green. A coherence inspection finds zero target-facing literals outside the schema defaults. A default-config run is byte-identical to the pre-change engine, and the existing suite passes unchanged.",
+      "scope": [
+        "Build the self-host CI job (relocate-corpus-under-non-default-config → green).",
+        "Build the coherence inspection.",
+        "Assert default-config byte-identity and the unchanged existing suite."
+      ],
+      "out_of_scope": [
+        "An existing-(non-empty)-repo install e2e — deferred to phase-2 (needs the non-empty-tree converge).",
+        "Any toolchain/stack variation — phase-2."
+      ],
+      "acceptance": [
+        "The self-host job runs green (full gate + local gate + doctor) under the non-default relocated config.",
+        "The coherence inspection reports zero target-facing literals in engine code outside the schema defaults.",
+        "A default config is byte-identical to the pre-change engine and the existing suite passes unchanged."
+      ],
+      "key_interfaces": [
+        "The non-default acceptance config profile and the corpus-relocation scaffolding.",
+        "The self-host CI job and the coherence-inspection check."
+      ],
+      "traces": [
+        "prd:config-driven-portability/NR-1",
+        "design:config-driven-portability-v1#3.8",
+        "design:config-driven-portability-v1#DINV-1",
+        "design:config-driven-portability-v1#DINV-2",
+        "design:config-driven-portability-v1#A-1",
+        "design:config-driven-portability-v1#A-2",
+        "design:config-driven-portability-v1#A-3"
+      ],
+      "blocked_by": [
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "touches": [
+        "internal/converge · a CI job definition · a coherence-inspection check"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 190
+      },
+      "mechanical": false,
+      "plan_task_id": "config-driven-portability/001/T6",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:config-driven-portability/FR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/FR-2",
+      "tasks": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/FR-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/FR-4",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/FR-5",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/FR-6",
+      "tasks": [
+        "T1",
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/UB-1",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/UB-2",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/UB-3",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/ABUSE-1",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/NR-1",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/NR-2",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/NFR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/NFR-2",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:config-driven-portability/NFR-3",
+      "tasks": [
+        "T5"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:3468133700e32d9e272261339607b59a142e22cb88408077b68d5cb56758549e"
+}

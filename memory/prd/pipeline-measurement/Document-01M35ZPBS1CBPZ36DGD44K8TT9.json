@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPBS1CBPZ36DGD44K8TT9",
+  "kind": "Document",
+  "subject": "prd/pipeline-measurement",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/pipeline-measurement/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:4bb91e217a9bde54f9a19d9d06e8f12340a34ab7513631f94a96939774cc7649"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBZHR2SBYTWZZJXHF5WPT"
+    }
+  ],
+  "body_sha256": "4bb91e217a9bde54f9a19d9d06e8f12340a34ab7513631f94a96939774cc7649",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:11Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

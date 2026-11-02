@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQRDM3J54GBJWYHZ256S",
+  "kind": "Expectation",
+  "subject": "prd/implement-now",
+  "family": "DOD-33",
+  "statement": "No live non-regression row is broken.",
+  "intent": "NR-1..NR-6, NR-8, NR-10",
+  "fit_criterion": "one result per live NR row, including v1 byte identity, selected-harness retention, e2e integrity, normal combined-empty zero work, selected-recovery zero implementation, and zero unselected review access",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a0f55c91f4637d3c927cf033d50a1b9fc80ede464f99a6233a87a2238bd7450e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.637Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

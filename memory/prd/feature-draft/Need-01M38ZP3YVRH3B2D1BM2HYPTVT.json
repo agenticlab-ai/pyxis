@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP3YVRH3B2D1BM2HYPTVT",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "J2",
+  "statement": "When the PRD and tech spec look settled, I want approve them once, knowing mechanical checks confirm they are complete and consistent, so I can hand execution a contract that will not bounce",
+  "rationale": "brainstorm:feature-draft#D-1, brainstorm:feature-draft#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:520a44c0bf579c79a3ed9ceee7a4b584b0602cd14c3d427fdd282084a8ada369",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:46Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

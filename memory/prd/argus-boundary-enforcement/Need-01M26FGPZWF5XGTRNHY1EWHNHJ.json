@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPZWF5XGTRNHY1EWHNHJ",
+  "kind": "Need",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "seeded boundary-violation fixtures are refused by the layer that owns them",
+  "fit_criterion": "at the feature's own golden-corpus checkpoint (the fixture suite runs in CI): the structure arm refuses 100% of its in-scope authority-contract DINV-3/4/5 violation fixtures, the attribution gate refuses 100% of its Argus-authored protected-path fixtures, and every violation class in the corpus is refused by at least one layer",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1cebfc03bbe466462ce2381207e28715271a9ca51572f82b4b0b1077474b35f9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.852Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

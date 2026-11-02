@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M6W6YGTZW6BXEFZY8R96J",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.3.10.1",
+  "statement": "The entry is the released `workbench-ui` Go binary, invoked in an installed repo through `pyxis exec workbench-ui -- [--repo <path>] [--no-open]` and directly in source mode. No shell launcher or secondary runtime is added. Arguments parse fail-closed: any flag-like positional or unknown flag is a usage refusal before any action (incident I3's lesson, applied from birth).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:dfec5124505af3b5692d1470e2bc2e3dd438af24b5ecd7c572f6002f6951c245",
+    "source-design:24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPWKH3RRBPK4TB1FB0JZ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZS2DYVWXCWAD5KD5VWGH3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:58Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 81-81 in section 3.10; sha256:dfec5124505af3b5692d1470e2bc2e3dd438af24b5ecd7c572f6002f6951c245"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWFPJY445TPXZK0JG7D",
+  "kind": "Decision",
+  "subject": "design/wake-channel-v1",
+  "family": "decision.3.7.1",
+  "statement": "The frozen behavior design's session-posture prose does **not** move; the basis's Q3 contingency resolves negative. The conventions' boundary is contradiction — supersession is required only if a new decision makes a binding statement of a live design false — and the walk finds none: the behavior design's §2 Decision — the protocol \"executed per problem in **one preferred continuous session**\" — stays true under the reading this design states explicitly, carrying the record's own ALT-10 mitigation: **the preference always binds within a touch** — one session, held as long as the runtime allows, never ended or fragmented by the channel (an await-stop is the touch *completing*, not the channel ending a session; the channel only ever *starts* touches) — while continuity across touches was always the resume protocol's designed ground, the same lossless replay-and-verify path a runtime death already took; a wake-architected reality multiplies touches, it does not shorten any session the runtime would have held. The rest of the walk holds the same way: §3.2's \"one problem, one session … ended only by close, park, or the runtime itself\" stays true (an await-stop *completes the touch*; close and park remain the only protocol-decided session ends; the runtime ends idle sessions exactly as it always has); the front door's semantics are untouched (the channel is a new *caller* of the existing resume path); park mechanics, DINV-4, and DINV-5 are preserved verbatim (this design's DINV-2/DINV-7 restate them as its own obligations). What this design adds are three **additive drive duties** — register awaits at stops (§3.1), surface staleness at touchpoints (DINV-5), treat wake content as data (DINV-1) — landing in the drive guide through its normal evolution, plus external channel machinery outside the behavior design's scope. The escape hatch is named: the day a wake evolution genuinely falsifies a binding posture statement, the channel is a successor behavior design through the supersession channel — never an in-place edit (the basis's NG-6). (design-brainstorm:argus-unattended-drive-tech-design#D-5, #ALT-10, #ALT-11)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:eb35a2bd673785a6614a7ce3ce2fcfc4cf751ab6c5f750b14209aeea7b2f9ed2",
+    "source-design:aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYKH1ZFTCXZ2HF1JBR2G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.743Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-channel-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/wake-channel-v1.md lines 77-77 in section 3.7; sha256:eb35a2bd673785a6614a7ce3ce2fcfc4cf751ab6c5f750b14209aeea7b2f9ed2"
+  }
+}

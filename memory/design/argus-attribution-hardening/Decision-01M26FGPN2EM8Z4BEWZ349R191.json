@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPN2EM8Z4BEWZ349R191",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "decision.3.7.1",
+  "statement": "The gate evaluates authorship over the PR's own commit range (`base..HEAD`), so pre-mechanism history is never in range and never retroactively refused; the producer stamps every drive commit from the mechanism's landing forward, so no latent window remains; the mechanism's own introducing PR is the incident-I1 exception *(design-brainstorm:argus-attribution-hardening-tech-design#D-4; basis DOD-7, UB-5; incident I1)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5d1c0d57232b90ecdedbb4526e6b346fdae05c385c4107f9f6d8a302eb4e33fb",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.506Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-attribution-hardening.md lines 109-109 in section 3.7; sha256:5d1c0d57232b90ecdedbb4526e6b346fdae05c385c4107f9f6d8a302eb4e33fb"
+  }
+}

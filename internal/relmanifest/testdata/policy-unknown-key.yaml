@@ -1,0 +1,3 @@
+schema_version: class-policy/v1
+classes:
+  - { glob: ".pyxis/**", class: engine-verbatim, owner: me }

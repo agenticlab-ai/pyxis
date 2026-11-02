@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ6R7Q05Z8TV0WT9BBFV",
+  "kind": "Promise",
+  "subject": "prd/context-pack",
+  "family": "NFR-5",
+  "statement": "The compiler shall not read or emit any file outside its declared stable-context set.",
+  "intent": "Security",
+  "fit_criterion": "over any input, no out-of-set file is read or included (FR-4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:95397f74562e15be5dcfc681cb2d7db5dd234e5fcf39a4bce66a5445aea1e354",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.072Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

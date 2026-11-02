@@ -1,0 +1,86 @@
+# One job runs the complete shared gate exactly as the pre-push hook does:
+# code-gate starts the phase-1 groups together, then memory, the full coverage
+# suite, and the remaining phase-2 checks together after that barrier. Inside
+# one job the groups genuinely overlap, and the job keeps the existing docs-gate
+# required status. ci-parity enforces that it runs the complete code gate and
+# the document gate.
+# Linux process confinement uses Bubblewrap, which ubuntu-latest needs installed
+# and allowed through AppArmor. The macos job runs the macOS sandbox-exec
+# confinement check, which Linux cannot exercise.
+name: docs-gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  docs-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      PYXIS_REQUIRE_PROCESS_CONFINEMENT: "1"
+      PYXIS_CI_EVENT: "${{ github.event_name }}"
+      PYXIS_CI_BASE: "${{ github.event.pull_request.base.sha || github.event.before }}"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: restore Go and lint caches
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+            ~/.cache/golangci-lint
+          key: go-build-${{ runner.os }}-${{ hashFiles('go.mod', '.pyxis/config.yaml', '.golangci.yml') }}-${{ github.sha }}
+          restore-keys: |
+            go-build-${{ runner.os }}-${{ hashFiles('go.mod', '.pyxis/config.yaml', '.golangci.yml') }}-
+            go-build-${{ runner.os }}-
+      - name: install Linux test dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y bubblewrap apparmor zsh
+          sudo install -m 0644 .pyxis/security/bwrap.apparmor /etc/apparmor.d/pyxis-bwrap
+          sudo apparmor_parser --replace /etc/apparmor.d/pyxis-bwrap
+      - name: docgate gate
+        run: .pyxis/scripts/docgate-resolve.sh gate --merge-base "$PYXIS_CI_BASE" --defects-json -
+      - name: code-gate (complete, cheap phase first)
+        run: .pyxis/scripts/code-gate-resolve.sh run --no-cache
+      - name: coverage (report only)
+        if: always()
+        continue-on-error: true
+        run: .pyxis/scripts/docgate-resolve.sh coverage >> "$GITHUB_STEP_SUMMARY"
+      - name: save Go and lint caches
+        if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+            ~/.cache/golangci-lint
+          key: go-build-${{ runner.os }}-${{ hashFiles('go.mod', '.pyxis/config.yaml', '.golangci.yml') }}-${{ github.sha }}
+  macos:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    env:
+      PYXIS_REQUIRE_PROCESS_CONFINEMENT: "1"
+      PYXIS_CI_EVENT: "${{ github.event_name }}"
+      PYXIS_CI_BASE: "${{ github.event.pull_request.base.sha || github.event.before }}"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: macOS process confinement
+        run: .pyxis/scripts/code-gate-resolve.sh run --no-cache --check process-boundary

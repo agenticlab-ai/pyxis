@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSTNADVQJ6T21QG9VM1",
+  "kind": "Question",
+  "subject": "prd/impl-review",
+  "family": "Q4",
+  "statement": "Native budget values, latency targets, and eval run count above the N≥5 floor",
+  "intent": "technical design / reviewed policy data",
+  "rationale": "design-owned values; may measure/tune but never weaken FR-24 or gate correctness by latency",
+  "fit_criterion": "Phase B",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d26b33aa79fb55caa8e96464ff129d50abb8c556deb2593ef5ad52f5ac9865c7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.706Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

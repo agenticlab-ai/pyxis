@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3Z39TXS8X5PVR9PB9AX8N5Z",
+  "kind": "Expectation",
+  "subject": "prd/feature-implementation-drive",
+  "family": "DOD-9",
+  "statement": "All active Must functional and failure requirements pass their fit criteria in the applicable selected code-host mode.",
+  "intent": "FR-1..FR-6, FR-8..FR-21, FR-23..FR-32, UB-1..UB-11",
+  "fit_criterion": "conformance and acceptance-suite report, including local retained-evidence and atomic-landing fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ad799a7efcd868aeeb5be8c0e815d357b1b9bd2477c06fd9263893299ed63cf1",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M26FGQHYPJ37KR0HMFNYR829"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:16Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "compiled from sha256:21ff1c7841e4754da06e4ae3723f73de7456d4a66d1c82592f3ed8e357ae6153"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M47B5KC042CE5B55N6HQ967X",
+  "kind": "Revocation",
+  "subject": "design/argus-problem-capture-attribution",
+  "statement": "The source design argus-problem-capture-attribution is superseded by argus-committed-plan-attribution in this candidate. The live design carries its six explicit decisions and both retained scope/rebase and Carina exception decisions; withdraw the obsolete active Decision while retaining its immutable history.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M45YRSKSKBMMQS3A0BYM6GRJ"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:52:41Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Learning-01M35H5M8P8F05GZD4KXH0759S",
+  "kind": "Learning",
+  "subject": "learning/ci-shared-execution-groups",
+  "statement": "Hosted GitHub and Forgejo docs-gate now use the same cheap-then-expensive barrier as local code-gate run: a --cheap job covers every phase-1 check, then --group default --phase 2 and --group tests --phase 2 start only after it succeeds. ci-parity accepts --cheap and --group plus --phase, treats later-phase jobs that need the cheap worker as workers rather than aggregates, and refuses a later-phase job that has not already completed every earlier required check. The required check set is unchanged (DINV-1).",
+  "intent": "Stop remote race from starting beside lint, matching the local phase barrier, without splitting the required check set.",
+  "rationale": "quality and tests used to be independent --group jobs, so hosted race began at the same time as gofmt. Local run already waited for phase 1. The remote graph now waits too: cheap red skips coverage and race; the docs-gate aggregate still requires every worker including cheap.",
+  "fit_criterion": "Hosted docs-gate.yml and the Forgejo source template run --cheap, then group-phase 2 jobs that need cheap. ci-parity rejects the old parallel --group layout once phase 2 exists, and accepts new phase-1 checks under --cheap without a workflow edit.",
+  "tags": [
+    "code:internal/codegatemirror",
+    "code:cmd/code-gate",
+    "code:internal/ciparity",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M35GN8GFHSGCEMKH6AVA938K"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-22T21:43:23Z",
+  "provenance": {
+    "note": "Hosted CI follows the local cheap-then-expensive phase order."
+  }
+}

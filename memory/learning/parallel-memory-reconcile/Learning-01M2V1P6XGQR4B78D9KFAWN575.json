@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V1P6XGQR4B78D9KFAWN575",
+  "kind": "Learning",
+  "subject": "learning/parallel-memory-reconcile",
+  "statement": "The v2 reconciliation policy stores one allowance per exact finding address and derives aggregate identities during checks, while preserving the existing exact inventory and monotonic debt comparison.",
+  "intent": "Make disjoint debt reductions edit disjoint files and ordinary findings-preserving work edit no policy file.",
+  "rationale": "Closed parsing binds each member filename to its canonical address and rejects malformed counts, duplicate or unknown fields, mixed formats, and unsupported evaluators. Migration preserves the complete trusted allowance inventory and requires the compatible reader to land first.",
+  "tags": [
+    "code:internal/memory/reconcile"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T20:00:25Z",
+  "provenance": {
+    "source": "internal/memory/reconcile/policy.go",
+    "commit": "30dcc43775174df02334c4b015784f481cdfec70"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/installer#R4",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M4MM8XH0X4RVH4NJKAT4KBKZ",
+  "kind": "Document",
+  "subject": "brainstorm/prototype",
+  "family": "record-002",
+  "statement": "Draft brainstorm/002.md",
+  "body_sha256": "e8de2ccd4ad96360588a8a517bf66a006afb797e8a234b6cd221d8960c6cb46f",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

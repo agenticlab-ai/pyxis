@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3DYQJHFX15BMZDTDPNP5",
+  "kind": "Document",
+  "subject": "skill/e2e-review",
+  "family": "calibration",
+  "statement": "Captured authored source: .pyxis/skills/e2e-review/calibration.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:0607ff0574e3e0d7491fda21020b1d4122cb1f5ff1536cdeacce1eed011c2214"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB86V8GPFD787XXJRWSGK"
+    }
+  ],
+  "body_sha256": "0607ff0574e3e0d7491fda21020b1d4122cb1f5ff1536cdeacce1eed011c2214",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:27Z",
+  "provenance": {
+    "source": ".pyxis/skills/e2e-review/calibration.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZNKAYWM6N4N6S1TFH6HVH",
+  "kind": "Document",
+  "subject": "corpus/prd-index",
+  "family": "index",
+  "statement": "Captured authored source: docs/prds/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:ed9b3aa286dab3aa65bbbe29347bb05746a7ec9becde6079feded3dde420fa18"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBQA38B1GE4W8N7AS4KNR"
+    }
+  ],
+  "body_sha256": "ed9b3aa286dab3aa65bbbe29347bb05746a7ec9becde6079feded3dde420fa18",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:46Z",
+  "provenance": {
+    "source": "docs/prds/README.md",
+    "note": "offline reconciliation"
+  }
+}

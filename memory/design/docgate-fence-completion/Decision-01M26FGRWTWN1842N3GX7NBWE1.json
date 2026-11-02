@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWTWN1842N3GX7NBWE1",
+  "kind": "Decision",
+  "subject": "design/docgate-fence-completion",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-18 · prd:docgate/FR-19 · prd:docgate/FR-23 · prd:docgate/NR-3.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:3d8e1c1151e97cfb8f965613fe1f5596ac992406091413f37868999206e4d55d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCP1CJJ8G0DMS00Y4SJBS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQACN6FEY854MMJ0P2T8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAD1FA6DXK43B18P9FN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAJQHE1R8Z19V862S65"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBTD5K8JFTFPMF8EF15"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.802Z",
+  "provenance": {
+    "source": "docs/tech-design/docgate-fence-completion.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 3d8e1c1151e97cfb8f965613fe1f5596ac992406091413f37868999206e4d55d"
+  }
+}

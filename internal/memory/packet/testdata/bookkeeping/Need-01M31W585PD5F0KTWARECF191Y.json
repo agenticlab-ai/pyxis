@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Need-01M31W585PD5F0KTWARECF191Y",
+  "kind": "Need",
+  "subject": "code/unit-scripts-cut-pyxis-release.sh-61de6e44d147",
+  "family": "anchor",
+  "statement": "Production code unit scripts/cut-pyxis-release.sh exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at scripts/cut-pyxis-release.sh.",
+  "tags": [
+    "code:scripts/cut-pyxis-release.sh",
+    "reconcile:anchor"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M29C0MRSXSKZHJZEMB2D5T27"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:38:27Z",
+  "provenance": {
+    "source": "code:scripts/cut-pyxis-release.sh",
+    "note": "offline code inventory 6a3690b5c580e93cf9b0a86dd1a11d538a9822ec71f1e59a88534d6ac98255c7",
+    "evidence": {
+      "schema_version": "memory-evidence/v1",
+      "locator": "record-introduction",
+      "files": [
+        {
+          "path": "scripts/cut-pyxis-release.sh",
+          "mode": "100755",
+          "sha256": "8c6caaa972687ddfa814a555e099d668bc67c9aceabe4cdb78b13e86db7fe666"
+        }
+      ],
+      "units": [
+        {
+          "inventory": "pyxis-memory-code-inventory/v3",
+          "digest_domain": "pyxis-memory-code-inventory/v1/unit",
+          "kind": "executable-script",
+          "path": "scripts/cut-pyxis-release.sh",
+          "sha256": "6a3690b5c580e93cf9b0a86dd1a11d538a9822ec71f1e59a88534d6ac98255c7",
+          "files": [
+            "scripts/cut-pyxis-release.sh"
+          ]
+        }
+      ]
+    }
+  }
+}

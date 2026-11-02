@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BBJEEZ4ABATVT3GPAWPPMJ",
+  "kind": "Learning",
+  "subject": "learning/ci-parity-enforcement",
+  "statement": "A shared runner mirrors only its registered checks; CI parity also requires rejecting every independent blocking workflow step.",
+  "intent": "Keep local pre-push, executor verification, and hosted checks on the same complete predicate.",
+  "rationale": "The memory debt ratchet was added as a separate GitHub workflow after the code gate was centralized. CI parity now parses the complete workflow directory, rejects unregistered or conditional blocking checks, pins event-supplied bases, and permits only bounded runner setup or explicit advisory and release jobs. The memory-gate command composes existing record integrity and reconciliation predicates, while named code-gate selection reuses their canonical commands. Cached verdicts include Git history refs and environment values.",
+  "fit_criterion": "Workflow mutation regressions reject added remote-only jobs, hidden shell commands, missing gates, and substituted bases; memory-gate regressions reject record rewrites and widened allowances; same-tree history and environment changes invalidate cached verdicts.",
+  "learned_from": [
+    "The operator reported a fourth local versus hosted CI divergence; TestRepositoryCoverageGateWiring passed while the memory workflow was missing locally. The new regressions in internal/ciparity and internal/memory/cli exercise those failures."
+  ],
+  "tags": [
+    "code:cmd/ci-parity",
+    "code:cmd/code-gate",
+    "code:cmd/memory-gate",
+    "code:internal/ciparity",
+    "code:internal/codegatemirror",
+    "code:internal/memory/cli",
+    "owner:design/code-gate-mirror",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMVF4SXG45QTQ9Z76B67"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T17:45:16Z",
+  "provenance": {
+    "source": "code:internal/ciparity",
+    "commit": "cc479fc1bfe5644bbd8ff0e5f0e9708fb71c80bf"
+  }
+}

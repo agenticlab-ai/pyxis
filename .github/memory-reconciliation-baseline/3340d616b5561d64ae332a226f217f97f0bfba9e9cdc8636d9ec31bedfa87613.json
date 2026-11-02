@@ -1,0 +1,7 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/contract-gate-v2",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

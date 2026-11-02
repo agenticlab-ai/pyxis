@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPZT12PXGMA4S4FJJDNY",
+  "kind": "Need",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "J2",
+  "statement": "When a PR carries an authority-contract change, I want have the change mechanically checked for its structural invariants (attribution present, tier-in-ladder, no bare pointer flip, no grant of a never-class act) so a corrupt or self-granting contract cannot merge, so I can rely on the gate, not on a reviewer walking the template checklist by hand",
+  "rationale": "argus-artifacts §3.5, §3.3; the `authority-contract/v1` template's Appendix checklist",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0e54dda759612a322aecf858d31747a315d2d0153e1669cf4d83930b3e19d349",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.85Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

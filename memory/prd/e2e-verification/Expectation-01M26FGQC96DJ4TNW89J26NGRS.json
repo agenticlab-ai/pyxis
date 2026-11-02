@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQC96DJ4TNW89J26NGRS",
+  "kind": "Expectation",
+  "subject": "prd/e2e-verification",
+  "family": "DOD-4",
+  "statement": "Zero unresolved false-reds and zero unresolved displaced-authoring cases at the dogfood checkpoint",
+  "intent": "§3.3",
+  "fit_criterion": "disposition records (EVT-4, both statuses)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:836f3bb4ee32ca10eec927c110e6ae1c2c2b1641d73c329be2f7e69635f76d70",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.249Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

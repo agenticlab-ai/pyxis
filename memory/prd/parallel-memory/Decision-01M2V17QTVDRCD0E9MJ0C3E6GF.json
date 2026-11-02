@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V17QTVDRCD0E9MJ0C3E6GF",
+  "kind": "Decision",
+  "subject": "prd/parallel-memory",
+  "family": "R2",
+  "statement": "Mitigate retrospective activation by applying one historical-transition predicate at writer admission and merge comparison.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The approved causal design removes only the unrelated global age floor. Existing rejected and dangling acts cannot become honored through inserted prerequisites, and another projection defect cannot hide that violation.",
+  "fit_criterion": "Preserve the exact malicious document/revocation/dangling fixtures in CLI, packet, and resolver tests; harmless unrelated older insertion passes while retrospective activation fails.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:f2cd900e1d538ad64c4d47d0295a1506b4e0f27de0886e779959f52ba52c7a49",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:52:30Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8AG27RK4DCC27MXVX3",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "J3",
+  "statement": "When an amendment or supersession changes one document, I want learn immediately if it left the assembly inconsistent, so I can catch drift at introduction, not at the next planning attempt",
+  "rationale": "`brainstorm:contract-compiler-2#D-4`, `#F-5`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:db4795ae96e9b046f64416e362cb0b0c262ab337613cbde4b082755e3c4d9446",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.122Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

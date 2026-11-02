@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ1EYZJVNCPXBG25YVE",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-5",
+  "statement": "The decision authority drives a full session unaided and affirms at the gate that every ruling is theirs, the panel fired (or was skipped/overridden) per the rule with audit notes, and gaps were parked or bounced rather than papered over",
+  "intent": "G3, J1, J3",
+  "fit_criterion": "review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ed59995a488c80766996c454435db666adadeec5a142371c059afb930c91a9a6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.457Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

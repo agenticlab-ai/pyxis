@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBJTNJHVSYAX546H7DFWW",
+  "kind": "Document",
+  "subject": "brainstorm/worktracker-hierarchy-query-tech-design",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/worktracker-hierarchy-query-tech-design.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "6669cf36d985c8168b410fa55ed4b54d277a091c72764f9155963fbe79f07372",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:20Z",
+  "provenance": {
+    "source": "docs/brainstorms/worktracker-hierarchy-query-tech-design.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

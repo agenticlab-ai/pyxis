@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9RPDAZ8R3P526DT7VF",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-25",
+  "statement": "When proposal review demand is computed, the review path shall join the actual `skip`, `standard`, or `deep` band projected by impl-review from the merge lane's risk class with the planned assurance under this closed floor: `ordinary` requires at least one `standard` model-backed assurance pass, `elevated` requires at least one `deep` model-backed assurance pass, and `critical` requires at least two mutually blind `deep` model-backed assurance passes; an actual `deep` band shall raise an `ordinary` pass to `deep`, and no actual band shall reduce planned depth or pass count. An assurance pass is a top-level review of one exact proposal revision and is distinct from any scope-locked remediation re-review inside that pass.",
+  "rationale": "model-backed review is a universal quality floor, while greater consequence must monotonically add scrutiny without creating a second proposal-risk classifier or miscounting remediation as independent assurance",
+  "fit_criterion": "the complete assurance×band matrix yields `ordinary×skip→standard×1`, `ordinary×standard→standard×1`, `ordinary×deep→deep×1`, every `elevated` cell→`deep×1`, and every `critical` cell→`deep×2`; zero cells produce zero passes; every pass resolves through the review-role mapping; critical passes bind the same exact revision, use distinct top-level context identities, receive no other pass's session, candidates, findings, verdict, or output, and a remediation re-review never satisfies the second-pass requirement",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:040f84776027811322fe15503c40aae4bdf2cded0269f72fd3d9a62b32ed9abd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.192Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

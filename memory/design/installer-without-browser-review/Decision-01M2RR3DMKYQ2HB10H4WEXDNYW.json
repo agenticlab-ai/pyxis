@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RR3DMKYQ2HB10H4WEXDNYW",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.2.1",
+  "statement": "Pyxis ships as an **atomic system release** — one tag builds every engine binary for every supported platform from one commit, packs the payload without a browser-runtime dependency bundle, and emits a build-derived **release manifest** that pins every artifact by hash and ownership class; an operand's config pins exactly the system version and the manifest hash (`design-brainstorm:installer-tech-design#D-1`). The release is consumed through **`pyxis`, the front-door orchestrator**: one binary owning init, converge/repair, doctor, and the single acquisition-and-execution path — `pyxis exec <tool> -- <argv>` — behind which every skill, hook, and CI line in an installed repo invokes the engine (`#D-2`). Acquisition is **lazy and per-exec-verified**: every execution re-hashes the cached binary against the manifest before running it, cache misses fetch-verify atomically, and `pyxis converge` pre-warms the full tool set so the offline floor holds (`#D-3`). Install, re-run/repair, and (later) upgrade are one converge over ownership classes; the bootstrap shim that fetches `pyxis` itself is the one shell first-mover, minimized and drilled.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:926213cfa432d5f186ad5c3872bccaac39be72b0079af31c3e075ceb295145e2",
+    "source-design:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:34:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 41-41 in section 2; sha256:926213cfa432d5f186ad5c3872bccaac39be72b0079af31c3e075ceb295145e2"
+  }
+}

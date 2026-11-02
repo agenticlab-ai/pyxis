@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/impl-review#Q4",
+  "feature": "impl-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

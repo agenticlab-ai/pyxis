@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPDTFRJDC17SHDKZAPD",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..FR-9, FR-11..FR-15",
+  "fit_criterion": "CI run link",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3f9d51e6904c1ed4af7e1f87e1a52f90f24af16aa28917b6cd132bf8c514d471",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.597Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

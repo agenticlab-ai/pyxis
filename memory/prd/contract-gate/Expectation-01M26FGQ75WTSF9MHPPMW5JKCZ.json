@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ75WTSF9MHPPMW5JKCZ",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-10",
+  "statement": "Living rollups updated for the shipped capability (techspec/prd)",
+  "intent": "AGENTS.md rule 3",
+  "fit_criterion": "the implementing PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:30d5ffa3244f9294534f36ea7d11f8610b1c0fbde98f02fa51f8b4e32af3724a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.085Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

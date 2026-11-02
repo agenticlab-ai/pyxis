@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQFCG0JW85XVY8QEVCH",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-12",
+  "statement": "If any required pass cannot read the exact proposal honestly within its qualified context limit, then the system shall record a size escalation naming the unread extent, emit no approve for that pass, and keep the aggregate non-accepting",
+  "intent": "size escalation tied to pass and exact revision",
+  "fit_criterion": "oversize fixtures never truncate silently, never substitute a sibling pass, and never accept a favorable subset",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ed6562f251aa0f200c9ff4b03589a574fcb046bd697b4eb0c49b49275e4ea70a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.607Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

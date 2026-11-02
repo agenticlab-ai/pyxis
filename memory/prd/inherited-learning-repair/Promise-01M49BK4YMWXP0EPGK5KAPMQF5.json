@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YMWXP0EPGK5KAPMQF5",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "NFR-3",
+  "statement": "The entry shall expose machine-readable outcome, inspected revision and canonical references.",
+  "intent": "Operability",
+  "fit_criterion": "CLI golden cases cover admission, join, update and refusals",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

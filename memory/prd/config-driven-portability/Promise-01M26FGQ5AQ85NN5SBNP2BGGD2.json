@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5AQ85NN5SBNP2BGGD2",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "FR-4",
+  "statement": "When converge runs, the engine shall render the installed CI workflow's branch, remote, and path references from config.",
+  "rationale": "the installed workflow bakes literals today (F-6); non-Go surface (P-1)",
+  "fit_criterion": "the generated workflow contains no branch/remote/path literal absent from config",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7e8524fbcdd33ee2fcd04f5d2679c5e878cbb8edf056148438a109dc8f4da8b2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.026Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR98PPWQXN5YF372T4TZ",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVT-4",
+  "statement": "`routing_conformance_checked` fires when one required routing-domain cell finishes conformance",
+  "intent": "`harness:string`, `role:enum`, `semantic_profile_id:string`, `expected:resolved\\",
+  "fit_criterion": "fail`, `evidence_ref:string`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a1ce5e91bd041438df56fd0d5ff696cd48401c114fb2857ba0e5fbafa86f75ce",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.176Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

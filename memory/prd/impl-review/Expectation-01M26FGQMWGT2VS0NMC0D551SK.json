@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMWGT2VS0NMC0D551SK",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-14",
+  "statement": "A typed implement-now amendment transports the frozen assessment, evidence citations, complete semantic profile, demand identity and derivation-policy version, planned assurance, and selected review harness field-identically into impl-review and receives one aggregate result, while a typed merge-lane `Downgrader` consumes that result to force HUMAN without granting AUTO; both pass end to end and leave protected behavior unchanged.",
+  "intent": "FR-18, FR-21, FR-24..FR-27, FR-31, NFR-12, NR-5, NR-8, §6.2",
+  "fit_criterion": "both amendment refs, complete-demand and selected-harness carrier round-trip, and end-to-end HUMAN-forcing fixture",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:49faa9d9db5c6592b447e33e4d91e50e181be5c6e7e9fcc2f35f7ed086920e15",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.524Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

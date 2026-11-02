@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBWFY15JPC4ZQ0E58F1HT",
+  "kind": "Document",
+  "subject": "prd/impl-review",
+  "family": "amendment-001",
+  "statement": "Imported Pyxis source document: docs/prds/impl-review/001-nr4-corrective.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "aa6e509b05fd8802d44785d7f699249a9892498e01bc2eb59312e883d3660fce",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:30Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/001-nr4-corrective.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

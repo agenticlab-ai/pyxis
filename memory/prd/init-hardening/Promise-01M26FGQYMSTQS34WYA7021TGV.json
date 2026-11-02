@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYMSTQS34WYA7021TGV",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "EVT-1",
+  "statement": "init_checks_passed fires when every front-loaded check succeeded",
+  "intent": "checks: list, duration_ms: int",
+  "fit_criterion": "M2 (denominator)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b6713d6baf3e066b2e7fa8d5f601e5bc7415ac3028cd24a40649eca4d3ef21de",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.836Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

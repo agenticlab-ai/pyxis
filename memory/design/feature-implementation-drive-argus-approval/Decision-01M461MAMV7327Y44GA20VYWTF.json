@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MAMV7327Y44GA20VYWTF",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-argus-approval",
+  "family": "decision.3.1.1",
+  "statement": "`feature-drive/v1` is a closed, additive schema. Unknown fields, unknown enum values, a missing basis fingerprint, or an impossible state combination refuse before any effect. Its logical fields are:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346",
+    "source-design:5375b9f1395246115eedf1a9f66c6c21da895c5ac04f8a0505c80e204089b010",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DG5DQ4MZARWRT0KZP4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:43Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-argus-approval.md lines 76-76 in section 3.1; sha256:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346"
+  }
+}

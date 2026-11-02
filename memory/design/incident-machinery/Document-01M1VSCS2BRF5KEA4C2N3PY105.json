@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCS2BRF5KEA4C2N3PY105",
+  "kind": "Document",
+  "subject": "design/incident-machinery",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/incident-machinery.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "4278031c04df70f1e41423635d309ec7030a7703f3b056cf104f05a4e6a3bf8b",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:59Z",
+  "provenance": {
+    "source": "docs/tech-design/incident-machinery.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

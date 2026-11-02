@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJZP9DT4SJE8VKSFJWA",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-4",
+  "statement": "DOD-4 needs an AEC installed proof before final release publication, while the design said AEC must pin that final release before it exists.",
+  "intent": "GitHub code review on PR #1312, discussion 4125900303, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

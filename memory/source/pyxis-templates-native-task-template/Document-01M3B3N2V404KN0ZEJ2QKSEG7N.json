@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3B3N2V404KN0ZEJ2QKSEG7N",
+  "kind": "Document",
+  "subject": "source/pyxis-templates-native-task-template",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/templates/native-task-template.json",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:618e4205e84990597d4742420c06364680c0d387c2e9d872c5c109c4dafeb140"
+  ],
+  "body_sha256": "618e4205e84990597d4742420c06364680c0d387c2e9d872c5c109c4dafeb140",
+  "literal_body": true,
+  "issuer": "agent:native-routing",
+  "created_at": "2026-09-25T01:42:36Z",
+  "provenance": {
+    "source": ".pyxis/templates/native-task-template.json",
+    "note": "offline reconciliation"
+  }
+}

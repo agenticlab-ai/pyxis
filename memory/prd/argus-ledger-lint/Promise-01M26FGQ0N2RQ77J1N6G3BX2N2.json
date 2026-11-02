@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0N2RQ77J1N6G3BX2N2",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "FR-2",
+  "statement": "When a ledger-touching change adds only a new, higher-numbered `A-n`/`E-n` entry (a legal append) or leaves all merged entries intact, the history arm shall report no defect.",
+  "rationale": "the guard must be green on legal appends or it fights normal driving (D-5)",
+  "fit_criterion": "on the legal-append fixture, the history arm reports zero defects and the gate verdict is unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:190996103b2203a0a551457b31b98559bf01ee8a1472fb923b746dcb41c64b4c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.877Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBSJ751F06K1N5HP1CF",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-10",
+  "statement": "The reviewer shall cap review rounds at two per document per invocation moment; at the cap, the only recordable verdicts are approve, approve-with-advisories, or escalate.",
+  "rationale": "the fuel gauge (— #D-2; AP-16/AP-19) — every review's cost is a known constant",
+  "fit_criterion": "no fixture run records a third round; cap-hit fixtures end approve*/escalate (EVAL-5)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:48c5c65e59215ef610455022538d230d8c1dfa3b4e7113538c6b2713806a2a4e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.257Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXDP12ERVPVYPYQQXWP",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "EVT-4",
+  "statement": "overturn_recorded fires when a human overturns an Argus ruling",
+  "intent": "target ruling id, channel, missed-breaking?",
+  "fit_criterion": "M2, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aa97994e83d5f9da08b646a589b1f21ec85848868ac216455517568cee3d570a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.773Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

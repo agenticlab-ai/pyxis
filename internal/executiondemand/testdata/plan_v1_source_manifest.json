@@ -1,0 +1,62 @@
+{
+  "explicit_rung_1": {
+    "raw_task": "### T1 — Legacy task one\n\n| Field | Value |\n|---|---|\n| **Blocked by** | — |\n| **Size band** | 80–160 |\n| **Mechanical** | no |\n| **Routing** | rung=1 |\n| **Pattern** | — |\n| **Touches** | pkg/one |\n\n**Goal:** Do the first legacy thing.\n",
+    "expect_present": true,
+    "expect_value": 1,
+    "expect_class": "explicit_rung"
+  },
+  "explicit_rung_2": {
+    "raw_task": "### T2 — Legacy task two\n\n| Field | Value |\n|---|---|\n| **Blocked by** | T1 |\n| **Size band** | 120–200 |\n| **Mechanical** | no |\n| **Routing** | rung=2 |\n| **Pattern** | — |\n| **Touches** | pkg/two |\n\n**Goal:** Do the second legacy thing.\n",
+    "expect_present": true,
+    "expect_value": 2,
+    "expect_class": "explicit_rung"
+  },
+  "explicit_rung_3": {
+    "raw_task": "### T3 — Legacy task three\n\n| Field | Value |\n|---|---|\n| **Blocked by** | T2 |\n| **Size band** | 200–320 |\n| **Mechanical** | no |\n| **Routing** | rung=3 |\n| **Pattern** | — |\n| **Touches** | pkg/three |\n\n**Goal:** Do the third legacy thing.\n",
+    "expect_present": true,
+    "expect_value": 3,
+    "expect_class": "explicit_rung"
+  },
+  "rung_absent_dash": {
+    "raw_task": "### T4 — Legacy task with a declined routing proposal\n\n| Field | Value |\n|---|---|\n| **Blocked by** | — |\n| **Size band** | 40–80 |\n| **Mechanical** | yes |\n| **Routing** | — |\n| **Pattern** | — |\n| **Touches** | pkg/four |\n\n**Goal:** Do the fourth legacy thing.\n",
+    "expect_present": false,
+    "expect_value": 0,
+    "expect_class": "legacy_unassessed"
+  },
+  "rung_absent_empty_cell": {
+    "raw_task": "### T5 — Legacy task with an empty routing cell\n\n| Field | Value |\n|---|---|\n| **Blocked by** | — |\n| **Routing** |  |\n| **Touches** | pkg/five |\n",
+    "expect_present": false,
+    "expect_value": 0,
+    "expect_class": "legacy_unassessed"
+  },
+  "rung_absent_no_row": {
+    "raw_task": "### T6 — Ancient task predating the Routing field\n\nThis task was frozen before the plan grammar ever recorded a routing\nproposal at all, so its source carries no Routing row of any kind.\n",
+    "expect_present": false,
+    "expect_value": 0,
+    "expect_class": "legacy_unassessed"
+  },
+  "rung_zero": {
+    "raw_task": "### T7 — Legacy task with a literal zero rung\n\n| Field | Value |\n|---|---|\n| **Routing** | rung=0 |\n| **Touches** | pkg/seven |\n",
+    "expect_error": "unsupported_rung"
+  },
+  "rung_negative": {
+    "raw_task": "### T8 — Legacy task with a negative rung\n\n| Field | Value |\n|---|---|\n| **Routing** | rung=-1 |\n| **Touches** | pkg/eight |\n",
+    "expect_error": "unsupported_rung"
+  },
+  "rung_unknown_high": {
+    "raw_task": "### T9 — Legacy task with an out-of-range rung\n\n| Field | Value |\n|---|---|\n| **Routing** | rung=4 |\n| **Touches** | pkg/nine |\n",
+    "expect_error": "unsupported_rung"
+  },
+  "rung_malformed_text": {
+    "raw_task": "### T10 — Legacy task with a non-numeric rung\n\n| Field | Value |\n|---|---|\n| **Routing** | rung=abc |\n| **Touches** | pkg/ten |\n",
+    "expect_error": "malformed_rung"
+  },
+  "rung_malformed_float": {
+    "raw_task": "### T11 — Legacy task with a fractional rung\n\n| Field | Value |\n|---|---|\n| **Routing** | rung=1.5 |\n| **Touches** | pkg/eleven |\n",
+    "expect_error": "malformed_rung"
+  },
+  "rung_malformed_noprefix": {
+    "raw_task": "### T12 — Legacy task with a bare rung number\n\n| Field | Value |\n|---|---|\n| **Routing** | 3 |\n| **Touches** | pkg/twelve |\n",
+    "expect_error": "malformed_rung"
+  }
+}

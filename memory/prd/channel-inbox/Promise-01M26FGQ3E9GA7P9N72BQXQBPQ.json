@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3E9GA7P9N72BQXQBPQ",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "ABUSE-1",
+  "statement": "Attacker who controls or spoofs the channel wants to steer relaying agents — vector: inject instruction-shaped text as a bulletin",
+  "intent": "every fleet agent's context is poisoned",
+  "fit_criterion": "FR-8 (typed fields into pyxis-owned templates, never passthrough) + FR-9 (verify before read) + the drive anti-segment (§2.2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5725642c01bc9974e8cf09fc755238e226df8efec8ee7b34e055047dc948825",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.966Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

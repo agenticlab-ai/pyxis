@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBNQ3CDTGPX8VZ913Y3",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "M3",
+  "statement": "M3 *(018)*: G3",
+  "intent": "newly introduced projection/source-map mismatches accepted by the required gate",
+  "fit_criterion": "zero across the full defect matrix and the first 10 gated ledger entries; the independent corpus audit remains byte-equal to the reviewed activation golden after only exact-key deletions made by explicit debt-repair proposals",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e6ee785563fac2e53fc3985105912b206d5acde9820b206ac9ea2e81110c315",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.229Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

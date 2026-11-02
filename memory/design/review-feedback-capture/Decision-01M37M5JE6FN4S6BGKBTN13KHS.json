@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M5JE6FN4S6BGKBTN13KHS",
+  "kind": "Decision",
+  "subject": "design/review-feedback-capture",
+  "family": "decision.2.1",
+  "statement": "The review-feedback ledger is a **per-subject directory of append-only markdown entry files plus a docgate-folded machine projection** (`design-brainstorm:review-feedback-capture-tech-design#D-1`) — the PRD-ledger pattern, giving a human-readable/diff-reviewable face and a native machine face for FR-5. Entries are written **only by a coded writer**, fed through **one consumer-side `CaptureSource` port** with two adapters — conversation and code-host — so the writer core imports no adapter (`#D-3`, AP-1/AP-3/RW-3). The writer **tags each entry's typed disposition + stable outcome-ref at the observed resolving event** — never by inference (`#D-2`, AP-18/I3). Entries cite as `review-feedback:<subject-stem>#<entry-anchor>`, carry a **stable** outcome-ref (merged sha / PR / amendment id, never a working-branch sha) and **one-directional** cross-links to reviewer M2 / Argus `E-n` (NG-5); `Learned-from: review-thread` resolves to a `review-feedback:` anchor through the amendment model's **existing free ref slot** (no model change — `#D-4`/F-6), **enforced** by a registry-born docgate resolution check (`#D-4`, AP-10). FR-5's measures are **ledger-native** — disposition counts + applied/decline ratio over disposed entries + an `edit_distance` frozen at write (`#D-5`, AP-21). Captured comments are **verbatim, repo-internal, secret-gate-backstopped** (`#D-6`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3c1ce9768b3390a7a195957b37c4d655698251b179657e65cb3d37c1f5f2ea18",
+    "source-design:8dcda99796fbed70b00940593fab8dc6f303aac0f6b6f176aaeb2d40343f5e42",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPVFMGMPGT3WJSHPCZQA"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRXGXS67T5FMZF75MYH22"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:15Z",
+  "provenance": {
+    "source": "docs/tech-design/review-feedback-capture.md",
+    "note": "exact Decision evidence at docs/tech-design/review-feedback-capture.md lines 24-24 in section 2; sha256:3c1ce9768b3390a7a195957b37c4d655698251b179657e65cb3d37c1f5f2ea18"
+  }
+}

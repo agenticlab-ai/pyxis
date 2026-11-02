@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCPSE8DQV6D4QV1EK64F8",
+  "kind": "Document",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/e2e-verification-skills-v2.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "c0e92b035008945c7a680f55db892690be2f5f4a1e831350bb069e76a776ed35",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:57Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6WPS4VAA3CV17X1KGV",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-25",
+  "statement": "When targeting the local file medium, `plangate project` shall bind the unchanged plan through the WorkTracker local adapter with equivalent hierarchy, edges, signals, and charters.",
+  "rationale": "prove medium independence",
+  "fit_criterion": "local and GitHub bindings preserve equivalent structure and idempotency with unchanged planner/decomposition/schema code",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:181bc8f98f39c38d9332f46c211463089a7232fec8f593129637438c2f3a5e46",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.1Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

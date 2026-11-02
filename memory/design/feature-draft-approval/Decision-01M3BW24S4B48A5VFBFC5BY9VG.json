@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BW24S4B48A5VFBFC5BY9VG",
+  "kind": "Decision",
+  "subject": "design/feature-draft-approval",
+  "family": "exact-head-port",
+  "statement": "Read the operator approval through a port that requires the pull request current head and the approving review commit to equal the requested lock head; preserve the review body as the capture line and scope code ownership to contract and abandonment records.",
+  "intent": "Prevent an agent review or an older-head review from authorizing a draft lock while preserving the existing merge policy for proposals outside the owned paths.",
+  "rationale": "The GitHub adapter reads the pull head before and after paginated reviews; the shared selector accepts the operator latest submitted approval only. The local adapter reads the same review shape from closed fixtures. CODEOWNERS targets PRD records, design Documents, and abandonment Learnings.",
+  "fit_criterion": "Operator review of head H returns identity and capture line or lineless; stale, dismissed, agent, or moved-head reviews return no approval; local and GitHub adapters pass fixture tests; code-owner review settings are inspected on main after the operator applies them.",
+  "tags": [
+    "code:internal/draft/approval",
+    "code:internal/adapters/approval/github",
+    "code:internal/adapters/approval/local"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T08:49:09Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

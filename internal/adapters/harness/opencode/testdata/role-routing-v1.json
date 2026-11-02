@@ -1,0 +1,41 @@
+{
+  "schema_version": "opencode-role-routing-conformance/v1",
+  "adapter_generation": "opencode-native-routing/2",
+  "decode_pins": {
+    "native_effort": "none",
+    "output_format": "json",
+    "session": "fresh"
+  },
+  "cases": [
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-economy",
+      "provider_model": "anthropic/claude-haiku-4-5",
+      "provides": ["economy", "light", "standard", "ordinary"]
+    },
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-strong",
+      "provider_model": "anthropic/claude-sonnet-5",
+      "provides": ["strong", "deep", "extended", "elevated"]
+    },
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-frontier",
+      "provider_model": "anthropic/claude-opus-4-8",
+      "provides": ["frontier", "maximum", "extended", "critical"]
+    },
+    {
+      "role": "review",
+      "native_profile_id": "review-standard",
+      "provider_model": "anthropic/claude-sonnet-5",
+      "provides": ["standard", "standard", "large", "elevated"]
+    },
+    {
+      "role": "review",
+      "native_profile_id": "review-frontier",
+      "provider_model": "anthropic/claude-opus-4-8",
+      "provides": ["frontier", "maximum", "extended", "critical"]
+    }
+  ]
+}

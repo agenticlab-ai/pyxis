@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZK1GRHKHQFRWNJS4E2A53",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-4",
+  "statement": "lock_refused fires when readiness refuses a lock",
+  "intent": "feature: string, version_digest: string, unmet_conditions: list[string]",
+  "fit_criterion": "M2 analysis, NFR-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d1324f0465a63852149c4f3fbd4f26be8bca294bde70fe42596f88c7dc5aa4a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:06Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDXW6SZ5D1S0BEWRHNV",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "UB-2",
+  "statement": "If the feature's PRD or technical design is missing or unreadable, then the system shall refuse with a named defect — coverage cannot be derived without them",
+  "intent": "configuration-error naming the missing input",
+  "fit_criterion": "the missing-input fixtures each yield refusal with the input named",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e3c69ba5eecfbdc944219ce71ac025bdeee6b55edf74c478dae55b832beb913",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.301Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

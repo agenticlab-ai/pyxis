@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M38ZJHFB7DMKBEFWE5Q4VZSM",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-4",
+  "statement": "An end-to-end fixture feature goes from an opened draft through rounds, a refused lock, a ruled requirement change, a ready lock with human approval, a plan generated from the locked draft, projection, and executor pickup, reproduced from a fresh clone",
+  "intent": "FR-1 through FR-25, FR-37 through FR-47, NFR-3, NFR-4",
+  "fit_criterion": "real-repository end-to-end run and fresh-clone verification",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9a8760a735e683b7e89c20d78ea16550728f167da498326de1a4f18410c64794",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:49Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR13356TJN32P1AN26KF",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-9",
+  "statement": "When init completes, the git hooks shall be active without further manual steps and shall enforce the same checks as the source repo's hooks.",
+  "rationale": "today's manual hooksPath step disappears",
+  "fit_criterion": "a gate-violating commit is rejected locally in a fresh installed repo",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fe00b030f7717ad027a3490003d130c0c3998c691e072919491b217d73f96a20",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.915Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

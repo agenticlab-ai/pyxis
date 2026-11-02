@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390V44MXQGN8HPMY6ATXV1T",
+  "kind": "Decision",
+  "subject": "design/feature-draft-v1",
+  "family": "decision.3.12.1",
+  "statement": "After the release, the document gate refuses every new PRD ledger entry, technical design, brainstorm record, and review report in Pyxis's own repository, naming the feature draft as the path; plan documents are accepted, and no setting switches this (`design-brainstorm:feature-draft-tech-design#D-14`, `#D-15`; `prd:feature-draft/FR-27`, `UB-5`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f65288a739fc3ce9d86bc902b4f7eb36caf035a9b6d39a6c77f895a4c8b85771",
+    "source-design:6756001a6610759571f68c5a19dea52b32c9746d651b534fc23d6f993abd0a76",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PK87J0YRYSDH5T0KPWGW"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:59Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-v1.md lines 163-163 in section 3.12; sha256:f65288a739fc3ce9d86bc902b4f7eb36caf035a9b6d39a6c77f895a4c8b85771"
+  }
+}

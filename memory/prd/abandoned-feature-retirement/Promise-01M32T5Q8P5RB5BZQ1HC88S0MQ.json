@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5Q8P5RB5BZQ1HC88S0MQ",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NR-2",
+  "statement": "Frozen document mutability, typed PRD amendment, whole-design supersession, incident append-only behavior, and governing-document protections remain unchanged",
+  "rationale": "Retirement must use existing evolution rules and preserve history",
+  "fit_criterion": "Existing document gates remain green; protected-class mutation fixtures refuse before retirement evaluation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ff9662e1cbf025f667e1d8253e9ef4d754752a26f11441d7f6d575ab59bd33a9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:00Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

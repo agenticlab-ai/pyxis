@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSXN0DRDDQR7X53GH1J",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-42",
+  "statement": "If configured-review setup or an attempt cannot authenticate and verify its obligation, the executor shall append an escalated EVT-15 terminal with `failure_class=artifact_unverified` when the launched reviewer settles but no exact schema-valid artifact exists, `failure_class=artifact_untrusted` when a structurally eligible artifact fails broker-receipt, attempt-proof, or protected-state authentication, or `failure_class=infrastructure` for obligation-store, factory, auth, routing, launch, runtime, truncation, cancellation, attribution-service, broker-publication, or read-transport failure; it shall preserve every succeeded EVT-10, increment only the matching class plus `review_failed`, retain any created obligation in `review_pending`, and exit 1 rather than a backend-specific code. A factory/auth preflight failure for a frontier with no existing obligation shall emit one run-level EVT-15 with `obligation_status=not_created`, invent no pending work, spawn no implementation/reviewer, and fail no task; the same failure while selected persisted obligations already exist shall emit one infrastructure EVT-15 per selected obligation with `obligation_status=pending` and no invented attempt identity, retain them pending, and launch nothing.",
+  "rationale": "opposite evidence failures need different repair paths, while setup failure before obligation creation and setup failure during durable recovery must not be conflated",
+  "fit_criterion": "one fixture per failure family preserves EVT-10, emits typed escalated EVT-15, increments only infrastructure/unverified/untrusted plus `review_failed`, retains every created obligation, and exits 1; new-work preflight failure is run-level/not-created with zero task terminals/launches/pending; selected-pending preflight failure is obligation-scoped/pending with zero launch and exact pending count; same-author and different-author transport behave identically when proof matches; a verified attempt has no failure class",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5920c6a0bda351abb009544d6c8529a161790d54ce3670dc750fb42660b98b39",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.685Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

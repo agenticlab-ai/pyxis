@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A96V8GH36HRH6HX0BVCN",
+  "kind": "Decision",
+  "subject": "design/maintenance-jobs",
+  "family": "D-1",
+  "statement": "Implement maintenance in the existing Go module and installed core CLI, with thin commands and a closed, versioned repository-owned jobs file.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95903XQ24D4ZNVX6BR0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95AJBRBEV9188CMBQRP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95P6YDN9SPTGQSANJK3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95QQ60TMTSRNSWEZSBY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95SZQ3ZE8PZEY082K7D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95VD40X5A1436MESRNF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A9642V1BFS250PYA3D57"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A965Z03WWY1S9RSG8J6M"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

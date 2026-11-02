@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9DGXV77VNASGTADHMW",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "FR-3",
+  "statement": "When a design is approved, the system shall freeze only the durable Decision and shall not freeze the concrete solution-shape as a permanent record.",
+  "rationale": "freeze only what survives (AP-7); the shape is code-owned",
+  "fit_criterion": "post-approval the Decision is immutable and carries zero volatile shape detail; the shape is marked authoritative-not-frozen",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:004b6087ddf8483c1aafac31f76ad43d4b82c9baf7f8133a18b4a44790aa417d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.157Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGREBES9JT3ZB8PSHJE3V",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-6",
+  "statement": "The redaction/access posture is decided and applied (P-3)",
+  "intent": "NFR-4, ABUSE-2",
+  "fit_criterion": "tech-design Security section",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bcb7e2a23b690dbed7bc0935e997fd7c1aac4c1aa01ddbd573f0080a92e9ef14",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.339Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

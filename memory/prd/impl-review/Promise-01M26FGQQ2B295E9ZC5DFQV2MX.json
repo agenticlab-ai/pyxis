@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ2B295E9ZC5DFQV2MX",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NFR-12",
+  "statement": "The complete frozen semantic demand and its identity and derivation-policy version, actual band and join policy, selected harness and review role, effective mapping policy, qualifications, and override shall parse as closed versioned data; identical inputs shall produce one identical pass set and exact/promoted/unsupported resolution using zero inference and zero network I/O through the terminal result. Until the coordinated parent append-first policy is effective, the compatibility path shall retain the existing zero-network pre-invocation boundary. Once that parent policy is effective, impl-review shall durably append every pass-routing terminal to the configured canonical git evidence store and exact-read it successfully before the route may authorize a selected review model invocation or contribute to the process result. The append and exact-read are then the only network operations permitted in that admission interval: no policy lookup, qualification lookup, harness probe, model call, or other outbound operation may occur.",
+  "intent": "Determinism / integrity",
+  "fit_criterion": "every missing, changed, unknown, native-in-demand, selected-harness-mismatch, and version fixture fails before invocation; reordered candidate inputs resolve identically; dependency inspection proves zero inference/network through resolution and proves the pre-parent compatibility path remains zero-network; after parent activation, every healthy-store route trace contains a successful canonical append and exact-read before invocation or process use and no other network operation; a zero-evidence healthy path fails, while unavailable or unverifiable evidence produces zero review-model invocations, no asserted verified canonical terminal, and a non-accepting persistence failure under UB-10",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:19b3e3d5478a68a8cb7012b515a6ecb3d7d9ebac96b994252651e06c508867ac",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.594Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

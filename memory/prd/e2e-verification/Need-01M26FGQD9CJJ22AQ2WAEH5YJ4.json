@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQD9CJJ22AQ2WAEH5YJ4",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "G1",
+  "statement": "We believe auto-authoring a feature's e2e tests as a *reviewed, planned* artifact (coverage map + scenarios + routes + the harness that runs them, reviewed, then decomposed); expected result: covering, honest, buildable e2e plans the operator accepts — with the engineer only defining and accepting",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0d8aa806e871fca9cf09d59d791e8c74290708a69746967fd1c84f80c82c0c23",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.281Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

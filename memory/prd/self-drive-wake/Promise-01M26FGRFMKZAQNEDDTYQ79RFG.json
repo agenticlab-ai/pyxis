@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFMKZAQNEDDTYQ79RFG",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-1",
+  "statement": "wake_check_ran fires when each cadence check completes",
+  "intent": "medium: str, batch_size: int, cost_points: int, duration_ms: int, unknowns: int",
+  "fit_criterion": "M3, NFR-1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ee4b5dd8eaf2b51d6d10afb96866e0b13685ab76db0c047b84cc6ffc8c0259e4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.38Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNBYCG0RA8RFSXCRT8P",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "ABUSE-3",
+  "statement": "a hostile web page in the local browser probing the loopback server — vector: cross-origin requests / DNS rebinding from an arbitrary web origin",
+  "intent": "corpus content read by a remote origin",
+  "fit_criterion": "NFR-2's session secret and Host validation; FR-8's ephemeral lifetime shrinks the window",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab77b2c96f86d6b18bd8276a9f18f971e478169182ddb588f76b2dbff789cffc",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.563Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

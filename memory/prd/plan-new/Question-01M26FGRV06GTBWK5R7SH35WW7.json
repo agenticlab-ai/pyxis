@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRV06GTBWK5R7SH35WW7",
+  "kind": "Question",
+  "subject": "prd/plan-new",
+  "family": "Q1",
+  "statement": "Where the frozen plan artifact lives (repo path, per-feature dir, or tracker-attached) and its lifecycle relative to the doc system's gates",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Contract-first",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:9e9a8fd7787e489b13dfdfc56995a5639f51798d1fdd950a882b43ba0fdae58b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.744Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

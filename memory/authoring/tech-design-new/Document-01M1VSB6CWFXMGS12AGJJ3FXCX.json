@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB6CWFXMGS12AGJJ3FXCX",
+  "kind": "Document",
+  "subject": "authoring/tech-design-new",
+  "family": "guide",
+  "statement": "Imported Pyxis source document: .pyxis/authoring/tech-design-new.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/authoring",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "58d1e817c31055ff13200c2f7f40e65598277c6c6505fde6bee05f67b9e3f71a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:08Z",
+  "provenance": {
+    "source": ".pyxis/authoring/tech-design-new.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

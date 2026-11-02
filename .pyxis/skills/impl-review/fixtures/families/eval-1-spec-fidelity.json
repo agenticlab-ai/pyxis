@@ -1,0 +1,24 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-1",
+  "kind": "seeded-catch",
+  "lens": "spec-fidelity",
+  "title": "seeded spec-infidelity caught (a charter AC unimplemented or contradicted)",
+  "threshold": "caught on every run; zero blocking-class misses",
+  "negative_example": "a diff implementing a plausible-but-different behavior than the AC — the code looks reasonable and its own tests pass, but it does something OTHER than the acceptance criterion states.",
+  "legs": [
+    {
+      "band": "standard",
+      "must_catch": true,
+      "charter": "AC-1 (Must): On a write failure, the persist path retries with bounded backoff up to 3 attempts, then records a review-absence and returns ErrPersist. It MUST NOT swallow the error or return success on a failed write.",
+      "diff": "--- a/internal/store/persist.go\n+++ b/internal/store/persist.go\n@@\n func (s *Store) Persist(p Payload) (Ref, error) {\n-\tref, err := s.write(p)\n-\tif err != nil {\n-\t\treturn Ref{}, fmt.Errorf(\"persist: %w\", err)\n-\t}\n-\treturn ref, nil\n+\t// On a write failure, log and return an empty ref as success so the\n+\t// caller keeps going. (Intended: retry 3x then record absence.)\n+\tref, err := s.write(p)\n+\tif err != nil {\n+\t\ts.log.Warn(\"write failed; continuing\", \"err\", err)\n+\t\treturn Ref{}, nil\n+\t}\n+\treturn ref, nil\n }",
+      "expected_catch": {
+        "defect_class": "charter-ac-contradicted",
+        "rule_id": "spec-fidelity/charter-ac-contradicted",
+        "cal_row": "CAL-1",
+        "severity": "blocking",
+        "message": "AC-1 requires a bounded retry then a recorded review-absence and an ErrPersist return on write failure; the diff instead swallows the error and returns a nil error (success) on a failed write — the required behavior is inverted."
+      }
+    }
+  ]
+}

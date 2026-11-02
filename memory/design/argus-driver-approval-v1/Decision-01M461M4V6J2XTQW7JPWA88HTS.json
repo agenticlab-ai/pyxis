@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M4V6J2XTQW7JPWA88HTS",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-5-select-the-latest-authorized-decision.1",
+  "statement": "Human approvals keep their existing latest-submitted-review\nselection. Driver selection accepts only the configured authenticated account,\ncurrent head, policy commit, and requested contract digest. A later dismissed\nor changes-requested driver review revokes approval; ordinary discussion\ncomments and pending reviews do not replace it. Malformed typed decisions fail\nclosed. An outstanding operator changes request also prevents driver selection.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7d7d135c3f03b96c6af55dad53c6a02ea30de1580d796b9317822cb730432c17",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:37Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 143-148 in section 3-d-5-select-the-latest-authorized-decision; sha256:7d7d135c3f03b96c6af55dad53c6a02ea30de1580d796b9317822cb730432c17"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRV9D5M194W0NG4JTRN7",
+  "kind": "Question",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "Q2",
+  "statement": "What policy schema, qualification-evidence format, and precedence implement shipped defaults plus closed repository overrides? (`brainstorm:planner-driven-model-routing#P-2`)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; FR-11/FR-12 and EVAL-2 fix the product bar",
+  "fit_criterion": "Phase B design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:e498c54487b2a6d6d41271f1b9229f771281a6eff509dd884c1fe4e9e199d493",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.753Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

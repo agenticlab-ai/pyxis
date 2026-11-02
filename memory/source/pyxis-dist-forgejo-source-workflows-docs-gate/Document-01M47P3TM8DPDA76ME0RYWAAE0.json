@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P3TM8DPDA76ME0RYWAAE0",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-docs-gate",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/docs-gate.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:184b1468a53f9bb1a7b9cddf009319d1574f9b0885bd5b8073579d52ec53b753"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3AADPGRHC93HJHNKJ42NEWW"
+    }
+  ],
+  "body_sha256": "184b1468a53f9bb1a7b9cddf009319d1574f9b0885bd5b8073579d52ec53b753",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:03:57Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/docs-gate.yml",
+    "note": "offline reconciliation"
+  }
+}

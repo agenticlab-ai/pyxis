@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQTY45ZJS33JBKH0XGN",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-23",
+  "statement": "If the host or persistence adapter dies before publication, after the remote write but before receipt persistence/return, or after receipt persistence but before caller acknowledgement, then the system shall recover from durable host-side handoff, idempotency, and receipt state outside every child write surface; resume under UB-21 without re-running implementation, and converge to the same exact-readable artifact and receipt or one named non-accepting failed terminal",
+  "intent": "one recovered publication attempt, never a duplicate artifact or lost successful write",
+  "fit_criterion": "kill/restart fixtures at every named boundary plus a concurrent retry produce exactly one artifact and the same receipt/verified EVT-13, or one failed EVT-13 after the policy bound; protected-state mutation and replay attempts fail",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:138547b2594f181e1357d63e7119d0676e55d5456645038c02948074b0e224fe",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.618Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

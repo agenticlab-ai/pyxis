@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ12VAB4QZTRFC75QE5M",
+  "kind": "Need",
+  "subject": "prd/argus-ledger-lint",
+  "family": "M1",
+  "statement": "M1 (primary): G1, G2",
+  "intent": "per-DINV defect fixtures caught at exactly their arm; legal appends and non-ledger trees left untouched",
+  "fit_criterion": "both classes caught: every per-DINV defect fixture red at exactly its arm, zero legal-append false-reds, non-ledger-tree gate verdict byte-identical before and after",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5278b6a18a0a4b182823cec4ad7abb4f5fddf0cb3a151ba38cff3fe18ee457ba",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.89Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M4MM8XH2YBXTX1R84W6WE8X9",
+  "kind": "Document",
+  "subject": "prd/prototype",
+  "family": "prd",
+  "statement": "Draft prd.md",
+  "body_sha256": "7a3c897049fa2c915086ee7701714b016db2ef32a183940400317affe0675d7b",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

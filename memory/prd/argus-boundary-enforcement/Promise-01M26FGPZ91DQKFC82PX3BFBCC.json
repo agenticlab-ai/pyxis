@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZ91DQKFC82PX3BFBCC",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "EVT-2",
+  "statement": "legitimate_change_passed fires when a legitimate fixture (legal contract change / human-authored protected-path PR / non-authority tree) passes untouched",
+  "intent": "corpus_case: string, layer: enum, false_refusal: bool(false expected)",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4a10b105a6ab1164ed39d34089cbb978fe627e640c6cbd4a6873c28b47614f2b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.833Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M8G2B4HJQX0YR43ZFBSRX",
+  "kind": "Decision",
+  "subject": "design/prd-review-artifacts",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:prd-review/FR-11 · prd:prd-review/FR-14 · prd:prd-review/FR-5 · prd:prd-review/FR-6 · prd:prd-review/FR-7.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:888a446fda990afa5ac09cac1250f780e2204032a0d6146d2c459553f1506625",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRXHXHQTGSAD75Q7C8NQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRBTTBWESD8JC0H9W1MM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRBX5QJF8WBJEQD63KP0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRC4P6AK4QSYF1FD4G2Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRC5N7G4XWDV1NSG0E32"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRC60BJY59YGTGT5YB3C"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRRRQ06M34PKMNDS036PS"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:51Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-review-artifacts.md",
+    "note": "projected from exact design header 888a446fda990afa5ac09cac1250f780e2204032a0d6146d2c459553f1506625"
+  }
+}

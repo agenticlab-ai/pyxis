@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR3TXSZDNV2V2BCYWKX7",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-sweep",
+  "family": "DOD-7",
+  "statement": "The replay bar: the two historical rot instances and the constructed staleness fixture detected on their pinned fixtures (M1 = 3/3)",
+  "intent": "§3.2 M1; FR-2, FR-4, FR-9",
+  "fit_criterion": "the replay-fixture suite run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:19f378ca880dc1db98cab1cf661d58ba80f966423539349691d9568ac193fcca",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.002Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

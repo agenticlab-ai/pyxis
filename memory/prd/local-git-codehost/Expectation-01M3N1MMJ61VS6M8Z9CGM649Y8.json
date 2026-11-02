@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ61VS6M8Z9CGM649Y8",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-3",
+  "statement": "Existing hosted routes and pinned execution pass.",
+  "intent": "NR-1, NR-2",
+  "fit_criterion": "Regression suite",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

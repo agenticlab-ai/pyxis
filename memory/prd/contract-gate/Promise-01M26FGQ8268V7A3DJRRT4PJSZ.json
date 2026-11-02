@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8268V7A3DJRRT4PJSZ",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-7",
+  "statement": "When an invocation completes, the gate shall return one structured verdict (closed schema) classifying the contract as `clean` or one of `incomplete`/`malformed`/`stale`/`unresolved`/`error`/`configuration-error`, recording the identity of what it evaluated — each input's content fingerprint and the gate version — and shall represent a pass as **\"mechanically clean,\" never \"executable.\"**",
+  "rationale": "the verdict is the trust artifact; it must name what it certifies and must not over-claim past the mechanical scope (`#D-7`; AP-13)",
+  "fit_criterion": "every fixture run's verdict validates against the schema, enumerates each check's result, and records the input fingerprints; no verdict labels a mechanically-clean pass as a full stage-6 pass; the semantic-verdict fields exist in the schema and are marked not-evaluated in v1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0634aa162d6c2a14c304013806714674b6ac5aabfe24fd709ce447eaedde6d71",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.114Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

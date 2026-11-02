@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQT3EBN713QFACGXRDF1",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-48",
+  "statement": "When the parent routing contract's complete pre-release gate is green, `/implement-now` shall activate the validated execution-demand resolver for every supported production implementation path in one switch with no shadow or canary cohort, and shall retire the hardcoded rung/model/effort path only after the direct-cutover and strongest-profile fallback rehearsals pass.",
+  "rationale": "mixed routing semantics would make production outcomes incomparable and preserve the hardcoded pin indefinitely",
+  "fit_criterion": "one production configuration covers the complete supported harness/profile implementation domain; inspection finds no cohort logic or reachable hardcoded selection path after activation; cutover and fallback drills pass",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d954760d4488e071c30912b672200e6193fa4dde82d6a35da53199a1832b3651",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.691Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

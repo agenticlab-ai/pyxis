@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQF3E3Q1P6NSKGQKBMET",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-1",
+  "statement": "When the adopt verb is run in plan mode against a non-empty repository, the system shall inspect the tree and produce a durable adoption plan without modifying any tracked file.",
+  "rationale": "the negotiation begins by reading, not writing (D-1, D-6)",
+  "fit_criterion": "on the fixture repo, plan mode writes only the plan artifact; every other tracked path is byte-identical before and after",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3a644cf67721cc0ae85228f2868896b8b6d98be41309e5d9dfd0c31571314acd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.339Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

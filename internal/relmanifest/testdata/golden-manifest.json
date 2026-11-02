@@ -1,0 +1,56 @@
+{
+  "schema_version": "release-manifest/v2",
+  "system_version": "v1.2.3",
+  "source_commit": "0123456789abcdef0123456789abcdef01234567",
+  "binaries": {
+    "docgate": {
+      "darwin-arm64": "1111111111111111111111111111111111111111111111111111111111111111",
+      "linux-amd64": "2222222222222222222222222222222222222222222222222222222222222222"
+    },
+    "pyxis": {
+      "darwin-arm64": "3333333333333333333333333333333333333333333333333333333333333333",
+      "linux-amd64": "4444444444444444444444444444444444444444444444444444444444444444"
+    }
+  },
+  "payload": {
+    "archive_sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+    "files": [
+      {
+        "path": ".github/workflows/docs-gate.yml",
+        "sha256": "5881565c5aade7d2ddae446643d920be58f653a99632aac6a4701ddcd8215773",
+        "class": "engine-verbatim"
+      },
+      {
+        "path": ".pyxis/config.yaml",
+        "sha256": null,
+        "class": "repo-owned"
+      },
+      {
+        "path": ".pyxis/stamp/origin.yaml",
+        "sha256": null,
+        "class": "repo-owned"
+      },
+      {
+        "path": ".pyxis/templates/prd-template.md",
+        "sha256": "5a4288c9d4a393c15870591c8e81d50878e9a2f4958d90a2e06f192fd3381c29",
+        "class": "engine-verbatim"
+      },
+      {
+        "path": ".pyxis/vendor/mermaid/mermaid.min.js",
+        "sha256": "1fb163356a264edcf4861deab09475caf8ec26bcef0b09a15411597cc9808be2",
+        "class": "engine-verbatim"
+      },
+      {
+        "path": "docs/tech-design/index.json",
+        "sha256": null,
+        "class": "generated"
+      },
+      {
+        "path": "docs/tech-design/index.md",
+        "sha256": null,
+        "class": "generated"
+      }
+    ]
+  },
+  "deps_bundle_sha256": "6666666666666666666666666666666666666666666666666666666666666666"
+}

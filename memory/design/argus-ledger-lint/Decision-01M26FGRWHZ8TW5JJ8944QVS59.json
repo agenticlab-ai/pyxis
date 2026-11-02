@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWHZ8TW5JJ8944QVS59",
+  "kind": "Decision",
+  "subject": "design/argus-ledger-lint",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: design:argus-artifacts#DINV-1 · design:argus-artifacts#DINV-2 · design:argus-artifacts#DINV-6 · prd:argus-ledger-lint/FR-1 · prd:argus-ledger-lint/FR-2 · prd:argus-ledger-lint/FR-3 · prd:argus-ledger-lint/FR-4 · prd:argus-ledger-lint/FR-5 · prd:argus-ledger-lint/FR-6 · prd:argus-ledger-lint/FR-7 · prd:argus-ledger-lint/FR-8 · prd:argus-ledger-lint/FR-9 · prd:argus-ledger-lint/NFR-1 · prd:argus-ledger-lint/NFR-2 · prd:argus-ledger-lint/NR-1 · prd:argus-ledger-lint/NR-2 · prd:argus-ledger-lint/NR-3 · prd:argus-ledger-lint/UB-1 · prd:argus-ledger-lint/UB-2 · prd:argus-ledger-lint/UB-3.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:b891b13b932a14dcff38502e08c52cc2f79ab2f9aad8edaa9fab17d516f8fb9a",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMAS03B3EJB3T87JV576"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0MKXAH7MV703N2X5NT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0N2RQ77J1N6G3BX2N2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0PRPWVHA8M7FH9C5TG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0QQRDKV9EM207YYBTS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0RS75JX48DY55TWV5R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0SD690WTWCTBNZ0NF7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0TQX4TEHFMZ1D797H5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0VSWPPWQSWTA8B6VK2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0WYF7W83MWXFEYM6N6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ13Q3GF507H2PBBERK3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1408BD9W7QZFK3BGXF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ15QFYVVDQ59ZPEJ6AT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ16MWRWPBCGRV64VNVD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ173PQ7NT8BQ0A31K7S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ184EXPJSM25B5KPSCW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1932TKZ0XR0ZBJ69QZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1A610SXEDV69K1NGJA"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.793Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-ledger-lint.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header b891b13b932a14dcff38502e08c52cc2f79ab2f9aad8edaa9fab17d516f8fb9a"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKAD4B7FT687BWDBN0FHV",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-10",
+  "statement": "The system shall accept a product-side ruling from the human operator, and from Argus only where Argus's authority contract grants that act.",
+  "rationale": "New intent stays the product side's call; Argus acts only under grant (brainstorm:feature-draft#D-4, brainstorm:feature-draft#D-9)",
+  "fit_criterion": "Operator rulings are accepted; an Argus ruling is accepted under a granting authority contract and refused without one; any other agent's ruling is refused.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0ef9eb331144fba2e807ebd16c9b8f9b4320afdf5b98812b85fb2516dbab4493",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:15Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

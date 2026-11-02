@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V16NA4C6J89SPC5EJP0V30",
+  "kind": "Need",
+  "subject": "prd/parallel-memory",
+  "family": "M3",
+  "statement": "M3: G2",
+  "intent": "Invalid transition accepted in the regression matrix",
+  "fit_criterion": "Zero accepted invalid transitions at each rollout checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:66649f3d82f403ef9f48d553fb8ab12334d4b4c6e12a44cb2d132caf8b758c74",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

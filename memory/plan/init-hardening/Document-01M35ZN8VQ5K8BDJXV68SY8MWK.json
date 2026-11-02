@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZN8VQ5K8BDJXV68SY8MWK",
+  "kind": "Document",
+  "subject": "plan/init-hardening",
+  "family": "plan-001",
+  "statement": "Captured authored source: docs/plans/init-hardening/001-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/plans",
+    "reconcile:source",
+    "sha256:a1550dc43923a5f6e088ec46c8a186d40929a559b7e6b410f1945801b005faf2"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBNEJD8R8F4GQ537E1WXK"
+    }
+  ],
+  "body_sha256": "a1550dc43923a5f6e088ec46c8a186d40929a559b7e6b410f1945801b005faf2",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:35Z",
+  "provenance": {
+    "source": "docs/plans/init-hardening/001-plan.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2V16MTJ5YBVG8EA05ZPT5S1",
+  "kind": "Expectation",
+  "subject": "prd/parallel-memory",
+  "family": "DOD-1",
+  "statement": "Independent policy maintenance and record preservation satisfy their fit criteria together",
+  "intent": "FR-1, FR-2, FR-6, M1, M2",
+  "fit_criterion": "Real-Git branch-pair results, changed-path manifests, before/after record digests, fresh transport-clone results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b02db2c8cf7d2ad21d7de3fcf6fd411a7bf91ac05bfd92175e122246e78d0259",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:54Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

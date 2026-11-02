@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHXM99W52S75YRC5M9B",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "ABUSE-5",
+  "statement": "Machine submits a human-route attestation — vector: forges or omits acting identity",
+  "intent": "manual requirement falsely passes",
+  "fit_criterion": "FR-18, NFR-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:39343230d5cef7d421c8c7f818257b89085d3a5bce903473d9693a403c2a632b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.429Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M0Z4B7KW2G1KVQRZ44P0P",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "decision.2.1",
+  "statement": "The e2e design doc remains a **lightweight authored document class** with its own per-feature home, frozen at operator approval, off the generated design index — and its version bumps to **`e2e-design/v2`**, whose harness section is a **closed slot form**: one slot per mechanical element the basis enumerates plus one conditional decision-authority stand-in slot, or, where a fitting harness already exists, an alternate form citing it and listing only this feature's delta. Each scenario additionally carries its run facts and its build facts in **two scenario-keyed tables** cross-checked to the same scenario set, one of which names the single artifact that scenario exclusively owns. **Presence is mechanical and substance is judgment**: a checker rejects an empty, placeholder, or bare-library-name slot and a table set that disagrees, while the review's buildability lens judges whether what is written could actually be built from (`design-brainstorm:e2e-verification-tech-design-2#D-3`, `#D-5`, `#D-6`, `#D-7`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b4e6d3ce883e5601aa828a21dea09f7d7f47d1073d3f8e863a975141c6dd1e6c",
+    "source-design:43e2ab94e5e0be7a64141885d2fe583c7ca1bfb9079b8afc66be84d8856cb948",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPPXEFRBHZCE0R1P95RB"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQXR7H76CEY5F92599QMX"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:45Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-artifacts-v2.md lines 48-48 in section 2; sha256:b4e6d3ce883e5601aa828a21dea09f7d7f47d1073d3f8e863a975141c6dd1e6c"
+  }
+}

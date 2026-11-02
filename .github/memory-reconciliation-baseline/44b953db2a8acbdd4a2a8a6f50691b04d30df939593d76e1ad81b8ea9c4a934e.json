@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/read-to-rule#R1",
+  "feature": "read-to-rule",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

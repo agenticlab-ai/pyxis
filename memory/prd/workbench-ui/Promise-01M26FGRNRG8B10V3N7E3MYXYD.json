@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNRG8B10V3N7E3MYXYD",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-8",
+  "statement": "When the operator ends the session, the reading room shall terminate its server process, leaving no background process or daemon.",
+  "rationale": "idle costs nothing; no watch modes",
+  "fit_criterion": "process audit after session end: the server and children are gone; a repeated launch/end cycle accumulates nothing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eb8807b45518c587264b64f6ec1966c7e4bc44f89aa64a6e3c69b572e438f482",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.576Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

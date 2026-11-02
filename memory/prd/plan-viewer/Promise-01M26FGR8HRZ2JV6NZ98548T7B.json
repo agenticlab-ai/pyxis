@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8HRZ2JV6NZ98548T7B",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "NR-1",
+  "statement": "Plan grammar, fold, verify, and projection behavior are byte-identical with the viewer present",
+  "rationale": "the viewer is read-side only; the write side is frozen contract",
+  "fit_criterion": "the existing plan tooling suites pass unchanged; fold output on the fixture corpus is byte-identical before and after",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:240ab43f2b03c25680984a24c18952bf049a8101bd0fe7c18f332d61e9149659",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.153Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

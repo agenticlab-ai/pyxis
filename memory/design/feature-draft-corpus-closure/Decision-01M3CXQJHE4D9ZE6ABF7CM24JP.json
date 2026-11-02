@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CXQJHE4D9ZE6ABF7CM24JP",
+  "kind": "Decision",
+  "subject": "design/feature-draft-corpus-closure",
+  "family": "merge-base-gate",
+  "statement": "In the Pyxis repository, reject added PRD ledger entries, technical designs, brainstorm records, and review reports from a merge-base diff; keep plan additions and edits to existing contract documents under their existing checks.",
+  "intent": "Route new feature contracts through the approved feature draft and lock process.",
+  "rationale": "The trusted base module identifies Pyxis without a mutable setting; disabling rename detection makes a renamed document visible as an addition. Other repositories using docgate retain their document pipeline.",
+  "fit_criterion": "Fixture tests refuse each new contract class and a rename, accept a plan and a non-Pyxis repository, and retain immutability refusals for edits.",
+  "tags": [
+    "code:internal/docgate/gate"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T18:37:35Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md"
+  }
+}

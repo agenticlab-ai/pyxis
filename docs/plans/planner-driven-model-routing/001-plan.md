@@ -1,0 +1,199 @@
+# Planner-driven model routing — plan 001
+
+| Field | Value |
+|---|---|
+| **Feature** | planner-driven-model-routing |
+| **PRD** | docs/prds/planner-driven-model-routing |
+| **Design** | docs/tech-design/execution-demand-contract-v1.md |
+| **Plan version** | 001 |
+| **Dialect** | harbormaster/fs-spec:v1 |
+| **Epic title** | Establish the portable execution-demand contract |
+| **Status** | Draft — freezes at merge |
+| **Template version** | plan-template/v1 |
+
+## Tasks
+
+### T1 — Derive semantic demand from closed assessments
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 240–300 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | rung=3 |
+| **Pattern** | — |
+| **Touches** | internal/executiondemand assessment, internal/executiondemand policy, internal/executiondemand evaluator, execution-demand policy fixtures |
+
+**Goal:** One pure authority turns a complete cited task assessment into the minimum vendor-neutral execution profile and refuses every incomplete, unknown, lowered, or irreproducible input.
+
+**Current behavior:** Tasks expose at most an optional integer rung, while runtime-specific tier maps clamp that value independently; no closed six-axis assessment or shared derivation policy exists.
+
+**Desired behavior:** A closed evaluator validates all assessment values and citations, applies componentwise floors and named promotions under content-bound policy identity, permits only a cited monotone assurance raise, and reproduces the same four minima regardless of input ordering.
+
+**Scope:**
+- Define the six assessment axes, four ordered semantic minima, cited assurance raise, policy identity, floors, and named promotions as closed versioned data.
+- Implement pure max-of-floors evaluation, promotion, profile verification, and typed diagnostics without inference, network access, harness data, or native product values.
+- Prove every accepted value, consequence floor, promotion, raise, unknown field, missing citation, attempted reduction, and reordered input through exhaustive and property-oriented tests.
+
+**Out of scope:**
+- Plan authoring and freeze integration, native profile selection, tracker transport, and runtime invocation; later plans bind this shared evaluator at those seams.
+
+**Acceptance criteria:**
+- [ ] Every closed assessment combination yields only accepted profile values and records the exact applied floors, promotions, policy version, and digest.
+- [ ] Missing or unknown axes, unknown policy data, unresolved citations, hand-supplied profile mismatches, and assurance reductions fail with the offending field and zero partial result.
+- [ ] Reordered fields, citations, floors, and promotions produce byte-identical profiles, while each applicable floor remains monotone and cannot be averaged down.
+- [ ] Dependency and schema inspection finds no model invocation, network operation, harness, provider, native model, native effort, or scalar aggregate in evaluation.
+
+**Key interfaces:**
+- `Assessment`, `Profile`, `AssuranceRaise`, `DerivationPolicy`, `AppliedRule`
+- `Evaluate(Assessment, EvidenceSet, AssuranceRaise, DerivationPolicy)`
+- `VerifyProfile(Assessment, EvidenceSet, AssuranceRaise, DerivationPolicy, Profile)`
+- `execution-demand-policy/v1`
+
+**Traces:** prd:planner-driven-model-routing/FR-3 · prd:planner-driven-model-routing/FR-4 · prd:planner-driven-model-routing/FR-5 · prd:planner-driven-model-routing/FR-6 · prd:planner-driven-model-routing/FR-22 · prd:planner-driven-model-routing/FR-23 · prd:planner-driven-model-routing/UB-11 · prd:planner-driven-model-routing/UB-2 · prd:planner-driven-model-routing/ABUSE-2 · prd:planner-driven-model-routing/NFR-2 · prd:planner-driven-model-routing/EVAL-1 · design:execution-demand-contract-v1#3.1 · design:execution-demand-contract-v1#3.2 · design:execution-demand-contract-v1#DINV-1 · design:execution-demand-contract-v1#DINV-2 · design:execution-demand-contract-v1#DINV-3 · design:execution-demand-contract-v1#DINV-4
+
+### T2 — Canonicalize and identify execution demand
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T1 |
+| **Size band** | 170–240 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | rung=3 |
+| **Pattern** | — |
+| **Touches** | internal/executiondemand origin schema, internal/executiondemand canonical codec, internal/executiondemand identity, execution-demand codec fixtures |
+
+**Goal:** Every execution-demand origin has one closed canonical representation and one stable identity that changes exactly when identity-bearing task, source, policy, compatibility, or profile data changes.
+
+**Current behavior:** The optional rung has no portable origin envelope, canonical codec, source-bound identity, or way to distinguish retries of the same demand from semantically different work.
+
+**Desired behavior:** A tagged plan-v2 or compatibility origin encodes canonically, rejects non-canonical and extra data, and derives a domain-separated demand identity from exact source and policy inputs while excluding runtime attempts and tracker presentation.
+
+**Scope:**
+- Define the closed tagged origin union and canonical length-delimited encoding over repository, frozen plan, task, source, semantic, and policy or compatibility identity.
+- Implement deterministic canonical encode, strict decode, digest verification, and domain-separated demand-ID derivation.
+- Prove stable identity across retries and roles, mutation sensitivity for every identity-bearing field, and exclusion of timestamps, attempts, tracker text, and current aliases.
+
+**Out of scope:**
+- Legacy rung interpretation, tracker marker rendering, event retention, and native routing decisions.
+
+**Acceptance criteria:**
+- [ ] Every accepted plan-v2 origin round-trips byte-identically through one codec, while unknown keys, duplicate fields, unknown tags or versions, and non-canonical encodings fail closed.
+- [ ] Identical canonical source and policy bytes reproduce one lowercase demand ID across retries and roles.
+- [ ] Mutating any repository, plan, task, source-digest, assessment, citation, applied-rule, raise, policy, compatibility, or final-profile input changes the demand ID.
+- [ ] Tracker text, proposal text, timestamps, runtime attempts, current aliases, harnesses, and native launch settings cannot enter the origin or identity.
+
+**Key interfaces:**
+- `Origin`, `PlanV2Origin`, `PlanV1CompatOrigin`, `DemandID`
+- `EncodeCanonical(Origin)`, `DecodeCanonical(bytes)`, `Identify(Origin)`
+- `execution-demand/v2`, `execution-demand-id/v1`
+
+**Traces:** prd:planner-driven-model-routing/FR-7 · prd:planner-driven-model-routing/FR-24 · prd:planner-driven-model-routing/ABUSE-3 · prd:planner-driven-model-routing/NFR-2 · design:execution-demand-contract-v1#3.1 · design:execution-demand-contract-v1#3.3 · design:execution-demand-contract-v1#DINV-4 · design:execution-demand-contract-v1#DINV-5
+
+### T3 — Translate frozen plan-v1 demand without mutation
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2 |
+| **Size band** | 150–220 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | rung=3 |
+| **Pattern** | — |
+| **Touches** | internal/executiondemand compatibility translator, plan-v1 raw routing parser, compatibility table fixtures, frozen-plan byte-identity fixtures |
+
+**Goal:** Every frozen plan-v1 task yields the permanent conservative compatibility origin its raw rung actually warrants, with no source rewrite or charter re-assessment.
+
+**Current behavior:** Legacy task decoding collapses a missing rung into integer zero and runtimes clamp integers through their own maps, so absence, invalid input, and historical intent are not preserved as one auditable translation.
+
+**Desired behavior:** A raw presence-aware reader maps explicit rungs one through three and true absence through the immutable compatibility table, records the original tagged value and table identity, and refuses zero, unknown values, or unavailable versions before a consumer can work.
+
+**Scope:**
+- Parse rung presence separately from value and implement the permanent compatibility table and its content identity.
+- Produce a canonical compatibility origin and demand ID without fabricating assessment axes, citations, or post-freeze judgment.
+- Prove repeated translation and all failure cases against an exact source-byte manifest.
+
+**Out of scope:**
+- Rewriting or enriching plan-v1 artifacts, inferring demand from charter prose, and launching or claiming translated work.
+
+**Acceptance criteria:**
+- [ ] Explicit rungs one, two, and three and true absence yield exactly the four profiles and translation classes fixed by the compatibility table.
+- [ ] Explicit zero, negative, unknown, malformed, and unavailable-version fixtures return typed compatibility failures and no origin.
+- [ ] Repeated translation yields the same canonical origin and demand ID while every frozen source remains byte-identical.
+- [ ] Compatibility origins contain raw presence/value and table identity but no fabricated plan-v2 assessment or evidence fields.
+
+**Key interfaces:**
+- `RawLegacyRouting`, `CompatibilityTable`, `TranslationClass`
+- `TranslatePlanV1(FrozenTaskSource, CompatibilityTable)`
+- `plan-v1-rung/v1`, `plan_v1_compat`, `legacy_unassessed`
+
+**Traces:** prd:planner-driven-model-routing/FR-15 · prd:planner-driven-model-routing/FR-24 · prd:planner-driven-model-routing/NR-3 · prd:planner-driven-model-routing/UB-8 · design:execution-demand-contract-v1#3.4 · design:execution-demand-contract-v1#DINV-5 · design:execution-demand-contract-v1#DINV-6
+
+### T4 — Seal demand for tracker transport
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3 |
+| **Size band** | 210–290 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | rung=3 |
+| **Pattern** | — |
+| **Touches** | internal/executiondemand capsule, shared tracker-body capsule codec, tracker media conformance fixtures, authoritative-demand comparison fixtures |
+
+**Goal:** An untrusted tracker body can carry exactly one self-contained execution-demand capsule, but no tracker edit can become or alter the authoritative task demand.
+
+**Current behavior:** Projected tracker items carry ordinary charter markers whose routing data can be omitted or dropped on executor reads, and consumers have no digest-bound comparison to the exact frozen plan.
+
+**Desired behavior:** One canonical sealed capsule embeds the complete origin and identities, survives each supported tracker medium unchanged, and is accepted only when it is field- and digest-identical to demand reconstructed from the exact frozen source.
+
+**Scope:**
+- Define canonical capsule encode, embed, extract, digest, and exact authoritative-comparison operations shared by tracker producers and consumers.
+- Provide one media conformance suite for GitHub and local tracker body round trips, including presentation normalization that must not alter logical bytes.
+- Refuse missing, duplicate, malformed, truncated, copied, stale, digest-tampered, identity-mismatched, or authority-unavailable capsules with typed boundary diagnostics.
+
+**Out of scope:**
+- Plan-v2 projection call sites, implementation claim admission, review-process admission, and tracker repair; their owning plans consume this codec and conformance suite.
+
+**Acceptance criteria:**
+- [ ] Each plan-v2 and compatibility origin embeds and extracts through both supported tracker media as one byte-identical logical capsule.
+- [ ] Every missing, duplicate, malformed, truncated, copied-across-task, stale, and field- or digest-tampered fixture refuses and names the failed boundary or field.
+- [ ] A capsule is accepted only after exact frozen-source reconstruction yields the same origin, demand ID, task/source fingerprints, codec version, and capsule digest.
+- [ ] Refusal and inspection output contains repository-scoped identities and rules but no prompt, code, credential, native model, or raw launch argument.
+
+**Key interfaces:**
+- `Capsule`, `CapsuleCodec`, `AuthoritativeDemand`, `CapsuleMismatch`
+- `Seal(Origin)`, `Embed(body, Capsule)`, `Extract(body)`, `VerifyCapsule(Capsule, AuthoritativeDemand)`
+- `execution-demand-capsule/v1`
+
+**Traces:** prd:planner-driven-model-routing/FR-7 · prd:planner-driven-model-routing/UB-3 · prd:planner-driven-model-routing/ABUSE-3 · prd:planner-driven-model-routing/NFR-2 · design:execution-demand-contract-v1#3.5 · design:execution-demand-contract-v1#3.8 · design:execution-demand-contract-v1#3.9 · design:execution-demand-contract-v1#DINV-7
+
+## Coverage
+
+| Requirement | Tasks |
+|---|---|
+| prd:planner-driven-model-routing/FR-3 | T1 |
+| prd:planner-driven-model-routing/FR-4 | T1 |
+| prd:planner-driven-model-routing/FR-5 | T1 |
+| prd:planner-driven-model-routing/FR-6 | T1 |
+| prd:planner-driven-model-routing/FR-7 | T2, T4 |
+| prd:planner-driven-model-routing/FR-15 | T3 |
+| prd:planner-driven-model-routing/FR-22 | T1 |
+| prd:planner-driven-model-routing/FR-23 | T1 |
+| prd:planner-driven-model-routing/FR-24 | T2, T3 |
+| prd:planner-driven-model-routing/NR-3 | T3 |
+| prd:planner-driven-model-routing/UB-11 | T1 |
+| prd:planner-driven-model-routing/UB-2 | T1 |
+| prd:planner-driven-model-routing/UB-3 | T4 |
+| prd:planner-driven-model-routing/UB-8 | T3 |
+| prd:planner-driven-model-routing/ABUSE-2 | T1 |
+| prd:planner-driven-model-routing/ABUSE-3 | T2, T4 |
+| prd:planner-driven-model-routing/NFR-2 | T1, T2, T4 |
+| prd:planner-driven-model-routing/EVAL-1 | T1 |
+

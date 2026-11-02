@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQEGY3AEB9JS2D9P46SD",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "G1",
+  "statement": "We believe a derived, always-current front door (`/help`) for the newcomer on an onboarded repo; expected result: newcomers reaching their first productive action unaided",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2087a8cbc454cf59180dc52a795e7bfb28ce9ff18e84d6de9f66c49ce6c7bd26",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.32Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4NP5PZ1653KTPEXZZ7",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "UB-4",
+  "statement": "If If a frozen plan's machine face is unparsable, then the system shall skip that plan loudly as a named defect and continue the detector over the rest",
+  "intent": "the named defect naming the plan",
+  "fit_criterion": "corrupted-plan fixture: defect present, other plans' results present",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3207088f00bb595487d5207090dfba710b331b4bef536a6b328c1c7de530886b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.029Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CHM0XGFFRYN8Q5BZA2EZ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-9",
+  "statement": "A candidate widens its own approval grant — vector: candidate or local policy overlay",
+  "intent": "self-authorization",
+  "fit_criterion": "FR-59, FR-60, UB-15",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9d29887acf6de2e02f56156448c4eee4bb2bf840b8bfd7ed00e28f5574746192",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR844KY8700ECSS2MF3R",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "UB-6",
+  "statement": "If If plan or charter content contains strings that would fire tracker automations on creation (executor trigger phrases), then the system shall neutralize them so rendering is visually preserved and no automation fires",
+  "intent": "identical-looking text, no side effects",
+  "fit_criterion": "trigger-string fixtures: zero automation events fired; rendered text visually identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8207f77229466f53413dfa2ab6816095d8adddc7d54eed80b81c6a30edc7276d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.14Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

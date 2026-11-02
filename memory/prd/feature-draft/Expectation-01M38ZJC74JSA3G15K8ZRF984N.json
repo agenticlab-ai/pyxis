@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M38ZJC74JSA3G15K8ZRF984N",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-10",
+  "statement": "The checkpoint verdict is recorded after the first three draft-born features",
+  "intent": "§6.7, M1 through M4",
+  "fit_criterion": "verdict on the Tracking reference",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d0ea2f5849aae35ccaecb659c9a3b2b6aa6df01174292d6b8749f26d384227d7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:44Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

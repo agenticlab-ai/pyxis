@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB87VFXA6VFW74K1HRN",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-5",
+  "statement": "When invoked as `validate-amendments`, docgate shall enforce the closed op vocabulary, `Status: Approved` at merge-target, typed `Learned-from` evidence classes, and a computed blast radius that the declared one may exceed but never understate.",
+  "rationale": "the envelope contract; declarations are checked, not trusted",
+  "fit_criterion": "one fixture per violation class, each red with its named defect",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6ed97f153d976cd3e15ed1cf951ec1d0caed267f9732700bdcb83ae73e26e0c9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.216Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

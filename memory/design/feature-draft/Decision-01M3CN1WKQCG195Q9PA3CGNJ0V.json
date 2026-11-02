@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CN1WKQCG195Q9PA3CGNJ0V",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-plan-source-exclusion",
+  "statement": "Source discovery omits every plan-directory document whose feature has no PRD ledger at the pinned commit.",
+  "intent": "Keep draft-born plans outside memory while preserving document-pipeline plan capture.",
+  "rationale": "The ledger must be identified from the complete pinned tree before source selection; path-only classification cannot distinguish a draft-born plan from a document-pipeline plan.",
+  "fit_criterion": "A pinned Git snapshot excludes a no-ledger plan from files, authored sources, capture actions, and findings, while a ledger-backed plan still receives a capture action.",
+  "tags": [
+    "code:internal/memory/reconcile"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T16:05:55Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

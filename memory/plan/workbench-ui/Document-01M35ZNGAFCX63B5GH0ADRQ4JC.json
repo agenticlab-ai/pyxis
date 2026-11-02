@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZNGAFCX63B5GH0ADRQ4JC",
+  "kind": "Document",
+  "subject": "plan/workbench-ui",
+  "family": "plan-001",
+  "statement": "Captured authored source: docs/plans/workbench-ui/001-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/plans",
+    "reconcile:source",
+    "sha256:a6acde883eadd214e95312e965a9aa918a8fdf73a3ba0a09a76c6351c14b2fe5"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBPWY123QE48DRA0Z8WF8"
+    }
+  ],
+  "body_sha256": "a6acde883eadd214e95312e965a9aa918a8fdf73a3ba0a09a76c6351c14b2fe5",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:43Z",
+  "provenance": {
+    "source": "docs/plans/workbench-ui/001-plan.md",
+    "note": "offline reconciliation"
+  }
+}

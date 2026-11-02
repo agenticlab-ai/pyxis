@@ -1,0 +1,7 @@
+{
+  "code": "design-decision-memory-drift",
+  "scope": "design/argus-driver-approval-v1#decision.3-d-1-mainline-owns-the-approval-policy.1",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

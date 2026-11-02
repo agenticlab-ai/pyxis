@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQZGYFG8ZJA3T1425A4",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.10.1",
+  "statement": "The existing wake channel carries feature-drive touches as the instruction-free pair `{feature_id, reason}`. Push adapters normalize review, merge, check, runner, and manual-attestation events; the bounded backstop scans only aggregates assigned to its owner domain and probes registered waits. Signals assert no completion and carry no authority. The router reads the aggregate only to choose the recorded owner domain; the reconciler independently verifies state and goal objects under the current epoch (`design-brainstorm:feature-implementation-drive-tech-design#D-5`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:22307b2844f89f6c0cd4c79be354c07702e22d459ed390adf32e90e07d0f757e",
+    "source-design:9ea7096e912167ecb729a6e4e1b927caa05db54140c93a34e0549e41ee37d4cf",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQSGHPTQGNYZ6H14SMKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.599Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 166-166 in section 3.10; sha256:22307b2844f89f6c0cd4c79be354c07702e22d459ed390adf32e90e07d0f757e"
+  }
+}

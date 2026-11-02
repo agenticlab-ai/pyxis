@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2K28H26PSQ1Z2NC3FY",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-19",
+  "statement": "When asked to list a work item's direct children — optionally filtered by state — the tracker shall return every item whose parent is the given item, across all states by default, through one implementation shared by the engine (port) and the human (CLI).",
+  "rationale": "the parent→children direction must be directly queryable, not only reachable as the open-children rollup (FR-7) or by a hand scan; a completed epic must still surface its full task set, and the port and CLI must not diverge (FR-16)",
+  "fit_criterion": "over a fixture corpus, a parent-scoped query returns exactly the given item's direct children in every state, byte-identical from the CLI and the port; a state filter narrows the set to the expected members; a parent with no children returns empty, not an error",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5a92a18b0816d3e90b703ed47b7fb01cae529995ae9848e622ef22beccb3cbbd",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.963Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

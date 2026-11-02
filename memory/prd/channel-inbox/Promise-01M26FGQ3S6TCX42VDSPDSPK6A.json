@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3S6TCX42VDSPDSPK6A",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "EVT-1",
+  "statement": "inbox_advisory_emitted fires when an advisory bulletin is emitted at session start",
+  "intent": "tier: string, key: string, muted: bool",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ba3d1fda6f4f5ec1c6d1be21f35365944555ac14d9a4803bb8a1e6e3d42541db",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.977Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

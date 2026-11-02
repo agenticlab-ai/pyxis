@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YE72AGXR3EAK7A56AF",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "UB-3",
+  "statement": "If If task creation or dispatch fails or is uncertain, then the system shall preserve the same operation and report the step",
+  "intent": "failed or outcome_unknown",
+  "fit_criterion": "Subsequent callers neither duplicate nor retry these effects",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

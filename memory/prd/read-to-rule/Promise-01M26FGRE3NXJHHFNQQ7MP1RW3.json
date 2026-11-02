@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE3NXJHHFNQQ7MP1RW3",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "UB-3",
+  "statement": "If If §0 exceeds the template's length cap, then the system shall the document is nonconformant; §0 is cut back before a gate proceeds on it",
+  "intent": "a conformance defect naming the cap",
+  "fit_criterion": "zero over-cap §0s pass a gate uncut in the window (§3.3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e33cba09a05b87cc73454f17ece4fd58e2cf0eb4eea9725061279cb454b7dd82",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.331Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

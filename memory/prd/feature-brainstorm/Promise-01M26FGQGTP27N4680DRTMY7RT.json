@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGTP27N4680DRTMY7RT",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-15",
+  "statement": "The skill shall confine its writes to its own record (and session scratch), making no tracker writes, creating no PRD ledger, and modifying no other document.",
+  "rationale": "stage 1 precedes the artifact; a wide write perimeter is how side effects and drift enter",
+  "fit_criterion": "after every fixture session, the working tree is clean except the record path; the docgate gate reports no governed-document change",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:87353607cc5bfdbaf9467ca1ff6218f82f0ccd1d2c5646b9b56016e20744f889",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.394Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

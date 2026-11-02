@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3Z3F5AM2M139QFZ1574D008",
+  "kind": "Revocation",
+  "subject": "design/feature-implementation-drive",
+  "statement": "The proposed feature-implementation-drive-local-git successor replaces this predecessor design while preserving continuing obligations. This transition is presented with that exact successor for operator PR approval and human merge; no prior source approval is asserted.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M37M2W96D68R8GKCRFRA5WKW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:04:10Z"
+}

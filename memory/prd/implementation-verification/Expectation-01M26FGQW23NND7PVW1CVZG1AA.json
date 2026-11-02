@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQW23NND7PVW1CVZG1AA",
+  "kind": "Expectation",
+  "subject": "prd/implementation-verification",
+  "family": "DOD-3",
+  "statement": "implement-now's dogfood tasks reach genuinely-green with the harness as their local gate",
+  "intent": "M1; NR-2",
+  "fit_criterion": "dogfood run record + attached verdicts (EVT-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:22a0025941410ced6ed55cbd17e11982ad058d80f2c158ec02aa3beefe9d59db",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.754Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

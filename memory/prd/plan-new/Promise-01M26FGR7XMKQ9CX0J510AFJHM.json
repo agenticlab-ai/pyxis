@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7XMKQ9CX0J510AFJHM",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NR-3",
+  "statement": "Executor handling of non-planner work is unchanged; planner markers use only documented namespaces.",
+  "rationale": "prevent dialect collisions",
+  "fit_criterion": "namespace inspection and non-planner smoke route unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2e09587cfb47577fa043e4dfceb2e3c3790d2d1370c5a7e6ad0d56ce58de02b8",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.133Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

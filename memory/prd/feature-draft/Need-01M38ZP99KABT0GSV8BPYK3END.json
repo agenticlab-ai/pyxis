@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP99KABT0GSV8BPYK3END",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "proposals needed from a draft's opening to its lock",
+  "fit_criterion": "exactly 1 for each of the first three draft-born features",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:947b3a5271c453340e5cd955fa20408215b030d15ff851e4121cb710f0cf5d39",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:52Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

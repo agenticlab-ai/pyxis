@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWQB2VMFS9T3HB4Q6D1",
+  "kind": "Decision",
+  "subject": "design/coverage-on-read",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-28.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:3c9d24b2a83af985594ff74ae5a2e06fd6b0790ba7b3b710b130fd25c07f15f3",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNG9YZPXVJ9RR3377D9X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAPGMPNTG7S72YB6FZK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.799Z",
+  "provenance": {
+    "source": "docs/tech-design/coverage-on-read.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 3c9d24b2a83af985594ff74ae5a2e06fd6b0790ba7b3b710b130fd25c07f15f3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPWY9W9QAY1BV91DARNK",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "ABUSE-3",
+  "statement": "laundering — an agent ruling presented as human-made — vector: attribution dropped or forged in artifacts",
+  "intent": "audit and trust model collapse",
+  "fit_criterion": "FR-12; NR-3's author-independent gates",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cb63b4fa57cddb0d94789eac7df94e0ce6703d449e2b64b0aaa91a77ae26dad0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.758Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

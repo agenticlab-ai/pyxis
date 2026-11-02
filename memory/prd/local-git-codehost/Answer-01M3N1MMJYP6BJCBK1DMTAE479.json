@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMJYP6BJCBK1DMTAE479",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Publish and revise the branch ref and its proposal ref in one atomic push with an expected old OID for each. Refuse origins without atomic push support. Replace the partial branch-first recovery case with pairwise atomic retry. The operator still reviews the resulting exact draft head.",
+  "intent": "operator",
+  "rationale": "Split ref writes allow a stale proposal record after a branch race.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJX0TC5YFC3DG296R9B"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M38ZREW8RHAWECC9GYNZRW8P",
+  "kind": "Document",
+  "subject": "wiki/glossary",
+  "family": "entry",
+  "statement": "Captured authored source: docs/wiki/glossary.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/wiki",
+    "reconcile:source",
+    "sha256:b6f9c1d981a28c4b1a2f2a9219e1dbc8c55318588f162e1532f6b83d05036777"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M35ZS5QPRGSZ33ATHE38BGQ9"
+    }
+  ],
+  "body_sha256": "b6f9c1d981a28c4b1a2f2a9219e1dbc8c55318588f162e1532f6b83d05036777",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:03Z",
+  "provenance": {
+    "source": "docs/wiki/glossary.md",
+    "note": "offline reconciliation"
+  }
+}

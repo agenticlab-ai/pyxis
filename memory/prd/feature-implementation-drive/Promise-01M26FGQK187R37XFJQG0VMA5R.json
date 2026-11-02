@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQK187R37XFJQG0VMA5R",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-27",
+  "statement": "The feature drive shall surface action-required state through the existing proposal, tracker, command, and notification surfaces and provide a minimal durable-state diagnostic.",
+  "rationale": "Put information where action occurs.",
+  "fit_criterion": "Dogfood exposes every human action at its native surface; restart diagnostic reconstructs owner, next action, and evidence status.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:162e76615a54eb9bca853e07becdcaa357c32db471b6526dce09566b8ee84ab5",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.465Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

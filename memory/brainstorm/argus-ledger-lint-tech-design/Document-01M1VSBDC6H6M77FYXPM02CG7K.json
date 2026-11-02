@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBDC6H6M77FYXPM02CG7K",
+  "kind": "Document",
+  "subject": "brainstorm/argus-ledger-lint-tech-design",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/argus-ledger-lint-tech-design.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "ce64e08e6a619a295b57dc2596fbbd315a1a58093ee085e58f5f690171ad2884",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:15Z",
+  "provenance": {
+    "source": "docs/brainstorms/argus-ledger-lint-tech-design.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS04TF5D84N3TE6AND6",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.6.1",
+  "statement": "once an authored test first passes in the worktree and **before any proposal is opened**, the executor re-runs that test under a **labelled perturbation battery** — varied ordering, the race detector where the stack has one, concurrent load, a perturbed clock and timezone, denied network, and a dirty ambient repository state. A verdict that moves under any perturbation, or across repeated identical runs, stops the task: it is marked failed naming the perturbation whose label identifies the non-hermetic dependency, its work is preserved on its branch, it is escalated, and **no proposal is opened**, so the check never becomes required and the self-heal loop — which exists only after a proposal — never runs (`prd:implement-now/FR-32`, `UB-17`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f5c967cd55a799e40eb896543eaf3d28e25c3d568737ba26696f98b9e178f101",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.632Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 125-125 in section 3.6; sha256:f5c967cd55a799e40eb896543eaf3d28e25c3d568737ba26696f98b9e178f101"
+  }
+}

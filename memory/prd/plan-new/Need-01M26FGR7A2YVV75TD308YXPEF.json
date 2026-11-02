@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7A2YVV75TD308YXPEF",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "G2",
+  "statement": "We believe enforcing sizing as a structural gate at plan time (thresholds as data); expected result: task PRs a human can actually review — the fat tail cut",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d1bf4e9b8cc3547cda3a0e3689517e48e19e8839439fff4770d9a3200779b62",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.114Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

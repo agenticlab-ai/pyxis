@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9T9D2BTV9YWTXA37XQ",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-27",
+  "statement": "Where the strongest-profile kill switch is engaged, each harness role shall prefer its strongest approved native profile only when that profile satisfies every requested semantic minimum; otherwise the system shall apply FR-10 before claim or invocation, while preserving FR-25's assurance-pass floor and FR-26's aggregation behavior.",
+  "rationale": "fallback may overprovide but can never weaken the frozen contract or bypass required review process",
+  "fit_criterion": "kill-switch drills prove capability, deliberation, context, and assurance dominance for every resolved cell; unsatisfiable fixtures fail under FR-10; harness selection, assurance-pass depth/count, mutual blindness, and aggregate behavior remain unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c06776e57adf1ce889ebd5ea451b8207b44b300d8d8f34845b3ce706bedff1c2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.194Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

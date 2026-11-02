@@ -1,0 +1,491 @@
+# Argus unattended drive — the lane, the wake channel, and the fleet bridge — plan 001
+
+| Field | Value |
+|---|---|
+| **Feature** | argus-unattended-drive |
+| **PRD** | docs/prds/argus-unattended-drive |
+| **Design** | docs/tech-design/merge-lane-v1.md |
+| **Plan version** | 001 |
+| **Dialect** | harbormaster/fs-spec:v1 |
+| **Epic title** | Make Argus drive unattended — the risk-tiered AUTO/HUMAN merge lane, the push-preferred backstop wake channel, and the unattended fleet-materialization bridge, with their shadow-first activation and audit |
+| **Status** | Draft — freezes at merge |
+| **Template version** | plan-template/v1 |
+
+## Tasks
+
+### T1 — The risk-policy data class and its shared validator
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 130–280 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | the config surface gains one additive path key; concurrent additive key edits merge cleanly |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/lane/policy |
+
+**Goal:** The lane's risk policy is versioned closed-schema data that no proposal can widen, loaded through one validator every reader shares.
+
+**Current behavior:** No risk policy exists; nothing defines the floor classes, the AUTO-eligible class set, the activation state, or the kill switch, and no validator refuses a malformed or self-unlock-uncovering policy.
+
+**Desired behavior:** A dedicated policy artifact at the config surface carries the floor classes, the AUTO class set as data-defined whole-diff predicates, thresholds, the activation block, and the kill-switch field; a shared validator enforces the closed parse at every read, refuses any policy whose floor fails to cover the self-unlock minimum or whose AUTO code class claims the lane's build inputs, and treats a malformed, unknown-key, unratified, or absent policy as the same load defect — the lane goes all-HUMAN and names it.
+
+**Scope:**
+- the closed policy schema (floor classes, AUTO class predicates, thresholds, activation block, kill switch) and its own schema version
+- the shared validator: closed parse, self-unlock-minimum floor refusal, build-input-claim refusal, ratified-lineage detection at load
+- the all-HUMAN-and-named-defect behavior on any load failure
+- the config surface gains only the policy's path key, never the policy body
+
+**Out of scope:**
+- the classifier that consumes the policy (T2)
+- the operator's ratification act itself, and the trailer mechanism's widening evidence (asserted here, proven at T4's activation checks and the corpus fixtures distributed across T2/T5)
+
+**Acceptance criteria:**
+- [ ] a malformed, unknown-key, unratified, absent, or self-unlock-uncovering policy refuses to load and the validator names the defect
+- [ ] a policy whose recommended AUTO code class claims the lane's build inputs in its perimeter refuses to load
+- [ ] a well-formed ratified policy loads and exposes its floor classes, AUTO class set, activation block, and kill switch to a reader
+- [ ] the kill-switch field flips the lane to HUMAN-only in one data change
+
+**Key interfaces:**
+- the risk-policy closed schema and its version field
+- the shared policy-validator verb every read site calls
+- the config key naming the policy's location
+
+**Traces:** prd:argus-unattended-drive/FR-7 · prd:argus-unattended-drive/UB-2 · design:merge-lane-v1#DINV-8
+
+### T2 — The lane classifier verb
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T1 |
+| **Size band** | 160–300 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/lane/classifier |
+
+**Goal:** One hermetic predicate routes every proposal into exactly one lane by evaluating the floor first, class membership second, and a configured downgrade last — deterministic and fail-closed.
+
+**Current behavior:** No classifier exists; nothing maps a diff and a policy to a lane verdict.
+
+**Desired behavior:** The verb computes a diff, the policy, and the check states into one recorded lane; it evaluates the policy's path-derived whole-diff floor first and a floor hit is terminal HUMAN naming the class; a floor-clear proposal is an AUTO candidate only when its entire diff falls inside one ratified AUTO class's perimeter; a configured model-driven stage may only downgrade AUTO to HUMAN, never the reverse, and its ambiguity or error routes HUMAN; every unclassifiable or faulted input lands HUMAN with the reason recorded; the verdict is byte-identical on replay of its pinned base, head, policy version, and check-state snapshot.
+
+**Scope:**
+- the fixed floor-then-classes-then-downgrade pipeline over the diff and policy
+- the whole-diff perimeter test admitting AUTO only for a single-class-contained diff
+- the downgrade-only, fail-closed contract for a configured intelligence stage
+- determinism over pinned inputs and fail-closed HUMAN on any misparse
+
+**Out of scope:**
+- the reviewer-verdict precondition and verdict record (T3)
+- the acting layer, activation, and shadow recording (T4)
+
+**Acceptance criteria:**
+- [ ] on the classification corpus every proposal receives exactly one recorded lane and every unclassifiable or fault-injected case lands HUMAN with its reason recorded
+- [ ] each shipped AUTO class carries a fixture pair: a whole-diff-inside proposal admits AUTO, an out-of-perimeter hunk routes HUMAN
+- [ ] a floor-hit proposal routes HUMAN at full rate regardless of any class, downgrade, or author signal, naming the floor class hit
+- [ ] replaying the pinned base, head, policy version, and check-state snapshot reproduces every verdict byte-identically
+
+**Key interfaces:**
+- the lane-classify verb and its pinned-input record
+- the floor predicate over diff paths and change classes
+- the AUTO-class whole-diff membership predicate
+
+**Traces:** prd:argus-unattended-drive/FR-1 · prd:argus-unattended-drive/FR-2 · prd:argus-unattended-drive/FR-3 · prd:argus-unattended-drive/FR-4 · prd:argus-unattended-drive/UB-1 · prd:argus-unattended-drive/UB-3 · design:merge-lane-v1#DINV-2
+
+### T3 — The reviewer-verdict check arm and the lane verdict record
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2 |
+| **Size band** | 120–240 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/lane/verdict |
+
+**Goal:** Where an AUTO class requires an approving review, a registered mechanical arm publishes that verdict as a trusted check state — never parsed from the proposal — and every evaluation rides a structured verdict record.
+
+**Current behavior:** Nothing validates an artifact class's review report as a precondition, and no structured verdict record rides a proposal.
+
+**Desired behavior:** A registered arm validates the review report of an artifact class carrying one — its structural validity, an approving verdict, the report's subject fingerprint matching the evaluated content, and the reviewer-flow attribution the shipped arms enforce — and publishes a check state the lane consumes through the pinned check-state snapshot, so a verdict planted in the proposal's own tree is told apart from a produced one; each evaluation appends a structured versioned verdict record naming its lane, floor hits, class, policy version, and head revision; the arm's own code sits in the lane's trust base and runs from the trusted mainline context.
+
+**Scope:**
+- the registered review-report validation arm publishing a consumed check state
+- the structured versioned lane-verdict record appended per evaluation
+- the arm's placement in the lane trust base, evaluated from the mainline context only
+
+**Out of scope:**
+- the act that consumes the precondition (T4)
+- the classifier pipeline itself (T2)
+
+**Acceptance criteria:**
+- [ ] a proposal carrying a planted reviewer verdict in its own tree does not satisfy the precondition; only the arm's published check state does
+- [ ] a report failing structural validity, verdict, subject-fingerprint match, or reviewer attribution publishes a non-approving state
+- [ ] each evaluation appends a verdict record naming lane, floor hits, class, policy version, and head revision
+
+**Key interfaces:**
+- the review-verdict check arm and the check-state it publishes
+- the lane-verdict record schema
+- the subject-fingerprint match against evaluated content
+
+**Traces:** prd:argus-unattended-drive/FR-5 · design:merge-lane-v1#DINV-3 · design:merge-lane-v1#DINV-9
+
+### T4 — The acting adapter: shadow, activation gate, enforce, and goal verification
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2, T3 |
+| **Size band** | 150–290 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/lane/acting · .github/workflows/merge-lane.yml |
+
+**Goal:** A thin adapter runs the classifier per proposal event and records the verdict in shadow; only with the operator's activation present does it act as the dedicated machine identity, bound to the evaluated revision and verified afterward.
+
+**Current behavior:** No adapter invokes the classifier on proposal events, and no shadow recording, activation gate, or acting path exists.
+
+**Desired behavior:** The adapter invokes the one classifier verb per proposal event and records the verdict; born in shadow, the acting layer is disabled by construction — the activation gate refuses any act while the operator's recorded activation acts are absent and names the missing act, and a half-present activation surfaces a named activation-incomplete defect at every state read; with activation present, an AUTO proposal with every required check green and its reviewer precondition met is approved and merged as the machine identity bound to the exact evaluated head revision, a post-evaluation push voids the verdict, and the identity's credential is unreachable from any drive session and distinguishable in history; every act is followed by goal-object verification.
+
+**Scope:**
+- the adapter invoking the single classifier verb per event and recording the verdict
+- shadow mode with the acting layer disabled by construction and zero acting side effects
+- the fail-closed activation gate naming the missing act and the half-present defect
+- the enforce act as the machine identity, revision-bound, credential out of any drive's reach, followed by goal verification
+
+**Out of scope:**
+- the halt record and kill switch the goal-verify failure writes (T5)
+- the classifier and verdict record themselves (T2, T3)
+
+**Acceptance criteria:**
+- [ ] with activation absent no fixture produces an act and the refusal names the missing act; a half-present activation surfaces the named activation-incomplete defect at every state read
+- [ ] with activation present an act binds to the evaluated head revision and a post-evaluation push voids it before any act
+- [ ] over a shadow corpus run every evaluated proposal carries a recorded verdict with zero acting side effects
+- [ ] a drive-side probe cannot reach the machine identity's credential and the identity is distinguishable from any human in history
+
+**Key interfaces:**
+- the proposal-event adapter and its single call into the classifier verb
+- the activation gate reading the operator's recorded activation state
+- the machine-identity act bound to the evaluated revision and its goal-object verification
+
+**Traces:** prd:argus-unattended-drive/FR-5 · prd:argus-unattended-drive/FR-8 · prd:argus-unattended-drive/FR-9 · design:merge-lane-v1#DINV-5
+
+### T5 — The lane-state halt record and the kill switch
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T4 |
+| **Size band** | 120–240 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/lane/state |
+
+**Goal:** A goal-verify failure halts the lane through a repo-resident state record whose clear only a cited human disposition can authorize, and a floor violation trips the kill switch until fresh ratification.
+
+**Current behavior:** No lane-state record exists; a lying merged badge would go undetected and nothing stops further acts.
+
+**Desired behavior:** When goal verification fails — the platform reports merged but the content is not an ancestor of the mainline — the acting step synchronously writes a halt to the repo-resident lane-state record before any further act, every subsequent act gate reads it first, and it alarms on the affected drive's delivery ledger; the act gate honors a cleared state only when the record's writer is the machine identity and each clear entry cites a human disposition recorded on that delivery ledger, refusing a non-machine write or an uncited clear; an AUTO-merged proposal later found floor-violating trips the kill switch to a HUMAN-only lane, appends the incident entry, and refuses re-activation until fresh operator ratification.
+
+**Scope:**
+- the synchronous halt write to the repo-resident lane-state record, read at every act gate
+- the act-gate validation of a cleared state: machine-identity writer and cited human disposition
+- the refusal of a forged, non-machine, or uncited clear
+- the kill-switch trip on a discovered floor violation, its incident entry, and the re-activation refusal until fresh ratification
+
+**Out of scope:**
+- the platform ref-protection restricting the lane-state namespace (an operator activation precondition, read not performed)
+- the acting path that writes the halt (T4)
+
+**Acceptance criteria:**
+- [ ] a seeded badge-true, mainline-false case halts the lane before any further act, the halt written synchronously and read at every subsequent act gate, and alarms on the delivery ledger
+- [ ] a non-machine write to the lane-state record, or a clear entry citing no human disposition, does not un-halt the lane
+- [ ] an AUTO-merged proposal later found floor-violating trips the kill switch, appends the incident entry, and re-activation is refused until fresh operator ratification
+
+**Key interfaces:**
+- the repo-resident lane-state record and its dedicated ref
+- the clear-authorization check over writer identity and cited disposition
+- the kill-switch state and the re-activation ratification gate
+
+**Traces:** prd:argus-unattended-drive/FR-6 · prd:argus-unattended-drive/UB-4 · prd:argus-unattended-drive/UB-8 · design:merge-lane-v1#DINV-7
+
+### T6 — The await grammar and its delivery-ledger registration
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 100–200 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/docgate/argusledger/awaits.go |
+
+**Goal:** Every drive stop on an awaited external completion registers an await the journal alone makes re-derivable, surfaced in a closed typed grammar in the ledger's derived block.
+
+**Current behavior:** A stopped drive records no structured await; a resumed session cannot read the outstanding completions from the ledger alone.
+
+**Desired behavior:** When a drive stops on an awaited external completion the journal's closing entry names the awaited goal object and the completion condition, and the regenerated derived block surfaces one typed line per await — goal object, condition, and since-date — inside its existing Open-items element; the grammar is closed; a fresh session re-derives the full await set from the journal alone; a cleared await simply leaves the regenerated block; the derived block's contracted content list is otherwise untouched.
+
+**Scope:**
+- the closed await grammar carrying goal object, condition, and since-date
+- the derived-block surfacing of one line per outstanding await inside Open-items
+- journal-authoritative re-derivation of the await set
+
+**Out of scope:**
+- the staleness computation over await ages (T7)
+- the backstop and signal that consume awaits (T8)
+
+**Acceptance criteria:**
+- [ ] on a fixture ledger every stop on an external completion names its await and a fresh session re-derives the await set from the journal alone
+- [ ] the await grammar parses closed: a malformed await line is a named defect, not a silent skip
+- [ ] a cleared await leaves the regenerated derived block and the block's other contracted content is byte-unchanged
+
+**Key interfaces:**
+- the closed await-line grammar in the delivery-ledger derived block
+- the await registration on a stop entry
+- the journal-to-await re-derivation
+
+**Traces:** prd:argus-unattended-drive/FR-13 · design:wake-channel-v1#DINV-1
+
+### T7 — The channel config knobs and the wake-staleness defect
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T6 |
+| **Size band** | 80–170 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | the config surface gains additive channel keys; concurrent additive key edits merge cleanly |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/docgate/argusledger/staleness.go |
+
+**Goal:** The channel's latency and staleness bounds are closed-parse config, and an await that outlives its staleness bound becomes a loud named defect read from ledger data alone.
+
+**Current behavior:** No channel bounds exist and a silent, unresumed await rests unnoticed.
+
+**Desired behavior:** Closed-parse config keys carry the tick interval — which realizes the configured latency bound, interval equal to the bound — and the staleness bound, which strictly exceeds the interval so a staleness alarm never fires on an await the next tick would legally serve; an await whose age exceeds the staleness bound with no resume delivered surfaces a named wake-staleness defect at the next state read or drive touchpoint, computed from repo and ledger data alone, naming the stale await and its age.
+
+**Scope:**
+- the closed-parse tick-interval and staleness-bound config keys and their pinned relation
+- the wake-staleness defect computed from ledger await ages at any state read or touchpoint
+- the relation guard: staleness bound strictly exceeds the interval
+
+**Out of scope:**
+- the tick's own delivery behavior (T8)
+- the host scheduler binding, decided per adapter
+
+**Acceptance criteria:**
+- [ ] an await whose age exceeds the staleness bound with no resume surfaces the named wake-staleness defect at a state read and at a touchpoint, naming the await and its age
+- [ ] a config whose staleness bound does not strictly exceed the tick interval is a named load defect
+- [ ] an await within the staleness bound surfaces no defect
+
+**Key interfaces:**
+- the tick-interval and staleness-bound config keys and their relation guard
+- the wake-staleness defect computed over await ages
+
+**Traces:** prd:argus-unattended-drive/UB-9 · design:wake-channel-v1#DINV-5
+
+### T8 — The backstop tick, the wake signal, and front-door delivery
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T6, T7 |
+| **Size band** | 150–290 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/wake · scripts/wake-tick.sh |
+
+**Goal:** A bounded backstop tick guarantees resumption while a push signal optimizes it, both re-entering the drive's front door with an instruction-free wake that a poisoned copy cannot weaponize.
+
+**Current behavior:** A stopped drive waits for a hand re-invocation; no signal, backstop, or bounded resumption exists.
+
+**Desired behavior:** A scheduled host pass reads the registered awaits, probes each awaited goal object by exact reads — ancestry for merges, record existence for items and appends — invokes the agentic CLI once per due touch, and exits, spending a stated near-zero cost on an idle tick and zero for a parked problem, which it excludes by construction; where an adapter observes a completion it emits the normalized wake signal — problem slug and touch reason only — into the existing front door as an optimization, never the guarantee; the resumed drive treats any further content on the wake surface as data, so a poisoned or forged signal costs at most one bounded journaled no-op touch; a signal naming a closed ledger never reopens it; overlapping deliveries converge to one effective touch with the extras journaled no-ops; a manual front-door touch remains the stated fallback on a bare host.
+
+**Scope:**
+- the backstop tick: read awaits, exact-probe goal objects, invoke the CLI per due touch, exit, with stated idle and parked costs
+- the normalized slug-and-reason wake signal into the existing front door
+- data-only treatment of wake content, the poisoned-signal no-op, and closed-ledger non-reopening
+- overlap convergence to one effective touch and the manual fallback
+
+**Out of scope:**
+- per-adapter push wiring — which events each pairing delivers and the host scheduler binding
+- the await grammar and staleness the tick reads (T6, T7)
+
+**Acceptance criteria:**
+- [ ] with push disabled the backstop delivers an awaited completion within one interval; a parked problem draws zero scheduled activity and wakes on its answer append; on a bare host a manual front-door touch delivers the due completion
+- [ ] a poisoned-signal corpus obeys no embedded directive at full rate, every touch journaled data-only; a signal naming a closed ledger leaves it byte-untouched
+- [ ] racing deliveries converge to one effective touch with the extras journaled as no-ops
+- [ ] the idle tick's cost is stated and measured near zero and a parked problem's is zero
+
+**Key interfaces:**
+- the backstop tick reading awaits and exact-probing goal objects
+- the normalized wake-signal shape carrying slug and reason only
+- the front-door re-entry converging under duplication
+
+**Traces:** prd:argus-unattended-drive/FR-14 · prd:argus-unattended-drive/FR-15 · prd:argus-unattended-drive/FR-16 · prd:argus-unattended-drive/FR-17 · prd:argus-unattended-drive/UB-5 · prd:argus-unattended-drive/UB-7 · design:wake-channel-v1#DINV-2
+
+### T9 — Unattended materialization: plan-freeze await and the item-verification loop
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T6, T8 |
+| **Size band** | 120–240 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | the delivery-ledger entry-type set gains additive confirmation and reconciliation types; concurrent additive edits merge cleanly |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/wake/materialize.go · internal/docgate/argusledger/eventtypes.go |
+
+**Goal:** A plan freezing at its merge wakes the drive to trigger materialization through the planning stage's own contract with no human prompt, verifying each created item at the goal object.
+
+**Current behavior:** A drive refuses a real projection because the pipeline map reads not-built, and materialization waits on a human prompt even though the act is already granted.
+
+**Desired behavior:** When the drive's frontier reaches a frozen plan's introducing proposal, the stop registers the plan-merged await; the resumed touch re-verifies the merge at the goal object and triggers projection through the planning stage's own contract — its consent, staged modes, idempotency, and wiring order unchanged — with no human prompt; each created item is verified at the goal object as existing and carrying the repo-configured automated-implementation tag and journaled with its trigger recorded; a re-trigger with the items already live records a journaled no-op and creates nothing; a true concurrent both-probe-miss race lands the planning stage's own detected halt naming both items with routing withheld, never a silent duplicate or a bridge-side repair; a tag discrepancy routes back through the stage, never by the drive editing items.
+
+**Scope:**
+- plan-freeze registered and re-verified as an ordinary await, then projection triggered through the planning stage's own contract without a prompt
+- per-item goal-object verification of existence and the automated-implementation tag, journaled with the trigger recorded
+- convergence of re-triggers and racing wakes to the stage's own guarantee — no-op or the detected named-both halt
+- tag-discrepancy routing back through the stage without item edits
+
+**Out of scope:**
+- the projection mechanics themselves — consent, staged modes, idempotency keys, dialect rendering — owned by the planning stage unchanged
+- closure over in-flight proposals (T10)
+
+**Acceptance criteria:**
+- [ ] a plan frozen at its merge projects through the stage's own contract with no human prompt and every created item is verified at the goal object and journaled with its trigger recorded
+- [ ] a re-trigger with items live records a journaled no-op with zero duplicates; a true both-miss race lands the stage's named-both halt with routing withheld and no serialization added around the stage
+- [ ] a seeded item with the automated-implementation tag absent or misapplied fails the tag verification, journals the failure, routes back through the stage, and no item is edited by the drive
+
+**Key interfaces:**
+- the plan-freeze await and its re-verification at the goal object
+- the trigger into the planning stage's own projection contract
+- the per-item confirmation entry and its trigger property
+
+**Traces:** prd:argus-unattended-drive/FR-11 · prd:argus-unattended-drive/UB-6 · design:fleet-bridge-v1#DINV-3
+
+### T10 — The closure discipline over in-flight proposals
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T5, T9 |
+| **Size band** | 100–200 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/wake/closure.go |
+
+**Goal:** A feature closes only when every resulting proposal's content is verified on the mainline, never on a badge, and a stranded proposal blocks closure loudly.
+
+**Current behavior:** Nothing drives materialized proposals to content-verified landings or blocks a close on a proposal stranded off the mainline.
+
+**Desired behavior:** While materialized items are in flight, the drive drives each resulting proposal to a landing through the lane's routing and accepts each landing only when the merged content is an ancestor of the mainline; the feature closes only when every resulting proposal's content is verified an ancestor of the mainline; a stranded proposal — a merged badge with absent mainline content — blocks the feature's close and alarms on the delivery ledger; unclaimed items age under the existing bump arm with nothing new watching them.
+
+**Scope:**
+- driving each in-flight proposal to a landing through the lane's routing
+- accepting a landing only on verified mainline ancestry
+- blocking closure on the full set and alarming on any stranded proposal
+
+**Out of scope:**
+- the lane routing itself (T2, T4) and the halt record it may write (T5)
+- the materialization trigger and item verification (T9)
+
+**Acceptance criteria:**
+- [ ] closure occurs only after every resulting proposal's content is verified an ancestor of the mainline
+- [ ] a seeded stranded proposal — merged badge, absent mainline content — blocks closure and alarms on the delivery ledger
+- [ ] an unclaimed item ages under the existing bump arm with no new watcher introduced
+
+**Key interfaces:**
+- the per-proposal landing acceptance on mainline ancestry
+- the full-set closure gate
+- the stranded-proposal alarm on the delivery ledger
+
+**Traces:** prd:argus-unattended-drive/FR-6 · prd:argus-unattended-drive/FR-12 · design:fleet-bridge-v1#DINV-4
+
+### T11 — The stage-8 pipeline-map correction
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 20–60 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | pipeline-map |
+
+**Goal:** The pipeline map states the stage-8 binding as it operationally runs, and no drive guidance directs deferring materialization on the row's account.
+
+**Current behavior:** The map's stage-8 row reads a stale not-built binding, which once taught a drive to defer a real materialization.
+
+**Desired behavior:** The map's stage-8 row and footer state the external-fleet binding as it operationally runs — frozen plans project onto the tracker with the repo-configured automated-implementation tag and an external fleet claims and implements them — and the map remains the live PR-corrected surface owning that value; no drive guidance directs deferring materialization on the row's account, a standing negative duty that holds today with no guidance surface carrying such a directive.
+
+**Scope:**
+- correcting the stage-8 map row and footer to the operational external-fleet binding
+- confirming no drive guidance directs deferring materialization on the row's account
+
+**Out of scope:**
+- freezing the row's wording anywhere — the duty is durable, the value lives on the live map
+- the engine-era binding, which re-pins by amendment when it changes
+
+**Acceptance criteria:**
+- [ ] the map's stage-8 row and footer state the operational external-fleet binding at this checkpoint
+- [ ] a read-through confirms no drive guidance directs deferring materialization on the row's account
+
+**Key interfaces:**
+- the pipeline map's stage-8 row and footer
+- the standing no-defer-on-the-row's-account guidance duty
+
+**Traces:** prd:argus-unattended-drive/FR-10 · design:fleet-bridge-v1#DINV-5
+
+## Coverage
+
+| Requirement | Tasks |
+|---|---|
+| prd:argus-unattended-drive/FR-1 | T2 |
+| prd:argus-unattended-drive/FR-2 | T2 |
+| prd:argus-unattended-drive/FR-3 | T2 |
+| prd:argus-unattended-drive/FR-4 | T2 |
+| prd:argus-unattended-drive/FR-5 | T3, T4 |
+| prd:argus-unattended-drive/FR-6 | T5, T10 |
+| prd:argus-unattended-drive/FR-7 | T1 |
+| prd:argus-unattended-drive/FR-8 | T4 |
+| prd:argus-unattended-drive/FR-9 | T4 |
+| prd:argus-unattended-drive/FR-10 | T11 |
+| prd:argus-unattended-drive/FR-11 | T9 |
+| prd:argus-unattended-drive/FR-12 | T10 |
+| prd:argus-unattended-drive/FR-13 | T6 |
+| prd:argus-unattended-drive/FR-14 | T8 |
+| prd:argus-unattended-drive/FR-15 | T8 |
+| prd:argus-unattended-drive/FR-16 | T8 |
+| prd:argus-unattended-drive/FR-17 | T8 |
+| prd:argus-unattended-drive/UB-1 | T2 |
+| prd:argus-unattended-drive/UB-2 | T1 |
+| prd:argus-unattended-drive/UB-3 | T2 |
+| prd:argus-unattended-drive/UB-4 | T5 |
+| prd:argus-unattended-drive/UB-5 | T8 |
+| prd:argus-unattended-drive/UB-6 | T9 |
+| prd:argus-unattended-drive/UB-7 | T8 |
+| prd:argus-unattended-drive/UB-8 | T5 |
+| prd:argus-unattended-drive/UB-9 | T7 |

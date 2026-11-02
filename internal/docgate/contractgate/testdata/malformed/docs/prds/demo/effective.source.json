@@ -1,0 +1,10 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "as_of": "000",
+  "content_fingerprint": "sha256:broken",
+  "units": {
+    "FR-1": { "status": "live"
+  <<< this is not valid JSON — a truncated, hand-corrupted machine face >>>
+}

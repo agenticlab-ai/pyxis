@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBGSX2HGY326PHZR0M7",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "J1",
+  "statement": "When I have authored an amendment, I want regenerate and verify the projection locally, so I can open a PR that passes on the first try",
+  "rationale": "prd-amendment-template §0 (transitional note)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:53ce7dd4313db15df54a91763eecac33099e576d6d2be37ce759ccbebb89c5a9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.224Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

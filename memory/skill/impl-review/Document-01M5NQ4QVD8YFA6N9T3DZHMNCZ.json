@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5NQ4QVD8YFA6N9T3DZHMNCZ",
+  "kind": "Document",
+  "subject": "skill/impl-review",
+  "family": "lens-correctness-critic",
+  "statement": "Captured authored source: .pyxis/skills/impl-review/lenses/correctness-critic.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:08da5cee52b776912f8458844b71eef4620330087f52aeaf3bbbf797aef81140"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M5NNXF0PFV4RZGEHSQHSG2PS"
+    }
+  ],
+  "body_sha256": "08da5cee52b776912f8458844b71eef4620330087f52aeaf3bbbf797aef81140",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-24T01:07:00Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/lenses/correctness-critic.md",
+    "note": "offline reconciliation"
+  }
+}

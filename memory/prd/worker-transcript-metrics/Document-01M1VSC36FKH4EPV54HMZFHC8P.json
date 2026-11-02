@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC36FKH4EPV54HMZFHC8P",
+  "kind": "Document",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "amendment-001",
+  "statement": "Imported Pyxis source document: docs/prds/worker-transcript-metrics/001-usage-ownership-boundary.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "f39f834759dcbe82330c6dc99c28bf0d5afc50db581904465f36b48cee556de4",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:37Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/001-usage-ownership-boundary.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

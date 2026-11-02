@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZPB1WWSPMZR5CPM5PV0Y8",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "reopens of the first three draft-born features whose confirmed cause is a gap the readiness checks should have caught",
+  "fit_criterion": "0, judged once all three have finished implementation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c74b1183350320a16efd29f8b95e5972fba9794e2dcddba533049fe4da3891ac",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:54Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

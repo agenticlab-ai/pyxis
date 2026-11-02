@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRA01A7HG5MGEJSS2VH",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-contract",
+  "family": "decision.3.1.1",
+  "statement": "These rows are the complete v1 failure vocabulary and are evaluated before any ordinary next-effect planning:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39",
+    "source-design:4bc6c0fe437a7b8d230535dce4519b0c6a06254682764694633b95361f07d599",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQMS5R0Z74Y6WB59KD6N"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.61Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-contract.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-failure-contract.md lines 52-52 in section 3.1; sha256:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39"
+  }
+}

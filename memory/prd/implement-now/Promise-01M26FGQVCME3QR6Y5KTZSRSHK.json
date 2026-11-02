@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVCME3QR6Y5KTZSRSHK",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-15",
+  "statement": "If a recognized e2e task's scenario carries the `manual-human` route, then the system shall spawn no worker, perform no claim and no model invocation, class the task as human-execution-required naming the route's recorded owner, and report it in the run's final classes",
+  "intent": "task listed as awaiting its named human, never as succeeded or failed",
+  "fit_criterion": "a manual-human fixture spawns zero workers, consumes zero tokens, names the recorded owner, and is never counted succeeded; repeated runs report it identically without claim churn",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c6798093f78bc5d73a3df40ac2861588eb03e7ee1e09fc5a41ebf1bdeb917037",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.732Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

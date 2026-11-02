@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2RR0WTKBP092J46ZJ4JD820",
+  "kind": "Document",
+  "subject": "review/installer-without-browser-review",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/installer-without-browser-review.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:2c177a25ceb98d791d3f22a762ff15a91503ba07bab38a5d9cff1ba18cf026bb"
+  ],
+  "body_sha256": "2c177a25ceb98d791d3f22a762ff15a91503ba07bab38a5d9cff1ba18cf026bb",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:33:00Z",
+  "provenance": {
+    "source": "docs/reviews/installer-without-browser-review.md",
+    "note": "offline reconciliation"
+  }
+}

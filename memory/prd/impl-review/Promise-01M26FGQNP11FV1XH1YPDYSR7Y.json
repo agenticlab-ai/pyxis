@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNP11FV1XH1YPDYSR7Y",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-9",
+  "statement": "`review_process_completed` fires when one exact-revision pass set reaches the parent contract's canonical aggregate terminal, including a violation",
+  "intent": "`review_process_id:string`, `demand_id:string`, `task_id:string`, `proposal_id:string`, `reviewed_revision:string`, `planned_assurance:enum{ordinary,elevated,critical}`, `proposal_band:enum{skip,standard,deep}`, `effective_depth:enum{standard,deep}`, `required_passes:int`, `completed_passes:int`, `pass_attempt_ids:string[]`, `top_level_context_ids:string[]`, `pass_verdicts:enum[]`, `aggregate_verdict:enum`, `result:enum{satisfied,floor_violation,conflict_nonaccepting}`, `aggregate_wall_ms:int`, `evidence_ref:string`",
+  "fit_criterion": "M1, M2, NFR-7, parent EVT-9 + health alert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2ec4424e2ac4092fcd19169f76e4c6dbcc0449707ec36b96e8cbe0ccddf7bb57",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.55Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

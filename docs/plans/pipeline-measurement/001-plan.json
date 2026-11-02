@@ -1,0 +1,628 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Pipeline measurement — plan 001",
+  "feature": "pipeline-measurement",
+  "prd": "docs/prds/pipeline-measurement",
+  "design": "docs/tech-design/pipeline-measurement-v2.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Build the pipeline-measurement tool — per-phase spend \u0026 efficiency across the four harnesses",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "The per-run record store and schema",
+      "goal": "A schema-versioned JSON run record can be appended to and read back from an append-only JSONL store, one file per run.",
+      "current": "No measurement store exists.",
+      "desired": "A record type carrying a schema version, run id, feature id, phase id, harness, per-model spend slots, efficiency slots, price-snapshot version, and unavailable markers, serialized one-per-line to a per-run file in a gitignored observability-logs location; a loader reads a run's records back; two concurrent runs write distinct files and never contend; unknown/missing optional fields default on read (additive-schema).",
+      "scope": [
+        "The record type and its schema version.",
+        "The per-run-file append and the run loader.",
+        "The gitignore entry for the store location."
+      ],
+      "out_of_scope": [
+        "Capturing spend or efficiency, or deriving cost (later tasks)."
+      ],
+      "acceptance": [
+        "Writing N records to a run then loading that run yields exactly N equal records.",
+        "Two runs writing concurrently produce two distinct files with no lost or interleaved lines.",
+        "A record missing an optional field loads with that field defaulted, never an error."
+      ],
+      "key_interfaces": [
+        "The run-record struct (schema-versioned); the store's append-one and load-run contracts."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-1",
+        "prd:pipeline-measurement/FR-8",
+        "design:pipeline-measurement-v2#3.6",
+        "design:pipeline-measurement-v2#DINV-6",
+        "design:pipeline-measurement-v2#DINV-7"
+      ],
+      "touches": [
+        "internal/phasemeter/store",
+        "internal/phasemeter/record",
+        ".gitignore"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 90
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T1",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Phase-boundary detection and innermost-active-phase attribution",
+      "goal": "The recorder brackets a run's phases from the harness's own session record as a stack and attributes each turn to the innermost active phase.",
+      "current": "No phase concept exists over a harness session record.",
+      "desired": "A phase stack where a skill-invocation marker pushes and an artifact-write pops; each turn attributes to the top of the stack; a nested sub-skill gets its own bracket and record, never blended into its parent; a phase with no close is recorded incomplete with its spend, never dropped or rolled into the next; each phase carries the identity of the harness that ran it.",
+      "scope": [
+        "The phase-stack detector over a harness session record; the push/pop marker predicates.",
+        "Incomplete-phase handling and per-phase harness identity."
+      ],
+      "out_of_scope": [
+        "Reading spend figures or writing the spend fields (T3)."
+      ],
+      "acceptance": [
+        "A nested-invocation fixture yields distinct phase brackets with no spend blended into the parent.",
+        "An aborted phase (no close marker) is recorded incomplete, never dropped or merged into the next.",
+        "A harness-switch fixture yields records each naming the harness that ran that phase."
+      ],
+      "key_interfaces": [
+        "The phase-stack type; the boundary-marker predicates (open/close)."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-3",
+        "prd:pipeline-measurement/UB-3",
+        "prd:pipeline-measurement/UB-4",
+        "prd:pipeline-measurement/UB-5",
+        "design:pipeline-measurement-v2#3.8",
+        "design:pipeline-measurement-v2#DINV-5"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/phasemeter/phase"
+      ],
+      "size_band": {
+        "lo": 50,
+        "hi": 110
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Spend-source port + Claude Code adapter: measure a phase end to end",
+      "goal": "Measure a real Claude Code phase's per-model spend and write its record — the first end-to-end measured phase.",
+      "current": "No spend capture exists.",
+      "desired": "A consumer-side spend-source port; a Claude Code adapter that reads Claude Code's own accounting for a phase bracket into a per-model token quartet; the recorder writes the phase's record (spend + harness + ids) to the store. The recorder invokes no model, reads only accounting + the run, mutates nothing of the run, writes no secret value, and its main refuses a flag-like positional before any write.",
+      "scope": [
+        "The spend-source port interface (consumer-side).",
+        "The Claude Code adapter; the record-write path; the recorder main (fail-closed on misparse)."
+      ],
+      "out_of_scope": [
+        "The other three adapters (T6–T8); reconciliation (T4); the degradation path (T5)."
+      ],
+      "acceptance": [
+        "Running a real Claude Code phase yields a record whose per-model tokens equal Claude Code's own accounting for that bracket.",
+        "Over a full measurement pass the recorder consumes zero model tokens and leaves the run's artifacts and harness state byte-unchanged.",
+        "A seeded-secret transcript produces no record containing the secret.",
+        "A flag-like positional (e.g. a flag placed after a directory arg) is refused as a usage error before any record is written."
+      ],
+      "key_interfaces": [
+        "The spend-source port; the Claude Code adapter (implements it); the recorder entrypoint."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-1",
+        "prd:pipeline-measurement/FR-5",
+        "prd:pipeline-measurement/FR-7",
+        "prd:pipeline-measurement/FR-10",
+        "prd:pipeline-measurement/NR-1",
+        "design:pipeline-measurement-v2#3.7",
+        "design:pipeline-measurement-v2#3.11",
+        "design:pipeline-measurement-v2#DINV-1",
+        "design:pipeline-measurement-v2#DINV-2",
+        "design:pipeline-measurement-v2#DINV-8",
+        "design:pipeline-measurement-v2#DINV-9"
+      ],
+      "blocked_by": [
+        "T1",
+        "T2"
+      ],
+      "touches": [
+        "cmd/phasemeter",
+        "internal/phasemeter/spend",
+        "internal/phasemeter/adapter/claudecode"
+      ],
+      "size_band": {
+        "lo": 60,
+        "hi": 130
+      },
+      "mechanical": false,
+      "size_accepted": "the first end-to-end tracer bullet — the port, the primary adapter, the record-write path, and the recorder main are one demoable slice; splitting them yields no independently-demoable behavior",
+      "plan_task_id": "pipeline-measurement/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Tiered reconciliation",
+      "goal": "Each recorded per-model figure is reconciled to the harness's own accounting, with the reconciliation tier recorded per figure.",
+      "current": "Recorded spend is unverified.",
+      "desired": "The recorder cross-checks the per-phase per-model sum against the harness's authoritative total for the same span where one is reported, and records the tier — exact where the harness reports an authoritative figure, harness-precision where only a coarser figure exists (never inventing digits), unavailable where non-reconcilable.",
+      "scope": [
+        "The reconciler and the per-figure tier recording."
+      ],
+      "out_of_scope": [
+        "The unavailable degradation path (T5)."
+      ],
+      "acceptance": [
+        "On a reference run every recorded figure carries a reconciliation tier.",
+        "An authoritative-total fixture reconciles exact (recorded equals the harness figure).",
+        "A coarser-total fixture records harness-precision and never reports more precision than the harness gave."
+      ],
+      "key_interfaces": [
+        "The reconciler contract; the tier enum (exact / harness-precision / unavailable)."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-1",
+        "design:pipeline-measurement-v2#3.9",
+        "design:pipeline-measurement-v2#DINV-4"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/phasemeter/reconcile"
+      ],
+      "size_band": {
+        "lo": 30,
+        "hi": 70
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "Honest degradation: unavailable, never a silent zero",
+      "goal": "A figure a harness cannot expose is recorded as a declared unavailable marker, never a zero or an estimate.",
+      "current": "An adapter that cannot read a figure has no defined recorded outcome.",
+      "desired": "The spend-source port's contract lets an adapter return a declared unavailable marker naming the harness and the missing figure; the recorder writes the marker; no zero or estimated value is ever presented as measured spend.",
+      "scope": [
+        "The unavailable marker type and the port's degradation contract; the recorder's handling of it."
+      ],
+      "out_of_scope": [
+        "Which specific harnesses degrade (each adapter's empirical concern, T6–T8)."
+      ],
+      "acceptance": [
+        "A no-usage fixture yields a declared unavailable marker naming the harness and figure.",
+        "No zero or estimate ever appears where a figure was unavailable (a red-first-then-green degradation test)."
+      ],
+      "key_interfaces": [
+        "The unavailable marker type; the spend-source port's return contract."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-6",
+        "prd:pipeline-measurement/UB-1",
+        "design:pipeline-measurement-v2#DINV-3",
+        "design:pipeline-measurement-v2#3.7"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/phasemeter/spend"
+      ],
+      "size_band": {
+        "lo": 25,
+        "hi": 60
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T5",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "Codex spend adapter",
+      "goal": "Capture-or-declare per-model spend on Codex.",
+      "current": "No Codex adapter.",
+      "desired": "A Codex adapter reading Codex's own accounting through whichever channel it exposes on the user's own key (the empirical capability-matrix spike), producing per-model spend for a phase bracket, or a declared unavailable where Codex exposes none. It alters no Codex state.",
+      "scope": [
+        "The Codex adapter and the channel investigation for Codex."
+      ],
+      "out_of_scope": [
+        "The port itself (T3); the other adapters."
+      ],
+      "acceptance": [
+        "A Codex reference-run fixture yields per-model spend or a declared unavailable, attributed to the correct phase.",
+        "Reading Codex's accounting leaves Codex's own output byte-unchanged."
+      ],
+      "key_interfaces": [
+        "The Codex adapter (implements the spend-source port)."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-5",
+        "design:pipeline-measurement-v2#3.7"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/phasemeter/adapter/codex"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 90
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T6",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Cursor CLI spend adapter",
+      "goal": "Capture-or-declare per-model spend on Cursor CLI.",
+      "current": "No Cursor CLI adapter.",
+      "desired": "A Cursor CLI adapter reading its accounting through whichever channel it exposes on the user's own key; the design flags Cursor's proxy-billing as the likeliest degradation case, so a declared unavailable is an expected, first-class outcome here, not a failure. It alters no Cursor state.",
+      "scope": [
+        "The Cursor CLI adapter and the channel investigation for Cursor."
+      ],
+      "out_of_scope": [
+        "The port itself (T3); the other adapters."
+      ],
+      "acceptance": [
+        "A Cursor CLI reference-run fixture yields per-model spend or a declared unavailable, attributed to the correct phase.",
+        "Where Cursor exposes no per-model spend on the user's key, the adapter declares unavailable, never a fabricated figure."
+      ],
+      "key_interfaces": [
+        "The Cursor CLI adapter (implements the spend-source port)."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-5",
+        "design:pipeline-measurement-v2#3.7"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/phasemeter/adapter/cursor"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 90
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T7",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "OpenCode spend adapter",
+      "goal": "Capture-or-declare per-model spend on OpenCode.",
+      "current": "No OpenCode adapter.",
+      "desired": "An OpenCode adapter reading its accounting through whichever channel it exposes on the user's own key, producing per-model spend for a phase bracket, or a declared unavailable. It alters no OpenCode state.",
+      "scope": [
+        "The OpenCode adapter and the channel investigation for OpenCode."
+      ],
+      "out_of_scope": [
+        "The port itself (T3); the other adapters."
+      ],
+      "acceptance": [
+        "An OpenCode reference-run fixture yields per-model spend or a declared unavailable, attributed to the correct phase.",
+        "Reading OpenCode's accounting leaves OpenCode's own output byte-unchanged."
+      ],
+      "key_interfaces": [
+        "The OpenCode adapter (implements the spend-source port)."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-5",
+        "design:pipeline-measurement-v2#3.7"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/phasemeter/adapter/opencode"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 90
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T8",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "Deterministic artifact+git efficiency reader",
+      "goal": "Per-phase efficiency signals are computed deterministically from the frozen artifacts + git, joined to the run records.",
+      "current": "No efficiency signals are computed.",
+      "desired": "A reader counts the corpus's existing typed anchors per phase — questions from `D-n`, fog from `G-n`, rework from superseded `D-n` and amendment count, defects from review `FND-n`, coverage from the plan matrix, latency from git timestamps — joined to records by run/phase id, with no model invocation and no runtime hook, yielding identical signals whichever harness produced the artifacts.",
+      "scope": [
+        "The anchor-counting extractor, the git-timestamp latency, and the join to records."
+      ],
+      "out_of_scope": [
+        "Any spend path; the operator presentation (T12)."
+      ],
+      "acceptance": [
+        "For a reference run the efficiency signals are byte-identical when computed from two different harnesses' artifacts.",
+        "Computing the signals consumes zero model tokens."
+      ],
+      "key_interfaces": [
+        "The efficiency-signal struct; the per-anchor-family counters; the git latency reader."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-4",
+        "design:pipeline-measurement-v2#3.10",
+        "design:pipeline-measurement-v2#DINV-1"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/phasemeter/efficiency"
+      ],
+      "size_band": {
+        "lo": 60,
+        "hi": 120
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T9",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T10",
+      "title": "Vendor the pinned per-model price data",
+      "goal": "The pinned upstream per-model price map is vendored as committed data, with a re-vendor script and a recorded version pin.",
+      "acceptance": [
+        "The vendored price map is present as committed data at the recorded pin, and the re-vendor script reproduces it."
+      ],
+      "provenance": [
+        "Vendor the pinned upstream per-model price map (the LiteLLM `model_prices_and_context_window.json`) as committed data in the footprint's vendor area.",
+        "Add a re-vendor script mirroring the pinned Mermaid-data vendoring idiom.",
+        "Record the pinned version in the footprint's version-pin file."
+      ],
+      "traces": [
+        "design:pipeline-measurement-v2#3.12"
+      ],
+      "touches": [
+        "the vendored price-data asset; the footprint version-pin file"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "pipeline-measurement/001/T10",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T11",
+      "title": "Cost derivation from the vendored prices",
+      "goal": "Each record's per-model dollar cost is derived from the pinned price snapshot, with the snapshot version stamped and un-priced models flagged.",
+      "current": "Records carry tokens but no cost.",
+      "desired": "Parse the vendored price data; compute per-model cost as tokens times the pinned per-class price; stamp the price-snapshot version on the record; flag an un-priced model rather than emitting a silent zero cost.",
+      "scope": [
+        "The price parser and the cost derivation; the snapshot-version stamp; the un-priced flag."
+      ],
+      "out_of_scope": [
+        "Maintaining the prices themselves (vendored, T10); the presentation (T12)."
+      ],
+      "acceptance": [
+        "A record reproduces its dollar cost from the price-snapshot version it stamped.",
+        "A model with no price entry is flagged, never given a $0 cost."
+      ],
+      "key_interfaces": [
+        "The price-table parser; the cost-derivation contract; the snapshot-version field."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-2",
+        "prd:pipeline-measurement/UB-2",
+        "design:pipeline-measurement-v2#3.12",
+        "design:pipeline-measurement-v2#DINV-6"
+      ],
+      "blocked_by": [
+        "T1",
+        "T10"
+      ],
+      "touches": [
+        "internal/phasemeter/price"
+      ],
+      "size_band": {
+        "lo": 30,
+        "hi": 70
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T11",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T12",
+      "title": "The operator reader",
+      "goal": "The operator can read, per phase of a run, tokens by model, dollar cost, and the efficiency signals.",
+      "current": "Records exist in the store but there is no operator-facing read.",
+      "desired": "A reader that queries a run's records, joins the reconciled spend, cost, and efficiency, and presents each phase's tokens-by-model, cost, and efficiency signals (or the unavailable markers); its main fails closed on misparse.",
+      "scope": [
+        "The reader main and the per-phase presentation."
+      ],
+      "out_of_scope": [
+        "A query/analytics surface or a cost-per-feature rollup view (waiting room)."
+      ],
+      "acceptance": [
+        "For a reference run, the read lists every phase with its per-model tokens, cost, and efficiency signals, or the declared unavailable markers.",
+        "A flag-like positional is refused as a usage error before any read side effect."
+      ],
+      "key_interfaces": [
+        "The reader entrypoint; the per-phase view contract."
+      ],
+      "traces": [
+        "prd:pipeline-measurement/FR-9",
+        "design:pipeline-measurement-v2#3.11"
+      ],
+      "blocked_by": [
+        "T4",
+        "T9",
+        "T11"
+      ],
+      "touches": [
+        "cmd/phasemeter",
+        "internal/phasemeter/reader"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 90
+      },
+      "mechanical": false,
+      "plan_task_id": "pipeline-measurement/001/T12",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:pipeline-measurement/FR-1",
+      "tasks": [
+        "T1",
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-2",
+      "tasks": [
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-3",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-4",
+      "tasks": [
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-5",
+      "tasks": [
+        "T3",
+        "T6",
+        "T7",
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-6",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-7",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-8",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-9",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/FR-10",
+      "tasks": [
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/NR-1",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/UB-1",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/UB-2",
+      "tasks": [
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/UB-3",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/UB-4",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:pipeline-measurement/UB-5",
+      "tasks": [
+        "T2"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:afe016c91f3af8ef64a7510f4ebbe11b511802bec0d6ffc2080c89a559a4f690"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ1CSSKFQZMBTD15Y2J",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-5",
+  "statement": "The structure arm and (where a docgate check) the attribution gate add no hand-edited line to the umbrella enumeration/dispatch/help; each ships as its own descriptor/adapter file",
+  "intent": "FR-7; NFR-3",
+  "fit_criterion": "descriptor/adapter files + umbrella diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3789c491e48008ef563ab5d03d1e98ff481373cbf8645e421fac7b2e874a4b53",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.825Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

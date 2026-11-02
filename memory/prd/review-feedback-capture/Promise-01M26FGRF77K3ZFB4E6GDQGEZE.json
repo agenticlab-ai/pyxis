@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF77K3ZFB4E6GDQGEZE",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "UB-3",
+  "statement": "If If a captured comment produces no change, then the system shall close the entry `no-action` with a reason",
+  "intent": "entry closed, not dangling",
+  "fit_criterion": "zero entries remain open with no disposition after their subject's merge without a flagged pending state",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d12cb5fc071c5e6e657a0b282d3a8852a311fd132dfec2f67e495c67f0d4093b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.367Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

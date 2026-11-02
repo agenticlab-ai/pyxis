@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBBDJVBMJM5E51D8T4YQV",
+  "kind": "Document",
+  "subject": "template/plan-template",
+  "family": "template",
+  "statement": "Imported Pyxis source document: .pyxis/templates/plan-template.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/templates",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "e64340504b5466c2e386c44cd99f2d68edfa4426c7c08e4ef7cba31b9bb4f2cd",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:13Z",
+  "provenance": {
+    "source": ".pyxis/templates/plan-template.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

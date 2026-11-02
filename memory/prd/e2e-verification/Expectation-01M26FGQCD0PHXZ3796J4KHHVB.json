@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQCD0PHXZ3796J4KHHVB",
+  "kind": "Expectation",
+  "subject": "prd/e2e-verification",
+  "family": "DOD-8",
+  "statement": "The dogfood's e2e design doc carries a stated answer under every FR-19 element — or an existing harness cited with only its delta (FR-20) — with the buildability lens returning no finding against it, and the plan cut from it names one exclusively-owned artifact per scenario task with no artifact named twice",
+  "intent": "FR-19, FR-20, FR-21, FR-26",
+  "fit_criterion": "the dogfood design doc, the well-formedness checker's clean result over its harness section, the buildability lens's finding-free verdict, and the plan's per-task owned-artifact list",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1431c47e15e7c05c016ab263a5d00c15eb153dd7c0a5e7b46f88432c6047af7e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.253Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

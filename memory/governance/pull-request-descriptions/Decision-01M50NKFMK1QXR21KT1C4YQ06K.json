@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "Decision-01M50NKFMK1QXR21KT1C4YQ06K",
+  "kind": "Decision",
+  "subject": "governance/pull-request-descriptions",
+  "family": "template-and-check",
+  "statement": "Every pull request description follows .pyxis/templates/pr-description-template.md: Human Reviewer data (Lines of code, Complexity, Blast radius, Decision type, Review notes) first, then What, Why, How and Testing. Three surfaces enforce it. AGENTS.md binds agent sessions and skills. The executor writes its own proposals' descriptions from the block the implementing agent ends its final message with, computing Lines of code with internal/changesize and Complexity from the task's implementation capability (economy and standard are low, strong is medium, frontier is high). The hosted pr-description check fails a pull request whose description misses the template or whose Lines of code no longer matches its diff. Pull requests from feature-draft branches are exempt, because the feature-draft contract defines their description as the approval view.",
+  "intent": "Let a reviewer size and route a review from the first screen of any pull request, and keep the stated line count trustworthy because it is computed and checked rather than estimated.",
+  "rationale": "The operator found Pyxis-generated pull request descriptions hard to review and specified the template's fields on 2026-10-15, including that complexity should come from the existing native routing and task assessment. The check runs in its own pull_request workflow (opened, edited, synchronize, reopened) because docs-gate does not run when a description is edited, so a description fix could not clear a red docs-gate job without a push; it acts only when that workflow sets PYXIS_PR_DESCRIPTION_RUN, so everywhere else the shared code gate passes it unread. The executor refreshes a proposal's description before every push onto it, drive-to-green re-pushes included, because it reads GitHub check runs with filter=latest: a run against a stale description on the pushed head could read red and start a fixer, which cannot change a description. A final message without a complete description makes the attempt unconverged, not failed and not published with a synthesized description: a respawn carrying the problems is cheap and bounded by the respawn cap, while blast radius and decision type are judgments Pyxis cannot make up. Pyxis publishes the agent's text, so its HTML comments are dropped (no forged machine markers) and issue-closing references are defused (only the adapter adds the task's own closing directive).",
+  "fit_criterion": "internal/prdescription tests parse the template file's skeleton and check its worked example; worker tests show a proposal opening with the computed Lines of code and Complexity, the description refreshed before the push, and a missing or incomplete description respawning with its problems while nothing is published; drive-to-green tests show each re-push described first; ci-parity accepts the pr-description workflow.",
+  "learned_from": [
+    "operator-decision:2026-10-15-pr-description-template-for-agents-executor-and-ci"
+  ],
+  "alternatives_rejected": [
+    "A feature draft (PRD, tech spec, lock, plan) before any code: the operator chose direct pull requests.",
+    "Agent instructions only, leaving executor pull requests on the old stub body: rejected by the operator's scope choice; executor pull requests are among the ones reviewers found hard to read.",
+    "Running the check inside docs-gate: rejected because docs-gate does not run when a description is edited, so fixing a description would need a push.",
+    "Letting CI rewrite the line count itself instead of failing: rejected because the operator chose a check that fails a stale count, and a CI job editing pull request bodies would race the executor's own body writes.",
+    "Adopting the template in the contract-draft and lock pull requests pyxis draft opens: deferred by the operator, because the feature-draft contract (design section 3.9, FR-18) defines that view and changing it needs a reopened contract.",
+    "Publishing a synthesized description when the agent gives none: rejected because Pyxis cannot judge blast radius or decision type for the agent."
+  ],
+  "tags": [
+    "code:internal/prdescription/prdescription.go",
+    "code:internal/changesize/changesize.go",
+    "code:internal/executor/worker/worker.go"
+  ],
+  "consequence": "medium",
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-15T20:56:02Z",
+  "provenance": {
+    "source": "code:internal/prdescription/prdescription.go",
+    "note": "On 2026-10-15 the operator asked to 'introduce a template that all the pr has to follow' with the Human Reviewer data fields and What/Why/How/Testing sections, then chose 'Agents + executor + CI gate' as direct pull requests without a feature draft, and 'Exempt for now' for the contract-draft and lock pull requests."
+  }
+}

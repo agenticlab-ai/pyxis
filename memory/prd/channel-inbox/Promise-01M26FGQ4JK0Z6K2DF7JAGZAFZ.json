@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4JK0Z6K2DF7JAGZAFZ",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "NFR-3",
+  "statement": "The feature shall send no operator, repo, or usage data anywhere; the sole network operation is a read of the channel snapshot.",
+  "intent": "Privacy",
+  "fit_criterion": "an egress scan over a run observes only the channel GET; no identifying payload leaves",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:931b4f020036d09f7f09270053d23f9dec738a58f465e6dd169a66d55b285756",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.002Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

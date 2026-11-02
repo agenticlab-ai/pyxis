@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMJ34VEFJNT5EHD0ZR93",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "EVT-3",
+  "statement": "local_approval_refused fires when Invalid approval rejected",
+  "intent": "reason: enum, proposal: string",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7Q943TFA6A458P02ZB",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-13",
+  "statement": "The gate shall read its per-trigger severity map — which checks are blocking versus advisory at planning entry versus on contract-doc PRs — from a closed-schema, versioned policy artifact, such that changing a severity is a data change requiring no behavior-code change.",
+  "rationale": "policy as data (AP-6/AP-10); the guardrail's demotion path (§3.3) is a data edit, and the default split (all hard at entry; coverage advisory continuously) is the seed",
+  "fit_criterion": "an unknown policy key fails closed-parse; editing the map to demote a check to advisory flips a fixture's gate outcome with zero code diff; the default map encodes `#D-4`'s split",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7fc49f3df3fc291bebd4ba8e4896fd8ce212807ba5136cea895fe72a5d12387",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.103Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

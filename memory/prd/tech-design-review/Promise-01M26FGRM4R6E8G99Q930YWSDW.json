@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRM4R6E8G99Q930YWSDW",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "FR-10",
+  "statement": "The reviewer shall cap rounds at two per subject per moment; at the cap only approve, approve-with-advisories, or escalate are recordable.",
+  "rationale": "the fuel gauge (inherited; AP-16/AP-19)",
+  "fit_criterion": "no third round exists on any fixture (EVAL-5)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5279ea24f0f5d95e26209e532f4592f3362c1d2a9bc45b6b43c682cca71b3b2c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.524Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

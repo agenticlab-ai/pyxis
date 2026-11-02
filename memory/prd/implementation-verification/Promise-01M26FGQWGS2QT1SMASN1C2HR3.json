@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWGS2QT1SMASN1C2HR3",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-11",
+  "statement": "When a proposal diff whose non-test half is non-empty adds or modifies test files, rung 3 shall verify the new or changed tests fail with that non-test half reverted; tests that pass without it shall fail the rung with a falsification finding naming each tautological test.",
+  "rationale": "a test written by the code's own author must be demonstrated to bite; this is the smallest deterministic defense against same-mind tautology",
+  "fit_criterion": "catch seed 1 (a tautological test) is blocked in the permanent catch suite; the legitimate-diff fixtures (refactor-only change, mixed change with genuine tests) pass without a falsification finding; the test-only fixture follows FR-18",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:75e5faba759e5925541325fed2d59784a206835556864f21ec98a84d9ccfbc14",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.768Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

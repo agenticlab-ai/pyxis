@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3QAKX8B3F4R55N3K7JKHRQE",
+  "kind": "Revocation",
+  "subject": "design/argus-attribution-hardening",
+  "statement": "Superseded by approved argus-draft-attribution design; the successor carries forward the active attribution behavior.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGPMW1MHGAZ0VR13SJ5VG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T19:35:10Z"
+}

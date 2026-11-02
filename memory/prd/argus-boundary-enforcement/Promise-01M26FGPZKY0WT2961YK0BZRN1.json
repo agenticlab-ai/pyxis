@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZKY0WT2961YK0BZRN1",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-7",
+  "statement": "While no merge base is required for it, the structure arm shall register as a base-free self-registered docgate check that adds no hand-edited line to the umbrella enumeration, dispatch, or help.",
+  "rationale": "file-not-line composition (AP-27)",
+  "fit_criterion": "the arm ships as a single `reg_*.go` descriptor (`NeedsMergeBase: false`); the umbrella/dispatch/help gain no hand-edited line (diff inspection); it runs on every gate path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:839e6368f5812e1d4fc17c8dd08b34a45e325de32bcb9845e5c762dec364c7dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.843Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

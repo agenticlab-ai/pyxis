@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCK045ARREZQRGVZVAZ",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "NFR-1",
+  "statement": "The reviewer shall bound each review's cost by construction.",
+  "intent": "Cost",
+  "fit_criterion": "worst case = 1 review + 1 re-review + 1 brief per moment; no fixture exceeds it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a722e2494a08a2915b7fab65de4ecfd2f04d527b120c0341b22906f5a6d22093",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.283Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

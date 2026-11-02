@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPYNMY0N6XBQR6AAMT6",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "decision.3.1.1",
+  "statement": "one e2e design doc per feature is a markdown file instantiated from an `e2e-design/v2` template with a **closed section set** — every section present, an empty one reading a stated `none — \u003creason\u003e` (`prd:e2e-verification/FR-18`). The header carries the routing pair (`In one line` · `Relevant-when`), a **`Basis`** row typing the feature join (`prd:\u003cfeature\u003e` — the coverage source), the **governing-design revision(s)** the coverage was derived from (the live design *set*), and `Status` (`draft` → `approved`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:76bd4001e308ae60d0abecb1f36a23bc22617a08de5665c9f7c6495f4a60a914",
+    "source-design:779a9cab36d326f16934019e5c4c24f510597f439dc70edd35e6df1b3dc9409c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPG1PDN6JTNMWNSWGJ2C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.566Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-artifacts-v2.md lines 58-58 in section 3.1; sha256:76bd4001e308ae60d0abecb1f36a23bc22617a08de5665c9f7c6495f4a60a914"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35HVKJJN94XQ2QZMF2GN4MQ",
+  "kind": "Document",
+  "subject": "configuration/context-pack",
+  "family": "config",
+  "statement": "Captured authored source: .pyxis/context-pack.yaml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/context-pack.yaml",
+    "reconcile:source",
+    "sha256:4a3736b049b322d721e040dcf07c64cd49fac6cff1039dcabd0a3091499f6df7"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB6Q5ZG4PK5ZZR24K1EEE"
+    }
+  ],
+  "body_sha256": "4a3736b049b322d721e040dcf07c64cd49fac6cff1039dcabd0a3091499f6df7",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T21:55:23Z",
+  "provenance": {
+    "source": ".pyxis/context-pack.yaml",
+    "note": "offline reconciliation"
+  }
+}

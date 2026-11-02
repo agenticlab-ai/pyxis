@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWFX2KEAQND14CTBZNZ",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:argus-boundary-enforcement/ABUSE-2 · prd:argus-boundary-enforcement/ABUSE-3 · prd:argus-boundary-enforcement/ABUSE-4 · prd:argus-boundary-enforcement/FR-10 · prd:argus-boundary-enforcement/FR-12 · prd:argus-boundary-enforcement/FR-13 · prd:argus-boundary-enforcement/FR-9 · prd:argus-boundary-enforcement/NFR-1 · prd:argus-boundary-enforcement/NFR-2 · prd:argus-boundary-enforcement/NFR-3 · prd:argus-boundary-enforcement/NR-4 · prd:argus-boundary-enforcement/UB-4 · prd:argus-boundary-enforcement/UB-5.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYRP4FGBKXX0CYVA6MB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYS06H8DV7A1E26Q2MH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYTCZKCZKY7SVK0SMC3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZBEZE6M6PSDGYNP8CC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZCQQQ4ZSDZX0MQWDY4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZDYY31WV14NSV0ZRJZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZNH6J0XYC71XV36KAX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZYGKNNEB28RAT7MXA1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZZPNJR9E0DF6GCMD6Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ007DV6VB986GRY9T2R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ05ZZ6EEVDNC0MA017M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ092D9BZ8DDXCWDBXTM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0A75XMA0CW2ZXDB9KR"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.791Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c"
+  }
+}

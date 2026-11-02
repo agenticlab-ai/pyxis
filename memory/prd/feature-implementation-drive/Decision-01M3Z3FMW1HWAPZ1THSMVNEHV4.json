@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3Z3FMW1HWAPZ1THSMVNEHV4",
+  "kind": "Decision",
+  "subject": "prd/feature-implementation-drive",
+  "family": "R8",
+  "statement": "accepted explicit local limit; procedural operator boundary; no identity/protection claim; hosted unchanged",
+  "intent": "Preserve the source risk mitigation in the proposed local Git landing contract for operator PR review.",
+  "rationale": "A shared-account receipt is mistaken for authenticated human approval or protected mainline.",
+  "fit_criterion": "Hosted authorization and ruleset fixtures retain prior outcomes. Local fixtures prove generation/evidence/ref consistency and zero drive-invoked landings, while status and landing output state that the operator and agent share an OS account that can directly edit hooks and refs. No independent approval signing key, copied-origin identity, or host-level mainline protection is required. Existing signed execution ownership, task claims, e2e runner authentication, and manual-human candidate attestations retain their contracts; a local receipt cannot stand in for them. No implicit local fallback or re-enabling of Pyxis source's disabled legacy document checks occurs.",
+  "tags": [
+    "source-unit:ec6f0ec27d5f220e6cf8a38289cc51a15789bf65cba5e866db7f13a20f562470",
+    "source:prd-ledger",
+    "reconcile:prd-disposition"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:04:26Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "Native source disposition proposed with amendment 001; operator approval and human merge remain pending."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZM23CNRCRS809THP5HSDK",
+  "kind": "Document",
+  "subject": "brainstorm/argus-ledger-lint-tech-design",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/argus-ledger-lint-tech-design.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:4284ae7ad85a7eba02db94ada435de175a258ca3f6c0bc99d7ee2d21e75d5f33"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBDC6H6M77FYXPM02CG7K"
+    }
+  ],
+  "body_sha256": "4284ae7ad85a7eba02db94ada435de175a258ca3f6c0bc99d7ee2d21e75d5f33",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:55:56Z",
+  "provenance": {
+    "source": "docs/brainstorms/argus-ledger-lint-tech-design.md",
+    "note": "offline reconciliation"
+  }
+}

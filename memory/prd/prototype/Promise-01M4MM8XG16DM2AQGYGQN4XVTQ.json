@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG16DM2AQGYGQN4XVTQ",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-2",
+  "statement": "When Pyxis builds a prototype, Pyxis shall build it in a Git worktree of its own, on a branch that belongs to neither the feature's draft nor mainline.",
+  "rationale": "\"pyxis will go implement it in a work tree\" (brainstorm:prototype#D-6)",
+  "fit_criterion": "After a prototype run, every file the prototype changed is on the prototype's own branch, and the draft branch and mainline contain none of those changes",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRH5SF40CP8PDF4A72QE",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "UB-8",
+  "statement": "If the machine is downgraded from a build that charges the host umbrella to one that does not — **every such downgrade, whatever state the umbrella is in**, then the system shall gate the downgrade on a **documented operator precondition**, not on any in-software hold-off: for each affected medium host, no legacy write until that host's drain deadline has passed, computed from confirmed quiescence by state class — **readable and holding live entries** ⇒ the latest applicable expiry those entries imply; **readable and empty** ⇒ no wait, the deadline is confirmed quiescence itself; **missing, unreadable, or structurally invalid** ⇒ the full longest platform window, since the bytes may encode spend as recent as quiescence. Neither build can enforce this — they share no state, lock, or vocabulary — so the enforcement is the release gate: §6.6's Cutover record carries the per-host evidence, and §6.4/§6.5's launch decision refuses a release whose rollback rehearsal did not walk it",
+  "intent": "the documented downgrade procedure blocks until each host's deadline; the readiness record shows the deadline and the first legacy write after it",
+  "fit_criterion": "**arithmetic (Test)**: with an injected clock, seed the umbrella to one below the per-minute cap at a recorded t0 and downgrade at t0+ε; a two-write legacy workload inside the live window exceeds the platform cap against a bound oracle computed from the seeded timestamps, while the identical workload after the clock passes every seeded expiry stays inside both windows. **Absent-ledger variant (Test)**: with the umbrella missing or corrupted, the computed deadline is the full longest window from confirmed quiescence, and a workload before it breaches while the same workload after it does not. **Compliance (Inspection)**: the rollback rehearsal walks the procedure end to end and the §6.6 record carries, per host, the confirmed-quiescence time, the state classification, the computed deadline, the completion time, and evidence the first legacy write followed it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:13fa6105f39d9fa10631629e8aaf4e455486b9727f1e7f0598224e102c60b8c8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.429Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

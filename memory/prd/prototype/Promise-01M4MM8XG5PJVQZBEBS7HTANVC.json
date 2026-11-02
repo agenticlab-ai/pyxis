@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG5PJVQZBEBS7HTANVC",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-6",
+  "statement": "When a prototype is requested, a Pyxis command shall launch the prototype's build as a separate headless run on the harness and model that the repository's configuration names for prototypes, or, where the configuration names none, on the harness and model of the session that asked.",
+  "rationale": "\"it should be a cmd in the pyxis ecosystem that based on the config value (if it exists) decides on the harness and the model; if there is no configured value, then it falls back to whather the ambient (current running harness and model)\" (problem P-1 in this draft, ruled by the operator; brainstorm:prototype#D-10)",
+  "fit_criterion": "With a prototype configuration naming a harness and a model, the command launches the build on exactly that harness and model and reports both; with no prototype configuration, the command launches the build on the harness and model the asking session passed and reports both; in neither case does the asking session build the prototype itself",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

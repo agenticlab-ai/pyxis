@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG7KQ3JYR0ZSRDPTAK5",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-4",
+  "statement": "While at least one await is registered, the wake channel shall check state on the adapter-advised cadence and, when an awaited transition is observed, deliver a wake naming only the await's identifier and the transition kind to the registered consumer.",
+  "rationale": "the alarm; instruction-free by construction (AP-2)",
+  "fit_criterion": "live drill on both media: a merge/accept is followed by a delivered wake within the M2 bound; the signal schema is closed (unknown fields = defect)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cb8d5e1311d1dda32d4c745461bacf3dacec07609f39a8dedfd34d72b09a79d8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.399Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

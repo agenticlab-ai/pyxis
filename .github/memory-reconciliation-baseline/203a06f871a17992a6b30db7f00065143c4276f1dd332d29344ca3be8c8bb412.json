@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/design-brainstorm-record-model",
+  "feature": "tech-design-brainstorm",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

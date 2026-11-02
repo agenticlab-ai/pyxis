@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ5ZM36BFH77S5RT72GB",
+  "kind": "Expectation",
+  "subject": "prd/context-pack",
+  "family": "DOD-5",
+  "statement": "The reference stage shows M1 ≥ target with M2 clean",
+  "intent": "§3.2",
+  "fit_criterion": "before/after token accounting + the independence check",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4486f32944dc269e4b0cbf6f4ad3ea97fd94148d6be9b3f202e14eb342f6aea2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.047Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

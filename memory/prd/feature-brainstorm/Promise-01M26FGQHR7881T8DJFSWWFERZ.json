@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHR7881T8DJFSWWFERZ",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "UB-5",
+  "statement": "If If the operator rejects every framing and no sharper destination emerges within the session, then the system shall end through the gate with verdict needs-investigation, the rejected framings and their reasons recorded as blocking fog context",
+  "intent": "an honest \"not ready to contract\" with the why captured",
+  "fit_criterion": "the no-destination fixture ends needs-investigation with all rejected framings and reasons present",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dd59b1fdd2e4c17bb5b7ddc298f75d0cbac796c96006e0c705dc29bb0948f818",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.424Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

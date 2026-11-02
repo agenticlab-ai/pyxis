@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRH3JH5RZK9EJ42APHSF",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "UB-4",
+  "statement": "If overlapping checkers observe the same transition (restart races, future push + timer overlap), then the system shall deliver possibly-duplicate wakes that are harmless by construction — consumers re-derive through reads and existing claims arbitrate",
+  "intent": "nothing abnormal",
+  "fit_criterion": "two concurrent checkers over one fixture feature: zero duplicate task dispatches; events show coalescing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8b38413c34def29d04b3217eb242ec01a74b7e61dc85d3dfb735eebcdcf4f483",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.427Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

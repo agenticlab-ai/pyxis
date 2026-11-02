@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T4Y1C6MR4FXJS0D27SYNW",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "J2",
+  "statement": "When I review a destructive cleanup, I want see exact prior authority, ownership, and preserved history, so I can distinguish intended retirement from accidental deletion",
+  "rationale": "Failed source-retirement and code-transition checks on the E2E removal candidate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1bd9c0a1d05a2ae439485a0ddf635cbbf1d59528e12cbee3250abb029e1e854f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:34Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

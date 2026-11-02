@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRPH57X3WYAMSYT6A9X",
+  "kind": "Question",
+  "subject": "prd/context-pack",
+  "family": "Q1",
+  "statement": "Whether the freshness guarantee is best met by refuse-on-stale or always-regenerate (or both by context)",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "solution gate → design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:a75a9107213ad94b930d96b483738333952dab945bd4f28638492a9fa3ade4fe",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.67Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

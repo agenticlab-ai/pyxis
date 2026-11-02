@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Document-01M44ZPM4596K6JQ294T6P40WE",
+  "kind": "Document",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "prd",
+  "statement": "Draft prd.md",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3WDAD7GNAF75HB0D4M4J3Y4"
+    }
+  ],
+  "body_sha256": "7d4050ccca6cbce5f3d3b6d3bacdbe60855cea57b8ded621c3130fa936142786",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

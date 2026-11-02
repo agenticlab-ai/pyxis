@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Need-01M37KT4PFYYBB90XEPFV32JF9",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "J1",
+  "statement": "When a human leaves a review comment on a PRD/design (operator review or code host), I want record it verbatim, attributed, and linked to its subject, so I can later know exactly what a human said and about what",
+  "rationale": "`#F-9`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f52b98e73a8ba01438aa3c0baab618982ab52ba19073fd836b1e3cf12f97aff",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M26FGREQ6ACN40CJ1DXMFBGC"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:08:01Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "note": "compiled from sha256:db352bc12b51ed5d5751ff52b4b092732ce4e80ff3b490e88375abd32b5f7d81"
+  }
+}

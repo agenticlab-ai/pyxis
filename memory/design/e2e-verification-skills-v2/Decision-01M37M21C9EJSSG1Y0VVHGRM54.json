@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M21C9EJSSG1Y0VVHGRM54",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.2.2",
+  "statement": "the buildability lens reads the document **blind** — it is never handed the well-formedness checker's verdict, or any other lens's. Findings that restate a defect the checker already raised are **filtered after the lens returns**, before the operator sees the report (`design-brainstorm:e2e-verification-tech-design-2#D-8`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:bcbb40e64323f87374f1594e156c89fe5edd9d471c6de18e485a3ee46d1c0cb2",
+    "source-design:3508462a6fb8b6b739ccfee9ea78d5c8e95242b483c987ee851b4df712cffe84",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQCQYHCY0R1HKPZWE3F"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR0V7JNJC4TV5S6402BWF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:20Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 83-83 in section 3.2; sha256:bcbb40e64323f87374f1594e156c89fe5edd9d471c6de18e485a3ee46d1c0cb2"
+  }
+}

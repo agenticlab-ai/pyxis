@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQYECNGYTHPPEZ4X9WMY",
+  "kind": "Expectation",
+  "subject": "prd/init-hardening",
+  "family": "DOD-1",
+  "statement": "Every Must FR passes its fit criterion",
+  "intent": "FR-1..FR-16",
+  "fit_criterion": "CI run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cc6c282c5b118d9102816aaeb5c5fc729bd37365c17f4c1cc860cfa3701c338e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.83Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

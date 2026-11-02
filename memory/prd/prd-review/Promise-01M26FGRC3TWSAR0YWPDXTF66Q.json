@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC3TWSAR0YWPDXTF66Q",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-4",
+  "statement": "The reviewer shall surface a candidate finding only after it survives adversarial scrutiny; discarded candidates shall leave no trace in the report.",
+  "rationale": "few-and-hard findings — valuable by selection pressure (— #D-2)",
+  "fit_criterion": "seeded plausible-but-wrong candidates die before the report on the survival fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:762067c2ec4e08e819e4b9f42a6e50e3d9598712b4f454b5234657f0420d24e4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.267Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

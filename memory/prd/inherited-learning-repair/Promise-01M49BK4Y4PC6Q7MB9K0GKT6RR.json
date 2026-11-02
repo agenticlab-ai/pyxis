@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4Y4PC6Q7MB9K0GKT6RR",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "FR-6",
+  "statement": "While a repair exists, a joining caller shall receive its task and proposal references as available.",
+  "rationale": "Shared progress",
+  "fit_criterion": "Join and wait use the winning operation with no task creation or dispatch",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

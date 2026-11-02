@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPMH2JM6V8P91RQB3KV",
+  "kind": "Decision",
+  "subject": "design/coverage-on-read",
+  "family": "decision.2.1",
+  "statement": "the requirements-coverage view is **computed on read, committed nowhere.** A new `docgate coverage` verb joins the universe against live designs' `serves` from committed inputs and prints it; `gen-index`/`index.*` carry only design-plane data (liveness, `serves_inverse`). Adding or amending a ledger therefore never touches `docs/tech-design/`; `index.*` regenerates only when *designs* change.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:86f655135f8099893b2875004344a246a980d45e037fd3e6820c064d6abf1994",
+    "source-design:3c9d24b2a83af985594ff74ae5a2e06fd6b0790ba7b3b710b130fd25c07f15f3",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNG9YZPXVJ9RR3377D9X"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.556Z",
+  "provenance": {
+    "source": "docs/tech-design/coverage-on-read.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/coverage-on-read.md lines 32-32 in section 2; sha256:86f655135f8099893b2875004344a246a980d45e037fd3e6820c064d6abf1994"
+  }
+}

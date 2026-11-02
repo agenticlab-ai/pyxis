@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPN4E9402Z9WANVS3R38",
+  "kind": "Decision",
+  "subject": "design/argus-authority-contract-structure-arm",
+  "family": "decision.3.1.1",
+  "statement": "The authority-contract parse lives in its **own sibling parse package**, keyed on the file's two `## `-delimited tables, with its class vocabularies as a **closed, version-pinned registry** — the tier names, the action-class tokens, and the change-history move enum — distinct from the ledger classes' anchor-family registry *(design-brainstorm:argus-boundary-enforcement-tech-design#D-2)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8cc4aeccc914819047a205a31356666e83ad3a64c042e0444390ef24280d6cde",
+    "source-design:1bb594d884b7ae8c1090022eceae77745aee55b6e8cfb17bd7393a1b159d4163",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM6307PVCJYBDJKS3N45"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.508Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-authority-contract-structure-arm.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-authority-contract-structure-arm.md lines 34-34 in section 3.1; sha256:8cc4aeccc914819047a205a31356666e83ad3a64c042e0444390ef24280d6cde"
+  }
+}

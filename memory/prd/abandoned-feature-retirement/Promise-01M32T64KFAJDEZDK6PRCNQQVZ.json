@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T64KFAJDEZDK6PRCNQQVZ",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-6",
+  "statement": "If If the trusted source is dirty, moved, unconfigured, not admitted by policy, or not the configured mainline, then the system shall Write no authority and accept no cleanup; retain only FR-15's bounded failure event",
+  "intent": "pinned-input refusal and recovery action",
+  "fit_criterion": "Each source-state fixture changes zero source, authority, or policy paths, produces no accepted retirement, and retains exactly the permitted failure event",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e74a8eff241c895c56c1b8226824fa0bdbaa981f7ba7a90c4da922f1ad1f6c75",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:13Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

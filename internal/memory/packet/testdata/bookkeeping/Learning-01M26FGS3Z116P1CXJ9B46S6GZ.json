@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS3Z116P1CXJ9B46S6GZ",
+  "kind": "Learning",
+  "subject": "learning/code-scripts-cut-pyxis-release.sh-61de6e44d147",
+  "statement": "cut-pyxis-release.sh — clean-room system release, resumable at every stage: state 1 (no release yet): cut -\u003e pin PR -\u003e wait for merge -\u003e mirror state 2 (released, pins unmerged): pins from the PUBLISHED set -\u003e pin PR -\u003e wait -\u003e mirror state 3 (released + pins merged): straight to the mirror A published version is never re-cut: tag, commit, and artifacts are one provenance hop, and the tool refuses a repack under an existing tag.",
+  "intent": "Preserve the implemented responsibility of scripts/cut-pyxis-release.sh in durable software memory.",
+  "rationale": "Source-code audit found production code without a dedicated semantic memory record.",
+  "fit_criterion": "Offline reconciliation finds active semantic memory explicitly covering code unit scripts/cut-pyxis-release.sh.",
+  "learned_from": [
+    "offline-reconciliation:0daf48dabae40160f2f3bc950cc567f640b5d914"
+  ],
+  "tags": [
+    "code:scripts/cut-pyxis-release.sh",
+    "ownership:unresolved",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGPM9DGT3K9Z3YG65YD6J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.031Z",
+  "provenance": {
+    "source": "code:scripts/cut-pyxis-release.sh",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline semantic backfill from scripts/cut-pyxis-release.sh; code unit 3f2f5eee66ca8caffad255d2b34f7e756f5b3fa2d868b79ac8974b1d8dc02833"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJZQBPVCB6X303Q9FAB",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-25",
+  "statement": "When cancellation is requested, the feature drive shall quiesce active attempts, release ownership and executable routing, and preserve all durable work artifacts pending a separate cleanup decision.",
+  "rationale": "Stop without data loss.",
+  "fit_criterion": "Cancellation drills in each active state yield zero continued attempts and zero branch/commit/PR/evidence deletion.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:56315daf19a894b160c6106d0cdb2037414cf2bd47ec074465ce8a84b7932364",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.463Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

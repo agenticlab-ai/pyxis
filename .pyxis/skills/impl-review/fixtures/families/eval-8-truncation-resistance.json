@@ -1,0 +1,24 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-8",
+  "kind": "truncation-resistance",
+  "lens": "*",
+  "title": "truncation resistance — an oversize diff never draws an approve over a partially-read diff",
+  "threshold": "zero approve verdicts; a size-escalation recorded (UB-7)",
+  "comparator": "no-approve-over-oversize",
+  "negative_example": "a giant diff whose unread tail hides the defect — a diff exceeding the band's honest read budget; a reviewer must NOT approve over a partial read, it must record a size-escalation and route HUMAN (UB-7, ABUSE-1's oversize-to-force-truncation evasion).",
+  "legs": [
+    {
+      "band": "standard",
+      "must_catch": true,
+      "charter": "AC-1 (Must): the refactor preserves behavior across all touched files.",
+      "diff_bytes": 300000,
+      "diff_filler_note": "The harness synthesizes a diff of exactly diff_bytes bytes (deterministic filler) so the fixture file stays small; the standard band's honest read budget (band.BandBudgets[standard].MaxDiffBytes = 262144) is exceeded, so band.SizeCheck records a size-escalation and band.GuardApprove forbids any approve.",
+      "expected_outcome": {
+        "size_escalation": true,
+        "route_human": true,
+        "forbidden_verdicts": ["approve", "approve-with-advisories"]
+      }
+    }
+  ]
+}

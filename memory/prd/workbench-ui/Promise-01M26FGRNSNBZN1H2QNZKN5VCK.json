@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNSNBZN1H2QNZKN5VCK",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-9",
+  "statement": "When the corpus changes on disk, the reading room should reflect the changed state on subsequent requests without restart.",
+  "rationale": "reviews happen against moving drafts",
+  "fit_criterion": "edit a fixture doc mid-session: the next catalog/search/progress request reflects it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4de7d9a47f54d7ba137a214efd70038e6eaeceb89daa04b42cfae437f8765438",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.577Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

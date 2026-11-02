@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQC1JKR01HC5SXSVWC67",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "UB-6",
+  "statement": "If If an author applies a unit or section operation whose prefix, canonical-content delta, or immediately-before lineage or Q-answer state requires another repair under FR-39, then the system shall fail before mutation and select the authorized branch",
+  "intent": "a remedy naming rebase→unit operation, changed-lineage-less whole-section repair, or lineage-bearing `supersede \u003cID\u003e` with a fresh same-prefix row; never a refresh that hides a changed lineage-bearing row or a replacement expressed as `retire` plus `add`",
+  "fit_criterion": "`supersede R6`, `supersede M4`, and `supersede ABUSE-5` while lineage-less each red with their owning-section branch; a lineage-bearing ABUSE-1 changed inside section supersede reds with `supersede ABUSE-1` and a fresh ABUSE ID; `answer Q1` after a successful prior answer, including after checkpoint restoration, and direct `rescope NG-5` each red with the correct branch; every emitted remedy passes the next validation layer and a row referenced by a live DOD `Source` or live `Traces to` cell is never sent to `retire`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d9be7bd33e7241080d3be12ac4219a90a65810eadebb6792e885831668a05d29",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.241Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

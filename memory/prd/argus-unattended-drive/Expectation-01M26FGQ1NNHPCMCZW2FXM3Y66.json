@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ1NNHPCMCZW2FXM3Y66",
+  "kind": "Expectation",
+  "subject": "prd/argus-unattended-drive",
+  "family": "DOD-7",
+  "statement": "The abuse corpus is red at exactly its row",
+  "intent": "ABUSE-1..4",
+  "fit_criterion": "the corpus run report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:115d9d4457f9b569d5b4924cb4fa22b951beea0e391d87a91afc822587e92a4f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.909Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

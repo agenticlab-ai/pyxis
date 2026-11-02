@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M390P9FEMZWH66RGK5K5WQ33",
+  "kind": "Document",
+  "subject": "review/contract-gate-v2",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/contract-gate-v2.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:8dafbfa59020827db4e32b71322353cb5ad759e51d2273cad458029f29912556"
+  ],
+  "body_sha256": "8dafbfa59020827db4e32b71322353cb5ad759e51d2273cad458029f29912556",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:12:21Z",
+  "provenance": {
+    "source": "docs/reviews/contract-gate-v2.md",
+    "note": "offline reconciliation"
+  }
+}

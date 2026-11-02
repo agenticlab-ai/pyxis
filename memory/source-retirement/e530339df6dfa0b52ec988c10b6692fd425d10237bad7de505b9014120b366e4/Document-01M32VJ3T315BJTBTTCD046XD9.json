@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M32VJ3T315BJTBTTCD046XD9",
+  "kind": "Document",
+  "subject": "source-retirement/e530339df6dfa0b52ec988c10b6692fd425d10237bad7de505b9014120b366e4",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/doc-review/SKILL.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the Lavish browser-review runtime and its doc-review entry point.",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "a03128c144d9cc29c451ad7f0a7cc44aa44146ab7f13a5218564cfce16a8a54f",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:47:14Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/doc-review/SKILL.md",
+    "commit": "ccf01caed0f620120fb123713d7ba4931e0325cb",
+    "note": "memory-source-retirement/v1"
+  }
+}

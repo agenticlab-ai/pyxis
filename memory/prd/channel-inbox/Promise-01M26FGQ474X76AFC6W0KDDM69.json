@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ474X76AFC6W0KDDM69",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-9",
+  "statement": "`pyxis inbox` shall verify the integrity and authenticity of the bulletin source before reading any bulletin field, and shall ignore an unverified source.",
+  "rationale": "only the distributor may speak on the channel",
+  "fit_criterion": "a tampered or unsigned bulletin file is ignored (no bulletin emitted); a valid one is read; verification precedes field parsing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:883fd1b603647cfd82d5b0c70ce02d7aaa27b2f4d32e29363df826c2598caf52",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.991Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

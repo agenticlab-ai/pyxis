@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDK8FP90RD6TC8PQKFY",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "M4",
+  "statement": "M4: G2",
+  "intent": "seeded harness holes (a mechanical element unanswered, a library-name-only harness section, a scenario naming a seam the harness does not carry, a scenario with no owned artifact) flagged by the buildability lens",
+  "fit_criterion": "every seeded harness-hole case flagged, measured at the catch-suite checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b8391521baf17431f98d1624254e56d627e80ca52c6a4b60b3942e1189dc1b9f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.291Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

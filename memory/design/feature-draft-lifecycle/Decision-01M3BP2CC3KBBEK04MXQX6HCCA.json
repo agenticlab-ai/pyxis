@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BP2CC3KBBEK04MXQX6HCCA",
+  "kind": "Decision",
+  "subject": "design/feature-draft-lifecycle",
+  "family": "open-status",
+  "statement": "Open a new feature on an agent-authored draft pull request and derive contract state from open proposals, remote lock tags, and PRD ledgers.",
+  "intent": "Keep a feature draft editable before lock while making its current contract state visible.",
+  "rationale": "The open verb verifies the configured agent account before writes, starts from fetched mainline, copies the active templates, and publishes the branch and draft PR. Status reads live proposals, remote lock tags, and existing ledgers without storing a duplicate state. Git and code-host calls use a process adapter.",
+  "fit_criterion": "A local Git fixture proves one scaffold branch and draft PR with no mainline commit; refusal fixtures cover identity, ledger, lock, branch, and publication failures; status fixtures cover all four states; race, lint, and coverage gates pass.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/docgate/config",
+    "code:internal/draft/compile",
+    "code:internal/draft/lifecycle",
+    "code:internal/memory/cli",
+    "code:internal/installer",
+    "code:internal/adapters/draft/shell"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T07:04:26Z",
+  "provenance": {}
+}

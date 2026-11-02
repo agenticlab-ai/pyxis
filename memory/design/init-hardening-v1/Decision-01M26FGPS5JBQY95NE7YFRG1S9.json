@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS5JBQY95NE7YFRG1S9",
+  "kind": "Decision",
+  "subject": "design/init-hardening-v1",
+  "family": "decision.3.1.1",
+  "statement": "All front-loaded predicates live in one new package (working name `internal/preflight`; the name is the implementer's), structured as a **check registry** — each check a row: id · applicability (a predicate over the resolved-or-prospective knobs) · probe (read-only) · outcome (`pass` | `refuse` with remedy and, where one exists, route | `advise` with warning). The registry is data the three consumers render identically (AP-10): init runs applicable checks and refuses on the first `refuse` class encountered (all outcomes reported, not just the first — a user fixes everything in one pass); preview runs the same registry and reports every outcome plus the would-do set (installer FR-24); doctor's prerequisite rows delegate to the same suite post-install (its report shape unchanged).",
+  "tags": [
+    "code:internal/preflight",
+    "reconcile:design-decision",
+    "source-block:5c623f150a4517d08fae4bac7458bd6050d31c2052ec0ed0b9c946539b95f50d",
+    "source-design:f1710649feb9b92664f344798b9e17d86efdcab1acaf8ee7bba343363531750c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSBE39JBM1VNM1VD0PKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.637Z",
+  "provenance": {
+    "source": "docs/tech-design/init-hardening-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/init-hardening-v1.md lines 52-52 in section 3.1; sha256:5c623f150a4517d08fae4bac7458bd6050d31c2052ec0ed0b9c946539b95f50d"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQG21Q5WQ1J4FJA8QKGX",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "UB-6",
+  "statement": "If the undo step finds a path adoption added modified since adoption (a chained-hook wrapper or an added file the operator edited), then the system shall preserve the modified path, name it, and complete the rest of the removal — never silently delete operator content",
+  "intent": "the modified path named as preserved; the rest removed",
+  "fit_criterion": "adopt → edit a chained-hook wrapper → undo preserves-and-names it and removes the rest",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:80e8f0a37505caed83ea568a62bd832749d401c923d4144e81c2234343ff1c4b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.37Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

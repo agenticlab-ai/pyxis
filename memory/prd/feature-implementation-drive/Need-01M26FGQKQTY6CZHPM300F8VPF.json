@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKQTY6CZHPM300F8VPF",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "M3",
+  "statement": "M3: G3",
+  "intent": "final-proposal eligibility is backed by accepted current candidate evidence",
+  "fit_criterion": "100% current evidence; seeded failure produces repair and no premature final proposal",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:25c7137f5022a25d027ac780d42fa53d9478487805dc6bbbb17695467a4fc3e1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.487Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Document-01M2645TBZYMGYYY1PBH6WSWM4",
+  "kind": "Document",
+  "subject": "distribution/source-workflows-installer-e2e",
+  "family": "source",
+  "statement": "Captured authored source: .pyxis/dist/source-workflows/installer-e2e.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:0e252555e0bbf89231eacd22cc680b6b4d635b6c44e7b164d0aadcde596603c1"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB748MA1Z88WG7DTFFC5Q"
+    }
+  ],
+  "body_sha256": "0e252555e0bbf89231eacd22cc680b6b4d635b6c44e7b164d0aadcde596603c1",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-10T16:59:50Z",
+  "provenance": {
+    "source": ".pyxis/dist/source-workflows/installer-e2e.yml",
+    "commit": "bae567f1d728a5062d35e2451caf7db363ea9c71",
+    "note": "offline reconciliation"
+  }
+}

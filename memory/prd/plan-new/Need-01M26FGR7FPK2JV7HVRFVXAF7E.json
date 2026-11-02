@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7FPK2JV7HVRFVXAF7E",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "J4",
+  "statement": "When I review a task's PR, I want see which PRD requirement and design decision the task serves, so I can judge spec faithfulness, not just code quality",
+  "rationale": "VNEXT-3; PLAN-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2ea054f6df319a1494817fe62a28f3273ff17493ee20ccd3b009c92c825447c5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.119Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

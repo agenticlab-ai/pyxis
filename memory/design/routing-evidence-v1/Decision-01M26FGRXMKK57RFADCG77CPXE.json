@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXMKK57RFADCG77CPXE",
+  "kind": "Decision",
+  "subject": "design/routing-evidence-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:impl-review/EVT-10 · prd:impl-review/EVT-11 · prd:impl-review/EVT-2 · prd:impl-review/EVT-3 · prd:impl-review/EVT-7 · prd:impl-review/EVT-8 · prd:impl-review/EVT-9 · prd:impl-review/FR-27 · prd:impl-review/FR-29 · prd:impl-review/FR-30 · prd:impl-review/FR-6 · prd:impl-review/NFR-10 · prd:impl-review/NFR-11 · prd:impl-review/NFR-12 · prd:impl-review/UB-10 · prd:impl-review/UB-11 · prd:impl-review/UB-17 · prd:implement-now/EVT-10 · prd:implement-now/EVT-11 · prd:implement-now/EVT-7 · prd:implement-now/EVT-8 · prd:implement-now/EVT-9 · prd:implement-now/FR-25 · prd:implement-now/NFR-4 · prd:implement-now/NFR-9 · prd:implement-now/UB-12 · prd:implement-now/UB-13 · prd:implement-now/UB-18 · prd:planner-driven-model-routing/EVT-1 · prd:planner-driven-model-routing/EVT-10 · prd:planner-driven-model-routing/EVT-2 · prd:planner-driven-model-routing/EVT-3 · prd:planner-driven-model-routing/EVT-5 · prd:planner-driven-model-routing/EVT-8 · prd:planner-driven-model-routing/EVT-9 · prd:planner-driven-model-routing/FR-20 · prd:planner-driven-model-routing/FR-21 · prd:planner-driven-model-routing/FR-24 · prd:planner-driven-model-routing/NFR-4 · prd:planner-driven-model-routing/NFR-8 · prd:planner-driven-model-routing/UB-10 · prd:planner-driven-model-routing/UB-14 · prd:planner-driven-model-routing/UB-7.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:e5aede37de9d27aedcbde713870bd19a84dcbda30559a99ced0819f23f89cf71",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWW6DXH1BJ76CANEP432"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNDHQWK90MQBQ4FK9HA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNEWFJYZ1YZJ776DXTC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNHPM2H3R3P67H5B9VR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNJQTRG46V1R95D2PH7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNM4PPAGSPV61FFY1AF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNNE9Y3GPT941TND203"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQNP11FV1XH1YPDYSR7Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQP4QWAM73YKZNC817T9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQP6KXF0K9QF7GP74DBH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQP8D81WTT6HFSM2XFSH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQPJEA0099ZWFX9SMCRA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQ0PH0HF4GMBTNYCW12"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQ1W5XKZP1A2TECWEBQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQ2B295E9ZC5DFQV2MX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQD2CWVWKSVGQZB2JKH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQEV9RZ213FYPR7FJ7F"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQMRFYMGQ5RQSD478SY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRP24WHQRT825DKYSP4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRQSA91YXEATT7YAPE8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRYVM0VJ14NM3K3G8HC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRZ3SY0DA8ZS65S2G3C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS0X6YFKQBH6M4A6Q6Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSH72JYQW9P38T5DQ9K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTTHWC51A705RDX21N4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTYGWS5H2B8QC85MPQN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV9CJPBAEZ5ZM4WMVJF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVA1385RGCA195023DE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVFMTY154AMSPQHYPRH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR94B9MYT8XRE16ZKCWW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR95JM93Y90F6R9DE235"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR96DTF28ZRFQ53NPRYA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR97BHPT0ZN9XBHZ7P5A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR993JPPQA2BCE6029B7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9B8CK9XCXWSXDK5D6Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9CBSX8RPD5J32MNC8T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9KVSAT3PYP62CF3EHM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9M70B2C7KJZ712D7AM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9Q9D8NXEYSPPTTT93E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAJ7PXAA66JK677875X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRANM0V1Y0QZXVC9DYQA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAXAQE20RJVHQAFG7ZS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB1FAR0MRN1YF894B54"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB6TND8P1CTB93PS57Q"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.828Z",
+  "provenance": {
+    "source": "docs/tech-design/routing-evidence-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header e5aede37de9d27aedcbde713870bd19a84dcbda30559a99ced0819f23f89cf71"
+  }
+}

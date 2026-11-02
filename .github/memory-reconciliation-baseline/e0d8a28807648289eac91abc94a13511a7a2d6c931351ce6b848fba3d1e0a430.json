@@ -1,0 +1,8 @@
+{
+  "code": "missing-serves-memory",
+  "scope": "design/review-feedback-capture -\u003e prd:review-feedback-capture/FR-5",
+  "feature": "review-feedback-capture",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

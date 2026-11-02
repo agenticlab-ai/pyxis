@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPX6YFTKBDHFJHQQVGFR",
+  "kind": "Expectation",
+  "subject": "prd/argus",
+  "family": "EVAL-1",
+  "statement": "breaking detection: governance overrides and convergence deadlocks always escalate",
+  "intent": "seeded breaking set (governance conflicts incl. the red→black class; deadlock transcripts)",
+  "fit_criterion": "100% escalated; zero assumed through (sev-1 = any miss)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:94ffeead60e3b0d2098d04423e59b311a6150af6e7ed42684287f3a20370663f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.766Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

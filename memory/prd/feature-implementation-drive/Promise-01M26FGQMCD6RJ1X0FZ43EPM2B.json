@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMCD6RJ1X0FZ43EPM2B",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-4",
+  "statement": "If If handoff cannot quiesce an active attempt, then the system shall keep the old owner and refuse transfer",
+  "intent": "handoff blocked with active attempt reference",
+  "fit_criterion": "Timeout/failure fixtures show no owner mutation and no overlapping attempt.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:661ecfd1f53b6e556771fc28f2a52db776bff3d2a20965cf1331d369b4d25647",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.508Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

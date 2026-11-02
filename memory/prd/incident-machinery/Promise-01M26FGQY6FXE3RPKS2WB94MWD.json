@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQY6FXE3RPKS2WB94MWD",
+  "kind": "Promise",
+  "subject": "prd/incident-machinery",
+  "family": "FR-1",
+  "statement": "When invoked as `add-incident` with a date, a tag list, and the four field values, the writer shall append a conformant entry to the registry at its configured path under the next dense `I\u003cn\u003e` ID — allocation is code, never prompted — and shall refuse the write, changing nothing, if the resulting registry would fail `lint-incidents`.",
+  "rationale": "INV-35's \"one coded writer; ID allocation is code\" becomes real",
+  "fit_criterion": "on a fixture registry ending at I3, `add-incident` writes I4 passing lint; a second call allocates I5; a write that would fail lint (e.g. empty tags) is refused naming the lint defect and the registry is byte-unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bf7792c574a34e1ee93d76dc03694f0e72ef8bb6a869eccb1bf96e97cf06055e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.822Z",
+  "provenance": {
+    "source": "docs/prds/incident-machinery/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:82a6e4d6bce3dfa328cccc63df1a7ecb87faa72d2b13f44638ac5b7176597f57"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8GH9BQ3BCCZPQDZDKE",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "FR-7",
+  "statement": "If the plan does not fold green, then the viewer shall refuse to emit a page and shall present the fold defects instead.",
+  "rationale": "a pretty rendering of an invalid plan launders it past review",
+  "fit_criterion": "a defect-carrying fixture yields no page and every fold defect in the output",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7fa6b1032b4cfed1fc134beebb634be428e64ded558029797a00c6d326f0001c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.152Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

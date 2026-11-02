@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMHTZ1DXA703VV0SBHV",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.2.1",
+  "statement": "one problem, one session, held as long as the runtime allows — ended only by close, park, or the runtime itself. Step boundaries are journal appends, so the should-degrade-to-must path is seamless: **resume** = replay the journal (the derived block is a hint, never authority), sweep every entry carrying an external-effect identity and **verify the effect against its goal object** — the tracker item exists, the PR is disposed, the commit is an ancestor — append `reconciliation` entries for anything found done-but-unjournaled or journaled-but-undone, then continue at the reconstructed frontier. No second external act proceeds before the prior act's entry lands (DINV-1), which bounds the reconciliation window to at most one act.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ccb367d7fe97513a5bc56731f7037a75493f48212ad643c0ff10350f9388085c",
+    "source-design:8819235c5a03ebc20e8a41a309d7b00947d68c83161ce5dcc77d96f870647ba0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKMWJM6XXWJY18WKM9A6"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.489Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 36-36 in section 3.2; sha256:ccb367d7fe97513a5bc56731f7037a75493f48212ad643c0ff10350f9388085c"
+  }
+}

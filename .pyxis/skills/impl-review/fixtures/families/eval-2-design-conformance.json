@@ -1,0 +1,24 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-2",
+  "kind": "seeded-catch",
+  "lens": "design-conformance",
+  "title": "seeded design-conformance break caught (a governing DINV/Decision violated)",
+  "threshold": "caught on every run",
+  "negative_example": "a violation hidden behind a correct-looking abstraction — a helper with a sensible name whose body crosses the partition line the design declares load-bearing.",
+  "legs": [
+    {
+      "band": "standard",
+      "must_catch": true,
+      "charter": "Task: add the store's flush path. Governing design DINV-4: the engine core imports NO adapter package; a port is an interface defined on the consumer (engine) side and adapters implement it in their own package. The boundary is load-bearing.",
+      "diff": "--- a/internal/engine/flush.go\n+++ b/internal/engine/flush.go\n@@\n package engine\n \n import (\n \t\"context\"\n+\n+\t\"github.com/agenticlab-ai/pyxis/internal/adapter/githubstore\"\n )\n \n-func (e *Engine) Flush(ctx context.Context) error {\n-\treturn e.store.Flush(ctx)\n+func (e *Engine) Flush(ctx context.Context) error {\n+\t// Reach straight into the concrete GitHub adapter for the fast path.\n+\treturn githubstore.DirectFlush(ctx, e.cfg)\n }",
+      "expected_catch": {
+        "defect_class": "engine-imports-adapter",
+        "rule_id": "design-conformance/engine-imports-adapter",
+        "cal_row": "CAL-5",
+        "severity": "blocking",
+        "message": "DINV-4 forbids the engine core importing an adapter package; internal/engine/flush.go now imports internal/adapter/githubstore and calls it directly, crossing the port boundary the design declares load-bearing."
+      }
+    }
+  ]
+}

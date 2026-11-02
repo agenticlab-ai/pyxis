@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979QVK32CC30MCD2E1X4MC",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.3.6.2",
+  "statement": "A unit is unchanged only when every field except identity and issuance time is equal and every record it relates to is itself unchanged. Memory authorizes a serves link only between active records (feature-draft-v1 S-8), so a tech-spec decision serving a reworded requirement is re-issued to serve the new record, even when its own text did not change. An answer to a reworded question is re-issued the same way. Readiness judges the result as feature-draft-v1 §3.8 defines, over the binding records with the draft's differences applied.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:72dc6297f967fee29f119c9c4e45693dc1f5089b94f09e54f57849186125f5f0",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:49Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 106-106 in section 3.6; sha256:72dc6297f967fee29f119c9c4e45693dc1f5089b94f09e54f57849186125f5f0"
+  }
+}

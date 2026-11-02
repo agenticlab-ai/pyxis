@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5MY0KNVEBSXZ1JA4Z4",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "NR-1",
+  "statement": "The pyxis repo's own gate, converge, doctor, and executor behavior on its default config",
+  "rationale": "the engine must keep governing itself unchanged while gaining portability",
+  "fit_criterion": "the full existing test suite passes unchanged; the default-config self-host is byte-identical to today",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c5766aded2e72870bb7e2b0fd97030238a5290a979551d757c5c28a7672570fc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.036Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "as_of": "001",
+  "content_fingerprint": "sha256:db352bc12b51ed5d5751ff52b4b092732ce4e80ff3b490e88375abd32b5f7d81",
+  "units": {
+    "ABUSE-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.3",
+      "current_location": "effective.md#ABUSE-1",
+      "verify_method": "Inspection"
+    },
+    "ABUSE-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.3",
+      "current_location": "effective.md#ABUSE-2",
+      "verify_method": "Inspection / drill"
+    },
+    "DOD-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-1",
+      "verify_method": "Test"
+    },
+    "DOD-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-2",
+      "verify_method": "Test"
+    },
+    "DOD-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-3",
+      "verify_method": "Test"
+    },
+    "DOD-4": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "",
+      "verify_method": "Demo"
+    },
+    "DOD-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-5",
+      "verify_method": "Demo"
+    },
+    "DOD-6": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-6",
+      "verify_method": "Inspection"
+    },
+    "DOD-7": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-7",
+      "verify_method": "Inspection"
+    },
+    "EVT-1": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.7",
+      "current_location": ""
+    },
+    "EVT-2": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.7",
+      "current_location": ""
+    },
+    "EVT-3": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.7",
+      "current_location": ""
+    },
+    "FR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-1",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-2": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-3",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-4",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Demo"
+    },
+    "FR-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-5",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-6": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Demo"
+    },
+    "FR-7": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-7",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "FR-8": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-8",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "FR-9": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-9",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "G1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.1",
+      "current_location": "effective.md#G1"
+    },
+    "G2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.1",
+      "current_location": "effective.md#G2"
+    },
+    "G3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.1",
+      "current_location": "effective.md#G3"
+    },
+    "J1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J1"
+    },
+    "J2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J2"
+    },
+    "J3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J3"
+    },
+    "M1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M1"
+    },
+    "M2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M2"
+    },
+    "M3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M3"
+    },
+    "M4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M4"
+    },
+    "NFR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-1",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NFR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-2",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "NFR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-3",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "NFR-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-4",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "NFR-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-5",
+      "has_fit_criterion": true,
+      "verify_method": "Analysis"
+    },
+    "NG-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-1"
+    },
+    "NG-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-2"
+    },
+    "NG-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-3"
+    },
+    "NG-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-4"
+    },
+    "NG-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-5"
+    },
+    "NR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#NR-1",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#NR-2",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#NR-3",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#NR-4",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "Q1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q1"
+    },
+    "Q2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q2"
+    },
+    "Q3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q3"
+    },
+    "Q4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q4"
+    },
+    "Q5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q5"
+    },
+    "R1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R1"
+    },
+    "R2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R2"
+    },
+    "R3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R3"
+    },
+    "R4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R4"
+    },
+    "UB-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-1",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-2": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-3",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-4": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-5",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-6": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-6",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "WR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-1"
+    },
+    "WR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-2"
+    },
+    "WR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-3"
+    }
+  }
+}

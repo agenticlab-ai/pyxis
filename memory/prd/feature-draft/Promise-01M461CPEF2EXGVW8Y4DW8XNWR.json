@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CPEF2EXGVW8Y4DW8XNWR",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-57",
+  "statement": "Where Argus drives a GitHub feature draft and has the mainline approve-merge grant, the Argus workflow shall inspect the prepared contract, verify both independent current-digest reviews and required native checks, submit its exact-head approval through FR-59, and record the host review identity and policy commit before advancing. Without grant it shall request the operator; explicit local-git retains operator approval and landing.",
+  "rationale": "Approval is a driver judgment after independent review, not an automatic consequence of green checks",
+  "fit_criterion": "The granted drive submits a typed decision with current review references; ungranted and local drives request the operator; changed contract content requires both independent reviews again and a fresh approval.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dff157bc4ef7fdc408083961dd5575e6989945ab5418c4ca4038599a0d316810",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQESR9S3E9SA8ERWQ9YCH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:33Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

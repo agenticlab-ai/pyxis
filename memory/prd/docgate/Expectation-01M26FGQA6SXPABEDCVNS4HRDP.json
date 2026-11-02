@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA6SXPABEDCVNS4HRDP",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-6",
+  "statement": "Guardrails intact through the first 10 gated amendments",
+  "intent": "§3.3",
+  "fit_criterion": "PR history at the M2 checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b35ea01ec78a27a44033ad00792e0dfd6e0bbc5607a23bb0a896c54ab829c365",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.182Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

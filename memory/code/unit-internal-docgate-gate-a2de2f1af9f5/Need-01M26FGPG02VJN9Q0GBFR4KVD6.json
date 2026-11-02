@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPG02VJN9Q0GBFR4KVD6",
+  "kind": "Need",
+  "subject": "code/unit-internal-docgate-gate-a2de2f1af9f5",
+  "family": "anchor",
+  "statement": "Production code unit internal/docgate/gate exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at internal/docgate/gate.",
+  "tags": [
+    "code:internal/docgate/gate",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.344Z",
+  "provenance": {
+    "source": "code:internal/docgate/gate",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline code inventory 8c04c839e2c341eee31020f446d997c8cc178c8f4a7d0bbe5b916ffa4ee1c3ed"
+  }
+}

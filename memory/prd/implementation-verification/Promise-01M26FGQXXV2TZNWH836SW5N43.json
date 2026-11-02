@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXXV2TZNWH836SW5N43",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-6",
+  "statement": "If the harness process is interrupted mid-ladder, then the system shall leave no partial verdict behind and start clean on re-invocation (idempotent; no stale incremental state corrupts the next run)",
+  "intent": "absence of a verdict = no verdict; next run behaves as documented",
+  "fit_criterion": "the kill-mid-run fixture leaves no verdict artifact; the subsequent run's verdict equals an uninterrupted run's",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fd3ad5ca5712b8687190f542139a59ec1e3023824700f031956f3645286f67b6",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.813Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

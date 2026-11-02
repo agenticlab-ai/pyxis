@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/ecosystem-help#Q1",
+  "feature": "ecosystem-help",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

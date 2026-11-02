@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Document-01M26J1S31PJT0762MX6NC706A",
+  "kind": "Document",
+  "subject": "governance/agent-operating-manual",
+  "family": "manual",
+  "statement": "Captured authored source: AGENTS.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:repo-root",
+    "reconcile:source",
+    "sha256:b943edfb64ca35de115b4d9703221c3b02be41f1e15e340636cc9bef492190f1"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M24F4STMA5XAE2CMFKENAQP2"
+    }
+  ],
+  "body_sha256": "b943edfb64ca35de115b4d9703221c3b02be41f1e15e340636cc9bef492190f1",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-10T21:02:18Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "pr": 1175,
+    "commit": "b8f9110c7262f587466a804e253337516daf6a7c",
+    "note": "offline reconciliation"
+  }
+}

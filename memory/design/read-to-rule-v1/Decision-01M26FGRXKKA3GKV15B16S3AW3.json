@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXKKA3GKV15B16S3AW3",
+  "kind": "Decision",
+  "subject": "design/read-to-rule-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:read-to-rule/FR-1 · prd:read-to-rule/FR-2 · prd:read-to-rule/FR-3 · prd:read-to-rule/FR-4 · prd:read-to-rule/FR-5 · prd:read-to-rule/FR-6 · prd:read-to-rule/FR-7 · prd:read-to-rule/FR-8 · prd:read-to-rule/FR-9 · prd:read-to-rule/NFR-1 · prd:read-to-rule/NFR-2 · prd:read-to-rule/NFR-3 · prd:read-to-rule/NR-1 · prd:read-to-rule/NR-2 · prd:read-to-rule/NR-3 · prd:read-to-rule/UB-1 · prd:read-to-rule/UB-2 · prd:read-to-rule/UB-3 · prd:read-to-rule/UB-4.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:25b1caf111afb7fe5f498975cb5667ba253feffe1c41a59714604108dd2de64f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWA5X4CD0YY28TH6ZCAJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRD9KAT9GN2H287ZJR2M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDA76DFW2N7DQR5VTY6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDB97RV70YZ9B541PQF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDCVRGN6J5J843NHBYG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDD3A1D2XQVQC79B6JR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDEBKR7PC1YRR3R75NV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDF9C8J7XAGKQDVTG4A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDG69BF7RT22GCPXQNF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDHQN659YNQFKQR00J1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDVMFJXW07KMH3PW5TY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDW8D6CJ553MER5N9JB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDX4AWETR5SS50V9D4Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDY9GWVJ4FKJRCYY53N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRDZ01VA1C5H2NNMQFP5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRE069QKCT95H9R6F2VG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRE15HKM8JVNT3N2W1EX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRE272XR17ZCFTMZYTRP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRE3NXJHHFNQQ7MP1RW3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRE46ZYAXCW0ZT0JM1HN"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.827Z",
+  "provenance": {
+    "source": "docs/tech-design/read-to-rule-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 25b1caf111afb7fe5f498975cb5667ba253feffe1c41a59714604108dd2de64f"
+  }
+}

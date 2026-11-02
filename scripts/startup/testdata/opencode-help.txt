@@ -1,0 +1,30 @@
+Commands:
+  opencode completion          Completion
+  opencode acp                 ACP server
+  opencode mcp                 MCP configuration
+  opencode [project]           Interactive TUI [default]
+  opencode attach <url>        Attach
+  opencode run [message..]     Noninteractive run
+  opencode debug               Diagnostics
+  opencode providers           Providers [aliases: auth]
+  opencode agent               Agents
+  opencode upgrade [target]    Upgrade
+  opencode uninstall           Uninstall
+  opencode serve               Headless server
+  opencode web                 Web server
+  opencode models [provider]   Models
+  opencode stats               Statistics
+  opencode export [sessionID]  Export
+  opencode import <file>       Import
+  opencode github              GitHub
+  opencode pr <number>         Pull request
+  opencode session             Sessions
+  opencode plugin <module>     Plugins [aliases: plug]
+  opencode db                  Database
+  opencode future-headless     Synthetic command [aliases: future-alias, another-alias]
+
+Positionals:
+  project  Directory
+
+Options:
+  -p, --prompt  Initial prompt

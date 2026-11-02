@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3M4FTJNDF5WGQF3Y1D8Y",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-3",
+  "statement": "Exact authority, generation lineage, and trusted-base admission prevent self-authorization and stale replay",
+  "intent": "FR-5, FR-6, FR-7, UB-4, UB-5, ABUSE-1, ABUSE-3",
+  "fit_criterion": "real-Git lineage goldens and two-proposal transition matrix",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a93b0520bdf5baf54045addefb5f024d3d21e7856dca4cf799f64a24e0f325da",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:51Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

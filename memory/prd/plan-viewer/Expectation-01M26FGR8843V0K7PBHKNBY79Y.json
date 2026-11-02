@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR8843V0K7PBHKNBY79Y",
+  "kind": "Expectation",
+  "subject": "prd/plan-viewer",
+  "family": "DOD-3",
+  "statement": "The operator completes a real plan-PR checkpoint review using only the rendered page",
+  "intent": "§1 Success",
+  "fit_criterion": "review record on the plan PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d0b1f7c1ddc16ec960c7822164164d2f8b28440aaa671eb491215a3146e1503",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.144Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

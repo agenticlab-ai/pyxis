@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ740261AHW2J82QWZ1V",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-1",
+  "statement": "Every Must FR passes its fit criterion",
+  "intent": "§5.1 Must rows",
+  "fit_criterion": "gate CI run (fixture suite) link",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:50754e84a2fba86e70d6c9386c32bcfe0c1bf498f79777cb59d63d895e9aa5b8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.084Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0RS75JX48DY55TWV5R",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "FR-5",
+  "statement": "The history arm shall declare itself base-requiring (the \"needs a history base\" applicability flag), and while no merge base is present the gate shall skip it.",
+  "rationale": "history checks need a merge base; the pre-commit/desk path has none (F-3, F-4, P-1); this mirrors `check-immutable` exactly",
+  "fit_criterion": "with no merge base, the gate runs but the history arm does not; with a base present it runs — the base-free path's verdict excludes the history arm, matching `check-immutable`'s degradation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:91836a4237e8fae3b99f5b77754210b79721d98ec19820a0724efbe1512c7e80",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.88Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

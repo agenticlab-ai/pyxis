@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5HHXFVE75GZC7JDDQT",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "J3",
+  "statement": "When a feature ships, I want roll its phases' spend up to one \"cost per shipped feature\" number, so I can track §10's guardrail metric",
+  "rationale": "brainstorm:pipeline-measurement#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:af9834ba5e6496231940044939a90f758b553dfa37f5454a86c38716e304b86e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.057Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

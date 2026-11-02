@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ060BWTX8BP0YZEHVK3",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "UB-1",
+  "statement": "If If the write hook cannot classify a target (unresolvable path or scope), then the system shall deny the write (fail closed) and name the reason",
+  "intent": "a denied write with an actionable reason",
+  "fit_criterion": "an unclassifiable-target fixture is denied, never allowed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5063db752f64cd98a0b5901b43c29412115c24c473aa66db92437500fcd65cc1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.862Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

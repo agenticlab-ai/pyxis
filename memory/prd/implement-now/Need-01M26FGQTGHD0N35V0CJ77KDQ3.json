@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQTGHD0N35V0CJ77KDQ3",
+  "kind": "Need",
+  "subject": "prd/implement-now",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "a real pyxis feature's tasks reach green PRs via `/implement-now`",
+  "fit_criterion": "1 dogfood feature fully implemented locally, operator only reviewing/merging",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3866663f62e1762d0b61bad0c90c80c8f2495da00631a1795dd0868e7c907528",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.704Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

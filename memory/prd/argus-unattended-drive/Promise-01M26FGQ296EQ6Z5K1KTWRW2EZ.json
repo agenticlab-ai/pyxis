@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ296EQ6Z5K1KTWRW2EZ",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-4",
+  "statement": "Where a model-driven review stage is configured on the lane, it shall only downgrade an AUTO candidate to HUMAN — never promote — and on ambiguity, timeout, or error the proposal shall route HUMAN.",
+  "rationale": "intelligence is downgrade-only (GATE-4 stage C); deferred by default (WR-3)",
+  "fit_criterion": "EVAL-1: zero promote-direction outcomes on the eval set; every injected error/timeout case lands HUMAN",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:78d4024c861467a951a57c8ac1dfaaa154857f012bb696f4a412887c24a64680",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.929Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

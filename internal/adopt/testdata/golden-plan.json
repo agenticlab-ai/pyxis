@@ -1,0 +1,56 @@
+{
+  "schema_version": "adoption-plan/v1",
+  "status": "applied",
+  "epoch": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd",
+  "entries": [
+    {
+      "path": ".pyxis/config.yaml",
+      "class": "add",
+      "detail": ""
+    },
+    {
+      "path": "core.hooksPath",
+      "class": "chain",
+      "detail": "the adopter's core.hooksPath is .husky; the engine chains its checks ahead of it and restores .husky on undo"
+    },
+    {
+      "path": "AGENTS.md",
+      "class": "collide-manual",
+      "detail": "- Pyxis: run pyxis converge before every commit.\n- Pyxis: see docs/tech-design/ for design records."
+    },
+    {
+      "path": "src/**",
+      "class": "never-touch",
+      "detail": ""
+    },
+    {
+      "path": "docs/tech-design/index.md",
+      "class": "generated",
+      "detail": ""
+    },
+    {
+      "path": ".pyxis/scripts/pyxis-bootstrap.sh",
+      "class": "engine-verbatim",
+      "detail": ""
+    }
+  ],
+  "hooks": {
+    "prior_hooks_path": ".husky"
+  },
+  "stack": {
+    "detected": [
+      "go"
+    ],
+    "gate_actions": [
+      "executor.gate.build",
+      "executor.gate.test",
+      "executor.gate.lint"
+    ]
+  },
+  "added_paths": [
+    {
+      "path": ".pyxis/config.yaml",
+      "sha256": "abababababababababababababababababababababababababababababababab"
+    }
+  ]
+}

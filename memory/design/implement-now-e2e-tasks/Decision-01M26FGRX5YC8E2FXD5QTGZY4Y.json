@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX5YC8E2FXD5QTGZY4Y",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implement-now/EVT-12 · prd:implement-now/FR-28 · prd:implement-now/FR-29 · prd:implement-now/FR-30 · prd:implement-now/FR-31 · prd:implement-now/FR-32 · prd:implement-now/NR-8 · prd:implement-now/UB-14 · prd:implement-now/UB-15 · prd:implement-now/UB-16 · prd:implement-now/UB-17.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRR1AZZWK57SFGT6TG4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSKNH2Q82TPHFPX4TYP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSM8BGEYVTZPJ4XCMR9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSPXEK1CCQDZEZWJEGY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSQN745TGSY945ZHNFW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSRW4PFTGY5PBX2QCAM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV6HTVRXV8KFYSYXDEB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVBTBS0VJJ9D02G6M5Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVCME3QR6Y5KTZSRSHK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVD9XMVDMK9BBN0PZ6G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVE88QWNCBT75GGA0GR"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.813Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8"
+  }
+}

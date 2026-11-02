@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWRF6ENWQS1C7M55J8R",
+  "kind": "Decision",
+  "subject": "design/worktracker-hierarchy-index",
+  "family": "decision.2.1",
+  "statement": "Carina gains a parent→children query exposed as a **parent filter on the existing `list`** (composing with the state/signal/role filters) plus an **all-states `show \u003cepic\u003e` rollup** grouped by open/closed — one implementation shared by the port and the CLI, over the existing `Children` port method, adding no new port verb (`design-brainstorm:worktracker-hierarchy-query-tech-design#D-1`). It is backed by a **reverse-parent directory** — one **empty marker file per edge** under a parent-keyed directory (`design-brainstorm:worktracker-hierarchy-query-tech-design#D-3` · `#ALT-1`) — that is **derived, non-authoritative, gitignored, and rebuildable** (`#D-4`): git versions only the authoritative item files. The index is maintained **incrementally** at the single edge-mutation choke point (one marker created/removed per parent-write, the item written first) and **healed by a full `reindex` rebuild** — the sole drift-recovery, cheap enough at the store's capacity to be the only one (`#D-5`, benchmark-backed). The child's `parent` field remains the sole truth; the index only accelerates *which files to open*, never *what they say*, so a read that feeds a destructive or dispatch decision re-verifies each candidate's own `parent` field — O(k) reads never cost consistency.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7bc1710b4df3e95f28f2a4fc9cb09e61d259bc8b6a2056bf0bd65859871605cf",
+    "source-design:8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ9DKXCV4P7RS6YTHBNT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.752Z",
+  "provenance": {
+    "source": "docs/tech-design/worktracker-hierarchy-index.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/worktracker-hierarchy-index.md lines 26-26 in section 2; sha256:7bc1710b4df3e95f28f2a4fc9cb09e61d259bc8b6a2056bf0bd65859871605cf"
+  }
+}

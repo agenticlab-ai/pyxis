@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRN9X6CN1JK77F3ADK2J",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "ABUSE-1",
+  "statement": "any local process reading the served corpus — vector: loopback HTTP while a session runs",
+  "intent": "none beyond existing filesystem privilege; no write path exists",
+  "fit_criterion": "loopback-only bind; zero write endpoints (NFR-2); ephemeral lifetime (FR-8)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5987a1f22f78a47f039ad0ca9a9a2a2152d1be8681c7a4d9096fda742cbcd886",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.561Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

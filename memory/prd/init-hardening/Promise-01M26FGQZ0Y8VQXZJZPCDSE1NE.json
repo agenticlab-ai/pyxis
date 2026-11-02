@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZ0Y8VQXZJZPCDSE1NE",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-3",
+  "statement": "When init starts, the system shall verify every toolchain executable the resolved knobs imply — git always, the others per the release's documented floor set — for presence and floor version, refusing with a per-check remedy on any miss.",
+  "rationale": "today's checks fire post-mutation (`#F-7`)",
+  "fit_criterion": "for each executable in the implied set, a seeded absence and a seeded below-floor version each refuse pre-write naming that check's remedy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:539ee39754f103fd4ff7fef334e5f5f8903e47fe96bd4cc3f105c3b09658eb3b",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.848Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ26QTYXKYVSQF6GR2Y4",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-17",
+  "statement": "If a wake signal is lost, then a bounded, stated-cost backstop shall deliver the awaited completion at its next tick, so that no open drive awaits an occurred completion indefinitely.",
+  "rationale": "push triggers with the polling backstop (vision §11); no lost drives",
+  "fit_criterion": "suppressed-signal drill: the backstop resumes the drive within one configured interval; the backstop's steady-state cost is stated and ~0 when nothing is awaited (UB-7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:677b8bf44ed3bf13f2ac59cbc57a3a380b72c7246f55482c8ef83a4dd4c48475",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.926Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

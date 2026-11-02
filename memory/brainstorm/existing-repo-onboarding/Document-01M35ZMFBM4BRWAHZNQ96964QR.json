@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZMFBM4BRWAHZNQ96964QR",
+  "kind": "Document",
+  "subject": "brainstorm/existing-repo-onboarding",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/existing-repo-onboarding.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:01ecb5915559b698a2d6eee20d59967c38f404f116d0a41d1abe337de89ff4c5"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBF6V860RTM4PQTKF5QW2"
+    }
+  ],
+  "body_sha256": "01ecb5915559b698a2d6eee20d59967c38f404f116d0a41d1abe337de89ff4c5",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:09Z",
+  "provenance": {
+    "source": "docs/brainstorms/existing-repo-onboarding.md",
+    "note": "offline reconciliation"
+  }
+}

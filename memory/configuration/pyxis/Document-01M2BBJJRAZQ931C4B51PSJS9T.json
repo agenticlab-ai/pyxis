@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Document-01M2BBJJRAZQ931C4B51PSJS9T",
+  "kind": "Document",
+  "subject": "configuration/pyxis",
+  "family": "config",
+  "statement": "Captured authored source: .pyxis/config.yaml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/config.yaml",
+    "reconcile:source",
+    "sha256:15e2830984168d838920f575b352cfe4fb4f3501808f810bb15d502cb3f425b3"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M298SR9DFPAYR17F166N5MSG"
+    }
+  ],
+  "body_sha256": "15e2830984168d838920f575b352cfe4fb4f3501808f810bb15d502cb3f425b3",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T17:45:20Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml",
+    "commit": "cc479fc1bfe5644bbd8ff0e5f0e9708fb71c80bf",
+    "note": "offline reconciliation"
+  }
+}

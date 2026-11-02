@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1KD2PYXF42EPFS5M81",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "NR-1",
+  "statement": "The pyxis source repo's developer flow: source-mode resolution, existing hooks, the existing release workflow, and all required checks stay working",
+  "rationale": "the source repo is not an installed repo (WR-3) and must not be destabilized",
+  "fit_criterion": "the source repo's full gate + test suite is green on every installer change; source-mode resolution still works in the source tree",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6b6578056a83cea1d6cfe05828c4abd155fe0762fe8ebb9b30c00e622267aac4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.931Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

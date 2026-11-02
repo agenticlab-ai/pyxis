@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP36XV39T8X733BCQXA",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-26",
+  "statement": "When more than one assurance pass is required, the orchestrator shall keep passes mutually blind until every pass has a revision-bound terminal, union all surviving findings, and derive one aggregate using the most restrictive pass verdict; any missing, stale, invalid, non-accepting, or disagreeing pass shall keep the aggregate non-accepting until the exact revision completes a satisfying full pass set.",
+  "rationale": "independent evidence must be preserved and pessimistically combined, never cherry-picked",
+  "fit_criterion": "pass-order and candidate-order fixtures produce the same union and aggregate; missing-pass, split-verdict, conflicting-finding, and favorable-subset fixtures remain non-accepting and preserve all results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a77a2b689a45c8c3a17eb48cf52d0856301ce8e4f0dec848eb813481f814d677",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.563Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

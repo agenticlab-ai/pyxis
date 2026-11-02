@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3NW7A2ZXC5V6S59VKQ",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-4",
+  "statement": "Every abuse case has its mitigation proven",
+  "intent": "ABUSE-1..ABUSE-4",
+  "fit_criterion": "tamper/replay/muted-blocking fixtures + runbook review",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1b94f0bfe8d131c7bd1c125f5355b5f69b11bbe35e4595de78b1eef3bed28b86",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.973Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

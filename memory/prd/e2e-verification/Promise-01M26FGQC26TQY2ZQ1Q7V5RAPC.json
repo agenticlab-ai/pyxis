@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQC26TQY2ZQ1Q7V5RAPC",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "ABUSE-1",
+  "statement": "e2e-design optimizing to look complete — vector: writes a scenario that mocks away the very behavior it names (hollow scenario)",
+  "intent": "the coverage map claims coverage that proves nothing",
+  "fit_criterion": "FR-4 (per-scenario route recorded and visible) + FR-24 (anti-gaming/will-it-bite lens); design-time only — run-time anti-gaming is WR-1 (`brainstorm:e2e-verification#P-2`, `#P-3`)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:303c8b5a56523f24fdc9c1807951eeef1c5d230459f07e66950888998a9ed8c6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.242Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFZYF4F2KJSSBCG528V",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-12",
+  "statement": "The wake channel shall record every check and every delivered wake as typed events, and the status verb shall render the last-check age, so that a dead checker is distinguishable from a quiet repo within one cadence interval.",
+  "rationale": "silence must be loud (the predecessor's #1 class)",
+  "fit_criterion": "kill-the-checker drill: within one cadence the status verb renders the stale last-check ⚠ and the event stream shows the gap",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b06113ddabdf21a5af5858e420f66da79a67d5ee9effef386235cbc820fd71f3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.391Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

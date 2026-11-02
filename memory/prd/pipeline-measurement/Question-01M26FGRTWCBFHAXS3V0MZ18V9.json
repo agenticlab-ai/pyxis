@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTWCBFHAXS3V0MZ18V9",
+  "kind": "Question",
+  "subject": "prd/pipeline-measurement",
+  "family": "Q1",
+  "statement": "The per-harness capability matrix: for each of the four, which channel exposes per-model spend on the user's own key (headless result envelope / session transcript / OTEL / proxy), and where honest degradation must apply",
+  "intent": "design",
+  "rationale": "open — `brainstorm:pipeline-measurement#P-1`",
+  "fit_criterion": "design (Phase 2 adapters)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:58392d8854dd6ee48c33f3c5f8984033986f1ac7c7376305393c0fe4167e902a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.74Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

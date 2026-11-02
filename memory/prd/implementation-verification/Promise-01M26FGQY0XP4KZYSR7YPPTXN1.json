@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQY0XP4KZYSR7YPPTXN1",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-9",
+  "statement": "If the test verb's output cannot be parsed for failure identities while a baseline is bound, then the system shall record rung 2 as error (fail-closed) — never pass, never fall back to exit-code-only evaluation",
+  "intent": "error verdict naming the parse failure",
+  "fit_criterion": "the garbage-output fixture with a bound baseline yields rung-2 error; the same output with no baseline bound follows FR-10's exit-code path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5ce4f2e283329c17d8de76f3af11698a2fffb54414d0bd7b5d33c6bcf93f685b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.816Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

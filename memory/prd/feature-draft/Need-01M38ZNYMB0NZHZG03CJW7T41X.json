@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZNYMB0NZHZG03CJW7T41X",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "G3",
+  "statement": "We believe making the repository memory the authoritative home of a draft-born contract; expected result: no contract document is written for draft-born features, ending the double bookkeeping",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c3f74b3ce9a21e48ad1b7a4f8e85fdb6a6206b8b564a7e39531a7cfa653c1a31",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:41Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

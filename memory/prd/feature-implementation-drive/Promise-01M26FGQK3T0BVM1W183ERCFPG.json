@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQK3T0BVM1W183ERCFPG",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-29",
+  "statement": "When the human explicitly abandons a cancelled feature, the feature drive shall mark the drive terminal while preserving durable artifacts until separately confirmed cleanup.",
+  "rationale": "Separate stopping from destruction.",
+  "fit_criterion": "Abandonment creates no executable work and deletes no branch, commit, proposal, task history, or evidence.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:33cfbb71cc8c7dc9d86b86ab7df8bde38423a2ce79ba5fc3f172438f18f19c1b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.467Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

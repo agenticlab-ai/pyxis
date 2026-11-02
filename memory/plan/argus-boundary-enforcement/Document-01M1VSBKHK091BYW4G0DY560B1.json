@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBKHK091BYW4G0DY560B1",
+  "kind": "Document",
+  "subject": "plan/argus-boundary-enforcement",
+  "family": "plan-001",
+  "statement": "Imported Pyxis source document: docs/plans/argus-boundary-enforcement/001-plan.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/plans",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "c4336225525549ce5c8379c8caeae830c7e6316b20d7e2d819ff02e810bd6166",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:21Z",
+  "provenance": {
+    "source": "docs/plans/argus-boundary-enforcement/001-plan.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

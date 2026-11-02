@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZF7YSX0FPZY1S2V0EF",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-3",
+  "statement": "Where a supported agent CLI exposes a pre-write hook surface, the write hook shall be wired to it such that a denial fails closed on that CLI.",
+  "rationale": "cross-CLI fail-closed enforcement (AP-25 vendor-neutral, per-CLI adapters)",
+  "fit_criterion": "for each supported CLI, a protected-path write attempt is denied fail-closed (a per-CLI adapter test); a CLI whose hook cannot fail closed is documented with the gate/CI backstop as its guarantee",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b278b794357b2405897e613422fe6ad0d7e6b77a06fd832d2f93394cdebb0bfb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.839Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,28 @@
+# codegate release channel (layout design §3.7; codegate-v1 §3.1): tag
+# codegate/vX.Y.Z → static binaries + sha256 checksums as a GitHub Release,
+# shipped exactly like docgate's own release channel.
+name: codegate-release
+on:
+  push:
+    tags: ['codegate/v*']
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version-file: go.mod, cache: false }
+      - name: build matrix
+        run: |
+          VER="${GITHUB_REF_NAME#codegate/}"
+          mkdir -p dist
+          for plat in darwin-arm64 darwin-amd64 linux-amd64 linux-arm64; do
+            GOOS="${plat%-*}" GOARCH="${plat#*-}" CGO_ENABLED=0 \
+              go build -trimpath -ldflags "-s -w" -o "dist/codegate-$VER-$plat" ./cmd/codegate
+          done
+          (cd dist && shasum -a 256 codegate-* > SHA256SUMS)
+      - name: publish
+        run: gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes "codegate static binaries; pin the SHA256SUMS values in .pyxis/config.yaml under the codegate section (DINV-2)."
+        env: { GH_TOKEN: "${{ github.token }}" }

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M06PGZM9DKMTB1Y81A0DR",
+  "kind": "Decision",
+  "subject": "design/brainstorm-record-model",
+  "family": "decision.3.1.2",
+  "statement": "a `needs-investigation` verdict emits **nothing beyond the record** (resolves PRD Q3, proposed for ratification here). The gate turn may *suggest* investigations conversationally, but the skill writes no work items, no issues, no investigation files — stage 1 precedes the artifact and the write perimeter is binding (FR-15). Routing fog into actual investigation work is a human act until a pipeline stage owns it.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:21588bc4ed69aa1d4c4f6598cf4c76ac7f3db71c8a16c196408837ce7fdee8bd",
+    "source-design:1b2c8f72ecf6130683243947efbbeb484238fb8f375854abf29c672654ada6da",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPNJ2PYX6Q369ET2Z9H0"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQNHJ8ACB7T8TNWX3M7EY"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:20Z",
+  "provenance": {
+    "source": "docs/tech-design/brainstorm-record-model.md",
+    "note": "exact Decision evidence at docs/tech-design/brainstorm-record-model.md lines 44-44 in section 3.1; sha256:21588bc4ed69aa1d4c4f6598cf4c76ac7f3db71c8a16c196408837ce7fdee8bd"
+  }
+}

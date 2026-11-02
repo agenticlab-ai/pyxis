@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBG6VDCK1BMTWR97WNV3N",
+  "kind": "Document",
+  "subject": "brainstorm/init-hardening-tech-design",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/init-hardening-tech-design.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "82f67961f7f3379ce4d40dcbc3750e05001540364b19c6129047aff0d051a871",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:18Z",
+  "provenance": {
+    "source": "docs/brainstorms/init-hardening-tech-design.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

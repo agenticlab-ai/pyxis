@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX4PCAYK72HT90HX252",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "G3",
+  "statement": "We believe binding checks to repos through declared verbs + ecosystem defaults instead of per-language engine code; expected result: the identical harness verifying repos of different stacks, and porting unchanged to remote CI",
+  "fit_criterion": "M4, FR-16",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a93d5db8059c71b04e74fbce33f1724a1f18f03ca106051d0c4b4410cf229bc1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.788Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

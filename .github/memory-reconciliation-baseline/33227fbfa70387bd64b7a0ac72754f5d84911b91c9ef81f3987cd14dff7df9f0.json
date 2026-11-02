@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/solution-shape-v1",
+  "feature": "design-solution-shape",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

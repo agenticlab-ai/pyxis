@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979NQ3565V94DVVZYH7JNQ",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.3.6.1",
+  "statement": "Lock preparation compiles the working files as `design:feature-draft-v1` §3.6 defines. It then compares each compiled unit with the binding version's active record at the same address:\n- a unit with no record at its address is written new;\n- a unit whose content or related records differ supersedes the active record, which memory requires to be of the same kind (`design-brainstorm:feature-draft-tech-design-2#F-7`);\n- an unchanged unit writes nothing;\n- each record compiled from a PRD or tech-spec row absent from the draft is revoked, and a question row's answer is revoked with it;\n- the literal PRD and tech-spec Documents are superseded when their text changed.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b7fa130a0f0fe96ef2aa8470404ef39f7ad3e0d8d3d50ff1c2495770b4ab84a9",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:47Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 97-102 in section 3.6; sha256:b7fa130a0f0fe96ef2aa8470404ef39f7ad3e0d8d3d50ff1c2495770b4ab84a9"
+  }
+}

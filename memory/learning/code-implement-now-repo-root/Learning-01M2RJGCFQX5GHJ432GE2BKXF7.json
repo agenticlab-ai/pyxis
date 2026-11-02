@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2RJGCFQX5GHJ432GE2BKXF7",
+  "kind": "Learning",
+  "subject": "learning/code-implement-now-repo-root",
+  "statement": "implement-now resolves default --repo through the pyxis checkout root so debugger and test cwd under cmd/implement-now cannot write .pyxis/logs beside the package.",
+  "intent": "Keep execution logs in the operand repository even when the process starts in a package directory.",
+  "rationale": "Go debug and go test use the package directory as cwd. The default --repo was that cwd, so usage errors created stray empty implmentor logs under cmd/implement-now.",
+  "fit_criterion": "Tests chdir into a nested package path and require resolveRepo(\".\") to return the ancestor holding .pyxis/config.yaml; usage errors return before creating logs.",
+  "learned_from": [
+    "cmd/implement-now/run.go"
+  ],
+  "tags": [
+    "code:cmd/implement-now",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T20:56:36Z",
+  "provenance": {
+    "source": "cmd/implement-now/run.go"
+  }
+}

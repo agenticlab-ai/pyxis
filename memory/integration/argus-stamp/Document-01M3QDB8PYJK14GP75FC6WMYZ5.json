@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3QDB8PYJK14GP75FC6WMYZ5",
+  "kind": "Document",
+  "subject": "integration/argus-stamp",
+  "family": "overview",
+  "statement": "Captured authored source: .pyxis/stamp/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/stamp",
+    "reconcile:source",
+    "sha256:1e665a7c00bf5c64a2cbedd7f60a51c371c9716649449fa28009436f08f2c0a3"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBA9MCP1MQ8DYCQ40J8BE"
+    }
+  ],
+  "body_sha256": "1e665a7c00bf5c64a2cbedd7f60a51c371c9716649449fa28009436f08f2c0a3",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:22:53Z",
+  "provenance": {
+    "source": ".pyxis/stamp/README.md",
+    "note": "offline reconciliation"
+  }
+}

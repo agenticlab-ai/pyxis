@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGWGX55ZXM7GGNJSRAY",
+  "kind": "Decision",
+  "subject": "design/prototype",
+  "family": "D-5",
+  "statement": "The verb launches one process of the harness D-2 resolved, on the resolved profile's model and effort, in the prototype's worktree, through the executor's existing harness runtime under a new prototype launch purpose; it waits for the process within the engine's default worker time bound, commits what the process left on the prototype branch, and reports the outcome (design-brainstorm:prototype-tech-design#D-4).",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M4MM8XGRCF4PAHJVW19ACVXP"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M4MM8XGS5KG1P57W2MGZQ2EE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG5PJVQZBEBS7HTANVC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG8XVNH77C45BHE5PXB"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

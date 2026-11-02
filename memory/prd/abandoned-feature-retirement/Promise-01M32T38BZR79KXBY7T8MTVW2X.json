@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T38BZR79KXBY7T8MTVW2X",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "ABUSE-1",
+  "statement": "Candidate author hides unwanted code by authorizing its deletion in the same change — vector: candidate-authored authority",
+  "intent": "evidence and implementation disappear together",
+  "fit_criterion": "FR-7, UB-4, NFR-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7bdf5bc2c67454b15f3cbf0afc65908c2e6f1303bd697a9935a8d5fc8b5ea4de",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:39Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

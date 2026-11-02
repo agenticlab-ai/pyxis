@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRNW8NM3WY3E3WR7YKHT",
+  "kind": "Need",
+  "subject": "prd/workbench-ui",
+  "family": "J1",
+  "statement": "When I need a specific document or don't know if one exists, I want browse the corpus by class and open it rendered, so I can read it as a document, not source",
+  "rationale": "record idea",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e0fe0b68cc1ea3b045091b2c27e0bfe8b8e88942fd6e8fd2721bcb11188dbc19",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.58Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

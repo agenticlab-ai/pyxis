@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBCXFB96XBPVJRE9TCQ55",
+  "kind": "Document",
+  "subject": "governance/argus-vision",
+  "family": "vision",
+  "statement": "Imported Pyxis source document: docs/argus-vision.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/root",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b730d7f5e551a2a1640eb906a25bf6ec412279184d708cad42ba5ccce9ff1198",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:14Z",
+  "provenance": {
+    "source": "docs/argus-vision.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

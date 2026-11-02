@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4RGAEF7G7RAPFJSXVY",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-1",
+  "statement": "If If the channel is unreachable or the machine is offline, then the system shall use the cached snapshot only and stay silent when nothing is unseen, exiting 0",
+  "intent": "nothing (or cached bulletins)",
+  "fit_criterion": "offline fixtures emit only cached-derived output and exit 0; no error surfaced",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cfdb67584724e5657b261a0d7899c6d1c6a440f09bbac9ca812e81f2e500e76a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.008Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

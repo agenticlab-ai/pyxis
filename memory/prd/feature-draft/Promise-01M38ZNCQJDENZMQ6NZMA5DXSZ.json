@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNCQJDENZMQ6NZMA5DXSZ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-45",
+  "statement": "When the operator approves a lock, the system shall record the operator's capture line with the approval, or record the approval as lineless when none is given.",
+  "rationale": "Read-to-rule's gate-time measurement continues for draft-born features, and a lineless gate never blocks (brainstorm:feature-draft#D-21)",
+  "fit_criterion": "Fixture approvals given with a capture line store it verbatim — minutes spent, each feedback item marked in or outside §0 — and approvals given without one are recorded as lineless and still lock.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:99023f890a64403a776ec9ed79abd583b16a68616112afdc0d6ba2c1fbe9e5ca",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:23Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

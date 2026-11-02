@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP2QAVT9SE42Z4KEEZ0",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-25",
+  "statement": "Before invoking each assurance pass, the already-selected review harness adapter shall resolve the joined semantic demand through its review-role mapping independently of the implementation route, selecting the least-cost qualified native profile satisfying every minimum; exact resolution is preferred, promotion may only strengthen named components, and invalid or unsupported resolution shall stop before that pass's model invocation without switching harnesses.",
+  "rationale": "review and implementation need different qualified capacity while harness choice remains an upstream credential and egress decision",
+  "fit_criterion": "exhaustive harness×joined-demand review-role conformance selects the cheapest dominating native profile or a named unsupported terminal; every resolved real-runtime launch matches its recorded harness, role, native profile, and effective effort/context; differing implementation/review mappings launch the review mapping; invalid, weakening, mismatched-launch, and unsupported fixtures cannot produce accepting evidence and retain the selected harness",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:068dd967606621b4cc6843601db8eb3709cb40f84542952c9464a69d65d00553",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.562Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3BWJ32HE4G5SSV9X6N",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-7",
+  "statement": "If If the backstop ticks while nothing is awaited, then the system shall do nothing and spend ~nothing",
+  "intent": "nothing",
+  "fit_criterion": "the idle tick's cost is stated in the design and measured ~0",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:21ec6b0301f9adec1b9305deaca530ae2282e3dad3316eabb7a7607a3bdb1b11",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.963Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

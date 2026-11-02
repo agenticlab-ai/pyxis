@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3VS2NNSMTA0T3Q8K2C",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "EVT-1",
+  "statement": "sweep_completed fires when each pass ends",
+  "intent": "per-detector finding counts: int; waivers applied: int; faults: int; outcome: enum(clean·findings·fault) — deterministic fields only; wall-clock duration appears on the human face only, excluded from the machine face by FR-6",
+  "fit_criterion": "M1, M2, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:20c1c16affda99a12b8e20d41cc1daa48fa1b2fe387ec8acc3b84a6029854019",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.003Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

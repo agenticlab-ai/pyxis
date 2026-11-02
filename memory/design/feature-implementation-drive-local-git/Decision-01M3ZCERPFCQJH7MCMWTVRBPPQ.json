@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCERPFCQJH7MCMWTVRBPPQ",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.1.1",
+  "statement": "`feature-drive/v1` is a closed, additive schema. Unknown fields, unknown enum values, a missing basis fingerprint, or an impossible state combination refuse before any effect. Its logical fields are:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:14Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 65-65 in section 3.1; sha256:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346"
+  }
+}

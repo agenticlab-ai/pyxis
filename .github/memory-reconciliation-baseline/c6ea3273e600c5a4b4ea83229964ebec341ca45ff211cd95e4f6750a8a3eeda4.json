@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/argus-driver-approval-v1",
+  "feature": "feature-draft",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

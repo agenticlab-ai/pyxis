@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBMC5RCM9D37RH02PQ5",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "amendment PRs green on first docgate run",
+  "fit_criterion": "≥80% at \"10 amendments through the required gate\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8ffed64c0e32696cafeb8a52262ed4b62543dfc8b9404cea5e028d3218091536",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.228Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

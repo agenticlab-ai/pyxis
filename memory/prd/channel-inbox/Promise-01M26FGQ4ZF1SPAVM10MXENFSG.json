@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4ZF1SPAVM10MXENFSG",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-8",
+  "statement": "If If the `pyxis` binary is not resolvable when the session-start hook fires, then the system shall the hook wrapper shall no-op and let the session start normally, writing nothing and surfacing nothing",
+  "intent": "nothing (session unaffected)",
+  "fit_criterion": "a fixture session with `pyxis` off PATH starts normally; the hook wrapper exits without error and produces no output",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b5651cd4ac39c62e7c4410768019e6db1ee9b2abd01b40dc0aef980ba8c08d78",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.015Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

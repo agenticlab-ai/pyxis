@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS6EX2DDYM5PJNHDKM9",
+  "kind": "Decision",
+  "subject": "design/init-hardening-v1",
+  "family": "decision.3.6.1",
+  "statement": "Every init-owned mutation flows through **one journaling write primitive** (file write, directory create, config write, git-init, remote-op — each a typed journal entry); converge's contribution is **ingested from its returned Report** (repaired + regenerated paths) immediately on return, before the pipeline proceeds. Unwind walks the journal in reverse: files, then emptied directories, then the repository metadata directory when and only when init created it. Foreign entries — anything on disk not in the journal — are preserved and named (DINV-3). A repository created remotely during wiring is a `remote-op` entry that unwinds to a **report line**, never a deletion (DINV-4). The journal is in-process and transient (O-3 of the record): an uncatchable kill loses it, and the residue then surfaces as admission conflicts on the next run — the honest floor, with Q1 holding the persistence question.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7d5732f416f782b1dc2292dc9e96a55344f4400c67f1b02bd691abb15327ce91",
+    "source-design:f1710649feb9b92664f344798b9e17d86efdcab1acaf8ee7bba343363531750c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSBE39JBM1VNM1VD0PKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.638Z",
+  "provenance": {
+    "source": "docs/tech-design/init-hardening-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/init-hardening-v1.md lines 112-112 in section 3.6; sha256:7d5732f416f782b1dc2292dc9e96a55344f4400c67f1b02bd691abb15327ce91"
+  }
+}

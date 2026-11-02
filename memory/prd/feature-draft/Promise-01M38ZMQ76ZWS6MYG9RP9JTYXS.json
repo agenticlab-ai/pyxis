@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMQ76ZWS6MYG9RP9JTYXS",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-34",
+  "statement": "When a stage skill that authors or reviews a feature contract runs for a draft-born feature, the skill shall read and write that feature's draft only.",
+  "rationale": "The stage skills are reworked for drafts (brainstorm:feature-draft#D-11, brainstorm:feature-draft#D-16)",
+  "fit_criterion": "Every contract-authoring and contract-reviewing stage skill run against the end-to-end fixture writes only draft content, with zero document-corpus writes.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b0360d2f766c1710bbe117d9f4a02079e90812ce7376c80e55664de261c25c35",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:01Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

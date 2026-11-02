@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCMAS03B3EJB3T87JV576",
+  "kind": "Document",
+  "subject": "design/argus-ledger-lint",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/argus-ledger-lint.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b891b13b932a14dcff38502e08c52cc2f79ab2f9aad8edaa9fab17d516f8fb9a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:55Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-ledger-lint.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

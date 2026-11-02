@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3WDAD6H4QWE2ZNASVWZ3JSA",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-4",
+  "statement": "Lock tag and compiled contract are verified on mainline; recorder rerun is byte-idempotent.",
+  "intent": "FR-6, ABUSE-5",
+  "fit_criterion": "Fresh-clone ancestry, record digest/head, annotated tag/readback, rerun",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

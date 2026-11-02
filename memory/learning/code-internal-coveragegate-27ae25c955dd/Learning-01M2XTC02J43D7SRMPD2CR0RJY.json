@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2XTC02J43D7SRMPD2CR0RJY",
+  "kind": "Learning",
+  "subject": "learning/code-internal-coveragegate-27ae25c955dd",
+  "statement": "Package coveragegate measures repository-wide Go statement coverage from the standard coverage profile and applies a deterministic minimum. Measure runs go test uncached with -count=1, -timeout=25m, and -covermode=atomic so long hermetic suites complete under race and coverage without depending on go tool cover rounding.",
+  "intent": "Preserve the implemented responsibility of internal/coveragegate after the coverage measurement timeout and deferred-cleanup lint fix.",
+  "rationale": "The production unit changed to pin a 25m package timeout because the default 10m timeout aborts memory/cli under race and coverage, and to discard scratch-dir and profile-close errors with an explicit reason so whole-file errcheck stays green.",
+  "fit_criterion": "Offline reconciliation finds active semantic memory explicitly covering code unit internal/coveragegate, Measure's go test args include -timeout=25m after -count=1, and deferred RemoveAll and Close errors are discarded with a reason.",
+  "tags": [
+    "code:internal/coveragegate",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26FGRZBESE34XFN5TD759MW"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M2XTBDS9JAXQ84NT7V5XF3PD"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-19T21:50:13Z",
+  "provenance": {
+    "source": "code:internal/coveragegate",
+    "note": "Bind current coveragegate evidence for the 25m timeout and errcheck cleanup."
+  }
+}

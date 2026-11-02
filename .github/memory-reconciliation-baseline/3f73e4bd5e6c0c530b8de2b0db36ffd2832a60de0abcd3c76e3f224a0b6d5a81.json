@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/plan-viewer-v1",
+  "feature": "plan-viewer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

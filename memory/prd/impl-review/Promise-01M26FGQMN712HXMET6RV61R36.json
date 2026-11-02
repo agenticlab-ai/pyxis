@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMN712HXMET6RV61R36",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "ABUSE-6",
+  "statement": "implementing agent optimizing past review — vector: buries logic, splits or oversizes changes, injects reviewer directives, or shapes one pass's visible artifacts to influence another",
+  "intent": "judgment failure ships or critical passes become correlated",
+  "fit_criterion": "blind contexts (FR-19), adversarial survival (FR-3), deep context (FR-22), no truncation (UB-12), full-set invalidation (UB-11), EVAL-5/8/10",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:41546a7881e4f7c6732a23e2d99bb6ad6919417272c4be1f5bc8a28adc590ceb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.517Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

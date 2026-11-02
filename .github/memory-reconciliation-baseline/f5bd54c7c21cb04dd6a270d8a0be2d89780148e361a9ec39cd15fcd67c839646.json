@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/argus-boundary-enforcement#Q4",
+  "feature": "argus-boundary-enforcement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

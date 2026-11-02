@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRV547NXXAMW326PRSSN",
+  "kind": "Question",
+  "subject": "prd/plan-viewer",
+  "family": "Q1",
+  "statement": "Output placement and lifecycle (regenerable scratch beside the review tooling's, or beside the plan?) and its ignore rule",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "implementation",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:904e6ad4e0103f85c3b921d313d1b1e58c14530bcf4134004d6839950b7ded6f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.749Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

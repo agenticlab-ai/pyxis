@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1E4WA77HX24TKM2F8S",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "ABUSE-4",
+  "statement": "toil-laundering a governance change — vector: riding AUTO with a governance-doc or merge-convention diff",
+  "intent": "governance moves without a human",
+  "fit_criterion": "FR-2 floor (governance classes hard-gated), the governing-doc gate untouched (NR-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a7d420d144e561dba01dfb0b330cc3ef28b4c91a476d2934dcd42798f3ca6a31",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.902Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

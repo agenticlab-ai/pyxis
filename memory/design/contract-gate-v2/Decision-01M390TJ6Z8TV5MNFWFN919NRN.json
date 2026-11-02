@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390TJ6Z8TV5MNFWFN919NRN",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v2",
+  "family": "decision.3.10.1",
+  "statement": "The **planning-entry hard gate** lands as an additive typed amendment (`add` op) on plan-new's frozen ledger: a precondition FR requiring plan-new to call `docgate contract-gate <feature>` before it drafts, freezes, or projects any plan for a document-pipeline feature — a feature with a PRD ledger — and to refuse on any non-clean verdict (`prd:contract-gate/FR-1`, `NR-1`). A draft-born feature's planning precondition is its locked version's readiness, computed in memory (`prd:feature-draft/FR-31`, `design:feature-draft-v1`); this gate is not called for it. Contract-gate's feature-level checks run **before** plan-new's own plan-level coverage (its FR-26) and fog bounce (its FR-16) — complementary altitudes, no contradiction, so no requirement hole to bounce. The **continuous advisory surface** is a docgate CI context running the same contract-scope subset over a changed feature's contract on PRD/design PRs, with currency/link/structural defects blocking and inverse-coverage advisory (a PRD legitimately merges before its designs exist) — the severity split read from the closed-schema versioned severity-map policy (`prd:contract-gate/FR-13`, on the `pyxis-config/` surface, the plangate/codegate caps precedent).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:fd4a45083b2d110bac96ded89e74da4c4c26d6c6ef8c078b1b7031f787c1cd1a",
+    "source-design:4e4e927ec4b3ae717592564f6dd062a57ff9bd03a88947d40409a3f270d9e70e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PH15Z89WJH6Z36TW8C03"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:41Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/contract-gate-v2.md lines 125-125 in section 3.10; sha256:fd4a45083b2d110bac96ded89e74da4c4c26d6c6ef8c078b1b7031f787c1cd1a"
+  }
+}

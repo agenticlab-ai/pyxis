@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1ZWG58YGAG06ZQBE4D",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-10",
+  "statement": "The pipeline map shall state the stage-8 binding as it operationally runs — never a stale or aspirational one; the map is the live surface that owns the current value.",
+  "rationale": "the map is descriptive and corrected-to-match; the stale row caused the E-36 deferral; when the engine era changes the operational binding (prd:argus WR-1 — NG-5's park), this row's fit re-pins to the new truth by amendment rather than the map asserting the old one",
+  "fit_criterion": "inspection at this contract's checkpoint: the stage-8 row and footer state the external binding as it runs today — frozen plans project onto the tracker with the repo-configured automated-implementation tag, an external fleet claims and implements them, the pyxis-native engine not built — and no drive guidance still directs deferring materialization on the row's account",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6a46724185954c0db582b3037ca06023252cd251f4c60a3d6ed431fcf47b63e2",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.919Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

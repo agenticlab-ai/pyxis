@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREZEGYXGMPN4R80VVP9",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NFR-3",
+  "statement": "The ledger shall be readable and complete from the repository with no code-host API.",
+  "intent": "Portability",
+  "fit_criterion": "full read achievable offline from the repo",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4e0692f560e4f5fb6aea58a1a2a9c5f42ff5d3673e0ed58bfc6b9dc1b56d37a0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.359Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

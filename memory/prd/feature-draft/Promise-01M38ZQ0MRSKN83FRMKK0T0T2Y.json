@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQ0MRSKN83FRMKK0T0T2Y",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-10",
+  "statement": "If If the plan projection refuses a plan generated from a locked draft, then the system shall keep the lock and report the refusal as a defect naming the rule on which the plan check and projection disagree",
+  "intent": "the defect report, with the draft still locked and the plan fixed forward",
+  "fit_criterion": "An injected plan-check–projection disagreement produces the defect report and leaves the locked version unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:93f12717f354f302a355cc0975a0effa5255fe581c2097952e914575f5998a42",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:16Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

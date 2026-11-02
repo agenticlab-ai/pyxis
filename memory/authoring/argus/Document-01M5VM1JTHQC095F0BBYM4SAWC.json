@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM1JTHQC095F0BBYM4SAWC",
+  "kind": "Document",
+  "subject": "authoring/argus",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/argus.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:9c1fac394667906313908cd93f1a6e35274c2cf038d6e2ceea8c233634fd5d31"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M5B57Z7JZKEBVDV6RCJB6Q2Z"
+    }
+  ],
+  "body_sha256": "9c1fac394667906313908cd93f1a6e35274c2cf038d6e2ceea8c233634fd5d31",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:17Z",
+  "provenance": {
+    "source": ".pyxis/authoring/argus.md",
+    "note": "offline reconciliation"
+  }
+}

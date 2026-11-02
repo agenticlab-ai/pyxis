@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB2DM78JPQXH4HAR9M5",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-2",
+  "statement": "If a frozen derived profile or policy version does not match mechanical recomputation, then the system shall reject the plan before projection and show expected versus supplied semantic values",
+  "intent": "named derivation-mismatch error",
+  "fit_criterion": "every mismatch fixture fails with zero task projection",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a54cdf78e8a0753305a8289be527698966bad1a169444b51fa5aa6af18cac26b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.234Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

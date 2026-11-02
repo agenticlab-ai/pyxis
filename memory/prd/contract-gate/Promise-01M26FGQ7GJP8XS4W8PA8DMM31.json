@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7GJP8XS4W8PA8DMM31",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "EVT-2",
+  "statement": "defect_emitted fires when a check produces a defect",
+  "intent": "check_id: string, class: enum(currency·coverage·link·structural·compilability), offender: string, severity: enum(blocking·advisory)",
+  "fit_criterion": "M2, M3, M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7edf53e72fdfac9956e9ad7c376c7c81bcb313d6157cad96677d087b1455c5be",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.096Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

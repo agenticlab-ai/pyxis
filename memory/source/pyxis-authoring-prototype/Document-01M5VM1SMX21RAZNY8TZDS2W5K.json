@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM1SMX21RAZNY8TZDS2W5K",
+  "kind": "Document",
+  "subject": "source/pyxis-authoring-prototype",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/authoring/prototype.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:ff9357b7113bb75056896ce0d9cf2a232383a2a192c6f7ae719532f1c1e34a20"
+  ],
+  "body_sha256": "ff9357b7113bb75056896ce0d9cf2a232383a2a192c6f7ae719532f1c1e34a20",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:24Z",
+  "provenance": {
+    "source": ".pyxis/authoring/prototype.md",
+    "note": "offline reconciliation"
+  }
+}

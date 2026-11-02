@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQP1YDRTB4FT1D9VFD8",
+  "kind": "Decision",
+  "subject": "design/execution-demand-contract-v1",
+  "family": "decision.3.5.1",
+  "statement": "Projection writes one canonical `execution-demand-capsule/v1` marker into each supported tracker item's ordinary body before it can become routable. The capsule contains the complete canonical origin, exact plan/task identities and fingerprints, demand ID, codec version, and capsule digest. Both tracker adapters use the same codec and preserve the same logical bytes; they do not infer, merge, or default fields.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7bcd8fc81ee393ea4c3e28b228b6013cb2f9bc90934e121f1fe6f165191fc4b5",
+    "source-design:1803a578f24d1fcd4e72fe323beac1ad9b7a2b7372c40c5c9193c843565778fd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQ6Z9AT7JMH430AQVRK2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.59Z",
+  "provenance": {
+    "source": "docs/tech-design/execution-demand-contract-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/execution-demand-contract-v1.md lines 105-105 in section 3.5; sha256:7bcd8fc81ee393ea4c3e28b228b6013cb2f9bc90934e121f1fe6f165191fc4b5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4YYV111R0WNYKTEQMP8",
+  "kind": "Decision",
+  "subject": "prd/inherited-learning-repair",
+  "family": "R2",
+  "statement": "Text or witness paths split one incident",
+  "rationale": "Fixed identity and DOD-1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

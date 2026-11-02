@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95XV8YDYWAZ0T1ECP4V",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "UB-3",
+  "statement": "If If an ordinary agent attempt fails or times out, then the system shall Retain partial evidence and record the outcome without retrying that occurrence",
+  "intent": "Failure/timeout and next eligible occurrence",
+  "fit_criterion": "Failure injection preserves the claim, available patch, and terminal result; later occurrence is eligible",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

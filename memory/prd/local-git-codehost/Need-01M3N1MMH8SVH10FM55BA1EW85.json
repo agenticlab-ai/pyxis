@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3N1MMH8SVH10FM55BA1EW85",
+  "kind": "Need",
+  "subject": "prd/local-git-codehost",
+  "family": "G2",
+  "statement": "We believe Exact-head receipt checks run at each normal landing; expected result: No stale or malformed receipt is accepted by Pyxis",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

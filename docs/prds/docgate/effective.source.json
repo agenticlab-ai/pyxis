@@ -1,0 +1,857 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "as_of": "018",
+  "content_fingerprint": "sha256:9d7934e3c155499adbf6298d5eee5d4baab5526efcb78fcce9d459206523bb19",
+  "units": {
+    "DOD-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-1",
+      "verify_method": "Test"
+    },
+    "DOD-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-2",
+      "verify_method": "Test"
+    },
+    "DOD-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-3",
+      "verify_method": "Inspection"
+    },
+    "DOD-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-4",
+      "verify_method": "Test"
+    },
+    "DOD-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-5",
+      "verify_method": "Test"
+    },
+    "DOD-6": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-6",
+      "verify_method": "Analysis"
+    },
+    "DOD-7": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add DOD",
+      "current_location": "effective.md#DOD-7",
+      "verify_method": "Test + Inspection"
+    },
+    "FR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-1",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-10": {
+      "status": "retired",
+      "introduced_by": "002-rollup-guard.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "002-rollup-guard.md#op: add FR",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-11": {
+      "status": "superseded",
+      "introduced_by": "003-v2-universal-lint.md",
+      "supersedes": null,
+      "superseded_by": "FR-16",
+      "source_location": "003-v2-universal-lint.md#op: add FR",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-12": {
+      "status": "live",
+      "introduced_by": "003-v2-universal-lint.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "003-v2-universal-lint.md#op: add FR",
+      "current_location": "effective.md#FR-12",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-13": {
+      "status": "live",
+      "introduced_by": "003-v2-universal-lint.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "003-v2-universal-lint.md#op: add FR",
+      "current_location": "effective.md#FR-13",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-14": {
+      "status": "superseded",
+      "introduced_by": "003-v2-universal-lint.md",
+      "supersedes": null,
+      "superseded_by": "FR-18",
+      "source_location": "003-v2-universal-lint.md#op: add FR",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-15": {
+      "status": "superseded",
+      "introduced_by": "003-v2-universal-lint.md",
+      "supersedes": null,
+      "superseded_by": "FR-25",
+      "source_location": "003-v2-universal-lint.md#op: add FR",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-16": {
+      "status": "superseded",
+      "introduced_by": "004-requirement-precedence.md",
+      "supersedes": "FR-11",
+      "superseded_by": "FR-20",
+      "source_location": "004-requirement-precedence.md#op: supersede FR-11",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-17": {
+      "status": "live",
+      "introduced_by": "005-design-immutability.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "005-design-immutability.md#op: add FR",
+      "current_location": "effective.md#FR-17",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-18": {
+      "status": "live",
+      "introduced_by": "006-governing-fence-completion.md",
+      "supersedes": "FR-14",
+      "superseded_by": null,
+      "source_location": "006-governing-fence-completion.md#op: supersede FR-14",
+      "current_location": "effective.md#FR-18",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-19": {
+      "status": "live",
+      "introduced_by": "006-governing-fence-completion.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "006-governing-fence-completion.md#op: rescope NG-1",
+      "current_location": "effective.md#FR-19",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-2",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-20": {
+      "status": "live",
+      "introduced_by": "007-serves-lint-hardening.md",
+      "supersedes": "FR-16",
+      "superseded_by": null,
+      "source_location": "007-serves-lint-hardening.md#op: supersede FR-16",
+      "current_location": "effective.md#FR-20",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-21": {
+      "status": "live",
+      "introduced_by": "008-integrity-checks.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "008-integrity-checks.md#op: add FR",
+      "current_location": "effective.md#FR-21",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-22": {
+      "status": "live",
+      "introduced_by": "008-integrity-checks.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "008-integrity-checks.md#op: add FR",
+      "current_location": "effective.md#FR-22",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-23": {
+      "status": "live",
+      "introduced_by": "008-integrity-checks.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "008-integrity-checks.md#op: add FR",
+      "current_location": "effective.md#FR-23",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-24": {
+      "status": "live",
+      "introduced_by": "009-envelope-v2-tracking.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "009-envelope-v2-tracking.md#op: add FR",
+      "current_location": "effective.md#FR-24",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-25": {
+      "status": "live",
+      "introduced_by": "010-incident-lint-hardening.md",
+      "supersedes": "FR-15",
+      "superseded_by": null,
+      "source_location": "010-incident-lint-hardening.md#op: supersede FR-15",
+      "current_location": "effective.md#FR-25",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-26": {
+      "status": "superseded",
+      "introduced_by": "011-index-coverage.md",
+      "supersedes": null,
+      "superseded_by": "FR-28",
+      "source_location": "011-index-coverage.md#op: add FR",
+      "current_location": "",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-27": {
+      "status": "live",
+      "introduced_by": "012-single-amendment-per-pr.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "012-single-amendment-per-pr.md#op: add FR",
+      "current_location": "effective.md#FR-27",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-28": {
+      "status": "live",
+      "introduced_by": "013-coverage-on-read.md",
+      "supersedes": "FR-26",
+      "superseded_by": null,
+      "source_location": "013-coverage-on-read.md#op: supersede FR-26",
+      "current_location": "effective.md#FR-28",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-29": {
+      "status": "live",
+      "introduced_by": "015-prepush-deletion-awareness.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "015-prepush-deletion-awareness.md#op: add FR",
+      "current_location": "effective.md#FR-29",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-3",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-30": {
+      "status": "live",
+      "introduced_by": "014-standalone-docs.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "014-standalone-docs.md#op: add FR",
+      "current_location": "effective.md#FR-30",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-31": {
+      "status": "live",
+      "introduced_by": "016-content-path-purity.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "016-content-path-purity.md#op: add FR",
+      "current_location": "effective.md#FR-31",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-32": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-32",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-33": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-33",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-34": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-34",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-35": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-35",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-36": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-36",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-37": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-37",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-38": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-38",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-39": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-39",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-4",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-40": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-40",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-41": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-41",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-42": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-42",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-43": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add FR",
+      "current_location": "effective.md#FR-43",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-5": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-5",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-6": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-6",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-7": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-7",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-8": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "effective.md#FR-8",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-9": {
+      "status": "live",
+      "introduced_by": "001-commit-time-guard.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "001-commit-time-guard.md#op: add FR",
+      "current_location": "effective.md#FR-9",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "G1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.1",
+      "current_location": "effective.md#G1"
+    },
+    "G2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.1",
+      "current_location": "effective.md#G2"
+    },
+    "G3": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add G",
+      "current_location": "effective.md#G3"
+    },
+    "J1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J1"
+    },
+    "J2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J2"
+    },
+    "J3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#2.3",
+      "current_location": "effective.md#J3"
+    },
+    "M1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M1"
+    },
+    "M2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.2",
+      "current_location": "effective.md#M2"
+    },
+    "M3": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add M",
+      "current_location": "effective.md#M3"
+    },
+    "NFR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-1",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NFR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-2",
+      "has_fit_criterion": true,
+      "verify_method": "Analysis"
+    },
+    "NFR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.6",
+      "current_location": "effective.md#NFR-3",
+      "has_fit_criterion": true,
+      "verify_method": "Inspection"
+    },
+    "NG-1": {
+      "status": "rescoped",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": ""
+    },
+    "NG-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-2"
+    },
+    "NG-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-3"
+    },
+    "NG-4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#NG-4"
+    },
+    "NR-1": {
+      "status": "superseded",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": "NR-3",
+      "source_location": "000-base.md#5.8",
+      "current_location": "",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#NR-2",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-3": {
+      "status": "live",
+      "introduced_by": "006-governing-fence-completion.md",
+      "supersedes": "NR-1",
+      "superseded_by": null,
+      "source_location": "006-governing-fence-completion.md#op: supersede NR-1",
+      "current_location": "effective.md#NR-3",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NR-4": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add NR",
+      "current_location": "effective.md#NR-4",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "Q1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q1"
+    },
+    "Q2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q2"
+    },
+    "R1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R1"
+    },
+    "R2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R2"
+    },
+    "R3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R3"
+    },
+    "R4": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#6.3",
+      "current_location": "effective.md#R4"
+    },
+    "UB-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-1",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-2",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-3",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-4": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add UB",
+      "current_location": "effective.md#UB-4",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-5": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add UB",
+      "current_location": "effective.md#UB-5",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "UB-6": {
+      "status": "live",
+      "introduced_by": "018-projection-congruence.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "018-projection-congruence.md#op: add UB",
+      "current_location": "effective.md#UB-6",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "WR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-1"
+    },
+    "WR-2": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-2"
+    },
+    "WR-3": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-3"
+    }
+  }
+}

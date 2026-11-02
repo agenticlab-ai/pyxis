@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M479A97BEA0JREW76M6G8W73",
+  "kind": "Document",
+  "subject": "feature/maintenance-jobs",
+  "family": "events",
+  "statement": "Draft events.md",
+  "body_sha256": "fe09ff45246a9a11a4b8ce945bcd8d436f7f0c7a9e33c4362febe7451eff1c4e",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

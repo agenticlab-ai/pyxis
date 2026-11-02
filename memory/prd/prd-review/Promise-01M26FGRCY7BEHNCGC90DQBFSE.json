@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCY7BEHNCGC90DQBFSE",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "UB-6",
+  "statement": "If If an escalation stays unanswered, then the system shall the document stays parked at zero recurring cost; the surrounding flow's staleness alarm grows louder (per the escalation convention); the reviewer itself does nothing further",
+  "intent": "a parked document, a loud item",
+  "fit_criterion": "the parked fixture consumes nothing across simulated time; the alarm datum is present in the brief's conventions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:796e7e5797286cc32bdc19fa1a24a14660e960954af831c4ae5750ca22ab58c9",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.294Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

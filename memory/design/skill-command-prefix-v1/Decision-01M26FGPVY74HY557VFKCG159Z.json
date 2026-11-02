@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVY74HY557VFKCG159Z",
+  "kind": "Decision",
+  "subject": "design/skill-command-prefix-v1",
+  "family": "decision.3.2.1",
+  "statement": "Generated harness skill views are **derived** from the canonical skills tree by existing converge reconcile — never a second hand-edited identity source. Prefer regenerating on each skill PR that renames; closing PR is the backstop. (design-brainstorm:skill-command-prefix-tech-design#D-2)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:33670b9e0f48bd201270e104bbfe9d8d777aaba192d2fd816642edd80a5e98c5",
+    "source-design:3a6b8fea00e859a15e5cefba04a544e9cb943e9e3b66488645d62bb1b1923087",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCX5K2JNQRCGQ87X5EN31"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.726Z",
+  "provenance": {
+    "source": "docs/tech-design/skill-command-prefix-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/skill-command-prefix-v1.md lines 66-66 in section 3.2; sha256:33670b9e0f48bd201270e104bbfe9d8d777aaba192d2fd816642edd80a5e98c5"
+  }
+}

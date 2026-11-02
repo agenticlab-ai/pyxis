@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979HSEVVX9NW6BJ9F9SZTC",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.2.1",
+  "statement": "A reopened draft starts from the binding version's stored PRD and tech-spec text. Its lock writes only what differs from the binding version:\n- a changed unit supersedes the binding record;\n- a removed row's records are revoked;\n- an unchanged unit writes nothing.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3702416c4d9eac21e2ef10d61a32a7d9f61c503cc6320814c96e5e2a2d8d9fe2",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:43Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 45-48 in section 2; sha256:3702416c4d9eac21e2ef10d61a32a7d9f61c503cc6320814c96e5e2a2d8d9fe2"
+  }
+}

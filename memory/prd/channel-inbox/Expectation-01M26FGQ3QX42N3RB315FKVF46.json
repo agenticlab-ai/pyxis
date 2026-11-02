@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3QX42N3RB315FKVF46",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-6",
+  "statement": "Integrity/authenticity verification precedes field read; the trust anchor is binary-resident",
+  "intent": "FR-9, NFR-2",
+  "fit_criterion": "security-fixture run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9daf416306f9ad1205e9fe28bd8f58dec13d49bf528a0912553890482aea32bc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.975Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

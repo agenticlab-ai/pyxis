@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V1GCSYXD8HF1EH4Z35YK3E",
+  "kind": "Decision",
+  "subject": "design/memory-causal-admission-v1",
+  "family": "decision.2.1",
+  "statement": "Admit records according to their explicit dependencies and their\neffect on existing history, not their age relative to unrelated records.\nRemove the repository-wide record-age floor at writer and packet admission.\nKeep immutable IDs and bytes across unrelated rebases and supported merge\nforms, while preserving the existing ordering of every explicit relation.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5a769fc62c67521abf04d528b48f629fac878bed92053c7eeb14c76b06030294",
+    "source-design:7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2V1F5Z1F7BZ7PPNX91JJ8PF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:57:14Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-causal-admission-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "exact Decision evidence at docs/tech-design/memory-causal-admission-v1.md lines 63-67 in section 2; sha256:5a769fc62c67521abf04d528b48f629fac878bed92053c7eeb14c76b06030294"
+  }
+}

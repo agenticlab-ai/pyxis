@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M26FGS45N6X2638BZ0REDAYD",
+  "kind": "Document",
+  "subject": "configuration/pyxis",
+  "family": "config",
+  "statement": "Captured authored source: .pyxis/config.yaml",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M26FGRWBYY9ARE0ENRSCDN7J"
+    }
+  ],
+  "body_sha256": "19a1684246d37c872880e4f853bbe5d89901f0591576618559bbb0466e8925e5",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.037Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml",
+    "commit": "154d41290aad479e2bedeee959138faa8ff46760",
+    "note": "Merged exact source successor after concurrent deterministic reconciliation."
+  }
+}

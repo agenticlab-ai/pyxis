@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQHERQWKW2HX86TGV480",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "decision-log rows in merged 000-bases carrying a record anchor",
+  "fit_criterion": "100% of decision-log rows at the same checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8511841345e2ed11d80908d06bd46c3043e297ab936efb3650d8dc3307eb4879",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.414Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

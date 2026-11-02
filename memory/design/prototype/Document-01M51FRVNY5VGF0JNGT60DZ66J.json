@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Document-01M51FRVNY5VGF0JNGT60DZ66J",
+  "kind": "Document",
+  "subject": "design/prototype",
+  "family": "design",
+  "statement": "Draft tech-spec.md",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4MM8XHCPHQS71W0ERB9T0NX"
+    }
+  ],
+  "body_sha256": "ea5ca6f65334df61e2ce44f3e94b0f9da73ecfeb3a4baa937118eee63a98d860",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-16T04:33:22Z"
+}

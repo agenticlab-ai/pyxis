@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR5NVYPH3W2RS6AKKE2F",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "NFR-1",
+  "statement": "The measurement shall consume no model tokens.",
+  "intent": "Cost",
+  "fit_criterion": "zero model tokens consumed by the recorder/reader over a reference run (FR-10)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7833e3b9ac4152e27bc6783c40a339b0d82c7cd4c439cefc9344d36e1e20b17",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.061Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

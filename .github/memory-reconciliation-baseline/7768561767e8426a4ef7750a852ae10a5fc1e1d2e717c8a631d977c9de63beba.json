@@ -1,0 +1,7 @@
+{
+  "code": "design-decision-memory-drift",
+  "scope": "design/feature-draft-reopen#decision.3.6.4",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

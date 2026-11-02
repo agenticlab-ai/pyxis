@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QF0H1Y02VS9N8G93TT98DH",
+  "kind": "Decision",
+  "subject": "design/argus-draft-attribution",
+  "family": "decision.3.3.1",
+  "statement": "The gate still reads commit metadata from Git without a code-host credential, compares each carried binding to the commit's tree and parents, and resolves protected-path diffs as positively Argus, positively human, or underivable. A positively Argus protected-path diff is refused; an underivable protected-path diff fails closed; a positive human attestation can admit a human diff but cannot launder a positively Argus diff. The authority-contract and governance classes remain fixed. After the first PR, scope width still comes from the named problem's gate-protected committed delivery ledger. These predecessor rules are retained without changes to their classification.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:75e51dc4ea48e659e7a4f5177f4917b9c01fda72d6594f407a6faf8bde60ee78",
+    "source-design:50840bb44ee6bd5ac4ef45d4549e97811137877a00fcf9c7d76e5f2e0d12f77e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3QEXBNV1JSCVM6XR3V2ZYM0"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:51:58Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-draft-attribution.md lines 63-63 in section 3.3; sha256:75e51dc4ea48e659e7a4f5177f4917b9c01fda72d6594f407a6faf8bde60ee78"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96DDBVFH89WB4DBCM51",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "DOD-2",
+  "statement": "Existing cron, checkout, approval, and CI obligations remain protected",
+  "intent": "NR-1, NR-2, NR-3, §3.3",
+  "fit_criterion": "Regression results and guardrail inspection",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVPDBQX7RDJ2A9PGJ1Z",
+  "kind": "Decision",
+  "subject": "design/routing-evidence-v1",
+  "family": "decision.3.1.1",
+  "statement": "The repository configuration names one dedicated evidence ref that every production reader fetches explicitly. The ref contains only immutable `routing-evidence/v1` event files at deterministic identity-derived paths; no append-hot aggregate is authoritative. The implementation may shard paths by identity prefix without changing logical identity.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:a22ebdf8a297bcc87e0e8b14e37296f024a30e237cc9fa334d6a058f863afab6",
+    "source-design:e5aede37de9d27aedcbde713870bd19a84dcbda30559a99ced0819f23f89cf71",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWW6DXH1BJ76CANEP432"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.718Z",
+  "provenance": {
+    "source": "docs/tech-design/routing-evidence-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/routing-evidence-v1.md lines 55-55 in section 3.1; sha256:a22ebdf8a297bcc87e0e8b14e37296f024a30e237cc9fa334d6a058f863afab6"
+  }
+}

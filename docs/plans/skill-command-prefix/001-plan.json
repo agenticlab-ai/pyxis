@@ -1,0 +1,997 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "skill-command-prefix — `pyxis-` harness skill namespace — plan 001",
+  "feature": "skill-command-prefix",
+  "prd": "docs/prds/skill-command-prefix",
+  "design": "docs/tech-design/skill-command-prefix-v1.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Namespace every harness skill as pyxis-\u003cbasename\u003e with a closing prefix gate",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Rename `argus` to `pyxis-argus`",
+      "goal": "The `argus` harness skill carries one canonical `pyxis-argus` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-argus`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `argus` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-argus` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `argus` to `pyxis-argus` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `argus` to the same `pyxis-argus` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `argus`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for argus · the authoring guide for argus · system-tree identity refs for argus · structural live citations of argus · generated harness views for argus"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T1",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Verify the active skill catalog after retired-entry removal",
+      "goal": "The skill namespace migration covers every active skill and does not recreate an entry that has been removed from the catalog.",
+      "acceptance": [
+        "every active skill appears in exactly one rename task and has matching directory and frontmatter identities",
+        "no removed catalog entry is recreated by the namespace migration",
+        "generated harness skill views contain exactly the active prefixed skill set after converge regenerate",
+        "live structural citations and system-tree references use the prefixed identities for active skills"
+      ],
+      "provenance": [
+        "Enumerate the active skills tree after retired entries are removed.",
+        "Confirm every remaining skill is owned by exactly one ordinary rename task in this plan.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Fail the catalog check on any missing, duplicate, or unplanned active skill identity."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the active skills tree · generated harness views · structural live skill citations"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Rename `e2e-design` to `pyxis-e2e-design`",
+      "goal": "The `e2e-design` harness skill carries one canonical `pyxis-e2e-design` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-e2e-design`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `e2e-design` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-e2e-design` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `e2e-design` to `pyxis-e2e-design` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `e2e-design` to the same `pyxis-e2e-design` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `e2e-design`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for e2e-design · the authoring guide for e2e-design · system-tree identity refs for e2e-design · structural live citations of e2e-design · generated harness views for e2e-design"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Rename `e2e-plan` to `pyxis-e2e-plan`",
+      "goal": "The `e2e-plan` harness skill carries one canonical `pyxis-e2e-plan` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-e2e-plan`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `e2e-plan` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-e2e-plan` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `e2e-plan` to `pyxis-e2e-plan` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `e2e-plan` to the same `pyxis-e2e-plan` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `e2e-plan`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for e2e-plan · the authoring guide for e2e-plan · system-tree identity refs for e2e-plan · structural live citations of e2e-plan · generated harness views for e2e-plan"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "Rename `e2e-review` to `pyxis-e2e-review`",
+      "goal": "The `e2e-review` harness skill carries one canonical `pyxis-e2e-review` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-e2e-review`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `e2e-review` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-e2e-review` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `e2e-review` to `pyxis-e2e-review` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `e2e-review` to the same `pyxis-e2e-review` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `e2e-review`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for e2e-review · the authoring guide for e2e-review · system-tree identity refs for e2e-review · structural live citations of e2e-review · generated harness views for e2e-review"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "Rename `feature-brainstorm` to `pyxis-feature-brainstorm`",
+      "goal": "The `feature-brainstorm` harness skill carries one canonical `pyxis-feature-brainstorm` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-feature-brainstorm`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `feature-brainstorm` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-feature-brainstorm` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `feature-brainstorm` to `pyxis-feature-brainstorm` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `feature-brainstorm` to the same `pyxis-feature-brainstorm` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `feature-brainstorm`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for feature-brainstorm · the authoring guide for feature-brainstorm · system-tree identity refs for feature-brainstorm · structural live citations of feature-brainstorm · generated harness views for feature-brainstorm"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Rename `help` to `pyxis-help`",
+      "goal": "The `help` harness skill carries one canonical `pyxis-help` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-help`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `help` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-help` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `help` to `pyxis-help` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `help` to the same `pyxis-help` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `help`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for help · the authoring guide for help · system-tree identity refs for help · structural live citations of help · generated harness views for help"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T7",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "Rename `impl-review` to `pyxis-impl-review`",
+      "goal": "The `impl-review` harness skill carries one canonical `pyxis-impl-review` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-impl-review`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `impl-review` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-impl-review` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `impl-review` to `pyxis-impl-review` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `impl-review` to the same `pyxis-impl-review` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `impl-review`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for impl-review · the authoring guide for impl-review · system-tree identity refs for impl-review · structural live citations of impl-review · generated harness views for impl-review"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T8",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "Rename `implement-now` to `pyxis-implement-now`",
+      "goal": "The `implement-now` harness skill carries one canonical `pyxis-implement-now` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-implement-now`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `implement-now` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-implement-now` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `implement-now` to `pyxis-implement-now` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `implement-now` to the same `pyxis-implement-now` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `implement-now`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for implement-now · the authoring guide for implement-now · system-tree identity refs for implement-now · structural live citations of implement-now · generated harness views for implement-now"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T9",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T10",
+      "title": "Rename `incident` to `pyxis-incident`",
+      "goal": "The `incident` harness skill carries one canonical `pyxis-incident` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-incident`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `incident` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-incident` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `incident` to `pyxis-incident` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `incident` to the same `pyxis-incident` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `incident`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for incident · the authoring guide for incident · system-tree identity refs for incident · structural live citations of incident · generated harness views for incident"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T10",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T11",
+      "title": "Rename `plan-new` to `pyxis-plan-new`",
+      "goal": "The `plan-new` harness skill carries one canonical `pyxis-plan-new` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-plan-new`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `plan-new` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-plan-new` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `plan-new` to `pyxis-plan-new` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `plan-new` to the same `pyxis-plan-new` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `plan-new`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for plan-new · the authoring guide for plan-new · system-tree identity refs for plan-new · structural live citations of plan-new · generated harness views for plan-new"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T11",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T12",
+      "title": "Rename `prd-amend` to `pyxis-prd-amend`",
+      "goal": "The `prd-amend` harness skill carries one canonical `pyxis-prd-amend` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-prd-amend`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `prd-amend` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-prd-amend` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `prd-amend` to `pyxis-prd-amend` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `prd-amend` to the same `pyxis-prd-amend` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `prd-amend`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for prd-amend · the authoring guide for prd-amend · system-tree identity refs for prd-amend · structural live citations of prd-amend · generated harness views for prd-amend"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T12",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T13",
+      "title": "Rename `prd-new` to `pyxis-prd-new`",
+      "goal": "The `prd-new` harness skill carries one canonical `pyxis-prd-new` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-prd-new`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `prd-new` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-prd-new` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `prd-new` to `pyxis-prd-new` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `prd-new` to the same `pyxis-prd-new` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `prd-new`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for prd-new · the authoring guide for prd-new · system-tree identity refs for prd-new · structural live citations of prd-new · generated harness views for prd-new"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T13",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T14",
+      "title": "Rename `prd-review` to `pyxis-prd-review`",
+      "goal": "The `prd-review` harness skill carries one canonical `pyxis-prd-review` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-prd-review`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `prd-review` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-prd-review` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `prd-review` to `pyxis-prd-review` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `prd-review` to the same `pyxis-prd-review` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `prd-review`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for prd-review · the authoring guide for prd-review · system-tree identity refs for prd-review · structural live citations of prd-review · generated harness views for prd-review"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T14",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T15",
+      "title": "Rename `tech-design-brainstorm` to `pyxis-tech-design-brainstorm`",
+      "goal": "The `tech-design-brainstorm` harness skill carries one canonical `pyxis-tech-design-brainstorm` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-tech-design-brainstorm`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `tech-design-brainstorm` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-tech-design-brainstorm` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `tech-design-brainstorm` to `pyxis-tech-design-brainstorm` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `tech-design-brainstorm` to the same `pyxis-tech-design-brainstorm` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `tech-design-brainstorm`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for tech-design-brainstorm · the authoring guide for tech-design-brainstorm · system-tree identity refs for tech-design-brainstorm · structural live citations of tech-design-brainstorm · generated harness views for tech-design-brainstorm"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T15",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T16",
+      "title": "Rename `tech-design-new` to `pyxis-tech-design-new`",
+      "goal": "The `tech-design-new` harness skill carries one canonical `pyxis-tech-design-new` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-tech-design-new`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `tech-design-new` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-tech-design-new` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `tech-design-new` to `pyxis-tech-design-new` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `tech-design-new` to the same `pyxis-tech-design-new` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `tech-design-new`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for tech-design-new · the authoring guide for tech-design-new · system-tree identity refs for tech-design-new · structural live citations of tech-design-new · generated harness views for tech-design-new"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T16",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T17",
+      "title": "Rename `tech-design-review` to `pyxis-tech-design-review`",
+      "goal": "The `tech-design-review` harness skill carries one canonical `pyxis-tech-design-review` identity end to end on the live surface, hard-cut with no alias.",
+      "acceptance": [
+        "skills-tree directory basename and frontmatter `name:` both equal `pyxis-tech-design-review`, and the matching authoring-guide filename uses the same stem",
+        "the former unprefixed `tech-design-review` skill identity is absent from the skills tree with no alias restoring it",
+        "generated harness skill views expose `pyxis-tech-design-review` for this skill after converge regenerate",
+        "live structural citations and system-tree references to this skill's identity use the prefixed form"
+      ],
+      "provenance": [
+        "Rename the skills-tree directory and frontmatter `name:` for `tech-design-review` to `pyxis-tech-design-review` (stem unchanged).",
+        "Rename the matching authoring-guide filename for `tech-design-review` to the same `pyxis-tech-design-review` stem.",
+        "Rewrite every allowed live occurrence of this skill's identity per the design occurrence-matching rule (structural forms on live surfaces; exhaustive under the system tree); leave frozen merged documents untouched for historical strings.",
+        "Regenerate harness skill views via converge reconcile so vendor-visible names match; never hand-edit generated views.",
+        "Hard-cut: leave no alias, symlink, or alternate `name:` restoring `tech-design-review`."
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-1",
+        "prd:skill-command-prefix/FR-2",
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/UB-1",
+        "prd:skill-command-prefix/NR-1",
+        "design:skill-command-prefix-v1#3.1",
+        "design:skill-command-prefix-v1#3.2",
+        "design:skill-command-prefix-v1#3.3",
+        "design:skill-command-prefix-v1#DINV-1",
+        "design:skill-command-prefix-v1#DINV-2",
+        "design:skill-command-prefix-v1#DINV-3",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "touches": [
+        "the skills-tree entry for tech-design-review · the authoring guide for tech-design-review · system-tree identity refs for tech-design-review · structural live citations of tech-design-review · generated harness views for tech-design-review"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "skill-command-prefix/001/T17",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T18",
+      "title": "Land the prefix conformance gate and close the namespace",
+      "goal": "After every skill is prefixed, the mechanical `pyxis-*` prefix conformance test is present and green, the glossary confirms Argus persona vs `/pyxis-argus`, and no unprefixed pyxis skill remains on the live vendor surface.",
+      "current": "Skills may still be mid-train or fully renamed, but no scripts-test / payload wrapper refuses a non-`pyxis-*` skills-tree directory or frontmatter `name:`; mid-train mixed names are allowed; glossary may already distinguish persona vs skill from the PRD introducing work but M1 confirm is not yet the closing checkpoint.",
+      "desired": "A conformance test in the scripts-test harness, reached by CI via a Go test wrapper in the payload package (help-purity pattern), fails closed if any skills-tree directory basename or frontmatter `name:` violates `pyxis-*`, and fails if any unprefixed skill remains (closing precondition). The test did not exist before this task (mid-train absence). Glossary Argus entry distinguishes the AI Engineer persona from `/pyxis-argus`. Any leftover harness-view drift is cleared via converge regenerate, not hand edit. Engine CLI verbs and frozen merged docs are unchanged by this close.",
+      "scope": [
+        "the scripts-test prefix-conformance suite plus the payload Go wrapper that invokes it under code-gate",
+        "confirmation of the Argus / `/pyxis-argus` glossary split at the M1 checkpoint",
+        "converge backstop for any remaining generated harness view drift after the rename train"
+      ],
+      "out_of_scope": [
+        "renaming any remaining skill (all rename tasks must already be done)",
+        "adding a docgate skill-prefix check",
+        "rewriting frozen merged documents for historical unprefixed strings",
+        "renaming engine CLI binaries or verbs"
+      ],
+      "acceptance": [
+        "the prefix conformance test is present under the scripts-test harness and fails a sandbox skill whose directory or `name:` is not `pyxis-*`",
+        "the live skills tree is entirely `pyxis-*` directories with matching frontmatter `name:` values when the test runs green",
+        "the glossary Argus entry distinguishes the persona from `/pyxis-argus`",
+        "no docgate skill-prefix check is added; generated harness views that still drifted are regenerated via converge, not hand-edited"
+      ],
+      "key_interfaces": [
+        "the scripts-test harness convention and the payload package Go wrapper pattern (same shape as help purity)",
+        "the skills-tree directory basename + frontmatter `name:` prefix rule (`pyxis-*`)",
+        "the glossary Argus persona vs harness-skill vocabulary split"
+      ],
+      "traces": [
+        "prd:skill-command-prefix/FR-3",
+        "prd:skill-command-prefix/FR-4",
+        "prd:skill-command-prefix/FR-5",
+        "prd:skill-command-prefix/UB-2",
+        "prd:skill-command-prefix/UB-3",
+        "prd:skill-command-prefix/NR-1",
+        "prd:skill-command-prefix/NFR-1",
+        "design:skill-command-prefix-v1#3.4",
+        "design:skill-command-prefix-v1#DINV-4",
+        "design:skill-command-prefix-v1#DINV-5"
+      ],
+      "blocked_by": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "touches": [
+        "the scripts-test prefix-conformance harness · the payload Go wrapper for that harness · the glossary Argus entry · leftover generated harness view drift"
+      ],
+      "size_band": {
+        "lo": 80,
+        "hi": 160
+      },
+      "mechanical": false,
+      "plan_task_id": "skill-command-prefix/001/T18",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:skill-command-prefix/FR-1",
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/FR-2",
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/FR-3",
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/FR-4",
+      "tasks": [
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/FR-5",
+      "tasks": [
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/UB-1",
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/UB-2",
+      "tasks": [
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/UB-3",
+      "tasks": [
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/NR-1",
+      "tasks": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18"
+      ]
+    },
+    {
+      "requirement": "prd:skill-command-prefix/NFR-1",
+      "tasks": [
+        "T18"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:94347e53de6162cde0dddfec7b2942288a7520c03f3bf03d4a8097c5b55b8931"
+}

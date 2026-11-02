@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3Z5ZFYENHFVRQDXD41CH0MN",
+  "kind": "Revocation",
+  "subject": "design/feature-implementation-drive-failure-contract",
+  "statement": "The proposed feature-implementation-drive-failure-local-git successor preserves the frozen failure classifier while binding it to the current lifecycle design. Exact operator PR approval and human merge remain pending.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGPRA01A7HG5MGEJSS2VH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:48:03Z"
+}

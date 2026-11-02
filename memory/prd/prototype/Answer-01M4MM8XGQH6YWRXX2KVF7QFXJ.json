@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M4MM8XGQH6YWRXX2KVF7QFXJ",
+  "kind": "Answer",
+  "subject": "prd/prototype",
+  "statement": "a separate headless process always builds it, launched by a Pyxis command on the configured harness and model, or on the asking session's when none is configured (design:prototype#D-2)",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M4MM8XGPEQ26BJGWMV3446DR"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

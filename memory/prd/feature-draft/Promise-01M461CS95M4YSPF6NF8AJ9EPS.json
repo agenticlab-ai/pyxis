@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CS95M4YSPF6NF8AJ9EPS",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-59",
+  "statement": "When an authorized Argus driver approves an open ready GitHub PR, the system shall publish one review bound to the explicitly reviewed full head, read back its exact host review identity and bytes, and refuse to report it current if the PR or mainline moves. It shall read approval accounts and the grant from mainline without candidate or local overrides, preserve the operator's outstanding changes-requested review, and avoid automatic write retries.",
+  "rationale": "The same driver procedure serves contract and implementation PRs while making publication races visible",
+  "fit_criterion": "Publication uses COMMENT for an author and APPROVE for a distinct reviewer; wrong identity, absent grant, operator changes request, and movement observed by final preflight cause zero writes; movement after that observation, including before submission, can leave at most one exact old-head decision and must report staleness and refuse lock authorization for the changed head or policy; publication transport failure is not retried.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b816e3f64f46e45b33a923c18635587c8226b6b3be131c0f0458191d2808d7b3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:36Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

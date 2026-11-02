@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNAY57BN8WWQCAQ9JCQ5J",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-44",
+  "statement": "The system shall keep each finished task tracing the locked version it delivered.",
+  "rationale": "Finished tasks stay history, never broken (brainstorm:feature-draft#D-19; incident I9)",
+  "fit_criterion": "After a fixture reopen retires a requirement that a finished v1 task traced, the task's trace still resolves to v1's requirement and no broken trace is reported.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:276a1f59918da32658c497a0acac581f63b4f78003ac16a1289e0a13d9cb2fa1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:21Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

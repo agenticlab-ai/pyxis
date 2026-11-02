@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ7EJ6GWTETHD791TBSG",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-7",
+  "statement": "The dogfood sweep runs the gate over every live contract in the repo, producing valid verdicts, surfacing ≥ the known drift with zero false bounces; any real defect found is triaged",
+  "intent": "M1, M2; §3.3",
+  "fit_criterion": "sweep record + verdicts (EVT-1/EVT-2) + dispositions (EVT-4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1db7e13ac5af1c53a383a8de7db858f021f7d829dd9b54ee1788ecdac063277e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.094Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

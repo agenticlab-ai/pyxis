@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPCG7Z57W9DYDT6N3P1",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-34",
+  "statement": "When an invoking host starts one isolated impl-review process execution, that execution and every blind pass context beneath it shall receive no proposal-write credential or canonical evidence-store write capability; each pass context shall return only its pass terminal to the impl-review orchestrator, and only after FR-26 forms the process aggregate shall the outer execution return exactly one completed aggregate through a bounded one-way handoff to the host persistence adapter.",
+  "rationale": "pass blindness and aggregate ownership stay intact while every reviewer execution context remains unable to manufacture proposal evidence",
+  "fit_criterion": "critical fixtures show two blind pass outputs reaching only the orchestrator and one later aggregate handoff; capability inspection finds no proposal/evidence-store write authority in the outer execution or pass contexts; zero, malformed, and surplus aggregate handoffs publish nothing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9fc4c1ce83fac82625866a4dedce688a7178297ef262b5d8dacc01d9d9c47642",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.572Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

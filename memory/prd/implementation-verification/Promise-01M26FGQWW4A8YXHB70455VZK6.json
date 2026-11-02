@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWW4A8YXHB70455VZK6",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-4",
+  "statement": "When an invocation completes — at whatever rung it stopped — the harness shall emit one structured verdict (closed schema) that enumerates every configured rung's result (pass, fail, skip with reason, `skip:not-reached`, or error), states the overall verdict per §4.3's five states, and records the identity of what it evaluated: workspace revision, diff base, manifest content hash, baseline content hash, and harness version.",
+  "rationale": "the verdict is the trust artifact reviewers and future consumers read — and a verdict that does not name what it certifies can be true about the wrong tree (AP-13; incident I2)",
+  "fit_criterion": "every fixture run's verdict — including first-rung-failure runs — validates against the schema and enumerates all configured rungs; no execution path emits a verdict omitting a rung; the revision-mismatch fixture (verdict from commit A presented against commit B) is detected by the recorded identity",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e173cb34b454ff54183777284f249443a8da5dcda7547069bf9bd6a3dcc7311d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.78Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

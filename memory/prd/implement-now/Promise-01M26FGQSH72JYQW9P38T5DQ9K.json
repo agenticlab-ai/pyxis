@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSH72JYQW9P38T5DQ9K",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-25",
+  "statement": "For every implementation routing attempt, the executor shall record exactly one plan/v2 frozen-demand or typed plan/v1 translation origin, the selected harness and implementation role, requested profile, effective policy version, and exactly one resolution terminal: an exact/promoted EVT-7 with native profile identity and exactly one connected EVT-10 verified, failed, or blocked worker outcome with available usage, or an unsupported/policy-invalid EVT-8 with no worker outcome; the bounded records shall be immutable and contain no prompt or code payload.",
+  "rationale": "native choices need auditability without fabricating a worker outcome for a pre-claim failure or pretending legacy provenance",
+  "fit_criterion": "every conformance and dogfood attempt joins exactly one origin to exactly one EVT-7 or EVT-8; every EVT-7 joins exactly one EVT-10 and every EVT-8 joins zero EVT-10; missing, duplicate, and cross-class terminals fail; retries append rather than overwrite; payload inspection is clean",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c3c8ed6ab0b34806f7a9f2312899ad6e0b7632418d806c6045dd4ebe7ad07c53",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.673Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

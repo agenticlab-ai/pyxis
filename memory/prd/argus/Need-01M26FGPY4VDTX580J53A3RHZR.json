@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPY4VDTX580J53A3RHZR",
+  "kind": "Need",
+  "subject": "prd/argus",
+  "family": "J4",
+  "statement": "When I audit or review later, I want every ruling attributed to its principal and grant version, so I can trust and correct the delegation with evidence",
+  "rationale": "brainstorm:autonomous-developer#D-6",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1a718ce7309a44b4ad3638f2be82962c225fd676d5975f3956c45c3fe571e2e7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.796Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

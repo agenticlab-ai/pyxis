@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0MJYPZNEHVET4TNSBPT5",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.12.1",
+  "statement": "New feature contracts use drafts. In repositories whose legacy document gate remains enabled for cutover, that gate refuses new-feature work proposed as PRD ledger entries, technical designs, brainstorm records, or review reports with the feature-draft remedy, including already-open proposals; plans and permitted amendments or successors for existing document-pipeline features remain accepted (`prd:feature-draft/FR-55`, `UB-14`). Applicability is read through the existing trusted-repository policy, not a candidate-selected exemption or a new draft-mode setting.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:800f01daa86b375d2ff90796b0a18e0afa67af492bfc8d5785b3d053956cb0f4",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:14Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 238-238 in section 3.12; sha256:800f01daa86b375d2ff90796b0a18e0afa67af492bfc8d5785b3d053956cb0f4"
+  }
+}

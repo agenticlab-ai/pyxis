@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ90ZGCAHJF0E972WWXP",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-5",
+  "statement": "If at planning entry a feature has a PRD but no live serving designs at all, then the system shall bounce `incomplete` (every Must unserved), naming the uncovered Musts — never treat \"no designs\" as vacuously clean",
+  "intent": "incomplete verdict",
+  "fit_criterion": "the no-designs fixture bounces `incomplete` at planning entry; the same feature on a contract-doc PR reports coverage advisory (FR-9), not blocking",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e755de154a26facdbec63143093b5fadd1e32a8c16834862e45af30155ea7bc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.144Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/self-drive-wake#R6",
+  "feature": "self-drive-wake",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

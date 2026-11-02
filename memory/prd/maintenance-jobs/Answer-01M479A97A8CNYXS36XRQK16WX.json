@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M479A97A8CNYXS36XRQK16WX",
+  "kind": "Answer",
+  "subject": "prd/maintenance-jobs",
+  "statement": "Require an append-only, schema-versioned local JSONL journal at that exact enrolled-repository path. Include pre-claim failures, installation and execution lifecycle, correlation/ownership, configuration and resolved route, terminal outcomes, publication and retained-evidence references. Serialize writers and exclude credentials. This explicitly requested path is the exception to the usual .pyxis/logs producer layout; it remains Git-ignored local diagnostics, with compact shared outcomes retained in the Git claim ref.",
+  "intent": "@mdarabi",
+  "rationale": "“ensure capturing the logs under .pyxis/maintenance/logs.jsonl” including success, failure, outcomes, and useful debug/audit information.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M479A9793KXQ215KKSAVWQ4C"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

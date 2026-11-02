@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJT62J280D7301B1M90",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-20",
+  "statement": "When terminal e2e fails, the feature drive shall create feature-scoped repair work carrying the failed candidate identity, evidence, and links to implicated work.",
+  "rationale": "Make integrated defects traceable.",
+  "fit_criterion": "Seeded failure yields one repair item with all required references and no mutation of merged task history.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1c42f9fa79b44384136bab04c78fd02d030ee6884ea043e8a07383ef688491cd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.458Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

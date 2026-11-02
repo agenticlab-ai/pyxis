@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF9AP8FEA5H7DKHV96J",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "UB-6",
+  "statement": "If If a captured entry's subject anchor no longer resolves (subject superseded/retired, or its branch/PR deleted), then the system shall retain the entry and flag the anchor as stale",
+  "intent": "entry preserved, marked stale-subject",
+  "fit_criterion": "a superseded/deleted subject leaves its entries intact and queryable, flagged stale; zero entries dropped",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:015ca7daee25b1bdd6e6e1972d2b1ef6105920322d0ee8efb0e62a333eec5750",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.369Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

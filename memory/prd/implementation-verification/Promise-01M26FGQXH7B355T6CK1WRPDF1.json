@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXH7B355T6CK1WRPDF1",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-4",
+  "statement": "Verb execution shall be default-deny for environment and filesystem beyond the workspace.",
+  "intent": "Security",
+  "fit_criterion": "FR-14's fixtures; zero ambient variables observable; zero writes outside workspace",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2b728183e2753ed3b7c4be3444fbda1afd4055415a9a65c29564d7f18f64fa26",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.801Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

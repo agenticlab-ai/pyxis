@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR260DKDXDDNTQ573JV3",
+  "kind": "Expectation",
+  "subject": "prd/local-work-tracker",
+  "family": "DOD-5",
+  "statement": "An operator drives the full lifecycle (create → signal → link → comment → transition → search → close) from the CLI unaided, and the resulting files are human-readable and greppable",
+  "intent": "J2, J4, G3",
+  "fit_criterion": "review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb5eba5b82e5a584113c0d4514592ec123f36aeeafcfe45d0c22620ae7bab546",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.95Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

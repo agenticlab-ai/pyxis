@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRGPSQZC4DWWVD1FNAPSY",
+  "kind": "Document",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/pipeline-measurement-v2.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:970b9e3c3cc2f6bde46725002d58f9bb6c31f5727f16e49070cd523604301367"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "body_sha256": "970b9e3c3cc2f6bde46725002d58f9bb6c31f5727f16e49070cd523604301367",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:22Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "note": "offline reconciliation"
+  }
+}

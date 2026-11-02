@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3A4BZ4T105DJP1PZW1",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-6",
+  "statement": "If If materialization is triggered while the plan's items already exist, then the system shall record a no-op through the planning stage's idempotent path, never duplicate items",
+  "intent": "unchanged tracker state + a journaled no-op",
+  "fit_criterion": "double-trigger drill: zero duplicate items; the no-op journaled",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2837e75b11cf0a43a105429f55cadded008dbfd7c88d8790dcbcfe6861f284fc",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.962Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

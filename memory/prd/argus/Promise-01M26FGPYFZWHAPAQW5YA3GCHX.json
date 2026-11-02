@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYFZWHAPAQW5YA3GCHX",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "UB-1",
+  "statement": "If If a ruling would amend Argus's own authority contract, promote a tier, or un-park an escalation Argus raised, then the system shall refuse and escalate",
+  "intent": "a decision brief naming the self-grant attempt",
+  "fit_criterion": "EVAL-2 self-grant set: 100% refused",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9bb999832101c26542fe69e3d75708fe7fd920343f9c733c120a207fc6910082",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.807Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

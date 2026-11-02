@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M45DWKAZD8QHYVZKGFZ30HE9",
+  "kind": "Decision",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "decision.3.7.1",
+  "statement": "New bindings and new source-bearing records are fully enforced;\nunchanged legacy records already present at the trusted base are reported as\nlegacy-unverified where durable evidence cannot be proven. This classification\ncomes from exact trusted-base record bytes, not an author-controlled tag,\nclock, cut-off date, or allowance entry. New invalid references cannot join it.\nExisting valid mainline references can be verified without rewriting them.\nAn unchanged Learning already present at the trusted base with a proven file or unit witness mismatch may be replaced by an evidence-verified, non-revoked Learning through an honored supersedes relation. Keep the failed predecessor and every defect as historical-unresolved, including its exact introduction, expected and observed witnesses, and verified successor ID. Only the verified successor supplies current knowledge; the historical witness remains unresolved. The predecessor must already fail at the pinned base and remain superseded in the candidate. New invalid records, unbound or invalid successors, other record kinds, malformed schemas, rewritten identities, unavailable history and invalid relations remain blocking. Later valid successors preserve this repair while the verified replacement remains unrevoked.",
+  "intent": "Permit an explicit repair of inherited failed Learning evidence while keeping the failed historical claim visible and preventing same-proposal evidence laundering.",
+  "rationale": "The frozen design requires successor-based repair, but the current verifier blocks the unchanged predecessor forever. Rewriting its JSON would destroy the retained historical claim; reusing a topic snapshot would violate mainline retention. A separately verified successor can restore usable knowledge without certifying the failed witness.",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2P69YH7CYWGGW9ZGSZZN4A9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T07:01:43Z",
+  "provenance": {
+    "source": "https://github.com/agenticlab-ai/pyxis/issues/1434",
+    "note": "Proposed native adoption-rule clarification for operator review. No operator approval or ruling is asserted; AGENTS.md requires human review and merge before this contract change lands."
+  }
+}

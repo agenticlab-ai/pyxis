@@ -1,0 +1,8 @@
+{
+  "code": "invalid-prd-disposition",
+  "scope": "prd/tech-design-review#Q4",
+  "feature": "tech-design-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

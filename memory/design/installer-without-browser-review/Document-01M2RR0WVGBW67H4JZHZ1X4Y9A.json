@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A",
+  "kind": "Document",
+  "subject": "design/installer-without-browser-review",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/installer-without-browser-review.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225"
+  ],
+  "body_sha256": "1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:33:00Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "offline reconciliation"
+  }
+}

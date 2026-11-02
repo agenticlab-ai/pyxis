@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461QJQJKXZDP4TDPK3TBFN4",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-4",
+  "statement": "A candidate seeks weaker enforcement — vector: same-proposal draft-born status",
+  "intent": "candidate selects its own gate",
+  "fit_criterion": "UB-6, FR-29, FR-54, NR-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:47fd2782f4f98b2b76c12482335a554d1815c25c910252589953275e4ae55ef7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRV4GQ1CWB6STF6MXHE9CR"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:48:30Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

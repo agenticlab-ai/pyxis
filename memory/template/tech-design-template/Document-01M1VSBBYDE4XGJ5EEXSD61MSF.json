@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBBYDE4XGJ5EEXSD61MSF",
+  "kind": "Document",
+  "subject": "template/tech-design-template",
+  "family": "template",
+  "statement": "Imported Pyxis source document: .pyxis/templates/tech-design-template.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/templates",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "a99a45fb5753903eba6e01fefd9ad4ebd71039dd502e640e9d6dd7ddbc33e19d",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:13Z",
+  "provenance": {
+    "source": ".pyxis/templates/tech-design-template.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

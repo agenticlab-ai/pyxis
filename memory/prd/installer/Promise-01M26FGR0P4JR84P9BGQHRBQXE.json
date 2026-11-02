@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0P4JR84P9BGQHRBQXE",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-21",
+  "statement": "The installed repository's tooling shall never build an engine binary from source; a missing pinned artifact is a named failure, never a toolchain invocation.",
+  "rationale": "targets consume binaries, never source (NG-2)",
+  "fit_criterion": "with the pinned artifact removed, resolution fails by name and no Go toolchain is invoked",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7ff66397979a84d5de75e86d6c1b556edbbe593e59f040d255791ef99b9a865a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.902Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

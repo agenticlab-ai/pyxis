@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35HVR1VQYG9WJHP1M7V0HV4",
+  "kind": "Document",
+  "subject": "rollup/product-requirements",
+  "family": "current",
+  "statement": "Captured authored source: docs/prd.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/root",
+    "reconcile:source",
+    "sha256:d97f1ce78c2c7f8824ff3807dac397603339887aae3700040f2963437eac4396"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M31W46P0N30Y72EVN4SNDFK6"
+    }
+  ],
+  "body_sha256": "d97f1ce78c2c7f8824ff3807dac397603339887aae3700040f2963437eac4396",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T21:55:27Z",
+  "provenance": {
+    "source": "docs/prd.md",
+    "note": "offline reconciliation"
+  }
+}

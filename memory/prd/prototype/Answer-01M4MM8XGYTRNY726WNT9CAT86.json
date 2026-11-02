@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M4MM8XGYTRNY726WNT9CAT86",
+  "kind": "Answer",
+  "subject": "prd/prototype",
+  "statement": "Add FR-6: a Pyxis command launches the build as a separate headless run on the harness and model the repository's configuration names for prototypes, and on the asking session's harness and model when none is configured.",
+  "intent": "operator",
+  "rationale": "The operator wants to control the harness and model that execute a prototype, without reusing the implement-now flow.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M4MM8XGXJXXR65FDHXA42Y3F"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

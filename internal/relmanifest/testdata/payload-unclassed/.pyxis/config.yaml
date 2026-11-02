@@ -1,0 +1,4 @@
+# fixture operand config — repo-owned, never hashed
+schema_version: pyxis-config/v2
+system:
+  version: "v1.2.3"

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4000DM5291PPYSZD17",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-2",
+  "statement": "`pyxis inbox` shall derive a new-version advisory by comparing the repo's pinned version to the latest version in the cached channel snapshot, and include it when the pinned version is older.",
+  "rationale": "discover-a-newer-version without polling",
+  "fit_criterion": "pin\u003clatest yields one advisory; pin==latest / pin\u003elatest yields none, across fixture snapshots",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:581fe8fbff3fb170e2e4ca4e7189026b36289e9349cc3da1841a3265d186109d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.984Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

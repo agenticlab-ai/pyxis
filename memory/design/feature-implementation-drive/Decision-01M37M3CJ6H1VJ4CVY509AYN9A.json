@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M3CJ6H1VJ4CVY509AYN9A",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.8.1",
+  "statement": "`candidate-evidence/v1` is immutable per candidate and scenario-set fingerprint. Its closed identity is `{feature, F, M, C, tree, builder_version, merge_policy_version, scenario_set_fingerprint}`; each required scenario result adds `{scenario_id, route, runner_identity, actor_identity, started_at, completed_at, outcome, evidence_ref}`. Outcomes are closed: `passed`, `failed`, `manual-accepted`, `manual-rejected`, `pending`, `skipped`, `unavailable`, `inconclusive`. Only `passed` and `manual-accepted` are accepted.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:bdfd012155b983be3647935be5fa126d0f60ec4dd25ee1929fb92007d8e83849",
+    "source-design:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPR7J0TY5BACFJ9VQPXH"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:04Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 150-150 in section 3.8; sha256:bdfd012155b983be3647935be5fa126d0f60ec4dd25ee1929fb92007d8e83849"
+  }
+}

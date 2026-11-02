@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V12DCZDE8PRF5CGQTTGCJ9",
+  "kind": "Learning",
+  "subject": "learning/requirements-first-memory-staging",
+  "statement": "A PRD that opts into requirements-first/v1 in its original immutable base can precede its first design without adding unserved-requirement debt; the first design activates coverage for all live Must requirements.",
+  "intent": "Allow the enforced requirements, design, and implementation PR stages to compose without changing the existing allowance inventory.",
+  "rationale": "Only missing design coverage is deferred. Exact PRD claims, source capture, dispositions, code obligations, and closeout remain enforced. The marker cannot be introduced by an amendment or rebase checkpoint, and indexed superseded designs or immutable historical serves edges prevent a feature from returning to requirements-only status.",
+  "tags": [
+    "code:internal/memory/reconcile"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:49:36Z",
+  "provenance": {
+    "source": "internal/memory/reconcile/prd_stage.go",
+    "commit": "bceecbfb978b1ead28d567eaa9d5cfd93263225c"
+  }
+}

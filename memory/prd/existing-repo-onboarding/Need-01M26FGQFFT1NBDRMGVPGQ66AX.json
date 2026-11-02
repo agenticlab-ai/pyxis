@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFFT1NBDRMGVPGQ66AX",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "G2",
+  "statement": "We believe a durable plan naming add / chain / collide / manual / never; expected result: the maintainer reads adoption as trustworthy and knows exactly what happens",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c7980e0aba3c651de001821e0397592a7ede66c754ce442424ac95b603a6ce5f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.351Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

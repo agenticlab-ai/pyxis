@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZVDY3VW59H92KHW9CC",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "ABUSE-5",
+  "statement": "an attacker serving a spoofed artifact (poisoned mirror, MITM, typo-squatted override) — vector: the artifact-source override or a compromised fetch path",
+  "intent": "arbitrary code on the user's machine",
+  "fit_criterion": "FR-2/FR-17/UB-3 (checksum before any execution); the effective source — default or override — is loudly reported in preview and doctor (FR-27)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:65e8ec7a97e267023878851514bd05720b7e0beb0f63240bec09dc30b7b5f2a0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.875Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

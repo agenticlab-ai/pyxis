@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCEY8DSTG4J4Z7JV8P8NGW",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.3.1",
+  "statement": "The core defines consumer-side contracts at the highest stable seams:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:a3b726e6140b21f38a34d9f277d9cb0b28b826ac4b6f4d9a039be7dfbcd7a7e7",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:20Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 101-101 in section 3.3; sha256:a3b726e6140b21f38a34d9f277d9cb0b28b826ac4b6f4d9a039be7dfbcd7a7e7"
+  }
+}

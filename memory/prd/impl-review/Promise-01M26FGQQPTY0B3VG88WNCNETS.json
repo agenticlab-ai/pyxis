@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQPTY0B3VG88WNCNETS",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-19",
+  "statement": "If an internal remediation changes spans outside the named defects, then the system shall review named defects plus changed spans, flag unrelated new content as scope drift, and withhold findings against unchanged content; any new proposal revision still stales the complete assurance set under UB-11",
+  "intent": "scope-drift finding and full-set re-review on the new head",
+  "fit_criterion": "drift fixtures flag every unrelated changed span, withhold unchanged-content findings, and never reuse sibling or stale pass evidence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2b7ce4efd03df9c9ac46101f53bf640e7281fce7194245738d78d72b6bbb0ae7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.614Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

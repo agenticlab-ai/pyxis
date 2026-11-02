@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRKSKFVRESX2KA858FX9",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-review",
+  "family": "DOD-4",
+  "statement": "One real design (+ shape) and one real supersession reviewed end-to-end unmanned, reports riding their PRs",
+  "intent": "FR-7, FR-13, FR-15",
+  "fit_criterion": "the reports + PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:21a32d46769dabca22a39ec7c3e46fe01d6cfc1e172d748b48e6243bb8e05261",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.513Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3DPQAZT060KKTA289Y",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-9",
+  "statement": "If If completions are awaited while the wake channel or its backstop is itself dead, misconfigured, or silent — an await's age exceeding the configured staleness bound with no resume delivered, then the system shall make the silence loud: the awaited set and each await's age shall be readable from repo/ledger state (FR-13's registration), and any lane state read (NFR-5's pattern) or drive touchpoint observing the exceeded bound shall surface a named wake-staleness defect — an unresumed await past its bound is a defect, never a resting state",
+  "intent": "a named wake-staleness defect at the next state read or touchpoint, naming the stale await and its age",
+  "fit_criterion": "staleness drill: with both delivery paths disabled and the bound exceeded, the state-read drill surfaces the named defect from repo data alone; no surface reports healthy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f149d1e6ad0c76b7882de929a0f20cd443498d06feea175ed0019bf540616af3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.965Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

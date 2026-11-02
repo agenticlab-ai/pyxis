@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAYBGHNSQGNM5V10V3P",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-35",
+  "statement": "When a semantically identical rebase checkpoint is newly added, `check-projection-congruence` shall evaluate the checkpoint as its own boundary and permit lineage compaction only when the checkpoint re-anchors the human-visible ID annotation and the source-map origin to that checkpoint consistently, introducing no after-only mismatch under FR-34.",
+  "rationale": "ignoring checkpoints lets the named repair create fresh hidden debt; comparing them without defining compaction false-rejects a valid rebase",
+  "fit_criterion": "a checkpoint containing both a historically annotated row and a grandfathered lineage-less row passes `verify-rebase` and congruence only when both faces re-anchor consistently; retaining old visible lineage with new machine origin and the inverse are red",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fbe0322125fffe40d61bd92a4758cd080499e528fb8f842311bf6063e56ad817",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.206Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

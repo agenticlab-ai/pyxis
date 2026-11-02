@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR2Y6SQJFXV3E83GE7RZ",
+  "kind": "Need",
+  "subject": "prd/local-work-tracker",
+  "family": "G3",
+  "statement": "We believe the store is \"just files\"; expected result: a human reads, greps, edits, and versions work items with ordinary tools, unaided",
+  "fit_criterion": "qual: operator lifecycle demo (DOD-5)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7a6faa5181943234cd59978ee19a2634eb9910521db873cc3ea6f32425e43e00",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.974Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

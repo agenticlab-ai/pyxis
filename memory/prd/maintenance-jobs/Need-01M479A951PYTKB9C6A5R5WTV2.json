@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A951PYTKB9C6A5R5WTV2",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "J3",
+  "statement": "When CI needs investigation or a previous proposal needs attention, I want Obtain evidence and one reviewable proposal, so I can Improve runtime while preserving required validation",
+  "rationale": "Operator initial CI request",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

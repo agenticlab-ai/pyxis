@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZ8F4DQ3PW68V1W6KVY",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "EVT-1",
+  "statement": "boundary_violation_refused fires when a layer refuses a seeded violation fixture (write denied / gate defect / CI refusal)",
+  "intent": "layer: enum(write-hook·structure-arm·attribution-gate), boundary: enum(authority-contract·frozen-doc·other-ledger·out-of-scope·dinv3·dinv4·dinv5), verb: string",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:308415338335a34e63cb958eee740271583e70c73cca94d0407dfa0277922305",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.832Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

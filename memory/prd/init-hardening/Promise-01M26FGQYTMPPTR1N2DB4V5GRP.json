@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYTMPPTR1N2DB4V5GRP",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-12",
+  "statement": "When eliciting any knob interactively, the system shall present its closed value set, a one-line plain-language gloss of what the answer changes, and its default — including the basis of a derived default.",
+  "rationale": "prompts were flag-help strings (`#F-12`)",
+  "fit_criterion": "every asked question renders value set + gloss + default; the tracker-derived CI default names its basis",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9937d1578b583c0abd29bd92577aadcfc34fa6b66e3ef3be0766b5a2e8c83404",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.842Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

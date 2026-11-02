@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR690HZA58RSNEKCDNTC",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-6",
+  "statement": "Operator judges the dogfood plan's decomposition acceptable",
+  "intent": "FR-4, FR-9, G3",
+  "fit_criterion": "checkpoint record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca80518cd894d376bb65591e46555cff1c04bd13cac76e69c640228facaa2a0f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.081Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

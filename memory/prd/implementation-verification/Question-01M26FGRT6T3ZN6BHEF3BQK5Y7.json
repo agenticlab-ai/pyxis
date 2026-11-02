@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRT6T3ZN6BHEF3BQK5Y7",
+  "kind": "Question",
+  "subject": "prd/implementation-verification",
+  "family": "Q3",
+  "statement": "Incremental re-verification strategy: affected-only vs cheap-first-full; rung-restart rules when a fix regresses an earlier rung (`#P-6`)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; product bar fixed by FR-3/M3",
+  "fit_criterion": "design handoff",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:6c129b189b43537f6c1ca381efdcbd608b08d35dfc53945abacdbb4d321f41f1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.718Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

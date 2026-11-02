@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26J1SJWN79MC7A8467N4SNF",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-2",
+  "statement": "Pyxis CLI journals live under .pyxis/logs/cli in the target repository. Source and installer root ignore rules exclude .pyxis/logs, and the shipped .pyxis/.gitignore gives existing installations the same exclusion through convergence. Release staging excludes the tree even when a file was force-tracked. Admission and adoption disregard retained diagnostics when assessing an otherwise empty initialization target.",
+  "intent": "Preserve failed-initialization diagnostics and allow a safe retry while preventing local output from entering commits, another user's clone, or release archives.",
+  "rationale": "Logging before initialization leaves a nonempty directory after failure. Treating that diagnostic directory as project content would block retry or alter adoption mode. Delivering a nested ignore rule lets upgrades protect logs while preserving operator-owned root ignore configuration.",
+  "fit_criterion": "Installed-flow tests cover initialization, rollback, retry, and convergence exclusions. Real Git tests retain historical records and shared workitems in a second clone while excluding all log subdirectories. Release tests reject log payload entries.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/adopt",
+    "code:internal/installer",
+    "code:internal/preflight",
+    "code:internal/release"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T21:02:18Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "pr": 1175,
+    "commit": "b8f9110c7262f587466a804e253337516daf6a7c",
+    "note": "Records log exclusion delivery and initialization lifecycle handling."
+  }
+}

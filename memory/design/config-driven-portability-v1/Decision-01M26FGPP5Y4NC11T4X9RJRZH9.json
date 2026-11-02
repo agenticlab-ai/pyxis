@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPP5Y4NC11T4X9RJRZH9",
+  "kind": "Decision",
+  "subject": "design/config-driven-portability-v1",
+  "family": "decision.3.2.1",
+  "statement": "the target-facing doc paths not yet represented in the schema are added as keys under the existing closed path schema, and the git remote is added as a top-level scalar beside the existing branch scalar — deliberate closed-schema keys, each with its current value as the default (`design-brainstorm:…#D-2`; INV-32). No new configuration surface is introduced (the single system config is settled — `design:installer-v1`, its D-7).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:cd43092c11685ebefc499ae511f1ecf54b704bca864db8941aaab21ac7fc1969",
+    "source-design:8d25ba0f65eb1bbed82e3f85efa63eb9791ff1246eb0fc44fa32f665307dd273",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN44K3YT5KK09CWCAJ5C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.541Z",
+  "provenance": {
+    "source": "docs/tech-design/config-driven-portability-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/config-driven-portability-v1.md lines 66-66 in section 3.2; sha256:cd43092c11685ebefc499ae511f1ecf54b704bca864db8941aaab21ac7fc1969"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF0GW8E5GR4TJ86N9CN",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NFR-4",
+  "statement": "Captured comments shall follow the redaction/access posture set in the technical design (P-3).",
+  "intent": "Security / privacy",
+  "fit_criterion": "the posture is stated and applied; no un-redacted sensitive class ships without a decision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:abef3cf534c1cc7fd8c64c94722864e5c2442970e02113792b9b1c0097a191a7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.36Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

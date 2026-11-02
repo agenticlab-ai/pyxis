@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M479A97C258W6R6S241CAS5K",
+  "kind": "Document",
+  "subject": "prd/maintenance-jobs",
+  "family": "prd",
+  "statement": "Draft prd.md",
+  "body_sha256": "b78d5169e0af2f294f28a10d442b6f2197d1becdfb434707cf80744900af2bb7",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

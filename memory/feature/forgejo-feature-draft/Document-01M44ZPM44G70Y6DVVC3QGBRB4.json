@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M44ZPM44G70Y6DVVC3QGBRB4",
+  "kind": "Document",
+  "subject": "feature/forgejo-feature-draft",
+  "family": "events-v2",
+  "statement": "Draft events.md",
+  "body_sha256": "e9d6af250cc8aead1ac876cff83dba460d49bacec4d71ac0ea457becd61f65c4",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

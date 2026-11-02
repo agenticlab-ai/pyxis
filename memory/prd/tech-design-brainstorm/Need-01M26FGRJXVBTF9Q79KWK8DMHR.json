@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRJXVBTF9Q79KWK8DMHR",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "G2",
+  "statement": "We believe recording every design ruling with question, answer, and anchor — and every alternative with its score; expected result: a provenance chain from requirement to architecture that survives into the autonomy era",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:94d664ad6ba4189c52078cd42d0d1cb5f1a08e726b2762903e181a390a78cdc7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.485Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

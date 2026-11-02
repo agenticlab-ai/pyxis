@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDPCG11AGE8P3C5841N",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NFR-3",
+  "statement": "Each skill invocation's model spend shall be bounded and attributable per run: the e2e-review convergence loop shall enforce a maximum round count, and each e2e-design run shall bound the code-context it ingests rather than reading the whole tree unbounded (the specific caps are design-owned).",
+  "intent": "Cost",
+  "fit_criterion": "the dogfood run records per-invocation token spend and demonstrates the round cap and context bound are enforced — a run reaching the cap stops rather than fanning out; no unbounded fan-out",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4c2052808f6a6e660d2e1efd905e185bbdd9a9d983be8883dce8e6296ecc5d6c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.294Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

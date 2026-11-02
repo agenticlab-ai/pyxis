@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPKSDGN0RGR15VPCKXP",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-7",
+  "statement": "The reviewer's verdict shall be one of approve · approve-with-advisories · request-changes · escalate; the verdict shall carry downgrade-only authority, emitting a signal that may route a proposal to the HUMAN lane or back to the worker and that can never grant AUTO or record a stage-9 sign-off.",
+  "rationale": "the program verdict set; GATE-4's one-way precedent",
+  "fit_criterion": "schema-level: no verdict value or side effect widens lane eligibility or writes a gate signature; the lane fixture shows HUMAN-forcing works and AUTO-granting is unrepresentable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:41a9db158e42270c9de8139ca542c9a7c64315040c622ae5fd2851d654b9bea2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.579Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

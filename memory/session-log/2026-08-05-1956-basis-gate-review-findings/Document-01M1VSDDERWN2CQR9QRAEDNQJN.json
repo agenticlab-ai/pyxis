@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDDERWN2CQR9QRAEDNQJN",
+  "kind": "Document",
+  "subject": "session-log/2026-08-05-1956-basis-gate-review-findings",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-05-1956-basis-gate-review-findings.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "cfafa0f03304c1395afac4ac16f9aedb49ee1722dbebab7633efcf708f63e57d",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:20Z",
+  "provenance": {
+    "source": "logs/2026-08-05-1956-basis-gate-review-findings.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

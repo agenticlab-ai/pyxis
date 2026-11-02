@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9GBANB0RJ3TEZCT0HA",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "FR-6",
+  "statement": "If a proposed change to the solution-shape would contradict a durable Decision invariant, then the system shall refuse the shape change until the Decision is superseded, naming the invariant.",
+  "rationale": "the shape must witness the Decision; the frozen Decision guards the shape",
+  "fit_criterion": "a shape change violating an invariant is refused with the invariant named; a conforming change is accepted",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:501a7a424af80a10805a7ab8c89ab97bca8f24c0324d09c2ea0957cd31ff9e4e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.16Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

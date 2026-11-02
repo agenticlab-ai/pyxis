@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9WWX0JPXQFSNDCYX20",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NFR-4",
+  "statement": "—",
+  "intent": "Performance / capacity / availability / privacy / accessibility / localization / cost",
+  "fit_criterion": "—",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cbdd111e50488147041a5a88c15d8366a45e770813cc0165413794049fdd0dfd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.172Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

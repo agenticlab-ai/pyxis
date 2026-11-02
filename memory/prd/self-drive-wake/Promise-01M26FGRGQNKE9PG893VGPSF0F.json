@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGQNKE9PG893VGPSF0F",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NFR-2",
+  "statement": "The wake channel shall deliver wakes within the promised bound per medium.",
+  "intent": "Performance",
+  "fit_criterion": "proof run at the shipped cadence advice (GitHub ≈ 10 s): transition→wake p95 ≤ 15 s (GitHub), ≤ 1 s (Carina); no wake exceeds 2× the bound; latency basis per M2 (EVT-2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9b2cd04aa72ec108740361cd600037c30afaade735841bcc2563eb2a1653438f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.415Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

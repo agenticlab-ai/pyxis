@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BACZ6E04PTGFNW5FV0E9KY",
+  "kind": "Learning",
+  "subject": "learning/installer-startup-signals",
+  "statement": "Install the init signal handler before the first filesystem write, including execution-log directory setup, so an early SIGINT or SIGTERM follows cancellation instead of leaving partial startup state.",
+  "intent": "Preserve interruption safety across installer startup and rollback.",
+  "rationale": "Two pre-push runs failed when SIGTERM interrupted log-directory creation before the handler was registered. Moving the existing handler ahead of logger setup closes that gap while retaining second-interrupt behavior.",
+  "fit_criterion": "A subprocess regression sends real SIGINT and SIGTERM at the first-write boundary, including a closed terminal; the existing installed-flow signal and retry test remains enabled and passes.",
+  "learned_from": [
+    "TestInitHandlesSignalBeforeLogSetup fails with the old startup ordering and passes with the handler installed before logger setup.",
+    "TestSignalMidApplyEndsCleanEitherWay passed 20 consecutive runs after the fix."
+  ],
+  "tags": [
+    "code:cmd/pyxis",
+    "owner:design/installer-v1"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T17:24:48Z",
+  "provenance": {
+    "source": "cmd/pyxis/main.go",
+    "commit": "1c02d2f677962d3e1ac69a3b31f148e436ed55ae"
+  }
+}

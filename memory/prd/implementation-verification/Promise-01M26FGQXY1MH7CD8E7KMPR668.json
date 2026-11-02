@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXY1MH7CD8E7KMPR668",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-7",
+  "statement": "If the invocation is invalid — unknown mode, missing or ambiguous diff base or workspace, or a flag-like positional argument, then the system shall refuse with a usage error before any rung executes, emitting only a configuration-error verdict",
+  "intent": "configuration-error verdict naming the invocation defect",
+  "fit_criterion": "the malformed-invocation fixtures (each defect class, including a flag-like positional) yield refusal with zero verbs executed — the incident-I3 discipline",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c0198f45ff3c3a8995cf881bfa4ba7846713aa20d33eb06fb1ecec34ac7edd6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.814Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

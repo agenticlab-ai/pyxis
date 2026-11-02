@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRCERM5YMYC61C1ZY9AT",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "J3",
+  "statement": "When no human reviews the document, I want have the approve verdict + evidence package stand as the recorded quality gate, so I can rely fully on the reviewer system",
+  "rationale": "brainstorm:authoring-reviewers#D-1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:92e73e01b0c415f3a6201a23bdc22d650c9ddb4eab0b1cf7e100299cbbb1479a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.278Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

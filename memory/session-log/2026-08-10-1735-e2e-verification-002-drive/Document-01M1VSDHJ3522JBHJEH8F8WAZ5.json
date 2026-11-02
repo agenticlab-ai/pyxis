@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDHJ3522JBHJEH8F8WAZ5",
+  "kind": "Document",
+  "subject": "session-log/2026-08-10-1735-e2e-verification-002-drive",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-10-1735-e2e-verification-002-drive.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "42fafc8af118ffad3fab9f006a5e9dd817a3f98a86e705c0b7325066ae33d1e3",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:24Z",
+  "provenance": {
+    "source": "logs/2026-08-10-1735-e2e-verification-002-drive.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

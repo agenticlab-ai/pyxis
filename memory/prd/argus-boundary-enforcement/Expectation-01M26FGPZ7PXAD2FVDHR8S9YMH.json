@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ7PXAD2FVDHR8S9YMH",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "EVAL-2",
+  "statement": "The structure arm and attribution gate refuse a violation independent of authored content (structural/attribution classification, never content-directed — injection cannot steer a verdict)",
+  "intent": "the DINV-3/4/5 fixture corpus + Argus-authored protected-path PR fixtures, including planted-directive bodies",
+  "fit_criterion": "100% in-scope violations refused; a planted directive in a body does not flip any verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:66ced443d0642ac12e9cc27b3b55a13999a4928d03e9b9f1a3da624f878acdfd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.831Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

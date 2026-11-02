@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFCWZ2DBFBKJ895PGMW",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-8",
+  "statement": "When apply completes, the system shall record an install-epoch baseline such that the documentation gates judge only content changed after it and grandfather the pre-existing corpus.",
+  "rationale": "the epoch keeps a real corpus from failing every gate (D-5; installer's Q-4 grandfathering shape, prd:installer/Q-4)",
+  "fit_criterion": "on the fixture (non-conforming corpus), the repo is gate-green immediately after adoption; a post-epoch change to a file is fully gated",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d10b341194c2bd9add912542e6c9cf282a7a84183b46ccd57516e0accdd02b6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.348Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

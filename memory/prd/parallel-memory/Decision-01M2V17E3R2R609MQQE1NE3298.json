@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V17E3R2R609MQQE1NE3298",
+  "kind": "Decision",
+  "subject": "prd/parallel-memory",
+  "family": "R1",
+  "statement": "Mitigate accidental debt changes by requiring an exact trusted v1 inventory and a separate data-only v2 migration after the compatible reader lands.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The approved baseline design retains exact inventory and monotonic comparison. The implementation must reject mixed source/code migrations, bootstrap, downgrade, malformed policy, and missing historical inputs.",
+  "fit_criterion": "The baseline policy and synchronization tests must preserve every normalized allowance on migration and refuse changed counts, addresses, severities, repairability, unsupported evaluators, or unavailable replay inputs.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:b4e6123f5403fb12270cf0372cf2f12a3ab9f7b619318e8e6d0bab4943fcc880",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:52:20Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0"
+  }
+}

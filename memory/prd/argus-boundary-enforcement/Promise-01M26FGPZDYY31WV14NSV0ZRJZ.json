@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZDYY31WV14NSV0ZRJZ",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-13",
+  "statement": "On a diff touching a protected path, the attribution gate shall resolve authorship into exactly three distinguishable states and act on each: **positively-Argus** → refuse (FR-9); **positively-human** → pass, never refused by this gate (NR-4); **underivable** (neither positively established) → fail closed (FR-10). Human authorship shall be **positively established**, not inferred from the mere absence of an Argus signal, and its establishment shall not require the human author to perform any extra step to be recognized as human.",
+  "rationale": "makes the frozen design's DINV-2 (underivable ∧ protected ⇒ fail closed) and DINV-4 (human path open) co-satisfiable — they are consistent only if human is positively derivable on the protected subset, else a human PR is \"underivable\" and DINV-2 wrongly refuses it, breaking NR-4; strengthens NR-4 (positively served, not inferred)",
+  "fit_criterion": "fixtures on a protected-path diff: a positively-Argus diff is refused; a positively-human diff passes; a stripped/absent-signal diff (neither state) fails closed and is **never** served as human; 0 legitimate human-authored protected-path PRs are refused",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f46f7c698f2d2e4385d8e035a15852e73aa823fdd8d0e016fc0b6e651b9b468",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.837Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

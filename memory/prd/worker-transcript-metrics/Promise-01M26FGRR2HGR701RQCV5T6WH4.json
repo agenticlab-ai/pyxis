@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRR2HGR701RQCV5T6WH4",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-5",
+  "statement": "If If a harness's run data is malformed or unparseable, then the system shall record a capture failure naming the harness and the unparseable source — not an unavailability",
+  "intent": "a capture-failure entry, not a partial guess and not a capability gap",
+  "fit_criterion": "a corrupted transcript yields a capture-failure entry counting against M4, never an FR-4 unavailability. The distinction is load-bearing: an unavailability means *this harness cannot expose the figure* and passes as honest degradation, so classifying a parser or capture defect as one would let this feature's own bugs accumulate invisibly inside its success metric",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6749e42b6d71d5a6a0bf6d4b34dbed55b911051fa95337d0c30eb898345d6b1e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.65Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

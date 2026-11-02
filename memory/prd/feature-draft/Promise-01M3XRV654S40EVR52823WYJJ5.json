@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRV654S40EVR52823WYJJ5",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-6",
+  "statement": "A proposal wants the overrides for an existing feature — vector: cites FR-31 through FR-33 for a feature still in the document pipeline",
+  "intent": "the feature's existing contract or applicable document checks are bypassed",
+  "fit_criterion": "FR-54, NR-7, NR-5",
+  "tags": [
+    "source-unit:871f035ef60db975898c71467fc9a8c42b98ea72c12aff91bc9eea3f895e2796",
+    "source:prd-ledger",
+    "reconcile:prd"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZJ53JKPKNN56DTPKVGARB"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:16Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

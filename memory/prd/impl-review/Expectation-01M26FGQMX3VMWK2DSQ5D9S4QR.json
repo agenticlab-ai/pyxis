@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMX3VMWK2DSQ5D9S4QR",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-15",
+  "statement": "Every live non-regression row remains green: codegate deterministic, implement-now non-review behavior, siblings untouched, merge-lane classification and impl-review band projection byte-identical, harness selection upstream, and downgrade-only authority unchanged.",
+  "intent": "NR-1..NR-3, NR-5..NR-8",
+  "fit_criterion": "protected-surface diff audit + conformance results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b91f84011af2fb5ffca529f8d4c26a8ac3c69d5e3605ecfbd313dd149324b5f6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.525Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

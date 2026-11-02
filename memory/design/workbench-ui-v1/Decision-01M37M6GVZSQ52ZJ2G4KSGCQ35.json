@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M6GVZSQ52ZJ2G4KSGCQ35",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.3.1.1",
+  "statement": "Corpus knowledge enters through exactly two lanes, in strict preference order: (1) a class's **machine face** — the generated, schema-versioned JSON the writing tools already emit (the ledger's `effective.source.json`, the design index's JSON face, the plan fold) — consumed as data, never re-derived; (2) for the classes with no machine face (the governing docs, incidents, wiki, brainstorm records, review reports), a **header-and-anchor scan**: the routing-header table, headings, and the anchor/citation grammars — never full semantic parsing. The reader emits one uniform record per document (the shape's `DocEntry`); everything downstream (catalog, search, citations, progress) consumes records, not files.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ca847473d214200a69816b60cca0dba9425111fa3063f22410ca2c083a53122e",
+    "source-design:24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPWJP9J98FF08C4PP9G1"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZS2DYVWXCWAD5KD5VWGH3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:47Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 30-30 in section 3.1; sha256:ca847473d214200a69816b60cca0dba9425111fa3063f22410ca2c083a53122e"
+  }
+}

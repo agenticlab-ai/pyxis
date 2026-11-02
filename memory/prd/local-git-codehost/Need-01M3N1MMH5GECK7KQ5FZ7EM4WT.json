@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3N1MMH5GECK7KQ5FZ7EM4WT",
+  "kind": "Need",
+  "subject": "prd/local-git-codehost",
+  "family": "J2",
+  "statement": "When A prepared head changes, I want Know the old approval is void, so I can Avoid locking unreviewed bytes",
+  "rationale": "feature-draft contract",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDKE1W4G10CD9YSRXN9",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "G2",
+  "statement": "We believe one screen replacing the body as the default gate read; expected result: gate-review time dropping to minutes",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:92f14499fd799052622053cdf57e42bdaa1a96ed5f94eb9fd41aa92ba04c5507",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.315Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

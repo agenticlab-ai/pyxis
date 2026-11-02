@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYPY5D60SESYN70FYME",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "EVT-3",
+  "statement": "init_rolled_back fires when FR-10 restored a target",
+  "intent": "failed_stage: string, restored: bool",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b46cac4080d539f48d26ff3e5c0072b26b0234f94f627079d4f5bb02946bd5fb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.838Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

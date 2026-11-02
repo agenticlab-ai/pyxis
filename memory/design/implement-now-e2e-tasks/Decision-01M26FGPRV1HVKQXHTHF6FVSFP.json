@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRV1HVKQXHTHF6FVSFP",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.2.3",
+  "statement": "the document is read at the **plan's freeze revision**, and the resolved content's fingerprint is recorded in the origin-decision event. The plan freezes at merge, so its recorded reference resolves to exactly one revision of the referenced document; reading there satisfies the data contract's integrity rule without the executor ever depending on the working tree's current state, and the recorded fingerprint makes *which bytes a worker was briefed from* an auditable fact rather than an assumption.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9c9abe9f7c1b48abdcfddd50c35a8df8b83845774ebdfb7bb3c095ed887e5d3a",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.627Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 90-90 in section 3.2; sha256:9c9abe9f7c1b48abdcfddd50c35a8df8b83845774ebdfb7bb3c095ed887e5d3a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPDC422ZBG4BNW03QXW",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-35",
+  "statement": "When completed-report publication reaches a verified or failed terminal, impl-review shall append one immutable EVT-13 publication terminal bound to the caller's review obligation, review process, publication attempt, proposal, revision, idempotency identity, medium, exact native receipt when available, and a distinct non-secret attempt-proof reference when available; a satisfying EVT-9 aggregate shall count toward M1, production acceptance, or activation only when it joins exactly one verified EVT-13. At any host seam, the host's reciprocal publication terminal shall pair field-identically with EVT-13: `review_attempt_id = review_process_id`, `review_obligation_id = review_obligation_id`, `proposal_ref = proposal_id`, `revision = reviewed_revision`, `artifact_ref = artifact_ref`, `native_receipt = native_receipt`, and `attempt_proof_ref = attempt_proof_ref`. The first four pairs are required on every reciprocal publication terminal; the artifact/receipt/proof fields may be optional in the event schema for failures but shall have identical presence and, when present, the same grammar and value, and all three shall be present on both verified terminals. `publication_attempt_id` remains a distinct impl-review-owned child identity and shall not be substituted for `review_obligation_id`. A host contract that lacks or ambiguously defines any pair does not satisfy this seam.",
+  "rationale": "a one-sided mapping, an overloaded locator/proof field, or a publication event that cannot be joined to its host obligation cannot prove durable review completion or feed either corpus",
+  "fit_criterion": "fresh-clone harvest fixtures join every counted satisfying EVT-9 to one verified EVT-13 and its exact-readable artifact; reciprocal-host fixtures join that EVT-13 to exactly one host terminal by all seven declared pairs, including optional-schema-field presence equality and verified-terminal completeness, and reject any absence, ambiguity, grammar/value mismatch, receipt/proof substitution, or publication-attempt/obligation conflation; missing, duplicate, failed, mismatched, unreceipted, and unproved terminals contribute zero coverage and cannot activate or accept",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fcac5622b36f6a7afa1950cd756fd3fd0a0fed7997c95a6280fadcbe4f5611c5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.573Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

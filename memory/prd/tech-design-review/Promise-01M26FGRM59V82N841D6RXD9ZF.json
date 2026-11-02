@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRM59V82N841D6RXD9ZF",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "FR-11",
+  "statement": "When the verdict is escalate, the reviewer shall emit the decision brief as data and the subject shall be treated as parked — not advancing, consuming nothing, its state recorded — with surfacing owned by the surrounding flow per the pair convention.",
+  "rationale": "terminating exception, not a wait (inherited, brainstorm:authoring-reviewers#D-3)",
+  "fit_criterion": "schema-valid briefs; parked state recorded; no retry loop",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d913b3119ab3026aa9e0ebeaae6fcb6d8e79d3eca6b6f74ec6c01723e8771801",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.525Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

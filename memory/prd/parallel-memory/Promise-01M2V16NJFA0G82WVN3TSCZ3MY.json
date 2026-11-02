@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NJFA0G82WVN3TSCZ3MY",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "NR-3",
+  "statement": "Existing-format debt policy and validation retain their behavior until explicit policy migration",
+  "rationale": "Reader deployment must not silently cut over policy; causal admission is staged independently",
+  "fit_criterion": "Existing-format debt-policy fixtures remain unchanged; old readers refuse the new format; rollback compatibility is rehearsed; the separate causal rollout may change age-floor expectations before policy migration",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:69faf20c3a2ae422e11295b35c1c448f19d6897503c90bc0ed312776667bd1b5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

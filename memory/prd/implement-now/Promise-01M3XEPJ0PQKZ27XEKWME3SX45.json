@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XEPJ0PQKZ27XEKWME3SX45",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-55",
+  "statement": "When direct issue entry encounters ambiguous scope, changed source, blocked dependencies, unsupported routing evidence, exhausted implementation/review bounds, or a publication/verification failure, the executor shall preserve existing work and shared evidence, return a typed non-success result, and stop within the existing budgets. It shall not author a planning pipeline, recursively split work, watch later comments, or merge as an implicit recovery action.",
+  "rationale": "bounded first delivery can grow later without hiding additional agents or authority",
+  "fit_criterion": "failure fixtures terminate with a reason and resumable references; no unselected work, watcher, decomposition, planning artifacts, or merge action is created; unsupported activated routing evidence refuses before claim",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:25755d54b12a6e8857afc29c9e61b750f90402065209602299b4ce4a1b4fcac6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:41:58Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

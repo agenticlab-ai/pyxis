@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXFEJ1XNQNPFCZ0ENRA",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-1",
+  "statement": "When the front door receives an idea, Argus shall open a problem ledger recording the idea verbatim, the principal identity, the authority-contract version, and — when provided — the per-problem grant override and any pre-rulings, each binding as a ruling-in-advance.",
+  "rationale": "the root artifact every ruling traces to; optional overrides and pre-rulings are D-4's carried sub-clauses (brainstorm:autonomous-developer#D-4, #D-9)",
+  "fit_criterion": "100% of accepted problems have a ledger with all required fields; every provided pre-ruling is cited by the later rulings that rely on it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2b222ff9017f71f17fc8fd4a8435ed71a803b924a46fe9840162adc23a4fd0b9",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.775Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

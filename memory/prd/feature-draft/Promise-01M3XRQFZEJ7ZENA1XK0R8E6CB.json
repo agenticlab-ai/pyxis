@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQFZEJ7ZENA1XK0R8E6CB",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-50",
+  "statement": "Where the approval surface is hosted, the system shall accept a lock approval only from an authenticated human identity that agent sessions cannot assume. Where the repository explicitly selects local-git, the system shall accept the operator command's declared review receipt satisfying FR-52 and report review authorship and independent origin identity as unauthenticated, with no host-level mainline protection.",
+  "rationale": "A local Git consistency record cannot establish who wrote it or prevent direct writes by the shared account",
+  "fit_criterion": "Hosted self-declared and agent approvals remain refused. A valid local receipt is accepted by the normal route without a signing key; doctor, receipt output, and clone verification disclose the shared-account, unauthenticated-actor, unprotected-mainline, and copied-origin limits. Inspection confirms that a shared-account actor can forge a consistent receipt or write refs directly.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3cd4401a776bfea42c73bda91beb32c59fa17033518615df68c75962df15b54c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZNEH1PR8FFBT1PPMQBVVX"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:14Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

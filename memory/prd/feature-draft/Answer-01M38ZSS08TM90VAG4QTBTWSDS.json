@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSS08TM90VAG4QTBTWSDS",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Open, for the technical design to settle: how the reviewers' fixed-subject protocols map onto rounds and onto the required review of the exact version being locked (brainstorm:feature-draft#P-7). Owner: the tech spec author.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQMFAJ2AE0X0SPHQPJ4V2"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:46Z"
+}

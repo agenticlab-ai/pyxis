@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRHAMRKEVAP877DVKN9Z",
+  "kind": "Expectation",
+  "subject": "prd/skill-command-prefix",
+  "family": "DOD-4",
+  "statement": "Non-regression holds",
+  "intent": "NR-1",
+  "fit_criterion": "rename-train + closing PR diffs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a8507fcd5082e7f92534a87d436c8eac08c9a47b2177512372a48d31300ec569",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.434Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

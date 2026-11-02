@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXMCK6AWK8SVQN8V6FP",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NR-1",
+  "statement": "The repo's existing CI contexts (docs-gate, Go build/test) stay green when the harness lands",
+  "rationale": "the harness is additive; landing it must not perturb the doc system or existing tooling",
+  "fit_criterion": "all pre-existing required contexts green on the introducing and implementing PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d363358b5a5df1fd5fc4a7524c928f250217ca3ef29a151ad5bb98f0cb8ba5c4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.804Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

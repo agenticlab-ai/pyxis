@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJV4NE2Z6V37X7RS56M",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-9",
+  "statement": "Where the authority forces (\"panel this\") or waives (\"skip the panel\") the panel move, the skill shall honor the override and record it with the authority's reason.",
+  "rationale": "the rule is a default, not a cage; the override is itself provenance (#D-4)",
+  "fit_criterion": "override fixtures: forced-on-extension runs the panel; waived-on-new-seam skips it; both audit notes present with reasons",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c8f6aa0bbc0506cbfae72b5c02ad6617b4e8eea2d75628b6c1a28b8f06e68bb9",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.483Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

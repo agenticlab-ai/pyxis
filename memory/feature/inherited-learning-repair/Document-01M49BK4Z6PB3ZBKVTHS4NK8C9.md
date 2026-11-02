@@ -1,0 +1,5 @@
+# Draft events
+- {"schema":"draft-event/v1","id":"b0938b18c525b9f6b43fd6b7","name":"draft_step_failed","feature":"inherited-learning-repair","occurred_at":"2026-10-05T20:49:53.951188Z","step":"draft-open","error_class":"step-error"}
+- {"schema":"draft-event/v1","id":"5a6fa6c12b09d3594b4c3b44","name":"draft_opened","feature":"inherited-learning-repair","version_digest":"sha256:5b0c9120c1411ac76f4d8ed5cc14346de3d0dfe2ea3236b209e043885bb72a54","occurred_at":"2026-10-05T20:51:22.034074Z","origin":"new"}
+- {"schema":"draft-event/v1","id":"c2eb5a7cafab2b382f2397da","name":"draft_step_failed","feature":"inherited-learning-repair","occurred_at":"2026-10-05T20:51:54.621057Z","step":"draft-open","error_class":"step-error"}
+- {"schema":"draft-event/v1","id":"39847eb924c89e4ff66dd115","name":"draft_step_failed","feature":"inherited-learning-repair","version_digest":"sha256:48502b29de0881543036b34f06acede11abbacfd5a3a6f324c4417d0005f6daa","occurred_at":"2026-10-06T05:54:37.779485Z","step":"prepare-lock","error_class":"step-error"}

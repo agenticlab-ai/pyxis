@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8XJJ2TGHJJ52MAQGZH",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-2",
+  "statement": "If a machine face is malformed (unparseable JSON, unknown schema keys), then the system shall emit an `error` verdict naming the defect, fail-closed, never a pass",
+  "intent": "error verdict",
+  "fit_criterion": "the malformed-source-map and malformed-index fixtures each yield an `error` verdict; no path returns clean on malformed input",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:94166b4f9cb69feba8a34ff33a66fdb535d0b107f60e36357ffbf43dc915d783",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.141Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQM255GPEAYZQCZR51AH",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NR-2",
+  "statement": "Cross-machine task claims continue to prevent duplicate issue execution.",
+  "rationale": "Feature ownership complements rather than weakens task safety.",
+  "fit_criterion": "Existing lease conformance passes; overlap fixture yields at most one task claimant even under misrouting.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5f3d9ef8a921dd921e38736bec421431a9aad09fcd2ed8dcb64fb73d19f014da",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.498Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

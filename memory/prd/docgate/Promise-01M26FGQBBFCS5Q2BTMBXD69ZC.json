@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBBFCS5Q2BTMBXD69ZC",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-8",
+  "statement": "When invoked as `lint-structure`, docgate shall verify every ledger directory has exactly one `000-base.md`, dense monotonic numbering, and headers parsing against their declared template versions.",
+  "rationale": "malformed layout never lands",
+  "fit_criterion": "gap, duplicate, missing-base, and unknown-header fixtures each red with named files",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6a9407e234c3e5a979894eab5e382bdd81f7a60f7536531b8975e116bc9b1604",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.219Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

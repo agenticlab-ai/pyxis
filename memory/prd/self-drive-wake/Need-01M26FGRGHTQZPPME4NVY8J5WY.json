@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGHTQZPPME4NVY8J5WY",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "J3",
+  "statement": "When (machine) a drive awaits a named completion — a proposal merged, checks settled, a comment landed, I want receive a normalized wake within the configured bound and re-derive state through fresh reads, so I can continue at the frontier without a human clock",
+  "rationale": "brainstorm:self-drive-wake#F-1/#F-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:592dd839bb570c94f6b09484ce6a1433114a587292faa85d17f870fb1f7a03da",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.409Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

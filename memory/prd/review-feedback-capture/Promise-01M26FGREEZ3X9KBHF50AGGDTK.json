@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREEZ3X9KBHF50AGGDTK",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-3",
+  "statement": "The system shall require every ledger entry to carry a typed disposition drawn from a closed set — `applied`, `declined-with-reason`, `became-incident`, `no-action` — and an outcome reference where the disposition implies one.",
+  "rationale": "close the loop; no capture-and-forget (J2)",
+  "fit_criterion": "100% of entries carry a disposition value in the closed set; `applied`/`became-incident` entries carry an outcome reference",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4debde550b818b6dd5ebbdc93a01bdbd5b2b6149c766dc0cb405a4cc81729035",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.342Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ20EJ5WDXY8FZ4W6EZQ",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-11",
+  "statement": "When a plan freezes at its merge, the drive shall trigger the plan's materialization through the planning stage's own contract — which keeps consent, idempotency, and wiring order — without a human prompt, and shall verify each created item at the goal object: it exists and carries the repo-configured automated-implementation tag.",
+  "rationale": "prd:argus FR-9's behavior, unattended timing; the grant exists at tier-2",
+  "fit_criterion": "live drill: a plan frozen at merge projects with no human prompt; every item verified at the goal object; a re-trigger records a no-op (UB-6)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5de1ebf7db06c81147d83c3d8024d9b821d3776bc919933f723801c1ed262c6a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.92Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

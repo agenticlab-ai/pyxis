@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSVAQHS8T8MBTEA086Q",
+  "kind": "Question",
+  "subject": "prd/implement-now",
+  "family": "Q-1",
+  "statement": "Does Claude Code's headless mode fully cover an autonomous multi-tool run under the native profile/effort settings its adapter must expose?",
+  "intent": "superseding tech design",
+  "rationale": "open — must not weaken or switch harness if unsupported",
+  "fit_criterion": "design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:fdb6a1188686bc51cffa968475961697ab48011df9e8afb8b057928f84f71e48",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.707Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

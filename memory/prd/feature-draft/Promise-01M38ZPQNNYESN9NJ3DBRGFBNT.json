@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZPQNNYESN9NJ3DBRGFBNT",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-1",
+  "statement": "Today's plan projection onto the tracker and the executor's task consumption keep their behavior",
+  "rationale": "Execution is out of scope and must keep working (brainstorm:feature-draft#D-8)",
+  "fit_criterion": "The existing projection and executor suites pass with zero modifications",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8f667ffe280ee5d3c31c617de731bec9fe9fc4f83ffbeb535f77b6187dfe0cca",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:07Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

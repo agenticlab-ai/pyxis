@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS18C13P0E2Q21D7CPJ",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.6.2",
+  "statement": "each perturbation is scoped to the task's own process tree — its own environment, its own clock and network view, its own generated load — never to the host. Workers run concurrently by default, so a host-wide perturbation would push sibling workers past their wall-clock budgets into spurious respawns, making one task's admission check another task's failure.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:980019bbd173bf9717e00615c1634bee91b3142900bea1f70a44eb8c31d7edb9",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.633Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 127-127 in section 3.6; sha256:980019bbd173bf9717e00615c1634bee91b3142900bea1f70a44eb8c31d7edb9"
+  }
+}

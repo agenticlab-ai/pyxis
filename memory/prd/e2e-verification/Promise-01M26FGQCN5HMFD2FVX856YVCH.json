@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCN5HMFD2FVX856YVCH",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "EVT-6",
+  "statement": "catch_corpus_run fires when the catch corpus is run at the checkpoint",
+  "intent": "case_family: enum(coverage_gap·hollow_scenario·harness_hole), case: string, flagged: bool",
+  "fit_criterion": "M2, M3, M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:88205b97e4aa77d1c4ae5fbcf38f308b4f2ea8004efa8c43aa3ec8b17ec4f0dd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.261Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

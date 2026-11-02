@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M37KSWCRA1X645Z4PS6PWHMV",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-16",
+  "statement": "Where the authority overlays, the conversation should present the reviewed document, recorded findings, and the authority's comments together.",
+  "rationale": "one evidence set for two reviewers, as an adapter over the data (— #D-1's overlay)",
+  "fit_criterion": "the overlay demo shows the document, reviewer findings, and authority comments in one conversation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f5b916ffab6f739804ecf15bc2ac8b7fe27fcceab888e70dec8fc5d4004fbbd7",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGRBZMJRTFCXCQRT325AM"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:07:52Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "note": "compiled from sha256:5fc6302d65e13f57ffd2c3d3bebd30c9591a59b1dac6d3e8daed46fc192ee720"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSNQM2R8M8T87TM7HR6",
+  "kind": "Question",
+  "subject": "prd/feature-implementation-drive",
+  "family": "Q4",
+  "statement": "Which existing wake/notification adapters resume local and remote drives after review events while preserving zero idle inference and instruction-free signals?",
+  "intent": "technical design",
+  "rationale": "open — design-owned; product behavior fixed by FR-13/FR-27/NFR-5",
+  "fit_criterion": "Phase B design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:75046984f16693a8e46e14e42e9a0ccb3efc8d1ff281d7f97b4da1d2095ac2f9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.701Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

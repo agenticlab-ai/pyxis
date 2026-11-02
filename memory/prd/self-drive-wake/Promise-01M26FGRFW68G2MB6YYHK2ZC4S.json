@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFW68G2MB6YYHK2ZC4S",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-1",
+  "statement": "When a consumer requests the state of a set of proposals, the state reader shall return, per proposal: landing state (open · landed · closed-unlanded), per-required-check state, and the comments newer than the caller's cursor across the medium's proposal-discussion surfaces (discussion comments and review comments, review summaries included).",
+  "rationale": "the eyes; no port can answer this today (§2.4)",
+  "fit_criterion": "on both adapters, a mixed 50-proposal fixture returns all three kinds matching the medium's ground truth per enumerated surface; unknown fields are typed, never empty-string",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3f40aa99d09ea672720ce883ee654cdf0d4faee756277da0fa577f058987cef7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.388Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

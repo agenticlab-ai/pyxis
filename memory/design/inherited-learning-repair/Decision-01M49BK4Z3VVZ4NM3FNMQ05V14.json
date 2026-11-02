@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4Z3VVZ4NM3FNMQ05V14",
+  "kind": "Decision",
+  "subject": "design/inherited-learning-repair",
+  "family": "D-4",
+  "statement": "Invoke the existing direct-issue executor with a frozen structured charter for the canonical task. Reuse #1437's successor mechanism and preserve all existing evidence and review controls.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YWHG4KQXH5DGWKVQ3M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y2X5EYTMQ3VJ15ZT3K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y31446QEEQQ99SEHPY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y6J1M4EPM8DWKS2721"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y96RRC20Z68A6PWHN0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YAA3N7T09DEZ1RRZDG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YG1PZAW1PP6JXSR1PQ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

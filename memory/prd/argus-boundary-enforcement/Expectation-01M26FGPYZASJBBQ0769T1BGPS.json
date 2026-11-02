@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPYZASJBBQ0769T1BGPS",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken — non-authority verdict byte-identical; `check-immutable` set unchanged; cross-CLI portability held; human-author path open",
+  "intent": "NR-1..NR-4",
+  "fit_criterion": "byte-diff of `docgate gate` on the pre-existing corpus; `check-immutable` code diff; portability check; human-authored-PR fixture pass",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4876b1f1f9dd9ea6c6621f9457f5781c5e31635e537cb07dacb76a73e0db273e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.823Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

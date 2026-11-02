@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQF6BJVV2X47FAQDDC1W",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-2",
+  "statement": "The adoption plan shall classify every path the system would act on into add, chain, collide-with-resolution, manual-instruction, or never-touch.",
+  "rationale": "the plan is the agreed record and the honest surface for NG-2 collisions (D-4, D-6)",
+  "fit_criterion": "each of the five classes is present and correct for the fixture repo; every acted-on path appears in exactly one class",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fff6873ecf6367473997fb7664de01145dad12da7d5b6f99785fda5fd30241f9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.342Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

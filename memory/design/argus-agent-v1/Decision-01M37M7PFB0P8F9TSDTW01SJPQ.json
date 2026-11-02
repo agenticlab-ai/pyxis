@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M7PFB0P8F9TSDTW01SJPQ",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:argus/FR-10 · prd:argus/FR-15 · prd:argus/FR-3 · prd:argus/FR-4 · prd:argus/FR-5 · prd:argus/FR-6 · prd:argus/FR-7 · prd:argus/FR-8 · prd:argus/FR-9 · prd:argus/NR-1 · prd:argus/NR-2 · prd:argus/NR-3 · prd:argus/UB-1 · prd:argus/UB-2 · prd:argus/UB-3 · prd:argus/UB-4 · prd:argus/UB-5 · prd:argus/UB-6 · prd:argus/UB-7 · prd:argus/UB-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:214d3d1add47501bab82adae8a073eab292d8cfce8a3da6595f505674e204e67",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRWDFK623C6S8X9BC3X4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXGE7227RHTAF8S2D56"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXNF1ZF1SNJHXMMERD1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXQRZDRJQY6PYKRD1P1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXRBRP73EK28SQPZAJ7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXS6MD3H8H87024KEMG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXTEY33KH2YNPWJ1V6G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXVVEMB42GPV3VJRY23"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXWRF6FN3FB7VCXNB9T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXXWZQTRK0YKF4XK583"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYCA17D7JCKB4XF2VCY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYD3YQX81F1NVJ85RM3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYEWF9H4883PFCXY8ZR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYFZWHAPAQW5YA3GCHX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYG7K8RVGVFD04QRR42"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYH0J1T39X8MA2M2BAA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYJYG59VXQK9840R2RH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYK1XG8ZH1SE2YTD90R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYMPZGP1R9B6J96MAVM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYNXVGKWF01TC3A1YGP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYPD41KPQ9FD3WNQQJR"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQKTK20RGZN39ZPQ5TZ7E"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:25Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "note": "projected from exact design header 214d3d1add47501bab82adae8a073eab292d8cfce8a3da6595f505674e204e67"
+  }
+}

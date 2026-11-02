@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMKHQ64P2J8DE1DKX55F",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-13",
+  "statement": "FR-9 promises a base-free proof for the first mainline push, while D-2 and D-6 apply that case to a local draft lock without defining how D-4 prepares it. The existing preparation path fetches and resolves the configured mainline, rebases onto it, and loads readiness sources from it before a zero-OID landing lease can run. The local first-push hook in issue #1305/#1307 separately handles publication from the installed Pyxis init epoch. The outstanding product choice is whether drafts must wait for that bootstrap push or must gain a separate base-free draft compiler and readiness path; FR-9's first-mainline-push promise remains in either case.",
+  "intent": "GitHub code review on PR #1312 at prepared head `072c96c6eeab000421420bcd94e68bfb62148101`, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

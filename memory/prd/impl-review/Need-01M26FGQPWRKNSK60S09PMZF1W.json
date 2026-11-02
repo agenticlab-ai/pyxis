@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPWRKNSK60S09PMZF1W",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "M1",
+  "statement": "M1 (primary): G2, G3",
+  "intent": "proposals carrying one satisfying exact-revision assurance process with the FR-24 depth/count and FR-26 aggregate, joined to exactly one verified EVT-13 publication terminal and exact-readable receipted artifact; when another capability hosts the review, the same publication also joins exactly one reciprocal host terminal by FR-35's seven field-identical mappings",
+  "fit_criterion": "100% of pre-release dogfood and, after activation, 100% of production proposals; zero zero-pass, floor, blindness, revision, aggregation, publication, receipt, proof-reference, or cross-contract-join violations",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7da3971fe17ae1f1a8129f1b0b2e8ec9397037bce204bbac3658d94a06fa5c41",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.588Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

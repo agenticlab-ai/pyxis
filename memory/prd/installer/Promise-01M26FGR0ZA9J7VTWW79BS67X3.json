@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0ZA9J7VTWW79BS67X3",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-5",
+  "statement": "When init or repair runs, the system shall converge the repository onto the pinned release manifest per ownership class: writing engine-verbatim files byte-exact, regenerating generated files, and validating repo-owned files against their closed schema without rewriting them.",
+  "rationale": "converge is the product's core semantic",
+  "fit_criterion": "injected engine-file drift is repaired byte-exact; repo-owned edits survive byte-exact; generated files regenerate; validation failures are named",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17377889a4872b1ae1a695d2b3dc322a377c2787fb2a661e521e5a4b6879b17d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.911Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

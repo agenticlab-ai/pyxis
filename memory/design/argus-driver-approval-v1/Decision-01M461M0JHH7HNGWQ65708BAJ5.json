@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M0JHH7HNGWQ65708BAJ5",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-2-a-host-review-authenticates-the-driver.1",
+  "statement": "Authenticate the configured driver via GitHub's account endpoint.\nPublish `APPROVE` when it differs from the PR author, and `COMMENT` when it\nmatches. Both require the canonical `argus-approval/v1` decision. Host-returned\nreview author and `commit_id`, not a principal string in the body, establish\nthe authenticated account and reviewed revision. An ordinary commented review\nnever authorizes a lock. A separate native approving review required by branch\nprotection remains required; a Pyxis decision does not satisfy it by fiction.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:df023c4066d7cecd30a7109f622598717df3cbf51528abb582388bb885b427bd",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:33Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 97-103 in section 3-d-2-a-host-review-authenticates-the-driver; sha256:df023c4066d7cecd30a7109f622598717df3cbf51528abb582388bb885b427bd"
+  }
+}

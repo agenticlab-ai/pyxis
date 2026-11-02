@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/read-to-rule#Q2",
+  "feature": "read-to-rule",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

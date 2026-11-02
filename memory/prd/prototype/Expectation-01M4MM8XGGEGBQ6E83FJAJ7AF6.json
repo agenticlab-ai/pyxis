@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGGEGBQ6E83FJAJ7AF6",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-8",
+  "statement": "The command launches the build on the configured harness and model, and on the asking session's when none is configured",
+  "intent": "FR-6",
+  "fit_criterion": "Tests that resolve the route with and without a prototype configuration and that launch a stub harness on the resolved model; on the first prototyped feature, the command's report naming the route used",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

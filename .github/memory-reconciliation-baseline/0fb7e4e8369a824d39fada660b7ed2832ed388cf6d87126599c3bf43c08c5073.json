@@ -1,0 +1,8 @@
+{
+  "code": "missing-serves-memory",
+  "scope": "design/acquisition-trust-v1 -\u003e prd:installer/FR-17",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

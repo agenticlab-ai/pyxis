@@ -1,0 +1,7 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/impl-review-source-write-guard",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

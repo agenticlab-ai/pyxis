@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBCA8E6HKXC3CJ2R9G7",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-9",
+  "statement": "When a commit is created in a clone with the hook path activated, the pre-commit hook shall run the merge-base-free gate verbs (lint-structure, validate-amendments, verify-generated, verify-rebase) and reject the commit on any defect.",
+  "rationale": "generation must hold with no remote: the projection is committed fresh or not at all",
+  "fit_criterion": "hook fixture: a stale projection rejects the commit naming the regenerate remedy; a fresh one passes; absent Go toolchain skips with the two-line notice",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4abe723052153665e7be5f5c58c618a4da4b4637bd71e043d3baec27d350e277",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.22Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

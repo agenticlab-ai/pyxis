@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZVFPHRRG60N4VGCRME05",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.4.1",
+  "statement": "`/argus <input>` on the skill surface (vendor dirs hold pointers; the glue is invocation-only). Disambiguation: an input resolving to an existing `docs/problems/<slug>/` **resumes** it; anything else is an **idea** — confirmed once if it looks slug-like — minting the slug and **instantiating both ledgers from their templates: the problem ledger *is* the intake record** (idea verbatim in its Idea section; optional envelope override and pre-rulings as header field and `A-n` entries), and the drive then opens with the journal's first `stage-entered` entry — the frozen entry vocabulary needs no intake type because intake lives on the problem side. The same door relays answers: `/argus <slug>` after the human appends (or states) an answer routes through reconciliation before resuming. The tracker-item door stays out (the basis's WR-2).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1ddfac863ac732b098665bfa436ea983110545eb0e52d92e687eb5589a3f3407",
+    "source-design:214d3d1add47501bab82adae8a073eab292d8cfce8a3da6595f505674e204e67",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMK2VHXPNRREXFE3VQD"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQKTK20RGZN39ZPQ5TZ7E"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:08Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 48-48 in section 3.4; sha256:1ddfac863ac732b098665bfa436ea983110545eb0e52d92e687eb5589a3f3407"
+  }
+}

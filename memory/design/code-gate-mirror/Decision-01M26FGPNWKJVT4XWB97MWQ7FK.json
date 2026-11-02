@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNWKJVT4XWB97MWQ7FK",
+  "kind": "Decision",
+  "subject": "design/code-gate-mirror",
+  "family": "decision.3.7.1",
+  "statement": "The blocking gate is for **correctness** — properties that are pure functions of the code (DINV-2). A **measurement** (how fast, how big, how expensive) is a different kind of thing: it depends on the environment, so it is *recorded and trended*, never asserted as a build-failing pass/fail (DINV-3). The #600 strand was precisely a measurement — a wall-clock budget over a git-history-derived diff — welded onto the correctness runner and failing when the machine changed; the offending check's own comment conceded the valid latency claim \"is a Phase-B measure across real dogfood runs\" while asserting a single-run budget anyway.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7290c2df4a977e01c825ce99bbeb22d5326ac3ea7561b2d2ad1cca3dce236a63",
+    "source-design:4829ded8af479a35f457c7034c85f4b6b5da0be758f8c22edfd3d5d0e95b0674",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMVF4SXG45QTQ9Z76B67"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.532Z",
+  "provenance": {
+    "source": "docs/tech-design/code-gate-mirror.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/code-gate-mirror.md lines 120-120 in section 3.7; sha256:7290c2df4a977e01c825ce99bbeb22d5326ac3ea7561b2d2ad1cca3dce236a63"
+  }
+}

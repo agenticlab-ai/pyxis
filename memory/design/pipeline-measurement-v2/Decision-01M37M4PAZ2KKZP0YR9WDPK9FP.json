@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M4PAZ2KKZP0YR9WDPK9FP",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.10.1",
+  "statement": "a **deterministic** git + frozen-artifact reader (`#D-5`), no model and no runtime hook (DINV-1). Per phase it counts the corpus's existing typed anchors — questions = `D-n`, fog = `G-n`, rework = superseded `D-n` + amendment count, defects = review `FND-n`, coverage from the plan matrix, latency from git timestamps — joined to the run record by run/phase id. Because the anchors are identical whichever harness produced the artifact, the efficiency floor is **universal** — it holds on every harness even where spend capture degrades (FR-4). Rejected: runtime skill instrumentation (unreliable on external, prompt-guide harnesses) and LLM quality-judgment (spends model tokens, non-deterministic).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:a5775dac11cfc52be967c90af190de0ac953cb3b49b1d6769a88fda16e95db5c",
+    "source-design:970b9e3c3cc2f6bde46725002d58f9bb6c31f5727f16e49070cd523604301367",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPT517KWHAMQWT3V584J"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRGPSQZC4DWWVD1FNAPSY"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:47Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 122-122 in section 3.10; sha256:a5775dac11cfc52be967c90af190de0ac953cb3b49b1d6769a88fda16e95db5c"
+  }
+}

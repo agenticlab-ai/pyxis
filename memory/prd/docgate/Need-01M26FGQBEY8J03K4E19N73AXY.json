@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBEY8J03K4E19N73AXY",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "G2",
+  "statement": "We believe instant local verdicts (pre-push, identical binary); expected result: amendments passing CI on the first try",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:37d9661fd6ecc5e72dceb42db3851a391e223fedb24d0bf35a528207008cd830",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.222Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZHZT9KSC4PK40ANZ2EH0W",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-3",
+  "statement": "A session wants a quick lock — vector: revises the draft after its reviews and readiness passed",
+  "intent": "a stale review certifies different content",
+  "fit_criterion": "FR-16, UB-2, UB-8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:967074ceb6927f7d8aa5b141a8d3392ad5746d29006b0dbf3f4deff2b89331cb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:31Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

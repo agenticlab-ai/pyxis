@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG9392VC4JCYHC1SG1C",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-6",
+  "statement": "The wake channel shall take its cadence from the adapter's declared advice, and the v1 surface shall expose no user-facing cadence configuration.",
+  "rationale": "defaults over knobs (NG-6); the medium knows its budget",
+  "fit_criterion": "each adapter declares advice in the conformance kit; inspection finds no cadence knob on the config surface",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c5192f8a29da1e1255abefb2824819de24cab973b7d7cf7a4aa5bb5ab574cbe3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.401Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

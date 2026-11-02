@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAN6V06KSRQQARMQNB8",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-27",
+  "statement": "When invoked with a merge base, docgate shall fail a diff that adds more than one PRD ledger entry — an added `NNN-\u003cslug\u003e.md` file one directory below the configured PRDs root — naming each added entry and the remedy; the generated projection, the flat placeholder corpus (NG-1), and modifications of existing entries (already fenced by FR-4) do not count.",
+  "rationale": "one concern per PR becomes code for the ledger: one amendment, or one new base, per change keeps concurrent claims content-free and reviews honest",
+  "fit_criterion": "temp-repo fixtures: a diff adding two entries (one ledger or two) → red naming both and the remedy; a diff adding exactly one amendment → green; a new PRD's lone `000-base.md` → green; a projection-only regeneration with no added entry → green; a flat placeholder is never counted",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d94a63fec4c0c1cb42da50039e350a22a857c106d55523f244ef36fd1c6ffa5",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.197Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

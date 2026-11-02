@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T3YA1891N6RW0XMDPWP91",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "EVT-2",
+  "statement": "feature_retirement_failure fires when A retirement result carries failure or judgment signal",
+  "intent": "action: enum, feature: string, pinned_inputs: string[], selector_or_authority_id: string, refusal_code: string, disposition: string, repair_transition: string, irreparable: bool",
+  "fit_criterion": "AP-28, DOD-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dfee02a0f58f6f4dd806a9e2267cb8f082f4fb17c3c7e81c8d7cab01ccdc914c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:01Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

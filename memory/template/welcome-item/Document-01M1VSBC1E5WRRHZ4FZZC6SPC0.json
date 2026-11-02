@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBC1E5WRRHZ4FZZC6SPC0",
+  "kind": "Document",
+  "subject": "template/welcome-item",
+  "family": "template",
+  "statement": "Imported Pyxis source document: .pyxis/templates/welcome-item.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/templates",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b7b7ed0a00d69334edc2399cd3c6ca5397592c5b371b07d8b02d38160e141d2a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:13Z",
+  "provenance": {
+    "source": ".pyxis/templates/welcome-item.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

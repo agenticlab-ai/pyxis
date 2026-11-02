@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX1AVHAFYBQWSXK4FRH",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-contract",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:feature-implementation-drive/NR-6 · prd:feature-implementation-drive/UB-1 · prd:feature-implementation-drive/UB-10 · prd:feature-implementation-drive/UB-11 · prd:feature-implementation-drive/UB-2 · prd:feature-implementation-drive/UB-3 · prd:feature-implementation-drive/UB-4 · prd:feature-implementation-drive/UB-5 · prd:feature-implementation-drive/UB-6 · prd:feature-implementation-drive/UB-7 · prd:feature-implementation-drive/UB-8 · prd:feature-implementation-drive/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:4bc6c0fe437a7b8d230535dce4519b0c6a06254682764694633b95361f07d599",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQMS5R0Z74Y6WB59KD6N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM6MZKCNJR1042MG8MJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM7TFAES3TNY8NSJWHR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM8WR5BX9FHW9JXPQ43"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQM9Q7Y5NJR2SMJK5EF3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMACJ2HX6EK7671C2YZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMBDG38V1GPW7Y7XY5K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMCD6RJ1X0FZ43EPM2B"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMD2H79YF09QZX5MKWE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMERVEA8Q32325JWBPW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMFGC4Y28THS1R0XNAY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMGHSMEBJ88MHTGPYRY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQMHXHM721PVXBJND1FM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.809Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-contract.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 4bc6c0fe437a7b8d230535dce4519b0c6a06254682764694633b95361f07d599"
+  }
+}

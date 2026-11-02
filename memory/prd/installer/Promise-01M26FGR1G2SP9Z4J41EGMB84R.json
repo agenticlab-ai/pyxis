@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1G2SP9Z4J41EGMB84R",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "NFR-6",
+  "statement": "Init, converge/repair, and doctor shall spend zero model inference.",
+  "intent": "Cost",
+  "fit_criterion": "no model call is observed in any e2e run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b61410ff66e4042d849bf267cc22925c25dcf8bcd59471408ff077210ee3244f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.928Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

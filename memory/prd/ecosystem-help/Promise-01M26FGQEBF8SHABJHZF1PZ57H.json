@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEBF8SHABJHZF1PZ57H",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "FR-2",
+  "statement": "When the user describes a concrete problem or goal, the help skill shall name the entry command or stage for it and the reason, consistent with the pipeline map's entry rules.",
+  "rationale": "J2 — route instead of guess",
+  "fit_criterion": "100% correct entry naming on the canonical scenario set; zero fabricated commands (EVAL-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:006c2f7f44dc5ab9f4165bb2304a6ef5931cfad8b134c52e40c9685b099ca2d3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.315Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

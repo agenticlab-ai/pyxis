@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRK28D4WTF0EKH2BYY5H",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "J4",
+  "statement": "When a reviewer (or incident) later asks *why this architecture*, I want trace the direction to the authority's ruling — question, answer, date, so I can audit and supersede designs on evidence",
+  "rationale": "#D-7; product-vision §6",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e05b1ba64f2dd1b1d148d312fee508782413b81045f064d744694b66a3c047a0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.49Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

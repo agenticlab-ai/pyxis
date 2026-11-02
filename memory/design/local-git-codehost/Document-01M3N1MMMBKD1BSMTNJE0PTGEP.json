@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMMBKD1BSMTNJE0PTGEP",
+  "kind": "Document",
+  "subject": "design/local-git-codehost",
+  "family": "design",
+  "statement": "Draft tech-spec.md",
+  "body_sha256": "4dd7475f16e4f33672e9b3c1633657c67158c1b9746ace8817baf58735278d67",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

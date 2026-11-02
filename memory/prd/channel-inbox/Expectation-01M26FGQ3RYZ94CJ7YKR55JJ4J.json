@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3RYZ94CJ7YKR55JJ4J",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-7",
+  "statement": "The manual-fallback instruction ships for any CLI without a session-start hook",
+  "intent": "FR-11",
+  "fit_criterion": "operand-manual diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a2f3e6d090b0d396564e7a50881a7f2a95448358c79f493ec520987ba40e0871",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.976Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0FJQ03J12FSV0CXY4QQY",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.2.1",
+  "statement": "A feature draft is a pushed branch with a code-host proposal,\nholding its parts as markdown working files. The existing compiler and readiness\ngate prepare one exact head. Hosted mode keeps authenticated operator review\nand enforced protection; explicit local-git mode accepts the operator command's\ndeclared receipt bound to that prepared proposal generation, head, landing\ntarget, readiness digest, and nonce. Its normal landing route checks those\nbindings and atomically publishes the reviewed squash landing and retained\nevidence, with no claim of actor authentication or host-level protection\n(`prd:feature-draft/FR-48` through `FR-53`; `design:local-git-codehost#D-3`, `#D-4`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6f58fd9b88f22141b383faae86d2606e53859fa707642de7f09e80fca1a36328",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:09Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 58-66 in section 2; sha256:6f58fd9b88f22141b383faae86d2606e53859fa707642de7f09e80fca1a36328"
+  }
+}

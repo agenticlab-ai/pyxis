@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5QX9BSJPC6N5S5T0SS",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "UB-2",
+  "statement": "If a configured value is malformed or references an absent surface, then the system shall fail closed, naming the key and the remedy",
+  "intent": "named error, nothing partial",
+  "fit_criterion": "each malformed fixture named; no partial application",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6647c113a35cd8835cdbe9a29d7675a9c3bdbcfee66b9df84d6c27b063f2799a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.039Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB6SJYAVR2VZX6ZCMEPM1",
+  "kind": "Document",
+  "subject": "distribution/github-workflows-readme",
+  "family": "source",
+  "statement": "Imported Pyxis source document: .pyxis/dist/github-workflows/README.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/dist",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "2fcbe20de407f27d1bb7ad75668821175000dc8f698995e56710328cb818b3f3",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:08Z",
+  "provenance": {
+    "source": ".pyxis/dist/github-workflows/README.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

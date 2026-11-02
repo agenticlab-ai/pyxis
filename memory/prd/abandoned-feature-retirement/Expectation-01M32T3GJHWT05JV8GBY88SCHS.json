@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3GJHWT05JV8GBY88SCHS",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-1",
+  "statement": "Terminal product and execution lifecycle preconditions and protected-history preservation satisfy every positive and negative case",
+  "intent": "FR-1, FR-2, UB-1, UB-2, NR-2",
+  "fit_criterion": "typed lifecycle fixture matrix, legacy-equivalent controls, and protected-byte manifests",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5bc882cf94925556394063eb223904e50cd04f0e8c38355561ba2271e7d8b887",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:47Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

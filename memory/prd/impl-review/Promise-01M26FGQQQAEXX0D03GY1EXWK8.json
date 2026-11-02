@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQQAEXX0D03GY1EXWK8",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-20",
+  "statement": "If the configured proposal medium has no impl-review-owned host persistence adapter, performer authority, exactly-once publication, native-receipt return, or exact-read capability; any capability is ambiguous; a side-effect-free preflight cannot prove current authenticated read/write access; or the invoking host's reciprocal publication-terminal contract omits a FR-35 join field, makes any of the first four pairs optional, permits a verified terminal to omit any of the last three, gives a pair a different grammar, or ambiguously defines a pair, including by overloading one field as both native receipt and attempt proof, then the system shall refuse activation and review launch before any reviewer execution or proposal write, name every missing/ambiguous capability, authentication defect, or reciprocal-contract defect, and preserve the proposal as non-accepting",
+  "intent": "a dependency/capability, reciprocal-contract, or infrastructure/auth failure, never a silently skipped, caller-published, or inference-joined review",
+  "fit_criterion": "one fixture per absent/ambiguous capability plus missing, expired, and unauthorized credentials launches zero reviewer work, writes zero artifacts, names the defect, and cannot be overridden by a generic proposal credential or process-exit success; a contract fixture proves implement-now amendment 005 alone is insufficient because EVT-15 neither carries a distinct native-receipt field nor defines `artifact_proof_ref` semantics or requires the paired terminal fields, and remains blocked until a reciprocal sibling amendment supplies FR-35's seven pairs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:887a15f929019de4a035bd526da47828be7ec541e8c368a75abd1ced807669e7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.615Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

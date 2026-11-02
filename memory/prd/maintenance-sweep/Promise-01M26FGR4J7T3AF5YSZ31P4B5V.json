@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4J7T3AF5YSZ31P4B5V",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "UB-1",
+  "statement": "If If the repository state is unreadable (not a git repo; go toolchain absent), then the system shall refuse the pass with a named defect and the fault exit code, emitting no finding output",
+  "intent": "a named defect, nothing mistakable for a clean sweep",
+  "fit_criterion": "broken-repo fixtures produce the fault code and zero finding lines",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9f7325c4900ca6269308882e0d9b518d8fc70ca7044cfad647a6f55ffafac435",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.026Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYVSGK0BB3127ZBM1A6",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-13",
+  "statement": "If an interactive answer falls outside the value set, then the system shall re-ask up to 3 attempts before aborting with the collected answers reported.",
+  "rationale": "one typo killed the run (`#F-12`)",
+  "fit_criterion": "out-of-enum input re-asks without process exit; the bounded abort lists every answer given; a closed input stream takes the default without entering the re-ask loop (today's EOF semantics preserved)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bc38e4c2e7be0472e5bc29096630397714e8b9556ab66d18e3abbf674b1cf9bd",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.843Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Document-01M265Z9HV7W137CY7H2JPFBC9",
+  "kind": "Document",
+  "subject": "authoring/implement-now",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/implement-now.md",
+  "intent": "Preserve the exact implementation guide, including machine-local harness and OpenCode model policy.",
+  "rationale": "The guide changed with PR #1169; its immutable source snapshot must match the current authored bytes.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:26a8ec6497d7b3d4c23000f4284284636e68b2584240c002fa87becd4af6e8ea"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB5R3MSZ93P5E0NN32KS5"
+    }
+  ],
+  "body_sha256": "26a8ec6497d7b3d4c23000f4284284636e68b2584240c002fa87becd4af6e8ea",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-10T17:31:13Z",
+  "provenance": {
+    "source": ".pyxis/authoring/implement-now.md",
+    "pr": 1169,
+    "commit": "36dced093c6fda817fdbc0d7c0962502df96b6c1",
+    "note": "Exact source snapshot after rebasing the local harness change onto main."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQT4KEFM8NFFDPNZ2Q3Z",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-49",
+  "statement": "When an impl-review-owned host persistence adapter emits `prd:impl-review/EVT-13` for a completed-report publication attempt initiated from an implement-now review obligation, the executor shall append exactly one EVT-17 for the same publication moment. The terminal statuses and, when failed, failure classes shall agree, and the terminals shall carry these field-identical pairs with the same grammar and value: `review_process_id = review_attempt_id`, `review_obligation_id = review_obligation_id`, `proposal_id = proposal_ref`, `reviewed_revision = revision`, `artifact_ref = artifact_ref`, `native_receipt = native_receipt`, and `attempt_proof_ref = attempt_proof_ref`. The first four pairs shall be present on every paired terminal; the last three shall have identical presence, and all three shall be present when status is `verified`. `publication_attempt_id` shall remain impl-review's distinct child identity with no implement-now alias. EVT-15 shall remain the broader review-lifecycle terminal: its `artifact_proof_ref`, when present, shall equal EVT-17 `attempt_proof_ref`, shall never carry a native receipt, and shall not substitute for EVT-17 in cross-contract evidence. A missing, duplicate, orphaned, status/failure-class disagreement, field mismatch, or receipt/proof-overloaded pair shall remain non-evidentiary, preserve the review obligation as pending, and take FR-42's infrastructure class for absent/append failure or artifact-untrusted class for conflicting/substituted evidence.",
+  "rationale": "exact field identity is the only reliable proof that impl-review's artifact publication and implement-now's review outcome describe one real reviewer attempt rather than two similar records",
+  "fit_criterion": "verified and each failed-class fixture produce exactly one EVT-13↔EVT-17 pair with the same status, the same failure class when failed, the four required identities, and equal optional-field presence/value; every cross-class mismatch while status and all seven pairs match, plus missing, duplicate, orphaned, status/grammar/value mismatch, optional-presence mismatch, receipt/proof overload, and EVT-15-only fixtures never count toward M7 or clear pending and emit the required FR-42 class; verified pairs carry separate native receipt and attempt proof; `publication_attempt_id` never appears as an obligation or attempt alias",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c64cc068d5c91353dcc85008758d67a5a4194376ec5c0813621b9f806e858c36",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.692Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

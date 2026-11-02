@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAGVYEHBED24QVKM49K",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NFR-2",
+  "statement": "The semantic assessment and execution-profile schemas shall contain no harness or vendor product identifiers.",
+  "intent": "Portability",
+  "fit_criterion": "schema inspection finds zero native identifiers; every supported adapter consumes the same semantic values",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e7d3a72f320e54934eea32a3b4ec4fc7c5665356d75088588b8e792d7a0fcc9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.216Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

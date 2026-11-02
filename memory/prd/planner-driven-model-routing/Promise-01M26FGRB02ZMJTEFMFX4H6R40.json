@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB02ZMJTEFMFX4H6R40",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-13",
+  "statement": "If one required assurance pass is absent, stale, invalid, non-accepting, or disagrees with another pass, then the system shall apply FR-26's most-restrictive aggregation, preserve every surviving finding and pass result, and prevent acceptance until the exact revision completes a satisfying full pass set",
+  "intent": "aggregate review remains non-accepting and names every contributing pass outcome",
+  "fit_criterion": "missing-pass, stale-pass, split-verdict, and conflicting-finding fixtures never accept from a favorable subset, preserve all pass evidence, and converge only after the full exact-revision set satisfies FR-25/FR-26",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b9e9556188898401039ac58ecc75819c732b71ed41ab494f1035cb17b5b286ed",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.232Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

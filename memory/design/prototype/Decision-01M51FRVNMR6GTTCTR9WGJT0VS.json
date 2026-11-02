@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Decision-01M51FRVNMR6GTTCTR9WGJT0VS",
+  "kind": "Decision",
+  "subject": "design/prototype",
+  "family": "D-2",
+  "statement": "The verb always launches the build as a separate headless process (D-5) and resolves its harness and model profile in this order: the optional `prototype` block of the repository's config when present; otherwise the harness and model of the session that asked, which the prototype skill passes as `--ambient-backend` and `--ambient-model` (design-brainstorm:prototype#D-4).",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M51FRVNKMXXBK9D7SH92VPAJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG0EWDC7AA0PSGSKDBA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG3C4BXY5SG0E6R7FZB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG5PJVQZBEBS7HTANVC"
+    },
+    {
+      "type": "supersedes",
+      "target": "Decision-01M4MM8XGS5KG1P57W2MGZQ2EE"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-16T04:33:22Z"
+}

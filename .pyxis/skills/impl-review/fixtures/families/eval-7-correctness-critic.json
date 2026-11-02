@@ -1,0 +1,38 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-7",
+  "kind": "seeded-catch-band-sensitive",
+  "lens": "correctness-critic",
+  "title": "seeded correctness-critic defect caught (a missing edge/error-path, a concurrency hazard, a leak) in an otherwise charter-faithful diff",
+  "threshold": "caught on every run; the deep-band leg ships it blocking (FR-10)",
+  "negative_example": "a subtle off-by-one behind passing happy-path tests — the diff implements the charter, its own tests are green, but a boundary case produces a wrong result rather than a caught one.",
+  "legs": [
+    {
+      "band": "standard",
+      "must_catch": true,
+      "charter": "AC-1 (Must): Window(xs, n) returns the last n elements of xs, or all of xs when len(xs) < n. Happy-path tested.",
+      "diff": "--- a/internal/seq/window.go\n+++ b/internal/seq/window.go\n@@\n+func Window(xs []int, n int) []int {\n+\t// return the last n elements\n+\treturn xs[len(xs)-n:]\n+}",
+      "expected_catch": {
+        "defect_class": "off-by-one-boundary",
+        "rule_id": "correctness-critic/off-by-one-boundary",
+        "cal_row": "CAL-11",
+        "severity": "blocking",
+        "message": "Window panics with a slice-bounds-out-of-range when len(xs) < n (e.g. Window([]int{1}, 3)); the charter requires returning all of xs in that case. The happy-path test (len(xs) >= n) hides it — a wrong result on the boundary, not a caught one."
+      }
+    },
+    {
+      "band": "deep",
+      "must_catch": true,
+      "ships_blocking": true,
+      "charter": "AC-1 (Must): Window(xs, n) returns the last n elements of xs, or all of xs when len(xs) < n. Deep-band review (a load-bearing bound).",
+      "diff": "--- a/internal/seq/window.go\n+++ b/internal/seq/window.go\n@@\n+func Window(xs []int, n int) []int {\n+\treturn xs[len(xs)-n:]\n+}",
+      "expected_catch": {
+        "defect_class": "off-by-one-boundary",
+        "rule_id": "correctness-critic/off-by-one-boundary",
+        "cal_row": "CAL-11",
+        "severity": "blocking",
+        "message": "Window panics when len(xs) < n; the charter requires returning all of xs. In the deep band a load-bearing correctness defect ships BLOCKING (FR-10, the escalated critic)."
+      }
+    }
+  ]
+}

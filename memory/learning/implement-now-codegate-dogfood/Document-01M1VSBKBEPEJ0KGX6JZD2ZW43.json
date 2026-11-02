@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBKBEPEJ0KGX6JZD2ZW43",
+  "kind": "Document",
+  "subject": "learning/implement-now-codegate-dogfood",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/learnings/implement-now-codegate-dogfood.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/learnings",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "9634c2a9e2de37379043d665d8f5061d957c51e12c5b13e5c0ba61e6e06a33f0",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:21Z",
+  "provenance": {
+    "source": "docs/learnings/implement-now-codegate-dogfood.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

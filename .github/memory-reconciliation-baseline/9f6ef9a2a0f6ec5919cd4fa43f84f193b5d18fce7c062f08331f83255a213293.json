@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/worker-transcript-metrics#Q4",
+  "feature": "worker-transcript-metrics",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRCBZ05P9M58ZVFAK94X",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "G3",
+  "statement": "We believe severity calibration as data; expected result: the authority judges surfaced findings \"worth having\" at gate sessions — confirmed, not assumed",
+  "fit_criterion": "qual: authority verdicts at overlays (DOD-5 rubric)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0a7bf86adf6127ed68d7f5155e73adc10179144d32bc05c975ba7adabfed6b8b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.275Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

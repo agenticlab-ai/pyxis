@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/review-feedback-capture#Q2",
+  "feature": "review-feedback-capture",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

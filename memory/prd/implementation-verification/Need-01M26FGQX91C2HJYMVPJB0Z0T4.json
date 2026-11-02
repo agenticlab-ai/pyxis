@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX91C2HJYMVPJB0Z0T4",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "J4",
+  "statement": "When operating a repo with a red main or missing capability, I want have verification bind honestly anyway, so I can adopt without a cleanup campaign first",
+  "rationale": "`brainstorm:implementation-verification#D-8`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f26e76e9c5ea974eed046c7579cb44c12d2348c22555e6f79ed8db4258ea4760",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.793Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

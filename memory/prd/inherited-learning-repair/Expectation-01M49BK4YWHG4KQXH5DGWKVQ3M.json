@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M49BK4YWHG4KQXH5DGWKVQ3M",
+  "kind": "Expectation",
+  "subject": "prd/inherited-learning-repair",
+  "family": "EVAL-1",
+  "statement": "Preserve the predecessor and produce a valid successor for the #1437 reproduction",
+  "intent": "One retained incident scenario through implement-now, deterministically verified",
+  "fit_criterion": "One accepted correction; zero rewrites, bypasses, recursive dispatches or unrelated changes",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

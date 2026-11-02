@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M479A975GD15W96SWCP25XZA",
+  "kind": "Question",
+  "subject": "prd/maintenance-jobs",
+  "family": "P-2",
+  "statement": "Minute-occurrence evaluation and a startup grace window add scheduling machinery that daily-only v1 jobs do not need for deduplication.",
+  "intent": "Operator review, 2026-10-05.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

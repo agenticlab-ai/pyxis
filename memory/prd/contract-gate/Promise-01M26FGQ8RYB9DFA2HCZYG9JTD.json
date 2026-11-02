@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8RYB9DFA2HCZYG9JTD",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NR-2",
+  "statement": "docgate's existing checks and gate output stay green; the design index's `serves_inverse` and non-fatal stale flags keep their current (advisory) shape for their other readers",
+  "rationale": "the gate reads these computations and decides to fail; it must not change them where other consumers rely on their advisory nature",
+  "fit_criterion": "the docgate gate suite stays green; the index's stale-serves flag remains non-fatal in the index itself; the gate's fatality lives in the gate, not in the shared computation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e8902d8f029098b0b258cc9afd7b4e5ebbdd88ace45d4c9ed046a18213d1a40",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.136Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKRSTPFZBQWGW8S2H25",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "M4",
+  "statement": "M4: G4",
+  "intent": "equivalent fixture outcome in local and remote ownership modes",
+  "fit_criterion": "both fixtures reach verified delivery with identical required state transitions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c15bfb29ee209a4eb4fcac851b1cd006aa1dd171daeddb60bb4cd41adc592d48",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.488Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

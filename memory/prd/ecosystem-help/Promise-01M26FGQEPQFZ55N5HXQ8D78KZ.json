@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEPQFZ55N5HXQ8D78KZ",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "NFR-1",
+  "statement": "The help skill shall derive its catalog from routing surfaces only (headers, descriptions, the pipeline map) — never loading full document bodies — and shall render the catalog compactly.",
+  "intent": "Cost / token-consciousness (AP-6)",
+  "fit_criterion": "derivation reads no full corpus document beyond the pipeline map; the catalog answer spends ≤ 2 output lines per capability",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7a2738267325fb205b129ae1778c6b92b12744c69fe95fbaab64c4fec0d939ef",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.326Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

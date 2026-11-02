@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBE1TTCAK6QRJXJZB7RV2",
+  "kind": "Document",
+  "subject": "brainstorm/channel-inbox",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/channel-inbox.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "a793a9d33638172a06fc7a428bd1637a82e3e03721e193d5d33eaa46c9f78f34",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:15Z",
+  "provenance": {
+    "source": "docs/brainstorms/channel-inbox.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

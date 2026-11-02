@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M353W1EW0P1XV927HVK2RP4A",
+  "kind": "Learning",
+  "subject": "learning/javascript-free-installation",
+  "statement": "Pyxis installation no longer installs a JavaScript review runtime: init, update, doctor, and preflight require Git but do not require Node or npm, run npm ci, or maintain a runtime dependency cache. Installer rollback covers the remaining repository and hook changes without a dependency-bundle step.",
+  "intent": "Keep installation and repair independent of the removed browser annotation runtime.",
+  "rationale": "The removed runtime was the consumer of the Node and npm installation requirements; retaining those requirements would leave a hidden dependency after removing the feature.",
+  "fit_criterion": "Installer and preflight tests pass without Node or npm on the subprocess PATH; rollback, update, and doctor tests cover the remaining stages.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/converge",
+    "code:internal/installer",
+    "code:internal/preflight"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-22T17:50:57Z",
+  "provenance": {
+    "source": "internal/installer/installer.go",
+    "note": "Records the installation consequences of removing Lavish and its exclusive dependencies."
+  }
+}

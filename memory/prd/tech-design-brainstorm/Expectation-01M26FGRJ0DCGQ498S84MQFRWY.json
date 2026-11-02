@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ0DCGQ498S84MQFRWY",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-4",
+  "statement": "One real design runs basis → gated record → `tech-design-new` draft with zero authority decision-questions and 100% of §2/§4 rows anchored",
+  "intent": "FR-13, M1, M2",
+  "fit_criterion": "the record + the draft design + the authoring transcript",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e366da08a27cf5b04fea1acf791cd82c19833d29a0da851bdfb3abe162fd2786",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.456Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB86V8GPFD787XXJRWSGK",
+  "kind": "Document",
+  "subject": "skill/e2e-review",
+  "family": "calibration",
+  "statement": "Imported Pyxis source document: .pyxis/skills/e2e-review/calibration.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/skills",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "dba915eb5421226c5c8893f3ee51ddb3d72cf0bca0e8bb85a5ee7dc9bb57d38c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:09Z",
+  "provenance": {
+    "source": ".pyxis/skills/e2e-review/calibration.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

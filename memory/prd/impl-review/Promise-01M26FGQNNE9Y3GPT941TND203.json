@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNNE9Y3GPT941TND203",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-8",
+  "statement": "`routing_resolution_failed` fires when a required pass emits the parent contract's canonical failure terminal before model invocation",
+  "intent": "`attempt_id:string`, `review_process_id:string`, `pass_id:string`, `demand_id:string`, `task_id:string`, `proposal_id:string`, `reviewed_revision:string`, `harness:string`, `role:review`, `requested_profile:closed object`, `proposal_band:enum{skip,standard,deep}`, `assurance_join_raise:boolean`, `policy_version:string`, `unmet_components:enum[]`, `reason:enum`",
+  "fit_criterion": "M1 + parent EVT-3 + health alert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3a5671e86a93e70e95c64c3ac031af136a959aa228208a5d253e8cb65892ba98",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.549Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

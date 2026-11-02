@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSQBW8081B3AP8FDSSWGA",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Open, for the technical design to settle: how Argus drives a feature draft, and where its ledgers live for draft-born features (brainstorm:feature-draft#P-6). Owner: the tech spec author.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZR4QDHBCTWZAH7TMJCDNB"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:45Z"
+}

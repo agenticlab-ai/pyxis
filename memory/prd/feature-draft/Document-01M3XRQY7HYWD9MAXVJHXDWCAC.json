@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3XRQY7HYWD9MAXVJHXDWCAC",
+  "kind": "Document",
+  "subject": "prd/feature-draft",
+  "family": "amendment-001",
+  "statement": "Captured authored source: docs/prds/feature-draft/001-local-git-receipts.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:5b9133661e5d77e8de0eecb1d35c4b5fe76f4bc4fb44f2ae55e7c7bd01da725e"
+  ],
+  "body_sha256": "5b9133661e5d77e8de0eecb1d35c4b5fe76f4bc4fb44f2ae55e7c7bd01da725e",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:29Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/001-local-git-receipts.md",
+    "note": "offline reconciliation"
+  }
+}

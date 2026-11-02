@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBC47EQJJQE3EWKC0H8HY",
+  "kind": "Document",
+  "subject": "vendor/lavish-axi",
+  "family": "readme",
+  "statement": "Imported Pyxis source document: .pyxis/vendor/lavish-axi/README.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/vendor",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "140f19aa41f34bc03d3b2a9ae9916bf4b974f45090b6537b10fefbd4aef1554c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:13Z",
+  "provenance": {
+    "source": ".pyxis/vendor/lavish-axi/README.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

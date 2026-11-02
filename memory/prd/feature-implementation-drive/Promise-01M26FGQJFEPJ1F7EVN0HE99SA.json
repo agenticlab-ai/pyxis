@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJFEPJ1F7EVN0HE99SA",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-10",
+  "statement": "When a task proposal merges, the feature drive shall verify its revision landed on the feature branch before advancing tracker completion or dependency readiness.",
+  "rationale": "Do not trust badge/default-branch semantics.",
+  "fit_criterion": "A false merged badge/non-ancestor fixture advances nothing; verified ancestry advances exactly the valid dependents.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eec03460e6311341c52dbc1c00757fd79595ca1333bfdee06dad9fef9a9edd2f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.447Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

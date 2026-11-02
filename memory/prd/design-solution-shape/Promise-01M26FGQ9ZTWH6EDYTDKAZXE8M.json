@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9ZTWH6EDYTDKAZXE8M",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "UB-1",
+  "statement": "If If a design creating state or an interface is approved with durable decisions but no concrete shape, then the system shall flag it as shape-incomplete rather than accept it silently",
+  "intent": "shape-incomplete flag naming the unshaped region",
+  "fit_criterion": "a stateful/interface design lacking a shape is flagged; a pure-decision design with no state passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:43ab91b9338789d3acd0d147b2685cdd239233a987020278b23f46317dc0ecd6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.175Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

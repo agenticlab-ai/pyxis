@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4ZAZWZ6AMZF8B744QK17326",
+  "kind": "Decision",
+  "subject": "executor/pre-publish-review",
+  "family": "remediation-disputes-and-scope-drift",
+  "statement": "In implement-now's pre-publish review loop, the remediation worker answers each blocking finding by fixing it or by disputing it with a reason in one review-disputes/v1 block, and never changes what the charter or governing design states to satisfy a finding. The reviewer side records each dispute with protocol.RecordDisposition; a disputed blocking finding stops the task as an escalation to the operator, with a brief naming the finding and the worker's reason posted on the task's tracker item, and no further gate, review or push runs. Only a dispute block that ends the worker's final message counts. Changes a remediation makes more than 40 lines away from every finding it was sent to fix, measured with protocol.DetectDrift, are reported as scope drift on pre_publish_review_terminal and do not stop the loop, because the next round reviews the whole change. An unreadable dispute block or a failed audit fails the task closed.",
+  "intent": "Keep a review finding from rewriting the locked contract through the worker: a finding the worker cannot satisfy within the charter and governing design reaches the operator at the round that raised it, and a fix that spreads beyond its findings is visible to the operator.",
+  "rationale": "In the prototype drive's task T1 (October 2026), round 1 of the pre-publish review prescribed an atomic ownership mechanism in place of design D-1's git worktree add. The remediation brief told the worker to address every blocking finding and offered no way to decline one, so the worker replaced D-1's command. Each later round reviewed the consequences of the replacement; after four rounds and about 80 minutes the change had grown from 335 to 950 lines, with 18 files outside the plan, before the review escalated. impl-review FR-20 (a declined blocking finding escalates) and UB-19 (scope drift is flagged) already required this, and internal/implreview/protocol implemented both, but the engine never called them. The reviewer-instruction fix in PR #1566 escalates a contract conflict only when a lens notices it, and replays showed lenses do not always notice, so the worker-side dispute is an independent second guard. A dispute can only stop the task, never let work through, which keeps the loop fail-closed although it acts on part of an implementation run's output. The 40-line window is a starting value: revisit it if drift reports prove too noisy or miss spread within a file. The brief goes on the task's tracker item because the run journal is local and ignored by Git and the review process store records only whole review rounds, so the tracker item is the shared record where the open decision belongs; a block followed by more text is refused because that text could quote or retract it (PR #1568 review).",
+  "fit_criterion": "Worker tests: a disputed blocking finding escalates with the audit's brief after one remediation, with no further gate, review or push, the work committed and the brief posted on the task's tracker item; a tracker failure still escalates and names the missing record; a dispute block followed by text is refused; reported drift reaches the outcome and the terminal event; an unreadable dispute block or a failed audit fails closed; the dispute block parses closed. Review-invoker tests on real Git repositories: a change inside a finding's 40-line window is not drift, while changes outside it, in other files, new files and deleted files are; a reason-less dispute is refused with protocol.ErrDisputeNoReason; a dispute of an unknown or repeated finding is refused.",
+  "learned_from": [
+    "operator-decision:2026-10-14-implement-worker-dispute-and-drift-without-contract-change",
+    "pull-request:https://github.com/agenticlab-ai/pyxis/pull/1566",
+    "review-thread:https://github.com/agenticlab-ai/pyxis/pull/1568#discussion_r4280604035"
+  ],
+  "alternatives_rejected": [
+    "Re-review only the findings a remediation was sent to fix (the scope lock) so later rounds stop raising new findings: rejected because design impl-review-routed-assurance section 3.6 requires a full review before any new revision is approved, and a scope-locked re-review approves nothing, so it would not have shortened T1.",
+    "Amend the implement-now PRD and design to define the worker's dispute channel before coding: rejected by the operator because impl-review FR-20 and UB-19 already require the behavior.",
+    "Stop or escalate the loop on scope drift: rejected because UB-19 requires drift to be flagged and the new revision fully reviewed rather than stopped, and a fix's own tests usually land away from the finding's lines.",
+    "Add the drift list to the next round's review pack: not done because the pack's contents are fixed by the impl-review design and the operator ruled out design changes; drift reaches the operator through the run report instead.",
+    "Rely only on the reviewer instructions from PR #1566: rejected because they work only when a lens notices the conflict."
+  ],
+  "tags": [
+    "code:internal/executor/worker/prepublish.go",
+    "code:internal/executor/reviewinvoke/remediation_audit.go"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "about",
+      "target": "Promise-01M26FGQNX82F4F2GREZJKN34P"
+    },
+    {
+      "type": "about",
+      "target": "Promise-01M26FGQQPTY0B3VG88WNCNETS"
+    },
+    {
+      "type": "about",
+      "target": "Promise-01M26FGQMPVSTCNYCS6QE7AGWE"
+    }
+  ],
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-15T08:31:21Z",
+  "provenance": {
+    "source": "code:internal/executor/worker/prepublish.go",
+    "note": "On 2026-10-14 the operator ruled: \"no need of amendment or any design change. implement the code change and update the memory system with the new mechanism and the reason behind it\". The T1 figures come from the prototype drive's delivery journal and PR #1566's description."
+  }
+}

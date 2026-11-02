@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQV6HTVRXV8KFYSYXDEB",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "NR-8",
+  "statement": "e2e tasks reach the executor through the unchanged frontier, claim, task, and charter path; no e2e-specific task type, required charter field, or second projection path is introduced, and plan-new and plangate are not edited — FR-28's origin reference is carried in the governing-document header the plan class already requires of every plan.",
+  "rationale": "the upstream contract makes e2e tasks ordinary tracker tasks precisely so the executor consumes them unchanged; an e2e-specific schema would fork the planner and the projection it already owns, and an already-required field carries the signal without one",
+  "fit_criterion": "the task and charter schemas and plan-new's pipeline are byte-unchanged; the e2e origin reference occupies an existing required plan header field and adds no new one; an e2e plan's tasks pass the existing frontier and claim mechanisms unmodified; a frontier mixing e2e and feature-implementation tasks dispatches through one path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4e4b3574dd4ce8d0077a302bd0121dd0e25f838c88b2569081a74f3495fa041",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.726Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

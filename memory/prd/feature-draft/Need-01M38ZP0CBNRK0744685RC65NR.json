@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP0CBNRK0744685RC65NR",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "G4",
+  "statement": "We believe routing every requirement change through a recorded product ruling; expected result: every in-draft requirement change stays attributable to its author, reason, and triggering problem",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:90ffeb23e41052226bed13e5b362dfef22feaca98a221f6f143873e63c1d6083",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:43Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

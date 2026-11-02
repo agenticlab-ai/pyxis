@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGBGCGPMB94XBX6QJC7",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-9",
+  "statement": "If a state read fails or is rate-limited, then the state reader shall report the affected proposals as unknown-retry-later, and no consumer-visible state transition shall be derived from the failure.",
+  "rationale": "a 429 read as \"no\" drives wrong recovery (predecessor-paid, §2.4)",
+  "fit_criterion": "injected 429/5xx/timeout fixtures yield typed unknown; a consumer test asserts zero transitions during the injection window",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:daed2b36e5c6745681052234d4a03740794a020b80608019f4a8b38bd9daecdf",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.403Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

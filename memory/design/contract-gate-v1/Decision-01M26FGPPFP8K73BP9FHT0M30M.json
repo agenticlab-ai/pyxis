@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPFP8K73BP9FHT0M30M",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v1",
+  "family": "decision.3.10.1",
+  "statement": "The **planning-entry hard gate** lands as an additive typed amendment (`add` op) on plan-new's frozen ledger: a precondition FR requiring plan-new to call `docgate contract-gate \u003cfeature\u003e` before it drafts, freezes, or projects any plan, and to refuse on any non-clean verdict (`prd:contract-gate/FR-1`, `NR-1`). Contract-gate's feature-level checks run **before** plan-new's own plan-level coverage (its FR-26) and fog bounce (its FR-16) — complementary altitudes, no contradiction, so no requirement hole to bounce. The **continuous advisory surface** is a docgate CI context running the same contract-scope subset over a changed feature's contract on PRD/design PRs, with currency/link/structural defects blocking and inverse-coverage advisory (a PRD legitimately merges before its designs exist) — the severity split read from the closed-schema versioned severity-map policy (`prd:contract-gate/FR-13`, on the `pyxis-config/` surface, the plangate/codegate caps precedent).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3ca7ebf007bbdd5c0bb53d5030ab2be7969b8275090de2866aaf63238a8862af",
+    "source-design:b73966f7ed110eeffdf3640c0243477cc0c78b96ed2c9bb5a4a24f4909e5cbe8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNCAXY24AE0KKYCAY4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.551Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/contract-gate-v1.md lines 121-121 in section 3.10; sha256:3ca7ebf007bbdd5c0bb53d5030ab2be7969b8275090de2866aaf63238a8862af"
+  }
+}

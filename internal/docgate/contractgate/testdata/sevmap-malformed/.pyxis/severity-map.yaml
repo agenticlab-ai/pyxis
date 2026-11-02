@@ -1,0 +1,7 @@
+# A deliberately MALFORMED severity-map policy fixture (UB-6): it carries an
+# unknown check class ("coveragex") under a valid trigger, which the closed parser
+# rejects — the gate must fail closed as configuration-error, never run a check.
+schema_version: "1"
+triggers:
+  contract-doc-pr:
+    coveragex: advisory

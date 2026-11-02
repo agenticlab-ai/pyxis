@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX3HCCK5MYRG251XM4Z",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "G2",
+  "statement": "We believe running deterministic anti-gaming checks (falsification, test-delta, machinery protection) on every proposal; expected result: gamed diffs — tautological tests, silenced tests, padded baselines — blocked mechanically before any review",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6b8b20ade1a23548e76e8f306521805615de61495f60504f8e95bc3a6be9563",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.787Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

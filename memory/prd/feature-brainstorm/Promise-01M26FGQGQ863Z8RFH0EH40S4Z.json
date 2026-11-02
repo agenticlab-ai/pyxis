@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGQ863Z8RFH0EH40S4Z",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-12",
+  "statement": "When the interview frontier is empty (every branch resolved, parked, or ruled out), the skill shall put the gate to the operator and shall end the session only by recording their explicit verdict — ready-for-prd, needs-investigation, covered, or abandoned — with date and operator identity.",
+  "rationale": "an unconfirmed shared understanding is an assumed one; the verdict is the stage-1 → stage-2 handoff signal",
+  "fit_criterion": "100% of ended fixture sessions carry exactly one gate entry with verdict, date, and operator; zero sessions end without one",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8fe6b86653b1c2a3610644395526dd38b6cbbf68cfbd94956bc11866a2f28e1b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.391Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFR75BJFMNNHYJ8H6QP",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NFR-3",
+  "statement": "The system shall make the adoption state (epoch, chained hooks) observable to the existing health check.",
+  "intent": "Operability",
+  "fit_criterion": "doctor reports the adoption state on the fixture",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:74c7b440a65d12bbf255a6cbf45dc1577d95b571d09ccb64dc4fc9cdaa27310f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.36Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

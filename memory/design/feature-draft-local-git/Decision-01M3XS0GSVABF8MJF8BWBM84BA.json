@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0GSVABF8MJF8BWBM84BA",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.1.1",
+  "statement": "A draft lives on one pushed branch with a proposal from its first\nround: a draft pull request on a hosted code host, or a typed origin proposal\nref in local-git mode. Each round publishes a revision; its approved squash\nlanding is the lock, whose commit is locked version N. The configured local\norigin must already hold mainline before open or preparation (FR-53). A change\nto a locked feature opens a new branch while version N binds; replaced versions\nstay readable as memory at their lock commit (`FR-20`, `FR-21`, `FR-22`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e098d01e8cf1ad81bfa7df5fa19ede198c3bd3225950328b28ca0dcd125ba837",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:10Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 81-87 in section 3.1; sha256:e098d01e8cf1ad81bfa7df5fa19ede198c3bd3225950328b28ca0dcd125ba837"
+  }
+}

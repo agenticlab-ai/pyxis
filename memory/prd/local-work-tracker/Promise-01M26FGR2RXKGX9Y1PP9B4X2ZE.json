@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2RXKGX9Y1PP9B4X2ZE",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-6",
+  "statement": "The tracker shall maintain a governed signal (label) vocabulary — each signal having a name, a role (routing, authorization, status, or classification), and presentation attributes — and shall add or remove a signal on a work item idempotently.",
+  "rationale": "signals are typed control state (routing, authorization, status, classification), not decoration (GOV-5)",
+  "fit_criterion": "the defined vocabulary round-trips; add/remove are idempotent; adding an undefined signal is a named error",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a599e5d6a989c1e1a95d6e9ba723c81469aa229619d22c2e40f019b30c7888a4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.968Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

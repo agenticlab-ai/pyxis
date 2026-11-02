@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M461D9E7ASCK8S0KKTMJ0P1X",
+  "kind": "Document",
+  "subject": "review/feature-draft-002",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/feature-draft-002.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:d2fcad3c0d1ed8ceec49140c54250c2dea7d8cac12acaf7f650a833146840056"
+  ],
+  "body_sha256": "d2fcad3c0d1ed8ceec49140c54250c2dea7d8cac12acaf7f650a833146840056",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:53Z",
+  "provenance": {
+    "source": "docs/reviews/feature-draft-002.md",
+    "note": "offline reconciliation"
+  }
+}

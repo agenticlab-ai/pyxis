@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T585NXCXS91AR1ZMW08T3",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-1",
+  "statement": "The system shall derive authority bytes and retirement classifications only from declared repository inputs and explicit operator decisions.",
+  "intent": "Determinism",
+  "fit_criterion": "Fixed inputs produce byte-identical output and verdicts under shuffled enumeration, with zero clock, randomness, network, or model influence.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a7b98f41ba2486b9bd2fe40890379d370cc11a40ef15d8bb9271032b582b8d39",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:44Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

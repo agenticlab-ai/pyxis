@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95903XQ24D4ZNVX6BR0",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-1",
+  "statement": "When an operator selects a local Pyxis repository, the installed core CLI shall operate on that repository's maintenance jobs independently of the CLI's source checkout.",
+  "rationale": "Multiple local repositories",
+  "fit_criterion": "One installed binary operates on two fixture repositories without cross-repository writes",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

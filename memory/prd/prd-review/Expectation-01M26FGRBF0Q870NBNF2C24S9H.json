@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBF0Q870NBNF2C24S9H",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "DOD-5",
+  "statement": "The authority overlays one real review and affirms: findings worth having, severities honest, nothing re-judged; their corrections captured as M2 data",
+  "intent": "G3, FR-14",
+  "fit_criterion": "review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e3a27e81d7650e630c6763a382d42c10f518816ddb2c98f919d090a226a15ba",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.247Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

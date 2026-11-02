@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ88TCZK56J5J1HAAZD1",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "J1",
+  "statement": "When my contract is about to be planned, I want get a named bounce for any mechanical defect before any work starts, so I can fix the contract cheaply instead of discovering it mid-build",
+  "rationale": "`brainstorm:contract-compiler-2#D-6`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e4f870394d77f373fcac04a6babad780d9c5d203f6d8a71bec85f9a30f69cd2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.12Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

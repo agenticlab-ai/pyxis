@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XEPMZM58DEQNEHBW6TPMN5",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-22",
+  "statement": "If a direct issue reference mismatches configured authority, readiness cannot be proved, the admitted source/contract differs, or independent review cannot be verified, then the system shall stop the selected run with a typed refusal or pending-review result, retain existing immutable evidence and work, and perform zero unrelated proposal/artifact lookups, repairs, claims, or model launches; permit only exact selected-source/comment/blocker facts and bounded shared metadata/index reads needed for selection",
+  "intent": "exact reason, issue/contract reference, and recovery action; never a verified-PR claim",
+  "fit_criterion": "negative selection, dependency, source mutation, capsule conflict, review setup, exact-head, and pending-obligation fixtures cannot widen execution or count as verified",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bc52562c37b7ce42f28dfc69676439b237a94ebdc7f625b31a1e25f59f3972ef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:42:01Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

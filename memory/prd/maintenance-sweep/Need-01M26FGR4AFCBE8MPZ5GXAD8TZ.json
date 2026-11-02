@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR4AFCBE8MPZ5GXAD8TZ",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "replay detections on pinned fixtures: the two attested historical instances (FR-2 — the #514/#515 unwired trees; FR-3 — the T4/T8 Touches gap) plus the named constructed rollup-staleness fixture (FR-4)",
+  "fit_criterion": "3/3 at the DoD checkpoint (§5.8 DOD-2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8106e9b4cb155079f02fe36c01a6079d0ba9a37d40a390d8812c2d9dd5faee25",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.018Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

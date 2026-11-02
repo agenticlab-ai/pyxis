@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1932TKZ0XR0ZBJ69QZ",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "UB-2",
+  "statement": "If If an in-scope `delivery:` citation (per FR-9 — a reference into an existing ledger) names an anchor that resolves to neither a journal `E-n` nor a derived-state field (a dangling or malformed anchor within a real ledger), then the system shall report it as a defect distinct from the DINV-6 derived-block finding — a citation the arm recognizes but cannot resolve is a false-green hole in the arm's own predicate, not a silent pass",
+  "intent": "a named defect distinguishing \"unresolvable anchor\" from \"cited derived block\"",
+  "fit_criterion": "on a dangling-`delivery:`-anchor fixture (a citation into an existing ledger naming no such entry), the cross-document arm reports a defect that is not conflated with the DINV-6 finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b8a58997432715d91b66828f38d1e176e03d9b0bd4cb62e1db33e0462e71dbe9",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.897Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2W9V7AXDWT9MP4SH455Q9PT",
+  "kind": "Learning",
+  "subject": "learning/standalone-doc-proposal-base",
+  "statement": "The document pre-push gate must use the same supplied proposal base as shared and hosted gates, and must return failure when output cannot be written.",
+  "rationale": "A stacked document PR otherwise includes its parent implementation in the standalone range. Explicit merge-base flags take precedence over PYXIS_CI_BASE, which precedes configured mainline; an unavailable selected ref remains an error. Independent installed repository fixtures clear the foreign outer base. Failed stdout writes and defect-report closes must not be reported as success.",
+  "learned_from": [
+    "cmd/docgate/coverage_threshold_test.go",
+    "cmd/docgate/output_test.go",
+    ".github/workflows/docs-gate.yml"
+  ],
+  "tags": [
+    "code:cmd/docgate"
+  ],
+  "relations": [
+    {
+      "type": "about",
+      "target": "Need-01M2W62W09JWN7HJMHD6F1T0YW"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-19T07:42:12Z",
+  "provenance": {}
+}

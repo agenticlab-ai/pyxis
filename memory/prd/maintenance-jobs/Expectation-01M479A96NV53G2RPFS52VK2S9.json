@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96NV53G2RPFS52VK2S9",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVAL-3",
+  "statement": "Continue one useful concern or make no artificial change",
+  "intent": "Pending draft PR, approval-only PR, already-fast pipeline, blocked measurement",
+  "fit_criterion": "Every case follows branch/PR policy and states no-change or blocker where warranted",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

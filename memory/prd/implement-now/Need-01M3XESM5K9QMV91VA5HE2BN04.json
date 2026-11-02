@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Need-01M3XESM5K9QMV91VA5HE2BN04",
+  "kind": "Need",
+  "subject": "prd/implement-now",
+  "family": "G1",
+  "statement": "We believe a native local executor accepts projected plans and directly admitted bounded issues; expected result: selected work becomes green, independently reviewed PRs on the invoking machine with no fleet",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1712b14d88c6b116f8ee7de61c6078bdfcdf4f99e2e4e21f9de9b9dbba6e21c4",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M26FGQT92T1TZFGGP1XT8KZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:43:39Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "approved amendment 008; compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

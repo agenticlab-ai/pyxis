@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQVKBHT6PGR5W7E40X1",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.3.5.1",
+  "statement": "undo **removes the installation and preserves post-adoption work** (`brainstorm:existing-repo-onboarding#D-11`; `prd:existing-repo-onboarding/FR-9`). It unchains the hook (restoring `hooks.prior_hooks_path`), deletes the paths in `added_paths`, clears `epoch.commit`, and **names the plan's `collide-manual` entries for the human to reverse** — symmetric to adopt emitting them, since adoption never touched those owned files (`prd:existing-repo-onboarding/FR-9`; PRD §4.4) — leaving every post-adoption commit and edit in place. It **fails closed on operator edits**: a path in `added_paths` the operator has modified since adoption (a chained-hook wrapper, an added file) is **preserved and named, never deleted** (DINV-5; `prd:existing-repo-onboarding/UB-6`) — undo completes the rest of the removal and reports the preserved path.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:83412fa6456c057da02247345e920b07d3c24666b8d3ee3b1cb44249f92778f1",
+    "source-design:c7cc38bb76acd3c8c1fd815af93bd17c9784b6970dc137db8217b9211f7dea5b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQGAZMPMP7NKJ3947Q9G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.595Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 108-108 in section 3.5; sha256:83412fa6456c057da02247345e920b07d3c24666b8d3ee3b1cb44249f92778f1"
+  }
+}

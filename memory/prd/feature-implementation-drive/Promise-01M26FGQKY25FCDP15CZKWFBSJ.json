@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKY25FCDP15CZKWFBSJ",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-6",
+  "statement": "The feature drive shall provide enough diagnostic state to identify owner, lifecycle state, exact blocking condition, and next human action without a unified dashboard.",
+  "intent": "Operability",
+  "fit_criterion": "Every failure fixture produces one named condition and remedy; restart diagnostic agrees with durable state.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dce913bfebb0fdd715afedfbe6ae2eb7f5719a5d1325f7e59e917bdcbe99e5ee",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.494Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

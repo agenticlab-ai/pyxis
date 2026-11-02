@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBSR5S37GS03Z0CYCM1",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "NR-2",
+  "statement": "Existing doc tooling (render-doc.mjs, lavish driver, their tests) keeps passing",
+  "rationale": "docgate is additive tooling",
+  "fit_criterion": "`scripts/tests/` suites green in the introducing PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:58346c90a5d64269aa88f2b166b4444e820df24175348139beb560d26a90cb19",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.233Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

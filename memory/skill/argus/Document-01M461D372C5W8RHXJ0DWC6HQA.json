@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M461D372C5W8RHXJ0DWC6HQA",
+  "kind": "Document",
+  "subject": "skill/argus",
+  "family": "entry",
+  "statement": "Captured authored source: .pyxis/skills/argus/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:c9bf0df3c4671c7a6fbc09b94f1237eb3f80743a8ef9003b60414b1b7ea17de8"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3C9MCQQJK064DW8YB7P2V2H"
+    }
+  ],
+  "body_sha256": "c9bf0df3c4671c7a6fbc09b94f1237eb3f80743a8ef9003b60414b1b7ea17de8",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:46Z",
+  "provenance": {
+    "source": ".pyxis/skills/argus/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

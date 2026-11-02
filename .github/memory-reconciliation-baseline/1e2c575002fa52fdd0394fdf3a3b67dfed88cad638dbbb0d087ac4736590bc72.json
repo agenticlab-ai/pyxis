@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/plan-new#Q4",
+  "feature": "plan-new",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

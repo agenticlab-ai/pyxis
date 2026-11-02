@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5PE890V0B0WCZHV7JN",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "UB-1",
+  "statement": "If a configured path escapes the repository root, then the system shall refuse the configuration and name the offending key",
+  "intent": "named schema error; nothing resolved or written",
+  "fit_criterion": "N path-escape fixtures each refused by name; zero resolutions proceed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cb2a5efb4d31835a24ab89267352edb3736a45c3f8fc2b0c8474a8584927aa48",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.038Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

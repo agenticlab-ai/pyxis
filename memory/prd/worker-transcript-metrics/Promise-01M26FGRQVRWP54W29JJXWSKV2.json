@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQVRWP54W29JJXWSKV2",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "NR-1",
+  "statement": "A task's terminal outcome class is unchanged by the presence of capture",
+  "rationale": "measurement must never alter the result it measures",
+  "fit_criterion": "across the checkpoint batch, each task reaches the same outcome class with capture enabled as with it disabled",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d8b4c79be02f3fe239b8d7a8d8c45ce86c87b91321e8ee24fe2d5d8012c6628",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.643Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

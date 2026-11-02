@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTA26MDVBTSSZ5N9C1H",
+  "kind": "Question",
+  "subject": "prd/incident-machinery",
+  "family": "Q2",
+  "statement": "Does graduation also draft the principle text, or is drafting entirely the operator's? (The registry→principle direction is operator-fed by rule 6.)",
+  "intent": "operator",
+  "rationale": "open",
+  "fit_criterion": "nothing — graduation pointer works either way",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:5ccaaf1d90d8c8a499a431336b5cb026a6753dd4e17164c556f8ec4a46d1ae1e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.722Z",
+  "provenance": {
+    "source": "docs/prds/incident-machinery/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:82a6e4d6bce3dfa328cccc63df1a7ecb87faa72d2b13f44638ac5b7176597f57"
+  }
+}

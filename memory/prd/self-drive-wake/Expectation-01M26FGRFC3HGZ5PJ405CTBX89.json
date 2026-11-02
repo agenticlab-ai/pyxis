@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFC3HGZ5PJ405CTBX89",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-12",
+  "statement": "Every live Must FR passes its fit criterion on every applicable adapter and consumer composition — the metered medium alone for FR-8/FR-14, both media for medium-neutral proposal reads, and the canonical review-state provider plus each supported review backend for FR-15..FR-17.",
+  "intent": "FR-1..FR-6, FR-8..FR-17",
+  "fit_criterion": "conformance and drill run indexed by every live Must row, including combined readiness, review-only recovery, and pending/unknown/exhausted status fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ec1a0f92615b06093f99771e7bc839a4b4a1a59b14dcf5ef2c696f5e54264df3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.372Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

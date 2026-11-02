@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWNAARYX5791QHWWGBW",
+  "kind": "Decision",
+  "subject": "design/config-driven-portability-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:config-driven-portability/ABUSE-1 · prd:config-driven-portability/FR-1 · prd:config-driven-portability/FR-2 · prd:config-driven-portability/FR-3 · prd:config-driven-portability/FR-4 · prd:config-driven-portability/FR-5 · prd:config-driven-portability/FR-6 · prd:config-driven-portability/NFR-1 · prd:config-driven-portability/NFR-2 · prd:config-driven-portability/NFR-3 · prd:config-driven-portability/NR-1 · prd:config-driven-portability/NR-2 · prd:config-driven-portability/UB-1 · prd:config-driven-portability/UB-2 · prd:config-driven-portability/UB-3.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:8d25ba0f65eb1bbed82e3f85efa63eb9791ff1246eb0fc44fa32f665307dd273",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN44K3YT5KK09CWCAJ5C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ50K6APT71CWHSQHF09"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ57CZM1MNWQCP5FQRF8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ58T8JGHWC8MXHV5HWN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ59RYVKEWN1CVC7RN8H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5AQ85NN5SBNP2BGGD2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5BM9MGSWAAH1RVV3XF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5CY45TYVJN9VDKPKW6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5H5576JAEECBB2930Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5J17F9FFGM9HGKFY5Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5K27455M108F96V74M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5MY0KNVEBSXZ1JA4Z4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5N4175WDAEV96DWJNG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5PE890V0B0WCZHV7JN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5QX9BSJPC6N5S5T0SS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5RWQDAPN10292J381Y"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.797Z",
+  "provenance": {
+    "source": "docs/tech-design/config-driven-portability-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 8d25ba0f65eb1bbed82e3f85efa63eb9791ff1246eb0fc44fa32f665307dd273"
+  }
+}

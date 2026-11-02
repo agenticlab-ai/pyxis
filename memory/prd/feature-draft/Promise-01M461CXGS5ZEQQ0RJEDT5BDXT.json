@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CXGS5ZEQQ0RJEDT5BDXT",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-15",
+  "statement": "If If an agent attempts a lock approval without the configured host identity, mainline approve-merge grant, or exact-version driver decision, then the system shall refuse the approval and leave the request pending for the authorized driver or operator",
+  "intent": "the missing authority or stale-binding refusal",
+  "fit_criterion": "Forged-account, missing-grant, malformed-decision, stale-head, stale-digest, and candidate-policy fixtures produce no lock tag.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f29eb7c795400af7aaa2fb0f76751a548160a3defae2a95f46d6571b73ce6705",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQTNH8FHEWD29KK9DN0F3"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:41Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

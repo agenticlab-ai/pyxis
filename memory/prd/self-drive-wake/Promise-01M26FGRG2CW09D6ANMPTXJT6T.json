@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG2CW09D6ANMPTXJT6T",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-15",
+  "statement": "When a consumer derives drive readiness, the state reader shall exact-read both the canonical configured-review obligation store and the consumer-owned durable recovery ledger and return a closed `review-wake-state/v1` containing each pending obligation's stable identity, task/proposal/revision binding, effective review backend, last terminal failure class, provider `review_attempt_count`, and consumer `first_observed_at_utc`, `recovery_epoch`, `recovery_count`, and frozen positive `recovery_bound`; it shall derive `age_s = floor(max(0, now_utc - first_observed_at_utc)/1s)` from an injected wall clock, so attempts/restarts never reset age and backward clock movement clamps rather than underflows. Missing recovery state for a newly observed obligation shall be initialized append-first with source-owned UTC observation time, count 0, and the current closed policy bound; later config/restarts shall not change that epoch's time or bound. Unreadable, structurally invalid, or unavailable whole-store state on either side shall instead be typed `unknown` and keep readiness non-empty, never become zero pending.",
+  "rationale": "provider attempts do not count factory/preflight failures, and the provider contract exposes no creation time; the retry and age guards belong in the consumer that spends and observes",
+  "fit_criterion": "empty, one-pending, mixed-backend, verified-cleared, corrupt/unavailable provider, corrupt/unavailable recovery ledger, stale-summary, initial-state, config-change, new/retried/long-pending, restart, and backward-clock fixtures match canonical ground truth; injected-clock assertions prove append-first time and exact `age_s`; every unknown fixture returns non-empty and never idle",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:189aff74038240e75618b4d176c8d36f5df88c35aaad82b8d35b03ad94f03789",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.394Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

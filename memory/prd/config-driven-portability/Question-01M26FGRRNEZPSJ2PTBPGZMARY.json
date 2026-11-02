@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRNEZPSJ2PTBPGZMARY",
+  "kind": "Question",
+  "subject": "prd/config-driven-portability",
+  "family": "Q1",
+  "statement": "The config-delivery mechanism to non-Go surfaces (shell hooks, generated workflow): generate-at-converge with values baked in vs. any runtime read — and how drift is detected",
+  "intent": "@mdarabi",
+  "rationale": "open — carried from `brainstorm:config-driven-portability#P-1`",
+  "fit_criterion": "technical design (not the solution gate)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0183e885b5bda7e4f6ba9a4ec74c99d48e788fb5fa0b810e1caab382073dac4f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.669Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

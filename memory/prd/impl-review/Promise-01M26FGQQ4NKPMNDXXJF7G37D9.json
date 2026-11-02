@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ4NKPMNDXXJF7G37D9",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NFR-7",
+  "statement": "The reviewer shall record per-pass and aggregate wall time by effective depth; latency targets are non-blocking operating measurements and shall never change depth, pass count, verdict, or acceptance semantics.",
+  "intent": "Latency observability",
+  "fit_criterion": "injected delay changes only timings and health signals; the same inputs yield the same pass set and aggregate; p50/p95 are reported by depth and count",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:09ee3e345385f6f59c2afce34684e19e9e8aa86871734299ad1ff74b3564da7a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.596Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZ7TWXEWX9Q8WT5VE75",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "G1",
+  "statement": "We believe front-loading every check before any write; expected result: installs that end green or refuse pre-write with a named remedy — zero mid-run corpses",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:919ee176579bcfba088ab54b9a9a11d61e0c309f7fa34ec6c1f232ee9fd5cfe1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.855Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

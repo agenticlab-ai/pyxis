@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBF1J8DWHH2WNHHXVS2QW",
+  "kind": "Document",
+  "subject": "brainstorm/ecosystem-help",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/ecosystem-help.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "c510a4e34a8a2e158ce27c4a89bb57a7ff961fd29c64794e723c55a3940a2427",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:16Z",
+  "provenance": {
+    "source": "docs/brainstorms/ecosystem-help.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMHM9C7KZG8XAVGCV30C",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "FR-10",
+  "statement": "When local mode is configured or run, Pyxis shall report its prerequisites and actual outcomes through doctor, logs, and metrics.",
+  "rationale": "Operability",
+  "fit_criterion": "Missing origin is named; shared-account and unauthenticated-approval limits are visible",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

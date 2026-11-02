@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Learning-01M298QZQ40HABWH9RQG4WF9DC",
+  "kind": "Learning",
+  "subject": "learning/composed-git-hooks",
+  "statement": "Desk setup and executor rearming must use one Git hook installer: the shared dispatcher preserves the parent-checkout guard and forwards each repository hook, including pre-push verification and commit stamping, from the invoking worktree.",
+  "intent": "Keep local verification active across executor runs and linked worktrees.",
+  "rationale": "The previous guard-only core.hooksPath replacement silently displaced pre-push. The shared Go installer records the repository hook source, migrates old installations, preserves custom paths, and rejects recursive dispatch; doctor verifies dispatcher contents and executable modes.",
+  "fit_criterion": "Real Git tests reject a red-gate push, accept a green-gate push, preserve hook arguments and stdin, and verify rearming, linked worktrees, parent commit rejection, and missing-hook diagnosis.",
+  "learned_from": [
+    "internal/executor/workspace/guard_hooks_test.go",
+    "internal/converge/managed_hooks_test.go"
+  ],
+  "tags": [
+    "code:cmd/hooks-setup",
+    "code:internal/githooks",
+    "code:internal/executor/workspace",
+    "code:internal/converge",
+    "code:internal/argus/stamp"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-11T22:17:23Z",
+  "provenance": {
+    "source": "internal/githooks/hooks.go",
+    "commit": "5006d0834dbccea486e5b79012736595c0752adb"
+  }
+}

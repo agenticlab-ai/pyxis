@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26J1T3Z3YPPB0RGT95ZRBQN",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-5",
+  "statement": "Codegate invocation logs and pruning use .pyxis/logs/codegate, contract-gate's default report scratch uses .pyxis/logs/contract-gate, e2e-design and e2e-review retain structured diagnostics under .pyxis/logs/reviews while continuing stderr output, and the Lavish driver writes server output under .pyxis/logs/doc-review. Explicit shared report exports and codegate verdict, cache, and worktree state retain their existing artifact or state locations.",
+  "intent": "Consolidate gate and review execution output while preserving the shared reports and durable state that other users need to review or resume work.",
+  "rationale": "Review findings, contract evidence, and verdict state have different ownership from server and command diagnostics. Only the diagnostic and default scratch sinks belong in the ignored log tree; moving shared results would break the approved cross-user Git workflow.",
+  "fit_criterion": "Codegate invocation and pruning tests use the new log root. Review logger tests cover JSON persistence and stderr fallback. The Lavish driver suite verifies server-log placement and completes the open/listen/reply/end lifecycle.",
+  "tags": [
+    "code:.pyxis/scripts/lavish-driver.sh",
+    "code:cmd/e2e-design",
+    "code:cmd/e2e-review",
+    "code:internal/docgate/contractgate",
+    "code:internal/verify/invoke",
+    "code:internal/verify/ladder"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T21:02:19Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "pr": 1175,
+    "commit": "b8f9110c7262f587466a804e253337516daf6a7c",
+    "note": "Records the boundary between gate/review diagnostics and shared evidence."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPT4E2MCS90DW0WGQQB9",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.2.1",
+  "statement": "Build a **standalone, post-hoc measurement tool** — a recorder and a reader (`design-brainstorm:pipeline-measurement-tech-design#D-6`). After a phase runs, the recorder parses the harness's *own* session record, brackets the phase stack (`#D-3`), pulls per-model spend through a **spend-source port** with one adapter per harness (`#D-2`), reconciles it to the harness's accounting (`#D-4`), and appends one schema-versioned JSON record per phase to a gitignored **append-only JSONL store** in the observability-logs directory of the system footprint (its concrete location fixed by `#D-1`). The reader computes the efficiency signals **deterministically** from the frozen artifacts + git by counting the corpus's existing typed anchors (`#D-5`), and derives dollar cost from **vendored external price data** (`#D-7`). Because it reads accounting the harness already produced and never invokes a model, it is execution-agnostic (FR-7) and consumes zero model tokens (FR-10); because a figure a harness cannot expose is declared `unavailable` rather than guessed, the number is trustworthy where present and honest where absent (FR-6). This is the \"append-only files first, queryable later\" shape the eventual Ledger endorses, owned by this feature so it depends on nothing unmerged.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:27069c7d5df2f2daa710016c0e51c98e0606780fd8d18122bcd431182bb8bf7c",
+    "source-design:848be6bb1101995e3e698ade196fe74ee1eddf3150285b46b2e557a5764b59d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.668Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 46-46 in section 2; sha256:27069c7d5df2f2daa710016c0e51c98e0606780fd8d18122bcd431182bb8bf7c"
+  }
+}

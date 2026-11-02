@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9SK4TNRMD1ZJY80FNX",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NFR-1",
+  "statement": "The system shall review both projections in a single approval gate.",
+  "intent": "Operability",
+  "fit_criterion": "co-review is one gate, not a separate second gate (guardrail §3.3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:90ca5e3205423e5cc58e4a08380b8d94251986add2700fcc448a908f7c225dac",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.169Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

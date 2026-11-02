@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M4YMTFZ1W3TZMVQRK0EWCSKW",
+  "kind": "Document",
+  "subject": "skill/impl-review",
+  "family": "lens-security-abuse",
+  "statement": "Captured authored source: .pyxis/skills/impl-review/lenses/security-abuse.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:23ead7d7f7e1a2fd10bb3e81dcb857a8c41a19534c0cb0408f2413a0006d62f2"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB91W01GT27E3DHJ1J5Q3"
+    }
+  ],
+  "body_sha256": "23ead7d7f7e1a2fd10bb3e81dcb857a8c41a19534c0cb0408f2413a0006d62f2",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-15T02:03:55Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/lenses/security-abuse.md",
+    "note": "offline reconciliation"
+  }
+}

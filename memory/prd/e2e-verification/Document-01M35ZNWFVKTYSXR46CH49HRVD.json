@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZNWFVKTYSXR46CH49HRVD",
+  "kind": "Document",
+  "subject": "prd/e2e-verification",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/e2e-verification/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:3010d4f63d279f651b06dd770389a549a8c8a144952989e05d52bcaea4c8275c"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBTVV28KP0874KTXPG9XW"
+    }
+  ],
+  "body_sha256": "3010d4f63d279f651b06dd770389a549a8c8a144952989e05d52bcaea4c8275c",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:55Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

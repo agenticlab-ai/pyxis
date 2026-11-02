@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/docgate#Q2",
+  "feature": "docgate",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

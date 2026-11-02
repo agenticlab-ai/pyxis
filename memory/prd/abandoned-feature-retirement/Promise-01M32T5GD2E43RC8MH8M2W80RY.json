@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5GD2E43RC8MH8M2W80RY",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-6",
+  "statement": "The system shall expose no source body, credential, or secret in retirement evidence or diagnostics.",
+  "intent": "Privacy",
+  "fit_criterion": "Seeded-secret and body fixtures produce zero matching payload fragments.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5d90406c19517c099cba6c04bf21a4f41f543d1719a29f3ec8e119ea03c5c9c5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:53Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

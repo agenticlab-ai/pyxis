@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/skill-command-prefix#R1",
+  "feature": "skill-command-prefix",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

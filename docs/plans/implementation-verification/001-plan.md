@@ -1,0 +1,496 @@
+# implementation-verification — plan 001
+
+| Field | Value |
+|---|---|
+| **Feature** | implementation-verification |
+| **PRD** | docs/prds/implementation-verification |
+| **Design** | docs/tech-design/codegate-v1.md |
+| **Plan version** | 001 |
+| **Dialect** | harbormaster/fs-spec:v1 |
+| **Epic title** | Build codegate — the verification harness (stage-8 local CI) |
+| **Status** | Draft — freezes at merge |
+| **Template version** | plan-template/v1 |
+
+## Tasks
+
+### T1 — Define the closed schemas, the check registry, and the ecosystem defaults substrate
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 200–290 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/schema (manifest, verdict, finding types + atomic write), internal/verify/registry (check registration), internal/verify/ecosystem (defaults tables), internal/verify/schema/schema_test.go |
+
+**Goal:** The harness's data substrate exists and holds its invariants: a manifest that parses closed, a verdict that is atomic, revision-bound, and state-exclusive, and a registry that derives the ladder from self-registered checks.
+
+**Current behavior:** No verification code exists; `internal/verify` is empty ground.
+
+**Desired behavior:** The manifest schema parses closed (unknown keys are errors) with verb bindings, test globs, per-verb env entries (names passed or values pinned), time bounds, state dirs, and the baseline path; the verdict type carries per-rung and per-check results, findings, and the six bindings (head sha, resolved diff base, manifest hash, baseline hash, codegate version, git version), writes atomically, and enforces its state invariants; checks self-register with rung, verb dependencies, author-independence class, and input set; ecosystem defaults (globs, skip/assertion patterns, secret/artifact rules, failure-identity parsers, state-dir and cache-pin defaults) compile in as versioned data the manifest overrides.
+
+**Scope:**
+- The manifest, verdict, and finding types with closed parsing and the atomic temp+rename write.
+- Property tests for the verdict invariants: bindings present, pass-class excludes fail/error and `skip:not-reached`, rung-and-check completeness.
+- The check registry with per-file init() self-registration and ladder derivation.
+- The compiled ecosystem-defaults tables with manifest-override resolution.
+
+**Out of scope:**
+- Any check logic or verb execution — later tasks register real checks.
+- The CLI surface — T2's task.
+
+**Acceptance criteria:**
+- [ ] A manifest with an unknown key fails closed-parse; a manifest declaring only a stack and a baseline path resolves the full verb set from ecosystem defaults.
+- [ ] Property tests prove no verdict instance combines a pass-class state with any fail or error check result or a `skip:not-reached` rung.
+- [ ] A demonstration check lands as one new file with zero shared-line edits, and the derived ladder includes it.
+- [ ] An interrupted write (kill between temp and rename) leaves no verdict artifact.
+
+**Key interfaces:**
+- `Manifest`, `Verdict`, `RungResult`, `CheckResult`, `Finding` types; `Register(Check)` with `Check{Rung, VerbDeps, AuthorIndependent, InputSet}`; `ecosystem.Defaults(stack)`.
+
+**Traces:** prd:implementation-verification/FR-4 · prd:implementation-verification/FR-5 · prd:implementation-verification/FR-17 · prd:implementation-verification/FR-19 · prd:implementation-verification/NFR-6 · design:codegate-v1#3.7 · design:codegate-v1#3.10 · design:codegate-v1#DINV-3 · design:codegate-v1#DINV-4
+
+### T2 — The run subcommand shell: invocation contract, bindings, and refusals
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T1 |
+| **Size band** | 180–260 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | cmd/codegate (thin main), internal/verify/invoke (flag parse, refusal classes, bindings resolution, lock), internal/verify/invoke/invoke_test.go |
+
+**Goal:** `codegate run` implements the subprocess contract's edges: every invalid invocation refuses fail-closed before any verb executes, valid invocations resolve their bindings, and exactly one invocation holds a workspace at a time.
+
+**Current behavior:** T1's substrate exists but nothing is invocable; there is no binary entry point.
+
+**Desired behavior:** `codegate run --workspace --diff-base [--incremental]` refuses with exit 2 and a configuration-error verdict on any invalid, ambiguous, or flag-like-positional invocation, a missing or unparseable manifest, a malformed bound baseline, a dirty workspace (codegate scratch excepted), or a below-floor system git; the verdict is stdout-carried when the workspace flag itself is the defect, artifact-plus-stdout otherwise; a valid invocation resolves the six bindings (diff base resolved to a sha) and holds an flock-held descriptor — a concurrent invocation refuses busy; exit classes 0–3 are wired.
+
+**Scope:**
+- Invocation parsing with the full refusal matrix (I3 discipline) and exit-class wiring.
+- Clean-tree assertion, git-version floor check, and bindings resolution.
+- The configuration-error verdict emission rule (artifact vs stdout-carried).
+- The flock workspace lock with busy refusal.
+
+**Out of scope:**
+- Running any rung — the ladder body is T3.
+- Residue reaping and kill-recovery beyond the lock's kernel release — T9.
+
+**Acceptance criteria:**
+- [ ] Every malformed-invocation class (unknown mode, missing/ambiguous workspace or diff base, flag-like positional, dirty tree) refuses with exit 2 before any verb executes.
+- [ ] The workspace-flag-defect fixture yields a stdout-carried configuration-error verdict; the malformed-manifest and malformed-baseline fixtures yield artifact verdicts naming the defect.
+- [ ] A second concurrent invocation on the same workspace refuses busy while the first completes normally.
+- [ ] A valid invocation's verdict records all six bindings with the diff base resolved to a sha.
+
+**Key interfaces:**
+- `Invocation` (parsed contract), `Bindings` (the six-field set), `WorkspaceLock` (flock semantics); exit-class constants.
+
+**Traces:** prd:implementation-verification/UB-3 · prd:implementation-verification/UB-5 · prd:implementation-verification/UB-7 · prd:implementation-verification/UB-8 · prd:implementation-verification/FR-4 · prd:implementation-verification/FR-15 · design:codegate-v1#3.6 · design:codegate-v1#DINV-1
+
+### T3 — The bounded verb runner and the repo-verb ladder (rungs 0, 1, 4)
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2 |
+| **Size band** | 210–300 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/runner (bounded exec), internal/verify/checks (format, lint, build, exec-probe check units), internal/verify/ladder (ordered execution, first-failure stop), fixture repo under internal/verify/testdata |
+
+**Goal:** The ladder runs end to end on a fixture repo: repo verbs execute env-stripped and time-bounded, a failing rung returns compact findings without executing later rungs, and the verdict enumerates everything.
+
+**Current behavior:** Invocations resolve and refuse correctly (T2) but no rung executes; no verdict has ever contained a real check result.
+
+**Desired behavior:** The runner executes a verb with an environment built only from the manifest's per-verb entries, kills it at its bound plus the recorded grace, and distinguishes spawn failure and timeout (rung error, exit 3) from check failure (red, exit 1); format/lint (rung 0), build (rung 1), and exec-probe (rung 4) checks run via the registry in latency order with first-failure stop; findings carry check id, class, rung, file:line where the class has one, a one-line message, and full output by reference in scratch; an unbound verb's check records `skip:verb-absent`, aggregates the rung as pass-with-skips, and drives green-degraded; unreached rungs record `skip:not-reached`.
+
+**Scope:**
+- The bounded runner: env construction (names + pinned values), wall-clock bound + grace, UB-1/UB-2 error classes.
+- The four repo-verb check units and ladder execution with first-failure stop.
+- Finding emission with log-by-reference scratch retention.
+- The Go fixture repo driving red, green, green-degraded, and error paths.
+
+**Out of scope:**
+- The verbless neutral checks — T4.
+- Write-scope enforcement (Landlock) — T9; this task ships strip + bounds only.
+
+**Acceptance criteria:**
+- [ ] A rung-0 lint failure returns findings with file:line and zero rung-1+ verb executions recorded; the probe-less fixture yields green-degraded with `skip:verb-absent` recorded.
+- [ ] A fixture verb reading an ambient env var observes it absent; a pinned-value entry is observed; a hanging verb terminates at bound+grace with rung result error-timeout.
+- [ ] A missing verb binary yields rung error class `infra` (exit 3), never red or green.
+- [ ] Every completed run's verdict enumerates all configured rungs and checks, including `skip:not-reached` after an early stop.
+
+**Key interfaces:**
+- `Runner.Exec(verb, bounds, env) → Result`; `Ladder.Run(bindings, mode) → Verdict`; the finding schema's field set (the joint feedback contract's v1 shape).
+
+**Traces:** prd:implementation-verification/FR-1 · prd:implementation-verification/FR-2 · prd:implementation-verification/FR-6 · prd:implementation-verification/FR-9 · prd:implementation-verification/FR-13 · prd:implementation-verification/FR-14 · prd:implementation-verification/UB-1 · prd:implementation-verification/UB-2 · design:codegate-v1#3.6 · design:codegate-v1#3.7 · design:codegate-v1#DINV-5
+
+### T4 — The verbless rung-0 checks: secret scan, forbidden artifacts, machinery protection
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2 |
+| **Size band** | 160–240 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/checks (three neutral check units), internal/verify/diffset (proposal-diff extraction), internal/verify/ecosystem (secret/artifact rule tables) |
+
+**Goal:** The three checks needing no repo capability catch what they exist to catch, diff-scoped: a seeded secret, a committed binary or baked absolute path, and a proposal diff touching verification machinery.
+
+**Current behavior:** Rung 0 runs only the repo's own format/lint verbs (T3); the harness brings no checks of its own.
+
+**Desired behavior:** The proposal diff (resolved diff base → head) is extracted once and shared; the secret scan matches ecosystem-table patterns over added lines; forbidden-artifact rules flag binary content, size-threshold breaches, and baked absolute paths in added content; machinery protection derives its path set — the manifest's own path, its declared paths, the acquisition-pin path, and the verdict/scratch path — and reds any proposal diff touching one; all three run inside rung 0's latency budget.
+
+**Scope:**
+- Proposal-diff extraction with rename detection as the shared substrate.
+- The three check units registered on rung 0, rules sourced from ecosystem tables with the manifest extension point.
+- The derived machinery path set (never hand-kept).
+- Latency measurement hooks for NFR-1's rung-0 budget.
+
+**Out of scope:**
+- Test-file analysis of any kind — rung 3's tasks (T6, T7).
+- Tree-scoped (non-diff) scanning — deliberately diff-scoped per the design.
+
+**Acceptance criteria:**
+- [ ] A seeded secret in the proposal diff reds rung 0 with a class-named finding; the same secret pre-existing in the tree (outside the diff) does not.
+- [ ] A committed binary and a baked absolute path each red rung 0 with class-named findings.
+- [ ] Catch seed 3 — a baseline addition and separately a manifest verb-unbinding riding a proposal diff — reds with a machinery finding naming the path; a pin-downgrade diff reds the same way; a non-machinery diff never triggers it.
+- [ ] Rung-0 wall-time on the fixture and dogfood repos is measured and recorded in EVT-1 timings (the NFR-1 evidence hook).
+
+**Key interfaces:**
+- `DiffSet` (added lines, file status, renames); `MachineryPaths(bindings) → set`; ecosystem rule-table entries for secrets and artifacts.
+
+**Traces:** prd:implementation-verification/FR-7 · prd:implementation-verification/FR-8 · prd:implementation-verification/NFR-1 · design:codegate-v1#3.7 · design:codegate-v1#A-12
+
+### T5 — Rung 2: the test verb, the no-new-failures baseline, and capture-baseline
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3 |
+| **Size band** | 200–280 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/checks (rung-2 unit), internal/verify/baseline (evaluation + file format), cmd/codegate (capture-baseline subcommand), internal/verify/ecosystem (failure-identity parsers) |
+
+**Goal:** Rung 2 adjudicates honestly on healthy and red-main repos alike: any failure reds a baseline-less repo, only new failures red a baseline-bound one, shrinkage is recorded, and the baseline is born from an operator-run subcommand — never from run mode.
+
+**Current behavior:** The test verb executes like any repo verb (T3) but its result is exit-code-only; no baseline semantics exist.
+
+**Desired behavior:** With no baseline bound, any test failure reds rung 2; with a baseline bound, failure identities parse via the stack's ecosystem parser and the rung evaluates no-new-failures — failing on any failure absent from the baseline, recording observed shrinkage in the verdict; unparseable output with a baseline bound is a rung error, never an exit-code fallback; `codegate capture-baseline` runs the test verb, writes the baseline file (failure identities + capture provenance) at the manifest-declared path, and exits — run mode never writes it.
+
+**Scope:**
+- The rung-2 check with both evaluation modes and shrink recording.
+- Failure-identity parsing for the Go stack via the ecosystem table (further stacks ride T10's fixtures).
+- The baseline file format with capture provenance, and UB-9's fail-closed path.
+- The `capture-baseline` subcommand with the DINV-6 write discipline.
+
+**Out of scope:**
+- Baseline growth enforcement beyond FR-8's machinery flag — human-lane by convention until the remote phase.
+- Detection-assisted capture — the basis's WR-6.
+
+**Acceptance criteria:**
+- [ ] A clean fixture passes and one seeded failing test reds rung 2 with no baseline bound; the red-main fixture (K pre-existing failures) passes with zero new failures and reds when one new failure is seeded.
+- [ ] A baseline-shrink run records the shrink in the verdict's rung-2 entry.
+- [ ] Garbage test output with a baseline bound yields rung-2 error; the same output with no baseline follows the exit-code path.
+- [ ] `capture-baseline` produces a baseline the red-main fixture binds; a write-audit test proves run mode performs zero writes to manifest or baseline.
+
+**Key interfaces:**
+- `BaselineFile` (identities + provenance), `EvaluateRung2(result, baseline) → RungResult` with shrink record; `FailureIdentityParser` per stack.
+
+**Traces:** prd:implementation-verification/FR-10 · prd:implementation-verification/UB-9 · prd:implementation-verification/UB-5 · design:codegate-v1#3.7 · design:codegate-v1#3.10 · design:codegate-v1#DINV-6 · design:codegate-v1#A-11
+
+### T6 — Falsification: the ephemeral worktree and the two-leg protocol
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3 |
+| **Size band** | 210–300 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/checks (falsification unit), internal/verify/worktree (ephemeral lifecycle + state-dir provisioning), fixture diffs under internal/verify/testdata |
+
+**Goal:** Tautological tests are caught mechanically and legitimate diffs pass untouched: the falsification check proves new tests discriminate implementation presence, in a throwaway worktree the agent's tree never feels.
+
+**Current behavior:** Rung 3 does not exist; a test asserting nothing sails green (the basis's named top-risk class).
+
+**Desired behavior:** When the proposal diff's non-test half is non-empty and test files were added or modified, codegate creates a worktree at the workspace HEAD under a run-id-unique scratch path, provisions the manifest's declared state dirs, and runs two legs — sanity (unreverted: the targeted tests must pass, else rung error) then revert (reverse of the non-test half applied: tests passing without the implementation produce a falsification finding naming each) — focused where the stack's runner supports it; test-only or no-new-test diffs record not-applicable and emit nothing; a revert that does not apply is a rung error; the worktree is removed at run end and the workspace tree hash is byte-identical after every run.
+
+**Scope:**
+- The ephemeral-worktree lifecycle: run-id path, state-dir provisioning, removal.
+- The two-leg protocol with the environment-vs-discrimination distinction.
+- The FR-18 applicability rule and its not-applicable recording.
+- The UB-4 inapplicable-revert error path.
+
+**Out of scope:**
+- The test-delta audit — T7 (a sibling check on the same rung).
+- Stale-worktree pruning after kills — T9's janitor.
+
+**Acceptance criteria:**
+- [ ] Catch seed 1 (a tautological test) reds rung 3 with a falsification finding naming the test.
+- [ ] The refactor-only and mixed-with-genuine-tests fixtures pass without findings; the test-only fixture records falsification not-applicable while its test-delta audit still evaluates.
+- [ ] A worktree whose sanity leg fails (a state-dir deliberately withheld) yields rung error — never a falsification verdict.
+- [ ] After every rung-3 run — pass, red, or error — the workspace tree hash is byte-identical to before.
+
+**Key interfaces:**
+- `EphemeralWorktree{Create, Provision, Remove}`; `Falsify(diffset, worktree) → CheckResult` implementing the two-leg order.
+
+**Traces:** prd:implementation-verification/FR-11 · prd:implementation-verification/FR-18 · prd:implementation-verification/UB-4 · design:codegate-v1#3.9 · design:codegate-v1#DINV-7 · design:codegate-v1#A-3
+
+### T7 — The test-delta audit: deletion, skip-marker, and assertion-removal floors
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2 |
+| **Size band** | 140–220 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/checks (test-delta unit), internal/verify/ecosystem (skip/assertion pattern tables) |
+
+**Goal:** Silencing a test costs a named finding: deletions, skip markers, and hollowed assertions in the proposal diff are flagged structurally, and renames pass clean.
+
+**Current behavior:** A diff deleting or skip-marking a failing test changes nothing the harness sees; silence is free.
+
+**Desired behavior:** Over the shared diff set (T4's substrate), deletions of test-glob paths, added skip/exclusion markers, and modified tests whose assertion-pattern count drops each produce a test-delta finding naming the affected test; git rename detection runs first so moves and renames never fire the floors; all patterns are per-stack ecosystem-table data.
+
+**Scope:**
+- The test-delta check registered on rung 3, all three trigger classes.
+- The per-stack skip-marker and assertion-pattern tables for the Go stack.
+- Rename-safety via the diff set's rename detection.
+
+**Out of scope:**
+- Detection depth beyond the three-class floor — the design's Q2, grown by data PR.
+- Any test execution — this check is purely structural.
+
+**Acceptance criteria:**
+- [ ] Catch seed 2 reds in each of its three classes: a deleted failing test, an added skip marker, and an assertion-removal (hollowed test), each finding naming the test.
+- [ ] The rename/move-refactor fixture passes without a test-delta finding.
+- [ ] Pattern-table additions require zero changes to the check unit (data-only growth proven by a test adding a pattern).
+
+**Key interfaces:**
+- `TestDelta(diffset, tables) → []Finding`; ecosystem table entries `SkipMarkers`, `AssertionPatterns` keyed by stack.
+
+**Traces:** prd:implementation-verification/FR-12 · design:codegate-v1#3.9 · design:codegate-v1#A-2
+
+### T8 — Incremental re-verification: the prior verdict as the only state
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3, T5 |
+| **Size band** | 180–260 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/ladder (incremental planning), internal/verify/schema (carried-pass provenance) |
+
+**Goal:** A fix cycle re-verifies without re-running the world and without ever laundering a stale result: the prior verdict is the sole state, and any doubt means a full run.
+
+**Current behavior:** Every invocation runs the full ladder; the loop pays the whole suite per fix.
+
+**Desired behavior:** `--incremental` reads the workspace's prior verdict; it qualifies only when every binding except the head revision matches (resolved diff base, manifest hash, baseline hash, codegate version, git version) and it parses — otherwise full run; the re-run set is the previously-failed rung first, plus every rung not recorded pass, plus every rung whose registry-declared input set changed under `git diff <prior head>`; only prior passes with unchanged inputs carry, marked `carried-from <run id>`; conservative v1 input defaults (whole tree for repo-verb rungs, the diff composition for rung 3) hold, with first-failure ordering as the stated primary economy.
+
+**Scope:**
+- Prior-verdict qualification with the full-binding match rule.
+- Re-run-set computation from recorded results + input sets, and carried-pass marking.
+- The invalidation fixtures: changed manifest, baseline, diff base, and codegate version each force a full run.
+
+**Out of scope:**
+- Sub-rung (per-test) caching — a future supersession by design.
+- Any second state artifact — the verdict is the only state, structurally.
+
+**Acceptance criteria:**
+- [ ] A fixture fix-cycle re-verifies with strictly fewer verb runs than the initial full ladder, and its carried passes carry `carried-from` provenance.
+- [ ] Changing any single binding (manifest, baseline, diff base, codegate version) forces a full run.
+- [ ] A prior verdict containing a `skip:not-reached` or failed rung re-runs that rung — a pass-class verdict never emerges containing a never-run rung.
+- [ ] A missing or unparseable prior verdict silently degrades to a full run (never an error).
+
+**Key interfaces:**
+- `PlanIncremental(prior Verdict, bindings, diff) → RerunSet`; `CarriedPass{FromRunID}` in the verdict schema.
+
+**Traces:** prd:implementation-verification/FR-3 · design:codegate-v1#3.8 · design:codegate-v1#DINV-8 · design:codegate-v1#A-5
+
+### T9 — Runtime hardening: write-scope enforcement, kill-idempotence, and the janitors
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3, T6 |
+| **Size band** | 180–270 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/runner (Landlock confinement, platform seam), internal/verify/worktree (stale-registration pruning), internal/verify/invoke (scratch retention, kill-recovery fixtures) |
+
+**Goal:** The runner's security posture and the AP-12 residue discipline become real: out-of-scope writes fail on the enforced platform, kills leave nothing wedged, and every throwaway resource has its janitor.
+
+**Current behavior:** Verbs run stripped and bounded (T3) but writes anywhere succeed; a killed run leaves a registered worktree and old scratch accumulates.
+
+**Desired behavior:** On Linux the runner confines verb writes to workspace + scratch via Landlock — an out-of-scope write fails the rung as error with a violation-classed finding; on macOS the posture is strip + redirection with the residual named (the A-6 write-scope leg pins to the Linux CI matrix); kill-mid-run — including during rung 3 — leaves no verdict artifact, the flock releases on death, and the next invocation prunes codegate's own stale worktree registrations and drops older run scratch per the retention rule; shared-`.git` worktree operations treat transient git-lock failures as rung errors, fail-closed.
+
+**Scope:**
+- The Landlock confinement behind a platform seam, with the violation finding class.
+- Kill-recovery: no partial verdict, lock release, next-run equality with an uninterrupted run.
+- The janitors: stale-worktree pruning by run-id namespace and scratch retention.
+- The macOS residual posture, documented in-code where the seam degrades.
+
+**Out of scope:**
+- Any second enforcement backend (bwrap-class) — rejected by design for NFR-3.
+- Env-strip and time bounds — shipped in T3; this task adds only the write scope and residue discipline.
+
+**Acceptance criteria:**
+- [ ] On the Linux CI matrix, a fixture verb writing outside workspace+scratch fails the rung with a violation finding; the same fixture on macOS records the documented residual behavior.
+- [ ] Kill-mid-run (including during rung 3) leaves no verdict artifact; the subsequent run prunes the stale worktree registration and equals an uninterrupted run.
+- [ ] Scratch from runs older than the retention rule is absent after the next invocation; the prior verdict always survives.
+- [ ] A concurrent sibling workspace's rung-3 run on the same clone proceeds; a transient git-lock collision yields a rung error, never a hang or corruption.
+
+**Key interfaces:**
+- `Confine(cmd, allowedPaths)` behind the platform seam; `PruneStaleWorktrees(scratchNS)`; the scratch retention constant recorded in the verdict schema.
+
+**Traces:** prd:implementation-verification/FR-14 · prd:implementation-verification/UB-6 · prd:implementation-verification/UB-8 · prd:implementation-verification/NFR-4 · design:codegate-v1#3.5 · design:codegate-v1#3.6 · design:codegate-v1#A-6 · design:codegate-v1#A-8
+
+### T10 — The multi-stack fixture matrix and the permanent catch suite
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T4, T5, T6, T7, T8 |
+| **Size band** | 150–250 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/verify/testdata (two non-Go fixture repos + manifests), internal/verify (matrix + catch-suite test drivers), .github/workflows (harness CI job) |
+
+**Goal:** Technology-independence and the anti-gaming bar become tested properties: the identical harness binds and adjudicates three stacks, and every adversarial seed family stays permanently blocked in CI.
+
+**Current behavior:** Every check is proven on the Go fixture only; FR-16's zero-per-stack-code claim and M2's 3/3 catch bar are asserted, not demonstrated.
+
+**Desired behavior:** Two additional fixture repos (distinct non-Go stacks) carry minimal manifests and exercise the full ladder — bind, red, green, green-degraded, baseline, falsification (with state-dir provisioning), and test-delta paths — through ecosystem defaults alone; the catch suite runs all seed families (tautology; silenced test in three classes; machinery edits including the pin downgrade) paired with the legitimate-diff fixtures, on all three stacks where the seed applies, as a permanent CI job emitting EVT-4.
+
+**Scope:**
+- The two non-Go fixture repos with manifests, scripted verbs, and failure-identity parser entries.
+- The matrix driver proving the ladder end to end per stack with zero per-stack code in `internal/verify` (inspection hook included).
+- The permanent catch-suite job wiring EVT-4 results in the harness's CI.
+
+**Out of scope:**
+- Real second-repo onboarding — fixtures stand in by design.
+- The advisory parity workflow — T11.
+
+**Acceptance criteria:**
+- [ ] The fixture matrix runs the full ladder on three stacks in CI, green, with an inspection note proving stack-specific behavior lives only in manifest data and ecosystem tables.
+- [ ] The catch suite blocks every seed family case — including assertion-removal and the pin-downgrade machinery seed — and the paired legitimate fixtures pass, on every applicable stack.
+- [ ] Rung-3 legs (sanity + revert) run on all three stacks, proving state-dir provisioning per stack.
+- [ ] The suite is a required job in the harness's own CI and emits per-seed EVT-4 records.
+
+**Key interfaces:**
+- Fixture-repo layout convention (manifest + scripted verbs + seeds); the matrix/catch drivers' table-driven entry points.
+
+**Traces:** prd:implementation-verification/FR-16 · prd:implementation-verification/NR-1 · design:codegate-v1#3.11 · design:codegate-v1#A-1 · design:codegate-v1#A-2 · design:codegate-v1#A-3
+
+### T11 — The release lane, the acquisition pin, and the advisory parity dry-run
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3 |
+| **Size band** | 120–200 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | .goreleaser or release workflow (codegate artifacts), the operand acquisition config schema (additive codegate section), .github/workflows (advisory dry-run), docs/techspec.md + docs/prd.md (living rollups) |
+
+**Goal:** codegate ships the way the repo-layout conventions demand and proves its portability constraint: pinned static artifacts, an owned pin section, and one advisory headless CI run whose verdict matches a local run rung for rung.
+
+**Current behavior:** codegate builds from source only; no release artifacts, no pin section, no evidence the identical harness runs headless in CI.
+
+**Desired behavior:** The release lane produces sha256-pinned static binaries per version; the operand acquisition config's closed schema gains the additive `codegate:` section (version + sha256) with the shim resolution path; an advisory (explicitly non-blocking) GitHub Actions job runs the identical harness headless on a commit and the comparison records rung-for-rung verdict parity with a local run (EVT-5); the living rollups gain the shipped capability's entries including the verdict-state and troubleshooting reference.
+
+**Scope:**
+- The goreleaser-style release configuration for codegate artifacts.
+- The additive pin-section schema change with shim resolution.
+- The advisory dry-run workflow + the parity comparison recording EVT-5.
+- The living-doc entries (techspec/prd rollups; verdict-state reference).
+
+**Out of scope:**
+- Required-check registration or any enforcement semantics — the basis's WR-5, deliberately parked.
+- Publishing cadence policy — releases cut when the operator tags.
+
+**Acceptance criteria:**
+- [ ] A release build produces static, sha256-pinned codegate artifacts resolvable through the shim against the new pin section.
+- [ ] The pin section parses closed alongside the existing tool section; a wrong sha fails resolution fail-closed.
+- [ ] The advisory workflow runs the identical harness headless and records rung-for-rung parity with a local verdict on the same commit (EVT-5), and is visibly non-blocking.
+- [ ] The living rollups document the shipped capability: subcommands, verdict states, finding classes, and the troubleshooting reference.
+
+**Key interfaces:**
+- The `codegate:` pin-section schema; the dry-run workflow's parity comparison step; the release artifact naming convention.
+
+**Traces:** prd:implementation-verification/FR-15 · prd:implementation-verification/NFR-3 · prd:implementation-verification/NR-1 · design:codegate-v1#3.1 · design:codegate-v1#A-9
+
+## Coverage
+
+| Requirement | Tasks |
+|---|---|
+| prd:implementation-verification/FR-1 | T3 |
+| prd:implementation-verification/FR-2 | T3 |
+| prd:implementation-verification/FR-3 | T8 |
+| prd:implementation-verification/FR-4 | T1, T2 |
+| prd:implementation-verification/FR-5 | T1 |
+| prd:implementation-verification/FR-6 | T1, T3 |
+| prd:implementation-verification/FR-7 | T4 |
+| prd:implementation-verification/FR-8 | T4 |
+| prd:implementation-verification/FR-9 | T3 |
+| prd:implementation-verification/FR-10 | T5 |
+| prd:implementation-verification/FR-11 | T6 |
+| prd:implementation-verification/FR-12 | T7 |
+| prd:implementation-verification/FR-13 | T3 |
+| prd:implementation-verification/FR-14 | T3, T9 |
+| prd:implementation-verification/FR-15 | T2, T11 |
+| prd:implementation-verification/FR-16 | T10 |
+| prd:implementation-verification/FR-17 | T1, T3 |
+| prd:implementation-verification/FR-18 | T6 |
+| prd:implementation-verification/FR-19 | T1 |
+| prd:implementation-verification/UB-1 | T3 |
+| prd:implementation-verification/UB-2 | T3 |
+| prd:implementation-verification/UB-3 | T2 |
+| prd:implementation-verification/UB-4 | T6 |
+| prd:implementation-verification/UB-5 | T2, T5 |
+| prd:implementation-verification/UB-6 | T9 |
+| prd:implementation-verification/UB-7 | T2 |
+| prd:implementation-verification/UB-8 | T2, T9 |
+| prd:implementation-verification/UB-9 | T5 |
+| prd:implementation-verification/NR-1 | T10, T11 |
+| prd:implementation-verification/NFR-1 | T4 |
+| prd:implementation-verification/NFR-2 | T1, T10 |
+| prd:implementation-verification/NFR-3 | T11 |
+| prd:implementation-verification/NFR-4 | T3, T9 |
+| prd:implementation-verification/NFR-5 | T1 |
+| prd:implementation-verification/NFR-6 | T1 |
+
+## Deferred
+
+| Requirement | Reason |
+|---|---|
+| prd:implementation-verification/NR-2 | verified at Phase-B integration, not buildable here: the VerificationGate port and its adapter land on implement-now's ledger via the queued P-1 legs (additive amendment + design supersession there + the NR-2 corrective amendment on this basis) — this plan builds the harness side only, and its CLI contract is fully testable without the host (design:codegate-v1 §3.11, R3) |

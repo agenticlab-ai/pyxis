@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCEY3MHAC0YY16D5ZQ4EK",
+  "kind": "Document",
+  "subject": "review/prd-review-001",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/prd-review-001.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "4dab2d25590113400553d3533c186341c0ce3a244c6714c120fc3e2386fbfb1a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:49Z",
+  "provenance": {
+    "source": "docs/reviews/prd-review-001.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

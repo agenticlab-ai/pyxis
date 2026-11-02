@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQZYWDYD2YFBSJ9F6674",
+  "kind": "Expectation",
+  "subject": "prd/installer",
+  "family": "DOD-11",
+  "statement": "Supply-chain posture proven: checksum refusal on every fetch path; declared-operation audit clean; the door credential refused closed",
+  "intent": "UB-3, UB-9, UB-13, ABUSE-2, ABUSE-3, ABUSE-5, ABUSE-6, NFR-8",
+  "fit_criterion": "drill records",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:784e32590bdc7a926de2fd225f4cefc4043985108aaf1aac0bdff5dc3c4dd74d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.878Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

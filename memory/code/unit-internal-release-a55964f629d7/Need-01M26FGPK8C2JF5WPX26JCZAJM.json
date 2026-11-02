@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPK8C2JF5WPX26JCZAJM",
+  "kind": "Need",
+  "subject": "code/unit-internal-release-a55964f629d7",
+  "family": "anchor",
+  "statement": "Production code unit internal/release exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at internal/release.",
+  "tags": [
+    "code:internal/release",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.448Z",
+  "provenance": {
+    "source": "code:internal/release",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline code inventory 5e801d7b72ad9fea2241d841fdc2a07017486b840c41628c04b1702d804713e6"
+  }
+}

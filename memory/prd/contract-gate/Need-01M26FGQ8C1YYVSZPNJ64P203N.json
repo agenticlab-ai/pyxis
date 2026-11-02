@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8C1YYVSZPNJ64P203N",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "the gate's **escape rate** — mechanically-flawed contracts that pass the gate yet carry a defect of one of the five classes, surfaced downstream (at planning-consumption, review, or implementation)",
+  "fit_criterion": "zero escapes across the dogfood feature's planned contracts, cross-checked by the corpus sweep (DOD-7); a non-zero escape falsifies the check set's completeness and reopens it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2d1f98c91965de58d539a4c3627d8276b7896963445d1e08bebf6486db659267",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.124Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

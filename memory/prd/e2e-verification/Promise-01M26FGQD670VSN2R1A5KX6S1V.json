@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD670VSN2R1A5KX6S1V",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-5",
+  "statement": "Where a scenario is routed manual-human, the design doc shall name the human-judgment owner for that scenario.",
+  "rationale": "the manual route is the Human-judgment verification method — admissible only with a named owner",
+  "fit_criterion": "every manual-routed fixture scenario names an owner; a manual route with no owner is a review finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:73106aa354ada61763c1fde674a05f4ef18e3dd62eb2b664738a527694cb5d2a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.278Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

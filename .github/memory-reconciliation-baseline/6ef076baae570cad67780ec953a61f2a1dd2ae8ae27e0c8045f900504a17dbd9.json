@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/self-drive-wake#Q2",
+  "feature": "self-drive-wake",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

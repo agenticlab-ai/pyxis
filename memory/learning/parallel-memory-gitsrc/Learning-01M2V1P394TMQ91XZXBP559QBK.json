@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V1P394TMQ91XZXBP559QBK",
+  "kind": "Learning",
+  "subject": "learning/parallel-memory-gitsrc",
+  "statement": "Pinned memory and policy Git reads reject unavailable listed blobs and prohibit lazy fetching; policy discovery preserves exact Git paths, node types, and modes.",
+  "intent": "Keep memory verification deterministic and offline, including partial clones and large partitioned policies.",
+  "rationale": "An unavailable listed blob must not silently disappear from the inventory or trigger network access. NUL-delimited tree and index reads preserve exact names, while one tree listing and one batch read avoid a Git subprocess per allowance.",
+  "tags": [
+    "code:internal/memory/gitsrc"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T20:00:21Z",
+  "provenance": {
+    "source": "internal/memory/gitsrc/gitsrc.go",
+    "commit": "30dcc43775174df02334c4b015784f481cdfec70"
+  }
+}

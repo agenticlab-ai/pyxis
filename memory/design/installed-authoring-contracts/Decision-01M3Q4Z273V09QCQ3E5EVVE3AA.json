@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3Q4Z273V09QCQ3E5EVVE3AA",
+  "kind": "Decision",
+  "subject": "design/installed-authoring-contracts",
+  "family": "payload-completeness",
+  "statement": "Checked-in guides, policy documents, and templates keep source-runnable commands and Pyxis source-contract paths. Release staging renders only their payload copies to the installed pyxis command grammar, shipped template paths, and release-pinned .pyxis/reference snapshots, refusing missing cited contracts or templates.",
+  "intent": "Keep source development and installed Argus and direct skills runnable in their respective repositories.",
+  "rationale": "Source checkouts need no released pyxis binary on PATH; installed repositories have neither the engine command source nor Pyxis source contracts. Direct skills also read routing policy and templates transitively.",
+  "fit_criterion": "Release tests prove source files are unchanged, staged direct and transitive guides use installed commands and paths, contract snapshots match source, and missing references refuse packaging.",
+  "tags": [
+    "code:internal/release"
+  ],
+  "relations": [
+    {
+      "type": "about",
+      "target": "Need-01M3Q4Y6DKX1Q0WZ2DTXNDAW3T"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-29T17:56:24Z",
+  "provenance": {
+    "pr": 1304
+  }
+}

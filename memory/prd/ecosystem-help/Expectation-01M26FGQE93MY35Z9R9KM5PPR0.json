@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE93MY35Z9R9KM5PPR0",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "EVAL-1",
+  "statement": "Problem→entry routing (FR-2), refusal honesty (UB-2), and built-status honesty (UB-3)",
+  "intent": "the canonical scenario set derived from the pipeline map's entry rules (one scenario per entry class, plus cross-cutting skills), a negative set of non-pyxis asks, and an unbuilt-stage set; run as a manual scenario checklist until eval machinery exists",
+  "fit_criterion": "100% correct entry naming on the canonical set; zero fabricated commands or stages on any set; zero commands recommended for unbuilt stages",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b4870b1467dfbdb014930fb2bde691f27010c1274b2f808bddd5c8249cc15ad2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.313Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

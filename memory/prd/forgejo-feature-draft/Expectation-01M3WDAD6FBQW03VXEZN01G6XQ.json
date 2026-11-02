@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3WDAD6FBQW03VXEZN01G6XQ",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-2",
+  "statement": "Source GitHub and Forgejo task/code-host behavior do not regress.",
+  "intent": "NR-1..NR-3, NFR-3",
+  "fit_criterion": "Existing suites plus source GitHub draft conformance",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

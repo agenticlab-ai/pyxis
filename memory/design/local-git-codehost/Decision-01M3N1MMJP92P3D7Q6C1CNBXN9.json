@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJP92P3D7Q6C1CNBXN9",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-5",
+  "statement": "The same local proposal and review-receipt mechanism serves `implement-now` code proposals. Agent workers may publish a branch, checks, and review packet. The operator reviews the exact code head **and its actual target ref**, records a receipt, and invokes the local landing command; Argus may present a review request and later observe the result but never calls the merge operation. Under the shared OS account this procedural actor boundary cannot be authenticated. A task proposal normally targets the remote feature-integration branch; a later feature landing may target mainline. The landing operation rechecks the head, checks, target ref, and current review evidence, then atomically updates the target, final proposal state with embedded canonical receipt bytes, reviewed-head archive, and leased proposal-branch deletion. A moved branch or target rejects the whole transaction. Argus journals the proposal and delivery evidence from the local objects and Carina item, rather than a hosted PR URL.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHH8BQ2D9ZVE6ANYFV0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHJB0QSSFNDPJFC5NJ3"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

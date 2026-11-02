@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/tech-design-review-artifacts",
+  "feature": "tech-design-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

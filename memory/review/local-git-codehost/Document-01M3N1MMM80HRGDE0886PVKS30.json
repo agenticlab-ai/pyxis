@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMM80HRGDE0886PVKS30",
+  "kind": "Document",
+  "subject": "review/local-git-codehost",
+  "family": "report-018",
+  "statement": "Draft reviews/018.md",
+  "tags": [
+    "draft-digest:sha256:58fccedfdf2b02d8ec5ca964850839dcc4f6aab89c988b64e85874a50ae2c4c4"
+  ],
+  "body_sha256": "1e203e6c6b2114abab07894d980777d8079738380b5caa2de39259c4ffdfb2a8",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

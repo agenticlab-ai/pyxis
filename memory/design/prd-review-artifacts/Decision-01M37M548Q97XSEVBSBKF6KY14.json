@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M548Q97XSEVBSBKF6KY14",
+  "kind": "Decision",
+  "subject": "design/prd-review-artifacts",
+  "family": "decision.2.1",
+  "statement": "The prd-review artifacts are **typed markdown in the record-class pattern** (design-brainstorm:reviewer-artifacts-tech-design#D-1): one **review report** per subject per moment at **`docs/reviews/<feature>-<NNN>.md`** — rounds, per-finding dispositions, and the verdict history appending *inside* the one artifact, the escalation brief **embedded** as its terminal section, the report riding the subject's introducing PR — and a **calibration table** as versioned, reviewable markdown data at the prd-review skill's own home on the vendor-neutral agent surface — `calibration.md` beside the skill's glue (design-brainstorm:reviewer-artifacts-tech-design#D-2). The schema ships as a versioned template (`review-report/v1`) with a structure checklist, mirroring the proven record classes; mechanization to JSON-native is deliberately parked for the engine era, when a mechanical consumer of findings and measurements exists.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d6e678e8b89b7754288f8bb2c348750142c4d764778ec1b04f8facbd2b44492a",
+    "source-design:888a446fda990afa5ac09cac1250f780e2204032a0d6146d2c459553f1506625",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPV4N3EC1PEBAJCA9385"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRRRQ06M34PKMNDS036PS"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:01Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-review-artifacts.md",
+    "note": "exact Decision evidence at docs/tech-design/prd-review-artifacts.md lines 24-24 in section 2; sha256:d6e678e8b89b7754288f8bb2c348750142c4d764778ec1b04f8facbd2b44492a"
+  }
+}

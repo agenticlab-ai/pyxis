@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/argus-agent-v1",
+  "feature": "argus",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBP9GVZS2V8T41ZKECQ",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "EVAL-5",
+  "statement": "termination",
+  "intent": "cap-hit and decline fixtures",
+  "fit_criterion": "100% of runs end approve*/escalate within 2 rounds; briefs schema-valid",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6308fc75df47834720c25a78e4356155c268d54b3b4327ce7303f1131c45ee43",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.254Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

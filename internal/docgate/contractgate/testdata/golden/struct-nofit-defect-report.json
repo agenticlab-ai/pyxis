@@ -1,0 +1,37 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate contract-gate",
+  "tool_version": "docgate/v1",
+  "feature": "demo",
+  "trigger": "planning-entry",
+  "verdict": "incomplete",
+  "blocking": true,
+  "summary": "blocking contract-scope checks failed: structural-completeness",
+  "evaluated": [
+    {
+      "kind": "prd-source-map",
+      "ref": "docs/prds/demo/effective.source.json",
+      "fingerprint": "sha256:demo0000000000000000000000000000000000000000000000000000000000fp"
+    },
+    {
+      "kind": "serving-design",
+      "ref": "demo-v1",
+      "fingerprint": "sha256:825c83afd03989e44931d1f2c5aaba46d0383d0ef0243f81ca39b83e44fcd1c8"
+    }
+  ],
+  "checks": [
+    {
+      "check": "structural-completeness",
+      "class": "incomplete",
+      "severity": "blocking",
+      "defects": [
+        {
+          "check": "structural-completeness",
+          "offender": "docs/prds/demo/effective.source.json",
+          "reason": "requirement FR-1 carries no fit criterion",
+          "unblock": "give FR-1 a non-empty Fit criterion cell — a requirement with no fit criterion is not plannable (FR-5)"
+        }
+      ]
+    }
+  ]
+}

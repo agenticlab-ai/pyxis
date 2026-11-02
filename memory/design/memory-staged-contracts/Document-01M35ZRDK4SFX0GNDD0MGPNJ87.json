@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRDK4SFX0GNDD0MGPNJ87",
+  "kind": "Document",
+  "subject": "design/memory-staged-contracts",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-staged-contracts.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:dbcfbb6c844172f615881edebb7826c89ef26900efdfd29ad0bcd9f373f9e0b1"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2VJAXN0PB1QF42T7NJQD3AQ"
+    }
+  ],
+  "body_sha256": "dbcfbb6c844172f615881edebb7826c89ef26900efdfd29ad0bcd9f373f9e0b1",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:18Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-staged-contracts.md",
+    "note": "offline reconciliation"
+  }
+}

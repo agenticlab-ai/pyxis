@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRJWPG121S30Z1QXWJQF",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "G1",
+  "statement": "We believe a disciplined design-grilling front half producing a frozen record; expected result: design authoring that never re-interviews and never invents direction",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:48097388cd73631b6416d29a48403683b878056d54ee22c24accf2b559b005e6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.484Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

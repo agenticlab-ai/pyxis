@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M4MM8XFZBBF0CATGRWHVZ082",
+  "kind": "Need",
+  "subject": "prd/prototype",
+  "family": "G1",
+  "statement": "We believe Building a small throwaway version of an idea before its contract is written; expected result: The idea's technical challenges and product conflicts being answered in the contract instead of found after it locks",
+  "fit_criterion": "DOD-2 on the first prototyped feature; the §6.7 review after three",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

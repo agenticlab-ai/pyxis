@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRRMT3A0PZJPKENYXK9",
+  "kind": "Question",
+  "subject": "prd/contract-gate",
+  "family": "Q1",
+  "statement": "The gate's binary home and name — a new `cmd/contractgate` + `internal/contractgate` per the family precedent, versus a docgate verb set (`brainstorm:contract-compiler-2#P-1`)",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:040c64273ae77f8c7c04f24dc98dc5e34cb69ae3ad4d3e5faec85697d3630025",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.672Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

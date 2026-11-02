@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAZ4BQ2A7XT9A8A4G1F",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-12",
+  "statement": "If computed review depth or pass count falls below FR-25, a proposal reaches a zero-pass terminal, or required critical passes share a context/session/output lineage, review different revisions, or count a remediation re-review as an assurance pass, then the system shall refuse review completion and require the complete correctly floored assurance-pass set before the proposal can be accepted",
+  "intent": "proposal remains unreviewed; the violated depth, pass count, revision binding, blindness, or pass-type condition is named",
+  "fit_criterion": "depth-lowering, zero-pass, single-pass-critical, shared-context, output-leakage, mismatched-revision, and remediation-miscount fixtures produce no accepted review evidence and name the exact violated floor",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:24c3c85675df490f174b75d122fb605ffb7d62415cad17e1ba108854ac500dc5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.231Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRASA700CXCGTACS2415",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NR-6",
+  "statement": "Independent review retains fresh context and reviewer separation.",
+  "rationale": "model selection must not weaken review independence",
+  "fit_criterion": "existing impl-review independence/conformance suites remain green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e41268eb267cc886f83e766f1a713557157f9bd7062236ff178782ecdaef6ad",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.225Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

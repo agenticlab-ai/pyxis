@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPWZZPP9QW051RSH8Z8P",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "ABUSE-4",
+  "statement": "escalation flooding — drowning the human in briefs to force rubber-stamping — vector: over-broad breaking classification",
+  "intent": "delegation value destroyed; M3 collapse",
+  "fit_criterion": "D-5 tests as policy; M3 precision measured per window",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d01f7dc191a078acb7240e1c8b4af6493a9132d1d43ad12647d69162b417db12",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.759Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRNGZ70DSRNFRBRTK1VE",
+  "kind": "Expectation",
+  "subject": "prd/workbench-ui",
+  "family": "DOD-5",
+  "statement": "Shipped through the factory pipeline from an approved technical design",
+  "intent": "header Target release; the repo's design-first rule",
+  "fit_criterion": "the design, its plan, and the merged task PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e882d23300bf559e4fcb95909ff3a52e763dfea4331eca38085811cdf475e4c3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.568Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

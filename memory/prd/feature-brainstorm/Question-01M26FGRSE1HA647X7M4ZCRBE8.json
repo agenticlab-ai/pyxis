@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSE1HA647X7M4ZCRBE8",
+  "kind": "Question",
+  "subject": "prd/feature-brainstorm",
+  "family": "Q1",
+  "statement": "The record's path convention, and the home of a record whose verdict never feeds a PRD (needs-investigation · covered · abandoned) — the fed-record lifecycle itself is decided: it rides the 000-base's introducing PR and freezes at that merge (§5.4, §7.3)",
+  "intent": "@mdarabi",
+  "rationale": "open",
+  "fit_criterion": "Record-contract phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:afda42d63c0c24ac020e1ba794cb75f1bd9c0e3bf9807d52e280f63bad18b0d9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.694Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

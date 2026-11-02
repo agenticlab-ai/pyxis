@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMKC77BDX5DRXTRMG9S4",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Require consistency verification from a clone of the configured origin and an explicit disclaimer of approver and repository identity authentication.",
+  "intent": "operator",
+  "rationale": "A clone can validate retained receipt, reviewed-head, and landing bytes without proving an independent origin identity.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMKBEDS1H12RBXWHNH1S"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

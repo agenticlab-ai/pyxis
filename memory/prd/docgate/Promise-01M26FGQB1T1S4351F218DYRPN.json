@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB1T1S4351F218DYRPN",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-38",
+  "statement": "When constructing a mismatch key, docgate shall encode each compared scalar as canonical JSON: a projected cell is the exact UTF-8 string returned after the ledger's line-ending/trailing-line-space normalization plus registered table decoding (outer delimiters removed and leading/trailing cell whitespace trimmed), a source-map string is its exact decoded JSON string, a boolean is literal `true` or `false`, and absence is `null`; it shall apply no further case folding, Unicode normalization, internal-whitespace folding, Markdown-markup normalization, or empty/absent equivalence.",
+  "rationale": "an undefined “canonical value” lets two implementations disagree on whether historical debt changed",
+  "fit_criterion": "CRLF versus LF, trailing line whitespace, and delimiter-adjacent whitespace normalize green; case change, internal whitespace change, composed versus decomposed Unicode, Markdown markup change, and empty string versus absent are each red; the baseline golden encodes absence as JSON `null`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d55a10c2d5765ff4f344bb79b87d25eed1553fba30b0a98503dcfe6f546ffe79",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.209Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

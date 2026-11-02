@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0W1BJD8T4THFESA00QV1",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.18.1",
+  "statement": "The feature-draft amendment and this successor land as the\nindependently reviewed contract-only T13 proposal. That proposal adds no local\nconfiguration selection, receipt acceptance, or landing code. T1 and T3 start\nonly after its mainline merge and cite the merged source. Implementation-task\nand final-feature authorization require their own T14 contract before T6.\nThis preserves the approved plan's contract-first order (#DINV-16).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2e40d3d84b0f020b71b9553c5ce2362908a6ab9ebb55859885bf8ff32b640580",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:22Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 374-379 in section 3.18; sha256:2e40d3d84b0f020b71b9553c5ce2362908a6ab9ebb55859885bf8ff32b640580"
+  }
+}

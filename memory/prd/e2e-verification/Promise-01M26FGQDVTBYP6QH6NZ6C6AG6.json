@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDVTBYP6QH6NZ6C6AG6",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NR-3",
+  "statement": "The repo's existing CI contexts (docs-gate, Go build/test) stay green when the skills land",
+  "rationale": "the skills are additive tooling; landing them must not perturb existing gates",
+  "fit_criterion": "all pre-existing required contexts green on the introducing and implementing PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb5566a6e4de980bf1e227973d44e00c3a3082e0c54d066e70214c762018dfcf",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.299Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

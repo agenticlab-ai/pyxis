@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9VK82VJBRGR1WW8TF9",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-3",
+  "statement": "When a task assessment is complete, the planning system shall derive `capability`, `deliberation`, `context`, and `assurance` minimums from the normative execution-profile vocabulary by a versioned max-of-floors policy plus named interaction promotions.",
+  "rationale": "independent requirements avoid false scalar precision",
+  "fit_criterion": "every derivation golden produces only accepted values plus the applicable policy version; no input is reduced by another input",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:46676a8ff97f47d662ef53fd1d997173855207e286a98c7823b2eb2caea07619",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.195Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

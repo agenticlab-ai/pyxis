@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M38ZQZA8RAKEGDNSECDT44R2",
+  "kind": "Question",
+  "subject": "prd/feature-draft",
+  "family": "Q6",
+  "statement": "How do a draft-born plan's traces resolve against requirements and decisions that live in memory, given today's plan traces cite document anchors (brainstorm:feature-draft#P-3, brainstorm:feature-draft#D-24)?",
+  "intent": "tech spec author",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:48d045f845bcb5f8bad0ac3425f4b1fb44bf69d2acd0cf4b50c7895dee091036",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:47Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "captured from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

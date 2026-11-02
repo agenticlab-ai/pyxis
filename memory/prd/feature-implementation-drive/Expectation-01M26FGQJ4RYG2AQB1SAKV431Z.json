@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQJ4RYG2AQB1SAKV431Z",
+  "kind": "Expectation",
+  "subject": "prd/feature-implementation-drive",
+  "family": "DOD-7",
+  "statement": "Required events produce an auditable feature trace and deterministic transitions consume zero inference.",
+  "intent": "EVT-1..EVT-8, NFR-7",
+  "fit_criterion": "event-schema fixtures + token attribution report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d5ff0c330e8c83dc0ddeb0ed29bd9137e3a47daa38dbdbfff0fcb7c6e89c348a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.436Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

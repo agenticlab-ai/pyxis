@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ42BEYJ8TG0W3B2E6Z2",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-4",
+  "statement": "Where a bulletin is `blocking` tier, `pyxis inbox` shall emit it on every session until its clearing condition is met, regardless of seen-ledger or mute state.",
+  "rationale": "the emergency lane that cannot be silenced",
+  "fit_criterion": "a `blocking` bulletin re-emits across repeated runs and while muted; it stops only when its stated condition is satisfied in a fixture",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8647a6cb1d05653dc99c5040af5365a68ce2953ddbe0a70159040d29c92d3d86",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.986Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

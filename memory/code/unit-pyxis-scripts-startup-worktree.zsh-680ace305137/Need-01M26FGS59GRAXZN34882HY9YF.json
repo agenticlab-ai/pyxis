@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGS59GRAXZN34882HY9YF",
+  "kind": "Need",
+  "subject": "code/unit-pyxis-scripts-startup-worktree.zsh-680ace305137",
+  "family": "anchor",
+  "statement": "Production code unit .pyxis/scripts/startup/worktree.zsh exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at .pyxis/scripts/startup/worktree.zsh.",
+  "tags": [
+    "code:.pyxis/scripts/startup/worktree.zsh",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.073Z",
+  "provenance": {
+    "source": "code:.pyxis/scripts/startup/worktree.zsh",
+    "commit": "b97275899ba6c9f54f8f5bf704f868d48e92554b",
+    "note": "offline code inventory 89b4c8238255a9e671f7e1a876f922c0382da8efb4b3e712eb28421b4d6004fc"
+  }
+}

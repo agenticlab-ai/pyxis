@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA53KAC08XJ9RJYDVNW",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-5",
+  "statement": "This ledger's own projection is generated and verified by the shipped tool",
+  "intent": "FR-1, FR-3",
+  "fit_criterion": "committed `effective.*` for `docs/prds/docgate/` passing `verify-generated`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:be0d2a7c07dc83c716bd18049700fc6bbeed48bcc23557d4518cb5ef8dc89822",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.181Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

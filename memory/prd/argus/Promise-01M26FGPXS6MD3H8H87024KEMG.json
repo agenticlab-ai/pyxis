@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXS6MD3H8H87024KEMG",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-5",
+  "statement": "When making an assumption, Argus shall verify it contradicts no governance-tier content, touches standing feature-tier content only through its sanctioned evolution channel, and breaks no unamended contract.",
+  "rationale": "the legality tests (brainstorm:autonomous-developer#D-5)",
+  "fit_criterion": "EVAL-2 thresholds met",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:368d4b635b4f762e19eb4ea98cd24f6cc6f3a705ef3fe11cd13423ee3eec2c09",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.785Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

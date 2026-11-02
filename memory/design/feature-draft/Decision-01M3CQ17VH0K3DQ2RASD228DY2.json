@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CQ17VH0K3DQ2RASD228DY2",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-checkpoint-inventory",
+  "statement": "The first three locked draft-born features form a fixed checkpoint cohort; record it once after their plan tasks close.",
+  "intent": "Preserve a reproducible post-launch inventory for the operator verdict.",
+  "rationale": "The checkpoint reads annotated v1 locks on pinned mainline, merged plan task issues, retained reopen events, and corpus paths; later locks cannot change the first cohort.",
+  "fit_criterion": "A three-feature fixture writes one inventory with the feature list, corpus count, and reopens by cause; a repeated run writes nothing.",
+  "tags": [
+    "code:internal/draft/checkpoint"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T16:40:31Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

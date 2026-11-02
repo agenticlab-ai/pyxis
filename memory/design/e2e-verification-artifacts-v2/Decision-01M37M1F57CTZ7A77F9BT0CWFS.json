@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1F57CTZ7A77F9BT0CWFS",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "decision.3.5.1",
+  "statement": "the class ships a **checker** enforcing exactly the structurally decidable rules below, and nothing requiring judgment. It is the class's own well-formedness surface, not a docgate verb and wired to no gate, until the class graduates (§7 Q1). **e2e-design runs it before emitting a doc and e2e-review runs it over the subject** — that invocation is behavior, carried by `design:e2e-verification-skills-v2`; the rules themselves are this document's.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d706640058298445fef38aafda8109c4dc6070067e7250512e8bf0b8a3e3bc76",
+    "source-design:43e2ab94e5e0be7a64141885d2fe583c7ca1bfb9079b8afc66be84d8856cb948",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQ4X35QBSWQSGQEEKC2"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQXR7H76CEY5F92599QMX"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:01Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-artifacts-v2.md lines 130-130 in section 3.5; sha256:d706640058298445fef38aafda8109c4dc6070067e7250512e8bf0b8a3e3bc76"
+  }
+}

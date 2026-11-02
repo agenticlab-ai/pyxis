@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4KS52YTBAG910ZSWEDRC",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-7",
+  "statement": "When a candidate removes a selected identity, the system shall accept retirement authority only when the exact authority is already active in the trusted comparison base and unchanged in the candidate.",
+  "rationale": "A destructive proposal cannot authorize itself.",
+  "fit_criterion": "Same-proposal and candidate-modified authority refuse; the identical deletion passes only after authority lands in the base.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17e6e173e22eef51a1527f40e577316fdf998e931bcfc5cb1d10d8ff4dc8fdf9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:23Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTEEW0TYECCS5DJWE62",
+  "kind": "Decision",
+  "subject": "design/plan-new-routed-demand",
+  "family": "decision.3.3.1",
+  "statement": "Plangate fold parses plan/v2 closed, resolves every citation, invokes the sole evaluator under the pinned policy, materializes the generated profile/capsule, and rejects any missing/unknown value, native identifier, absent evidence, downward assurance change, or hand-edited generated mismatch before checkpoint presentation. The operator then applies the FR-30 rubric task by task: every axis and raise must be substantively supported by one or more cited anchors; irrelevant, contradictory, or partial support returns the whole plan to the edit loop.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c598a6548b4e9828e3f20c427c6f210011d9694d685cefc324dac7ddfaa9906f",
+    "source-design:2ab87137b5d7a8635d2a5dc697e7525dd8de80f53ec455b977d7afc3d7033dc2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTN5XVD1NFJ51EMC2RJ8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.678Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-new-routed-demand.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/plan-new-routed-demand.md lines 92-92 in section 3.3; sha256:c598a6548b4e9828e3f20c427c6f210011d9694d685cefc324dac7ddfaa9906f"
+  }
+}

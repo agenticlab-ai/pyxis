@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQT1TZ2H26GZZJ76TZ1X",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-46",
+  "statement": "When the executor is invoked for review-only recovery, it shall require a `drive_round_id` and closed non-empty set of selected in-scope review-obligation IDs, exact-read only that selected frontier, perform at most the FR-35 attempt for each selected obligation, and reconcile every selected member before a clean terminal; IDs that are unknown, verified, out of scope, duplicated, or not pending shall fail the invocation closed without widening the scan. The unattended driver owns durable recovery counts/bounds and issues at most one such invocation per round; the executor shall never infer eligibility from exit code, scan unselected pending obligations, redispatch succeeded implementation, or report clean while any selected obligation remains pending.",
+  "rationale": "the provider owns attempts but not driver spend/exhaustion; an unbounded scan defeats mixed eligible/exhausted recovery and creates N-sweep races",
+  "fit_criterion": "multi-obligation fixtures prove one invocation/round, one attempt maximum per selected member, zero attempts for unselected/exhausted members, exact failure for empty/duplicate/unknown/verified/out-of-scope IDs, zero implementation activity, exit 1 while any selected member remains pending, and exit 0 only when every selected member verifies",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7e42d564bfb555259fbd6effbddf6c3ce27c7d8a906926026bddfe0c7ee2744",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.689Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9YC11VPESJ425J7GKB",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NR-2",
+  "statement": "The downstream planner's governing-input contract",
+  "rationale": "the planner still consumes an approved design without a new mandatory input it cannot handle",
+  "fit_criterion": "the planner's input contract is unbroken by the split",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c1213c51613352b192e4b7fdba2a5e84dfe128f5ae4438ca44a8c0e5a6acf1b1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.174Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

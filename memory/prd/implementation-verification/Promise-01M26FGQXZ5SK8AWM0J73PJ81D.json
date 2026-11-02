@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXZ5SK8AWM0J73PJ81D",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-8",
+  "statement": "If invoked while another invocation holds the same workspace, then the system shall refuse the second invocation with a busy error — no interleaved rung execution or shared incremental state",
+  "intent": "busy refusal (no verdict consumed)",
+  "fit_criterion": "the concurrent-invocation fixture: the second invocation refuses; the first completes with a verdict equal to an uncontended run's",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3840edd486473c32c861c53f39bb35ead8dd98cc3bf991c535a1c1902c93b441",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.815Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

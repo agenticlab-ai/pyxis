@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96HM9K53HWRBAPDVQYN",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "DOD-6",
+  "statement": "Operator can inspect and control the installation",
+  "intent": "FR-11, FR-14, §6.6",
+  "fit_criterion": "CLI usage/runbook and status demonstration",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

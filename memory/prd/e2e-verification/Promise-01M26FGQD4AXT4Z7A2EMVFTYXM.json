@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD4AXT4Z7A2EMVFTYXM",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-3",
+  "statement": "The coverage list shall be derived from the feature's PRD + technical design + built code, requiring no structured definition-of-done.",
+  "rationale": "buildable today with no blocking dependency on the not-yet-built structured DoD",
+  "fit_criterion": "on the fixtures, coverage is produced from PRD + design + code alone; no invocation path reads a structured-DoD artifact",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:12959e9fc2a70209a83c3eb0447ea99964f761ac0f6c099166cb97751e97f8e2",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.276Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

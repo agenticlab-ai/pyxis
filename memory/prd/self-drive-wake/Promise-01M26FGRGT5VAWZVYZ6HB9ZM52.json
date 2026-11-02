@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGT5VAWZVYZ6HB9ZM52",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NFR-5",
+  "statement": "A new medium adapter shall be buildable against the port from its conformance kit alone.",
+  "intent": "Maintainability",
+  "fit_criterion": "the kit runs green on both shipped adapters and documents every asserted behavior (AP-3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e8961a751e31eebe43ddf6ca567af772956714981c8f6e3770255b8df075b3ab",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.418Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

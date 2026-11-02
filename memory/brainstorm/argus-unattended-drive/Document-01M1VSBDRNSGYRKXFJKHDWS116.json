@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBDRNSGYRKXFJKHDWS116",
+  "kind": "Document",
+  "subject": "brainstorm/argus-unattended-drive",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/argus-unattended-drive.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "0eb2a0e24d221f58fb979618517699883e35784eaf20f8de2a9f9ffe674a394a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:15Z",
+  "provenance": {
+    "source": "docs/brainstorms/argus-unattended-drive.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

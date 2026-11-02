@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAQQ2MR4QEVWY43PCME",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-29",
+  "statement": "When invoked as `pre-push` by the push hook, docgate shall read the hook's ref lines from stdin and, when every pushed ref is a deletion (an all-zeros local SHA), pass without running content checks, saying so; when any non-deletion ref is pushed — or stdin carries no parseable ref lines — it shall run the merge-base gate exactly as today.",
+  "rationale": "a ref deletion carries no content to gate; everything else fails closed to the full gate (issue #65)",
+  "fit_criterion": "fixtures: a deletion-only stdin exits 0 with the skip notice; a mixed push runs the gate; a content push keeps today's verdicts; empty or malformed stdin runs the gate; the shim stays delegate-only and bash-3.2-clean",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b6d32d59c411b11c05cdbba873a622cec1befcad3b1a3a09b7fd11fc5d980e03",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.199Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

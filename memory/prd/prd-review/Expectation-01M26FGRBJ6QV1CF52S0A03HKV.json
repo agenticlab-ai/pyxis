@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBJ6QV1CF52S0A03HKV",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "EVAL-1",
+  "statement": "anti-nitpick precision",
+  "intent": "clean and near-clean document fixtures",
+  "fit_criterion": "zero advisory-storms (≤ 2 advisories on the clean fixture); approve recorded honestly",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c23df70e81d6bea66605818f82d01cc01b19bf5831764586faffbb15025340a5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.25Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

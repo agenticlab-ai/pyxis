@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ4D0WGBE440WNYYV90P",
+  "kind": "Need",
+  "subject": "prd/channel-inbox",
+  "family": "J3",
+  "statement": "When a notification check runs at the start of my session, I want have it never cost me — no block, no slowdown, no noise when there's nothing to say, so I can keep the channel on instead of disabling it",
+  "rationale": "`brainstorm:channel-inbox#D-3`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c6a84fbbda21410c6be99f74b80f16e45671a14b11a767bebebcfc6b102d66a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.997Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

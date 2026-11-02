@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5BM9MGSWAAH1RVV3XF",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "FR-5",
+  "statement": "When it loads a configuration, the engine shall reject a cross-field-inconsistent configuration — a path escaping the repository root, a reference to an absent surface — with a named error and no partial application.",
+  "rationale": "config coherence folds into the one job (D-2); extends the closed-schema contract (INV-32)",
+  "fit_criterion": "each malformed-config fixture is refused by name; no partial write or resolution occurs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d81de10c377cf03dd7f38c04ab524ae5ce7a5f41ee903d34904d153b4eb91ada",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.027Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

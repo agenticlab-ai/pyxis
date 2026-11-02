@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGVY7DHTFV4C3XTXF1E",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-16",
+  "statement": "Where this contract names \"the operator\" as the deciding party, it shall denote the session's **decision principal** — the human operator, or the Argus agent where prd:argus grants it — and every integrity property stated of the operator (a live-session answer, no decision from corpus or input, the explicit gate verdict, governed-document immutability) shall bind the principal identically, each decision recording which principal ruled; when the principal is an agent, the one-question-at-a-time interview (FR-4) is realized as its recorded, attributed assumption regime (assume within the legality tests, else escalate — prd:argus), and the human-collaboration mechanics that presuppose a person between turns (record co-edits FR-7, silence handling UB-1) are the human-principal realization and do not bind the agent.",
+  "rationale": "the stage-1 Argus seam (design-brainstorm:argus-tech-design#D-5): a granted agent principal drives the interview without weakening integrity — the injection and no-corpus-decision guarantees matter *more* for an agent, and one definition keeps the whole discipline consistent rather than half-re-anchored",
+  "fit_criterion": "on the agent-principal fixtures, every recorded decision carries a principal identity and a live-session-or-legality-passed-assumption anchor and zero decisions trace to corpus/input content; the human-principal fixtures behave identically to before this amendment (EVAL-6; NR-class parity)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:57efabbe41e3914494d165a2350fd041dc246039454770965eb654a4da1d0627",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.395Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

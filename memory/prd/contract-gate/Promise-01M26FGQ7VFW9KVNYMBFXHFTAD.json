@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7VFW9KVNYMBFXHFTAD",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-17",
+  "statement": "When one or more valid dispositions clear stale edges, the gate shall preserve the underlying stale flags, include each applied disposition id and exact edge in the structured verdict and EVT-5 audit output, and still return `clean` only when every other currency and non-currency check passes.",
+  "rationale": "a cleared edge must remain visible and auditable without falsifying the shared graph or over-claiming the whole contract",
+  "fit_criterion": "a mixed fixture reports every applied disposition, preserves every source stale flag, and returns clean only with no remaining defect; repeated runs produce the same ordered applied-disposition set",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:60535b3e765740eaab8e3dc93bc84ebc1258da2fe54236cdc5b345e1ca9467ce",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.107Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

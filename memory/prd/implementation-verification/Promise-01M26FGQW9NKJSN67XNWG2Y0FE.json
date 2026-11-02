@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQW9NKJSN67XNWG2Y0FE",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "EVT-1",
+  "statement": "harness_run fires when every invocation completes (any verdict state)",
+  "intent": "run_id: string, workspace_id: string, invocation_context: string (opaque, host-supplied), head_sha: string, diff_base: string, manifest_hash: string, baseline_hash: string, mode: full·incremental, verdict: enum, per-rung: result+duration_ms, verb_runs: int, wall_ms: int",
+  "fit_criterion": "M1 (joined to tasks via the host's dogfood run record), M3 (runs paired by workspace_id)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:781a065748ee84bfa685735ed4d56e3b7e183511ae4336e34c6bc18312c46b07",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.761Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

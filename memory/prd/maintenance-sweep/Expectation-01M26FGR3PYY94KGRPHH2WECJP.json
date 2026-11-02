@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR3PYY94KGRPHH2WECJP",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-sweep",
+  "family": "DOD-3",
+  "statement": "The live bar: a full sweep whose evaluated state (§4.1) is a current mainline checkout completes; every emission is a verified true condition or an explicitly waiver-classified one; zero mutations observed (M2 = 0 at this moment)",
+  "intent": "§3.2 M2; §3.3; NR-1",
+  "fit_criterion": "the live sweep report + the per-emission verification notes riding the introducing PR/epic",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cb33eaab42dbbbaf344a51b3a9fdb865ef8e05edf0f5a725c083f4008415744d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.998Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

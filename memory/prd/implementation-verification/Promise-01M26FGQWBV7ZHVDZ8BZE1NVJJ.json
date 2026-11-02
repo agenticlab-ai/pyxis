@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWBV7ZHVDZ8BZE1NVJJ",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "EVT-3",
+  "statement": "disposition_record fires when a dispute is opened, and again when it is dispositioned",
+  "intent": "finding_ref: string, status: opened·dispositioned, verdict: upheld · wrong_block · stall_defect_fixed · stall_upheld_error, action: string",
+  "fit_criterion": "§3.3 guardrails (both), DOD-7",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0b515d7afd841e89002b16ce67c3cc089e64c0d352b157bf7bb72aa4b1d24860",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.763Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

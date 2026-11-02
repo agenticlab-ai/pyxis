@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQM7TFAES3TNY8NSJWHR",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-1",
+  "statement": "If If kickoff names a missing, ungated, or non-frozen feature plan, then the system shall refuse ownership and task execution with the failed precondition and remedy",
+  "intent": "invalid-feature error",
+  "fit_criterion": "100% invalid fixtures refuse with zero durable execution artifacts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b4e574d6238c4af64de7c0d1b6856efcd44dfe1748938ce6adce70c21d2261d5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.503Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

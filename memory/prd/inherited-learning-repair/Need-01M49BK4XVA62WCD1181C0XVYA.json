@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M49BK4XVA62WCD1181C0XVYA",
+  "kind": "Need",
+  "subject": "prd/inherited-learning-repair",
+  "family": "G1",
+  "statement": "We believe Shared ownership replaces independent repairs; expected result: One repair for concurrent callers",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

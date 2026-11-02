@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGREWT87PCYQ74A2MCWC3",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "M4",
+  "statement": "M4: G1",
+  "intent": "human-caused changes that resolve back to a ledger entry",
+  "fit_criterion": "a human-caused change resolves to its entry (`Learned-from: review-thread` points somewhere real) — same checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a94c49a29314f1f153c87aa54a99506fe601d1f688a4a82b78bf62c42157317a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.356Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

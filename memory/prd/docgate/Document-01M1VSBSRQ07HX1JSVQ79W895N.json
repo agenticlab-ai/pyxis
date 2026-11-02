@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBSRQ07HX1JSVQ79W895N",
+  "kind": "Document",
+  "subject": "prd/docgate",
+  "family": "amendment-009",
+  "statement": "Imported Pyxis source document: docs/prds/docgate/009-envelope-v2-tracking.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "da9e925d6106aa4e865b225f68ceb192604918c5ca86931ef4abb7e54f40610c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:27Z",
+  "provenance": {
+    "source": "docs/prds/docgate/009-envelope-v2-tracking.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

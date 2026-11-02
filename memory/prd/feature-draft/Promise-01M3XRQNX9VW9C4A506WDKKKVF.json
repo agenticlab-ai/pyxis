@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQNX9VW9C4A506WDKKKVF",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-55",
+  "statement": "While the switch-over is in effect, the feature-authoring workflow shall use feature drafts for new feature contracts. Where the legacy document gate remains enabled for that cutover, the system shall refuse new-feature contract work proposed as PRD ledger entries, technical designs, brainstorm records, or review reports with the feature-draft remedy, while accepting plan documents and the permitted evolution of existing document-pipeline features. The Pyxis-source bypass in FR-54 shall remain in effect.",
+  "rationale": "Move new contracts to memory without reinstating the retired source gate or changing existing-feature authoring rules",
+  "fit_criterion": "An enabled-cutover new-feature fixture refuses each corpus-document kind, including a proposal opened before cutover, and accepts a plan; a permitted existing-feature amendment or successor remains accepted. Source inspection and gate fixtures establish that the workflow directs new features to drafts without activating automated legacy refusals. Existing merged features retain permitted typed amendments and design supersession under their authoring rules; no feature is automatically migrated.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4e34f730d35d2a5e58cbaf35993e47f0e49f6baf655b1d3d179aa88394a4864",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZMAN1BZ1DE2Y36QWT90N5"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:21Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

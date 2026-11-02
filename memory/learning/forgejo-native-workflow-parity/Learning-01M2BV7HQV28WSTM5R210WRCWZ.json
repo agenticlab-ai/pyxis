@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BV7HQV28WSTM5R210WRCWZ",
+  "kind": "Learning",
+  "subject": "learning/forgejo-native-workflow-parity",
+  "statement": "Forgejo source workflows are materialized explicitly from the selected source bindings and audited as a full native workflow inventory. The installed binary-only gate remains a separate payload surface. Generated system-release mirrors dispatch for default R2 distribution and for explicit repository distribution, with different required-binding guards and only the credential mappings each variant needs.",
+  "intent": "Keep native Forgejo automation equivalent to the supported GitHub workflow responsibilities without confusing source-toolchain jobs with installed-repository verification or weakening checks to fit a minimal runner.",
+  "rationale": "Mechanical workflow renaming is insufficient: Forgejo uses its own event context, runner labels, action compatibility, credential wiring, and artifact transport. Source tests retain their toolchain and confinement requirements, and existing operator workflows must not be overwritten. The incoming R2 distribution policy also requires source-only mirrors to run without a repository distribution binding, while a previously explicit repository mirror must refuse if its binding disappears.",
+  "fit_criterion": "The parity checker accepts the actual materialized nine-workflow source inventory and rejects drift mutations; native required check names match the installed workflow; rendered R2/repository/shared-token variants have manual-dispatch eligibility and exact credential environments; generated commands refuse removed required bindings, and the real R2 pre-publication guard names missing R2 configuration before network I/O.",
+  "learned_from": [
+    "internal/ciparity/forgejo_test.go#TestMaterializedForgejoSourceWorkflowInventory",
+    "internal/ciparity/forgejo_test.go#TestForgejoWorkflowMutationsFailParity",
+    "internal/wire/forgejo_test.go#TestForgejoRequiredContextMatchesInstalledWorkflow",
+    "internal/release/legacy_workflows_test.go#TestSourceWorkflowMaterializationRequiresExplicitSelection",
+    "internal/release/workflow_boundaries_test.go#TestSourceWorkflowTemplatesStayOutOfInstalledPayload",
+    "cmd/pyxis-release/integrations_test.go#TestGeneratedSystemMirrorRoutesR2AndRepositoryDistribution"
+  ],
+  "tags": [
+    "forgejo",
+    "ci-parity",
+    "source-workflows",
+    "code:internal/ciparity",
+    "code:internal/release",
+    "code:internal/payload",
+    "code:internal/wire",
+    "code:cmd/pyxis-release"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:18:56Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/README.md",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V18D3K9WTEG3YAW0SD7NSB",
+  "kind": "Decision",
+  "subject": "prd/parallel-memory",
+  "family": "R4",
+  "statement": "Mitigate partial policy authority with complete preflight, guarded atomic member writes, marker-last migration, and fail-closed committed policy checks.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The approved writer owns only fixed policy paths, refuses arbitrary dirty edits and moved HEAD, pins directory descriptors, and permits retry only from the exact original or planned bytes. Output failure cannot report success.",
+  "fit_criterion": "Deterministic interruption and concurrent-edit tests must refuse partial sets; exact retries finish only planned writes and a completed retry writes zero files.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:7137635f8c663a8f8827c9a1616228b9dc02ae2a629f95907cc2c986020bd386",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:52:52Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0"
+  }
+}

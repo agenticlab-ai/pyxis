@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBMPJ7SQZFXD4FETN4FPC",
+  "kind": "Document",
+  "subject": "plan/ecosystem-help",
+  "family": "plan-001",
+  "statement": "Imported Pyxis source document: docs/plans/ecosystem-help/001-plan.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/plans",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "fb6c3d8cb4b170e6b25a1c9e112aaf8be7460fb1851c290d676d11aaa0c10be9",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:22Z",
+  "provenance": {
+    "source": "docs/plans/ecosystem-help/001-plan.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

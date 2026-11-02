@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZMJB7H9QSCVSMSSK2FPWY",
+  "kind": "Document",
+  "subject": "brainstorm/impl-review-tech-design",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/impl-review-tech-design.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:dbc4454e0e20762b04a50e73e61adcee0a45dbb521147ab736942e39e4faef83"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBFJ0Z2FR6PAPES7E20VC"
+    }
+  ],
+  "body_sha256": "dbc4454e0e20762b04a50e73e61adcee0a45dbb521147ab736942e39e4faef83",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:12Z",
+  "provenance": {
+    "source": "docs/brainstorms/impl-review-tech-design.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGXJ260JS7MDG2DS2H8",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-18",
+  "statement": "While interviewing a human decision principal (the human realization of FR-4 — FR-16), the skill shall present every question turn in the principal's register rather than the record's: the question phrased in plain language with every house term or corpus anchor glossed inline (never a bare `F-n`/`D-n`/document reference), grounded in one concrete example — looked up from the corpus, code, or prior records where one exists, marked hypothetical otherwise, or replaced by an explicit `no example: \u003creason\u003e` line when no illustrative case exists — and carrying an enumerated option set in which every option states its outcome on that same example (outcomes pairwise distinct, the FR-4 recommendation marked among them), or one to two sample answers with their meaning where the question is open-form; the record keeps its own register (NFR-2) untouched.",
+  "rationale": "a question the principal cannot cheaply parse is answered by laborious decoding or by rubber-stamping the recommendation (R3), hollowing the G3 experience the stage exists to protect; one example threaded through every option makes the options comparable — same scenario, divergent endings — and an interviewer that cannot instantiate its options on a concrete case does not yet understand its own question (operator ruling 2026-07-30)",
+  "fit_criterion": "across the fixture corpus, 100% of human-principal question turns carry the form — plain-language question, example or typed skip, enumerated options each stating its outcome on the turn's example (or sample answers for open-form), recommendation marked; zero turns present a corpus anchor without its inline gloss; zero example-bearing turns where two options share an outcome (EVAL-7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5635dcd335e7101716f09d5e6994da3e2c86e7fb89a8ebf335f5c140ff33a0a1",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.397Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

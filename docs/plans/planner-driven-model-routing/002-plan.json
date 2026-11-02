@@ -1,0 +1,748 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Planner-driven model routing — plan 002",
+  "feature": "planner-driven-model-routing",
+  "prd": "docs/prds/planner-driven-model-routing",
+  "design": "docs/tech-design/native-routing-policy-v1.md",
+  "plan_version": "002",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Resolve semantic demand to qualified harness-native profiles",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Admit only closed, current, operator-qualified native catalogs",
+      "goal": "One closed validator admits a harness-role catalog only when every native profile is currently qualified for the exact adapter generation by operator-authorized evidence over all four semantic components.",
+      "current": "Each runtime adapter carries an in-code rung ladder whose entries need no qualification identity, validity window, component claims, operator authorization, or generation binding, and no shared catalog schema exists.",
+      "desired": "A catalog and every referenced qualification parse closed and validate as one unit against a trusted clock, the exact adapter generation, and repository authorization. Duplicate identities or cost ranks, unknown native values or controls, raw arguments, missing or insufficient claims, self-declared evidence, expiry, invalidation, and an ambiguous strongest profile invalidate the complete harness-role catalog with typed diagnostics and no partial candidate set.",
+      "scope": [
+        "Define the versioned catalog, entry, qualification, per-component claim, validity, invalidation, authorization, and strongest-profile contracts.",
+        "Validate native values and typed controls through a consumer-owned adapter capability without importing any adapter implementation.",
+        "Bind qualification to harness, role, profile, launch capture, adapter generation, evaluator versions, evidence digests, trusted time, and operator proof.",
+        "Prove the complete malformed, stale, insufficient, injected, self-declared, and ambiguous policy corpus."
+      ],
+      "out_of_scope": [
+        "Dominance, candidate selection, repository override precedence, native launch construction, and evidence retention.",
+        "Automatically qualifying a newly released model or trusting provider/model self-description."
+      ],
+      "acceptance": [
+        "A complete qualified catalog for each role validates only when every entry has four sufficient component claims, a unique identity and cost rank, a current validity window, an exact adapter generation, a launch-capture digest, and operator authorization.",
+        "Unknown keys, enum values, native values, typed controls, qualification methods, evaluator versions, and raw launch arguments each reject the entire affected catalog and name harness, role, profile, qualification, and defect.",
+        "Missing, expired, invalidated, wrong-generation, component-insufficient, self-declared, duplicate-rank, and ambiguous-strongest fixtures return zero usable candidates.",
+        "Reordered catalog fields, entries, and qualification claims produce the same canonical policy identity and validation result."
+      ],
+      "key_interfaces": [
+        "`Catalog`, `CatalogEntry`, `Qualification`, `QualificationClaim`, `Validity`, `AuthorizationProof`",
+        "`NativeCapability.ValidateProfile(CatalogEntry)`",
+        "`ValidateCatalog(Catalog, QualificationSet, NativeCapability, TrustedClock, AuthorizationPolicy)`",
+        "`native-routing-catalog/v1`, `native-profile-qualification/v1`"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/FR-12",
+        "prd:planner-driven-model-routing/UB-4",
+        "prd:planner-driven-model-routing/ABUSE-1",
+        "prd:planner-driven-model-routing/ABUSE-4",
+        "prd:planner-driven-model-routing/NFR-3",
+        "design:native-routing-policy-v1#3.2",
+        "design:native-routing-policy-v1#3.9",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#A-1",
+        "design:native-routing-policy-v1#A-4"
+      ],
+      "touches": [
+        "internal/nativerouting catalog schema",
+        "internal/nativerouting qualification schema and validator",
+        "native-routing policy and qualification fixtures"
+      ],
+      "size_band": {
+        "lo": 240,
+        "hi": 300
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Resolve one harness-role catalog by componentwise dominance",
+      "goal": "A pure shared resolver converts verified semantic demand into the unique least-cost qualified profile for one already-selected harness and role, or a typed unsupported result, without inference or network access.",
+      "current": "The executor asks an adapter's `TierMap` to clamp one integer rung directly to a model and effort pair; the adapters use different ladders and cannot express independent semantic minima, promotion, unsupported components, or role separation.",
+      "desired": "Normal resolution filters one validated catalog by four-component dominance, selects its unique cheapest rank, and returns exact or promoted with every surplus component named. Strongest-satisfying mode changes only candidate preference inside the same harness-role catalog. No satisfying candidate returns unsupported with every unmet component and no native profile; input order never changes the canonical result.",
+      "scope": [
+        "Implement the closed request and exact, promoted, unsupported, and policy-invalid result grammar over verified execution demand.",
+        "Implement componentwise dominance, unique least-cost ordering, promotion reporting, unmet-component reporting, and strongest-satisfying mode.",
+        "Define the consumer-side catalog-provider and typed launch-builder contracts that every runtime adapter implements.",
+        "Prove resolver purity, determinism, role separation, harness immutability, and zero partial resolution."
+      ],
+      "out_of_scope": [
+        "Selecting or probing a harness, reading task prose, persisting route evidence, orchestrating review passes, and invoking a model.",
+        "Supplying default or repository catalogs; later tasks implement the data owners."
+      ],
+      "acceptance": [
+        "Exhaustive profile fixtures select the unique lowest-cost qualified candidate that dominates capability, deliberation, context, and assurance; no surplus component compensates for a deficit.",
+        "Exact and promoted results carry the complete requested profile, policy identity, harness, role, native profile, and precisely the promoted components; unsupported carries every unmet component and no native profile.",
+        "Candidate, field, map, and input reordering produce byte-identical results with zero inference and zero network operations through the terminal result.",
+        "Strongest mode never changes demand, harness, role, or caller process metadata, and returns unsupported when the catalog's strongest qualified profile misses any minimum."
+      ],
+      "key_interfaces": [
+        "`Request`, `Resolution`, `ResolutionClass`, `UnmetComponent`, `Mode`",
+        "`Resolver.Resolve(Request, ValidatedCatalog)`",
+        "`CatalogProvider.Catalog(role)`, `LaunchBuilder.Build(SelectedProfile)`, `LaunchCapture`",
+        "`native-route-resolution/v1`"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-8",
+        "prd:planner-driven-model-routing/FR-9",
+        "prd:planner-driven-model-routing/FR-10",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/FR-27",
+        "prd:planner-driven-model-routing/NR-1",
+        "prd:planner-driven-model-routing/UB-6",
+        "prd:planner-driven-model-routing/NFR-1",
+        "prd:planner-driven-model-routing/NFR-5",
+        "prd:planner-driven-model-routing/NFR-8",
+        "design:native-routing-policy-v1#3.1",
+        "design:native-routing-policy-v1#3.3",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.6",
+        "design:native-routing-policy-v1#DINV-1",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-4",
+        "design:native-routing-policy-v1#DINV-5",
+        "design:native-routing-policy-v1#DINV-6",
+        "design:native-routing-policy-v1#DINV-8",
+        "design:native-routing-policy-v1#A-2",
+        "design:native-routing-policy-v1#A-3",
+        "design:native-routing-policy-v1#A-7"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/nativerouting resolver and result contract",
+        "semantic-order and dominance fixtures",
+        "internal/executor/port native-routing contracts",
+        "strongest-satisfying resolver fixtures"
+      ],
+      "size_band": {
+        "lo": 230,
+        "hi": 295
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Replace one complete catalog through authorized repository policy",
+      "goal": "An authorized repository may replace exactly one complete compatible harness-role catalog while every partial, weakening, injected, or unauthorized override fails before resolution.",
+      "current": "Repository executor config can choose a backend and routing category but cannot declare a qualified native catalog; native model ladders live inside adapter code with no effective-policy provenance.",
+      "desired": "The closed repository config names a complete replacement catalog for a single harness and role. Effective-policy selection verifies schema and resolver compatibility, applies the same qualification and native-capability checks as a default catalog, and records default, override, authorization, and effective identities. Invalid overrides never field-merge and never silently fall back to defaults.",
+      "scope": [
+        "Extend the closed repository policy with complete harness-role catalog replacement references and authorization proof.",
+        "Select exactly one default or replacement catalog and produce its deterministic provenance and digest.",
+        "Reuse catalog validation and the shared resolver over the selected complete policy.",
+        "Prove valid replacement, authorization, incompatibility, partial-merge, weakening, and fallback-refusal cases."
+      ],
+      "out_of_scope": [
+        "Editing frozen plans, selecting a harness, accepting raw CLI arguments, and changing unrelated executor routing or cap configuration.",
+        "Updating native profile inventories automatically."
+      ],
+      "acceptance": [
+        "One compatible operator-authorized complete catalog replacement becomes the sole effective policy for its exact harness and role and records default, override, authorization, and effective identities.",
+        "Partial, field-merged, unknown-key, incompatible-version, unqualified, weakening, contributor-only, worker-authored, and raw-argument overrides fail before resolution or launch.",
+        "An invalid override never falls back to the released default and leaves zero effective candidate set for the affected harness-role pair.",
+        "Existing backend selection, review configuration, caps, gates, and closed-parse fixtures remain byte-identical outside the new policy block."
+      ],
+      "key_interfaces": [
+        "`CatalogOverride`, `EffectiveCatalog`, `ReplacementProvenance`",
+        "`SelectEffectiveCatalog(DefaultCatalog, CatalogOverride, AuthorizationPolicy)`",
+        "the closed `executor.native_routing` repository-policy block"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-12",
+        "prd:planner-driven-model-routing/NR-7",
+        "prd:planner-driven-model-routing/UB-4",
+        "prd:planner-driven-model-routing/ABUSE-4",
+        "prd:planner-driven-model-routing/NFR-3",
+        "prd:planner-driven-model-routing/NFR-7",
+        "design:native-routing-policy-v1#3.5",
+        "design:native-routing-policy-v1#3.9",
+        "design:native-routing-policy-v1#DINV-7",
+        "design:native-routing-policy-v1#A-6"
+      ],
+      "blocked_by": [
+        "T1",
+        "T2"
+      ],
+      "touches": [
+        "internal/executor/config native-routing policy",
+        "internal/nativerouting effective-catalog selection and provenance",
+        "repository policy authorization integration",
+        "catalog-override fixtures"
+      ],
+      "size_band": {
+        "lo": 190,
+        "hi": 260
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Publish and launch Codex role catalogs faithfully",
+      "goal": "Codex independently resolves implementation and review demand through qualified catalogs and launches exactly the selected model, reasoning effort, and typed controls.",
+      "current": "Codex clamps one rung through an in-code ladder and emits model plus `model_reasoning_effort`; the ladder is not role-qualified or evidence-bound and launch capture cannot prove equality to a semantic route.",
+      "desired": "The adapter publishes complete implementation and review catalogs whose native values and controls it recognizes, provides current qualification evidence for every resolved cell, builds launch settings only from the selected profile, and captures actual model, effort, and controls for exact comparison. Any mismatch fails the attempt and invalidates the affected qualification.",
+      "scope": [
+        "Supply separate qualified Codex implementation and review catalogs over every derivable semantic profile.",
+        "Translate a selected profile into the adapter's typed model, reasoning-effort, and supported control contract.",
+        "Capture the actual native launch settings and enforce exact selected-versus-actual equality.",
+        "Run the shared role-routing and launch-fidelity conformance suite with hermetic decode-pinned fixtures."
+      ],
+      "out_of_scope": [
+        "Harness selection, task claim, model invocation orchestration, route-event retention, and review-pass count."
+      ],
+      "acceptance": [
+        "Every Codex implementation and review domain cell returns its declared qualified satisfying profile or explicit unsupported result, with no omitted profile and no implicit role reuse.",
+        "The launch builder emits only the selected typed model, reasoning effort, and recognized controls; raw arguments and unknown settings cannot enter the invocation.",
+        "Captured model, effort, and controls equal the selected entry for every resolved fixture; each seeded difference fails and invalidates qualification.",
+        "Changing roster data and qualification evidence requires no frozen-plan edit or resolver-code change."
+      ],
+      "key_interfaces": [
+        "the Codex `CatalogProvider`, `NativeCapability`, and `LaunchBuilder` implementations",
+        "Codex launch capture decoded into the shared `LaunchCapture` contract"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/NFR-7",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "design:native-routing-policy-v1#3.2",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#A-1",
+        "design:native-routing-policy-v1#A-5",
+        "design:native-routing-policy-v1#A-8"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/executor/runtime/codex native catalogs and qualifications",
+        "Codex typed launch builder and launch capture",
+        "Codex role-routing conformance fixtures"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 250
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "Publish and launch Claude Code role catalogs faithfully",
+      "goal": "Claude Code independently resolves implementation and review demand through qualified catalogs and launches exactly the selected model, effort, and typed controls.",
+      "current": "Claude Code ignores its rung ladder and pins every task to Sonnet 5 at maximum effort; the override is not role-qualified or evidence-bound and launch capture cannot prove equality to a semantic route.",
+      "desired": "The adapter publishes complete implementation and review catalogs whose native values and controls it recognizes, provides current qualification evidence for every resolved cell, builds launch settings only from the selected profile, and captures actual model, effort, and controls for exact comparison. Any mismatch fails the attempt and invalidates the affected qualification.",
+      "scope": [
+        "Supply separate qualified Claude Code implementation and review catalogs over every derivable semantic profile.",
+        "Translate a selected profile into the adapter's typed model, effort, and supported control contract.",
+        "Capture the actual native launch settings and enforce exact selected-versus-actual equality.",
+        "Run the shared role-routing and launch-fidelity conformance suite with hermetic decode-pinned fixtures."
+      ],
+      "out_of_scope": [
+        "Harness selection, task claim, model invocation orchestration, route-event retention, and review-pass count."
+      ],
+      "acceptance": [
+        "Every Claude Code implementation and review domain cell returns its declared qualified satisfying profile or explicit unsupported result, with no omitted profile and no implicit role reuse.",
+        "The launch builder emits only the selected typed model, effort, and recognized controls; raw arguments and unknown settings cannot enter the invocation.",
+        "Captured model, effort, and controls equal the selected entry for every resolved fixture; each seeded difference fails and invalidates qualification.",
+        "The Sonnet-5 maximum-effort pin is no longer a route truth, while changing roster data and qualification evidence requires no frozen-plan edit or resolver-code change."
+      ],
+      "key_interfaces": [
+        "the Claude Code `CatalogProvider`, `NativeCapability`, and `LaunchBuilder` implementations",
+        "Claude Code launch capture decoded into the shared `LaunchCapture` contract"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/NFR-7",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "design:native-routing-policy-v1#3.2",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#A-1",
+        "design:native-routing-policy-v1#A-5",
+        "design:native-routing-policy-v1#A-8"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/executor/runtime/claude native catalogs and qualifications",
+        "Claude Code typed launch builder and launch capture",
+        "Claude Code role-routing conformance fixtures"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 250
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "Publish and launch Cursor CLI role catalogs faithfully",
+      "goal": "Cursor CLI independently resolves implementation and review demand through qualified catalogs and launches exactly the selected model-parameter form and typed controls.",
+      "current": "Cursor clamps one rung through an in-code ladder and folds effort and context into model strings because the CLI exposes no separate effort flag; the ladder is not role-qualified or evidence-bound and launch capture cannot prove equality to a semantic route.",
+      "desired": "The adapter publishes complete implementation and review catalogs over only model-parameter forms it recognizes, provides current qualification evidence for every resolved cell, builds launch settings only from the selected profile, and captures actual model parameters and controls for exact comparison. Any mismatch fails the attempt and invalidates the affected qualification.",
+      "scope": [
+        "Supply separate qualified Cursor CLI implementation and review catalogs over every derivable semantic profile.",
+        "Translate a selected profile into the adapter's typed model-parameter and supported control contract without inventing an effort flag.",
+        "Capture the actual native launch settings and enforce exact selected-versus-actual equality.",
+        "Run the shared role-routing and launch-fidelity conformance suite with hermetic decode-pinned fixtures."
+      ],
+      "out_of_scope": [
+        "Harness selection, task claim, model invocation orchestration, route-event retention, and review-pass count."
+      ],
+      "acceptance": [
+        "Every Cursor CLI implementation and review domain cell returns its declared qualified satisfying profile or explicit unsupported result, with no omitted profile and no implicit role reuse.",
+        "The launch builder emits only the selected recognized model-parameter form and typed controls and never fabricates an unsupported effort flag or accepts raw arguments.",
+        "Captured model parameters and controls equal the selected entry for every resolved fixture; each seeded difference fails and invalidates qualification.",
+        "Changing roster data and qualification evidence requires no frozen-plan edit or resolver-code change."
+      ],
+      "key_interfaces": [
+        "the Cursor CLI `CatalogProvider`, `NativeCapability`, and `LaunchBuilder` implementations",
+        "Cursor CLI launch capture decoded into the shared `LaunchCapture` contract"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/NFR-7",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "design:native-routing-policy-v1#3.2",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#A-1",
+        "design:native-routing-policy-v1#A-5",
+        "design:native-routing-policy-v1#A-8"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/executor/runtime/cursor native catalogs and qualifications",
+        "Cursor CLI typed launch builder and launch capture",
+        "Cursor CLI role-routing conformance fixtures"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 250
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Publish and launch OpenCode role catalogs faithfully",
+      "goal": "OpenCode independently resolves implementation and review demand through qualified catalogs and launches exactly the selected provider/model and typed controls.",
+      "current": "OpenCode clamps one rung through an in-code provider/model ladder and carries effort only as descriptive metadata because the CLI exposes no effort flag; the ladder is not role-qualified or evidence-bound and launch capture cannot prove equality to a semantic route.",
+      "desired": "The adapter publishes complete implementation and review catalogs over provider/model values and controls it recognizes, provides current qualification evidence for every resolved cell, builds launch settings only from the selected profile, and captures actual provider/model and controls for exact comparison. Any mismatch fails the attempt and invalidates the affected qualification.",
+      "scope": [
+        "Supply separate qualified OpenCode implementation and review catalogs over every derivable semantic profile.",
+        "Translate a selected profile into the adapter's typed provider/model and supported control contract without inventing an effort flag.",
+        "Capture the actual native launch settings and enforce exact selected-versus-actual equality.",
+        "Run the shared role-routing and launch-fidelity conformance suite with hermetic decode-pinned fixtures."
+      ],
+      "out_of_scope": [
+        "Harness selection, task claim, model invocation orchestration, route-event retention, and review-pass count."
+      ],
+      "acceptance": [
+        "Every OpenCode implementation and review domain cell returns its declared qualified satisfying profile or explicit unsupported result, with no omitted profile and no implicit role reuse.",
+        "The launch builder emits only the selected recognized provider/model and typed controls and never fabricates an unsupported effort flag or accepts raw arguments.",
+        "Captured provider/model and controls equal the selected entry for every resolved fixture; each seeded difference fails and invalidates qualification.",
+        "Changing roster data and qualification evidence requires no frozen-plan edit or resolver-code change."
+      ],
+      "key_interfaces": [
+        "the OpenCode `CatalogProvider`, `NativeCapability`, and `LaunchBuilder` implementations",
+        "OpenCode launch capture decoded into the shared `LaunchCapture` contract"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/NFR-7",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "design:native-routing-policy-v1#3.2",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#A-1",
+        "design:native-routing-policy-v1#A-5",
+        "design:native-routing-policy-v1#A-8"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/executor/runtime/opencode native catalogs and qualifications",
+        "OpenCode typed launch builder and launch capture",
+        "OpenCode role-routing conformance fixtures"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 250
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T7",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "Enumerate the complete live routing domain",
+      "goal": "One generated matrix proves that no supported harness, role, or derivable semantic profile can disappear from routing support by omission.",
+      "current": "Runtime conformance enumerates caller-supplied integer rungs per adapter; it has no derivation-policy domain, role dimension, qualification matrix, or explicit unsupported cell.",
+      "desired": "The conformance generator derives every possible execution profile from the live demand policy, crosses it with every runtime-registry harness and both roles, and requires each cell to produce its declared qualified satisfying resolution or explicit unsupported result. Each completed cell emits one closed conformance result carrying its evidence reference, and the matrix refuses omissions, duplicate cells, stale qualifications, or an unregistered catalog owner.",
+      "scope": [
+        "Generate the semantic profile domain from the live derivation policy rather than a hand-maintained list.",
+        "Enumerate the runtime registry, both closed roles, and every profile into one deterministic matrix.",
+        "Run shared catalog, resolution, qualification, and adapter conformance for every cell and emit the closed result payload.",
+        "Produce a reviewable qualification matrix and operator-signoff input without embedding prompts or code."
+      ],
+      "out_of_scope": [
+        "Persisting the conformance payload as canonical routing evidence, changing model rosters, and activating production routing."
+      ],
+      "acceptance": [
+        "The generated matrix contains every registered harness × implementation/review role × derivable profile cell exactly once and fails when any harness, role, profile, catalog, or result is omitted.",
+        "Every resolved cell names a current qualification proving all four components and the exact adapter generation; every other cell is explicitly unsupported with unmet components.",
+        "Reordering registry, policy, catalog, and fixture inputs produces a byte-identical matrix and cell payload order.",
+        "The reviewable report contains the qualification method, evidence digest, threshold/result, validity, and responsible evaluator for every resolved cell and no prompt, code, credential, or raw launch argument."
+      ],
+      "key_interfaces": [
+        "`Domain`, `Cell`, `CellResult`, `Matrix`, `QualificationReport`",
+        "`GenerateDomain(DerivationPolicy, RuntimeRegistry, Roles)`",
+        "`routing_conformance_checked` payload"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-11",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "prd:planner-driven-model-routing/EVT-4",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#A-1"
+      ],
+      "blocked_by": [
+        "T4",
+        "T5",
+        "T6",
+        "T7"
+      ],
+      "touches": [
+        "internal/nativerouting/conformancetest domain generator and matrix",
+        "live harness-role catalog qualification fixtures",
+        "routing-conformance report and event payload fixtures"
+      ],
+      "size_band": {
+        "lo": 220,
+        "hi": 290
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T8",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "Prove fail-closed routing, fallback, and launch fidelity end to end",
+      "goal": "Cross-adapter acceptance proves that every policy defect, unsupported demand, fallback, and launch mismatch preserves semantic demand and performs no unauthorized claim or invocation.",
+      "current": "Existing ladders clamp all rungs to a native value, including out-of-range inputs, so the runtime has no cross-adapter proof for unsupported demand, qualification abuse, role separation, offline resolution, or selected-versus-actual launch equality.",
+      "desired": "One acceptance corpus runs exact, promoted, unsupported, invalid-policy, override, role-divergence, strongest-fallback, and launch-mismatch cases across every adapter. Resolution is offline and deterministic; every non-resolved case returns zero launch authority; strongest mode stays within the selected harness and role while preserving all four minima and caller review-process metadata; actual launch capture must exactly match the selected profile.",
+      "scope": [
+        "Exercise the complete invalid catalog, qualification, override, dominance, unsupported, role, and fallback corpus over every adapter.",
+        "Trace the resolver boundary to prove zero inference and zero network operations through its terminal result.",
+        "Compare selected and captured native model, effort, and typed controls through the shared equality predicate.",
+        "Emit reproducible diagnostics and acceptance evidence for exact, promoted, unsupported, fallback, and mismatch cases."
+      ],
+      "out_of_scope": [
+        "Task claim orchestration, canonical evidence-store append, assurance-pass aggregation, production activation, and cross-harness fallback."
+      ],
+      "acceptance": [
+        "Every malformed, missing, stale, unqualified, insufficient, wrong-generation, weakening, ambiguous-rank, injected, and unauthorized case yields zero launch authority and names harness, role, catalog, qualification, and defect.",
+        "Exact, promoted, unsupported, and strongest-fallback cases are byte-identical across repeats and reordered inputs with zero inference and zero network operations through the terminal result.",
+        "Every adapter's captured native model, effort representation, and typed controls equal its selected profile; each seeded mismatch fails the attempt and invalidates that qualification.",
+        "Strongest mode stays on the selected harness and role, dominates every requested minimum or returns unsupported, and leaves caller-supplied review depth, pass count, blindness, and aggregate metadata byte-identical."
+      ],
+      "key_interfaces": [
+        "the cross-adapter acceptance corpus and `LaunchFidelity` equality predicate",
+        "a resolver-side effect recorder for inference and network operations",
+        "the strongest-satisfying acceptance matrix"
+      ],
+      "traces": [
+        "prd:planner-driven-model-routing/FR-8",
+        "prd:planner-driven-model-routing/FR-9",
+        "prd:planner-driven-model-routing/FR-10",
+        "prd:planner-driven-model-routing/FR-12",
+        "prd:planner-driven-model-routing/FR-14",
+        "prd:planner-driven-model-routing/FR-27",
+        "prd:planner-driven-model-routing/NR-1",
+        "prd:planner-driven-model-routing/NR-7",
+        "prd:planner-driven-model-routing/UB-4",
+        "prd:planner-driven-model-routing/UB-6",
+        "prd:planner-driven-model-routing/ABUSE-1",
+        "prd:planner-driven-model-routing/ABUSE-4",
+        "prd:planner-driven-model-routing/NFR-1",
+        "prd:planner-driven-model-routing/NFR-3",
+        "prd:planner-driven-model-routing/NFR-5",
+        "prd:planner-driven-model-routing/NFR-8",
+        "prd:planner-driven-model-routing/EVAL-2",
+        "design:native-routing-policy-v1#3.3",
+        "design:native-routing-policy-v1#3.4",
+        "design:native-routing-policy-v1#3.5",
+        "design:native-routing-policy-v1#3.6",
+        "design:native-routing-policy-v1#3.10",
+        "design:native-routing-policy-v1#DINV-1",
+        "design:native-routing-policy-v1#DINV-2",
+        "design:native-routing-policy-v1#DINV-3",
+        "design:native-routing-policy-v1#DINV-4",
+        "design:native-routing-policy-v1#DINV-5",
+        "design:native-routing-policy-v1#DINV-6",
+        "design:native-routing-policy-v1#DINV-7",
+        "design:native-routing-policy-v1#DINV-8",
+        "design:native-routing-policy-v1#A-2",
+        "design:native-routing-policy-v1#A-3",
+        "design:native-routing-policy-v1#A-4",
+        "design:native-routing-policy-v1#A-5",
+        "design:native-routing-policy-v1#A-6",
+        "design:native-routing-policy-v1#A-7",
+        "design:native-routing-policy-v1#A-8"
+      ],
+      "blocked_by": [
+        "T3",
+        "T8"
+      ],
+      "touches": [
+        "internal/nativerouting acceptance and abuse corpus",
+        "cross-adapter launch-capture fidelity harness",
+        "resolver network and inference guard",
+        "strongest-satisfying fallback matrix"
+      ],
+      "size_band": {
+        "lo": 190,
+        "hi": 260
+      },
+      "mechanical": false,
+      "rung": 3,
+      "plan_task_id": "planner-driven-model-routing/002/T9",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-8",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-9",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-10",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-11",
+      "tasks": [
+        "T1",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-12",
+      "tasks": [
+        "T1",
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-14",
+      "tasks": [
+        "T2",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/FR-27",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NR-1",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NR-7",
+      "tasks": [
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/UB-4",
+      "tasks": [
+        "T1",
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/UB-6",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/ABUSE-1",
+      "tasks": [
+        "T1",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/ABUSE-4",
+      "tasks": [
+        "T1",
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NFR-1",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NFR-3",
+      "tasks": [
+        "T1",
+        "T3",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NFR-5",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NFR-7",
+      "tasks": [
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/NFR-8",
+      "tasks": [
+        "T2",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/EVAL-2",
+      "tasks": [
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:planner-driven-model-routing/EVT-4",
+      "tasks": [
+        "T8"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:60dd89f61187c2d97f7b25cd976287b8eae77f02471e66441fbfa6d2cfa715e6"
+}

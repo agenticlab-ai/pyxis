@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR29J6N1X0WH6W973CFF",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-1",
+  "statement": "When asked to create a work item with a type, title, and optional body and signals, the tracker shall persist it as an inspectable local file and return a stable, unique, human-referenceable identifier that is never reused.",
+  "rationale": "the atomic unit of work must be creatable and durably named",
+  "fit_criterion": "1,000 creates yield 1,000 distinct ids, each resolvable by a subsequent read; no id recurs after deletion",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e688609cf7444162c68966e234aaa0483aed69f954a70d6430fedbb9b7d96a2",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.953Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

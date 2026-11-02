@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPT3PPVFJE1ANQNRT9C",
+  "kind": "Decision",
+  "subject": "design/doc-link-integrity",
+  "family": "decision.2.1",
+  "statement": "Two checks, one bytes-only and one history-backed.\n**`check-links`** scans every `.md` under the docs tree, the root\noperating manual, and the configured templates directory; every relative\nlink target (not a URL scheme, not a pure `#fragment`) must resolve to an\nexisting file, with fenced code blocks skipped. **The map-registry check**\nruns with a merge base over the configured system-map documents: the set\nof `INV-\u003cn\u003e` and `D\u003cn\u003e` anchors present at the merge base must be a subset\nof the set at HEAD — anchors may be added, never removed or renumbered.\nBoth are pattern-level checks (AP-10's smallest honest form): they prove\nresolution and persistence, never meaning.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1f29ceb343954b33928e597c1d7ee073d2feec5d75ec4a299296642fc71234b5",
+    "source-design:d8c207fec2497743c6399550310e0534361e3ca73b181f04a8bd34780064520d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNXJ01YC37WGY8XMTT17"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.562Z",
+  "provenance": {
+    "source": "docs/tech-design/doc-link-integrity.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/doc-link-integrity.md lines 33-42 in section 2; sha256:1f29ceb343954b33928e597c1d7ee073d2feec5d75ec4a299296642fc71234b5"
+  }
+}

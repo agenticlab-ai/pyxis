@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRS2A26KMHDRBQVJP9T9",
+  "kind": "Question",
+  "subject": "prd/e2e-verification",
+  "family": "Q1",
+  "statement": "The home, document-kind, and mutability of the three artifacts (new governed kind vs reuse of technical-design / review-report / plan vs a lighter class) (`brainstorm:e2e-verification#P-4`)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; v1 intent: frozen at approval, built against",
+  "fit_criterion": "design handoff",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:750385f4b26749c4112a72dc12383b3bcc2fcf0c0d2ca46af1482c2ea629a8f4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.682Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

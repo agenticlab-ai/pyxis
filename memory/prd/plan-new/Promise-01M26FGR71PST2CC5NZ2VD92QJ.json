@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR71PST2CC5NZ2VD92QJ",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-3",
+  "statement": "When an open plan or epic in the target tracker plausibly covers the same feature, the planner shall surface it at the checkpoint before drafting further, offering extend-or-supersede — never silently creating a parallel plan.",
+  "rationale": "duplicate plans pollute the tracker",
+  "fit_criterion": "overlapping-epic fixture is surfaced; zero parallel plans without an explicit operator decision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bd31926b449e6cb750aa3fa6033e8b311a55a4006fc57e9b3e0becb484dc7f15",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.105Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

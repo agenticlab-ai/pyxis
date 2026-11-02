@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPHKJQZ9F1C1FYMXPPT",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-4",
+  "statement": "Every unwanted-behavior row is exercised by failure injection, including both reconciliation sources withheld independently (UB-7: the authoritative launch record for FR-13, the required-figure set for FR-15)",
+  "intent": "UB-1..UB-7",
+  "fit_criterion": "failure-injection suite result naming each UB row and both withheld-source cases",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aa1c681be1b66baa572f6fde860164a1e2f4c80c31c53f8943cb590159ab5035",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.601Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

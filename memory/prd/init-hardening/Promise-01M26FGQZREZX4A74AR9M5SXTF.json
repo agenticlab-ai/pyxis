@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZREZX4A74AR9M5SXTF",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "UB-4",
+  "statement": "If a wiring operation fails for permission after the checks passed (scope gaps are not fully pre-probeable), then the system shall complete every remaining operation the credential allows, finish green, and record the handed-off operations with their exact remedial commands — the installer's non-admin hand-off; no rollback occurs for a permission-classified wiring failure",
+  "intent": "a green install + the hand-off block naming each remaining operation and its command",
+  "fit_criterion": "injected permission failure at wiring → the run ends green with the hand-off recorded (operations + runnable commands) and the target NOT rolled back; every non-permission post-mutation failure still restores as-found (FR-10)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:199bd40dcf379b294001dc7bd1244b9a2f0aac39b0385181b73548d0623260bb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.872Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

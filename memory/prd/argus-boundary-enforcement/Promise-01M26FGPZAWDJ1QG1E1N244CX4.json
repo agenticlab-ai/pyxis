@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZAWDJ1QG1E1N244CX4",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-1",
+  "statement": "When a drive attempts a write whose target is a protected path — the authority contract, a frozen/merged document, another problem's ledger, or a path outside the drive's declared scope — the write hook shall deny the write before any bytes are written and return a reason naming the path and the boundary.",
+  "rationale": "the fast at-write-time boundary (J1)",
+  "fit_criterion": "on the seeded write-attempt corpus, 100% of protected-path write attempts are denied with no bytes written and a reason naming the boundary; 0 in-scope writes denied",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7a70a0141d4db18dfe8e6321248c1811f0438dca211f1f1e9f579d6ac9f32234",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.834Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

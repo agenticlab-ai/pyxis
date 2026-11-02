@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MXGFZ10P90D47V832RPQ",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-argus-approval",
+  "family": "decision.3.1.1",
+  "statement": "These rows are the complete v1 failure vocabulary and are evaluated before any ordinary next-effect planning:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39",
+    "source-design:08a113bbd3a27e32a6753f56aca1341f92de4d20603a43722118f79905dbf60d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DHVP4JD9421J5E5WKBZJ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:47:03Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-failure-argus-approval.md lines 64-64 in section 3.1; sha256:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0SFGP4W5BKFT2MT1DZ",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-26",
+  "statement": "When `pyxis init` runs interactively, it shall elicit at most four knobs (tracker · CI mode · CLI surfaces · argus enablement), each with a recommended default, plus one repository question naming the install's destination — an existing empty repository the credential can write to, a new repository to create, or a local-only install with no GitHub — deriving the GitHub wiring depth from that answer instead of asking it, suppressing the GitHub-only questions where the answer declares no GitHub (FR-25), persisting every answer plus every path, pin, and branch value the engine consumes into the repo config, and asking nothing further.",
+  "rationale": "one decision, one question: the destination determines the wiring depth, so asking them separately invites a contradiction the operator only discovers at the end; complete capture, no implicit paths",
+  "fit_criterion": "post-init config contains the same five knob keys and the complete path/pin/branch key set, closed-schema valid; the interactive transcript asks exactly the repository question plus the applicable knobs — neither a `wiring.repo` enum question nor a separate coordinate exchange appears; a local-only answer leaves the tracker, CI-mode, and protection questions unasked",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bc2440657cf01dd59f718320bf5e7339d6917887b5c32bbd4ee5fd45abbeec11",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.905Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

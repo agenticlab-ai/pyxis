@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR2XPXKJCSAMDN02DBH8",
+  "kind": "Need",
+  "subject": "prd/local-work-tracker",
+  "family": "G2",
+  "statement": "We believe satisfying the shared WorkTracker port contract with a second, radically different medium; expected result: medium-independence proven, not asserted (the swap test passes)",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a2bbf23ab60144ba6961749c5b202da9b1d5bd11170366986b6e47c2eabb109a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.973Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M33AJSBHTQD7SFPYH7NCE",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.4.1",
+  "statement": "Feature execution ownership is an explicit CAS transition over `{domain, stable_owner_id, epoch, state}` (`design-brainstorm:feature-implementation-drive-tech-design#D-2`). The first store adapter uses `refs/pyxis/feature-drives/<feature-id>`; the ref points to a commit whose tree contains canonical `drive.json`. Each successful update preserves the prior commit as its parent, giving transition lineage without making event sourcing the state model. Creation and updates use force-with-lease against the observed object id; a missing or mismatched expected id loses cleanly and reloads.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:669bad42f727adc779f33b811365acadba6c95dfbf292a39abe3354b8ccfe3b4",
+    "source-design:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPR3PKEQAYZNR8EF8XFA"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:54Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 114-114 in section 3.4; sha256:669bad42f727adc779f33b811365acadba6c95dfbf292a39abe3354b8ccfe3b4"
+  }
+}

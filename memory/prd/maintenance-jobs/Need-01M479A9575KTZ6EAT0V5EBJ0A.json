@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A9575KTZ6EAT0V5EBJ0A",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "M2",
+  "statement": "M2 (primary): G2",
+  "intent": "Launch count for competing hosts on one occurrence",
+  "fit_criterion": "At most one launch in every coordination fixture at adoption",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

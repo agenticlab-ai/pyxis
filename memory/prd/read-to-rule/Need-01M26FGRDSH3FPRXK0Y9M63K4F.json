@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDSH3FPRXK0Y9M63K4F",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "§0-capture rate — of gate feedback items that led to a change or ruling, the share routed in-§0 rather than found beyond it",
+  "fit_criterion": "≥ 80%, pooled across all the window's feedback items and computed once, at the checkpoint \"ten capture-lined §0 gates\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38e2da109f29c163966aa9f6fad23487458a6cd2d56f9543dc85f840d092f4fb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.321Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

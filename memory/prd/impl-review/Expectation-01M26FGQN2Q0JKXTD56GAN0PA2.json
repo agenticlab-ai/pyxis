@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN2Q0JKXTD56GAN0PA2",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-1",
+  "statement": "seeded spec-infidelity caught",
+  "intent": "fixture proposals with charters through every supported review harness and required profile",
+  "fit_criterion": "caught on every required run; zero blocking-class misses",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5d08264359cd4ca730ddfe87ddff71c6cd26d1b9f47a4147b0c8b7a986da9c35",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.53Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

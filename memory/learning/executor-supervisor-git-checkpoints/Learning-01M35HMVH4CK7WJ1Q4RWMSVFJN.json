@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Learning-01M35HMVH4CK7WJ1Q4RWMSVFJN",
+  "kind": "Learning",
+  "subject": "learning/executor-supervisor-git-checkpoints",
+  "statement": "The Go supervisor owns Git checkpoints after agent processes stop and before revision-based verification or publication. Runtime adapters confine implementation processes and their children so Git administration is not writable; review processes also receive read-only worktrees. Failure to prove process quiescence preserves the workspace without checkpointing or publishing. Push rejects uncheckpointed edits. Verification commands use the same Git protection, and protected verification cannot reuse an unprotected cached gate verdict.",
+  "intent": "Ensure verification and publication refer to a supervisor-owned revision after writers have stopped.",
+  "rationale": "Implementation, remediation, and fixer launches use isolated runtime state and OS process boundaries. Preflight and doctor report missing boundary support; launches fail when confinement cannot be applied. Checked process-group termination prevents an interrupted agent from racing a checkpoint.",
+  "tags": [
+    "code:cmd/implement-now",
+    "code:internal/codegatemirror",
+    "code:internal/converge",
+    "code:internal/executor/drivetogreen",
+    "code:internal/executor/port",
+    "code:internal/executor/runtime",
+    "code:internal/adapters/harness/claude",
+    "code:internal/adapters/harness/codex",
+    "code:internal/adapters/harness/cursor",
+    "code:internal/adapters/harness/opencode",
+    "code:internal/executor/runtime/procgroup",
+    "code:internal/executor/worker",
+    "code:internal/executor/workspace",
+    "code:internal/preflight",
+    "code:internal/verify/runner"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2XHH7NBFR9WKTZYYYQ47VGH"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-22T21:51:42Z",
+  "provenance": {
+    "source": "internal/executor/port/workspace.go",
+    "note": "Refreshed after removing the retired E2E hermetic-admission package."
+  }
+}

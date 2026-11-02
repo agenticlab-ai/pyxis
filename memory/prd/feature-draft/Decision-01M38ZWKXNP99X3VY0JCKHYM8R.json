@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZWKXNP99X3VY0JCKHYM8R",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R1",
+  "statement": "Name every overridden sibling row in FR-31 through FR-33, scope each override to draft-born features, and decline a review finding against the override with brainstorm:feature-draft#D-15 as the ruling.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The operator ruled that this contract overrides the eight sibling rows itself, with no amendment train (D-15, NG-5). Naming each row and limiting the override to draft-born features leaves those rows in force for every document-pipeline feature while readers can find the exception.",
+  "fit_criterion": "FR-31, FR-32, and FR-33 name all eight overridden rows with the draft-born scope, and every review finding against the override is dispositioned as declined citing D-15.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:1a88a7b7b9b9cbb57f2c3a9875f17ea5f215f7cbacd33a61715e75f8272d6ca0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:19Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

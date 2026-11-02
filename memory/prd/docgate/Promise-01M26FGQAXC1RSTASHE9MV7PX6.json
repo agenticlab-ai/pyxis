@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAXC1RSTASHE9MV7PX6",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-34",
+  "statement": "Where congruence debt exists immediately before a checked entry, docgate shall grandfather it by multiset subtraction over the key `(unit ID, mismatch class, field, projected value under FR-38, source-map value under FR-38)` and fail every after-key whose identical before-key multiplicity is exhausted.",
+  "rationale": "exact identity makes baseline adoption decidable: unchanged debt stays green, but changing a wrong value or moving the disagreement cannot masquerade as no worse",
+  "fit_criterion": "unchanged mismatch and byte-identical section restatement green; value replacement at constant count, field/class movement, and count increase red; count decrease and full repair green; projected units with no baseline lineage participate in the same key rule",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f47443254d70028d39edcaf2ce0e469a2b82593c9eeac8f18d4abcaffefeee83",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.205Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

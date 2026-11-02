@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQHCF2TF827AKE46EATC",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "J5",
+  "statement": "When a session dies mid-grilling (context limit, interruption), I want resume from the durable record without re-answering anything, so I can protect an hour of rulings from a crash",
+  "rationale": "external prior-art survey (context-window discipline)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:57ca6be9981c54a2f6e4ab340c002a99ef5687773a2616e4dc2dce83ccda5143",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.412Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

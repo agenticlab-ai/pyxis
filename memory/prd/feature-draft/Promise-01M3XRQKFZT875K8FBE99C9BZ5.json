@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQKFZT875K8FBE99C9BZ5",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-53",
+  "statement": "Where an installed repository explicitly selects local-git and carries the feature-draft memory and readiness capabilities required by its pinned Pyxis release, the system shall permit new feature drafts only after the configured bare origin's mainline exists, and shall apply the same compile, readiness, memory-integrity, and locked-version rules as in the source repository.",
+  "rationale": "Supplies the accepted local AEC workflow without inventing a separate base-free draft path",
+  "fit_criterion": "A compatible initialized installed fixture reaches draft preparation and lock; missing-mainline open and preparation refuse before writes with the separate first-mainline-push remedy; an unsupported installed capability names the missing prerequisite; no existing document-pipeline feature is migrated by selecting local-git.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:01b4ee1b2d4f2ea97d3bc0a5470a73744792b531d5e61fed8aa10655438a3e81",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:18Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

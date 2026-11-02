@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M5Y1C7GH3R8X4G9Z8GFZQ",
+  "kind": "Decision",
+  "subject": "design/review-feedback-capture",
+  "family": "decision.3.5.2",
+  "statement": "a **registry-born docgate check** (`check-review-feedback-resolution`, extending `distributed-check-registration`) fails any entry `outcome` ref or `Learned-from: review-thread` ref that does not resolve — moving the FR-4/M4 provenance guarantee from convention to gate (AP-10).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:83a6c66795ca6c355658144e262cdca4e3f72b0159c8c671f2daef10506e18d6",
+    "source-design:8dcda99796fbed70b00940593fab8dc6f303aac0f6b6f176aaeb2d40343f5e42",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPVMP0267X0J05EWSXFM"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRXGXS67T5FMZF75MYH22"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:27Z",
+  "provenance": {
+    "source": "docs/tech-design/review-feedback-capture.md",
+    "note": "exact Decision evidence at docs/tech-design/review-feedback-capture.md lines 68-68 in section 3.5; sha256:83a6c66795ca6c355658144e262cdca4e3f72b0159c8c671f2daef10506e18d6"
+  }
+}

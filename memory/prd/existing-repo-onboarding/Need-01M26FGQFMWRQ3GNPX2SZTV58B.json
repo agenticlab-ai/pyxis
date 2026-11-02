@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFMWRQ3GNPX2SZTV58B",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "the fixture-repo round trip: adopt to gate-green, never-touch set byte-identical before/after apply, whole tree byte-identical after undo",
+  "fit_criterion": "pass, in CI (the fixture e2e, §5.8 DOD-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6a8b4e1eb50dcc2ac2fdfbe7c5940ee9455809d3d262624dfafa555c74011081",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.356Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBKG8WM26X8ANJTKBDN",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "fixture folds byte-identical across runs/platforms",
+  "fit_criterion": "100% at \"golden suite green in CI\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ec67c9042ab9f375dab4e6b6c644508f0f30945231b5c5ea54a4a1457d89de41",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.227Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

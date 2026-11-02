@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJA1WHBA9MDX8XX284N",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "Q-1",
+  "statement": "Will the bare origin run under a separately controlled principal with protected receive enforcement, or does the operator accept a shared-account origin with a narrower consistency guarantee?",
+  "intent": "Repository operator",
+  "rationale": "resolved",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

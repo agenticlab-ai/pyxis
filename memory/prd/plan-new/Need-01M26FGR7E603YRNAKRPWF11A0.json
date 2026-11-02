@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7E603YRNAKRPWF11A0",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "J3",
+  "statement": "When a worker picks up a task days after planning, I want read one frozen charter that says what to build, how done is proven, and what is out of scope, so I can implement without re-reading the whole corpus or re-planning",
+  "rationale": "pyxis#58 charter comment; agent-brief durability rules",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5dba9444feb5646f065908eb54cbf5260ffd1e60d74427d5b66018356179561c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.118Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

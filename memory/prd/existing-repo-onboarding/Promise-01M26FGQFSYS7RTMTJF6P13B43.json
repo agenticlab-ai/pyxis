@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFSYS7RTMTJF6P13B43",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NFR-4",
+  "statement": "The system shall reuse the existing ownership-class and dry-run machinery rather than introduce a parallel one.",
+  "intent": "Maintainability",
+  "fit_criterion": "the design threads converge's existing classification/reporting; no second drift engine",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2a525c55875b18d1c694aae90d18babc3c9ec9234f96fc179d1e1f8e7c163f82",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.361Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

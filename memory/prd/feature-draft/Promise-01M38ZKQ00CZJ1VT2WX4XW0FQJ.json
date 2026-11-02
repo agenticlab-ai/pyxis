@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKQ00CZJ1VT2WX4XW0FQJ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-17",
+  "statement": "When a ready feature draft's lock is requested, the system shall request approval from the human operator and lock the draft only on that approval.",
+  "rationale": "A human approves every lock (brainstorm:feature-draft#D-3, brainstorm:feature-draft#D-4)",
+  "fit_criterion": "Every fixture lock has a human approval record; approval attempts by any agent identity are refused.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f30fe46ec22a1c0996d58cd2efbe13b26641c71a4474fe9f61716968077bbd52",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

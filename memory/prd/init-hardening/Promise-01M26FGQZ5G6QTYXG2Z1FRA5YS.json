@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZ5G6QTYXG2Z1FRA5YS",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-8",
+  "statement": "Where `wiring repo=create` is resolved with a coordinate, the system shall create the repository at that coordinate and set it as origin before dependent wiring operations run.",
+  "rationale": "create-from-empty was impossible (`#F-4`)",
+  "fit_criterion": "the bare-folder create scenario ends green with repo, origin, and wiring landed (hermetic transport); the pre-run check summary names the coordinate before any creation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:48c87bdd00665d3145a624d792251ad56f928ca0c7bf8cc58fb3a597fbb94654",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.853Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

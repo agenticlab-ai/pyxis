@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3WDAD5JRTQ4ZDM549P0X2CB",
+  "kind": "Need",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "G1",
+  "statement": "We believe enabling native feature drafts for installed Forgejo repositories; expected result: one new feature reaches a mainline-verified lock and planning handoff through the current workflow",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

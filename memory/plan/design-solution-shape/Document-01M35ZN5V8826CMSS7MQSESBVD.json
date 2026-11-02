@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZN5V8826CMSS7MQSESBVD",
+  "kind": "Document",
+  "subject": "plan/design-solution-shape",
+  "family": "plan-001",
+  "statement": "Captured authored source: docs/plans/design-solution-shape/001-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/plans",
+    "reconcile:source",
+    "sha256:8b8bdd3b64a9f28fe92ebbafcd989aa3e6402a1c82ea7e2cd1f886cd7bf4996f"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBMCVPFPR5K4AZH99TKP6"
+    }
+  ],
+  "body_sha256": "8b8bdd3b64a9f28fe92ebbafcd989aa3e6402a1c82ea7e2cd1f886cd7bf4996f",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:32Z",
+  "provenance": {
+    "source": "docs/plans/design-solution-shape/001-plan.md",
+    "note": "offline reconciliation"
+  }
+}

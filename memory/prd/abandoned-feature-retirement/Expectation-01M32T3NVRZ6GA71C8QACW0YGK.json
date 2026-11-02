@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3NVRZ6GA71C8QACW0YGK",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-4",
+  "statement": "Publication, baseline admission, failure handling, and retries are atomic and do not widen integrity policy",
+  "intent": "FR-8, FR-13, UB-6, UB-7, UB-8, NFR-1, NFR-3",
+  "fit_criterion": "write manifests, policy diffs, interruption and retry evidence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:251e74642f9ec83ead11a6136a7a4c545a0e1b7e27252f9eeb87c55ced975ebc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:53Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

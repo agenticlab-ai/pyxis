@@ -1,0 +1,38 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-6",
+  "kind": "nit-golden",
+  "lens": "*",
+  "title": "nit discipline — golden clean proposals draw <= 3 findings per golden at p50 across the golden set",
+  "threshold": "<= 3 findings/golden at p50",
+  "max_findings_p50": 3,
+  "negative_example": "stylistic temptations the conformance lens must ignore — a legitimate, charter-faithful, design-conformant diff whose only 'flaws' are style preferences; a disciplined reviewer draws at most a few advisory findings, never a flood.",
+  "goldens": [
+    {
+      "band": "standard",
+      "charter": "AC-1 (Must): add SkipClass(marker) returning the class token a skip marker names, ('', false) for a non-skip marker.",
+      "diff": "--- a/internal/band/skip.go\n+++ b/internal/band/skip.go\n@@\n+// SkipClass returns the class token a skip marker names.\n+func SkipClass(marker string) (string, bool) {\n+\tconst pfx = \"skipped:\"\n+\tif !strings.HasPrefix(marker, pfx) || len(marker) == len(pfx) {\n+\t\treturn \"\", false\n+\t}\n+\treturn marker[len(pfx):], true\n+}",
+      "findings": []
+    },
+    {
+      "band": "standard",
+      "charter": "AC-1 (Must): Coverage() returns reviewed/universe, 0 when universe is 0.",
+      "diff": "--- a/internal/harvest/metrics.go\n+++ b/internal/harvest/metrics.go\n@@\n+func (m Metrics) Coverage() float64 {\n+\tif m.Universe == 0 {\n+\t\treturn 0\n+\t}\n+\treturn float64(m.Reviewed) / float64(m.Universe)\n+}",
+      "findings": [
+        {
+          "rule_id": "design-conformance/doc-gap",
+          "cal_row": "CAL-7",
+          "severity": "advisory",
+          "defect_class": "doc-gap",
+          "message": "Coverage() has no doc comment naming the 0-universe convention the charter states; an advisory clarity nit, no behavior at risk."
+        }
+      ]
+    },
+    {
+      "band": "deep",
+      "charter": "AC-1 (Must): Compose chains two screens; a candidate survives only if both survive it; panic on a nil screen.",
+      "diff": "--- a/internal/floor/compose.go\n+++ b/internal/floor/compose.go\n@@\n+func Compose(a, b Screener) Screener {\n+\tif a == nil || b == nil {\n+\t\tpanic(\"floor.Compose: nil screener\")\n+\t}\n+\treturn composite{a: a, b: b}\n+}",
+      "findings": []
+    }
+  ]
+}

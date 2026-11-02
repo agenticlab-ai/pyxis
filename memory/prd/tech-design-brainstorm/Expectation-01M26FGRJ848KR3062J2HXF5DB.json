@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ848KR3062J2HXF5DB",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "EVAL-5",
+  "statement": "handoff sufficiency",
+  "intent": "`tech-design-new` on every ready-for-design fixture record",
+  "fit_criterion": "median 0, max ≤ 2 decision-questions; §2/§4 citations complete",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f32f71e0a5a2dd2d92dfa982f85aa2ebf3804b5c075066e384c7b61cfb31df67",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.464Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBXMZNMBJR81R9H7RQ9",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "UB-2",
+  "statement": "If If a payload table's columns mismatch the pinned template schema, then the system shall abort the fold naming the column diff",
+  "intent": "named defect",
+  "fit_criterion": "reordered and missing-column fixtures both named",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6566c0a909243ea929556e62c8215579f6d220038fa8681d091c17d1eac16699",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.237Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

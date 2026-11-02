@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RQRWZ8BYH5CBHJ02Y2Z3XY",
+  "kind": "Decision",
+  "subject": "prd/installer",
+  "family": "R8",
+  "statement": "Mitigate older-reader rejection by requiring a CLI upgrade before repinning to a bundle-free v2 release.",
+  "rationale": "The operator-approved retirement retains strict v1 parsing rather than silently changing its required bundle-hash contract.",
+  "fit_criterion": "Regression tests accept v2 without a bundle hash, refuse v1 without a valid hash, and verify declared legacy bundles before use; the upgrade guidance precedes repinning.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0c063770683e07870c8d079e79f6fe30ba59d272038ed9f030e4ab213cc7931f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:28:38Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "note": "Disposition of approved installer amendment 004 R8; no implementation result is asserted."
+  }
+}

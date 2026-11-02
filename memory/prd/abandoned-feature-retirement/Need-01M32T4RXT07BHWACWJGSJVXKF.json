@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T4RXT07BHWACWJGSJVXKF",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "G1",
+  "statement": "We believe exact prior authority can distinguish deliberate abandoned-feature cleanup from accidental deletion; expected result: the selected pilot surface can be removed without weakening unrelated integrity checks",
+  "fit_criterion": "M1, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e24fe5bbc121d93a766f73f92429e908ae0858570a1cacf604c56a7e44edd635",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:29Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

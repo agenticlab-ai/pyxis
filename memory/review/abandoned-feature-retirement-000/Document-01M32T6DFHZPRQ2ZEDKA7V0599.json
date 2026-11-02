@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M32T6DFHZPRQ2ZEDKA7V0599",
+  "kind": "Document",
+  "subject": "review/abandoned-feature-retirement-000",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/abandoned-feature-retirement-000.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:add0dbbcdd886df2ee06e9a026d314740917a60376ecf9d54fa65cc79b3fa66b"
+  ],
+  "body_sha256": "add0dbbcdd886df2ee06e9a026d314740917a60376ecf9d54fa65cc79b3fa66b",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:22Z",
+  "provenance": {
+    "source": "docs/reviews/abandoned-feature-retirement-000.md",
+    "note": "offline reconciliation"
+  }
+}

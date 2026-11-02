@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXQPMNXJ0YS2QSS31NG",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-10",
+  "statement": "If the seed verb runs where a verification manifest already exists, then the system shall refuse by name and change nothing — a declared manifest is operator-owned, never overwritten",
+  "intent": "a named refusal citing the existing manifest path",
+  "fit_criterion": "on a manifest-bearing fixture the verb exits non-zero naming the path; the manifest is byte-identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cf4f2f68165b9d423ac463f050a06e8765f9967e7405f522880b22fe11598109",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.807Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

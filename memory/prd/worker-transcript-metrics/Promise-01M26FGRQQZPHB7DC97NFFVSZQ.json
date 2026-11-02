@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQQZPHB7DC97NFFVSZQ",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "NFR-2",
+  "statement": "The system shall allow a consumer to process records incrementally rather than by loading a whole run's records at once.",
+  "intent": "Capacity / scale",
+  "fit_criterion": "a consumer reads a batch of records with memory bounded independently of the batch's size",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f76734834f90a297132b7b6656d25cf2beb4097e1241e1d9af4185d44913e0c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.639Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

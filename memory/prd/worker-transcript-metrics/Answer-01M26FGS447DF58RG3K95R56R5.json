@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Answer-01M26FGS447DF58RG3K95R56R5",
+  "kind": "Answer",
+  "subject": "prd/worker-transcript-metrics",
+  "statement": "This feature produces usage figures; the routed plane consumes them by reference. The routed plane owns route selection and launch fidelity — which native profile was chosen, and whether the process launched with it. This feature owns per-process transcript metrics, usage figures included. Where `prd:planner-driven-model-routing` FR-20 connects \"available usage measurements\" to a routing decision, those measurements are this feature's records, referenced by identity rather than restated: FR-20 positions itself as a consumer of whatever usage is available, not as a second producer of it. No requirement of this contract changes, and none is ceded.",
+  "learned_from": [
+    "prd:worker-transcript-metrics/Q1"
+  ],
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M26FGRW7ZZFSY3CQQCWQCQP3"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.036Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "resolved approved PRD row"
+  }
+}

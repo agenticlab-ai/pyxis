@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB6Q5ZG4PK5ZZR24K1EEE",
+  "kind": "Document",
+  "subject": "configuration/context-pack",
+  "family": "config",
+  "statement": "Imported Pyxis source document: .pyxis/context-pack.yaml",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/context-pack.yaml",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "64b8b81a517aef1947ea94472922f3034c5c860039e49118a0714dc218e6d5ba",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:08Z",
+  "provenance": {
+    "source": ".pyxis/context-pack.yaml",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

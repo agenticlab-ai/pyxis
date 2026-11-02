@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMKBEDS1H12RBXWHNH1S",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-10",
+  "statement": "The revised FR-6 requirement and fit criterion limit clone verification to the configured origin and disclaim independent repository identity, but the packet called that change unruled.",
+  "intent": "Exact-head lock packet review for PR #1312 at `9236f9c395b1446bdbce868694a1d7f3ecc9a612`, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

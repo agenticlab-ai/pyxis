@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWS81D0RMP6T6N17KSW",
+  "kind": "Decision",
+  "subject": "design/doc-link-integrity",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-21 · prd:docgate/FR-22.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:d8c207fec2497743c6399550310e0534361e3ca73b181f04a8bd34780064520d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNXJ01YC37WGY8XMTT17"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAGA19APSQ0GQQ1EX2G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAHYECPNEMM9HW2GHG1"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.801Z",
+  "provenance": {
+    "source": "docs/tech-design/doc-link-integrity.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header d8c207fec2497743c6399550310e0534361e3ca73b181f04a8bd34780064520d"
+  }
+}

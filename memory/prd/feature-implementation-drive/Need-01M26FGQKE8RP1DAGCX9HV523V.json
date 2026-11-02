@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKE8RP1DAGCX9HV523V",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "G3",
+  "statement": "We believe candidate-merge e2e with repair work will prevent unverified integrated features from reaching final proposal; expected result: every final proposal binds to current accepted evidence and every seeded failure repairs before proposal",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ed3ab97c57f28928be7962d0b1ae3daa44d6b994dde73088e31e1fb9ba5378b8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.478Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

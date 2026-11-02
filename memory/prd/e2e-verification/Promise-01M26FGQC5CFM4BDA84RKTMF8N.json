@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQC5CFM4BDA84RKTMF8N",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "ABUSE-4",
+  "statement": "e2e-design optimizing to look complete — vector: maps a scenario to required behaviors it does not actually exercise (over-mapping / coverage inflation) — honest about each scenario's own behavior, but extra map edges claim coverage the scenario never touches",
+  "intent": "the coverage map reads fully green while proving a fraction of what it claims",
+  "fit_criterion": "FR-2 (every behavior mapped) + FR-24 (coverage/anti-gaming lens); the per-map-edge exercise check — each behavior→scenario edge genuinely exercised, not just present — and its seeded catch case are design-owned (§7.2 Q2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:73016d30e48b69b16833a28c976e48127fdd9d67ce0b586ccbdafb83895e9797",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.245Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

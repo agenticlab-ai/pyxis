@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3JB9D54M45N5BKKKVKP1",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-2",
+  "statement": "Mutable-source and code-unit ownership admit only exact exclusive selections",
+  "intent": "FR-3, FR-4, UB-3",
+  "fit_criterion": "owner-state corpus covering every eligible class and supported unit kind",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c528eeeacd4155b201e31288807983ef756b5bf594a0c5ec2787b8b1521641a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:49Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

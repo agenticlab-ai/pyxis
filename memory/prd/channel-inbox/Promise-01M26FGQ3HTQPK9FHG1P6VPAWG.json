@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3HTQPK9FHG1P6VPAWG",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "ABUSE-4",
+  "statement": "A bulletin tries to silence the emergency lane — vector: mark a security notice mutable, or induce a mute of blocking",
+  "intent": "a known-bad/security notice is silenced",
+  "fit_criterion": "FR-4 + FR-5: `blocking` is not muteable and not deduped, by contract; mute is user-only and advisory-only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:07a1c765d19511c73b8312b4fee122d3dd0db7a800a9f264615b13636873329c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.969Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

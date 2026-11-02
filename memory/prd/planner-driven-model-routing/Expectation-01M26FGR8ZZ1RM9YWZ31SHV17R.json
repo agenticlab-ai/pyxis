@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR8ZZ1RM9YWZ31SHV17R",
+  "kind": "Expectation",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "DOD-3",
+  "statement": "Every required harness/role/derivable-profile cell passes conformance and qualification review.",
+  "intent": "M3, FR-8, FR-11, FR-12, EVAL-2",
+  "fit_criterion": "conformance matrix and operator sign-off",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c1a94c7d5b46e4b328b267082ebf6240f3a4076049fffbc9257f7e32103ee8a4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.167Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

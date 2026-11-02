@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNSAGFCAWVKXQ2KEQ5VA9",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-9",
+  "statement": "When the product side rules on a requirement problem, the system shall apply the ruled change — a revision, an addition, or a retirement — to the PRD in the same feature draft and record the ruling's author, reason, and triggering problem.",
+  "rationale": "The correction lands where it was found, attributably (brainstorm:feature-draft#D-9)",
+  "fit_criterion": "100% of requirement changes in fixture drafts carry author, reason, and triggering problem; a requirement change lacking any of the three is refused; a retired requirement appears as retired in the locked version.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6ac2bb46c7e3ccf10ce1388ac131b61840c2c86eb631a7820af55df8ecd4b8fb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:35Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

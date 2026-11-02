@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/maintenance-sweep#Q1",
+  "feature": "maintenance-sweep",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

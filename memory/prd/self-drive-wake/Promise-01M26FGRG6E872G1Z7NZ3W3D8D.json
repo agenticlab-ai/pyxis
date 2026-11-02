@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG6E872G1Z7NZ3W3D8D",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-3",
+  "statement": "When answering check state, the state reader shall derive it from the per-context check set compared against the repo's required set, never from an aggregate rollup alone.",
+  "rationale": "a rollup can read green with a required context absent (AP-13's badge-trust class)",
+  "fit_criterion": "a fixture with aggregate=success but one required context missing reports not-green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6ca65784bb611c8092bc3ea52edfaa259acb4f8dfc58888dcfa645ff2bdc2b29",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.398Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

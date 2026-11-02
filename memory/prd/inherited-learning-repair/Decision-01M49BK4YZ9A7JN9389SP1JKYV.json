@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4YZ9A7JN9389SP1JKYV",
+  "kind": "Decision",
+  "subject": "prd/inherited-learning-repair",
+  "family": "R3",
+  "statement": "Coordinator stops after an external effect",
+  "rationale": "Explicit uncertainty, no automatic retry; WR-1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

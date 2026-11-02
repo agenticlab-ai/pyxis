@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB6W60PQDMPFTT1E23RSM",
+  "kind": "Document",
+  "subject": "distribution/github-workflows-docs-gate",
+  "family": "source",
+  "statement": "Imported Pyxis source document: .pyxis/dist/github-workflows/docs-gate.yml",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/dist",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "9632e36ad9bc8020e52cad5502ea4214aa58b76d0cffe50ca3b336d9ac89b6ed",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:08Z",
+  "provenance": {
+    "source": ".pyxis/dist/github-workflows/docs-gate.yml",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

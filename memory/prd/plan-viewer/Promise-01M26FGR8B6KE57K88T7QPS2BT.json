@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8B6KE57K88T7QPS2BT",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "FR-2",
+  "statement": "When rendering a plan, the viewer shall draw the dependency graph as a diagram containing every task exactly once and every blocked-by edge exactly once, with each task's foundation level visually distinguished.",
+  "rationale": "the DAG shape is the review's first question and is invisible in raw markdown",
+  "fit_criterion": "on a fixture plan, the generated diagram definition contains each task node once and each edge once, and distinct foundation levels render distinctly; a wrong-edge fixture fails",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:765ea91d2fc0d3d761b27ecaab6bdef6a1211f73021646a363904178e991dcca",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.147Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M8JE9P766Z260SKJMJ5J5",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:design-solution-shape/FR-1 · prd:design-solution-shape/FR-2 · prd:design-solution-shape/FR-3 · prd:design-solution-shape/FR-4 · prd:design-solution-shape/FR-5 · prd:design-solution-shape/FR-6 · prd:design-solution-shape/FR-7 · prd:design-solution-shape/NFR-1 · prd:design-solution-shape/NFR-2 · prd:design-solution-shape/NFR-3 · prd:design-solution-shape/NR-1 · prd:design-solution-shape/NR-2 · prd:design-solution-shape/UB-1 · prd:design-solution-shape/UB-2.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRXQE2M46S5Q8E2KCQK5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9B5FB583SMYD72SE9V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9DGXV77VNASGTADHMW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9ENQ8N3MTG1ZJ4XR54"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9FNZW36DA11FA5P883"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9GBANB0RJ3TEZCT0HA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9SK4TNRMD1ZJY80FNX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9TESRPK8EXA8QMQTNF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9VB13QG9ANJR17S709"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9XN0ZXPHJ13BGWZG1A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9YC11VPESJ425J7GKB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ9ZTWH6EDYTDKAZXE8M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQA0285GXA65WD6J5GAJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KS9QMG73RTPD1ZD91F09W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KSBTB3NJP8PHS00F4ERBT"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRZ599VTBS35Z9ENSAH28"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:54Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "note": "projected from exact design header ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f"
+  }
+}

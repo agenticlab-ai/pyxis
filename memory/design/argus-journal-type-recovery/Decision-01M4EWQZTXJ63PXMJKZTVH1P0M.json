@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWQZTXJ63PXMJKZTVH1P0M",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.2.1",
+  "statement": "The normal document gate's registered `check-delivery-types` check validates changed delivery ledgers against their trusted base. A newly introduced unknown event refuses even if a later same-proposal correction tries to cover it. A historical unsupported event is tolerated only when a valid appended correction resolves it. Unresolved historical errors receive a specific recovery diagnostic rather than an unexplained capture-path refusal. Unchanged legacy ledgers do not block unrelated application changes. Pushed heads are read from Git rather than another session's working tree. The Source legacy-document exemption retains this Argus integrity check, as it retains attribution and history.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d295ba5f9f3b68b3b28dcc08b1443ef1ccbd97693182eb455b8453c03723d341",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:30Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 44-44 in section 3.2; sha256:d295ba5f9f3b68b3b28dcc08b1443ef1ccbd97693182eb455b8453c03723d341"
+  }
+}

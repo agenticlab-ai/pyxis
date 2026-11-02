@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMJBFDZW2Y967D9M13JJ",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Operator chose the shared-account origin on 2026-09-28; host-level mainline protection is out of scope.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJA1WHBA9MDX8XX284N"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

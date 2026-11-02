@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMK1NJP60HJFS8BVYGPW",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-5",
+  "statement": "The draft promised distinct-repository rejection without defining repository identity. A clone can check retained record and object consistency, but that check alone cannot establish which origin supplied them.",
+  "intent": "GitHub code review on PR #1312, discussion 4125900312, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

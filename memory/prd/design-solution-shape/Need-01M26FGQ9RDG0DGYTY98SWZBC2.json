@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9RDG0DGYTY98SWZBC2",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "frozen Decisions carrying volatile shape detail",
+  "fit_criterion": "zero merged Decisions carry volatile shape detail across the same checkpoint set",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:29705a9b2be2013c08a03204fb790cc249b349eed8332bc90e5cb2162cb6a035",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.168Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

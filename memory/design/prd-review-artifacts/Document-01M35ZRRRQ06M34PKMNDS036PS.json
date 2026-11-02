@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRRRQ06M34PKMNDS036PS",
+  "kind": "Document",
+  "subject": "design/prd-review-artifacts",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/prd-review-artifacts.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:888a446fda990afa5ac09cac1250f780e2204032a0d6146d2c459553f1506625"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCVVF87M2ZRNKNP8YPYT5"
+    }
+  ],
+  "body_sha256": "888a446fda990afa5ac09cac1250f780e2204032a0d6146d2c459553f1506625",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:30Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-review-artifacts.md",
+    "note": "offline reconciliation"
+  }
+}

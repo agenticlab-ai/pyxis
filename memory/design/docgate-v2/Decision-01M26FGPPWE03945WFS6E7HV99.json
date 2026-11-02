@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPWE03945WFS6E7HV99",
+  "kind": "Decision",
+  "subject": "design/docgate-v2",
+  "family": "decision.2.1",
+  "statement": "v2 extends the same binary with five class linters and one\ngenerator, all composed into the existing `gate` umbrella (DINV-4\nunchanged — desk and CI identical): `lint-tech-designs` (header schema, typed\n`Serves` grammar, mandatory-by-name §Observability + §Security \u0026 privacy\nwith the none+reason escape and the security header↔subsection pair,\nslug rules, reference resolution); `gen-index` + `verify-index` (the\ndesign graph as `index.md` + `index.json` — generated, byte-verified,\nsole writer docgate, exactly the projection pattern of v1's fold);\n`lint-wiki` and `lint-rollups` (routing/metadata header presence and\nshape); `check-governing` (any diff touching the vision or principles is\na defect unless the commit carries the `Governing-Change: operator`\ntrailer — attestation, not authorization: the machine checks presence,\nreview checks truth); `lint-incidents` (append-only entries, dense `I…`\nIDs, four named fields). Class rules live in `internal/docgate/schema`\nas registries, like v1's table schemas. Semantic judgment stays human\neverywhere.",
+  "tags": [
+    "code:internal/docgate/schema",
+    "reconcile:design-decision",
+    "source-block:ea8bdae9a824abbc72dfb9088fc710f7f325bce0631ab3604a4e6951b42111cf",
+    "source-design:9dbf41b6b24e568cd940650897b903703d4caef34d3a725fb0a14bb7d8d3a6a2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPC8J6YS2TYS3BYZ7FAG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.564Z",
+  "provenance": {
+    "source": "docs/tech-design/docgate-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/docgate-v2.md lines 32-47 in section 2; sha256:ea8bdae9a824abbc72dfb9088fc710f7f325bce0631ab3604a4e6951b42111cf"
+  }
+}

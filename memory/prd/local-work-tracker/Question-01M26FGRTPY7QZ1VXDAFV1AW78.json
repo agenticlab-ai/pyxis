@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTPY7QZ1VXDAFV1AW78",
+  "kind": "Question",
+  "subject": "prd/local-work-tracker",
+  "family": "Q3",
+  "statement": "Whether the capacity target requires a local index for search, and if so how strong-read consistency is preserved on decision paths (AP-15)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Graph-\u0026-query phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:04a2bc38e9b5da04ec40e44a8c391c4bd869c2bad677efed037e2701e1d900e6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.734Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

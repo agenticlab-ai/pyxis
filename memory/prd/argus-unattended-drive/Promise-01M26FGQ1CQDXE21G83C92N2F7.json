@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1CQDXE21G83C92N2F7",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "ABUSE-2",
+  "statement": "anyone widens the lane's own policy through the AUTO lane (self-unlock) — vector: a policy/classifier/activation diff riding a floor-clear-looking proposal",
+  "intent": "the floor erodes from inside",
+  "fit_criterion": "UB-3 (self-unlock always HUMAN), FR-7 (operator-ratified versioned data), the authority-contract structure arm",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aea033ab9d3848adc80fd03b97b8bf0857f50617ce6b8c427a431679d111ece2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.9Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

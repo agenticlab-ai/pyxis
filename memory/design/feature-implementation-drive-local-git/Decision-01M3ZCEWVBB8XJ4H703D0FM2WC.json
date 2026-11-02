@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCEWVBB8XJ4H703D0FM2WC",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.2.1",
+  "statement": "Every touch follows one transaction/effect loop; no adapter may bypass it:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6eecceb8ca5131b4f50456ffd34b2c7c9aef9992e96a01d203b44375173d383f",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:19Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 84-84 in section 3.2; sha256:6eecceb8ca5131b4f50456ffd34b2c7c9aef9992e96a01d203b44375173d383f"
+  }
+}

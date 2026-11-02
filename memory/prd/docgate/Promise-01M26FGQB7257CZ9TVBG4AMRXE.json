@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB7257CZ9TVBG4AMRXE",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-43",
+  "statement": "When folding a Q, docgate shall maintain a required boolean `question_answered` in its fold-state and `effective.source.json` unit record: a Q introduced without checkpoint-carried state starts false and a successful `answer Q\u003cn\u003e` sets it true; non-Q records omit the field. When docgate creates, validates, or consumes a rebase checkpoint, it shall copy each live Q's immediately-before value into typed replay-base metadata, restore that value before applying later entries, and have `verify-rebase` compare it with the pre-checkpoint fold, failing any missing, invalid, or unequal value.",
+  "rationale": "the checkpoint Markdown re-anchors units but neither its free-text Status cell nor the current source-map lineage fields can preserve an answer operation that the replay window no longer contains",
+  "fit_criterion": "a base Q with arbitrary Status and a fresh post-checkpoint Q each emit explicit false; a ledger with `answer Q1` followed by `002-rebase.md` emits and restores Q1 true while unanswered Q2 remains false; folding the full pre-checkpoint history and folding from the checkpoint produce identical Q classifications and source-map booleans; deleting or flipping either checkpoint value reds `verify-rebase`, deleting or flipping the generated source-map value reds `verify-generated`, and a second faithful checkpoint preserves both values",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:72cb9c4b2a90a54906fe428272854e933085f5e912f0c2b78947c1a1bb534a17",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.215Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

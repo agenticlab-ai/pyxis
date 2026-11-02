@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A96RJ38V26SQJBNPAMJN",
+  "kind": "Decision",
+  "subject": "prd/maintenance-jobs",
+  "family": "R3",
+  "statement": "Ten-minute CI may be blocked by runner queues or required work; proposed 90-minute job budget and routing requirements may need tuning",
+  "rationale": "Prompt measures first and reports limits; budget/harness/routing remain YAML settings; native catalogs keep existing ownership; revisit after first real run",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

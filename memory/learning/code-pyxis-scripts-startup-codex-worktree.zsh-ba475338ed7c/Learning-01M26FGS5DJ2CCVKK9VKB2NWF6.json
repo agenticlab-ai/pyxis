@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS5DJ2CCVKK9VKB2NWF6",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-scripts-startup-codex-worktree.zsh-ba475338ed7c",
+  "statement": "The Codex startup adapter now declares Codex-specific top-level options, target and path arguments, and dynamically reads completion data to identify subcommands; it delegates interactive repository discovery and worktree creation to the shared startup module, while help, version, subcommands, unknown syntax, noninteractive calls, and existing linked worktrees pass through to native Codex unchanged.",
+  "intent": "Keep Codex launch classification current after extracting the reusable worktree lifecycle for all supported harnesses.",
+  "rationale": "The previous Codex-only wrapper owned both parsing and Git lifecycle. The refactor preserves its behavior while making the adapter narrow and the shared lifecycle independently testable.",
+  "fit_criterion": "Codex and multi-harness pseudo-terminal tests prove completion-driven subcommand pass-through, option and path preservation, adopted-repository worktree launches, native failure propagation, and the opt-in real-Codex trust-check regression.",
+  "learned_from": [
+    "Learning-01M26A317N8QPQNQA4TJNKMVBC",
+    ".pyxis/scripts/startup/codex_worktree_test.go"
+  ],
+  "tags": [
+    "code:.pyxis/scripts/startup/codex-worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26FGS549XXJKGA1WAQB3AS2"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS5AE2QYVQ4QP82780XN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS59GRAXZN34882HY9YF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.077Z",
+  "provenance": {
+    "source": ".pyxis/scripts/startup/codex-worktree.zsh",
+    "commit": "b97275899ba6c9f54f8f5bf704f868d48e92554b",
+    "note": "Supersedes the Codex-only lifecycle description after the shared multi-harness refactor."
+  }
+}

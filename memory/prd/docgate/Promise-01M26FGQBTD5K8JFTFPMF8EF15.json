@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBTD5K8JFTFPMF8EF15",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "NR-3",
+  "statement": "Corpus and non-ledger docs are never content-gated, linted, or reformatted — the corpus fence (FR-19) freezes bytes of merged flat corpus files and nothing more; wiki, maps, and rollups keep exactly their own named checks",
+  "rationale": "placeholders are never retrofitted (the surviving spirit of NG-1); gates never widen silently",
+  "fit_criterion": "a gate run over the current repo yields zero content findings on flat corpus files; FR-19 fires only on modify/delete/rename of merged flat corpus files; wiki/map/rollup checks unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:06e476e062f41c264763789d42d6588e8b069779f64c2df13e4e1d749fa6b9e1",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.234Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

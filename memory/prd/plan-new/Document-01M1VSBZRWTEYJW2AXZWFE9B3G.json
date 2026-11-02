@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBZRWTEYJW2AXZWFE9B3G",
+  "kind": "Document",
+  "subject": "prd/plan-new",
+  "family": "amendment-001",
+  "statement": "Imported Pyxis source document: docs/prds/plan-new/001-local-tracker-projection.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "accaf7ba1c29b469d617f0196c76147f8ea85a2d2ee5ff3fe2d7770c3f28e27d",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:34Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/001-local-tracker-projection.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

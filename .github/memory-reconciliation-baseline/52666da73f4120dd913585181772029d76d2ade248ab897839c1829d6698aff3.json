@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/context-pack#Q1",
+  "feature": "context-pack",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

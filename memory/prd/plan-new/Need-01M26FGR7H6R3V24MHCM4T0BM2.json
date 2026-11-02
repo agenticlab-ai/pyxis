@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7H6R3V24MHCM4T0BM2",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "projected issues need no human repair before pickup",
+  "fit_criterion": "0 human edits to projected issues between projection and first executor pickup, across the first 3 plans (checkpoint: \"3 plans executed\")",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c9c45b8c19f1b7402162a4aba4a9d9a03c9d8cb0c48add36bc764c6b627ad937",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.121Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

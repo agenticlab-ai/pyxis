@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB2XEWCYQH39JHZMAWY",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-39",
+  "statement": "Where an author replaces the canonical content of a binding row, docgate shall accept only the lineage-preserving repair authorized by its immediately-before state: a row with live fold state uses `supersede \u003cID\u003e` with a complete fresh same-prefix row for every FR-41 addressable prefix except a Q classified unanswered by FR-42, which uses `answer`, and NG/WR, which use `rescope`; a lineage-less FR/NR/UB/NFR/DOD/EVAL/EVT/Q/NG/WR row first uses a semantic-no-op rebase checkpoint and then the same prefix-authorized operation; and a lineage-less G/J/M/ABUSE/R row may use a direct whole-section `supersede` that refreshes and annotates only the canonically changed row with no prior fold-state or source-map lineage. `retire` remains available only for actual removal of a live row for which no live DOD `Source` cell or live row `Traces to` cell contains a resolvable reference, and shall never be emitted as part of a replacement repair.",
+  "rationale": "the current design text lists only FR/NR/NFR/DOD/EVAL/UB as `supersede` targets, while docgate and merged amendments already accept lineage-preserving ABUSE and EVT supersession; `retire` plus `add` discards both source-map lineage links and can be structurally invalid for a cited row",
+  "fit_criterion": "a lineage-bearing ABUSE-1 changed inside a section is red under FR-32, then `supersede ABUSE-1` with fresh ABUSE-9 is green with ABUSE-1 `superseded_by=ABUSE-9` and ABUSE-9 `supersedes=ABUSE-1`; existing ABUSE and EVT supersede corpus fixtures stay green; lineage-less R, M, and ABUSE rows change through direct whole-section supersede with matching new visible/machine lineage; FR-42/FR-43 unanswered/answered Q, NG/WR, EVT, and FR each pass only their named branch; a row referenced by a live DOD `Source` or live `Traces to` cell cannot retire; no replacement remedy uses `retire` plus `add` or fails cited-target validation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:db5e6abbd66d0cafd53684b01414ce3f707ec3dc37ef938b07b01d15d00c9cef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.21Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

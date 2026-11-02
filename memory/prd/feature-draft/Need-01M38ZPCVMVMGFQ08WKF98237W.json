@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZPCVMVMGFQ08WKF98237W",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "M3",
+  "statement": "M3: G3",
+  "intent": "new files under the document corpus's PRD, tech-design, brainstorm, and review roots for draft-born features",
+  "fit_criterion": "0 across the first three draft-born features",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:60cf491b10bb7c93a323172ef5df1179344c88c948c450db722200fb17007a5d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:55Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

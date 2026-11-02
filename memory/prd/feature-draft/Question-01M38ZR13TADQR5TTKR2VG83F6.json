@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M38ZR13TADQR5TTKR2VG83F6",
+  "kind": "Question",
+  "subject": "prd/feature-draft",
+  "family": "Q7",
+  "statement": "Which descriptions of the per-stage freeze change at the switch-over (brainstorm:feature-draft#P-4)?",
+  "intent": "tech spec author",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:894c587ab4193c9b4503a05b414b0e70887be8983ab9be55d77214c5dcc8e26e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:49Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "captured from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

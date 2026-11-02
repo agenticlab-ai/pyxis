@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M4A2NWF51K6Y1XK46HS004A7",
+  "kind": "Document",
+  "subject": "incident/registry",
+  "family": "incidents",
+  "statement": "Captured authored source: docs/observability/incidents.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/observability",
+    "reconcile:source",
+    "sha256:f0d9802e317451e0c1e1c8d22c0c4f2571facffc01e3542256b228eb078eb4c4"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M49K51S4D1PHQ382931Z7SG0"
+    }
+  ],
+  "body_sha256": "f0d9802e317451e0c1e1c8d22c0c4f2571facffc01e3542256b228eb078eb4c4",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-10-07T02:22:01Z",
+  "provenance": {
+    "source": "docs/observability/incidents.md",
+    "note": "offline reconciliation"
+  }
+}

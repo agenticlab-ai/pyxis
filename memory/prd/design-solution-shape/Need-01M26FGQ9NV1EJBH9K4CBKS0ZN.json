@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9NV1EJBH9K4CBKS0ZN",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "J2",
+  "statement": "When the implementing code has landed, I want have the concrete shape stop being authoritative, so I can keep the durable record from lying about what the code now owns",
+  "rationale": "this session",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:04e663121cb87feb23d3feb7810bc8004ad21a794b9d734e0773e667f0b73c52",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.165Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

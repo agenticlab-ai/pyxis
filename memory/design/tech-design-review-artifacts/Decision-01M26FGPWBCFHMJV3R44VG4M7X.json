@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWBCFHMJV3R44VG4M7X",
+  "kind": "Decision",
+  "subject": "design/tech-design-review-artifacts",
+  "family": "decision.2.1",
+  "statement": "The tech-design-review artifacts follow the ruled direction — **typed markdown in the record-class pattern** (design-brainstorm:reviewer-artifacts-tech-design#D-1), instantiated for the design class as **`design-review-report/v1`**: one report per subject at **`docs/reviews/\u003cdesign-slug\u003e.md`** — the subject being the design+shape pair (or a superseding design with its targets), rounds and verdict history appending inside, the escalation brief embedded, the report riding the design's introducing PR — with this class's **own calibration table** (`tech-design-review-calibration/v1`) as versioned data at the tech-design-review skill's home (design-brainstorm:reviewer-artifacts-tech-design#D-2). The schema extends the sibling's shape with two class-specific structures: **pair-subject evidence** (findings may quote the design or its shape, the header records which halves the subject carried) and **supersession-integrity findings** (a finding class citing the successor's and targets' anchors, never disputing the targets' frozen content). JSON-native mechanization stays parked with the shared trigger.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3ac81778717a6ddab29038024afad5e33cfc711673fa010ac26e56ca51585d08",
+    "source-design:8a03816c31cc17cbe3becf3fbf15630806982a69b98fbc51693e90bf598d5337",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYEZ4MYYVCN609W0T2B1"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.739Z",
+  "provenance": {
+    "source": "docs/tech-design/tech-design-review-artifacts.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/tech-design-review-artifacts.md lines 24-24 in section 2; sha256:3ac81778717a6ddab29038024afad5e33cfc711673fa010ac26e56ca51585d08"
+  }
+}

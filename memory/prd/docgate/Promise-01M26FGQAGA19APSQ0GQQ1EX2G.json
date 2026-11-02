@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAGA19APSQ0GQQ1EX2G",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-21",
+  "statement": "When invoked as `check-links`, docgate shall resolve every relative markdown link target in `docs/**/*.md`, `AGENTS.md`, and the configured templates directory to an existing file — skipping fenced code blocks, external URLs, and pure `#fragment` links — and shall fail on any dangling target, naming source file, line, and target.",
+  "rationale": "inbound links to frozen docs never go stale by design; outbound links rot silently when targets move, and nothing checked (#54 A5)",
+  "fit_criterion": "a dangling-link fixture red naming file, line, and target; fenced-block, external, and fragment-only links ignored; the real corpus green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bbc63b54cc77b9411f690e4f8104c6eceb11d40d21c03ecdc1cf4f836fa72fc1",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.192Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

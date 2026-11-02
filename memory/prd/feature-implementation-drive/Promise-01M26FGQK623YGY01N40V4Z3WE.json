@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQK623YGY01N40V4Z3WE",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-4",
+  "statement": "The feature drive shall maintain a routing scope that selects exactly the feature's executable task set.",
+  "rationale": "Isolate concurrent features and generic work.",
+  "fit_criterion": "Concurrent fixtures with unrelated routed issues show zero cross-feature pickup and zero generic-pool pickup by the drive.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:06de2e0a3dcfa96dfa279ea3ed80c54c68f62674b40be2064e9948a9d09108d3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.47Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

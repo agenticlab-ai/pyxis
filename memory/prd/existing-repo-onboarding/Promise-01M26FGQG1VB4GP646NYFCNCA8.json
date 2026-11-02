@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQG1VB4GP646NYFCNCA8",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "UB-5",
+  "statement": "If the target is not a git repository, then the system shall refuse by name before inspecting",
+  "intent": "a named refusal",
+  "fit_criterion": "a non-git target refuses and writes nothing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d42be3ed0953d6b48eed7d73ad17e902dc88c92c4968df8b518a4afe49241c7c",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.369Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

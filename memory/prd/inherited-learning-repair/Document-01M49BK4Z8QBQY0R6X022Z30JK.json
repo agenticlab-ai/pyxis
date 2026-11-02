@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M49BK4Z8QBQY0R6X022Z30JK",
+  "kind": "Document",
+  "subject": "prd/inherited-learning-repair",
+  "family": "problems",
+  "statement": "Draft problems.md",
+  "body_sha256": "fd25e5ebccca62a667da28d22c64ff365a8da3dcb85a7da962fe17fa3258ee78",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

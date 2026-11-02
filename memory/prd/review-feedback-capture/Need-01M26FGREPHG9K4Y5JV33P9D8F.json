@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGREPHG9K4Y5JV33P9D8F",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "G3",
+  "statement": "We believe closing the loop visibly; expected result: reviewers experience their comments as remembered and resolved, not dropped",
+  "fit_criterion": "the operator's own observation at review that a comment's outcome is visible in the ledger (solo operator; Appendix-A rule 15 — no ceremonial interview)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f0f07eaaed6f1354455e11659e7039b4339653eeba0590d4fc602973769c2a95",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.35Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGDZN2X4VKNGD1VKTAT",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "DOD-7",
+  "statement": "A full session leaves the working tree clean except the record path, and `docgate gate` stays green",
+  "intent": "FR-15, NR-2",
+  "fit_criterion": "session-end `git status` capture + gate output",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:54c42ec20d3c6157826153d0524810d098df9bd3d8a59f31ae2cfddaeeaec529",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.381Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

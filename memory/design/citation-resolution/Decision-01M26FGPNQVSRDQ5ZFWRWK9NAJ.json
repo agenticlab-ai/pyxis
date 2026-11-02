@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNQVSRDQ5ZFWRWK9NAJ",
+  "kind": "Decision",
+  "subject": "design/citation-resolution",
+  "family": "decision.3.3.1",
+  "statement": "resolution is **present-or-dangling**, and superseded counts as present. A unit ID that appears anywhere in its projection — a live row *or* a \"Superseded \u0026 retired\" row — resolves; supersede is not retire, and a citation to a superseded unit is legitimate (the stale-cite signal). Only a target **absent entirely** — a typo, a never-existed ID, a deleted record — is dangling and fatal.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5248c1c41bbc81373e26540266ec28866d0a673e22fdc92f9a058c7017bde3ef",
+    "source-design:cac96f4349b575c0b7e5483f1b23687d97b9d1d441813ff5abdb486509ae55bd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMQMAA0XZ6N51V68PN3W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.527Z",
+  "provenance": {
+    "source": "docs/tech-design/citation-resolution.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/citation-resolution.md lines 50-50 in section 3.3; sha256:5248c1c41bbc81373e26540266ec28866d0a673e22fdc92f9a058c7017bde3ef"
+  }
+}

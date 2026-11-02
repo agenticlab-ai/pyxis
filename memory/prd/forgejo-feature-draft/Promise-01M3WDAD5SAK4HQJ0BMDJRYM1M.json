@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD5SAK4HQJ0BMDJRYM1M",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "FR-4",
+  "statement": "When a draft round resumes or is abandoned, the system shall update the same selected-host PR and branch under a remote-head lease, retaining round and abandonment semantics.",
+  "rationale": "Prevent duplicates/misdirection.",
+  "fit_criterion": "Round restores exact working bytes and same PR; abandonment leaves required reason record; moved remote head refuses.",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

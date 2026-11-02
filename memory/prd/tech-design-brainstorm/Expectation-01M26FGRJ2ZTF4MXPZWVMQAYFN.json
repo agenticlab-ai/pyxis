@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ2ZTF4MXPZWVMQAYFN",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-6",
+  "statement": "Packaging honors the vendor-neutral surface; the sibling template is versioned with both checklists; the stage-1 surface diff is empty",
+  "intent": "NFR-3, NR-1",
+  "fit_criterion": "file layout + diff review",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1df9e1814ac27ed511024940737bf9900804a5ebef90e5f32772bbcb86cdc64c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.458Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

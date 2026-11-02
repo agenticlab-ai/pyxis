@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZZPNJR9E0DF6GCMD6Q",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NFR-2",
+  "statement": "The structure arm and attribution gate shall add bounded steady-state cost to a gate/CI run.",
+  "intent": "Performance",
+  "fit_criterion": "the structure arm is one version-pinned parse of a single small file per gate run; the attribution gate is one diff+authorship read per PR; no recurring cost beyond a gate run (AP-19)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:117a0d26ea44b86444173f1b750de87adc94ca21ef6a50e5d753d0ba2b9a09ed",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.855Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461QEVF10ET0QXNWZWR8V7Q",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-2",
+  "statement": "An ungranted agent wants its work locked — vector: self-declared driver approval",
+  "intent": "unread contract reaches execution",
+  "fit_criterion": "FR-56, FR-57, FR-58, UB-15",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:191e0b5dfcd45b01557188781a5d190b154f7d40492d3b6553f0fe1ee70aa885",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRV2XK6SAP8H17PNC4J690"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:48:26Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

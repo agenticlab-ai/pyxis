@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRA1EKWYDGREDP024T81",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-9",
+  "statement": "If no exact native profile exists but a stronger qualified profile satisfies every minimum, the harness adapter shall select the stronger profile and record each promoted component.",
+  "rationale": "visible overprovision preserves correctness",
+  "fit_criterion": "promotion fixtures select only a dominating profile and emit EVT-2 with the promoted components",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:504642125bb54881f4860f2f8bf2b3ea44a10f38c6e723816b86d0c1bf4bf383",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.201Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFD64AR1TGWT8HCX9R4",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-13",
+  "statement": "The complete live unwanted-behavior matrix passes, including downgrade drain, durable review recovery/non-laundering, and whole-store unknown.",
+  "intent": "UB-1..UB-4, UB-7..UB-11",
+  "fit_criterion": "one indexed result per live UB row; UB-8's drain oracle, UB-9's recovery traces, UB-10's stale/exhausted status, and UB-11's zero-launch unknown traces included",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7e064310c6c5e3bec67528fa8333aebc4683b8047f546e8954ed5f067ef36244",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.373Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

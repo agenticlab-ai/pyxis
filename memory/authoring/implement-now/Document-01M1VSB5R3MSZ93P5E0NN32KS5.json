@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB5R3MSZ93P5E0NN32KS5",
+  "kind": "Document",
+  "subject": "authoring/implement-now",
+  "family": "guide",
+  "statement": "Imported Pyxis source document: .pyxis/authoring/implement-now.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/authoring",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "1ef307344d42d39c641a91ebe56257a1f645dbcead403e7689b6725837437a88",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:07Z",
+  "provenance": {
+    "source": ".pyxis/authoring/implement-now.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

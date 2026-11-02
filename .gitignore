@@ -1,0 +1,82 @@
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Machine-local Pyxis configuration. This recursively overrides matching keys
+# in the tracked .pyxis/config.yaml and must never be committed.
+.pyxis/config.local.yaml
+
+# Logs
+*.log
+# Repository-local execution diagnostics. Shared workflow records stay in Git.
+/.pyxis/logs/
+# Maintenance lifecycle audit is local, append-only diagnostic evidence.
+/.pyxis/maintenance/logs.jsonl
+
+# Legacy memory verification reports are reproducible diagnostics, never source.
+/.pyxis/evidence/memory/
+
+# Regenerable plan previews and authoring scratch.
+.pyxis/scratch/
+
+# The review-feedback capture retry queue — comments spooled by the fail-open
+# conversation adapter when a ledger write fails (review-feedback-capture §3.3,
+# UB-1/UB-2). Durable local state pending a later retry drain, never committed.
+.pyxis/feedback-queue/
+
+# Legacy contract-gate report sink, retained for older binaries. The gate
+# is read-only and only EMITS a bounce's dual-face report here; the durable,
+# immutable-history copy is the one the HOST retains to git (DINV-1/DINV-2). This
+# default sink is regenerable scratch, never committed.
+.pyxis/contract-gate-reports/
+
+# The pinned-release fetch cache (repo-layout-and-system-footprint §3.6/§3.7):
+# docgate-resolve.sh / codegate-resolve.sh cache verified binaries here in
+# release mode. Regenerable by re-fetching against the config's sha256 pin;
+# never committed (DINV-2 — a stray committed binary is unverifiable).
+.pyxis/bin/
+
+# The release artifact set (internal/release DefaultOutDir): `pyxis-release
+# cut` / `pack --out dist` write ~60 binaries plus the payload archive,
+# manifest, and SHA256SUMS here. Regenerable by re-running the verb
+# and published to Releases — never committed (DINV-2 — a stray committed
+# binary is unverifiable). Rooted so a repo path named dist/ elsewhere is
+# unaffected.
+/dist/
+
+# Legacy pipeline-measurement run-record store (pipeline-measurement-v2 §3.6,
+# D-1/ALT-1): an append-only JSONL file per run_id, written by the phasemeter
+# recorder. Per-run operational data, never committed.
+.pyxis/observability/logs/
+
+# Built CLI binaries at the repo root — build output, never source. `go build`
+# in a worktree drops these next to go.mod; a committed one is unreviewable
+# content that silently diverges from the package it was built from.
+/codegate
+/docgate
+/plangate
+
+# Legacy local wake-events trail (design:wake-watch-v2 D-9) — never committed
+.pyxis/wake-events/
+
+# machine-local runtime state. The content-budget ledgers now live under the
+# machine state dir (design:state-reader-v4 §3.8), but earlier builds left one
+# in every checkout — and it was never ignored.
+.pyxis/state/
+
+# Legacy executor event sink, kept ignored for older binaries. Current runs
+# write under .pyxis/logs/executor/; shared delivery records stay under docs/problems/.
+.pyxis/executor-journal.jsonl
+
+# Optional operational logs. Historical tracked evidence remains available.
+/logs/*
+!/logs/README.md

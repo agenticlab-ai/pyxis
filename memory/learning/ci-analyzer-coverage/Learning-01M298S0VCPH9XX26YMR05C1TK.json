@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Learning-01M298S0VCPH9XX26YMR05C1TK",
+  "kind": "Learning",
+  "subject": "learning/ci-analyzer-coverage",
+  "statement": "The shared local and GitHub code gate runs pinned golangci-lint with modernize and unparam because go vet alone did not catch the editor findings. Every changed file is checked against a fixed adoption commit. In implement-now, fmt.Appendf replaces formatted byte conversions and the unused unattended journal argument is removed; the CLI flag remains accepted for compatibility while journaling behavior is preserved.",
+  "intent": "Keep the reported editor findings reproducible in CI and preserve CLI compatibility while removing the unused parameter.",
+  "rationale": "The reported fmtappendf and unusedparams diagnostics came from analyzers that the previous gate never invoked. A fixed baseline with whole-file lint also catches an unused parameter when only the function body changes.",
+  "fit_criterion": "Pinned lint rejects fixtures containing both original findings and passes corrected fixtures; implementation race tests preserve journaling behavior and gopls reports no findings in the reported files.",
+  "learned_from": [
+    "cmd/implement-now/review_resolver_test.go",
+    "cmd/implement-now/main_test.go"
+  ],
+  "tags": [
+    "code:cmd/implement-now",
+    "code:internal/codegatemirror"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-11T22:17:57Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml",
+    "commit": "5006d0834dbccea486e5b79012736595c0752adb"
+  }
+}

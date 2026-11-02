@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZK8HBM85ZTJ9K64NE4K1H",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-1",
+  "statement": "When the operator, or a driver acting for the operator, starts a new feature, the system shall open one feature draft for it that holds its PRD and tech spec with their brainstorm records and review reports.",
+  "rationale": "One workspace holds the whole contract (brainstorm:feature-draft#D-1, brainstorm:feature-draft#D-2)",
+  "fit_criterion": "A new-feature fixture yields exactly one open draft whose PRD, tech spec, brainstorm records, and review reports are each addressable, and zero document-pipeline artifacts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6d9154254c12a419a69fde2c56326367e3a87a841a5d2909ebb934d3984a0c51",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:13Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

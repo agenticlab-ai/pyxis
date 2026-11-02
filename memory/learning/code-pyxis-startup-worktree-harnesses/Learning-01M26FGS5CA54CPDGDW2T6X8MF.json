@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS5CA54CPDGDW2T6X8MF",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "The sourceable startup suite isolates fresh interactive sessions for Codex, Claude Code, Cursor, and OpenCode. Thin harness adapters classify each CLI's pass-through commands, option arity, project target, and path-bearing arguments; the shared worktree module admits only an interactive top-level launch from a .pyxis-adopted primary checkout, fetches origin/main, creates a no-track chore branch in a sibling linked worktree, preserves caller-relative paths, and launches there.",
+  "intent": "Give every supported interactive agent harness the same safe worktree lifecycle without changing headless, resume, utility, editor, or already-isolated invocations.",
+  "rationale": "Repository and Git lifecycle behavior belongs in one sourceable implementation, while harness-specific command grammars remain explicit and fail through unchanged when syntax is unknown or ambiguous.",
+  "fit_criterion": "Race-enabled pseudo-terminal tests exercise real Git repositories for all four harnesses, repository discovery from their native target options, relative-path preservation, pass-through modes and exit status, fetch failure, and optional comparisons with installed CLI help and version output without submitting prompts.",
+  "learned_from": [
+    ".pyxis/scripts/startup/README.md",
+    ".pyxis/scripts/startup/harness_worktree_test.go"
+  ],
+  "tags": [
+    "code:.pyxis/scripts/startup/claude-worktree.zsh",
+    "code:.pyxis/scripts/startup/cursor-worktree.zsh",
+    "code:.pyxis/scripts/startup/opencode-worktree.zsh",
+    "code:.pyxis/scripts/startup/startup.zsh",
+    "code:.pyxis/scripts/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS55G597ZW4T580VN28G"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS56TNEA61ADGRB98BAW"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS57B9J9633XYBSKDC96"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS58DXBCN6BY3MSH2D2F"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS59GRAXZN34882HY9YF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.076Z",
+  "provenance": {
+    "source": ".pyxis/scripts/startup/README.md",
+    "commit": "b97275899ba6c9f54f8f5bf704f868d48e92554b",
+    "note": "Semantic memory for the shared multi-harness startup worktree implementation merged from main."
+  }
+}

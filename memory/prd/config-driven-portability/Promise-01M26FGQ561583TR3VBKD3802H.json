@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ561583TR3VBKD3802H",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "EVT-1",
+  "statement": "selfhost_config_run fires when the self-host acceptance job runs the engine under the non-default config",
+  "intent": "`config_profile: string, green: bool`",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b54366c8891d2f3ad120e0e210cb975a6d22fa14f2e95a05406c62b3fb555839",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.022Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

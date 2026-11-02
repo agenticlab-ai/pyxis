@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95YYH13R709RPE4RDZW",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "UB-4",
+  "statement": "If If native timezone support or the installed/published schedule binding is absent, then the system shall Refuse installation or execution with the cause",
+  "intent": "Unsupported host timezone or schedule-drift/reinstall reason",
+  "fit_criterion": "Mismatched/unknown timezone refuses install; changed published cron/timezone refuses before claiming; same-date delayed/manual launches use the same daily key without a minute/grace gate",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

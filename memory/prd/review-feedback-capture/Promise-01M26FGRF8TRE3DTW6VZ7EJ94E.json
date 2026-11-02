@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF8TRE3DTW6VZ7EJ94E",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "UB-5",
+  "statement": "If If a disposition cannot yet be determined, then the system shall keep the entry open with a flagged pending-disposition state",
+  "intent": "entry visible as pending",
+  "fit_criterion": "such entries are queryable as pending; none is silently closed or dropped",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6cfe9807787270bd5eafd4467fde652681eb33e22e9d844e2472be9967ada0d2",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.368Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

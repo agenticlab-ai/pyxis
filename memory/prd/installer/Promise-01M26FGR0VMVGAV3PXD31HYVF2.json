@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0VMVGAV3PXD31HYVF2",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-28",
+  "statement": "Where no artifact-source override is configured, the system shall resolve every artifact from the distribution door declared in §5.5, and shall issue no artifact request to the source repository's release host.",
+  "rationale": "consumers must be servable without an account on, or a paid seat in, the organisation that publishes the release",
+  "fit_criterion": "with no override configured, every resolved artifact URL carries the door's host across manifest, binary, payload, and dependency fetches; a network transcript of a default-path install contains zero requests to the release host",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:628b9a7373316779b6a9e03a11f89dec2caa05e5c5e5cf9c90664c8f3be1c554",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.907Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

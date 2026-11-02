@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRZD727WJDQ7HETVQAX",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.5.2",
+  "statement": "the declared surface is read from the frozen plan task's path-bearing field — the only field in the plan class that may carry paths, since the charter regions are lint-forbidden from containing them. A recognized e2e task whose plan task declares **no** surface **refuses under `UB-14`** rather than executing with the mandate gate silently unbounded. An absent surface is the one case where a permissive reading would disable a critical consequence row on exactly the tasks that declared least, so it fails closed.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:45006d3f64dc5fd4a5e819ef01712907a9b6c5b2484b22d61f77974440115648",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.631Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 117-117 in section 3.5; sha256:45006d3f64dc5fd4a5e819ef01712907a9b6c5b2484b22d61f77974440115648"
+  }
+}

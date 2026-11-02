@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6G12TKJWTXYK6NJM2Y",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-12",
+  "statement": "When emitting a task, the planner shall attach a charter as schema-versioned structured data carrying every charter field of §4.5 layer 2.",
+  "rationale": "the charter is the behavior contract the worker executes",
+  "fit_criterion": "every charter validates; each layer-2 field class is exercised",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4f18cc3bbffe6da34a31abcdcd60c4a57b079b926fe83ee13c26a8997b67639",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.088Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

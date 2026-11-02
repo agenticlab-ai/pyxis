@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YDF2MWV9G5DPJ4BFRG",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "UB-2",
+  "statement": "If If fresh history or a compatible verifier is unavailable, then the system shall report the unavailable prerequisite",
+  "intent": "freshness_unknown or verifier_unavailable",
+  "fit_criterion": "Cached evidence cannot produce admission or a fixed verdict",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

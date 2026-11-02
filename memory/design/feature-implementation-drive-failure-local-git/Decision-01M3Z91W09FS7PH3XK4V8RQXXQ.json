@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3Z91W09FS7PH3XK4V8RQXXQ",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-local-git",
+  "family": "decision.3.1.1",
+  "statement": "These rows are the complete v1 failure vocabulary and are evaluated before any ordinary next-effect planning:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39",
+    "source-design:ca491c29498b1e43b162309593e93a5c48d3c429430a1289c10396d9d6b601f0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3Z8Q2V461EN2E00K91BWQMD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T21:41:46Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-failure-local-git.md lines 56-56 in section 3.1; sha256:5070528aca77237261b97ea569b159acfd6dc33ed074fc6577ccedfcbe183c39"
+  }
+}

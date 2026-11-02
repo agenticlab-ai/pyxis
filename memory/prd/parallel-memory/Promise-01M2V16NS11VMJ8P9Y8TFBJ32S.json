@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NS11VMJ8P9Y8TFBJ32S",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "UB-3",
+  "statement": "If If policy synchronization is interrupted, then the system shall Report completed/planned work and permit only an exact authorized retry",
+  "intent": "Explicit incomplete outcome",
+  "fit_criterion": "Injected interruption never certifies a partial policy; retry repairs only planned paths and converges",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0cca6bae428106c72694c586b795a6a37ed6ce0f0e1716a0a552404d6a1f2212",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

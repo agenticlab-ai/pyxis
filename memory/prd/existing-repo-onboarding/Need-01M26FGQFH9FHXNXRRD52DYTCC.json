@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFH9FHXNXRRD52DYTCC",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "J2",
+  "statement": "When my repo already has a root convention file, its own hooks, and a CI directory, I want adopt without the factory overwriting or hijacking any of them, so I can keep my repo's own conventions intact",
+  "rationale": "brainstorm:existing-repo-onboarding#D-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a54ec839a03cc9986389aeae47059067801cb6e06e0ef6c1157029feaeddfdde",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.353Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

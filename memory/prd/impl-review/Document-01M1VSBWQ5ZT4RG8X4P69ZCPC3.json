@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBWQ5ZT4RG8X4P69ZCPC3",
+  "kind": "Document",
+  "subject": "prd/impl-review",
+  "family": "amendment-003",
+  "statement": "Imported Pyxis source document: docs/prds/impl-review/003-append-first-routing-evidence.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b1349a8634550f1c3c4c73333eca84993f95a29a2e9cb85d761a15ebeab86ff2",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:30Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/003-append-first-routing-evidence.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

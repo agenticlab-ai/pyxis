@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4EWF7QNY2EY9RDJDEHYB",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-4",
+  "statement": "When an operator selects a production code unit for retirement, the system shall require active semantic evidence that assigns the exact unit exclusively to the abandoned feature.",
+  "rationale": "Shared implementation must remain protected.",
+  "fit_criterion": "Each supported unit-kind control passes; zero-owner, multi-owner, changed-owner, and ambiguous-unit fixtures refuse.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1af32ba8491632b6411202b1a6d742b81f7cf39e347f4488d7feb888bcd5877f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:18Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

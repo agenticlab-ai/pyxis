@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ794N1WN8S5Q1RDZSGY",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-14",
+  "statement": "The complete currency-disposition abuse matrix leaves every unauthorized, broad, stale, forged, self-approved, or conflicting edge blocking, while each accepted disposition is independently human-reviewed, exact, governed, and visible with its record and approval-policy fingerprints in the verdict plus EVT-5.",
+  "intent": "ABUSE-4, FR-15..FR-17, NFR-7",
+  "fit_criterion": "abuse-drill report, accepted-disposition corpus, exact approval attestations, reviewer sign-off, and joined verdict/EVT-5 audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:176cfb578b36ffc2686830b6c054ac94d04d6e9a20e51965d85fd31fa4336691",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.089Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

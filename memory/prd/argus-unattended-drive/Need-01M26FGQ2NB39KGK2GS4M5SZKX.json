@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ2NB39KGK2GS4M5SZKX",
+  "kind": "Need",
+  "subject": "prd/argus-unattended-drive",
+  "family": "J3",
+  "statement": "When an awaited external completion occurs (artifact PR merged, checks settled, fleet items landed, an answer appended), I want have the drive resume itself at the front door through its resume protocol, so I can keep the thread moving without the operator as the clock",
+  "rationale": "the three drive ledgers' reconciliation entries",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5322558b721bf87b63c953c6789668d798fff450bf5d32ee42d97c61f077df8f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.941Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

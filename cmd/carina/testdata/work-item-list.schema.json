@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "worktracker.work-item-list/v1",
+  "description": "The schema-versioned machine projection of a list result (prd:local-work-tracker/FR-10, FR-15). carina list --json validates against this golden schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "query", "count", "items"],
+  "properties": {
+    "schema": { "const": "worktracker.work-item-list/v1" },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "signal", "role"],
+      "properties": {
+        "state": { "enum": ["", "open", "closed"] },
+        "signal": { "type": "string" },
+        "role": { "enum": ["", "routing", "authorization", "status", "classification"] }
+      }
+    },
+    "count": { "type": "integer", "minimum": 0 },
+    "items": { "type": "array", "items": { "type": "object" } }
+  }
+}

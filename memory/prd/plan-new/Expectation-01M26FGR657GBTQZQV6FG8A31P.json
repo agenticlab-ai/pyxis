@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR657GBTQZQV6FG8A31P",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-11",
+  "statement": "The dogfood plan's coverage matrix is complete, every trace and assessment-evidence reference resolves and substantively supports its recorded values, and every task's profile matches deterministic recomputation.",
+  "intent": "FR-2, FR-26, FR-28, FR-29, FR-30",
+  "fit_criterion": "coverage validation, execution-demand/evidence conformance report, and persisted task-by-task checkpoint rubric",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c3b3034b090d2f119337d49abcdec7adb3141752ebb026ab2dadb3b2024b93d5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.077Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

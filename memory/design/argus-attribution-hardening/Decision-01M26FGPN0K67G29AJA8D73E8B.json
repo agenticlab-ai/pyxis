@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPN0K67G29AJA8D73E8B",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "decision.3.5.1",
+  "statement": "The out-of-scope boundary's *width* is derived author-independently — from the named problem's gate-protected committed delivery ledger, or, on the problem's first PR, a slug-derived fixed set ∪ a fixed named allowlist — exactly as the superseded design's §3.2.1 and the shipped `internal/argus/boundary` do; this design **does not re-open it** *(design-brainstorm:argus-attribution-hardening-tech-design#O-4)*.",
+  "tags": [
+    "code:internal/argus/boundary",
+    "reconcile:design-decision",
+    "source-block:053314529c2806c04f9f5f6304a9f2b87538cfd5fe9f5783c5c888e9c69cb112",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.504Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-attribution-hardening.md lines 97-97 in section 3.5; sha256:053314529c2806c04f9f5f6304a9f2b87538cfd5fe9f5783c5c888e9c69cb112"
+  }
+}

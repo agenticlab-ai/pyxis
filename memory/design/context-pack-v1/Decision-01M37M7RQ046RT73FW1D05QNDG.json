@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M7RQ046RT73FW1D05QNDG",
+  "kind": "Decision",
+  "subject": "design/context-pack-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:context-pack/ABUSE-1 · prd:context-pack/ABUSE-2 · prd:context-pack/FR-1 · prd:context-pack/FR-2 · prd:context-pack/FR-3 · prd:context-pack/FR-4 · prd:context-pack/FR-5 · prd:context-pack/FR-6 · prd:context-pack/FR-7 · prd:context-pack/NFR-1 · prd:context-pack/NFR-2 · prd:context-pack/NFR-3 · prd:context-pack/NFR-4 · prd:context-pack/NFR-5 · prd:context-pack/NR-1 · prd:context-pack/NR-3 · prd:context-pack/UB-1 · prd:context-pack/UB-2 · prd:context-pack/UB-3 · prd:context-pack/UB-4.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:c0ccd1f732033abe5e7a43fbc57bda8c95e7c4f1b05692efccf3abedac9e10b6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRWPX40FMZGQDFQ7MN44"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5S81R7M1J40P25DAKZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ5T5QJG0DRQWGNJTFN1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ647892BXX0QKV2X851"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ65ZC4PMVVE6EXCXQZG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ66ZBYMNWQYTBR1CDSH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ67C85K5EF32PB7EK8X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ683FDD4QVB971G97X4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ69ERAY21XH2WJQZA31"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6ASYJB9A78TFVE9QSM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6M8V2KE0CCEH0PVERJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6NVM7KE07WX5KCY8AT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6PSQP8P9P17AM8ZXFF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6QBVDWG6HEXF34K31H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6R7Q05Z8TV0WT9BBFV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6S4AS34371E9MSC8RQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6VXYJA6DK6N4DP14A6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6W230NJM1GT8ED02AB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6XNKZK6776FPP3YK97"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6YJG5J5P4SHQVVHG2K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ6ZKJV3S043PFM2VFS9"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQQ6NQXAWD9V8X2QJMZDA"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:27Z",
+  "provenance": {
+    "source": "docs/tech-design/context-pack-v1.md",
+    "note": "projected from exact design header c0ccd1f732033abe5e7a43fbc57bda8c95e7c4f1b05692efccf3abedac9e10b6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGCGPBX5V3S258Z6EXF",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-4",
+  "statement": "No prototype change reaches mainline or the draft pull request",
+  "intent": "NR-1",
+  "fit_criterion": "For the first prototyped feature: mainline ancestry holds no prototype commit, and the draft pull request's file list holds only the feature's draft, problem, and memory records",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

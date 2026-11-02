@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDW8D6CJ553MER5N9JB",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "NFR-2",
+  "statement": "The selection rule, ranking rule, cap, and capture-line format shall live in template guidance, tunable by a template PR alone.",
+  "intent": "Maintainability",
+  "fit_criterion": "a recalibration lands as a template diff with zero guide rewrites",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9337f92a81630e2543aefa741b6123443a9f926b972783096396bc9b7f6b6604",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.324Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

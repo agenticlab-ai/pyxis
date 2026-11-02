@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXXWZQTRK0YKF4XK583",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-9",
+  "statement": "When a plan is approved, Argus shall obtain its tracker materialization through the planning stage's own contract — which owns consent, idempotency, and wiring order — and shall confirm the resulting items carry the repo-configured automated-implementation tag.",
+  "rationale": "the fleet bridge; materialization is the planning stage's ground — Argus triggers and confirms, never re-implements it (brainstorm:autonomous-developer#D-8, #F-8)",
+  "fit_criterion": "dogfood items are created by the planning stage's materialization path, carry the configured tag, and are claimed by the fleet",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:44e514b269fd46d27f97ea8bab7379f19ce994630808ed5d640da05397795bc6",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.789Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

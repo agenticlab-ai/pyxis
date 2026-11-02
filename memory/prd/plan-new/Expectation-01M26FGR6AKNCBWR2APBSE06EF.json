@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR6AKNCBWR2APBSE06EF",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-7",
+  "statement": "The skill and its authoring guide live on the vendor-neutral surface, with vendor dirs holding pointers only",
+  "intent": "AP-25",
+  "fit_criterion": "tree listing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d6134a9a0f42f6d888f4d766d078e134e3c01be335c010dae5fa5b1a2eee883",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.082Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

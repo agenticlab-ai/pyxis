@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390Y4C4G5YHW2BJETKZPJC5",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.8 and §3.13: both reviewers review the draft in any round, each report records the draft version it read, and readiness requires the last reviews to match the version being locked.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQMFAJ2AE0X0SPHQPJ4V2"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSS08TM90VAG4QTBTWSDS"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:38Z"
+}

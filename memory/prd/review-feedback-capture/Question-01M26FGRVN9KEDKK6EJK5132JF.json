@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVN9KEDKK6EJK5132JF",
+  "kind": "Question",
+  "subject": "prd/review-feedback-capture",
+  "family": "Q5",
+  "statement": "Precise definitions of the derived measures — review-rejection-rate denominator, human-edit-distance unit — so FR-5's computation is verifiable",
+  "intent": "technical design",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:e7f16ca43f2e7a7fea03dc833a20ebffcb4877621f22b1c0aebf7ceab39e644c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.765Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

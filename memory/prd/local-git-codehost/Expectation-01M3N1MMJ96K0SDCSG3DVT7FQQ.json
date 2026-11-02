@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ96K0SDCSG3DVT7FQQ",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-6",
+  "statement": "Before local task or final feature landing is enabled, the feature-drive contract has an approved scoped amendment and successor design for operator-invoked local landing and its shared-account enforcement limit.",
+  "intent": "prd:feature-implementation-drive/FR-7; prd:feature-implementation-drive/FR-22; prd:feature-implementation-drive/NR-5",
+  "fit_criterion": "Merged amendment, folded projection, and reviewed successor design",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

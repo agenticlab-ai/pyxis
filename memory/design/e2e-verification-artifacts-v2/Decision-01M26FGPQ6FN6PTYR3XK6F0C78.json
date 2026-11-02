@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQ6FN6PTYR3XK6F0C78",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "decision.3.7.1",
+  "statement": "a feature's e2e **design doc and its review** are co-located under a per-feature directory `docs/e2e/\u003cfeature\u003e/` — `design.md` (the `e2e-design/v2` doc) and `review.md` (the `e2e-review-report/v2` instance, satisfying FR-11's \"alongside\"). The **plan is not here** — it is a plan-new `plan/v1` under plan-new's own home (§3.6), reusing that pipeline wholesale. The `docs/e2e/` path is the **bootstrap default**, config-surfaced like the other doc-system homes (AGENTS.md rule 7 · issue #4).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:4836b57366951b13e185bd10acb7e50282049ad1306373b3a326404aec45fad3",
+    "source-design:779a9cab36d326f16934019e5c4c24f510597f439dc70edd35e6df1b3dc9409c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPG1PDN6JTNMWNSWGJ2C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.574Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-artifacts-v2.md lines 162-162 in section 3.7; sha256:4836b57366951b13e185bd10acb7e50282049ad1306373b3a326404aec45fad3"
+  }
+}

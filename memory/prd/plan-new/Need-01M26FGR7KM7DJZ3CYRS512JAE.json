@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7KM7DJZ3CYRS512JAE",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "M3",
+  "statement": "M3: G2",
+  "intent": "resulting task PRs stay reviewable",
+  "fit_criterion": "≤5% of task PRs \u003e600 changed lines AND no task's actual size \u003e50% of its plan's total (checkpoint: \"first 20 task PRs merged\")",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:10ab053a0678fcf80d071f64782b7c1bff29005d656689e98658097958811f63",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.123Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

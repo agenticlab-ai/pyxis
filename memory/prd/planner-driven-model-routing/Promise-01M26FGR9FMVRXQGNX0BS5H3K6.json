@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9FMVRXQGNX0BS5H3K6",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-12",
+  "statement": "Where a repository supplies routing overrides, the system shall accept only closed, version-compatible mappings whose native profiles carry reviewed qualification evidence.",
+  "rationale": "local availability and cost policy must not weaken minimums",
+  "fit_criterion": "valid overrides replace defaults; unknown keys, incompatible versions, missing evidence, and weakening entries are rejected before dispatch",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b99c34e799f79eda50e8974ef8968016af3bef7f75657a64d10ed4598460b1a2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.183Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

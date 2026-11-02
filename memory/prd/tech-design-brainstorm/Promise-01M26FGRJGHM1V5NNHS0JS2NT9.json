@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJGHM1V5NNHS0JS2NT9",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-14",
+  "statement": "When invoked against an existing ungated record, the skill shall resume at the frontier re-asking nothing the record holds; a frozen record shall never be edited — a reopened direction starts a fresh record citing it.",
+  "rationale": "records are the durable state; freeze-at-merge is the class rule",
+  "fit_criterion": "kill-and-resume fixture: zero re-asked rulings; reopen fixture: predecessor byte-identical, fresh record cites it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e67d8bb7d49d9e67d1a1c386e9fd3a886de3e13ca39abbabe12cd5383d11d72e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.472Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3WDAD6JHJ3PEQCMRDBB3HHE",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-5",
+  "statement": "Failures, ambiguity, origin mismatch, and credential canaries fail closed and recover.",
+  "intent": "UB-1..UB-6, NFR-1/2",
+  "fit_criterion": "HTTP/pagination/origin/hostile-redirect/kill/retry fixtures, with zero credential-bearing requests to unbound destinations, zero output-canary leaks, and zero false PR/tag",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

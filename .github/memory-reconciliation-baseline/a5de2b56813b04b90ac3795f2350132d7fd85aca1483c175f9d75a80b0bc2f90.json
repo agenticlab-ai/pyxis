@@ -1,0 +1,7 @@
+{
+  "code": "stale-document",
+  "scope": ".pyxis/config.yaml",
+  "count": 1,
+  "blocking": true,
+  "writable": true
+}

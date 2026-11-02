@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M44ZPM3GANJEBJ2YGHZKG0EQ",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-3",
+  "statement": "Only the real configured operator's latest authenticated exact-head review and verified mainline artifact authorize a lock; installed Forgejo uses P-9's trusted repository governance and GitHub retains its existing enforced approval behavior.",
+  "intent": "FR-5/6, UB-2/4, ABUSE-1/2",
+  "fit_criterion": "Positive native human-review/artifact receipt; native unapproved/stale/agent/rejected/changed-head/ambiguous-review fixtures proving zero lock-tag writes; valid Forgejo preparation without a protection-policy endpoint; existing GitHub approval/protection regression evidence; independent post-merge review and content checks; synthetic reviews only in tests",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M3WDAD6G6JTPZCDP85KKGB8X"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1QVH2NR17X0G485MFQ",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-11",
+  "statement": "If init targets a directory holding any content beyond the repository metadata directory itself — tracked, untracked, or with no repository at all, then the system shall refuse before any write, enumerate the conflicts, and route to the adoption path (`pyxis adopt`/`apply`; a runnable remedy for a non-git target) per `prd:init-hardening` FR-1/FR-2",
+  "intent": "a named refusal + the conflict list + the route",
+  "fit_criterion": "zero writes across the admission fixtures (git and non-git content shapes); every refusal names `adopt`; no refusal claims adoption is unavailable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f17156ecc851fe377bba0be5200b4f9b36dc39541195cb8f412fb8e73d3891b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.935Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ8932R7BEMPG1FQT97",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NR-3",
+  "statement": "the sibling reviewers (prd-review, tech-design-review) and their skills/templates/calibrations are untouched",
+  "rationale": "independent evolution, mirrored by pattern (program ruling)",
+  "fit_criterion": "zero diff under the sibling reviewer surfaces",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1185cf949651181e14a1f0da426865c495a39afbe8a49a1a7e292837a50445c6",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.6Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWS255XTRTM8ZNBWWSE",
+  "kind": "Decision",
+  "subject": "design/worktracker-hierarchy-index",
+  "family": "decision.3.1.1",
+  "statement": "the parent→children capability is a **filter on `list`** (a work item's direct children, all states by default, narrowable by the existing state/signal/role filters), and `show \u003cepic\u003e` lists its children **grouped by open and closed** rather than the open-only rollup it prints today (`design-brainstorm:worktracker-hierarchy-query-tech-design#D-1`, seams `#S-1`/`#S-2`). There is no dedicated `children` verb: one filterable path answers every \"children of X where…\" query (AP-11 — one place). Both front doors call the one `Children` implementation over the index; the port method it consumes already exists. Exact flag spelling and output grammar are in the solution-shape (a volatile surface, not frozen here).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:88bf5f17b0365ddabbef27f26311a8c1d128b9013c33e8f7296417a5e5a56cb1",
+    "source-design:8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ9DKXCV4P7RS6YTHBNT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.753Z",
+  "provenance": {
+    "source": "docs/tech-design/worktracker-hierarchy-index.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/worktracker-hierarchy-index.md lines 45-45 in section 3.1; sha256:88bf5f17b0365ddabbef27f26311a8c1d128b9013c33e8f7296417a5e5a56cb1"
+  }
+}

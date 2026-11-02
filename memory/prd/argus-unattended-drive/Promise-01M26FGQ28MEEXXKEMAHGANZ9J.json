@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ28MEEXXKEMAHGANZ9J",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-3",
+  "statement": "While the floor is clear, the lane classifier shall admit a proposal as an AUTO candidate only when its entire diff falls within the closed, versioned, operator-ratified set of AUTO-eligible change classes.",
+  "rationale": "narrow positive classes, whole-diff (GATE-4 stage B)",
+  "fit_criterion": "fixtures with any out-of-class hunk route HUMAN; the class set loads from versioned policy data only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ac6d763fdcc669d34972dfaee2a61ab8956e6380a9a01136142a6a32d65ab00b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.928Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

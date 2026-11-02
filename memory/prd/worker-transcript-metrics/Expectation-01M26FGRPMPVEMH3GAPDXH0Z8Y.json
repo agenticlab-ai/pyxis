@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPMPVEMH3GAPDXH0Z8Y",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-7",
+  "statement": "The schema's additive-evolution property is proven in **both** directions — a version *n* consumer reading a version *n+1* record (FR-9) and a version *n+1* consumer reading a version *n* record (NFR-3) — and in each direction the test asserts the value a field resolves to, not merely that the record parses",
+  "intent": "FR-9, NFR-3",
+  "fit_criterion": "compatibility test result covering both directions with value assertions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ac7e59a22abe5d8efcf36b928776922f271993379d78869a62d5c032b1bea97a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.604Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

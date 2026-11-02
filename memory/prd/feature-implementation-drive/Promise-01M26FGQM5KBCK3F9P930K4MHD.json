@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQM5KBCK3F9P930K4MHD",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NR-5",
+  "statement": "Existing human merge authority and repository gates remain in force.",
+  "rationale": "The drive gains no merge authority.",
+  "fit_criterion": "Authorization tests show zero drive merges and unchanged required review/check behavior.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:52a3c47e70e15e7168f8272320d7bc371330c8077de8ed38ce89d9e3911d01f9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.501Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

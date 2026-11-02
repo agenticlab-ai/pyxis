@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0TSX9A92HZ1K9S6ZSF3P",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.17.2",
+  "statement": "One atomic Git push leases every changed ref: mainline from its\nreviewed base to the landing, the new lock tag, the prepared-to-final proposal\nrecord, the reviewed-head archive, and deletion of the proposal branch from the\nexact reviewed head. Branch deletion is a real leased update; a no-op branch\npush cannot detect a branch move between the last read and landing. Unsupported\natomic push or any stale lease refuses the entire transaction\n(`design:local-git-codehost#D-4`; #DINV-13).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:fe9db05e1b916cbcf22ce73854358cd788f4d9e75bf6c08645b2b911e9edfebd",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:20Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 345-351 in section 3.17; sha256:fe9db05e1b916cbcf22ce73854358cd788f4d9e75bf6c08645b2b911e9edfebd"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR24MV4GPJXZ0SXKKE6W",
+  "kind": "Expectation",
+  "subject": "prd/local-work-tracker",
+  "family": "DOD-3",
+  "statement": "The factory-in-a-box execution loop runs end-to-end against this medium with zero network syscalls",
+  "intent": "FR-17, M2",
+  "fit_criterion": "hermetic e2e link + syscall trace",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:87703f084a04590a64c6b8914fc46f3c8adb8fc28e4fa0e586178d994a98a2ae",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.948Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

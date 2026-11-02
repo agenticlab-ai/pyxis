@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4Y5PVEHMYRWFA208E4N",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "FR-7",
+  "statement": "When the fetched target resolves the reported defect through a verified successor, the entry shall return the verified target revision to adopt.",
+  "rationale": "Stale callers",
+  "fit_criterion": "Pre-fix callers get update_required with zero shared writes and dispatches",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

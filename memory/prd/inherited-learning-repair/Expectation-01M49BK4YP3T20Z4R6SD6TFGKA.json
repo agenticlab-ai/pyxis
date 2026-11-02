@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M49BK4YP3T20Z4R6SD6TFGKA",
+  "kind": "Expectation",
+  "subject": "prd/inherited-learning-repair",
+  "family": "DOD-1",
+  "statement": "Five callers converge on one task and implementation",
+  "intent": "FR-1, FR-2, FR-3, FR-4, FR-5, FR-6, FR-10, NFR-1, NFR-2",
+  "fit_criterion": "Multi-process incident fixture and adapter receipts",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

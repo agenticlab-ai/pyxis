@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRANM0V1Y0QZXVC9DYQA",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NFR-8",
+  "statement": "For identical assessment, policy version, selected harness, role, override, and qualification evidence, routing resolution shall produce the same result using zero model inference and zero network I/O; after every terminal result exists and before task claim or selected worker/reviewer invocation, the runtime shall durably append that terminal to the configured canonical git evidence store and exact-read it successfully. The append and exact-read are the only network operations permitted in that interval: no policy lookup, qualification lookup, harness probe, model call, or other outbound operation may occur.",
+  "intent": "Availability / cost",
+  "fit_criterion": "repeated and reordered-input fixtures are byte-identical; the offline resolution suite records zero inference and zero network I/O through the terminal result; every healthy-path boundary trace contains a successful canonical append and exact-read before claim or invocation and no other network operation; a zero-evidence healthy path fails, and unavailable or unverifiable evidence produces zero claim and zero worker/reviewer invocation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f62dc4a3b8d12e9faa4f20be8494f01e2e92e36e319097597af5d675931eba2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.221Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

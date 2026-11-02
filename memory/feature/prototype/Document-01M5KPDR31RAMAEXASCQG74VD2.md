@@ -1,0 +1,3 @@
+# Draft events
+- {"schema":"draft-event/v1","id":"1a1442cf2299b7750e3391e7","name":"draft_opened","feature":"prototype","version_digest":"sha256:af81d7a0c4377db50895d1e58be50da3d427f4a5ec8b2a6e9e647aef10aad1c8","occurred_at":"2026-10-23T06:09:48.682541Z","origin":"reopen","basis_version":3}
+- {"schema":"draft-event/v1","id":"01c3cd2a37844c4cd6b7e168","name":"draft_reopened","feature":"prototype","version_digest":"sha256:af81d7a0c4377db50895d1e58be50da3d427f4a5ec8b2a6e9e647aef10aad1c8","occurred_at":"2026-10-23T06:09:48.682604Z","from_version":3,"cause":"gap-lock-should-have-caught","cause_ref":"https://github.com/agenticlab-ai/pyxis/issues/1579#issuecomment-6333246028"}

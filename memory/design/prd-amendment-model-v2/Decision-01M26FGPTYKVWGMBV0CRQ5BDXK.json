@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTYKVWGMBV0CRQ5BDXK",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.3.2.1",
+  "statement": "addressability is membership in the version-pinned\n`schema.TableSchemas` registry, never membership in the broader lexical token\nregistry. A base, rebase, or section-replacement body retains merged-base\nkind inference: an exact registered header may establish table kind; otherwise\nthe first addressable data-row prefix establishes it, and later rows in that\ntable must use the same prefix. Exact header equality remains mandatory only\nfor operation payload tables.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:0290d5e2ddcd1f18a2f762bef14a3d6bf535ef54ef837a42dad6d887c383abe2",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.694Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 151-157 in section 3.2; sha256:0290d5e2ddcd1f18a2f762bef14a3d6bf535ef54ef837a42dad6d887c383abe2"
+  }
+}

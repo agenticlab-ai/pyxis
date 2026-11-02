@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRV4GQ1CWB6STF6MXHE9CR",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-4",
+  "statement": "A proposal wants to escape document checks or memory authorization — vector: declares itself draft-born in the same proposal that relies on it",
+  "intent": "candidate-selected weaker enforcement",
+  "fit_criterion": "UB-6, FR-29, FR-54, NR-4",
+  "tags": [
+    "source-unit:77e958c1f9e7ca769c4cf34fabc395df9e58c85d094bfd9fe4a5e64736084a9c",
+    "source:prd-ledger",
+    "reconcile:prd"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZJ1K70C4K509GW1MV556A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:14Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

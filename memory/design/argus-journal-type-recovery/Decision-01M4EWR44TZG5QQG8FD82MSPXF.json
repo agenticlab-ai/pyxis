@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWR44TZG5QQG8FD82MSPXF",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.4.1",
+  "statement": "First-proposal scope remains a fixed function of configuration and the active slug, including its draft, compiled PRD/design and native problem-record subtrees, and the predecessor's fixed shared allowlist. It admits no application code, another slug, authority or governance.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:211f645529345f10b16750824598d85c64b4358b78cd14767059c18a6ea763b9",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:35Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 58-58 in section 3.4; sha256:211f645529345f10b16750824598d85c64b4358b78cd14767059c18a6ea763b9"
+  }
+}

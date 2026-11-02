@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPSQHGS7SBG1SGRCWBC",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "J2",
+  "statement": "When a diff touches a risky surface (auth, machinery, control-plane), I want know the security/design lenses ran with the ABUSE rows and incident registry in context, so I can end zero-review debt where it is most dangerous",
+  "rationale": "`brainstorm:impl-review#D-6`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3650455a5e6dcd50d9b91ce4c197f4c47718c09c23748a7f9df649ff2de11d62",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.585Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

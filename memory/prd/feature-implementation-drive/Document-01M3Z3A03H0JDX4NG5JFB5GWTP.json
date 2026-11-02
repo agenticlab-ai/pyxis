@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3Z3A03H0JDX4NG5JFB5GWTP",
+  "kind": "Document",
+  "subject": "prd/feature-implementation-drive",
+  "family": "amendment-001",
+  "statement": "Captured authored source: docs/prds/feature-implementation-drive/001-local-git-landings.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:bf358f56d8db9d375a0e8fcc0c8bcdf45a6b6ba6cf4223130e6fe7056a441f19"
+  ],
+  "body_sha256": "bf358f56d8db9d375a0e8fcc0c8bcdf45a6b6ba6cf4223130e6fe7056a441f19",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:21Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/001-local-git-landings.md",
+    "note": "offline reconciliation"
+  }
+}

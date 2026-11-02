@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MW1YZABA90KMJXF11V13",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-argus-approval",
+  "family": "decision.2.1",
+  "statement": "The feature drive has one deterministic `FailureDisposition(trigger, observed state) → disposition` predicate whose closed rows are §3.1. A disposition is durable aggregate state, not log prose: it names the blocked/transition state, removes or preserves routing as specified, records exact evidence and one user remedy, and may clear only after §3.2's positive recovery precondition is observed through the predecessor's reconciler.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:db25ecffa76e497701f1d23804aea29c5b63fbca2865f2df3539f2dd41a0e4a2",
+    "source-design:08a113bbd3a27e32a6753f56aca1341f92de4d20603a43722118f79905dbf60d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DHVP4JD9421J5E5WKBZJ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:47:01Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-failure-argus-approval.md lines 52-52 in section 2; sha256:db25ecffa76e497701f1d23804aea29c5b63fbca2865f2df3539f2dd41a0e4a2"
+  }
+}

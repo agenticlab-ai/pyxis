@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJF5B76KT009WFYA487",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-13",
+  "statement": "While a record's verdict is ready-for-design, every design-template decision-shaped input shall hold a resolved ruling and every remaining fog entry shall be typed non-blocking — sufficient for `tech-design-new` to author with no new authority decision-questions, the recorded alternatives landing as the design's §4 and citations carrying `design-brainstorm:\u003cslug\u003e#D-n`.",
+  "rationale": "the handoff is the success condition (M1/M2); sufficiency must be checkable (#D-8)",
+  "fit_criterion": "`tech-design-new` run against every ready-for-design fixture record asks median 0 (max ≤ 2) decision-questions (EVAL-5); the coverage checklist reports full coverage and zero blocking fog",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a91a53e5b61360934d98669b21f49098676b789969abf06931d36d9056f91575",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.471Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

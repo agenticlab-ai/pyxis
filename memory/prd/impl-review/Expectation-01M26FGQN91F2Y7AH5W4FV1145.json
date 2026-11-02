@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN91F2Y7AH5W4FV1145",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-6",
+  "statement": "nit discipline",
+  "intent": "golden legitimate diffs per effective depth",
+  "fit_criterion": "≤3 findings per golden at p50 across the golden set",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a48bf91227c323e8c9d0c0665d6a780302bd1cdc38e85feb68415c73f441b92f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.537Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

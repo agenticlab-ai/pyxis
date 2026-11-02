@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4NEEB7WY2D3CF1B8MS95",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-8",
+  "statement": "While issuing retirement authority, the system shall leave every selected source and code unit unchanged and publish the complete batch atomically, with exact retries writing nothing.",
+  "rationale": "Selection and destruction require separate review events.",
+  "fit_criterion": "Writer manifests show zero selected-source changes, all-or-nothing publication under each injected interruption, and zero writes on exact retry.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e88af684c71f2183f5501f9520af892080ac6ba1614f04c9d274aa9f45bb0fef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:25Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

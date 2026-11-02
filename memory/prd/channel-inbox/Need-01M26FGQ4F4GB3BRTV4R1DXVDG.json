@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ4F4GB3BRTV4R1DXVDG",
+  "kind": "Need",
+  "subject": "prd/channel-inbox",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "a staged known-bad-version `blocking` bulletin is relayed with its remedy at a test operand's next session",
+  "fit_criterion": "the bad-rollout drill passes: reached and relayed at next session, remedy present",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a4c6d6460a8fe631c631fc102959133e6e111b707073f13a49c89d8a5dc1cbd8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.999Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG077DQM7A75TBYDT00",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-13",
+  "statement": "When reporting a proposal landed, the state reader shall include the medium-reported landed revision identifier and shall present landing state as the medium's claim — a consumer performing verified advancement shall verify at the goal object per its own contract, and this reader's output shall carry what that verification needs.",
+  "rationale": "a medium's \"merged\" certifies the medium's object, never the mainline (AP-26; incident I2); the reader must not launder a badge into goal-state",
+  "fit_criterion": "the port's landed state carries the revision id on both adapters; a consumer-side fixture performs an ancestry check from the reader's output alone; the port docs mark landing state as medium-claimed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cff3bda37b92fec2a21f4ae12061251a2860bb27652eef8ad8e1c586ce7d8e31",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.392Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

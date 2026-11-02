@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMHY3Z80BH30DNYHR1M1",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "NFR-1",
+  "statement": "Local mode shall label approval identity, origin protection, and repository identity as unauthenticated under the accepted shared-account policy.",
+  "intent": "Security",
+  "fit_criterion": "Doctor, receipts, and clone verification disclose the limits; no signed or independent-origin claim appears",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

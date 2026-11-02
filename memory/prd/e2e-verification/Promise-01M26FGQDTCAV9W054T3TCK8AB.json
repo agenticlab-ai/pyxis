@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDTCAV9W054T3TCK8AB",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NR-2",
+  "statement": "implement-now is reused unchanged — v1 adds no e2e-specific executor behavior",
+  "rationale": "the build step is the deferred adaptation; v1 relies on no executor change",
+  "fit_criterion": "zero edits to implement-now's contract or code land in this feature; the e2e tasks are consumed by the unchanged frontier computation (FR-14)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9ec4ef27139eed7c6ad98023d0b6892f2dd8881ab53011e0f750854d0faaec85",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.298Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

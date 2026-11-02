@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCWQ8FW19W0198HARGW1F",
+  "kind": "Document",
+  "subject": "design/routing-envelope-v1",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/routing-envelope-v1.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "37d678d22dc45a8a0db6556c0597c44025f935c362175aca0a69ff80dfe59a7c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:03Z",
+  "provenance": {
+    "source": "docs/tech-design/routing-envelope-v1.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

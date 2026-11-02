@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPPHFS7J3Z5CJ7146W1",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "G3",
+  "statement": "We believe a monotonic join of planner assurance and unchanged merge-lane-derived bands; expected result: at least one review everywhere and more scrutiny when either consequence or actual proposal risk demands it",
+  "fit_criterion": "M1 matrix coverage, M3, EVT-7/EVT-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8b0d94f21b07674975f4c176013b430629d2398828e4affea6a37604ba9da59f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.582Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

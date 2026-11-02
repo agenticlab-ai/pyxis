@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A9680SNZ011ASAXS4JDT",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVT-1",
+  "statement": "maintenance_installation_result fires when Reconciliation finishes/refuses",
+  "intent": "repo: string, changed: bool, owned_entries: int, outcome: enum",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

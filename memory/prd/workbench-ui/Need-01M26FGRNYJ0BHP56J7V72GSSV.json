@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRNYJ0BHP56J7V72GSSV",
+  "kind": "Need",
+  "subject": "prd/workbench-ui",
+  "family": "J3",
+  "statement": "When I'm reading a doc that cites another (requirement rows, record anchors, principles), I want follow the citation as a link, so I can trace provenance without hand-resolving grammars",
+  "rationale": "citation grammars in the class contracts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e7c73106d68ca1ed769c9789da04b9ae41974a4a61f2a9acc0ce9ba5cb044ba3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.582Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

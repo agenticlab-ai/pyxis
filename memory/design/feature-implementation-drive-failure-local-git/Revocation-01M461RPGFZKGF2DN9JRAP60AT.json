@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M461RPGFZKGF2DN9JRAP60AT",
+  "kind": "Revocation",
+  "subject": "design/feature-implementation-drive-failure-local-git",
+  "statement": "The source design feature-implementation-drive-failure-local-git is superseded by feature-implementation-drive-failure-argus-approval in this candidate. Its binding decisions are captured on the live design identity; withdraw this obsolete active Decision while retaining its immutable history.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M3Z91RBNV8WNERN4QQA089WW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:49:07Z"
+}

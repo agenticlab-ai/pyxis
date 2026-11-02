@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHV1NCKN9YPT4ZV188T",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "ABUSE-3",
+  "statement": "Actor replays passing e2e evidence for another revision — vector: copies verdict without current input identities",
+  "intent": "unverified feature reaches main",
+  "fit_criterion": "FR-16–FR-19, NFR-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8ee0772c55308be6ef4f4cbad82f756a0a886b9e514556cedeeab50419889d51",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.427Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

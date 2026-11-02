@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M4EWJP5WEHVJ67CRK352CZN8",
+  "kind": "Document",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/argus-journal-type-recovery.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553"
+  ],
+  "body_sha256": "5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+  "literal_body": true,
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:11:37Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "offline reconciliation"
+  }
+}

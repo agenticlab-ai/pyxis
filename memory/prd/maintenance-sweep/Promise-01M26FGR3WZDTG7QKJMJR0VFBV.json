@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3WZDTG7QKJMJR0VFBV",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-1",
+  "statement": "When invoked, the sweep shall evaluate exactly its closed detector set over the evaluated state (§4.1) and emit one typed finding per detected condition, each carrying detector, subject, evidence, and a named remedy.",
+  "rationale": "the findings contract is the product (brainstorm:maintenance-sweep#D-3)",
+  "fit_criterion": "on the fixture corpus, every emitted finding carries all four fields and cites a real condition; no detector outside the closed set runs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bf764417c7623877305c77e5ac05cf52aad5f0191e3c3606e1a191b67ea2f594",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.004Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

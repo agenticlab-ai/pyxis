@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQR19964MCWN7P4GFSRM",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "ABUSE-5",
+  "statement": "repository contributor, compromised worker, or mistaken operator seeking cheaper or arbitrary execution — vector: adds a weakening/unqualified mapping, unknown launch key, raw CLI argument, or self-declared native capability to routing policy",
+  "intent": "a worker launches below demand or with attacker-controlled egress/permissions",
+  "fit_criterion": "FR-23 requires qualified dominance; FR-24/UB-18 fail before claim; NFR-7 closed parsing; operator-authorized policy and reviewed qualification evidence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:71aaced700c81f7ab5f7698c593ea7b8a64e97c054fd8bd430d633ff9299e9fc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.625Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

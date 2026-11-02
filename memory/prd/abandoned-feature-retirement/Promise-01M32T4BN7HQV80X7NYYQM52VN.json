@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4BN7HQV80X7NYYQM52VN",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-2",
+  "statement": "Before retirement authority can be published, the system shall require observed proof that the owning feature lifecycle is explicitly abandoned after cancellation, every active attempt is quiesced, execution ownership and routing are released, the current product obligation and governing-design liveness have typed terminal dispositions, and every affected frozen-plan trace has an explicit disposition.",
+  "rationale": "The repository must express one terminal product and execution state before destruction.",
+  "fit_criterion": "Active, cancellation-pending, cancelled-but-resumable, stale, malformed, live-requirement, live-design, missing-supersession, and unresolved-plan fixtures all refuse; a valid drive terminal and an explicit legacy-equivalent control pass.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5be92be72e2b305447f11cfdfb69e20e9811806281b468b083b4ff296644c9e3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:15Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

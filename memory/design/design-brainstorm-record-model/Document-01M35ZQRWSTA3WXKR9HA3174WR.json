@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZQRWSTA3WXKR9HA3174WR",
+  "kind": "Document",
+  "subject": "design/design-brainstorm-record-model",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/design-brainstorm-record-model.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCNMK68TJ2M47MQC8H6KH"
+    }
+  ],
+  "body_sha256": "88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:57Z",
+  "provenance": {
+    "source": "docs/tech-design/design-brainstorm-record-model.md",
+    "note": "offline reconciliation"
+  }
+}

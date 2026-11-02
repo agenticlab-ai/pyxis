@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4GGS85Z4QCHKAK5RMJ8Q",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-5",
+  "statement": "When retirement authority is published, the system shall bind the explicit feature, reason, actor, trusted source state, complete selector set, ownership evidence, preservation inventory, baseline identity, and exact current identities in immutable repository evidence.",
+  "rationale": "Reviewers need one replayable statement of intent and scope.",
+  "fit_criterion": "Canonical fixed-input output is byte-identical and any changed field produces a different valid identity or refusal.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4e676b74bd8c71a2c51053426bfccc0f5052c6afc7f4f50fe705c7569fb406be",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:20Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

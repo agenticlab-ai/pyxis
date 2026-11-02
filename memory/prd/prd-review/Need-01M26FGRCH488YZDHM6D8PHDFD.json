@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRCH488YZDHM6D8PHDFD",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "blocking-finding acceptance rate — the share the author applies rather than declines",
+  "fit_criterion": "≥ 80% median at checkpoint \"ten reviews across both invocation moments\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4662240ef9b1fc12d28b445a41ed7940025ccfc63c970aa2443e0ded26800028",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.281Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS0X6YFKQBH6M4A6Q6Z",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-9",
+  "statement": "`legacy_execution_demand_translated` fires when a frozen plan/v1 task translates without rewrite",
+  "intent": "`demand_id:string`, `task_id:string`, `plan_version:string`, `rung_present:boolean`, `original_rung:string?`, `compatibility_version:string`, `translation:enum{explicit_rung,legacy_unassessed}`, `translated_profile:closed object`, `policy_version:string`",
+  "fit_criterion": "M4, M6",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:26349c7031bad5459aca41a9177248f250caad10f6c0630bcb33978a65a5eb80",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.656Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

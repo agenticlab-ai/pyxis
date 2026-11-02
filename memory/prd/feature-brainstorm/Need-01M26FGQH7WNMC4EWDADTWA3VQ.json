@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQH7WNMC4EWDADTWA3VQ",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "G3",
+  "statement": "We believe one-question-at-a-time with a recommendation attached; expected result: sessions the operator experiences as thinking help, not interrogation — confirmed at the gate, not assumed",
+  "fit_criterion": "qual: operator verdict recorded at each session gate (DOD-5 rubric)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9cc0623fd0d9d0e4c93b08186017027de618521469efa666e65436d95a4376a7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.407Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

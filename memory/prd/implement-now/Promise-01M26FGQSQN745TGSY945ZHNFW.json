@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSQN745TGSY945ZHNFW",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-31",
+  "statement": "When working a recognized e2e task, the executor shall honor the scenario's single recorded route: a `run-for-real` scenario shall be exercised against the real subject rather than mocked away, a `mocked` scenario shall mock only the surfaces its recorded mock strategy names and each such double shall satisfy the real dependency's observed contract, and a `manual-human` scenario shall be handed to its recorded owner under UB-15 with no worker spawned.",
+  "rationale": "routes were chosen and reviewed per scenario; substituting a cheaper one at execution time produces a green proposal that proves less than the approved design says it proves, and a double built to the worker's own guess about a dependency is the never-working-feature failure AP-14 already paid for",
+  "fit_criterion": "per-route fixtures show a run-for-real scenario failing when its subject is broken, a mocked scenario mocking only its named surfaces, and a manual-human scenario spawning zero workers; each double is checked against the real dependency's observed contract, and a stub encoding a wrong guess about that contract fails rather than going green; a route substitution is reported under UB-16 and never counted succeeded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:52b25b89d06dea27cadbb557b509433969bb11abe9c9716ba156537039081ba1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.679Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

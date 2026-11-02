@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHPS03K4N10A2E3P4KQ",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "UB-3",
+  "statement": "If If the record has been hand-edited between turns into a form the template contract cannot parse, then the system shall surface a named defect (section, entry, reason, remedy) and continue from the last parseable state — never silently discard or rewrite the operator's edit",
+  "intent": "a named defect and a proposed fix to confirm",
+  "fit_criterion": "on the invalid-edit fixture, the defect names section + reason and the operator's text is preserved verbatim in the record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d06437552e84c1106094b81c6c87a1111a1ea79a1a1162ef7b74790b18c756ce",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.422Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

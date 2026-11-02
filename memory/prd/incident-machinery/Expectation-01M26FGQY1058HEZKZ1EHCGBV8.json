@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQY1058HEZKZ1EHCGBV8",
+  "kind": "Expectation",
+  "subject": "prd/incident-machinery",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..3",
+  "fit_criterion": "CI fixture-suite run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:358bc95053d7e94cbc34dded5237aef1366697d8fdaec13ecf8c469482679ea6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.817Z",
+  "provenance": {
+    "source": "docs/prds/incident-machinery/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:82a6e4d6bce3dfa328cccc63df1a7ecb87faa72d2b13f44638ac5b7176597f57"
+  }
+}

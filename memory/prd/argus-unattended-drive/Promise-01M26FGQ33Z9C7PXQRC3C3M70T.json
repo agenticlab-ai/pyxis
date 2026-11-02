@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ33Z9C7PXQRC3C3M70T",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "NR-4",
+  "statement": "Materialization still flows only through the planning stage's own contract, reading only merged plans",
+  "rationale": "consent/idempotency stay the stage's (prd:argus FR-9)",
+  "fit_criterion": "the projection path is unchanged except its trigger timing; an unmerged plan still refuses projection",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc9db3243b5e6c1629bc465ce5a10cdff8c933fc6c2a5490a0aa41f08a53b93b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.955Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

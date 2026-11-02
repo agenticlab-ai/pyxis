@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCQ6XASNCB3VC4KGT7S",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "NR-2",
+  "statement": "docgate verbs, gate output, and the reviewed documents' bytes are untouched by a review run",
+  "rationale": "the reviewer's write perimeter is its own artifacts",
+  "fit_criterion": "zero diff to `cmd/docgate`/`internal/docgate`; subject documents byte-identical across fixture runs (except author-applied revisions)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4d34492cc8afe1d62ad0b946fd8b2c92fb447b37550718c69d9f27fa9b05bfbf",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.287Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ6W4EQ041M2SEGZ90G",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NR-1",
+  "statement": "codegate's contract and finding schema are untouched: no judgment rung, NFR-2/NFR-5 hold, and the reviewer reuses the finding core read-only (no codegate-schema change)",
+  "rationale": "the deterministic/judgment boundary is the architecture; the schema is implement-now's joint contract",
+  "fit_criterion": "zero diff to codegate's ledger or `internal/verify`; the reviewer's schema extends the core, never edits it (inspection)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4ba988ef697cc12d84259e5ff1f0d640cc1153e7ec9a0164fdfb32e4eef2bcd0",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.598Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

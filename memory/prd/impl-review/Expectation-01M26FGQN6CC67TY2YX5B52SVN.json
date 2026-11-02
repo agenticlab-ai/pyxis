@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN6CC67TY2YX5B52SVN",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-3",
+  "statement": "seeded ABUSE-row violation caught whenever effective depth is deep",
+  "intent": "deep passes raised by actual band and by planned assurance; standard comparison leg recorded",
+  "fit_criterion": "caught on every required deep run; standard comparison never changes the deep threshold",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:04692eb5cb42aa01cd2069f7713b721deae7195c24b41d9a9130fab291f5c141",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.534Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

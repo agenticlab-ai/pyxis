@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A952ATHQA3HF6HPWJAZQ",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "J4",
+  "statement": "When An unattended attempt fails, I want Inspect the failure and continue at the next occurrence, so I can Avoid an invisible permanent stall",
+  "rationale": "Operator no-recovery ruling",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

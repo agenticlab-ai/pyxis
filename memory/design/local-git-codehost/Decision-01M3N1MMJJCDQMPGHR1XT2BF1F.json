@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJJCDQMPGHR1XT2BF1F",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-1",
+  "statement": "Select `local-git` explicitly in the installed repository's code-host binding. Draft lifecycle, lock recorder, implementation proposal, status, and Argus use consumer-side interfaces for proposal listing, publication, review, merge, and lock evidence. The composition root binds the local adapter; the core does not invoke `gh` or assume a PR number. An unconfigured or mismatched remote is refused before a write.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHBGVY99DQGG93E40VJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHCW55FT4157JHZ1S0K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHJB0QSSFNDPJFC5NJ3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHM9C7KZG8XAVGCV30C"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9JJ7V00Z08RFSSFG8W",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "G1",
+  "statement": "We believe splitting the design into a durable Decision and a concrete solution-shape reviewed in native form; expected result: shape-level gaps caught at the design gate instead of after the build",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ccd217e7856a65e3f0d72d570fc00ebec248d603e596a2a3f9e2cc82a8ca5b98",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.162Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

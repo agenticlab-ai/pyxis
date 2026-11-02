@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPET8ZD34X2Q56P3PBH1",
+  "kind": "Need",
+  "subject": "code/unit-cmd-docgate-93a6c2605d69",
+  "family": "anchor",
+  "statement": "Production code unit cmd/docgate exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at cmd/docgate.",
+  "tags": [
+    "code:cmd/docgate",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.306Z",
+  "provenance": {
+    "source": "code:cmd/docgate",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline code inventory 1ffc072f364d6216199a15dc21dfeb956f7dba7c8f29853cb1b4a24f37c258c1"
+  }
+}

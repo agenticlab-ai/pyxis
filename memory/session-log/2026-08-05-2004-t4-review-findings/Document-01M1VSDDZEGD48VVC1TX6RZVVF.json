@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDDZEGD48VVC1TX6RZVVF",
+  "kind": "Document",
+  "subject": "session-log/2026-08-05-2004-t4-review-findings",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-05-2004-t4-review-findings.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "2908f3f3884d68623f44fc89b93713c6fb773526b2568dbf9a1aefe3150a07d9",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:21Z",
+  "provenance": {
+    "source": "logs/2026-08-05-2004-t4-review-findings.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4G8YA0Z86YWBDMTR87",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "NR-1",
+  "statement": "The repository, tracker, and network state are untouched by a sweep: no content writes, no tracker writes, no network writes",
+  "rationale": "the read-only contract is the safety property (NG-1)",
+  "fit_criterion": "across the full test corpus, repo `git status` + worktree bytes are identical before and after; the sweep holds no credentialed client and opens no write path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:68bdd0b0091563bcd921b223ffc10ef9253cec2b1b17f59e19dab11044be99e4",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.024Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

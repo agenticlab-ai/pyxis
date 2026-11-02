@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M4D5N4NSAHSRZH51DJ5PR",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.6.1",
+  "statement": "an append-only JSONL store in the **observability-logs directory** of the system footprint (its concrete path fixed by `#D-1`, `#ALT-1`), **gitignored** — per-run operational data, never committed — written **one file per run** (named by `run_id`), so parallel runs (PRD §12) never contend on a shared file and each append is collision-free (AP-23). Each line is one schema-versioned JSON run record: `schema_version`, `run_id`, `feature_id`, `phase_id`, `harness`, `spend` (per-model `{input,output,cache_creation,cache_read}` + `cost` + `reconciliation_tier` ∈ {exact, harness-precision, unavailable}), `efficiency` (the D-5 signals), `price_snapshot_version`, and `unavailable[]` markers. Additive-schema evolution only (AP-6): readers default missing fields. The store is orchestrator-agnostic and depends on nothing unmerged; when the Ledger lands it absorbs these schema-versioned records verbatim (O-1).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:43c9654954a1d81deb503bec28d20aee85bbc37baa1b26a105ca89f5b9bb1f74",
+    "source-design:970b9e3c3cc2f6bde46725002d58f9bb6c31f5727f16e49070cd523604301367",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPT8RM971NAB6PYRMYJC"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRGPSQZC4DWWVD1FNAPSY"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:37Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 104-104 in section 3.6; sha256:43c9654954a1d81deb503bec28d20aee85bbc37baa1b26a105ca89f5b9bb1f74"
+  }
+}

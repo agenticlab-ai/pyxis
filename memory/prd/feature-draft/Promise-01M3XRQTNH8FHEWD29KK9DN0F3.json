@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQTNH8FHEWD29KK9DN0F3",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-12",
+  "statement": "If If a hosted lock approval is attempted by an agent identity, Argus included, or a local lock lacks a valid FR-52 receipt, then the system shall refuse the lock and request the required operator approval evidence",
+  "intent": "the refusal naming the missing or invalid evidence and, for local mode, its unauthenticated-actor limit",
+  "fit_criterion": "Every hosted agent-approval fixture and every invalid local receipt fixture refuses without advancing landing refs; no fixture claims that a consistent local receipt proves human authorship",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c305a321dd5557f9bc9464f70d0f6585e47389aeb897761c8461e1bdced33b96",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZQ62SQP15MSES3YEREPV7"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:25Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

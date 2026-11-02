@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6T69K3Y0DE3CR0AWXY",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-23",
+  "statement": "When projecting, the planner shall ensure every signal it emits exists canonically before use, idempotently.",
+  "rationale": "operate in any repo state",
+  "fit_criterion": "fresh tracker creates all labels; rerun no-ops",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fd4ff8447eaca3a67e083faee280ed96af82635b56a657284dd62761e6966985",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.098Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

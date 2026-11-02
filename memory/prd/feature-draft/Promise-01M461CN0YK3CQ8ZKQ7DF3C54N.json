@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CN0YK3CQ8ZKQ7DF3C54N",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-56",
+  "statement": "When a ready feature draft's lock is requested on GitHub, the system shall accept approval of the exact prepared head from the configured authenticated operator, or from the configured authenticated Argus driver where the pre-merge mainline authority contract grants approve-merge. Without that grant it shall request the operator. Other hosted and explicit local-git surfaces shall retain their existing approval requirements.",
+  "rationale": "Makes the delegated driver accountable for its granted lock approval",
+  "fit_criterion": "Granted driver and operator fixtures lock; an ungranted driver, a forged principal label, and a candidate-only grant are refused; existing local Git fixtures retain their behavior.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b239a26d529f16562c3d308665d7e324ea9847bc82418e765c091683f31070c6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQDMCWHSEVM0ZXADHCQJQ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:32Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

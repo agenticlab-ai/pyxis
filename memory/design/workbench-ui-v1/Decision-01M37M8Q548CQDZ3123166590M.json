@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M8Q548CQDZ3123166590M",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:workbench-ui/ABUSE-1 · prd:workbench-ui/ABUSE-2 · prd:workbench-ui/ABUSE-3 · prd:workbench-ui/FR-1 · prd:workbench-ui/FR-2 · prd:workbench-ui/FR-3 · prd:workbench-ui/FR-4 · prd:workbench-ui/FR-5 · prd:workbench-ui/FR-6 · prd:workbench-ui/FR-7 · prd:workbench-ui/FR-8 · prd:workbench-ui/FR-9 · prd:workbench-ui/NFR-1 · prd:workbench-ui/NFR-2 · prd:workbench-ui/NFR-3 · prd:workbench-ui/NFR-4 · prd:workbench-ui/NR-1 · prd:workbench-ui/NR-2 · prd:workbench-ui/NR-3 · prd:workbench-ui/UB-1 · prd:workbench-ui/UB-2 · prd:workbench-ui/UB-3 · prd:workbench-ui/UB-4.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRXXWE590HR0J0S3R2YJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRN9X6CN1JK77F3ADK2J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNAD7GBJ9ZG8FJ9P4TK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNBYCG0RA8RFSXCRT8P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNHK620E00DS114EMET"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNKED2RZBBXMPTVHZRW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNMQTNQSPE65FHYB305"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNN0P9A42ETER08ND13"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNQ1YYEDEPN7EK6VR32"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNRG8B10V3N7E3MYXYD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRNSNBZN1H2QNZKN5VCK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP03E1TB1BSJJTB8D7R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP15ZQBMYTYABR1WVFE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP2PEXGJ9GABQNANFXK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP3NA8V8BZCGSWJAM10"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP4DS7R4EWPBENKXQT3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP69WWE4T57C6RC54QD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP7SN89C63M9SQ2J4J7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRP99ZD8BEAA44TV6RMW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRPAZNJZX1DZ4DCYK5CC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KTCZGW00EXM7HD224HSY0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KTF13QP33CJPPZQS1D80G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KTK6VWNAX3AR0FDTDBBT0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KTNB08DS1NGC89MK7FH62"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZS2DYVWXCWAD5KD5VWGH3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:59Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "note": "projected from exact design header 24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727"
+  }
+}

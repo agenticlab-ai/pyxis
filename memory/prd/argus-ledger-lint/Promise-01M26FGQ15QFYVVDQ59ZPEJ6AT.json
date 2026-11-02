@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ15QFYVVDQ59ZPEJ6AT",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "NR-1",
+  "statement": "Every existing docgate check's verdict on every non-ledger tree is byte-identical before and after the two arms are added",
+  "rationale": "additive composition is the whole point; a verdict change anywhere else is a regression (distributed-check-registration A-4)",
+  "fit_criterion": "on the pre-existing gate corpus (all non-ledger trees), `docgate gate` output is byte-identical with and without the two arms",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:77983a35f19c36f7ed825fdc8ea9e50fc397a4360ae4e08e67575db2ccd5ad8e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.893Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

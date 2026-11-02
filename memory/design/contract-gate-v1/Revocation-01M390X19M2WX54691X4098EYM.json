@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M390X19M2WX54691X4098EYM",
+  "kind": "Revocation",
+  "subject": "design/contract-gate-v1",
+  "statement": "contract-gate-v1 is superseded by contract-gate-v2 (design-brainstorm:feature-draft-tech-design#D-18); its decision.3.8.1 carries forward as a successor decision on design/contract-gate-v2",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGPPJSJEM1Y57HV5D8P6Y"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:02Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQECMQGQXRTMM1X1WWSB",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "FR-3",
+  "statement": "When the user signals they are new or asks where to start, the help skill shall present the first-steps path: a two-sentence orientation plus the concrete first action for their situation.",
+  "rationale": "J3 — SCAF-5's no-wiki-crawl promise",
+  "fit_criterion": "the newcomer-proxy reaches a recommended first action in a single invocation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5bf8701ae3575da08c841b0858a11d8556c3d530dfea9448c291cdf6834da871",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.316Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

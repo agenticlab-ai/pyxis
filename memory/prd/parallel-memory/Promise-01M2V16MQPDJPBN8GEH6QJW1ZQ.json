@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16MQPDJPBN8GEH6QJW1ZQ",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "ABUSE-3",
+  "statement": "Writer touches another author's work — vector: Dirty inputs or path redirection during retry",
+  "intent": "Lost unrelated changes",
+  "fit_criterion": "FR-5, UB-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:079f16f39d4b786a6623c9c4732f69f397aab0226f34734ff8e20a5531de53c2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:54Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

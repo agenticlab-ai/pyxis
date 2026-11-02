@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3MHPXT9ATBC95AF63H",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-3",
+  "statement": "Every guardrail clean across the e2e matrix (wound-free, zero repo write, offline-silent, emergency-lane never silenced)",
+  "intent": "§3.3",
+  "fit_criterion": "matrix run + egress scan",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7953fd894f3fcf4236ecc9cfd3b838d9687c1f83c5192724dc09785e703720f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.972Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZMVRWNF3FZ23AGMH45",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "NR-2",
+  "statement": "The empty-target install path lands the same green factory as today",
+  "rationale": "this feature hardens the door, never the house behind it",
+  "fit_criterion": "existing installer/init suites pass unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f8f803c79f7e84b8faf412c85ba383cf4d6465a078a016c6033a1a683a743efe",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.868Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

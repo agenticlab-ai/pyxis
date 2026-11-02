@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M32VJ6EBDRS39JMHWGAWGFSH",
+  "kind": "Document",
+  "subject": "source-retirement/06788c5b98ca9be7435928339350324d7d599d769ccc2f6da5358086eddc1500",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/vendor/lavish-axi/README.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the Lavish browser-review runtime and its doc-review entry point.",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "86448fe618ff63a5659b987084ef602e0aa7144439fcdede38b0e21c190799ef",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:47:17Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/vendor/lavish-axi/README.md",
+    "commit": "ccf01caed0f620120fb123713d7ba4931e0325cb",
+    "note": "memory-source-retirement/v1"
+  }
+}

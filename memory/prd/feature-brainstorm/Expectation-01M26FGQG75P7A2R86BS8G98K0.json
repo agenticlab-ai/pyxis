@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQG75P7A2R86BS8G98K0",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..8, FR-10..15",
+  "fit_criterion": "eval-harness run + checklist results on the fixture corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8ccce653f696169fb949bbec80ea37180f5660cd5d6c6a41e4f25b195bdfeb10",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.375Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWPV6V47GPMYHAK4XQS",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.3.8.1",
+  "statement": "Search runs over the reader's records in memory, rebuilt only when the tree fingerprint moves (DINV-5): a query is first tested against the anchor-ID grammars (requirement rows, principles, invariants, incidents, record anchors, review findings) — hits are exact-match results ranked first (PRD FR-3); the remainder is a plain case-folded token scan over titles, headings, and body text with heading-level context and open-at-match anchors. At the PRD's corpus bound (a thousand documents) a full rescan fits the budgets (NFR-1); nothing smarter ships until evidence says the budget breaks (no ranking heuristics, no dependencies).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6af778874e01ac431d5f88703836380620c7e8fe5ae55522b9eca2f0fef6cac3",
+    "source-design:5bd6e210a647b91ad19849731c61b8d4bf01344d41daeec11d27a993b8ecfd47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ557DNHE8RZ15Z6WNJA"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.75Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 73-73 in section 3.8; sha256:6af778874e01ac431d5f88703836380620c7e8fe5ae55522b9eca2f0fef6cac3"
+  }
+}

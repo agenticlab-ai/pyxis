@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZPGG1K3M7DFMW5G0ATZ06",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NFR-1",
+  "statement": "The system shall refuse every lock, draft-born status change, and locked-version change that lacks its required authority, and shall surface every requirement change that lacks a ruling in the lock's approval request.",
+  "intent": "Security",
+  "fit_criterion": "The ABUSE-2 through ABUSE-8 fixtures are refused in 100% of cases, and the ABUSE-1 fixture's silent rewrite appears marked unruled in the approval request",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:34d6e596fa07aaac6ba3e1e5f4635b3f03c990209e815084fe9cf08b1788e0b1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:59Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

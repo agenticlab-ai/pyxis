@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCPF86XAGB8PG9HQSYQ",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-10",
+  "statement": "When a review finding is raised, e2e-review shall record it as resolved (the design doc edited) or rejected (with a stated reason) before the design doc is approved.",
+  "rationale": "closable findings converge; nothing is silently dropped",
+  "fit_criterion": "on the fixture review, every finding ends resolved or rejected-with-reason; no finding is left open at approval",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8bbd9d459839c66da9d3eff8a20668ad0e19321ad0621dd25e315790e32430b7",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.262Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

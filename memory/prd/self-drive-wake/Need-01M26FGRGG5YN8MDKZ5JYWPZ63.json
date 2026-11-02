@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGG5YN8MDKZ5JYWPZ63",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "J2",
+  "statement": "When the drive has been quiet for a while, I want see in one command what it's waiting on, for how long, and whether that's abnormal, so I can tell \"waiting on me\" from \"waiting on CI\" from \"silently stuck\"",
+  "rationale": "brainstorm:self-drive-wake#D-4; prd:feature-implementation-drive J2 (manual correlating)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:20866b4d11b2924a9186851e749236db303ce3be16a4ce776f76f19648006701",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.408Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPY8G8K4E01EFBJJBFV3",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "NFR-1",
+  "statement": "The authority contract shall be enforceable as data: every grant check Argus performs shall read the versioned policy, never prose.",
+  "intent": "Security",
+  "fit_criterion": "behavior flips with a data-row flip and no guide edit (FR-11's fit)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:14ab1f359c7c16832cfedfbf0bce742bff6efa3f73e1bda5f1bef4160001fb8a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.8Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

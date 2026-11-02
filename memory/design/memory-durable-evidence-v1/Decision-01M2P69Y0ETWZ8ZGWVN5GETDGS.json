@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2P69Y0ETWZ8ZGWVN5GETDGS",
+  "kind": "Decision",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "decision.2.2",
+  "statement": "Capture, repair, historical resolution, validation, and reporting\nare deterministic Go operations. They require no AI, agent CLI, model API,\nsemantic classifier, probabilistic match, network lookup, or reviewer judgment.\nThe operator's rulings in this conversation are to keep squash support and\nmake the solution independent of AI. Human approval of this implementation\ncontract does not become a per-record runtime dependency.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:22512e22f77a05f2a3b1cf35605821ab48f4ec833ea28a0a70127feae5b05cdd",
+    "source-design:d5d8f44b0c9b5f456fb8f4fb69663c0391ba020eb50ac180e9065002b3927f40",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2P69SD99WM3Z9D3T1X6NBBT"
+    }
+  ],
+  "issuer": "Codex",
+  "created_at": "2026-09-16T22:44:53Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-durable-evidence-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-durable-evidence-v1.md lines 72-77 in section 2; sha256:22512e22f77a05f2a3b1cf35605821ab48f4ec833ea28a0a70127feae5b05cdd"
+  }
+}

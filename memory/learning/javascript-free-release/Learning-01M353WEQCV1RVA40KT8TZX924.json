@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Learning-01M353WEQCV1RVA40KT8TZX924",
+  "kind": "Learning",
+  "subject": "learning/javascript-free-release",
+  "statement": "New Pyxis releases use release-manifest/v2 and omit the JavaScript dependency archive and deps-from input. V2 permits an absent deps_bundle_sha256; legacy v1 parsing still requires a valid bundle hash, and verification checks that pinned legacy artifact. Packaging refuses stale bundles, verification rejects unpinned extras, and the clean-room operator entrypoint requires Git, Go, and gh without Node or npm. Upgrade v1-only tooling with pyxis upgrade or the bootstrap installer before repinning a repository to a v2 release.",
+  "intent": "Remove the retired runtime from distribution while versioning the changed wire contract and preserving legacy artifact verification.",
+  "rationale": "Making a required v1 hash optional under the same schema identifier would silently change the contract for existing consumers. A new writer schema plus strict v1 reads makes the migration explicit, while the operator script must obey the same Node-free prerequisites as the Go release command.",
+  "fit_criterion": "Manifest tests require v2 for bundle-free output and reject v1 without its hash. Legacy bundle verification catches tampering. The actual release script reaches its authentication boundary with only Git, Go, and gh on PATH, before any network or release mutation.",
+  "tags": [
+    "code:cmd/pyxis-release",
+    "code:internal/release",
+    "code:internal/relmanifest",
+    "code:scripts/cut-pyxis-release.sh"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-22T17:51:11Z",
+  "provenance": {
+    "source": "internal/relmanifest/manifest.go",
+    "pr": 1199,
+    "note": "Records the versioned bundle-free release contract and operator-entrypoint regression coverage."
+  }
+}

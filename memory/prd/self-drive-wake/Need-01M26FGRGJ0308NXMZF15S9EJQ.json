@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGJ0308NXMZF15S9EJQ",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "operator-initiated executor invocations targeting the driven feature's scope",
+  "fit_criterion": "0, at the checkpoint \"6-task proof feature driven end-to-end on both backends\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f57de04cbcd269824cf17303238a07b1e0227c59f6f8e7db58f8e987952e96b3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.41Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M479A973FHEZDM69PMRJ94H3",
+  "kind": "Question",
+  "subject": "prd/maintenance-jobs",
+  "family": "P-1",
+  "statement": "The initial v1 scope excludes other agent backends and freezes a Codex model/effort/flag profile even though Pyxis already supports four harnesses.",
+  "intent": "Operator review, 2026-10-05.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

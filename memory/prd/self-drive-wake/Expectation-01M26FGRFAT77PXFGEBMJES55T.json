@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFAT77PXFGEBMJES55T",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-10",
+  "statement": "The cutover is exercised in **both** directions. **Barrier fixtures** (upgrade): spend recorded in another or a since-deleted checkout before quiescence is contained; two new processes initializing concurrently serialize on the umbrella's lock and exactly one pays the barrier; a machine that never ran an earlier build pays the same one-time barrier; the marker is per (machine, medium host), so a second host arms its own barrier and a second identity on an already-cut-over host does not; an unreadable marker re-arms the barrier rather than skipping it. **Drain fixture** (downgrade): UB-8's criterion, run as stated — an injected clock, the umbrella seeded to one below the per-minute cap at a recorded t0, downgrade at t0+ε, and a two-write legacy workload. Without the drain the combined writes inside the live window exceed the cap and the fixture asserts that breach against a bound oracle computed from the seeded timestamps, not from prose; with the drain observed (clock advanced past every seeded entry's expiry) the identical workload stays inside both windows. The **unreadable-umbrella** variant runs the same shape with the umbrella corrupted, and the drain is the full longest window from confirmed quiescence. Each affected host drains on its own clock. **Round-trip fixture**: cut over → downgrade with drain → legacy spend → quiesce → re-upgrade, and the barrier is paid again. **Crash fixture**: a crash at any point during initialization leaves either the conservative ledger state or an absent marker — never a durable marker beside an unwritten conservative ledger. **Breach fixture**: a legacy writer left running writes near barrier expiry and the new pair then admits — the fixture asserts the platform bound IS exceeded, demonstrating why quiescence is mandatory",
+  "intent": "§5.4 (the version-change rule), FR-8, UB-8",
+  "fit_criterion": "cutover fixture suite output, including both breach fixtures' recorded failure modes and the bound oracle's computed values",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5cda4f0f0c6320548484a33ca5da8b3b73d6456cc518aa3dad1c174914d7a1de",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.37Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

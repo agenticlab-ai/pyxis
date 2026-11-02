@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR3Q8HVXYWFS3TV37R0D",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-sweep",
+  "family": "DOD-4",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..NR-2",
+  "fit_criterion": "suite results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bc599f2edb765471821ebf368ea93097e08351937fbd233fcf78a54ce25b55fd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.999Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

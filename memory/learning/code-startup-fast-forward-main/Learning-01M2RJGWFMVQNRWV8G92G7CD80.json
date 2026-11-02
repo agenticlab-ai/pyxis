@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2RJGWFMVQNRWV8G92G7CD80",
+  "kind": "Learning",
+  "subject": "learning/code-startup-fast-forward-main",
+  "statement": "The shared startup launcher fetches origin/main and fast-forwards local main without switching the original checkout or merging into a feature branch; the new worktree still starts from origin/main.",
+  "intent": "Give wrappers a current mainline source without clobbering in-progress work.",
+  "rationale": "A plain pull would merge into the current branch. Fetch plus ff-only on local main updates a checked-out main and leaves other branches and uncommitted files put.",
+  "fit_criterion": "Tests cover fetch failure, fast-forward of checked-out main, and leaving a dirty or feature-branch main unchanged while still creating the worktree from origin/main.",
+  "learned_from": [
+    "script/startup/worktree.zsh"
+  ],
+  "tags": [
+    "code:script/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T20:56:52Z",
+  "provenance": {
+    "source": "script/startup/worktree.zsh"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRSZ3RF3W3DMQ9SEDY2",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.3.2.1",
+  "statement": "e2e origin is established by traversal of recorded data, never by inference over charter prose. For each ready task, the frontier walk reads the plan-task marker the projection stamps in the item body, resolves the frozen plan it names, and reads that plan's governing-document header field. Where that field names a document at the feature's e2e home which parses as the `e2e-design/v1` class, carries `approved` status, and passes the class well-formedness check, the task's slot is recovered by re-running the closed task-graph rule the e2e plan class owns, yielding exactly one scenario or the harness slot. Any other outcome resolves `not_e2e` and the task continues down the unchanged path (`prd:implement-now/FR-28`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2da998c1706eca3b34a12897efec1bdb4f6dcaf35ffdabd204a96adc5ebf1113",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.625Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 84-84 in section 3.2; sha256:2da998c1706eca3b34a12897efec1bdb4f6dcaf35ffdabd204a96adc5ebf1113"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGKX3FTSCRW8KM8QSGH",
+  "kind": "Decision",
+  "subject": "prd/prototype",
+  "family": "R3",
+  "statement": "Assumption: a prototype built without a contract surfaces conflicts a paper review would miss",
+  "rationale": "DOD-1 and DOD-2 on the first prototyped feature, then the §6.7 verdict",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

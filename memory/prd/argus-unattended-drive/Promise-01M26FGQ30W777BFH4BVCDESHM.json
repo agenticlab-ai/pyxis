@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ30W777BFH4BVCDESHM",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "NR-1",
+  "statement": "Every existing mechanical check — the docs-gate context, plangate, CI contexts, the Argus gate arms — keeps a byte-identical verdict on every tree",
+  "rationale": "the lane adds routing over the checks, never edits them (NG-3)",
+  "fit_criterion": "before/after verdict comparison on the acceptance corpus: byte-identical everywhere",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d50f0a1678334a98e0440f8f2e9083d64bf04089a15aa9cd9b9bb5ffe21cb833",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.952Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ86204Q0RAZW229TK00",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "G3",
+  "statement": "We believe running the same checks as a continuous advisory context on contract-doc PRs; expected result: contract drift surfaced at the moment it is introduced, not at the next planning attempt",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:da5056e3357f57809e8891d45b90dcce46ceb912bbc1ed7349e312e596a44926",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.118Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

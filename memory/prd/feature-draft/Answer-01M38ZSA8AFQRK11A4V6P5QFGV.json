@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSA8AFQRK11A4V6P5QFGV",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered by the operator (design-brainstorm:feature-draft-tech-design#D-17): the architecture rollup docs/techspec.md keeps its name, its header states that it is the system-wide architecture rollup and not a feature's tech spec, and the living rollups stay.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQJPZ1RS3CBGD54DGQ6SD"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:31Z"
+}

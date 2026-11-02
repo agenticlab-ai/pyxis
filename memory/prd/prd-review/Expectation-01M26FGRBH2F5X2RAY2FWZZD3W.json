@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBH2F5X2RAY2FWZZD3W",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "DOD-7",
+  "statement": "A review run leaves the tree clean except the reviewer's artifacts; subject documents byte-identical (absent author revisions)",
+  "intent": "FR-12, NR-2",
+  "fit_criterion": "session-end status + hash comparison",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2b96d7603e92088b95b3cbd424694b79cc5fd282f1a8649067a670e3efc80fa9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.249Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

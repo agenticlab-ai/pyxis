@@ -1,0 +1,29 @@
+#!/bin/sh
+# pyxis operand prepare-commit-msg — the INSTALLED-repo hook variant
+# (installer-v1 §3.5 step 6; plan installer/001 T8, carried finding (b)). Calls
+# the pinned `pyxis` BINARY directly (an installed operand has no engine source
+# to run from); the binary re-verifies argus-stamp against the pinned manifest,
+# then the stamper appends the Argus-Drive trailer keyed on the active drive's
+# slug ($ARGUS_DRIVE_SLUG). A commit authored outside a drive is left un-stamped.
+#
+# prepare-commit-msg (not commit-msg) is the deliberate hook class: it runs even
+# under `git commit --no-verify`, so the stamp is not skippable that way; a
+# genuinely un-stamped protected-path commit still fails closed at the
+# merge-boundary gate. git hands the commit-message file relative to the working
+# repo, so it is absolutized before delegating. Locate-and-delegate only;
+# bash-3.2-clean. If `pyxis` is absent this is a fail-closed abort of the commit —
+# a drive commit must not land silently un-attributed. Activation is automatic at
+# init (`git config core.hooksPath .githooks`).
+set -e
+if ! command -v pyxis >/dev/null 2>&1; then
+  echo "pyxis prepare-commit-msg: the pyxis binary is not on PATH — authorship cannot be stamped." >&2
+  echo "  Run the release bootstrap (.pyxis/scripts/pyxis-bootstrap.sh) and add .pyxis/bin to PATH," >&2
+  echo "  or open this repo through the pyxis dev shell (installer-v1 §3.4)." >&2
+  exit 2
+fi
+MSG="$1"; shift
+case "$MSG" in
+  /*) ;;
+  *) MSG="$(pwd)/$MSG" ;;
+esac
+exec pyxis exec argus-stamp -- "$MSG" "$@"

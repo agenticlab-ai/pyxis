@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQAKE5QXAKWG9NWRPY0",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-8",
+  "statement": "Where a harness does not persist its own run data, the system shall derive its figures from that data as the run produces it, persisting no content-bearing intermediate artifact.",
+  "rationale": "at least one supported harness discards its run data permanently at process exit *(#F-16, #F-17, #D-5)*. Retaining that raw output verbatim would create an artifact holding exactly the prompts, command text, tool output and code that FR-5 exists to keep out of the record — an ungoverned secret-bearing file with no owner, lifetime, or access boundary; deriving in flight removes the surface rather than governing it. **This is a declared departure** from the adjacent merged contract `prd:pipeline-measurement` NG-3, whose reason holds that \"measurement is execution-agnostic, reading whatever accounting the run produced\": this row does not read whatever the run produced — it requires the run be arranged so the data survives. The departure is deliberate (#D-5) and bounded by NR-1 and NR-3, which forbid it from changing any run's behavior or outcome",
+  "fit_criterion": "a task run on such a harness yields a record with the same required figures as one run on a persisting harness; and no artifact this feature creates or controls — capture's own files, buffers and stores, including transient ones — holds that run's content once derivation ends, proven against a run seeded with known content-bearing material and checked after normal completion **and** after cancellation. The proof is scoped to capture-owned artifacts: the task's worktree and the harness's own state legitimately contain the run's content and are outside this requirement's reach",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4089227e200d226cc3b90743fd4b3fb0de4828f7f684640a5cf8fb533725e0c3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.626Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

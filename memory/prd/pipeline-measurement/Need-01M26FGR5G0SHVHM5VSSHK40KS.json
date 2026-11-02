@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5G0SHVHM5VSSHK40KS",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "J2",
+  "statement": "When I look at a phase's cost, I want see its efficiency signals beside the cost — questions, fog, rework, defects, latency, so I can tell a cheap phase from an effective one and not optimize the wrong thing",
+  "rationale": "brainstorm:pipeline-measurement#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb6cc80433ef7fbb6e1b49ba81552bfaec8343e42e8de016adf59cf95289efd0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.056Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

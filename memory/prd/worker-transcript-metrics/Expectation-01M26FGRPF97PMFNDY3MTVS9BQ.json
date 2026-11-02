@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPF97PMFNDY3MTVS9BQ",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..NR-3",
+  "fit_criterion": "suite result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38a93195849d8b8cb1bf240c9bed20e5e277da8f805e3be5451aea7fcf9599d6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.599Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

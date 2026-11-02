@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPT9D93K0SAZ1AYKZKDR",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.7.1",
+  "statement": "one **spend-source port** (defined on the recorder's side) with a per-harness adapter for each of the four supported CLIs (`#D-2`, `#ALT-4`). Each adapter reads *its* harness's native accounting through the best channel that harness exposes — a headless result envelope, a session transcript, or OTEL — normalizes to the record's `spend` shape for the phase bracket, or returns a declared `unavailable` (DINV-3). The recorder core imports no adapter package (AP-1/AP-3); the port is *real*, not hypothetical — four justified adapters (the \"two-adapters-make-a-seam\" bar is met). *Which* channel each harness uses is the empirical spike Q1 — an adapter's private concern, not a change to the port.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3af28805227a95e0a739be29c13064716df0e3777aea8a0f69994bb79f0ac51e",
+    "source-design:848be6bb1101995e3e698ade196fe74ee1eddf3150285b46b2e557a5764b59d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.673Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 108-108 in section 3.7; sha256:3af28805227a95e0a739be29c13064716df0e3777aea8a0f69994bb79f0ac51e"
+  }
+}

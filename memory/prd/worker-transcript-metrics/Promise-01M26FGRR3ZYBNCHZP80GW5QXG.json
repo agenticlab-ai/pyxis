@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRR3ZYBNCHZP80GW5QXG",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-6",
+  "statement": "If If two processes of one task end concurrently, then the system shall record both without loss or interleaving",
+  "intent": "two complete, independent records",
+  "fit_criterion": "concurrent completion under the race detector produces two schema-valid records and no lost write",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9127533dd23762f7555f5203eb1262fca426add2cefb09a5092e8f9643bc4ce0",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.651Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

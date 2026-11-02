@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMZANJFATF1TJZ734BK",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-17",
+  "statement": "EVAL-1..EVAL-11 remain executable in permanent CI and every family passes its stated threshold under §5.9; EVT-12 proves `required_runs≥5`, `executed_runs=required_runs`, every required per-run outcome passes, and exact harness/role/native-profile/policy/decode/prompt/calibration provenance.",
+  "intent": "§5.9, M3, FR-3, FR-4, FR-22, EVAL-1..EVAL-11, EVT-12",
+  "fit_criterion": "versioned corpus, per-family EVT-12 records, CI link, deterministic comparator definitions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dce38a3d5216ce6728ba1751829f2ed87f29b6cb2d9dd2adf7378caed5db65b7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.527Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

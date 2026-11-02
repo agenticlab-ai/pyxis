@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFQSXX7EQ8QPR37NEV3",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NFR-2",
+  "statement": "The system shall confine every write, read, and configuration action to paths outside the plan's never-touch set.",
+  "intent": "Security",
+  "fit_criterion": "the round-trip byte-identity assertion holds for every never-touch path (ABUSE-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4f7cb1c77b5e642121bd76c9b35abea19128aafc0f84b79f3dcd9d1873279b24",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.359Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

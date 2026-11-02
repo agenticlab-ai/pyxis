@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB5KASH9KMEG64QSQNJF9",
+  "kind": "Document",
+  "subject": "authoring/help",
+  "family": "guide",
+  "statement": "Imported Pyxis source document: .pyxis/authoring/help.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/authoring",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "4aa6b0825dd76c4ae0ab16d3433e74fb80ed4effcaafe568eb31324e263a4443",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:07Z",
+  "provenance": {
+    "source": ".pyxis/authoring/help.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPP61PXAGJCKTEHFNRJV",
+  "kind": "Decision",
+  "subject": "design/config-driven-portability-v1",
+  "family": "decision.3.3.1",
+  "statement": "cross-field validation folds into config load — the engine either loads a valid configuration or refuses by name, before any resolution, reusing the existing closed-schema fail-closed refusal path (INV-32; `design-brainstorm:…#D-4`). The in-repo check is **lexical**: a configured path is refused at load if it is absolute, contains a parent-directory escape, or is otherwise not a repository-relative path. The engine only ever joins a config path under the repository root and never follows a config value as an absolute location.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:27e0032ce34ed0390f21d50620b762592a044931f31f647daf95665c10a9564b",
+    "source-design:8d25ba0f65eb1bbed82e3f85efa63eb9791ff1246eb0fc44fa32f665307dd273",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN44K3YT5KK09CWCAJ5C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.542Z",
+  "provenance": {
+    "source": "docs/tech-design/config-driven-portability-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/config-driven-portability-v1.md lines 74-74 in section 3.3; sha256:27e0032ce34ed0390f21d50620b762592a044931f31f647daf95665c10a9564b"
+  }
+}

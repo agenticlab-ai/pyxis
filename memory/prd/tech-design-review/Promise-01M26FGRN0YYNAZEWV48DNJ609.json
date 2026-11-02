@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRN0YYNAZEWV48DNJ609",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "NR-1",
+  "statement": "tech-design-new's flow is unchanged except one additive review step; reviewless runs (pre-adoption) still work",
+  "rationale": "composition, not gating, until the ship rule promotes",
+  "fit_criterion": "the guide diff is additive-only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4ee99e897983ca2a300e151d076ddc4a333e13e269c016dafa9ff7a8d83eb990",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.552Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

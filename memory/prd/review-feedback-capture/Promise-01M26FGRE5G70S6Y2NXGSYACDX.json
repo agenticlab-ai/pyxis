@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE5G70S6Y2NXGSYACDX",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "ABUSE-1",
+  "statement": "A bad or garbage review comment inflates or poisons the signal — vector: many low-value comments captured verbatim",
+  "intent": "skewed derived measures",
+  "fit_criterion": "attribution on every entry; derived signal is advisory and calibration is propose-and-confirm, never auto-applied (NR-2, and the reviewers' calibration posture)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a655a4239ef451b01277a9bab3c2a017069e132a36ac63d375704af507abf183",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.333Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

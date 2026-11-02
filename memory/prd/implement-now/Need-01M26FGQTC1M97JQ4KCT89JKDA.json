@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQTC1M97JQ4KCT89JKDA",
+  "kind": "Need",
+  "subject": "prd/implement-now",
+  "family": "G4",
+  "statement": "We believe an attended run reads as \"watch my plan get built\"; expected result: the operator trusts and stays with the in-session loop",
+  "fit_criterion": "interview / usage verbatims",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5364c86fa09899e59c75729cccd57e413d39a757d04bd31b3edfc158ed2cfcd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.7Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

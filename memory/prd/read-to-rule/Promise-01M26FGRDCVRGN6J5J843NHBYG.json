@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDCVRGN6J5J843NHBYG",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-4",
+  "statement": "Each ranked judgment call in §0 shall carry the call, the alternative it displaced, and what disagreeing means for the reviewer, with rows ordered by the template's stated ranking rule (irreversibility × blast radius).",
+  "rationale": "veto semantics make a ruling a one-word act (brainstorm:gate-attention#D-2)",
+  "fit_criterion": "100% of ranked-call rows in the window carry all three elements; row order follows the stated rule at template-conformance review",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38c15546ee15928467b67c3e486e6321325d01b3a265e7e264dd6e4f257f24f0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.308Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

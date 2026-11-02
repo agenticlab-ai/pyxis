@@ -1,0 +1,8 @@
+{
+  "code": "prd-projection-divergence",
+  "scope": "prd/e2e-verification#ABUSE-5",
+  "feature": "e2e-verification",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

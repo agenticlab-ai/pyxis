@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8PGBVF9YC14T7XYM90",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-7",
+  "statement": "Given identical machine faces, disposition records, policy version, and gate version, compatibility evaluation shall produce one byte-identical ordered applied/expired/rejected disposition result using zero model tokens and no network access; record order shall not affect the verdict.",
+  "intent": "Determinism / auditability",
+  "fit_criterion": "repeated and permuted fixture runs are byte-identical modulo declared timing fields; dependency inspection proves zero model or network client; each outcome names the exact disposition and edge",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:33aca401997a1c36f2b32a66986b470ba5959fb4918f6a09bf3fdb0930138338",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.134Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

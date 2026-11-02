@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRHNG83XH9XY788B5TFG",
+  "kind": "Promise",
+  "subject": "prd/skill-command-prefix",
+  "family": "NFR-1",
+  "statement": "The rename rule shall stay mechanical (`pyxis-` + basename) so future skills need no per-skill naming debate.",
+  "intent": "Maintainability",
+  "fit_criterion": "new skills follow FR-1/FR-4 without glossary exceptions beyond Argus persona split",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ebf6d524ace290e6c942d676b90ab5179fd13145783bac7dd4575531b1dd9abd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.445Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

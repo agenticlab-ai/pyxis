@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX8XSXHC78DMPR010WH",
+  "kind": "Decision",
+  "subject": "design/merge-lane-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:argus-unattended-drive/ABUSE-1 · prd:argus-unattended-drive/ABUSE-2 · prd:argus-unattended-drive/ABUSE-4 · prd:argus-unattended-drive/FR-1 · prd:argus-unattended-drive/FR-2 · prd:argus-unattended-drive/FR-3 · prd:argus-unattended-drive/FR-4 · prd:argus-unattended-drive/FR-5 · prd:argus-unattended-drive/FR-6 · prd:argus-unattended-drive/FR-7 · prd:argus-unattended-drive/FR-8 · prd:argus-unattended-drive/FR-9 · prd:argus-unattended-drive/NFR-1 · prd:argus-unattended-drive/NFR-3 · prd:argus-unattended-drive/NFR-4 · prd:argus-unattended-drive/NFR-5 · prd:argus-unattended-drive/NR-1 · prd:argus-unattended-drive/NR-2 · prd:argus-unattended-drive/NR-3 · prd:argus-unattended-drive/UB-1 · prd:argus-unattended-drive/UB-2 · prd:argus-unattended-drive/UB-3 · prd:argus-unattended-drive/UB-4 · prd:argus-unattended-drive/UB-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:c32e493cfe971b356c08109d96d2c1b8f2436e7c1a00f6abc087c3db490d37e7",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCT2QGGXHBT7NC4Z1M48R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1B3TGKNXSM06Y1K998"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1CQDXE21G83C92N2F7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1E4WA77HX24TKM2F8S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ1YK56ZGCDA6F0XPM8W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ27224VFPJF4MWHNPT7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ28MEEXXKEMAHGANZ9J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ296EQ6Z5K1KTWRW2EZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2A9PK9583C6R0GX6QR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2B4K4CFT4DFSCKX4HN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2C5QWP10CE2H08PP4M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2DJ416PZYBM6CSGX6P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2E87KHSVDEKHKWFTBZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2VBCG6TB9FQ20Y1BPM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2XYFANSXQVBR9A087K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2YK3VCC7GFEMDXJYK9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ2ZHTENCEC6JYXTYQBG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ30W777BFH4BVCDESHM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ316VX692GFFX4B7YPG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ32P59TXJJY5SDSXS22"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ35KH5721JG7D1FDJ2Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ36NPZQWHZM65BGC6EX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ37T97F4DH7Y5NNVANF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ38GQ0YRRJZZWFT49J1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ3C1XSVB3KYXDSVER5V"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.816Z",
+  "provenance": {
+    "source": "docs/tech-design/merge-lane-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header c32e493cfe971b356c08109d96d2c1b8f2436e7c1a00f6abc087c3db490d37e7"
+  }
+}

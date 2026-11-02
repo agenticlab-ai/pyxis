@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBFSHZP53HYN6TK18QG",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "G3",
+  "statement": "We believe a merge-base congruence gate over every newly added amendment and rebase checkpoint; expected result: no new projection/source-map disagreement can merge while historical debt remains non-blocking and repairable",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a0f8cfadf89eb883ddeb4bfe2ac321e45ef8ad96e154906b918149f9cb180273",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.223Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

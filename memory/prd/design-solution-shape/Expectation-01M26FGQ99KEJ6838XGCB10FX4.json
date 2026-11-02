@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ99KEJ6838XGCB10FX4",
+  "kind": "Expectation",
+  "subject": "prd/design-solution-shape",
+  "family": "DOD-5",
+  "statement": "The durable Decision reads as trustworthy standalone — carries no volatile shape",
+  "intent": "G2, M2",
+  "fit_criterion": "review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:25c2601e692bc7ad7e9ccfadf948e7186d3f75ec67c9e362f9980092718bf5fe",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.153Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

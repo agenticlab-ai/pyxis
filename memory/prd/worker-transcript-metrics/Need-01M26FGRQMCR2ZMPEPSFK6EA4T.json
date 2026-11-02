@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQMCR2ZMPEPSFK6EA4T",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "M3",
+  "statement": "M3: G3",
+  "intent": "records carry no free-text content field",
+  "fit_criterion": "zero content-bearing fields present, by schema inspection",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c3de6db4ece5831d5b541ae71258c75143f33fc717a6458091c8f477cab7bd0f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.636Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

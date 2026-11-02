@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSK57PEQ2KG7E3HBVEC",
+  "kind": "Question",
+  "subject": "prd/feature-implementation-drive",
+  "family": "Q2",
+  "statement": "How does the GitHub binding verify non-default-base landing and advance tracker state without relying on default-branch closing semantics? (`brainstorm:feature-implementation-drive#P-2`; F-7)",
+  "intent": "technical design",
+  "rationale": "open — adapter-owned; product behavior fixed by FR-10",
+  "fit_criterion": "Phase B design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:dd42604a4798d8a67687d2eec4d1aa5e6c9cff4b5a808bef799a3125c4c5c863",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.699Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

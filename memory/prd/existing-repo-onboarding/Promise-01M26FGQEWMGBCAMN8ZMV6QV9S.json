@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEWMGBCAMN8ZMV6QV9S",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "ABUSE-2",
+  "statement": "an adopter (or defect) over-broadening the epoch to silence gates on changed content — vector: an epoch that grandfathers post-adoption changes",
+  "intent": "gates are silently disabled; drift ships unchecked (the phase-1 gate-aiming abuse class)",
+  "fit_criterion": "FR-8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9f93293a2fa1a91b9c3b2f0657785dea00efa5f73bba82f985f787b04f7d5bb2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.332Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

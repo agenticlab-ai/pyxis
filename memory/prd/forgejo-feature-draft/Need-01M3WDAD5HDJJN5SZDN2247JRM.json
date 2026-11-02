@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3WDAD5HDJJN5SZDN2247JRM",
+  "kind": "Need",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "J3",
+  "statement": "When the prepared proposal merges, I want verify its mainline content and lock, so I can plan from the binding version",
+  "rationale": "brainstorm:forgejo-feature-draft#F-2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

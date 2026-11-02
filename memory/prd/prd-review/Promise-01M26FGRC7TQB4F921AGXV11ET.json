@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC7TQB4F921AGXV11ET",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-8",
+  "statement": "When the author disposes findings, the reviewer's protocol shall bind blocking findings — applied, or declined with a recorded reason — record every disposition per finding, and treat a declined blocking finding as an automatic escalation.",
+  "rationale": "the pushback signal is measurement (M1) and the conflict路 is the authority's, not a debate (— #D-2, #D-11)",
+  "fit_criterion": "fixture dispositions all recorded; an unreasoned decline is invalid; a reasoned decline flips the path to escalate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:547724ccadb3b4eb7e52612af2db25fb3218942bb4c7a2a624a3c90d5062d2b0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.271Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

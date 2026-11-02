@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGH50W0QYXHECJJ8XPY",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "EVAL-5",
+  "statement": "handoff sufficiency",
+  "intent": "`prd-new` run on every ready-for-prd fixture record",
+  "fit_criterion": "median 0, max ≤ 2 operator decision-questions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c33aaeb66e8e51da9b26111142ba481ea3d1c284ac1c25ab15d515ed42194630",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.385Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

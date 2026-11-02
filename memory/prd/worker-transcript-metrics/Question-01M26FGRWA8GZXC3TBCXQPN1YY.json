@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRWA8GZXC3TBCXQPN1YY",
+  "kind": "Question",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "Q4",
+  "statement": "What exactly does \"token usage attributed to a tool use\" mean, given tokens are consumed per turn?",
+  "intent": "@mdarabi",
+  "rationale": "open *(brainstorm:worker-transcript-metrics#P-2)*; FR-3 binds to the definition the design fixes",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:e080f6297129799a718ad4edf46ded837075c427036a81edac5d6a6a6b6132ad",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.786Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "missing-serves-memory",
+  "scope": "design/init-hardening-v1 -\u003e prd:init-hardening/FR-9",
+  "feature": "init-hardening",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

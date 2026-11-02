@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBNN8Y1SFCFF8JSENN4CF",
+  "kind": "Document",
+  "subject": "plan/local-work-tracker",
+  "family": "plan-001",
+  "statement": "Imported Pyxis source document: docs/plans/local-work-tracker/001-plan.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/plans",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "f343952a575f0a042d5d348005be17dd871f4afa26229249e5dc60549bf84e07",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:23Z",
+  "provenance": {
+    "source": "docs/plans/local-work-tracker/001-plan.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

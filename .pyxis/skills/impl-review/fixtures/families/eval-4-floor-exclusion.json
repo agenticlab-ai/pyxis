@@ -1,0 +1,45 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-4",
+  "kind": "floor-exclusion",
+  "lens": "*",
+  "title": "floor exclusion holds — zero findings restating codegate-enforced classes",
+  "threshold": "zero findings whose class is a member of the ladder's defect-class set (deterministic comparator)",
+  "comparator": "defect-class-membership",
+  "negative_example": "lint/test/secret defects that tempt restating — a candidate finding that names a class the deterministic ladder already blocks on (secret, forbidden-binary, test-deleted, lint, format) is a floor restatement and MUST be dropped, never emitted.",
+  "legs": [
+    {
+      "band": "standard",
+      "must_catch": false,
+      "charter": "Task: wire the config loader. The deterministic ladder already enforces secret-scan, forbidden-artifacts, test-delta, lint, and format on this diff.",
+      "diff": "--- a/internal/config/load.go\n+++ b/internal/config/load.go\n@@\n+const apiKey = \"AKIA1234567890ABCDEF\"\n+func Load() { /* TODO real impl */ }",
+      "floor_candidates": [
+        {
+          "rule_id": "security-abuse/secret",
+          "cal_row": "CAL-8",
+          "severity": "blocking",
+          "defect_class": "secret",
+          "message": "a hardcoded AWS key literal is committed in internal/config/load.go",
+          "reason_excluded": "the class 'secret' is a codegate-enforced class (secret-scan); restating it is a floor duplicate the human already sees from the ladder."
+        },
+        {
+          "rule_id": "correctness-critic/test-deleted",
+          "cal_row": "CAL-11",
+          "severity": "blocking",
+          "defect_class": "test-deleted",
+          "message": "a test file was deleted in this diff",
+          "reason_excluded": "the class 'test-deleted' is a codegate-enforced class (test-delta); restating it is a floor duplicate."
+        }
+      ],
+      "allowed_findings": [
+        {
+          "rule_id": "spec-fidelity/charter-ac-contradicted",
+          "cal_row": "CAL-1",
+          "severity": "blocking",
+          "defect_class": "charter-ac-contradicted",
+          "message": "Load() is a stub — the config loader the charter requires is not implemented (a judgment defect the ladder cannot see)."
+        }
+      ]
+    }
+  ]
+}

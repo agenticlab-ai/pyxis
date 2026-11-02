@@ -1,0 +1,37 @@
+{
+  "schema_version": "opencode-role-routing-results/v1",
+  "fixture_digest": "555f82a66fd4c89cffd4bf230afc77418fab77233ffae8540212c547be01e22c",
+  "adapter_generation": "opencode-native-routing/2",
+  "results": [
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-economy",
+      "component_results": ["capability:pass", "deliberation:pass", "context:pass", "assurance:pass"],
+      "launch_capture_digest": "d76771f4918e3e9d1005cc352190c9d882aabd2438b2bbaef95321dffa41247c"
+    },
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-strong",
+      "component_results": ["capability:pass", "deliberation:pass", "context:pass", "assurance:pass"],
+      "launch_capture_digest": "3b35fba825d3d54c6667b2b7b1b642735aa2b2a68a572c1f3966bfcd508f6dc5"
+    },
+    {
+      "role": "implementation",
+      "native_profile_id": "implementation-frontier",
+      "component_results": ["capability:pass", "deliberation:pass", "context:pass", "assurance:pass"],
+      "launch_capture_digest": "dd2cfa9318c083f163dbd60f706fc7baf8a9f92fec3a11a14009a4ab2e79c88e"
+    },
+    {
+      "role": "review",
+      "native_profile_id": "review-standard",
+      "component_results": ["capability:pass", "deliberation:pass", "context:pass", "assurance:pass"],
+      "launch_capture_digest": "6d1a581222f4954d642daa44d98343ef1f823f930504fdd9f13ec2ab742cc9a3"
+    },
+    {
+      "role": "review",
+      "native_profile_id": "review-frontier",
+      "component_results": ["capability:pass", "deliberation:pass", "context:pass", "assurance:pass"],
+      "launch_capture_digest": "c076336dcb5ec790055903876853e7081c481943f01378543d2c9cf6d19f5bab"
+    }
+  ]
+}

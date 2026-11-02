@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBZMJRTFCXCQRT325AM",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-16",
+  "statement": "Where the authority overlays, the findings should render as inline annotations on the rendered document beside the authority's own, via the existing review surface.",
+  "rationale": "one surface for two reviewers, as an adapter over the data (— #D-1's overlay)",
+  "fit_criterion": "the overlay demo shows reviewer findings and authority annotations on one surface",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:68078c378f6f783c85b794282ac6feab4491deedc75169908e60f197b0fae508",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.263Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

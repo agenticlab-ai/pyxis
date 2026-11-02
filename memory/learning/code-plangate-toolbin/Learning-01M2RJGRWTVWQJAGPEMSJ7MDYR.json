@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2RJGRWTVWQJAGPEMSJ7MDYR",
+  "kind": "Learning",
+  "subject": "learning/code-plangate-toolbin",
+  "statement": "plangate locates carina through toolbin so projection does not require a preinstalled binary.",
+  "intent": "Keep plan projection runnable from a source checkout.",
+  "rationale": "PATH-first lookup failed in debug and worktree environments that only have ./cmd/carina.",
+  "fit_criterion": "resolveCarinaBin delegates to toolbin.Ensure for the checkout root.",
+  "learned_from": [
+    "cmd/plangate/main.go"
+  ],
+  "tags": [
+    "code:cmd/plangate",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T20:56:49Z",
+  "provenance": {
+    "source": "cmd/plangate/main.go"
+  }
+}

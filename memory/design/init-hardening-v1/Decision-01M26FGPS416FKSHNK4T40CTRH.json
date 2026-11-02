@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS416FKSHNK4T40CTRH",
+  "kind": "Decision",
+  "subject": "design/init-hardening-v1",
+  "family": "decision.2.1",
+  "statement": "Init gains a **checked front door built from two new seams**: a **dedicated preflight check suite** — one package owning every environment and admission predicate, consumed by init (refuse before any write), by preview (report every outcome), and by doctor (its prerequisite rows delegate) — and a **write-journal rollback** — one journaling write primitive through which every init mutation lands, unwound in reverse on any stage failure, restoring the target to as-found while preserving and naming anything foreign (`design-brainstorm:init-hardening-tech-design#D-1` · `#D-3`). The flow becomes: **preflight → elicit (with the conditional GitHub coordinate) → apply, journaled → on failure, unwind**. Admission is content-based and routes by name — empty proceeds; anything else is told to run `adopt` (with the `git init` two-step for non-git targets) (`#D-2`); the workflow materializes knob-conditionally with an advise-only migration (`#D-4`); gh probes go auth + existence + best-effort advisory scope (`#D-5`); and the code-gate gap is closed by routing every surface to codegate's own `seed` verb (`#D-6`). This is safe by construction where it matters most: no mutation exists before the checks pass, and no mutation survives a failure except what init never owned.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:acb00b70792d35f27eb434f0a68cac8d554bcc7a44714a92a4668c8c79abe113",
+    "source-design:f1710649feb9b92664f344798b9e17d86efdcab1acaf8ee7bba343363531750c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSBE39JBM1VNM1VD0PKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.636Z",
+  "provenance": {
+    "source": "docs/tech-design/init-hardening-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/init-hardening-v1.md lines 46-46 in section 2; sha256:acb00b70792d35f27eb434f0a68cac8d554bcc7a44714a92a4668c8c79abe113"
+  }
+}

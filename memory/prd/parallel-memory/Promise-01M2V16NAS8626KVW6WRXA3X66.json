@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NAS8626KVW6WRXA3X66",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "NFR-1",
+  "statement": "The system shall derive validation and synchronization results deterministically from declared inputs.",
+  "intent": "Determinism",
+  "fit_criterion": "Fixed-input output bytes agree under shuffled input enumeration; no ambient clock/randomness, AI, or network determines a verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dda9dce997e82895652a9689a93c347902d772c716837cb8155dc37e2bd3c9f4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

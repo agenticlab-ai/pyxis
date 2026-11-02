@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ89KNFF33EF59SQDRZC",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "J2",
+  "statement": "When planning is invoked on a feature, I want proceed only when the assembled contract is current, covered, resolvable, and well-formed, so I can not decompose and dispatch work against a broken contract",
+  "rationale": "`brainstorm:contract-compiler-2#D-6`, `#F-7`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:109d641880c897d5a8b19fd2871bd5a01a20de93737b063856792eeca4d5fb10",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.121Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

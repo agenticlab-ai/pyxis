@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPV21F966S5CPTHW3B8FQ",
+  "kind": "Document",
+  "subject": "problem/argus-boundary-enforcement",
+  "family": "delivery",
+  "statement": "Captured authored source: docs/problems/argus-boundary-enforcement/delivery.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/problems",
+    "reconcile:source",
+    "sha256:5903ce11615e5ccce204e5a3ecd8cc830dae76ea4a0a4a9a0169e71122144457"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC3HN9W0BNKY36A6SRR5W"
+    }
+  ],
+  "body_sha256": "5903ce11615e5ccce204e5a3ecd8cc830dae76ea4a0a4a9a0169e71122144457",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:27Z",
+  "provenance": {
+    "source": "docs/problems/argus-boundary-enforcement/delivery.md",
+    "note": "offline reconciliation"
+  }
+}

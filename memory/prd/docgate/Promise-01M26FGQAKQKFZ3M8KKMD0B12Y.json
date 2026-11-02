@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAKQKFZ3M8KKMD0B12Y",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-24",
+  "statement": "When validating an amendment envelope, docgate shall validate against the schema of the envelope's declared template version from the supported set — `amendment-template/v1` (the seven base fields) and `amendment-template/v2` (v1 plus an optional `Tracking` row carrying an issue or PR reference) — and shall fail any envelope declaring a version outside the set or carrying fields unknown to its declared version.",
+  "rationale": "an amendment whose implementation lands later needs a durable pointer to what tracks that work; version-keyed validation adds it without touching frozen history (#54 A1/C1)",
+  "fit_criterion": "a v2 fixture with `Tracking` green; a v2 fixture with an unknown field red; a v1 fixture without `Tracking` green (grandfathered forever); a v1 fixture **with** `Tracking` red (unknown to v1); a declared v3 red; the real ledger green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7d84b0445530acb7712398e2bb5aa93527bd786183a58de608e75ec6de4312e3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.195Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

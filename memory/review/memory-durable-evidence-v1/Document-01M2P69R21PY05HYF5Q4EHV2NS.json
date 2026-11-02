@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2P69R21PY05HYF5Q4EHV2NS",
+  "kind": "Document",
+  "subject": "review/memory-durable-evidence-v1",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/memory-durable-evidence-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:05ca1da47c4912022fc6902746abcdc20a8bfd2c5f28ec6eadb686090aec0d41"
+  ],
+  "body_sha256": "05ca1da47c4912022fc6902746abcdc20a8bfd2c5f28ec6eadb686090aec0d41",
+  "literal_body": true,
+  "issuer": "Codex",
+  "created_at": "2026-09-16T22:44:47Z",
+  "provenance": {
+    "source": "docs/reviews/memory-durable-evidence-v1.md",
+    "note": "offline reconciliation"
+  }
+}

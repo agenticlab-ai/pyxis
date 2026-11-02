@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XRV9CNN4PFJCCSPWHEEBW9",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R2",
+  "statement": "DOD-13 end-to-end proof and fresh-clone verification before release; UB-9 keeps draft content intact; fix forward as top priority",
+  "intent": "Preserve the current source risk mitigation in the proposed contract for operator PR review.",
+  "rationale": "With no pilot and no switch back, a draft-process defect blocks all new feature contracting until fixed",
+  "fit_criterion": "hosted end-to-end regression; initialized bare-origin run and fresh-clone consistency verification with actor/origin authentication limits reported; Injected failures at each step leave draft content byte-identical and name the step",
+  "tags": [
+    "source-unit:f24215102611e503d6a6bf7ddfcc3d65386bb0955bf2b411cb4a5561784fbe7b",
+    "source:prd-ledger",
+    "reconcile:prd-disposition"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M38ZWPM078P4R837R4QNWM04"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:19Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

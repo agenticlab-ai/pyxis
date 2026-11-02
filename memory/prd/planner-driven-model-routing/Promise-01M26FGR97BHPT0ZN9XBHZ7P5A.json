@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR97BHPT0ZN9XBHZ7P5A",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVT-3",
+  "statement": "`routing_resolution_failed` fires when routing stops before claim/invocation",
+  "intent": "`attempt_id:string`, `demand_id:string`, `task_id:string`, `proposal_id:string?`, `harness:string`, `role:implementation\\",
+  "fit_criterion": "standard\\",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:657ff306cd46cb3ff05b4b927943bfe9d2d2b927a204d2c8f951e0f5654b2324",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.175Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

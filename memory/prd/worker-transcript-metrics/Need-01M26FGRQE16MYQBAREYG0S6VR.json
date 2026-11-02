@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQE16MYQBAREYG0S6VR",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "G3",
+  "statement": "We believe keeping capture free of any content body; expected result: a record set that carries no secret-bearing text and stays small enough to process at scale",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:019faa28763d7d6334b7b5bfb30dbb6fd8bd69193671321da9c9efdfbc65f2c5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.63Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

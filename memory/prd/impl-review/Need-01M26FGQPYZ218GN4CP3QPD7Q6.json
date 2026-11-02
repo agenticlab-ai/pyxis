@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPYZ218GN4CP3QPD7Q6",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "M3",
+  "statement": "M3: G1, G3",
+  "intent": "seeded-defect and process/routing eval families caught",
+  "fit_criterion": "every §5.9 family passes at every release; all join cells, deep legs, critical blindness, aggregation, and review-role mappings included",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:63727cd706871953a2b7653d4852615a940d78d035a58e71a50e060e878f5ab8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.59Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

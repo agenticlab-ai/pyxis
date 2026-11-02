@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWD242KS9K3XHJR7G1V",
+  "kind": "Decision",
+  "subject": "design/wake-channel-v1",
+  "family": "decision.3.1.1",
+  "statement": "When a drive stops on an awaited external completion it **registers the await before stopping**: the journal's closing entry for the touch names the awaited goal object and the completion condition (FR-13's authority — a resumed session re-derives the await from the journal alone), and the regenerated derived block surfaces one typed line per await inside its Open-items element — the grammar (fixed at implementation, closed per AP-6) carries the goal object, the condition, and the since-date that UB-9's ages read. An await clears when the resumed touch's reconciliation verifies the completion at the goal object; a cleared await simply leaves the regenerated block. This rides the ledger class **additively**: the derived block's contracted content list is untouched (Open items already exists; the journal stays the only authority — the artifacts design's DINV-6), and a first-class Awaits row is deferred to a future template version bump under that design's own successor-rule (§7 Q2).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:fe0c285d63dcbc9218d63b9693dd38916d6ae8325135c8d33cf92c3d5147e114",
+    "source-design:aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYKH1ZFTCXZ2HF1JBR2G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.741Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-channel-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/wake-channel-v1.md lines 30-30 in section 3.1; sha256:fe0c285d63dcbc9218d63b9693dd38916d6ae8325135c8d33cf92c3d5147e114"
+  }
+}

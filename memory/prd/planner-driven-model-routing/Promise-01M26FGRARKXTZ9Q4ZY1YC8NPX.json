@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRARKXTZ9Q4ZY1YC8NPX",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NR-4",
+  "statement": "Existing general authoring-stage model routing remains governed by its current policy.",
+  "rationale": "authoring routing is outside this increment",
+  "fit_criterion": "inspection finds no new execution-demand dependency in non-plan authoring paths",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9f68ae4bc67fb13d0ee4545de65c9c0a7bde99e57750d9743e60a35e91e35e2a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.224Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ7HP4V88A5X081PC2N",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-4",
+  "statement": "AEC pins a checksum-verified candidate artifact set from the intended release source and completes at least one exact-head reviewed feature and code landing without hosted calls before final publication.",
+  "intent": "M1; FR-8; NR-2",
+  "fit_criterion": "Candidate manifest and pin, local refs, lock tag, Carina item, logs",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

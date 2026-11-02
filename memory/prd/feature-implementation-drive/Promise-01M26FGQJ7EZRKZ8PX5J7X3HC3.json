@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJ7EZRKZ8PX5J7X3HC3",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "EVT-2",
+  "statement": "feature_ownership_transition fires when ownership is acquired, handed off, released, or refused",
+  "intent": "feature_id: string, old_owner: string?, new_owner: string?, outcome: enum, active_attempts: int",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d3b659f1c3a85d0985f0abaa9040f4ae623f1e8e6ec59f770e082377c8fd7631",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.439Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

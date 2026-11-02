@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKFEY6Q8S67MS6ZESXR",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "G4",
+  "statement": "We believe one drive contract over a feature-blind executor will preserve local/remote behavioral equivalence; expected result: both modes complete the same acceptance fixture with the same review and verification semantics",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c8137fe2f706e1a2a7c247eeec6668c870bc170f25d2759db0261b1db3e97cb0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.479Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

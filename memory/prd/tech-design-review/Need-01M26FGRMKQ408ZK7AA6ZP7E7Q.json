@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRMKQ408ZK7AA6ZP7E7Q",
+  "kind": "Need",
+  "subject": "prd/tech-design-review",
+  "family": "G1",
+  "statement": "We believe design-class closable findings under adversarial survival; expected result: feedback the author accepts — valuable, not nits",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f03cf5caabb1206c19805790c3070b612bf662490b3b61176f9cff88b64ff306",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.539Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

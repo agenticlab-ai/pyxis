@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQTPZGPTRD23ZCERSE4",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "NFR-5",
+  "statement": "The system shall write no credential, token, or secret into a record.",
+  "intent": "Security",
+  "fit_criterion": "a run whose transcript contains known secret material yields records containing none of it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:28a16bd742d91e435fb40379ed1c83fbf3e5e6eee1b9a35d3a2444ed78c88d45",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.642Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

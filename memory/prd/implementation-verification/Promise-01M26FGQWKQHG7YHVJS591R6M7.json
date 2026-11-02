@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWKQHG7YHVJS591R6M7",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-14",
+  "statement": "When executing any verb, the harness shall run it scoped to the workspace, bounded by a per-verb time limit, and with a stripped environment passing only the variables the manifest declares for that verb.",
+  "rationale": "repo-supplied commands are untrusted input; ambient credentials must be unreachable by construction",
+  "fit_criterion": "a fixture verb reading an ambient environment variable observes it absent; a hanging fixture verb is terminated at its bound with rung result error-timeout; a fixture verb writing outside the workspace fails the run with a scope finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f0a1fe62b2edf02a39c0d71d5278e33c6c2bcd37f9007319cbba17afffe91b2b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.771Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC4P6AK4QSYF1FD4G2Y",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-5",
+  "statement": "Every surfaced finding shall carry: severity (blocking or advisory) assigned per the calibration table · its lens · evidence quoting the document span and the upstream anchor · and a **named acceptance condition**; a finding lacking any element shall not ship.",
+  "rationale": "closable findings are the anti-ping-pong unit (— #D-2; T-1)",
+  "fit_criterion": "100% of findings across the corpus carry all four elements; a seeded closure-less candidate is blocked (EVAL-3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4876a3b0d44f894c679ce6f3c384971f39131c91838f18f3e7d528ef3100962",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.268Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

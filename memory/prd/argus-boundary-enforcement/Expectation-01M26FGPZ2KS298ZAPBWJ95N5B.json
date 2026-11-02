@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ2KS298ZAPBWJ95N5B",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-6",
+  "statement": "The write-hook knowledge is on the vendor-neutral surface; each supported CLI's fail-closed wiring is verified or the CLI is listed with the gate/CI backstop as its stated guarantee",
+  "intent": "FR-3; NR-3; UB-2",
+  "fit_criterion": "per-CLI adapter tests + the CLI-guarantee list",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4cbd6f87dab6df804e0a3f81011d0c44df3e1dc7bd31e0525c5b8003a2824a2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.826Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

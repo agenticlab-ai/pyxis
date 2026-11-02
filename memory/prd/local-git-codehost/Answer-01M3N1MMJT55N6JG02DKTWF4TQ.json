@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMJT55N6JG02DKTWF4TQ",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Limit FR-3 to exact-head receipt consistency and disclose the lack of host-level protection and approval identity proof.",
+  "intent": "operator",
+  "rationale": "The AEC test will keep the bare origin under the shared OS account.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJS3VXAV3935AYCHDSN"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTTHR3A8EXT1J8YDBMM",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.2.1",
+  "statement": "The fold is one pure replay state machine. Each current ledger\nentry is applied as an atomic transition over a fully parsed document plus\ntyped unit state; only a valid transition commits. Exact entries frozen in the\nrepository's activation manifest replay predecessor section-splice semantics\nsolely to reproduce their committed artifacts. At every requested entry\nboundary the fold serializes both generated faces, independently inventories those bytes\nunder the same addressability contract, and exposes the exact mismatch\nmultiset. `check-projection-congruence` rejects the after-only multiset at each\nentry's own before/after boundary.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:846bd21dc246007a34fafdd4bd8aff09fe43ea64726df9221654fba5df3175fa",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.69Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 75-83 in section 2; sha256:846bd21dc246007a34fafdd4bd8aff09fe43ea64726df9221654fba5df3175fa"
+  }
+}

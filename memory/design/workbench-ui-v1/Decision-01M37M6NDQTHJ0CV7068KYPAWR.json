@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M6NDQTHJ0CV7068KYPAWR",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.3.7.1",
+  "statement": "The class registry chooses one read-only presentation for each document class. Markdown classes are presented by a Go `html/template` path that emits navigable headings and anchors while escaping document content; plans call the existing Go plan-viewer package over the folded model. If a registered presentation is unavailable, the entry stays in the catalog with its metadata and a named remedy replacing the page (PRD UB-2). Degradation is per-document and loud, never a blank page or dead server.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c4435ab22a96c72560572a5efbf3f21a5476e661e0fa03ad9d035c63e9799ed6",
+    "source-design:24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPWN69JJD0BWA69SHS7H"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZS2DYVWXCWAD5KD5VWGH3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:51Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 69-69 in section 3.7; sha256:c4435ab22a96c72560572a5efbf3f21a5476e661e0fa03ad9d035c63e9799ed6"
+  }
+}

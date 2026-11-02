@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQXCG06F20733NWSX13C",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "M3",
+  "statement": "M3: G1",
+  "intent": "fix-cycle economy: re-verification cost after a fix vs a full ladder run",
+  "fit_criterion": "p50 re-verification wall-time ≤ 50% of the same workspace's full-ladder time on the dogfood repo, measured across the dogfood run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e8c3800fa856e93aaaf4a2e15583bcd3eda4bf16a1f0ba996a1eb1096473d96",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.796Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

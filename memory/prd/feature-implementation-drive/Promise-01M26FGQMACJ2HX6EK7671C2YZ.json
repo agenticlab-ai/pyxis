@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMACJ2HX6EK7671C2YZ",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-2",
+  "statement": "If If ownership state is missing, malformed, conflicting, or unverifiable, then the system shall fail closed and route no work",
+  "intent": "ownership diagnostic + human recovery action",
+  "fit_criterion": "Every malformed/conflict fixture produces zero task attempts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:94486226f2cda11182c0e8513c26d0bc23f62ace7aefc535c7f4869b318165c5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.506Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

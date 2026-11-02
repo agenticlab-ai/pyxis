@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPZPSRT65NB7S4C5PNXE",
+  "kind": "Need",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "G1",
+  "statement": "We believe codifying Argus's boundaries at three fail-closed layers (write hook · structure arm · attribution gate); expected result: a forbidden Argus write is mechanically refused by construction, not merely reviewed — the AP-10/AP-17 move on the factory-control surface",
+  "fit_criterion": "M1 (violation-corpus refusal rate)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e6e944f24ecdcb378391c9dd92295f32acc9d102744ad00a72ee0fcc8aef345",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.846Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

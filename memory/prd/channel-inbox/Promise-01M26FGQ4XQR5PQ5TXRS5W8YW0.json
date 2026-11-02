@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4XQR5PQ5TXRS5W8YW0",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-6",
+  "statement": "If If the mute state is missing or unreadable, then the system shall treat the operator as unmuted (fail toward showing, never toward silence)",
+  "intent": "advisories shown",
+  "fit_criterion": "a corrupt mute-state fixture emits advisories and all blocking; never silently suppresses",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:10ad7452e1a733653e63124c8d204569eabdb77a5a89ed3c11e9da57abb3a1ba",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.013Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

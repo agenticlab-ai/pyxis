@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBEPT7ND8ZW5EYYBE4SDC",
+  "kind": "Document",
+  "subject": "brainstorm/e2e-verification-tech-design-2",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/e2e-verification-tech-design-2.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b33f045e9351ce6a5a110fadad83f91abb36596b5a40b4bb3d005ad90640a580",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:16Z",
+  "provenance": {
+    "source": "docs/brainstorms/e2e-verification-tech-design-2.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

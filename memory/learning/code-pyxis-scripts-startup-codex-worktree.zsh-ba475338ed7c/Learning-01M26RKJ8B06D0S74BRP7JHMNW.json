@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26RKJ8B06D0S74BRP7JHMNW",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-scripts-startup-codex-worktree.zsh-ba475338ed7c",
+  "statement": "The Codex startup adapter recognizes resume with an explicit session ID or name and optional prompt as an interactive worktree launch. Session names and resume prompts are not classified as top-level utility commands. It delegates repository discovery and the Git lifecycle to the shared launcher, which supplies --cd for the selected new or existing linked worktree. Codex therefore cannot restore the original checkout through its saved cwd or tui.resume_cwd=session preference. Resume pickers and --last, headless and utility commands, unknown syntax, noninteractive calls, and explicit native worktree flags still pass through.",
+  "intent": "Make codex resume obey the same checkout-isolation contract as fresh interactive Codex sessions.",
+  "rationale": "Previously resume matched the completion-discovered utility list and bypassed worktree creation. Changing the process directory alone is insufficient when Codex restores its session directory; its explicit --cd option controls the resumed workspace.",
+  "fit_criterion": "Regression tests cover explicit IDs and names, utility-named session/prompt text, argument terminators, subdirectories, caller-relative images, and reuse of linked worktrees. The installed Codex TUI resumes a synthetic saved session with tui.resume_cwd=session and reports the created worktree via /status, then exits with the same session ID, without a model request.",
+  "learned_from": [
+    "script/startup/codex_worktree_test.go",
+    "script/startup/codex_cli_test.go"
+  ],
+  "tags": [
+    "code:script/startup/codex-worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26G5MN2EVPJCH8RX2YJM25T"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3G5HNYK4QW7ZS800JQ0"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3H2K3260X8KY6SRG4VZ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T22:56:52Z",
+  "provenance": {
+    "source": "script/startup/codex-worktree.zsh",
+    "pr": 1177,
+    "commit": "f1ebcb3f0ec38358a8479edd867926435a342071",
+    "note": "Updates Codex classification and saved-directory precedence; the conversation is resumed but original uncommitted files are not copied into the new worktree."
+  }
+}

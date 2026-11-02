@@ -1,0 +1,8 @@
+{
+  "code": "prd-projection-divergence",
+  "scope": "prd/planner-driven-model-routing#M6",
+  "feature": "planner-driven-model-routing",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

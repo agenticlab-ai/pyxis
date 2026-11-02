@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRT6FWEVSBYGVHCCD1A",
+  "kind": "Question",
+  "subject": "prd/contract-gate",
+  "family": "Q3",
+  "statement": "The defect-report storage mechanism — a git-committed file (like review reports), a CI-run artifact, or a planning-session record — and its staleness handling (a report is a deterministic derivable of a failing contract state) (`#P-3`)",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:a8317ecd75e708baaf09ec1aeb0f1251a901ad12ddb0cf3a50ba950053f2f55c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.674Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

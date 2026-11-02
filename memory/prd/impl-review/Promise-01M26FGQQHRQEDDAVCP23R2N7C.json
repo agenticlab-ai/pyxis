@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQHRQEDDAVCP23R2N7C",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-14",
+  "statement": "If any field of the frozen assessment, evidence citations, complete semantic profile, demand identity or derivation-policy version, actual band, join policy, or selected review harness is missing, changed from its authoritative carrier, unknown, contains native dispatch data where forbidden, or disagrees with the selected-harness input, then the system shall refuse process construction before any pass invocation and name the boundary and every offending field",
+  "intent": "proposal remains unreviewed with a demand-integrity error",
+  "fit_criterion": "one fixture per missing, changed, unknown, native, version, and selected-harness-mismatch class invokes zero passes, names every offending field, and cannot accept",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b914779d84fd430e722aa3261a1cb67dab418c728ab04635c2fc7a10a487a4c7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.609Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

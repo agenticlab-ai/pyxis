@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/contract-gate#Q1",
+  "feature": "contract-gate",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

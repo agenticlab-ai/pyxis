@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQEZSQTZDF1JEDSSGEPS",
+  "kind": "Expectation",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "DOD-3",
+  "statement": "Every Must FR and every Must UB row passes its fit criterion",
+  "intent": "FR-1..FR-11, UB-1/2/3/5/6/7",
+  "fit_criterion": "CI run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d1fd5c660388d0bca32456cad09260a264b849acce4b40692cc1133ffdf9bedb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.335Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

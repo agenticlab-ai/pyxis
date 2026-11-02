@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMKAVRXTGTR7B5SMTVGY",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Require a clone of the configured origin to list the feature and exact proposed head, without claiming cross-origin identity verification.",
+  "intent": "operator",
+  "rationale": "Proposal discovery needs to work from the configured origin; independent origin identity is outside the approved common-case scope.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMK9EPBQRC73Y6QX63XK"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

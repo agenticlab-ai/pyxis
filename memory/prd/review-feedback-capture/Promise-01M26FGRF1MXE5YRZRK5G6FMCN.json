@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF1MXE5YRZRK5G6FMCN",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NFR-5",
+  "statement": "Capture cost shall stay within a bounded ceiling set in the technical design.",
+  "intent": "Cost",
+  "fit_criterion": "per-review capture cost ≤ the stated ceiling; no unbounded per-comment external call unless the design justifies it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3bd3ff38b287f97fa74f4c93284cb43e98964986b9ea55217020d208e4891b1d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.361Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

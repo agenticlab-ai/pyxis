@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNMQTNQSPE65FHYB305",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-4",
+  "statement": "When rendering a document containing corpus citation grammars, the reading room shall render each citation as navigation resolving to the cited document and anchor; an unresolvable citation shall render as named-unresolved.",
+  "rationale": "provenance is the doc system's spine; hand-resolving it is the toil",
+  "fit_criterion": "fixture docs: each grammar class resolves to its target anchor; a dangling citation renders named-unresolved and is never silently plain text",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2e636ad3cff86598116fc12655da809a31d64bd9c376c689821ddbbfd449b26d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.572Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

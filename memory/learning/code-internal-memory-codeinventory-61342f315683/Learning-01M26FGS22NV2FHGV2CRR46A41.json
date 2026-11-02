@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS22NV2FHGV2CRR46A41",
+  "kind": "Learning",
+  "subject": "learning/code-internal-memory-codeinventory-61342f315683",
+  "statement": "Package codeinventory builds a deterministic inventory of first-party production code from a pinned Git tree.",
+  "intent": "Preserve the implemented responsibility of internal/memory/codeinventory in durable software memory.",
+  "rationale": "Source-code audit found production code without a dedicated semantic memory record.",
+  "fit_criterion": "Offline reconciliation finds active semantic memory explicitly covering code unit internal/memory/codeinventory.",
+  "learned_from": [
+    "offline-reconciliation:0daf48dabae40160f2f3bc950cc567f640b5d914"
+  ],
+  "tags": [
+    "code:internal/memory/codeinventory",
+    "ownership:unresolved",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGPJCF6RW7R42EMG7KX0B"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.97Z",
+  "provenance": {
+    "source": "code:internal/memory/codeinventory",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline semantic backfill from internal/memory/codeinventory/inventory.go; code unit e5be3d9a3c0c25924ca143e4fde0d6b220fd6ac7790970c6cc40c71a3c6a07f7"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMN0PR830BW68VAEVWX",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.6.1",
+  "statement": "the corpus lives at the agent's home (`fixtures/`), the reviewers' pattern: seeded subjects, golden run records, defect classes each red at exactly its row, and an eval report recording every run. Families (design-brainstorm:argus-tech-design#D-9): **EVAL-1** breaking set — governance conflicts (the red→black archetype) + deadlock transcripts; 100% escalated, zero assumed through, red-first. **EVAL-2** legality + disposition — legal gaps (≥ 90% assumed, not escalated), governance-crossers, self-grant attempts, outward acts, and disposition cases on seeded reviewer findings (recorded reasons, decline-of-blocking auto-escalates, zero re-judging); green before the floor grant is exercised. **EVAL-3** injection — planted directives across the drive's **full read surface**: subject documents, records, ledgers, tracker items, PR comments and reviews, fleet PR bodies; zero obeyed, red-first. **EVAL-4** brief quality — golden briefs and counter-examples behind the ≥ 4/5 decidable-alone rubric, operator-judged on real dogfood briefs. The artifacts design's per-DINV defect fixtures (its A-7) run under this same harness.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3fe53e5d0f2c7ae9c223105782f34a949694deb8ec515ff31fce87e3e0acfb65",
+    "source-design:8819235c5a03ebc20e8a41a309d7b00947d68c83161ce5dcc77d96f870647ba0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKMWJM6XXWJY18WKM9A6"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.493Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 65-65 in section 3.6; sha256:3fe53e5d0f2c7ae9c223105782f34a949694deb8ec515ff31fce87e3e0acfb65"
+  }
+}

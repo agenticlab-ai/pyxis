@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T3WRNTEAN27XSMSKA3FCV",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "EVT-1",
+  "statement": "feature_retirement_result fires when Authority preview/publication or cleanup validation completes",
+  "intent": "action: enum, accepted: bool, feature: string, pinned_inputs: string[], selected_count: int, residual_surface_count: int, protected_changed_count: int, unrelated_changed_count: int, unrelated_suite_pass: bool, refusal_code: string, authority_id: string",
+  "fit_criterion": "M1, M2, M3, M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:99b44d0eb14547d7a88f6e3ff3181fa23501306b1de3d675e9c66974037ff505",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:00Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

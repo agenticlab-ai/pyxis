@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8M9F16HJ3ZR8TZ9MEW",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-5",
+  "statement": "Adding a check shall land as a self-registered unit (self-registration/scan) with no edit to any shared list or existing check code (AP-27).",
+  "intent": "Maintainability",
+  "fit_criterion": "a demonstration check lands via the derived-registration seam; inspection confirms the diff touches no central aggregate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a9235d111be6d4dedd1266ca986950dcf9e01c1d72cf30b49ada3b3bddc8f442",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.132Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

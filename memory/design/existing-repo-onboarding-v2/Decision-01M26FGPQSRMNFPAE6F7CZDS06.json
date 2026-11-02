@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQSRMNFPAE6F7CZDS06",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.3.2.1",
+  "statement": "the plan is one closed schema-versioned record, `adoption-plan/v1`, stored in the engine's system namespace (no collision with the adopter's tree), rendered human-readable for review (`design-brainstorm:…#D-2`; AP-5). It carries, per path, the class the engine assigns it, and — after apply — the resolved undo-data. The operator commits it with the adoption (no engine-authored commit, DINV-4).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3a47decbab31d738b852f32531aa8cc0aae180ee3e747f4bdcdc2a4ce08d8c13",
+    "source-design:c7cc38bb76acd3c8c1fd815af93bd17c9784b6970dc137db8217b9211f7dea5b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQGAZMPMP7NKJ3947Q9G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.593Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 71-71 in section 3.2; sha256:3a47decbab31d738b852f32531aa8cc0aae180ee3e747f4bdcdc2a4ce08d8c13"
+  }
+}

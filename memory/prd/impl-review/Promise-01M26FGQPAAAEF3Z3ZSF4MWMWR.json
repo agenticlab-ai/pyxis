@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPAAAEF3Z3ZSF4MWMWR",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-32",
+  "statement": "When live FR-6 persists one schema-valid completed aggregate for an exact proposal and revision, impl-review's host-side persistence adapter, acting on behalf of the reviewer program, shall be the sole performer of the medium-appropriate proposal write: one marker-block comment on GitHub or one typed decision record on Carina, carrying the human rendering and machine payload and surviving the session.",
+  "rationale": "publication remains owned by impl-review while reviewer execution contexts and the invoking host keep separate responsibilities; FR-6 stays live for every frozen dependent",
+  "fit_criterion": "both-media fixtures show FR-6 reaches the proposal only through the impl-review-owned adapter; no reviewer execution context or implement-now component contains a proposal publisher; the persisted rendering and payload round-trip byte-faithfully with the exact proposal and reviewed revision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb1f3003a92a3c25a99493a9bbcc3db6275485bc52190b9489a40d7fba02c2cf",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.57Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

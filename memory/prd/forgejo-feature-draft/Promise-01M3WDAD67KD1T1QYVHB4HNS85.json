@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD67KD1T1QYVHB4HNS85",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "ABUSE-2",
+  "statement": "Actor replays an old approval. — vector: Push after approved head",
+  "intent": "Stale contract locks",
+  "fit_criterion": "Re-read current head around review enumeration and refuse",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

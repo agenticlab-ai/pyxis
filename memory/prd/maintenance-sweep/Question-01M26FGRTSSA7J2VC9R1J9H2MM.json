@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTSSA7J2VC9R1J9H2MM",
+  "kind": "Question",
+  "subject": "prd/maintenance-sweep",
+  "family": "Q2",
+  "statement": "Symbol-level dead code: is an analysis-tooling dependency acceptable?",
+  "intent": "operator (dependency posture)",
+  "rationale": "open (G-2)",
+  "fit_criterion": "WR-2's revisit",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:2e25fd2fc3c2dba96f163b0f24469a364464fe0a54125c50948dcef4f2414822",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.737Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

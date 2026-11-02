@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFVDB7DF2AF7A7N2R6D",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NR-2",
+  "statement": "Converge's steady-state repair for a repo already under management (engine-verbatim / repo-owned / generated handling)",
+  "rationale": "steady-state behavior is a separate, live contract",
+  "fit_criterion": "the existing converge test suites pass unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:034dd8710866f015f737edf76393f1aabb2bd60281c5b21d3dd1eccb1ce77cad",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.363Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

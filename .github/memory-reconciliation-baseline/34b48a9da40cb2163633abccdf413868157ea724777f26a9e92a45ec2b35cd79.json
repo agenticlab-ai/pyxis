@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/installer#Q-4",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

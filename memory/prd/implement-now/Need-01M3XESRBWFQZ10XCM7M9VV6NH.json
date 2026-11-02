@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Need-01M3XESRBWFQZ10XCM7M9VV6NH",
+  "kind": "Need",
+  "subject": "prd/implement-now",
+  "family": "J1",
+  "statement": "When I have a frozen projected plan, or one bounded GitHub, Forgejo, or Carina issue, I want turn the selected work into green, independently reviewed PRs on this machine, so I can ship without provisioning a fleet or manually authoring planning artifacts for a small issue",
+  "rationale": "`brainstorm:implement-now#D-9`; operator decision 2026-10-01",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:968c8962a5a28c72bd10ce6b5378ef33ca18d2ab5a5c2285ad322375a7e7395c",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M26FGQTDF1V1AYVVK2VG6ZDX"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:43:43Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "approved amendment 008; compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

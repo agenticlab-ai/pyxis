@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M4TX64TE1YK8M6SFZR7A1",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.12.1",
+  "statement": "do not self-maintain prices (`#D-7`, O-4). Consume an existing, actively-maintained cross-provider pricing source (LiteLLM's `model_prices_and_context_window.json` is the de-facto, MIT-licensed, covering Anthropic/OpenAI/…), **vendored + pinned** (parsed with stdlib `encoding/json` — vendored *data*, not a code dependency), refreshed by a pinned re-vendor script (the Mermaid vendoring idiom). This preserves the no-new-egress/offline posture (no runtime fetch) and controls supply-chain surface. Each record stamps the pinned snapshot version (DINV-6); an un-priced model is flagged (UB-2), never silently $0. Cost is a thin derived layer over the ground-truth token counts.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8f2119924374b38322e2c7fdbfce30b166f23bff76a9e9d1c32689489ea12ced",
+    "source-design:970b9e3c3cc2f6bde46725002d58f9bb6c31f5727f16e49070cd523604301367",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPT7X2ZNNGKSV1WP8370"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRGPSQZC4DWWVD1FNAPSY"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:51Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 130-130 in section 3.12; sha256:8f2119924374b38322e2c7fdbfce30b166f23bff76a9e9d1c32689489ea12ced"
+  }
+}

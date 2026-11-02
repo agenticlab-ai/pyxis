@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZNBTN8C3QCRT1STF12V15",
+  "kind": "Document",
+  "subject": "plan/pipeline-measurement",
+  "family": "plan-001",
+  "statement": "Captured authored source: docs/plans/pipeline-measurement/001-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/plans",
+    "reconcile:source",
+    "sha256:afe016c91f3af8ef64a7510f4ebbe11b511802bec0d6ffc2080c89a559a4f690"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBNYVGRR1WQ3T9TVT8MD0"
+    }
+  ],
+  "body_sha256": "afe016c91f3af8ef64a7510f4ebbe11b511802bec0d6ffc2080c89a559a4f690",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:38Z",
+  "provenance": {
+    "source": "docs/plans/pipeline-measurement/001-plan.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRR9CCDWW32G97FMTA0Z",
+  "kind": "Question",
+  "subject": "prd/argus-ledger-lint",
+  "family": "Q1",
+  "statement": "The exact granularity and matching rule of the history arm — line-grain diff of a merged entry's body vs. entry-block identity vs. anchor/numbering stability, and how it distinguishes a legal append from an illegal edit",
+  "intent": "implementation (technical design)",
+  "rationale": "open — a design-stage concern mirroring `check-immutable`'s own diff-classification choices; does not gate the destination *(brainstorm:argus-ledger-lint#G-2)*",
+  "fit_criterion": "technical-design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0f2a5fc80ac8e53abdf01cd660392cbc93ca8b84054762e34c2338db2d55328e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.657Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

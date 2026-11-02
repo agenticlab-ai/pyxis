@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZHY2Y1DMCDYX38MZFK307",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-2",
+  "statement": "An agent, or Argus beyond its grant, wants its own work locked — vector: approves its own lock",
+  "intent": "an unread contract reaches execution",
+  "fit_criterion": "FR-17, FR-35, UB-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:77f331139b7c82bd08b5a6ed4b2337b0728d85c1be87b3a41a81bd2eb2f42cc5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:29Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

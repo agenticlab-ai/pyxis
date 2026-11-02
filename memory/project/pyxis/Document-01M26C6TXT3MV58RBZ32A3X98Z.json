@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Document-01M26C6TXT3MV58RBZ32A3X98Z",
+  "kind": "Document",
+  "subject": "project/pyxis",
+  "family": "readme",
+  "statement": "Captured authored source: README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:repo-root",
+    "reconcile:source",
+    "sha256:6189f7d717a836541bdcbe88a59b4919ddb2f68f4ef9937e03f6dcca0bbde315"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2645TNTD7280DQG5PT6KKQZ"
+    }
+  ],
+  "body_sha256": "6189f7d717a836541bdcbe88a59b4919ddb2f68f4ef9937e03f6dcca0bbde315",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-10T19:20:12Z",
+  "provenance": {
+    "source": "README.md",
+    "commit": "718afc6d0194aeafe2dfcdeb424f32839131d279",
+    "note": "offline reconciliation"
+  }
+}

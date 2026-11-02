@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRBX1MN109FA0VJWM22XK",
+  "kind": "Document",
+  "subject": "design/local-work-tracker",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/local-work-tracker.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:8fc6ff4826c67f958f32aa4386afe7a6d82ae5e4965e7798d7e005e564a1543b"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCSSENHSS6Q3GKX2TAX3A"
+    }
+  ],
+  "body_sha256": "8fc6ff4826c67f958f32aa4386afe7a6d82ae5e4965e7798d7e005e564a1543b",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:17Z",
+  "provenance": {
+    "source": "docs/tech-design/local-work-tracker.md",
+    "note": "offline reconciliation"
+  }
+}

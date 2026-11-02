@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2VWB4JCY0HC24GDV7CHSGD3",
+  "kind": "Document",
+  "subject": "design/memory-standalone-source-retirement",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-standalone-source-retirement.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:d11dc72c17020f19e082237ec2d549339ed2cf7feeff022cfda15107a63b54d8"
+  ],
+  "body_sha256": "d11dc72c17020f19e082237ec2d549339ed2cf7feeff022cfda15107a63b54d8",
+  "literal_body": true,
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T03:46:13Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-standalone-source-retirement.md",
+    "note": "offline reconciliation"
+  }
+}

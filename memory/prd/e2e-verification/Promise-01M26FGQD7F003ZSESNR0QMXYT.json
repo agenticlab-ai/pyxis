@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD7F003ZSESNR0QMXYT",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-7",
+  "statement": "When an e2e design doc is submitted to e2e-review, the skill shall run blind, fresh-context lens reviewers over one shared context pack and emit closable findings in a review report.",
+  "rationale": "the established reviewer-program shape, applied to the e2e design",
+  "fit_criterion": "on a fixture doc, e2e-review emits a review report of closable findings (each naming its own acceptance condition); the report validates against the review-report schema it adopts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8fed7e36cab56315fff9898f7968487d63643e7c377df08eaeb4fb8b739258fa",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.279Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

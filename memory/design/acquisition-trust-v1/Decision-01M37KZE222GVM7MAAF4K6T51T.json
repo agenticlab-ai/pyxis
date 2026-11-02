@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZE222GVM7MAAF4K6T51T",
+  "kind": "Decision",
+  "subject": "design/acquisition-trust-v1",
+  "family": "decision.3.2.1",
+  "statement": "When fetching from the **default** `github.com` release host, the resolver authenticates through the GitHub **API asset endpoint** if a token is available. It lists the release by tag to map an asset **name → id**, then `GET`s `repos/<o>/<r>/releases/assets/<id>` with `Accept: application/octet-stream` and a bearer token; GitHub 302-redirects to a signed object URL, which the client follows.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:699f074d82333f6d966e962ab00ab8d59bed4bf6d7f495592ee24dc4573b89fb",
+    "source-design:74e1681d397e90ae2742cf27eab479ded67658721c7e86309994dc40a7947686",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMDAXS44XY4JRJST3HQ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQJ7NKMA97Y40JQF54VGD"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:10:54Z",
+  "provenance": {
+    "source": "docs/tech-design/acquisition-trust-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/acquisition-trust-v1.md lines 66-66 in section 3.2; sha256:699f074d82333f6d966e962ab00ab8d59bed4bf6d7f495592ee24dc4573b89fb"
+  }
+}

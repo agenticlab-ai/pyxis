@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3WDAD7CNZGBDD36W9J9QAF0",
+  "kind": "Answer",
+  "subject": "prd/forgejo-feature-draft",
+  "statement": "Require hostile-redirect and origin fixtures with zero credential-bearing requests to unbound destinations, zero output-canary leaks, and zero false PR/tag.",
+  "intent": "operator",
+  "rationale": "Same bounded repair instruction and interpretation as P-2, problem:forgejo-feature-draft#A-5; no additional product choice",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3WDAD7BZ0BD6NH9V9JZW5FW"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

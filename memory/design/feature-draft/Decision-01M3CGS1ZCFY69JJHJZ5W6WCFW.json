@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CGS1ZCFY69JJHJZ5W6WCFW",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-reopen-diff",
+  "statement": "A reopened draft lock issues only new and changed units against the binding lock, supersedes changed rows and contract text, and revokes removed rows while retaining prior history.",
+  "intent": "Make each locked version readable as a complete contract while keeping unchanged records stable.",
+  "rationale": "Comparison uses the active record at each binding address and the identities of related records; historical problems, brainstorms, reviews, and events use distinct addresses across versions.",
+  "fit_criterion": "A real Git fixture locks two versions, accepts a PRD-only change, and renders each lock; diff fixtures cover changed, removed, and new rows, answer transitions, history retention, and a blocker-free memory packet.",
+  "tags": [
+    "code:internal/draft/lock",
+    "code:internal/memory/record"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T14:51:12Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

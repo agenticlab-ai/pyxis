@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR1CZ63WK87PWXSE8CG8",
+  "kind": "Need",
+  "subject": "prd/installer",
+  "family": "M3",
+  "statement": "M3: G1",
+  "intent": "a real project repo is created through the installer and a feature passes through the pipeline there with zero hand-copying",
+  "fit_criterion": "1 repo, at the checkpoint \"the next new project starts\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:33def96e8073f0d97fe1351ca62cf0da27ad5402bcdb5603e20c0d967aebe784",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.924Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

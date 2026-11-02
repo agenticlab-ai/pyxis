@@ -1,0 +1,372 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461WDJ6F9ETYAM19PG3BTEW",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:feature-draft/ABUSE-1 · prd:feature-draft/ABUSE-2 · prd:feature-draft/ABUSE-3 · prd:feature-draft/ABUSE-4 · prd:feature-draft/ABUSE-5 · prd:feature-draft/ABUSE-6 · prd:feature-draft/ABUSE-7 · prd:feature-draft/ABUSE-8 · prd:feature-draft/DOD-18 · prd:feature-draft/EVT-1 · prd:feature-draft/EVT-2 · prd:feature-draft/EVT-3 · prd:feature-draft/EVT-4 · prd:feature-draft/EVT-5 · prd:feature-draft/EVT-6 · prd:feature-draft/EVT-7 · prd:feature-draft/FR-1 · prd:feature-draft/FR-10 · prd:feature-draft/FR-11 · prd:feature-draft/FR-12 · prd:feature-draft/FR-13 · prd:feature-draft/FR-14 · prd:feature-draft/FR-15 · prd:feature-draft/FR-16 · prd:feature-draft/FR-18 · prd:feature-draft/FR-19 · prd:feature-draft/FR-2 · prd:feature-draft/FR-20 · prd:feature-draft/FR-21 · prd:feature-draft/FR-22 · prd:feature-draft/FR-23 · prd:feature-draft/FR-24 · prd:feature-draft/FR-25 · prd:feature-draft/FR-26 · prd:feature-draft/FR-29 · prd:feature-draft/FR-3 · prd:feature-draft/FR-31 · prd:feature-draft/FR-32 · prd:feature-draft/FR-33 · prd:feature-draft/FR-34 · prd:feature-draft/FR-36 · prd:feature-draft/FR-37 · prd:feature-draft/FR-38 · prd:feature-draft/FR-39 · prd:feature-draft/FR-4 · prd:feature-draft/FR-40 · prd:feature-draft/FR-41 · prd:feature-draft/FR-42 · prd:feature-draft/FR-43 · prd:feature-draft/FR-44 · prd:feature-draft/FR-45 · prd:feature-draft/FR-5 · prd:feature-draft/FR-51 · prd:feature-draft/FR-52 · prd:feature-draft/FR-53 · prd:feature-draft/FR-54 · prd:feature-draft/FR-55 · prd:feature-draft/FR-56 · prd:feature-draft/FR-57 · prd:feature-draft/FR-58 · prd:feature-draft/FR-59 · prd:feature-draft/FR-6 · prd:feature-draft/FR-60 · prd:feature-draft/FR-7 · prd:feature-draft/FR-8 · prd:feature-draft/FR-9 · prd:feature-draft/NFR-2 · prd:feature-draft/NFR-3 · prd:feature-draft/NFR-4 · prd:feature-draft/NFR-5 · prd:feature-draft/NR-1 · prd:feature-draft/NR-4 · prd:feature-draft/NR-5 · prd:feature-draft/NR-7 · prd:feature-draft/NR-8 · prd:feature-draft/UB-1 · prd:feature-draft/UB-10 · prd:feature-draft/UB-14 · prd:feature-draft/UB-15 · prd:feature-draft/UB-16 · prd:feature-draft/UB-2 · prd:feature-draft/UB-4 · prd:feature-draft/UB-6 · prd:feature-draft/UB-7 · prd:feature-draft/UB-8 · prd:feature-draft/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M461CKKTSN1NK7V3XPCH1SXA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZJW6CCZWXBC7N3ENG7D12"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZJXZ1WYK5AR8NY7WVTNDJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZJZRE6QAP3KCAYEDDR9MF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZK1GRHKHQFRWNJS4E2A53"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZK38H0DEWGFHGJP93R0T4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZK4ZZMNRY7Z2X2R5MRTWT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZK6S07RXK2SV8K7Q6GKQR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZK8HBM85ZTJ9K64NE4K1H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKAD4B7FT687BWDBN0FHV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKC67D76V1QTSHHYS0KCA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKDZ4MMXE9J3XAE4KTTS3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKFR2M82DJPFX10T1RCJZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKHHX1Z4FNF7Y5KP9W366"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKKB8WATY4BNYFY8E7GYF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKN59FJA2Y6VYM70HCSPF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKRS4ZJW5S6BVRVH9C56A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKTHJTCRYGQENQXPF6XE8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKWA5F4406R17XCWKR677"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKY4NXM84KK0A8455HB46"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZKZZGVGKW6VFEP035ZESA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZM1S18Q458FRM6KBAEFPG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZM3JT6ZJVZWE4KA1BFT55"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZM5AXF1H4R8R38KHZAYYM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZM73BGFEBV3GSDBFN8JZ3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZM8WE39T9PEQMQ479FMQJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMCEHJXEZ5QQHMK0GGJ0V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZME6Y19NXREFQ7J8ZMW7T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMHR1EY4AMTXXQQRM0ZP1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMKJTZKW82YRFYTE30WGC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMNC67PJM58T8MCRP5E6Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMQ76ZWS6MYG9RP9JTYXS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMTVJ3DTC9ZGB5MSK6927"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMWM77Y4W47BNM45VVBSK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMYE6YW1T9WR2Q8QV8X6J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN07HXR854AVG0QNHKJ7Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN20QF6HG25VKC68HQ66W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN3SVW53QCMNAXZP9QJMZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN5HHE5HS8280A10KRQJT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN7BW6VT4J7M5F2KDNRJV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZN959ZEBTX7V7WTM0AXJQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNAY57BN8WWQCAQ9JCQ5J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNCQJDENZMQ6NZMA5DXSZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNJ3G4MZ07FHNN6PQR7V8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNKXDXK30QMN2Z73GHJ68"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNNQ28NQGVCKZ9SPGH5FW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNQG3B2AWZ2F6CFPPMGYC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZNSAGFCAWVKXQ2KEQ5VA9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPJ9SM1WNE07PHDEE3R8W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPM2XA5DCS0KS4SXV840P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPNWVD7MDBR0JE7TK19PB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPQNNYESN9NJ3DBRGFBNT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPV918ZDYT0F03S25043W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPX24CP1HDGJ9W6F2XD5S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZPYVFVEHK53FESZJWWYW3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQ0MRSKN83FRMKK0T0T2Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQ47DJVXJVSFD8M4V98S8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQ7WHPHZSCKN39H209X7D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQBEFCYB3ZYZ1PCEQ2HHV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQD857AXZGEHYD7AG9FVD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQF28ZASGB8556R7TXMQ7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZQGWGW557FFEQMSZAPTEF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQH5GVH80FZ1XK8299NMM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQJAEHCGJ9SCW883CCTZA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQKFZT875K8FBE99C9BZ5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQMQ4KFEJEBEY0EKFRVWK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQNX9VW9C4A506WDKKKVF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQQ2ZZH59EYB4NVKS08YH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQSF7JCCYED0FVAJ6SPSJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XRQX20N7PV0E0DR2FAE2ZV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CN0YK3CQ8ZKQ7DF3C54N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CPEF2EXGVW8Y4DW8XNWR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CQVKQNDGPW9HJD180CRH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CS95M4YSPF6NF8AJ9EPS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CTNZ8N0G4CVQZJT70S9K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CW3CNSKDP24J2KKMEHY3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CXGS5ZEQQ0RJEDT5BDXT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461CYYG455VQDS4SVSPSBX6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QCXSW5SABQ8SY90B58SZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QEVF10ET0QXNWZWR8V7Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QGSEXEVK3S8V52DVRTH2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QJQJKXZDP4TDPK3TBFN4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QMP897N2BAB96C2HKEMM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QPMYCM3AQVQWVH040GH4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QRKSE1K43G7SDNXCBGWP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M461QTJGKNZVG2R60JYT3260"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:51:08Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "projected from exact design header c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4"
+  }
+}

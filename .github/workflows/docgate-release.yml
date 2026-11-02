@@ -1,0 +1,27 @@
+# docgate release channel (layout design §3.7): tag docgate/vX.Y.Z → static
+# binaries + sha256 checksums as a GitHub Release.
+name: docgate-release
+on:
+  push:
+    tags: ['docgate/v*']
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version-file: go.mod, cache: false }
+      - name: build matrix
+        run: |
+          VER="${GITHUB_REF_NAME#docgate/}"
+          mkdir -p dist
+          for plat in darwin-arm64 darwin-amd64 linux-amd64 linux-arm64; do
+            GOOS="${plat%-*}" GOARCH="${plat#*-}" CGO_ENABLED=0 \
+              go build -trimpath -ldflags "-s -w" -o "dist/docgate-$VER-$plat" ./cmd/docgate
+          done
+          (cd dist && shasum -a 256 docgate-* > SHA256SUMS)
+      - name: publish
+        run: gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes "docgate static binaries; pin the SHA256SUMS values in .pyxis/config.yaml (DINV-2)."
+        env: { GH_TOKEN: "${{ github.token }}" }

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M49BK4ZDFAMQ31956ANB7Y6R",
+  "kind": "Document",
+  "subject": "design/inherited-learning-repair",
+  "family": "design",
+  "statement": "Draft tech-spec.md",
+  "body_sha256": "8de9665be7d0337cb6ae341414f8f2f0b199d0476634a1dd3ccc39a2a725c7b7",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

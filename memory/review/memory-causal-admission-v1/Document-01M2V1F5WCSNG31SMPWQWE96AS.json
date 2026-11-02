@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2V1F5WCSNG31SMPWQWE96AS",
+  "kind": "Document",
+  "subject": "review/memory-causal-admission-v1",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/memory-causal-admission-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:74d2d591787cf83b8b65e5ed12c9eeb2532fbe39e84431714692c8733114a411"
+  ],
+  "body_sha256": "74d2d591787cf83b8b65e5ed12c9eeb2532fbe39e84431714692c8733114a411",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:56:34Z",
+  "provenance": {
+    "source": "docs/reviews/memory-causal-admission-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "offline reconciliation"
+  }
+}

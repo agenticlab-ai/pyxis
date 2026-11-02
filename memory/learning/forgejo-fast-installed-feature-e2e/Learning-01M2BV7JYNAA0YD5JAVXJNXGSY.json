@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BV7JYNAA0YD5JAVXJNXGSY",
+  "kind": "Learning",
+  "subject": "learning/forgejo-fast-installed-feature-e2e",
+  "statement": "The opt-in Forgejo feature E2E installs actual source-built Pyxis binaries into isolated temporary directories, reuses an existing Forgejo repository, and stubs only the implementation and review model processes. Git, task projection, confinement, feature tests, native comments, exact-head local status, draft PR publication, review evidence, and repeat-run idempotency remain real.",
+  "intent": "Provide a fast, reusable feature-development regression that can catch installed-flow and provider wiring failures without paying model latency or creating a new repository on every run.",
+  "rationale": "A fake GitHub transport or in-process CLI call cannot prove the advertised install and native Forgejo path. Deterministic model helpers remove the slow nondeterministic dependency while retaining the real boundaries under test. The fixture seeds a failing feature test, initializes with local tasks before switching to Forgejo to avoid shared onboarding writes, uses unique owned refs and labels including all three review stores, and isolates HOME/ZDOTDIR/XDG directories to protect the user's shell setup.",
+  "fit_criterion": "TestLiveForgejoInstalledFeatureDevelopment proves the feature test fails before implementation and passes after one implementation plus one review, publishes a draft PR and review at the verified head, and reruns without additional model calls, PRs, comments, or statuses. Cleanup closes owned work, removes owned refs/labels, and verifies pre-existing remote state is preserved. Local CI keeps this E2E fast; real Forgejo Actions runner behavior remains a separate verification boundary.",
+  "learned_from": [
+    "internal/installer/e2e/forgejo_feature_test.go#TestLiveForgejoInstalledFeatureDevelopment",
+    "internal/installer/e2e/forgejo_assertions_test.go",
+    "internal/installer/e2e/forgejo_harness_test.go",
+    "internal/installer/e2e/forgejo_remote_test.go",
+    "cmd/implement-now/review_evidence_ref_test.go#TestReviewConfiguredEvidenceRefsIsolatePublicationAndRepair"
+  ],
+  "tags": [
+    "forgejo",
+    "installed-e2e",
+    "model-stubs",
+    "code:internal/installer",
+    "code:cmd/implement-now",
+    "code:internal/executor/config",
+    "code:internal/executor/reviewinvoke"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:18:57Z",
+  "provenance": {
+    "source": "internal/installer/e2e/forgejo_feature_test.go",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGK27N97Y213B1CF2DN",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "M2",
+  "statement": "M2: G1",
+  "intent": "awaited-transition → wake latency, measured from the medium-reported transition timestamp to local wake delivery (clock offset recorded in the proof-run report)",
+  "fit_criterion": "p95 ≤ 15 s GitHub · ≤ 1 s Carina, at the proof run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3a35522646fa3d0c557f39657384744eb85fdb01b9252de0d0e9d0a62d2cb784",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.411Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

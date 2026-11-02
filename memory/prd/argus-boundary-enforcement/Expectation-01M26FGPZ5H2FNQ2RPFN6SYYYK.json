@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ5H2FNQ2RPFN6SYYYK",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-9",
+  "statement": "Operator confirms on a real drive that a seeded boundary violation is refused without the operator having to notice it first",
+  "intent": "G3",
+  "fit_criterion": "operator review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:67edd6caf39ed1ecf938d1f47f151d981067c3646f49b3a162dd78262a2657c9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.829Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

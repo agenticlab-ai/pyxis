@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFJS1Q0ZTXRHMQZR800",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-7",
+  "statement": "Conformance kit published and green on both adapters; adapter-authoring notes exist",
+  "intent": "NFR-5",
+  "fit_criterion": "kit run + doc link",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc99e065cf202b075f6727220fbafe559bcb8b38c4c766a953a833bdfda0dc3a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.378Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

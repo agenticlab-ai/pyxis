@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5ZKZY87SKW4YJZ7NV3B4",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-3",
+  "statement": "If If any selection is protected, unowned, shared, ambiguous, inferred, unsupported, or absent, then the system shall Refuse the entire batch before writing",
+  "intent": "selector and failed ownership predicate",
+  "fit_criterion": "Mixed batches publish zero authority for every failure class",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0e62b4ab99477e2de5636cb48a0f74c1ab4e3e756b4465c99f6514dc9e6ca98b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:08Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

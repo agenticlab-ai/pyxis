@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPXNSYFDY5FQAG0RX9E",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-1",
+  "statement": "When a launched agent process ends, the system shall record one schema-valid record describing that process, or, where capture failed, one capture-failure entry naming it.",
+  "rationale": "the process is the unit that emits a transcript, so it is the unit that can be recorded *(#D-3)*; the entry is the alternative terminal outcome UB-2 produces, so the two together are exhaustive",
+  "fit_criterion": "across the checkpoint batch, every launched process in the authoritative launch record (FR-13) has exactly one of the two — a schema-valid record or a capture-failure entry — never both and never neither",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:73733171ed730a4c82daac967c43ef544571b55a9b8dab931261bb5549d26472",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.613Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

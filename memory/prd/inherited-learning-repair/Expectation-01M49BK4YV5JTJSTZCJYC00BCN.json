@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M49BK4YV5JTJSTZCJYC00BCN",
+  "kind": "Expectation",
+  "subject": "prd/inherited-learning-repair",
+  "family": "DOD-6",
+  "statement": "Bounded repair charter yields an accepted successor through the executor",
+  "intent": "FR-5, EVAL-1",
+  "fit_criterion": "Retained worker trial and independent implementation review",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

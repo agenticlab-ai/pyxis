@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJX7BTX8Y8AHP38Q3ZA",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-23",
+  "statement": "When the final proposal merges, the feature drive shall verify the delivered feature revision is an ancestor of main before marking the drive complete.",
+  "rationale": "Badge is not delivery proof.",
+  "fit_criterion": "Merged-but-wrong-base fixture remains incomplete; verified main ancestry transitions exactly once to delivered.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f1b601c2a0e96cd1f9fc45a48d5dcde0545df28fe2eb3ac19332a32aa58d810e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.461Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

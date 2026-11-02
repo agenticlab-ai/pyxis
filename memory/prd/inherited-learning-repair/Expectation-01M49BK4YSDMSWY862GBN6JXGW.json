@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M49BK4YSDMSWY862GBN6JXGW",
+  "kind": "Expectation",
+  "subject": "prd/inherited-learning-repair",
+  "family": "DOD-4",
+  "statement": "Bounded failures and cancellation expose the specified result without duplicate effects",
+  "intent": "UB-1, UB-3, UB-4, UB-5, NFR-3, EVT-1",
+  "fit_criterion": "Negative fixtures and CLI goldens",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

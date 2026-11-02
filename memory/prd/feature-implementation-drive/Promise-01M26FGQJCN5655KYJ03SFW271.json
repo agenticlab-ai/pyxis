@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJCN5655KYJ03SFW271",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "EVT-7",
+  "statement": "e2e_repair_created fires when failed evidence becomes repair work",
+  "intent": "feature_id: string, candidate_id: string, repair_task_id: string, implicated_refs: string[]",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e2d3157db9cda1b962a974e3e18b689a195a6aa892d7d64a77115d8ea75c790",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.444Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

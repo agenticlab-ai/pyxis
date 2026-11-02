@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPJSJEM1Y57HV5D8P6Y",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v1",
+  "family": "decision.3.8.1",
+  "statement": "On a failing verdict the verb emits **one** structured, dual-face (machine JSON + human rendering) defect report bundling every failed check's named defects — each carrying the check id, the specific offender (a requirement ID, a citation + source location, a stale input + what superseded it, a malformed join), and what unblocks it. The report is **retained to git as an immutable, append-only event record** — the review-report/incident family — because a contract bounce is improvement fuel for the factory's learning loops, not a transient diagnostic.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:380bd6eac7a757356ab0913faec9a70fc489925b174344f6a3357df2b50d6a86",
+    "source-design:b73966f7ed110eeffdf3640c0243477cc0c78b96ed2c9bb5a4a24f4909e5cbe8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNCAXY24AE0KKYCAY4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.554Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/contract-gate-v1.md lines 109-109 in section 3.8; sha256:380bd6eac7a757356ab0913faec9a70fc489925b174344f6a3357df2b50d6a86"
+  }
+}

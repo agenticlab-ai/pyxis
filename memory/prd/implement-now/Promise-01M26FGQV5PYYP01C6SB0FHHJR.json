@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQV5PYYP01C6SB0FHHJR",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "NR-6",
+  "statement": "Harness selection remains the invoking configuration's explicit upstream decision; semantic routing never changes harnesses or scans installed CLIs to choose one.",
+  "rationale": "credentials, availability, and egress policy are not model-capacity decisions",
+  "fit_criterion": "exact, promoted, unsupported, and kill-switch fixtures retain the selected harness",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6edb2edc71f05256f123e891b1b0b30917234f777534fbc997a1e81b57b9f70e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.725Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

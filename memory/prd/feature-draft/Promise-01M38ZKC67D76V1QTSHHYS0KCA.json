@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKC67D76V1QTSHHYS0KCA",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-11",
+  "statement": "When a lock is requested for a feature draft that is not ready, the system shall refuse the lock and name every unmet readiness condition.",
+  "rationale": "Nothing locks until the loop has converged (brainstorm:feature-draft#D-3)",
+  "fit_criterion": "One fixture per readiness condition in FR-12 through FR-14, FR-16, and FR-38 through FR-42 is refused naming exactly that condition; a fixture failing all of them names all of them; zero locks are granted to drafts that are not ready.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e492ba319c264641db18ca8b2b7699890ae6a71ebad5ecfe65d5b22eaaec2544",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:16Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

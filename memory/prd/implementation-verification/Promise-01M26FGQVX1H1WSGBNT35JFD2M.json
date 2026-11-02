@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVX1H1WSGBNT35JFD2M",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "ABUSE-4",
+  "statement": "a malicious or careless repo verb (or agent-authored code run by one) — vector: reads ambient credentials or writes outside the workspace during verification",
+  "intent": "secret exfiltration; cross-task contamination",
+  "fit_criterion": "FR-14 (env-strip, workspace scope, time bounds)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:850a7ae8a8295a684a60294c68b3d89d023e28a1a2888c7b62e2879e27587ca8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.749Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

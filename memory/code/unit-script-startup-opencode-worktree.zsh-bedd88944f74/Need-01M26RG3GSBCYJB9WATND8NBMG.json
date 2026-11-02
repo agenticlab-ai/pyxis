@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Need-01M26RG3GSBCYJB9WATND8NBMG",
+  "kind": "Need",
+  "subject": "code/unit-script-startup-opencode-worktree.zsh-bedd88944f74",
+  "family": "anchor",
+  "statement": "Production code unit script/startup/opencode-worktree.zsh exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at script/startup/opencode-worktree.zsh.",
+  "tags": [
+    "code:script/startup/opencode-worktree.zsh",
+    "reconcile:anchor"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M26G22H43EASC24Y9CY5KG6D"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T22:54:59Z",
+  "provenance": {
+    "source": "code:script/startup/opencode-worktree.zsh",
+    "commit": "f1ebcb3f0ec38358a8479edd867926435a342071",
+    "note": "offline code inventory 703aeb58f3680d3730ec7f8f1488f267677c9880c61cc4682131a4d0632fbfd0"
+  }
+}

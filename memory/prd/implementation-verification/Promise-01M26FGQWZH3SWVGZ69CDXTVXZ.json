@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWZH3SWVGZ69CDXTVXZ",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-7",
+  "statement": "When rung 0 runs, the harness shall execute the repo's format and lint verbs and its own neutral checks — secret scan and forbidden-artifact hygiene (committed binaries, baked absolute paths) — none of which require any repo-supplied capability beyond the manifest's verb bindings.",
+  "rationale": "the instant rung: broadest catches at lowest latency, available on every repo",
+  "fit_criterion": "fixture diffs containing a seeded secret and a committed binary each produce a red rung-0 verdict with the class-named finding; rung-0 wall-time on the dogfood repo meets NFR-1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b0e1f442db5c3ae322ff0cfdc76fec79f8f9d37358e4278e7016027cc275ec0c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.783Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

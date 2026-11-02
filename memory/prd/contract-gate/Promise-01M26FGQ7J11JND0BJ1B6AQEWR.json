@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7J11JND0BJ1B6AQEWR",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "EVT-4",
+  "statement": "disposition_record fires when a disputed bounce or a gate-caused stall is opened and dispositioned",
+  "intent": "verdict_ref: string, status: enum(opened·dispositioned), outcome: enum(check-fixed·bounce-upheld·stall-defect-fixed·stall-error-upheld), action: string",
+  "fit_criterion": "§3.3 guardrails",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9c1f6c21c08b7083acfaf8380f2b65d3ebcf92fe77ba877326025587bc8cfc98",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.098Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

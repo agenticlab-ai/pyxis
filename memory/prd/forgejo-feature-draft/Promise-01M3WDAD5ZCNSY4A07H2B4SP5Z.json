@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD5ZCNSY4A07H2B4SP5Z",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "NR-3",
+  "statement": "Frozen source documents, first-push PR #1307, and local-Git code-host work stay on their sanctioned paths.",
+  "rationale": "Separate concerns.",
+  "fit_criterion": "No frozen source edit or separate implementation in correction diff.",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

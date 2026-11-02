@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPN3SGBAP5ZH0VHQR135",
+  "kind": "Decision",
+  "subject": "design/argus-authority-contract-structure-arm",
+  "family": "decision.2.1",
+  "statement": "The authority contract gets its structure guard as a **single base-free self-registered gate check** driven by a **version-pinned closed parse of the file's two tables — the ladder and the change history — in a sibling parse package of record** (not an extension of the `A-n`/`E-n` ledger parse, which the authority contract's shape does not fit) *(design-brainstorm:argus-boundary-enforcement-tech-design#D-2 — whose reasoning scores the two package boundaries, reuse-`argusledger` vs sibling-`authoritycontract`; the DQ-2 package-boundary options live inside D-2's body, not as standalone `ALT-n` entries — `ALT-1`/`ALT-2` are the DQ-1 decomposition options)*. The check evaluates the three structural invariants and reports a named defect on any violation: **DINV-3/DINV-4** — attribution present (every change-history row carries date, a move from the closed enum, a resulting tier, and evidence refs) and no bare pointer flip (the current-tier names a tier declared in the ladder, the change-history table carries at least one row, and its latest row's tier equals the current-tier — an **empty or heading-only change history under a non-initial current-tier** is itself a bare-pointer-flip defect, the canonical \"pointer flip with no history entry\" `design:argus-artifacts#DINV-4` names invalid); **DINV-5** — token-membership (every ladder bundle token is a defined action-class token), which *is* the structural form of \"no never-class act can be granted,\" never a separate scan. The check requires no merge base (it reads the file as it stands) and composes as one descriptor file adding no hand-edited umbrella, dispatch, or help line.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:efe4d55cc19c23bba429aa8f50c00e5e60f64ed5a6a311bbe5bd87264d1a9825",
+    "source-design:1bb594d884b7ae8c1090022eceae77745aee55b6e8cfb17bd7393a1b159d4163",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM6307PVCJYBDJKS3N45"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.507Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-authority-contract-structure-arm.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-authority-contract-structure-arm.md lines 26-26 in section 2; sha256:efe4d55cc19c23bba429aa8f50c00e5e60f64ed5a6a311bbe5bd87264d1a9825"
+  }
+}

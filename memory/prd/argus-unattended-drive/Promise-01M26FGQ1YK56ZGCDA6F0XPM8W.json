@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1YK56ZGCDA6F0XPM8W",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-1",
+  "statement": "When a proposal is evaluated, the lane classifier shall route it into exactly one of two lanes — AUTO or HUMAN — with HUMAN as the lane for every proposal not positively classified AUTO-eligible.",
+  "rationale": "two lanes, fail-toward-human default (GATE-4 shape; vision §6 L3)",
+  "fit_criterion": "on the classification corpus, every proposal receives exactly one recorded lane; every unclassifiable input routes HUMAN",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e9103bc03230114730d8451a63d23366135d8623848825f6fa5184578d96c1f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.918Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

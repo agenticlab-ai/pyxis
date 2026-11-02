@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/tech-design-brainstorm#Q1",
+  "feature": "tech-design-brainstorm",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

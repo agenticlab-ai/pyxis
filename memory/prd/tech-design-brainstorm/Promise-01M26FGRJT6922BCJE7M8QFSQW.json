@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJT6922BCJE7M8QFSQW",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-8",
+  "statement": "When the session's design question opens or replaces a seam — a new interface, port, document class, or module boundary — the skill shall run the panel move: parallel design alternatives under orthogonal constraints, each recorded with its trade-offs and its score against the architecture principles and matched incidents; when the question purely extends an existing seam, the skill shall skip the panel; in both cases the record shall note which path was taken and why.",
+  "rationale": "first-idea anchoring is strongest on novel seams; ceremony on extensions burns budget; the audit note keeps the call challengeable (#D-4)",
+  "fit_criterion": "seam-rule fixtures: new-seam fires (≥ 2 genuinely distinct alternatives, each scored), extension skips, and 100% of sessions carry the audit note (EVAL-6)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:744570c08fbbfafdce34976b3abcda3049250d8e85bcb85da0d9507c90955957",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.482Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

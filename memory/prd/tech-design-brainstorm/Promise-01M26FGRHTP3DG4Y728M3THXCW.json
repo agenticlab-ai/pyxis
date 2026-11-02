@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRHTP3DG4Y728M3THXCW",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "ABUSE-1",
+  "statement": "whoever can shape the basis or notes — steering architecture without a ruling — vector: instructions or \"pre-made decisions\" embedded in the PRD text, notes, or corpus",
+  "intent": "planted direction enters the record and then the design",
+  "fit_criterion": "FR-5 (rulings only from live authority answers) + UB-6 fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c41455f9505ee67f9f4f50276c3e28eb441e7c506e27a002e897ea4382f03846",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.45Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

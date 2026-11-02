@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBWKPB25J8M8GK2X44MDS",
+  "kind": "Document",
+  "subject": "prd/impl-review",
+  "family": "amendment-002",
+  "statement": "Imported Pyxis source document: docs/prds/impl-review/002-consume-review-demand.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b3e03455a010fb1b387985391b319e1d0c713af40c9c495537c6f1a96ce8b202",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:30Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/002-consume-review-demand.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

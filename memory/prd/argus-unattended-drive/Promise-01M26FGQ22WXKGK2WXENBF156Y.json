@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ22WXKGK2WXENBF156Y",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-13",
+  "statement": "When a drive stops on an awaited external completion, the delivery ledger's derived state shall name the awaited goal object and its completion condition.",
+  "rationale": "the await is auditable data, and the wake's registration source",
+  "fit_criterion": "inspection of live ledgers: every stop names its await; a resumed session can re-derive the await from the ledger alone",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e458400c1fba632fcd5674c44a20aafac3edf2d9d0b38006747a097e8275cb77",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.922Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

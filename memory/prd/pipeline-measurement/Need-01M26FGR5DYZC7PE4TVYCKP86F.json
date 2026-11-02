@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5DYZC7PE4TVYCKP86F",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "G2",
+  "statement": "We believe putting the artifact+git efficiency signals on the same record as the spend; expected result: cost becomes interpretable — a cheap phase is distinguishable from an effective one",
+  "fit_criterion": "M2 (efficiency-floor coverage)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4f4ae0093893e9f08bf115efbc94277a71ef9cdbdc2e55a761b310dc9d0b3ed3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.053Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

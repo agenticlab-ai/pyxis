@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRHZAA2P40TJS34A4N2T",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-3",
+  "statement": "The eval suite passes its thresholds, EVAL-2 at zero",
+  "intent": "§5.9",
+  "fit_criterion": "eval report on the committed corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d737605def682e77894062578013058781fa4a9528a4219584f027fe9d87d681",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.455Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ2A9PK9583C6R0GX6QR",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-5",
+  "statement": "When an AUTO-lane proposal has every required mechanical check green (and an approving reviewer verdict where its artifact class carries one), the merge lane shall submit the approval and perform the merge as the dedicated machine identity, bound to the exact head revision evaluated and distinguishable in history from any human approval.",
+  "rationale": "attributable machine acts at the evaluated revision (GATE-4/GATE-5)",
+  "fit_criterion": "every recorded AUTO act names the machine identity, the head revision, and the policy version; a post-evaluation push invalidates the verdict (re-evaluation required before any act)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c7c93ea3d517491cac47bc46a2258acc4dbf95e4ba46a190198f59506783a886",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.93Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

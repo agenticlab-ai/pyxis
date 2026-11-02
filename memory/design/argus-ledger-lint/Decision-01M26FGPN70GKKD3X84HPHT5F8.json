@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPN70GKKD3X84HPHT5F8",
+  "kind": "Decision",
+  "subject": "design/argus-ledger-lint",
+  "family": "decision.2.1",
+  "statement": "Give the Argus ledger classes their Q-1 mechanical guard as **two self-registered `docgate` checks composed under the existing `docgate gate` umbrella, sharing one per-class parse package, both report-only** *(design-brainstorm:argus-ledger-lint-tech-design#D-1)*. The **history arm** (base-requiring) parses each in-scope ledger at the merge base and the working tree into a map of **`anchor → entry-block bytes`** and requires every *previously-merged* `A-n`/`E-n` anchor to survive present-and-byte-identical — a changed block is an edit, an absent one a removal, and a new higher-numbered anchor is an invisible legal append *(#D-2, #D-3)*. The **cross-document arm** (base-free) enumerates the **tracked corpus via `git ls-files`**, recognizes an in-scope `delivery:\u003cconcrete-slug\u003e#\u003canchor\u003e` citation only when `\u003cconcrete-slug\u003e` names an existing `docs/problems/\u003cconcrete-slug\u003e/delivery.md` (the FR-9 recognition boundary), and resolves the anchor against a version-pinned parse of the delivery-ledger's two regions — into a journal `E-n` (legal), the derived-state region (DINV-6 defect), or neither (a distinct unresolvable-anchor defect) *(#D-4, #D-5)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1a7528d9d07cba633c5af2a4bc7cd46a581c73b424d36b3489c0df34bb45248b",
+    "source-design:b891b13b932a14dcff38502e08c52cc2f79ab2f9aad8edaa9fab17d516f8fb9a",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMAS03B3EJB3T87JV576"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.511Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-ledger-lint.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-ledger-lint.md lines 29-29 in section 2; sha256:1a7528d9d07cba633c5af2a4bc7cd46a581c73b424d36b3489c0df34bb45248b"
+  }
+}

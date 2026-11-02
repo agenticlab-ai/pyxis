@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS32HBRM3GW13DSQK7K",
+  "kind": "Decision",
+  "subject": "design/incident-machinery",
+  "family": "decision.2.1",
+  "statement": "The writer is a **new verb family in the existing binary** —\n`add-incident` and `graduate` — living in `internal/docgate/incidents`,\ndistinct from the gate verbs: gate verbs report, writer verbs write\n**exactly one file** (the configured registry) and nothing else. One\nentry schema (`internal/docgate/schema`, extending the existing registry\npattern) is consumed by three parties: the writer renders from it, the\nFR-25 lint checks against it, and the version-pinned\n`incident-entry-template/v1` documents it for humans — one definition,\nno drift by construction. `add-incident` computes the next dense `I\u003cn\u003e`\nfrom the parsed registry, renders the entry, and **self-checks**: it runs\nthe lint over the would-be result and refuses the write (byte-unchanged\nregistry) on any defect. `graduate` performs the one sanctioned mutation\n— appending `Graduated: AP-\u003cn\u003e` to an entry's `Links:` line — under the\nsame self-check. The `/incident` skill is a thin authoring surface on the\nvendor-neutral skills tree that gathers the four fields and tags, then\ninvokes the writer; it never writes the file itself.",
+  "tags": [
+    "code:internal/docgate/incidents",
+    "code:internal/docgate/schema",
+    "reconcile:design-decision",
+    "source-block:10d531f4310cf6e648f57e793093ecf3731067409a16d1b7b4c762126eb09b62",
+    "source-design:4278031c04df70f1e41423635d309ec7030a7703f3b056cf104f05a4e6a3bf8b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCS2BRF5KEA4C2N3PY105"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.635Z",
+  "provenance": {
+    "source": "docs/tech-design/incident-machinery.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/incident-machinery.md lines 31-46 in section 2; sha256:10d531f4310cf6e648f57e793093ecf3731067409a16d1b7b4c762126eb09b62"
+  }
+}

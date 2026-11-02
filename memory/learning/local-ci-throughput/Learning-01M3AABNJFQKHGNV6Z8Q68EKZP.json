@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Learning-01M3AABNJFQKHGNV6Z8Q68EKZP",
+  "kind": "Learning",
+  "subject": "learning/local-ci-throughput",
+  "statement": "The source code-gate runs one race-instrumented, repository-wide coverage suite and schedules memory reconciliation alongside that suite after cheap checks pass.",
+  "intent": "Keep the complete local CI gate under seven minutes without dropping race detection, per-file coverage, or memory verification.",
+  "rationale": "Two concurrent full Go test invocations repeated the real-Git fixtures and contended for CPU and disk. The history-wide memory check is independent of the test suite and can run in another required phase-two group.",
+  "fit_criterion": "A fresh local code-gate run passes every required check in under seven minutes; CI parity verifies equivalent GitHub and Forgejo phase-two groups, and a race fixture makes the combined coverage command fail on a data race.",
+  "tags": [
+    "code:cmd/code-gate",
+    "code:internal/coveragegate",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-24T18:20:33Z",
+  "provenance": {
+    "note": "Local CI timing and combined test verification on 2026-09-24."
+  }
+}

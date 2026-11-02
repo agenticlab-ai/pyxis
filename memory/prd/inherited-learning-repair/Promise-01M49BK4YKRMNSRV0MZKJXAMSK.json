@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YKRMNSRV0MZKJXAMSK",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "NFR-2",
+  "statement": "The entry shall coordinate independent processes sharing only configured remote state.",
+  "intent": "Concurrency",
+  "fit_criterion": "Five-process fixture passes under race detection",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

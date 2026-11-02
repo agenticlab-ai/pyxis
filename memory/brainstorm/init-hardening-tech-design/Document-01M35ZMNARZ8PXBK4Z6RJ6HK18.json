@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZMNARZ8PXBK4Z6RJ6HK18",
+  "kind": "Document",
+  "subject": "brainstorm/init-hardening-tech-design",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/init-hardening-tech-design.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:061bfa8097258ad600cf6fb0ecf689156d6f41e9994a8b0d9a08ec5aeefbd7e4"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBG6VDCK1BMTWR97WNV3N"
+    }
+  ],
+  "body_sha256": "061bfa8097258ad600cf6fb0ecf689156d6f41e9994a8b0d9a08ec5aeefbd7e4",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:15Z",
+  "provenance": {
+    "source": "docs/brainstorms/init-hardening-tech-design.md",
+    "note": "offline reconciliation"
+  }
+}

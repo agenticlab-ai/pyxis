@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE46ZYAXCW0ZT0JM1HN",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "UB-4",
+  "statement": "If If a §0 gate signs without its capture line, then the system shall the gate stands — the line never blocks a merge — and the datum is void: the checkpoint counts lined gates only",
+  "intent": "nothing blocks; the window extends",
+  "fit_criterion": "checkpoint arithmetic excludes lineless gates; the trigger counts ten lined gates",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:10fbbbde35482511a8b8e64ce82e45827caa389bcc87446db9c452ea1c23ac83",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.332Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

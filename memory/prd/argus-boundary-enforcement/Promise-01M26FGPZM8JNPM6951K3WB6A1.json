@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZM8JNPM6951K3WB6A1",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-8",
+  "statement": "If the authority-contract file is structurally malformed (its ladder or change-history regions cannot be delimited), then the structure arm shall report a named parse defect identifying the region and shall not crash or emit a false pass.",
+  "rationale": "fail-closed on misparse (incident I3)",
+  "fit_criterion": "a malformed-contract fixture yields a named parse defect (which region) and a non-zero verdict; never a crash, never green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c0e6945407ce732d0127c0e5c318df7defb5702b9fea05de908b738d1c618fe0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.844Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

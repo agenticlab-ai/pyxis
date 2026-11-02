@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN7Z6NWMHYFKTJRHP0H",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-4",
+  "statement": "mechanical-floor exclusion",
+  "intent": "fixtures seeded with codegate-catchable defect classes",
+  "fit_criterion": "zero findings whose normalized class belongs to codegate's versioned defect-class set",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cd679e7afa1e0f3cebfef999a7e91bb4fda484738cee5975a8ba03de81984ead",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.535Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

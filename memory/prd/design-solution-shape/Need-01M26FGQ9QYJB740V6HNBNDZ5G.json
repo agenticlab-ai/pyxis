@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9QYJB740V6HNBNDZ5G",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "shape-level gaps surfaced at the design gate vs. after implementation",
+  "fit_criterion": "at a checkpoint of representative designs authored through the split: shape gaps are surfaced at the design gate, zero escape to post-build",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cce7edde2b2d10f756e6c55aacab80db78678d532e149e9ba332102d28d4ff35",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.167Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

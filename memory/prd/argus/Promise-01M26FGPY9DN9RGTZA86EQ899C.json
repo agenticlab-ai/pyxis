@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPY9DN9RGTZA86EQ899C",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "NFR-2",
+  "statement": "The delivery ledger shall make any drive diagnosable and resumable by a fresh session or a human reader.",
+  "intent": "Operability",
+  "fit_criterion": "a reader locates stage position, open items, and park states without other context",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eb5255c5c3a77f5a82539444486a9bce22716370f6f0e38aa7cffe42b7781fb9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.801Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

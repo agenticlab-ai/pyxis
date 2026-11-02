@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCEZM01SHNES2YYV7337V6",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.3.2",
+  "statement": "Before presenting either local landing request, publish a closed,\nversioned request at create-only\n`refs/pyxis/review-requests/<proposal>/<prepared-proposal-object-id>`.\nThe record binds the prepared proposal object id and sequence, the unique expected nonce,\nworkflow-derived operation (`task-merge` or `feature-final-merge`), and the exact\nretained evidence ref, full object id, and digest. The same proposal supplies\nidentity, kind, branch, head, and target bindings. The proposal generation is\npublished first, its complete generation-bound proof second, and this immutable\nrequest third, before presentation. The request is separate from the proposal\nso an aggregate that already contains the proposal object id cannot create a\ncircular object-id/digest dependency. After request publication, re-read the\nproposal, branch, and target; moved inputs refuse presentation and require new\npreparation. Publishing a request does not advance its proposal generation.\nA resumed process or worktree derives the request ref from the current proposal\ngeneration and renders that stored request;\nrendering never replaces its nonce. Issuing a new request advances the proposal\nsequence and uses a fresh nonce, even at the same head. The operator route\ncompares the receipt with these origin-stored values before any landing write;\na unique but unpresented nonce is invalid. Final evidence retains the canonical\nprepared request's ref/object id/digest and bytes as well as the receipt so\nclone verification can compare them.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e6b7c8dc23dce69fc2692b4dbfdc5485407a54bb05d819fe85646f319eff1520",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:22Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 120-140 in section 3.3; sha256:e6b7c8dc23dce69fc2692b4dbfdc5485407a54bb05d819fe85646f319eff1520"
+  }
+}

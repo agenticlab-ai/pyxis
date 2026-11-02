@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16N2TJPW4ZPAXGJ5F1X2G",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "FR-2",
+  "statement": "When proposals reduce debt at disjoint finding addresses, the system shall confine each proposal's policy changes to its affected addresses.",
+  "rationale": "Preserve independent reduction work",
+  "fit_criterion": "Changed-policy path intersections are empty for disjoint reductions; same-address disagreement remains visible",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:19de938a98d3b145ce7e1ea82c3b82a07b6705614d11ab068e06ca181e55de91",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2BVCP17T2B65J22AVA1TD95",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-workflows-readme",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-workflows/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:110a45e505db0c43b804aa21aba2997f5bfbdc97fea554f4a4cf3cdc72a62aa7"
+  ],
+  "body_sha256": "110a45e505db0c43b804aa21aba2997f5bfbdc97fea554f4a4cf3cdc72a62aa7",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:21:44Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-workflows/README.md",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616",
+    "note": "offline reconciliation"
+  }
+}

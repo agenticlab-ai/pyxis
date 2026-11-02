@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQKW7Z365WATBJ3BTNE",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "a required figure is either measured or explicitly declared unavailable — never silently absent",
+  "fit_criterion": "zero missing-figure discrepancies across the batch, counted by FR-15's reconciliation against each harness's enumerated required-figure set (FR-14). The count comes from the reconciliation, **not** from EVT-2 alone: EVT-2 fires only when an unavailability is successfully declared, so a silently dropped figure would emit nothing and pass unseen",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a39201622c9f433bfd70059933e06f6fe9795bdf42cad2d298773f9deca76c64",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.635Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

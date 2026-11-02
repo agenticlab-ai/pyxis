@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7W6TPKWXQ2D9P84YJK",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-18",
+  "statement": "The gate shall read the contract exclusively from committed machine faces — the PRD source map, the design index and its `serves_inverse`, the DoD schema, and the governed currency-disposition projection carrying exact approval-attestation and authority-policy state — and shall not parse document prose for substance, re-run a reviewer lens, infer consumed bindings, or discover compatibility from citations not declared by a disposition.",
+  "rationale": "the exception remains deterministic only when the stale edge, exact reviewed judgment, and current approval authority have closed machine faces",
+  "fit_criterion": "inspection confirms these are the only substantive inputs; prose-only compatibility, an undeclared mapping, and PR/commit status without an exact attestation do not clear an edge; no code path invokes a review lens or scores semantic quality",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0725e0b1f70c80cfa738610f09239127694c294ed149dff6482236d1136b3be5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.108Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

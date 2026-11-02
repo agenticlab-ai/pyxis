@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMBDG38V1GPW7Y7XY5K",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-3",
+  "statement": "If If the current owner becomes unavailable, then the system shall preserve ownership and stop new work until explicit resume, handoff, cancellation, or abandonment",
+  "intent": "stale-owner action required",
+  "fit_criterion": "Simulated disappearance produces zero automatic takeover and zero foreign execution.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a401fa52b0eed7d80131c94de6e41e5ced91481acc922798a704c5963b4b377d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.507Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRN4ZBTY7FX9D21M5TKM",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "UB-2",
+  "statement": "If If the lenses surface zero findings, then the system shall record approve honestly with full measurement fields",
+  "intent": "a clean approve",
+  "fit_criterion": "the clean fixture ends approve, empty list, fields present",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:126d11c5c4175fd324949a6c142bd4d7b4b52f9e85ac339c7c1e40fe6f4db599",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.556Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

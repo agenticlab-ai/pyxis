@@ -1,0 +1,31 @@
+name: lock-record
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYXIS_CI_BASE: "${{ github.event.pull_request.base.sha || github.event.before }}"
+      PYXIS_CI_EVENT: "${{ github.event_name }}"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: Record approved draft locks
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PYXIS_PUSH_BEFORE: ${{ github.event.before }}
+          PYXIS_LOCK_RECORD_RUN: "1"
+        run: .pyxis/scripts/code-gate-resolve.sh run --no-cache --check lock-record

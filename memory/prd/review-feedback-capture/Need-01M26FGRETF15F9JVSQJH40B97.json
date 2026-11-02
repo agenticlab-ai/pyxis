@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRETF15F9JVSQJH40B97",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "M1",
+  "statement": "**M1 (primary)**: G1",
+  "intent": "captured entries that reach a typed disposition",
+  "fit_criterion": "100% closable; zero entries unresolved past their subject's merge without a flagged pending state — at the checkpoint *(first cohort of human reviews captured at 100% enablement on the pyxis repo)*",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17dfb1afe7b329508996f15db60c311f22240fc984cbb6094852df4e0f75d07c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.354Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSM7BD375DQJXDB52B5",
+  "kind": "Question",
+  "subject": "prd/feature-implementation-drive",
+  "family": "Q3",
+  "statement": "What evidence schema and deterministic candidate-construction mechanism bind feature head, main head, candidate identity, runner, actor, and scenario outcomes? (`brainstorm:feature-implementation-drive#P-3/#P-4`)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; product behavior fixed by FR-16..FR-19",
+  "fit_criterion": "Phase A design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:306fea89ca77592655b4f38e05b6e833d4a1d9d95df3757db895d14a3234b8c6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.7Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

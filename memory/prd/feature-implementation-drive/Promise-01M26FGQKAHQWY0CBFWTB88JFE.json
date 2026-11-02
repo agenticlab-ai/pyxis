@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKAHQWY0CBFWTB88JFE",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-8",
+  "statement": "When review requests changes within the task charter, the feature drive shall route the feedback to the current owner for repair on the same task proposal.",
+  "rationale": "Avoid duplicate proposals and retain context.",
+  "fit_criterion": "Seeded feedback updates the same proposal, refreshes revision-bound evidence, and creates no second proposal.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cae331b9952c84513ed1be80c3017e56974b0404617619c5d3d8a1c619d2942e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.474Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,38 @@
+# Argus authorship producer — Claude Code wiring (a pointer, not a content copy)
+
+Wires Claude Code's commit-authoring path to the canonical stamp
+(`cmd/argus-stamp`), which holds the trailer logic and the `Argus-Drive` key
+once (`internal/argus/stamp`, AP-25). This file names **no** trailer format and
+**no** protected path — it is a pointer.
+
+## Claude Code's commit path
+
+Claude Code authors commits by running `git commit` through its Bash tool —
+**standard git**. So its commit path is the repo's own git hook surface: the
+`core.hooksPath` **prepare-commit-msg** hook (`.githooks/prepare-commit-msg`)
+fires on every commit it authors and delegates to `argus-stamp`. The hook
+stamps when that commit has an active drive slug. In the shared-account
+workflow the model can invoke Git, so this is audit evidence rather than
+an inaccessible commit surface.
+
+## Enabling
+
+1. Activate the repo hook surface once per clone:
+
+   ```
+   go run ./cmd/hooks-setup
+   ```
+
+2. Supply the active drive's slug on each drive-authored commit so the
+   producer keys the trailer on it:
+
+   ```
+   ARGUS_DRIVE_SLUG=<the-active-drive-slug> git commit -m '<message>'
+   ```
+
+   With `$ARGUS_DRIVE_SLUG` unset, a commit is authored outside any drive and is
+   left un-stamped (it derives as human).
+
+The `argus-stamp` binary is run from source in this repo (the resolver falls
+back to `go run ./cmd/argus-stamp`); a built binary on `PATH` is used when
+present.

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRKWTBS7VZN4DSDENRTV",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-review",
+  "family": "DOD-7",
+  "statement": "A review run leaves the tree clean except the reviewer's artifacts; subjects byte-identical absent author revisions",
+  "intent": "FR-12, NR-2",
+  "fit_criterion": "status + hash comparison",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:425b7c4704a30fd3cf7ccffa8d29fa7b0b1cb59904cbf719fa69b2ad5ec1b8c9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.516Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

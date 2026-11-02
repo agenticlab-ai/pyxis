@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3Y8MV14RJRWPCQC7PJWP",
+  "kind": "Document",
+  "subject": "vendor/litellm-prices",
+  "family": "readme",
+  "statement": "Captured authored source: .pyxis/vendor/litellm-prices/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/vendor",
+    "reconcile:source",
+    "sha256:8ec7dfee579a19da4de3ded989e65f637f9cd4191fe0e4dd3a2f9ed2fc733e6c"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBC70VH7XKEKX47CV5SQH"
+    }
+  ],
+  "body_sha256": "8ec7dfee579a19da4de3ded989e65f637f9cd4191fe0e4dd3a2f9ed2fc733e6c",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:44Z",
+  "provenance": {
+    "source": ".pyxis/vendor/litellm-prices/README.md",
+    "note": "offline reconciliation"
+  }
+}

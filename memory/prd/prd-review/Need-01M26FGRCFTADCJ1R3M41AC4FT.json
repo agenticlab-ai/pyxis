@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRCFTADCJ1R3M41AC4FT",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "J4",
+  "statement": "When the author and reviewer genuinely conflict, I want get one pre-digested decision brief to the authority, so I can rule on the single named question, not re-read the document",
+  "rationale": "brainstorm:authoring-reviewers#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:21dcd67d1ce3e2b15a47d2e366dfb5edbadda6389a7fb07d282d221e277451b6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.279Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

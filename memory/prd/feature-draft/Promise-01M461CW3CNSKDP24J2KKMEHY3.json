@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CW3CNSKDP24J2KKMEHY3",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-8",
+  "statement": "Authenticated operator approval, exact-head and digest checks, memory integrity, required CI, code-owner protection, stale native-review dismissal, and admin enforcement retain their behavior; local-git remains explicit and never satisfies a hosted approval fallback",
+  "rationale": "Driver delegation must not silently remove the checks that make a reviewed version eligible to land",
+  "fit_criterion": "Existing human, readiness, memory, and local receipt suites pass; the only added approval path requires the mainline driver grant and account; no protection or admin-bypass write exists.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c2fcc6895e23eeca5fbfe800b2c9ac12534991f85d9274a92eee561841f827f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQR97TNFQ8QBYK9KE5Z77"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:39Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

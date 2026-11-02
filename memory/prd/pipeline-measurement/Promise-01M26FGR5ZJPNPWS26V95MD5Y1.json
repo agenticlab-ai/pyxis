@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR5ZJPNPWS26V95MD5Y1",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "UB-3",
+  "statement": "If If a phase produced no artifact (no close boundary), then the system shall record the phase as incomplete and attribute its spend to that incomplete phase",
+  "intent": "an incomplete-phase record",
+  "fit_criterion": "an aborted phase is recorded incomplete with its spend, never dropped or rolled silently into the next phase",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2491cb9fe245f71ddaf32234680d9f63271616f61e317863731082294b2b8bac",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.071Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

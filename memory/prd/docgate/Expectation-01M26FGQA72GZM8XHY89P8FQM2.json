@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA72GZM8XHY89P8FQM2",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-7",
+  "statement": "Projection congruence ships with the full FR-32..FR-43/UB-4..UB-6/NR-4 matrix, exact-revision and working-tree conformance, every FR-41-addressable-prefix repair proof, checkpoint Q-state preservation, and the live Wiring rollup naming the verb",
+  "intent": "FR-32..FR-43, UB-4..UB-6, NR-4",
+  "fit_criterion": "focused red/green tests; full race suite; `docs/techspec.md` Wiring diff; a committed sorted golden at `internal/docgate/gate/testdata/projection-congruence-baseline.json`, generated once by the implementation owner from the gate-activation merge base, carrying that immutable revision and ledger fingerprint plus every `(ledger, unit ID, mismatch class, field, projected value, source-map value)` record, independently reconstructed and byte-compared by a corpus audit whose omission and hidden-mismatch fixtures red; ordinary proposals never regenerate it, an explicit debt-repair proposal may delete only the exact repaired multiplicity, and a proven golden defect requires a dedicated reviewed gate-fix proposal while the verb is unwired",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ce72f082f148b2fe93844916ab877f31e75845e8d0bd0f0a58b86a023d90806f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.183Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

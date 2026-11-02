@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T6307WKBFCX9M7TJZ2W91",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-5",
+  "statement": "If If selected bytes, mode, unit digest, owner set, generation, or preservation inventory differs from authority, then the system shall Refuse the stale or over-broad transition",
+  "intent": "mismatched identity and fresh-authority remedy",
+  "fit_criterion": "Mutation matrix and restore-then-delete matrix agree across local, hosted, offline, and fresh-clone modes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a3b4909f38fc6999039591e9eec434c654cbf2e04d9b0640b57e5194be5be5e3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:12Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

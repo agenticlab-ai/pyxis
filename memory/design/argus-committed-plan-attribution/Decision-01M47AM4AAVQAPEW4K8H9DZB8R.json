@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M47AM4AAVQAPEW4K8H9DZB8R",
+  "kind": "Decision",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "decision.3.1.1",
+  "statement": "`ResolveFirstPR` admits the configured drafts root plus `/<slug>/`, and the fixed `memory/prd/<slug>/`, `memory/design/<slug>/`, and `memory/problem/<slug>/` subtrees, in addition to its existing slug-derived documents and fixed named allowlist. A different slug, a code path, an authority contract, or a governance document remains outside the drive's permitted scope. The scope never consults a same-PR ledger entry or author-provided path list. The versioned boundary policy changes when this grammar changes.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3ce10b939e3b7afe1e58bfe3aa2f7c4aab32eb100781fca0eca413d302b78aa7",
+    "source-design:da8de41fa70e7ea3ac28728cc85785677be519b643d49954066261c9105774f2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M47A8SY3S5D9A9MT4KEG354B"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:43:09Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-committed-plan-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-committed-plan-attribution.md lines 42-42 in section 3.1; sha256:3ce10b939e3b7afe1e58bfe3aa2f7c4aab32eb100781fca0eca413d302b78aa7"
+  }
+}

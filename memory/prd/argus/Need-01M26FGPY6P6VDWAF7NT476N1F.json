@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPY6P6VDWAF7NT476N1F",
+  "kind": "Need",
+  "subject": "prd/argus",
+  "family": "M2",
+  "statement": "M2 — assumption survival: G2",
+  "intent": "share of recorded assumptions not overturned by audit or escalation answer",
+  "fit_criterion": "≥ 90% per checkpoint window",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a890b5cfe5b56af2554af8c100294167bec2011964717d7f7373584b9fc3a673",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.798Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRD469SYJF5E5QR2PP51",
+  "kind": "Expectation",
+  "subject": "prd/read-to-rule",
+  "family": "DOD-5",
+  "statement": "The glossary entry lands (T-1: read to rule)",
+  "intent": "§6.6 Docs row (provenance: brainstorm:gate-attention#T-1)",
+  "fit_criterion": "the glossary diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:50c4a00873f5a7336fd6120aeb52f3901d1eef31ddeafe2c6915608ca6c24424",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.3Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSDERQHNKWBKEX8W31P",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-21",
+  "statement": "When a ready plan/v2 task is considered for implementation, the executor shall recover the task's complete frozen assessment, evidence citations, execution profile, derivation-policy version, and planner-raise evidence from the projected carrier, compare them field-for-field with the frozen plan record, and pass them into the implementation attempt without reinterpretation.",
+  "rationale": "planning owns task semantics; execution transports and consumes the frozen minimum rather than inferring complexity from charter prose",
+  "fit_criterion": "every supported tracker projection round-trips every demand field byte-identically; missing, changed, or native dispatch data produces zero task claims and names the boundary and field; a mechanical task follows the same path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5df9af860a4da52e415c440434b679c7190e5aa48e392053886ca59c141bd285",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.669Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7DAZ9T8C3NKGD5FM1B",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "J2",
+  "statement": "When I am about to fan tasks out to the tracker, I want review and edit the whole plan — tasks, sizes, edges, flags — before anything is written, so I can catch wrong decomposition at the only cheap point",
+  "rationale": "harbormaster Phase-4 gate (\"the most expensive failure mode is silent wrong decomposition\")",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:79f828b357ca15bc9ab28a5f8f44f952521617c72c45f864b662df085f717637",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.117Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

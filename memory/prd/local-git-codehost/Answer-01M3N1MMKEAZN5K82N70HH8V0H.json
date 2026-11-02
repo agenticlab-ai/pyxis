@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMKEAZN5K82N70HH8V0H",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Test same-origin replay after a push and disclose that a copied origin carrying the same records is not independently identified.",
+  "intent": "operator",
+  "rationale": "FR-4 rejects reuse after a head or target changes on the configured origin; copied-origin replay protection is outside the approved scope.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMKDZ7GDKKHR1GHFK61W"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

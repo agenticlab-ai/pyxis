@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZQAHVVBWXWAKTTFWKEH3S",
+  "kind": "Document",
+  "subject": "review/workbench-ui-000",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/workbench-ui-000.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:42b5aba71f3c3fca93a19b9544cbe9bfd43d650f1d5f0dfb954e9e555ee96c43"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCHSHFX8891CP9QVYB5KR"
+    }
+  ],
+  "body_sha256": "42b5aba71f3c3fca93a19b9544cbe9bfd43d650f1d5f0dfb954e9e555ee96c43",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:43Z",
+  "provenance": {
+    "source": "docs/reviews/workbench-ui-000.md",
+    "note": "offline reconciliation"
+  }
+}

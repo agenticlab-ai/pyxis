@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V16N73RH8GCW73PVTBKCV0",
+  "kind": "Need",
+  "subject": "prd/parallel-memory",
+  "family": "G1",
+  "statement": "We believe Removing artificial shared memory maintenance preserves parallel authorship; expected result: Independent proposals integrate without memory-only edits",
+  "fit_criterion": "M1 and M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:99ccb37054b0039e62a5e266b3eed9faf9a4fd83f9f46d79d8adbd77f8d93d32",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

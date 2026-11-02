@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB3W8D9M7A2QNBWNMSY",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-4",
+  "statement": "When invoked as `check-immutable` with a merge base, docgate shall fail on any modify, delete, or rename of an existing ledger file.",
+  "rationale": "INV-41's CI half; merge is the freezing event",
+  "fit_criterion": "fixture M/D/R each red; add-only green; rename detected as delete+add",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e2e1bc5d041b7fd238e0350871060f98b464d2ff437245a0826e259949f14a9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.211Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

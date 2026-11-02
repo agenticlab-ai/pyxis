@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CTNZ8N0G4CVQZJT70S9K",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-60",
+  "statement": "Where a GitHub lock is approved by Argus, the system shall retain an immutable versioned lock record identifying the agent account, host review ID, exact prepared head and contract digest, pre-merge policy commit, and review evidence, readable from a fresh clone; it shall not change required CI, code ownership, protected-branch review requirements, or merge bypass settings.",
+  "rationale": "Approval attribution survives the authoring session while the host retains its own enforcement",
+  "fit_criterion": "A fresh clone renders the driver-approved locked contract with its v2 tag; human v1 tags keep their bytes and readability; candidate policy is refused; inspection confirms no protection or bypass mutation is introduced.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:70528de6f1a5b8ac95a8bdc62be0bb8c7c25afa3262f1e5d11d64481948ebbb3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:38Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

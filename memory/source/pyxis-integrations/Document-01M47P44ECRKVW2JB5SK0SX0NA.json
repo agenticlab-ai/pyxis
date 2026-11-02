@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P44ECRKVW2JB5SK0SX0NA",
+  "kind": "Document",
+  "subject": "source/pyxis-integrations",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/integrations.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/integrations.md",
+    "reconcile:source",
+    "sha256:a56292a4cae5b3cc89a915a1d90b6ac203a2b0698a9872ed839294862f476abc"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2BVCP214H76FRJ0N5VC17BH"
+    }
+  ],
+  "body_sha256": "a56292a4cae5b3cc89a915a1d90b6ac203a2b0698a9872ed839294862f476abc",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:04:07Z",
+  "provenance": {
+    "source": ".pyxis/integrations.md",
+    "note": "offline reconciliation"
+  }
+}

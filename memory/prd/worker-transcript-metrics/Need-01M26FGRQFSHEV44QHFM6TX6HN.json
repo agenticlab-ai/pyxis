@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQFSHEV44QHFM6TX6HN",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "J1",
+  "statement": "When a task has finished running, I want know what that task's work cost in total tokens and wall-clock time, so I can attribute cost to tasks rather than to phases",
+  "rationale": "brainstorm:worker-transcript-metrics#D-7",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8a10b64e869cc9e5e755135c00de43c79fe061928e3232dfc6cd89e30731ec49",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.631Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMQ7AB7FPEG7ATZ81FW",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "ABUSE-8",
+  "statement": "implementation worker, reviewer execution, or repository contributor trying to manufacture review completion — vector: directly writes a schema-valid comment/record, replays another attempt's artifact, receipt, or proof reference, substitutes proposal-wide body matches, or mutates durable handoff/idempotency/receipt state or the protected attempt-proof store using generic repository credentials",
+  "intent": "a proposal appears reviewed without the accepted artifact being produced by the launched review process through impl-review's persistence boundary",
+  "fit_criterion": "FR-33's exact idempotent receipt; FR-34's no-execution-write boundary; FR-35's immutable terminal and separate proof reference; protected host/proof state outside child write surfaces; UB-20..UB-23 fail closed; completed-artifact author ignored as proof under FR-37",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0ca03ff3d70430cb2db6429df7384d95d9f7b6c64531ca2141d743d81503b8d9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.519Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

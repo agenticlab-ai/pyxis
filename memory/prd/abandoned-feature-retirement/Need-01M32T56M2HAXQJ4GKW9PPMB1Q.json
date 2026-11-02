@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T56M2HAXQJ4GKW9PPMB1Q",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "M4",
+  "statement": "M4: G2",
+  "intent": "Unrelated E2E behavior passes its unchanged test inventory",
+  "fit_criterion": "100% of the same unrelated E2E tests pass on the verified cleanup candidate and in the fresh-clone reproduction",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1980ea69dfe6368746e597e4c4a46a78c7f62b557cd06f1b96068c0c8c781450",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:43Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

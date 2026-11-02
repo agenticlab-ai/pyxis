@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Document-01M49BK4ZBMEFAN9E94RS0HJ1N",
+  "kind": "Document",
+  "subject": "review/inherited-learning-repair",
+  "family": "report-003",
+  "statement": "Draft reviews/003.md",
+  "tags": [
+    "draft-digest:sha256:48502b29de0881543036b34f06acede11abbacfd5a3a6f324c4417d0005f6daa"
+  ],
+  "body_sha256": "ed4070ffa48809c8fcb50e70ab03d521dcf717d7cd04cf9afffa380d456e4444",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

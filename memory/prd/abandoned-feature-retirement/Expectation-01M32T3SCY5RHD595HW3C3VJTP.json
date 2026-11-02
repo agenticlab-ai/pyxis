@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3SCY5RHD595HW3C3VJTP",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-6",
+  "statement": "The complete E2E test-generation pilot surface is absent while historical records and the exact unrelated E2E test inventory remain unchanged and passing",
+  "intent": "FR-9, FR-10, FR-14, UB-9, NR-1, NR-3, NR-4, §3.3, §6.4",
+  "fit_criterion": "complete active-surface inventory with zero residuals, final tree inventory, protected and unrelated-test digests, focused regression results, full required shared gates",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8e0abbbba32ef97fdb20a185ca751312097e030cd0c7cf55891c0bd693036d0d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:56Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

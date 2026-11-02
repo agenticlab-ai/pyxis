@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Learning-01M3N7TASA93R7W97GJ4TAZZNP",
+  "kind": "Learning",
+  "subject": "learning/locked-plan-citations",
+  "statement": "A draft-born plan resolves its own PRD and design citations against the immutable Basis lock, including plans under the configured plans root outside docs.",
+  "intent": "Keep docgate citation checks aligned with locked feature planning.",
+  "rationale": "Document-pipeline ledger and design-file lookup rejected valid locked-plan citations; the configured plan root also needs tree-wide and epoch-scoped scanning.",
+  "fit_criterion": "A plan at a binding lock passes for active PRD units and design decisions, while missing locks or targets fail; relocated and epoch-scoped plan fixtures are checked.",
+  "tags": [
+    "code:internal/docgate/gate"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T00:07:46Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-new-v1.md",
+    "note": "Semantic memory for locked-plan citation resolution in docgate"
+  }
+}

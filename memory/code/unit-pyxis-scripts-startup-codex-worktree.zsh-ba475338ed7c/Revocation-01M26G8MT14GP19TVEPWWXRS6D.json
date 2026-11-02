@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M26G8MT14GP19TVEPWWXRS6D",
+  "kind": "Revocation",
+  "subject": "code/unit-pyxis-scripts-startup-codex-worktree.zsh-ba475338ed7c",
+  "statement": "The Codex startup launcher moved intact to script/startup; this earlier old-path identity is also retired so revoking its successor cannot resurrect it.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Need-01M26FGS472MS8QBM3PS9MRTSP"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:31:06Z"
+}

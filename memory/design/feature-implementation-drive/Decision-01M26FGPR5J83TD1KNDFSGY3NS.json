@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPR5J83TD1KNDFSGY3NS",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.6.1",
+  "statement": "Review state is observed but never equated with completion. `open`, `changes-requested`, `approved-but-unmerged`, and `merged-unverified` all leave the task and every dependent incomplete. For a proposal to complete a task, the reconciler must verify: its reviewed head is the current proposal head; its base is the feature branch; required checks/reviews bind that head; the code host reports a landed revision for the merge/squash/rebase result; and that landed revision is an ancestor of the freshly fetched feature-branch head (`design-brainstorm:feature-implementation-drive-tech-design#D-3`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6466647f2fd69df81de8a0d2f0c3912afa9cc9e3794a55d1fbdd558a5728b7d8",
+    "source-design:9ea7096e912167ecb729a6e4e1b927caa05db54140c93a34e0549e41ee37d4cf",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQSGHPTQGNYZ6H14SMKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.605Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 134-134 in section 3.6; sha256:6466647f2fd69df81de8a0d2f0c3912afa9cc9e3794a55d1fbdd558a5728b7d8"
+  }
+}

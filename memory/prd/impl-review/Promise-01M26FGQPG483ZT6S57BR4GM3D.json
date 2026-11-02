@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPG483ZT6S57BR4GM3D",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-4",
+  "statement": "When reviewing, the reviewer shall exclude the mechanical floor: no finding shall restate a defect class codegate's ladder enforces.",
+  "rationale": "the nit engine's front door, closed",
+  "fit_criterion": "on fixtures seeded with codegate-catchable defects, zero reviewer findings overlap the ladder's defect classes (EVAL-4, with the overlap judge stated in §5.9)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:060123fcd6ab64ac73b1fcf5f20a2e817840ef1ab58d21d66c50634b647a94ee",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.576Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

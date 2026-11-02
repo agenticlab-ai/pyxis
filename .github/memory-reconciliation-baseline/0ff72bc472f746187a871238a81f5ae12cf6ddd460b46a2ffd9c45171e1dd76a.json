@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/config-driven-portability#Q1",
+  "feature": "config-driven-portability",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

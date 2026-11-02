@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKDZ4MMXE9J3XAE4KTTS3",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-12",
+  "statement": "The system shall treat a feature draft as ready only when every open question and every requirement problem in it has an answer.",
+  "rationale": "Open questions answered (brainstorm:feature-draft#D-3)",
+  "fit_criterion": "Drafts holding one unanswered question or one unruled requirement problem are refused; answering it clears that condition.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d19ae2e7d0b9c0ece6266e4f8c69ffe6eacba88e12a872e2073252a086b2034",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:18Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

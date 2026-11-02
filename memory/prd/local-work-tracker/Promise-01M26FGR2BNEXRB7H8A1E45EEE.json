@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2BNEXRB7H8A1E45EEE",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-11",
+  "statement": "When asked to search work items by text over titles, bodies, and comments, the tracker shall return every matching item and only matching items, using exact substring or token matching (not fuzzy full-text).",
+  "rationale": "the human \"search\" job; fuzzy matching false-positives on issue references (harbormaster sweep §2.6)",
+  "fit_criterion": "seeded matches all returned; a near-miss token does not match; zero false positives on the fixture corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca38235f0ed8abd6bd738c060db3d6f59ebce1ab304e3cdfd2a086aa041e1968",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.955Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

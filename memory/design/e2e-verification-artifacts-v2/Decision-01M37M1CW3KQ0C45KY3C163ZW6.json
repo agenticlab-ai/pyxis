@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1CW3KQ0C45KY3C163ZW6",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "decision.3.4.1",
+  "statement": "where no existing harness fits and some slot's answer genuinely cannot be settled — no way to observe an outcome, no way to isolate a run from its neighbours — the slot carries an explicit **blocking open item** naming what is unresolved and why, and the document **cannot reach `approved`** while one stands (`prd:e2e-verification/UB-8`). The hold lifts one of two ways: the element is settled, or the scenarios depending on it are re-routed so it is no longer owed.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:07592d077186b095fd581ab6c95d1ac279b445e108642f9573cc7142e82f2c0e",
+    "source-design:43e2ab94e5e0be7a64141885d2fe583c7ca1bfb9079b8afc66be84d8856cb948",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQ3GA6BHDV78NP97GQ0"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQXR7H76CEY5F92599QMX"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:59Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-artifacts-v2.md lines 124-124 in section 3.4; sha256:07592d077186b095fd581ab6c95d1ac279b445e108642f9573cc7142e82f2c0e"
+  }
+}

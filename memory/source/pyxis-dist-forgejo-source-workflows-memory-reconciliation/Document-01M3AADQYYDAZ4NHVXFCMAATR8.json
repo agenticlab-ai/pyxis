@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3AADQYYDAZ4NHVXFCMAATR8",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-memory-reconciliation",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/memory-reconciliation.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:e25238d95d5249f780b343cd9ef3cb60aff8ea3d8508ffcdd245535a2a2b2727"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2BVCNZZFVKY9V13NV8S98B7"
+    }
+  ],
+  "body_sha256": "e25238d95d5249f780b343cd9ef3cb60aff8ea3d8508ffcdd245535a2a2b2727",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-24T18:21:41Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/memory-reconciliation.yml",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVHEMN59RCS78J4H29H",
+  "kind": "Question",
+  "subject": "prd/review-feedback-capture",
+  "family": "Q1",
+  "statement": "How is a disposition/outcome *determined* — writer-tagged at resolution, inferred from the merge/amendment, or human-confirmed?",
+  "intent": "technical design",
+  "rationale": "open (`brainstorm:review-feedback-capture#P-1`)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:f261ba97a0039790ba3e10eec113ce6355c4224fc7a1016d874a9d0ac450e244",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.761Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPEQXY8M5VR06NXMME3",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-36",
+  "statement": "When a caller invokes the host persistence adapter, it may supply the protected review-obligation/review-process/publication-attempt/proposal/revision binding and non-secret attempt-proof reference and consume the returned native receipt, but it shall neither perform a proposal write nor define, fork, or reinterpret impl-review's report schema.",
+  "rationale": "sibling integration must not create a second publisher or artifact contract",
+  "fit_criterion": "contract and implementation inspection find one impl-review-owned report schema and publisher; the host seam contains only typed binding, invocation, distinct proof-reference supply and receipt consumption, verification, and FR-35's field-identical reciprocal event join; both-media goldens remain owned by impl-review",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9930597b8982c21383ce42aee4dd32c7ee9c01b6b2fc5f5405a404dddd1172ef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.574Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

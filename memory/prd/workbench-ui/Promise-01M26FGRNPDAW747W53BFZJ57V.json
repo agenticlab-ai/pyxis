@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNPDAW747W53BFZJ57V",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-6",
+  "statement": "Where a document is rendered, the reading room should offer hand-offs to the existing flows — starting the annotation loop on that document and opening its tracked reference — while itself performing no annotation and no write.",
+  "rationale": "\"interact\" means reaching the flows that own interaction",
+  "fit_criterion": "demo on a live doc: the hand-off starts the existing annotation flow (or presents its exact invocation) without the reviewer typing a path; a write-audit of the UI process across the demo shows zero repo writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:392429396587b6aac4432e67ceca5830e0cc52fc8eb74d813a1250d076ca505b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.574Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

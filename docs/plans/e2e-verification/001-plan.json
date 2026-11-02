@@ -1,0 +1,743 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "e2e authoring line — the three skills and their artifacts — plan 001",
+  "feature": "e2e-verification",
+  "prd": "docs/prds/e2e-verification",
+  "design": "docs/tech-design/e2e-verification-skills.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Build the e2e authoring line — a new e2e-design/v1 doc class and an e2e-review-report/v1 family instance; e2e-design (coverage map + per-scenario routes + app-shape harness, input refusals, the no-automatable-surface stop, and live-design-set selection); e2e-review (the fourth reviewer-program instance: two blind lenses over the shared context pack, blocking convergence, and the human conversation half); e2e-plan (a plan-new plan/v1 with a conditional harness task); and the seeded catch corpus — dogfooded design → review → plan on one pyxis feature",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "The e2e-design/v1 document class and its well-formedness checklist",
+      "goal": "One version-pinned e2e-design/v1 document class carries a feature's e2e coverage in six required sections with a header Basis join and per-scenario routes, and a well-formedness checklist accepts a golden doc and rejects each structural defect at its own rule — a lightweight class frozen at approval, off the technical-design index.",
+      "current": "No e2e-design document class exists; nothing defines the six-section e2e design doc, its header Basis join, the per-scenario route grammar, or a checklist that tells a well-formed doc from a malformed one.",
+      "desired": "A markdown template instantiates the e2e-design/v1 class with a closed section set — Scenarios, Setup and teardown, Mock strategy, Harness libraries, Coverage map, and Per-scenario route — each present, an empty one reading a stated `none — reason`; the header carries the routing pair, a Basis row typing the feature join, the governing-design revision(s) the coverage was derived from, and a Status of draft or approved; a well-formedness checklist accepts a golden doc and rejects a doc missing a section, a coverage-map entry with no scenario or routed disposition, a scenario with two routes, or a manual-human route with no named owner, each at its own rule; the class defines the per-feature home its design doc and review report co-locate in, carries no technical-design-index entry, and holds no Serves or Supersedes design-class semantics.",
+      "scope": [
+        "the e2e-design/v1 template: the six sections plus the header Basis join, governing-design revision(s), and Status rows",
+        "the well-formedness checklist — every section present, one route per scenario, a named manual-human owner, each coverage entry carrying a scenario or a routed disposition",
+        "the per-feature home the design doc and its review report co-locate in",
+        "the class's exclusion from the technical-design index and its lack of design-contract semantics"
+      ],
+      "out_of_scope": [
+        "the skill behavior that authors the coverage, routes, and harness choice (T3)",
+        "whether the coverage map is complete against the feature's required-behavior set — the coverage lens's judgment (T6)",
+        "the review report schema (T2) and the plan (T8)"
+      ],
+      "acceptance": [
+        "the e2e-design/v1 template exists version-pinned with the six sections and the header Basis and governing-design-revision rows",
+        "a golden e2e design doc passes the well-formedness checklist",
+        "each seeded defect — a missing section, a coverage-map entry with no scenario or route, a scenario with two routes, a manual-human route with no owner — fails at its own rule",
+        "the class carries no technical-design-index entry and no Serves or Supersedes semantics"
+      ],
+      "key_interfaces": [
+        "the e2e-design/v1 template and its version pin",
+        "the well-formedness checklist rule set",
+        "the e2e design doc header — In one line, Relevant-when, Basis, governing-design revision(s), Status"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-1",
+        "prd:e2e-verification/FR-4",
+        "prd:e2e-verification/FR-5",
+        "design:e2e-verification-artifacts#3.1",
+        "design:e2e-verification-artifacts#DINV-1",
+        "design:e2e-verification-artifacts#DINV-3",
+        "design:e2e-verification-artifacts#DINV-6"
+      ],
+      "touches": [
+        "e2e-template",
+        "internal/e2e/docclass"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 240
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T1",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "The e2e-review-report/v1 schema — a review-report family instance",
+      "goal": "One e2e-review-report/v1 schema instances the review-report family — closable findings with blocking or advisory severity and a versioned report envelope — validates its own integrity, and persists alongside the design doc without forking the family grammar.",
+      "current": "No e2e review-report schema exists; nothing carries the e2e reviewer's findings and dispositions as a family instance, and the existing PRD-typed review report admits only PRD subjects.",
+      "desired": "A dedicated e2e-review-report/v1 schema declares its subject as the feature's e2e design, the coverage and anti-gaming lens dimensions, and its own calibration table, sharing the review-report family's closable-finding and versioned-report grammar rather than restating it; each finding carries a blocking or advisory severity and a disposition of resolved or rejected-with-reason; a conformance check rejects a report that restates the family grammar instead of instancing it, and a validator rejects a report carrying an undispositioned finding at approval; the report persists beside the design doc in the per-feature home and rides its introducing change; adding this instance leaves the family's existing schemas untouched.",
+      "scope": [
+        "the e2e-review-report/v1 schema as a review-report family instance — closable findings, a versioned envelope, its own calibration table",
+        "the finding severity (blocking or advisory) and disposition (resolved or rejected-with-reason) fields",
+        "the family-conformance check validating the instance against the shared grammar",
+        "persistence of the report beside the design doc, riding its change"
+      ],
+      "out_of_scope": [
+        "emitting, converging, or dispositioning findings at runtime — the reviewer behavior (T6, T7)",
+        "the design doc class the report reviews (T1)"
+      ],
+      "acceptance": [
+        "a golden e2e-review-report/v1 validates and shares the family's closable-finding and versioned-report grammar",
+        "a report restating the family grammar rather than instancing it is rejected by the conformance check",
+        "each finding carries a blocking or advisory severity and a resolved or rejected-with-reason disposition",
+        "the review-report family's existing instances are byte-unchanged by adding this one"
+      ],
+      "key_interfaces": [
+        "the e2e-review-report/v1 schema and its version field",
+        "the closable-finding grammar — severity, disposition, acceptance condition — shared with the family",
+        "the family-conformance validator"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-11",
+        "prd:e2e-verification/NR-1",
+        "design:e2e-verification-artifacts#3.2",
+        "design:e2e-verification-artifacts#DINV-5"
+      ],
+      "touches": [
+        "internal/e2e/report"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 190
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "e2e-design authors a valid e2e-design/v1 doc",
+      "goal": "The e2e-design skill reads a feature's PRD requirement list, its live technical-design set, and its built code, and authors a valid e2e-design/v1 doc — a coverage map anchored to the PRD requirements, a per-scenario route, and an app-shape-fitting harness named as authored content — reading only a bounded slice, not the whole tree.",
+      "current": "No e2e-design skill exists; nothing derives a feature's required-behavior list, maps it to scenarios, routes each scenario, or names a harness for the feature's primary interface.",
+      "desired": "Invoked on a fully-implemented feature as its own single command, e2e-design anchors the required-behavior list to the feature's PRD requirement rows, tops it up from the live design set's binding elements and the built code, and writes each of the six sections; every required behavior maps to at least one scenario or an explicit routed disposition, each scenario carries exactly one route of run-for-real, mocked, or manual-human, and an individual behavior it cannot route is surfaced as an open item rather than dropped; the skill reasons about the feature's primary external interface — a web endpoint, a command-line argv-and-stdout, or a library public API — and names a fitting harness and mock approach as authored content, carrying no app-shape-specific branch in skill code; it reads a bounded slice of the changed files and the modules the design set names, a run reaching the bound stops rather than fanning out, and it reads its inputs from committed artifacts rather than session state; it emits the line-step tracking event on completion.",
+      "scope": [
+        "the required-behavior derivation anchored to the PRD rows, topped up from the live design set and built code, each behavior mapped to a scenario or a routed disposition",
+        "the per-scenario route assignment and the surfacing of an unroutable individual behavior as an open item",
+        "the app-shape reasoning naming a fitting harness and mock approach as authored content, with no per-shape branch in skill code",
+        "the bounded read of the changed files and named modules, enforced so a run reaching the bound stops"
+      ],
+      "out_of_scope": [
+        "refusing on absent inputs and selecting the live design set under ambiguity (T4)",
+        "the no-automatable-surface stop (T5)",
+        "reviewing the produced doc (T6, T7)"
+      ],
+      "acceptance": [
+        "on the fixture features e2e-design produces a valid e2e-design/v1 doc whose coverage map carries every PRD-derived required behavior with a scenario or a routed disposition",
+        "each produced scenario carries exactly one route, and a seeded not-CI-runnable behavior appears routed mocked or manual-human, never absent",
+        "across fixtures of at least two app shapes the harness choice lives in authored content and code inspection finds no per-shape branch",
+        "a run reaching the read bound stops rather than reading the whole tree"
+      ],
+      "key_interfaces": [
+        "the e2e-design skill command and its finished-feature invocation",
+        "the coverage-map and per-scenario-route authored structure",
+        "the app-shape harness-selection reasoning carried as content",
+        "the bounded-read budget"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-1",
+        "prd:e2e-verification/FR-2",
+        "prd:e2e-verification/FR-3",
+        "prd:e2e-verification/FR-4",
+        "prd:e2e-verification/FR-6",
+        "prd:e2e-verification/UB-3",
+        "prd:e2e-verification/NFR-1",
+        "prd:e2e-verification/NFR-2",
+        "prd:e2e-verification/NFR-3",
+        "design:e2e-verification-skills#3.1",
+        "design:e2e-verification-skills#DINV-2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "e2e-design-skill",
+        "internal/e2e/design"
+      ],
+      "size_band": {
+        "lo": 140,
+        "hi": 260
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "e2e-design input gating — refusals and live-design-set selection",
+      "goal": "e2e-design refuses and produces nothing when the PRD, the live technical-design set, or the built code is absent, and reads the live (non-superseded) design set for a feature that has several — refusing only on genuine ambiguity, never on plurality.",
+      "current": "e2e-design assumes its inputs are present and a single governing design; nothing refuses a not-yet-implemented feature, a missing PRD or design, or resolves which designs are live when a feature has more than one.",
+      "desired": "Before authoring, e2e-design checks its inputs — a missing or unreadable PRD or design makes it refuse naming the input, and a feature whose implementation tasks have not all landed makes it refuse naming the unlanded work, and in every refusal it produces zero documents; when a feature has several technical designs it follows the generated index's liveness and derives coverage from the whole live (non-superseded) set, surfacing or refusing only when a superseded design has no clear live successor or liveness is indeterminable, and never refusing merely because more than one design is live.",
+      "scope": [
+        "the refuse-and-produce-nothing path on an absent or unreadable PRD or design, naming the input",
+        "the refuse-and-produce-nothing path on a not-fully-implemented feature, naming the unlanded work",
+        "the live (non-superseded) design-set selection following the generated index's liveness",
+        "the surface-or-refuse-only-on-genuine-ambiguity rule for a superseded design with no clear successor"
+      ],
+      "out_of_scope": [
+        "authoring the doc from present, unambiguous inputs (T3)",
+        "the no-automatable-surface stop, a distinct produce-nothing case (T5)"
+      ],
+      "acceptance": [
+        "each missing-input fixture — no PRD, no design, not-yet-implemented — yields a refusal naming the input and zero documents",
+        "a fixture feature with two live designs is read as a whole set and yields a valid doc with no refusal",
+        "a superseded design with no clear live successor, or indeterminable liveness, yields a surfaced ambiguity or a refusal",
+        "no refusal is raised merely because more than one design is live"
+      ],
+      "key_interfaces": [
+        "the input-presence and implementation-completeness checks",
+        "the live-design-set resolver over the generated index's liveness",
+        "the ambiguity predicate distinguishing genuine ambiguity from plurality"
+      ],
+      "traces": [
+        "prd:e2e-verification/UB-1",
+        "prd:e2e-verification/UB-2",
+        "design:e2e-verification-skills#3.1",
+        "design:e2e-verification-skills#DINV-1",
+        "design:e2e-verification-skills#DINV-8"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "e2e-design-skill",
+        "internal/e2e/design"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "e2e-design's no-automatable-surface stop",
+      "goal": "On a feature with no meaningfully-automatable e2e surface — every required behavior routing to manual, or a pure-doc or refactor change with no end-to-end behavior — e2e-design produces zero e2e documents and signals the operator to stop the pipeline, naming the reason, never a fabricated or manual-only artifact.",
+      "current": "e2e-design has no clean-stop path; a feature with nothing to automate would draw a fabricated scenario set or a degenerate manual-only doc.",
+      "desired": "When every required behavior routes to manual, or the change is pure-doc or refactor with no end-to-end behavior to exercise, e2e-design produces no e2e documents and emits a stop signal naming the no-automatable-surface reason, telling the operator the downstream review and plan steps must not run; it fabricates no scenario and writes no manual-only artifact, and it preserves the distinction from an individual unroutable behavior, which is surfaced as an open item within an otherwise-automatable feature.",
+      "scope": [
+        "the no-automatable-surface detection — all-manual, or a pure-doc or refactor change with no end-to-end behavior",
+        "the produce-nothing-and-stop signal naming the reason and halting the downstream steps",
+        "the guarantee of zero fabricated scenarios and no manual-only artifact"
+      ],
+      "out_of_scope": [
+        "the input-absence refusals and live-set selection (T4)",
+        "surfacing an individual unroutable behavior within an automatable feature (T3)"
+      ],
+      "acceptance": [
+        "an all-manual fixture feature yields zero e2e documents and a stop signal naming the reason",
+        "a pure-doc fixture change yields zero e2e documents and a stop signal naming the reason",
+        "no fabricated scenario and no manual-only artifact is produced in either case",
+        "the stop signal marks the downstream review and plan steps as not-to-run"
+      ],
+      "key_interfaces": [
+        "the no-automatable-surface predicate",
+        "the stop-the-pipeline signal and its named reason"
+      ],
+      "traces": [
+        "prd:e2e-verification/UB-7",
+        "design:e2e-verification-skills#3.1",
+        "design:e2e-verification-skills#DINV-7"
+      ],
+      "blocked_by": [
+        "T4"
+      ],
+      "touches": [
+        "e2e-design-skill",
+        "internal/e2e/design"
+      ],
+      "size_band": {
+        "lo": 70,
+        "hi": 150
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T5",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "e2e-review — the fourth reviewer-program instance",
+      "goal": "e2e-review stands up as the fourth instance of the reviewer program — the shared context pack, blind fresh-context lenses, and scope-locked convergence — running two lenses, coverage and anti-gaming, over an input-only pack and emitting an e2e-review-report/v1, with the convergence round count bounded.",
+      "current": "No e2e reviewer exists; nothing maps the e2e design doc and its governing contract onto the context pack, runs e2e-specific lenses, or emits an e2e review report.",
+      "desired": "e2e-review declares a new review stage mapping the e2e design doc onto the admitted frozen-subject kind and the feature's PRD and live design set onto governing-peer kinds — all existing admitted kinds, no enum change — and admits no authoring-trail kind, so a lens is never handed the author's reasoning as an answer key; it reuses the sibling-session blind-lens runtime to run two lenses held as data — coverage (every required behavior has a genuine scenario; a missing scenario or a gross over-mapping is flagged) and anti-gaming (a written mock strategy that guts the scenario it names is flagged) — each blind to the other, and emits their closable findings into an e2e-review-report/v1; the scope-locked convergence runs to a bounded round count and a run reaching the cap stops; adding or tuning one lens touches no other lens; it reads its inputs from committed artifacts and emits the review-finding tracking event.",
+      "scope": [
+        "the review-stage declaration mapping the e2e design doc, PRD, and live design set onto existing admitted pack kinds, admitting no authoring-trail kind",
+        "the two lenses — coverage and anti-gaming — held as data over the blind fresh-context runtime, each independent of the other",
+        "the emission of closable findings into an e2e-review-report/v1",
+        "the bounded convergence round count, enforced so a run reaching the cap stops"
+      ],
+      "out_of_scope": [
+        "blocking-versus-advisory settlement, the human conversation half, and the approval gate (T7)",
+        "the report schema itself (T2) and the catch corpus that measures the lenses (T9)"
+      ],
+      "acceptance": [
+        "e2e-review runs the two blind lenses over the shared pack and emits a valid e2e-review-report/v1",
+        "a pack build that would admit an authoring-trail kind is refused, and no lens reads another lens's findings",
+        "a seeded coverage gap is flagged by the coverage lens and a seeded hollow scenario by the anti-gaming lens, and a clean control yields neither",
+        "the convergence round count is bounded and a run reaching the cap stops"
+      ],
+      "key_interfaces": [
+        "the e2e review-stage declaration and its admitted-kind mapping",
+        "the two lens definitions held as data",
+        "the bounded convergence round count"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-7",
+        "prd:e2e-verification/FR-8",
+        "prd:e2e-verification/NFR-2",
+        "prd:e2e-verification/NFR-3",
+        "prd:e2e-verification/NFR-4",
+        "prd:e2e-verification/NR-1",
+        "design:e2e-verification-skills#3.2",
+        "design:e2e-verification-skills#DINV-3"
+      ],
+      "blocked_by": [
+        "T2"
+      ],
+      "touches": [
+        "e2e-review-skill",
+        "internal/e2e/review",
+        "e2e-lenses"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 240
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "e2e-review — blocking convergence and the human conversation half",
+      "goal": "Every e2e-review finding carries blocking or advisory severity and converges to settled — a blocking finding solved in the design or explicitly rejected with a reason, an advisory resolved or rejected — with the operator's conversation comments feeding the same loop, and no design with an open finding advancing to planning.",
+      "current": "Nothing converges e2e findings; a finding could be left open, the human review would run separately from the lenses, and an unsettled design could advance to the plan.",
+      "desired": "Each finding carries a blocking or advisory severity and a recommendation or acceptance condition; the review-and-converge loop runs until every finding is settled — a blocking finding solved in the design or explicitly rejected with a stated reason, an advisory finding resolved or rejected — and the design is not approved while any finding is open, so no design with an open finding advances to e2e-plan; the operator's comments in the conversation run alongside the unmanned lenses, both feeding one convergence loop; the reviewer is advisory in this version, forcing no downstream automated gate, and it emits the finding-disposition tracking event.",
+      "scope": [
+        "the blocking-or-advisory severity and the settle-or-reject convergence over every finding",
+        "the approval gate blocking a design with any open finding from advancing to planning",
+        "the human conversation half running alongside the lenses in one convergence loop",
+        "the advisory-in-v1 posture, forcing no downstream automated gate"
+      ],
+      "out_of_scope": [
+        "the lens judgment and report emission the convergence operates over (T6)",
+        "the plan the approved design feeds (T8)"
+      ],
+      "acceptance": [
+        "a blocking finding blocks approval until it is solved or explicitly rejected with a reason",
+        "an e2e design doc with any open finding does not advance to e2e-plan",
+        "on the dogfood the operator's conversation comments and the unmanned findings settle in one loop and the design reflects both",
+        "the reviewer forces no downstream automated gate in this version"
+      ],
+      "key_interfaces": [
+        "the finding severity and the settle-or-reject disposition",
+        "the approval gate over open findings",
+        "the one convergence loop joining operator comments and lens findings"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-9",
+        "prd:e2e-verification/FR-10",
+        "prd:e2e-verification/UB-5",
+        "design:e2e-verification-skills#3.2",
+        "design:e2e-verification-skills#DINV-4"
+      ],
+      "blocked_by": [
+        "T6"
+      ],
+      "touches": [
+        "e2e-review-skill",
+        "internal/e2e/review"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T7",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "e2e-plan — a plan-new plan/v1 with a conditional harness task",
+      "goal": "e2e-plan authors an ordinary plan-new plan/v1 from an approved e2e design doc — per-scenario tasks plus a harness task only when the feature's harness does not already exist, each scenario task blocked-by an emitted harness task and none when the harness pre-exists — hands it to plan-new's pipeline unchanged, and refuses on an unapproved doc.",
+      "current": "No e2e-plan skill exists; nothing turns an approved e2e design doc into an ordered plan, and nothing decides the harness task and its dependency edges.",
+      "desired": "Invoked on an approved e2e design doc as its own single command, e2e-plan writes an ordinary plan-new plan/v1 — one task per scenario, plus a harness task only when the feature's e2e harness does not already exist; when a harness task is emitted every scenario task carries a native blocked-by edge on it, and when the harness already exists the scenario tasks carry no harness-build edge; it hands the plan to plan-new's pipeline — fold, plan-PR, freeze-at-merge, and idempotent projection — reusing the ordinary task and charter schema with no new type, leaving the executor and plan-new unchanged; an unapproved design doc makes it refuse naming the missing approval and produce no plan; it reads its input from the committed approved doc and emits the line-step tracking event.",
+      "scope": [
+        "authoring a plan-new plan/v1 with per-scenario tasks and a conditional harness task",
+        "the blocked-by edge on each scenario task when a harness task is emitted, and its absence when the harness pre-exists",
+        "handing the plan to plan-new's pipeline, reusing the task and charter schema with no new type",
+        "the refusal on an unapproved design doc"
+      ],
+      "out_of_scope": [
+        "the executor's frontier and plan-new's pipeline, consumed unchanged and not edited",
+        "the review and approval that precede planning (T7)"
+      ],
+      "acceptance": [
+        "on an approved doc with no existing harness, e2e-plan emits per-scenario tasks and one harness task, each scenario task blocked-by it, and the plan folds as a plan-new plan/v1",
+        "on an approved doc whose harness already exists, e2e-plan emits zero harness tasks and no scenario task carries a harness-build edge",
+        "the produced tasks use the ordinary task and charter schema with no new required field, and plan-new and the executor are byte-unchanged",
+        "an unapproved design doc yields a refusal naming the missing approval and zero tasks"
+      ],
+      "key_interfaces": [
+        "the e2e-plan skill command and its approved-doc invocation",
+        "the conditional harness task and the scenario blocked-by edges",
+        "the plan-new plan/v1 handoff reusing the task and charter schema"
+      ],
+      "traces": [
+        "prd:e2e-verification/FR-16",
+        "prd:e2e-verification/FR-17",
+        "prd:e2e-verification/FR-14",
+        "prd:e2e-verification/FR-15",
+        "prd:e2e-verification/UB-4",
+        "prd:e2e-verification/NR-2",
+        "prd:e2e-verification/NFR-2",
+        "design:e2e-verification-skills#3.3",
+        "design:e2e-verification-skills#DINV-5",
+        "design:e2e-verification-skills#DINV-6",
+        "design:e2e-verification-artifacts#3.2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "e2e-plan-skill",
+        "internal/e2e/plan"
+      ],
+      "size_band": {
+        "lo": 110,
+        "hi": 220
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T8",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "The seeded catch corpus and its catch-rate measurement",
+      "goal": "A permanent catch corpus of seeded coverage gaps and hollow scenarios plus clean controls exercises the two lenses and records their catch-rate as a retained measurement, so a lens that stops biting is visible without gating any commit.",
+      "current": "No catch corpus exists; nothing measures whether the coverage and anti-gaming lenses actually flag a seeded gap or a hollow scenario, or records the result.",
+      "desired": "The corpus ships as permanent fixtures — e2e design docs with seeded coverage gaps (a required behavior with no scenario), seeded hollow scenarios (a mock that guts the behavior the scenario names), and clean controls — run through the two lenses; every seeded gap is flagged by the coverage lens and every seeded hollow scenario by the anti-gaming lens, while clean controls yield no finding; the catch-rate is written as a retained, append-only run record feeding the reviewer's advisory-to-blocking ramp, and it measures rather than gates any commit; it emits the catch-corpus tracking event.",
+      "scope": [
+        "the seeded coverage-gap and hollow-scenario fixtures plus clean controls",
+        "the harness running the corpus through the two lenses and scoring flagged-versus-not",
+        "the retained, append-only catch-rate run record feeding the advisory-to-blocking ramp",
+        "the measure-not-gate posture over commits"
+      ],
+      "out_of_scope": [
+        "the lenses and the report the corpus exercises (T6)",
+        "the reviewer's advisory-to-blocking checkpoint that later reads the record — out of this version"
+      ],
+      "acceptance": [
+        "every seeded coverage-gap case is flagged by the coverage lens and every seeded hollow-scenario case by the anti-gaming lens",
+        "the clean controls yield no coverage or anti-gaming finding",
+        "the catch-rate is written as a retained append-only run record",
+        "the corpus run records a measurement and gates no commit"
+      ],
+      "key_interfaces": [
+        "the seeded catch-corpus fixtures and their two case families",
+        "the corpus-run harness and its flagged-versus-not scoring",
+        "the retained catch-rate run record"
+      ],
+      "traces": [
+        "prd:e2e-verification/EVAL-1",
+        "prd:e2e-verification/EVAL-2",
+        "prd:e2e-verification/ABUSE-1",
+        "prd:e2e-verification/ABUSE-2",
+        "prd:e2e-verification/FR-8",
+        "design:e2e-verification-skills#3.2"
+      ],
+      "blocked_by": [
+        "T1",
+        "T6"
+      ],
+      "touches": [
+        "e2e-fixtures",
+        "internal/e2e/corpus"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 240
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T9",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T10",
+      "title": "The living rollups, glossary terms, and the e2e reference",
+      "goal": "The shipped e2e authoring line is legible without tooling — the living techspec and prd rollups carry the capability, the glossary defines the terms it introduces, and one reference documents the e2e design-doc shape, the two-lens review, and the plan handoff.",
+      "current": "The living rollups do not carry the e2e authoring line, the glossary lacks its terms, and no reference documents the e2e design-doc sections, the lens set, or the plan handoff.",
+      "desired": "Once the skill code ships, the living techspec and prd rollups gain the e2e authoring-line capability; the glossary defines the terms this feature introduces — the e2e coverage map and the per-scenario route; and one reference documents the six-section e2e design-doc shape, the coverage and anti-gaming lenses with their blocking-or-advisory findings, and the plan handoff to plan-new, so a human reads the line's artifacts without external tooling; the existing required CI contexts stay green as the entries land.",
+      "scope": [
+        "the living techspec and prd rollup entries for the shipped e2e authoring line",
+        "the glossary definitions of the terms this feature introduces",
+        "the single reference over the design-doc shape, the two-lens review, and the plan handoff"
+      ],
+      "out_of_scope": [
+        "the schemas and skills the reference documents (T1, T2, T6, T8)",
+        "any normative rule — the reference is descriptive and the artifacts govern on conflict"
+      ],
+      "acceptance": [
+        "the living techspec and prd rollups carry the e2e authoring-line capability once the code ships",
+        "the glossary defines the e2e coverage map and the per-scenario route terms",
+        "one reference documents the six-section design-doc shape, the two lenses, and the plan handoff",
+        "the existing required CI contexts stay green when the entries land"
+      ],
+      "key_interfaces": [
+        "the living techspec and prd rollup capability entries",
+        "the two glossary term definitions",
+        "the descriptive e2e reference"
+      ],
+      "traces": [
+        "prd:e2e-verification/DOD-7",
+        "prd:e2e-verification/NR-3",
+        "design:e2e-verification-artifacts#3.3",
+        "design:e2e-verification-skills#3.4"
+      ],
+      "blocked_by": [
+        "T1",
+        "T6",
+        "T8"
+      ],
+      "touches": [
+        "docs/techspec.md",
+        "docs/wiki/glossary.md",
+        "docs/wiki"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 100
+      },
+      "mechanical": false,
+      "plan_task_id": "e2e-verification/001/T10",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:e2e-verification/FR-1",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-2",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-4",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-5",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-6",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-7",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-8",
+      "tasks": [
+        "T6",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-9",
+      "tasks": [
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-10",
+      "tasks": [
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-11",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-14",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-15",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-16",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/FR-17",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-1",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-2",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-4",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-5",
+      "tasks": [
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/UB-7",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NFR-1",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NFR-2",
+      "tasks": [
+        "T3",
+        "T6",
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NFR-3",
+      "tasks": [
+        "T3",
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NFR-4",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NR-1",
+      "tasks": [
+        "T2",
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NR-2",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/NR-3",
+      "tasks": [
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/EVAL-1",
+      "tasks": [
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/EVAL-2",
+      "tasks": [
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:e2e-verification/DOD-7",
+      "tasks": [
+        "T10"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:baf569007f57689b5509ef45d5e2d1a35a4b83fed126ef50bc2f76e4a8b7fda2"
+}

@@ -1,0 +1,10 @@
+# A well-formed severity-map policy that OVERRIDES the default split: it promotes
+# inverse-coverage to BLOCKING on contract-doc-pr (the default is advisory). With
+# this file present, the uncovered-Must fixture that is advisory-only under the
+# default split becomes a BLOCKING bounce on contract-doc-pr — a data-only edit
+# flipping the outcome with zero code change (FR-13). Every other key keeps its
+# default (an omitted key is not an implicit blocker; it inherits the default).
+schema_version: "1"
+triggers:
+  contract-doc-pr:
+    coverage: blocking

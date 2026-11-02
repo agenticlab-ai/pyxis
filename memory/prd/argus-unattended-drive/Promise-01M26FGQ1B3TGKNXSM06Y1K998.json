@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1B3TGKNXSM06Y1K998",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "ABUSE-1",
+  "statement": "a misbehaving or injected drive (or any author) crafts a floor-evading proposal — protected surface presented as an AUTO class — vector: path tricks, split hunks, mislabeled classes, author-declared metadata",
+  "intent": "a protected change merges unattended",
+  "fit_criterion": "FR-2 (path-derived floor, never author-declared), FR-3 (whole-diff classes), UB-1 (ambiguity → HUMAN), the shipped attribution gate + write hook beneath, FR-6 (goal verification)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9b0e2b2593193290f5339459904dc6f7625ec053bc38aa2eb0fc2a26ce8adc66",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.899Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

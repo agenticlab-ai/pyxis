@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRW1Q02HFCNPS8NZKY9K",
+  "kind": "Question",
+  "subject": "prd/tech-design-review",
+  "family": "Q4",
+  "statement": "Whether pre-adoption reviews annotate their advisory status in the report header (mirrors the sibling's Q4)",
+  "intent": "implementation",
+  "rationale": "open",
+  "fit_criterion": "The-skill phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:7ffd7e57a33192541cf3ff077f7f0d8529c19cf500b2d00d07cb8540925e1507",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.777Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

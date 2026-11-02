@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRECTZ256M8F02HJFQPJ",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-7",
+  "statement": "No new human-facing UI shipped (NG-3) and no gate/merge-path change (NR-3)",
+  "intent": "NG-3, NR-3",
+  "fit_criterion": "diff review",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:feb0480b412addf63b8673e283f154b133dbd4f3728f6bd2799e4c9f80348864",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.34Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

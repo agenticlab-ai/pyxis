@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Document-01M2R9RQWWXP575E5WZSZ3Y9H2",
+  "kind": "Document",
+  "subject": "configuration/pyxis",
+  "family": "config",
+  "statement": "Captured authored source: .pyxis/config.yaml",
+  "intent": "Preserve the shared configuration containing both parallel CI groups and trusted-base propagation.",
+  "rationale": "The CI branch and current main independently replaced the same configuration record. This explicit successor preserves the exact merged source bytes and supersedes both competing heads.",
+  "tags": [
+    "class:.pyxis/config.yaml",
+    "reconcile:source",
+    "sha256:4745bc2fd9b147f11b9c187e9e2b1e7e723ea9dd0847dd5430b7d1029d0ad7a7"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2R9QWHQXZ5VY2KBMDWBR5Y2"
+    }
+  ],
+  "body_sha256": "4745bc2fd9b147f11b9c187e9e2b1e7e723ea9dd0847dd5430b7d1029d0ad7a7",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T18:23:53Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml",
+    "commit": "16d45a0152e9ff360f8692be7d3fd4aa8b96c95a",
+    "note": "Resolve configuration record heads after merging current main for PR 1198."
+  }
+}

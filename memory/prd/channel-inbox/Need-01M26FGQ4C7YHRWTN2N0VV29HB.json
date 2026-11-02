@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ4C7YHRWTN2N0VV29HB",
+  "kind": "Need",
+  "subject": "prd/channel-inbox",
+  "family": "J2",
+  "statement": "When I ship something operators must know now (a deprecation, a known-bad version, a security notice), I want reach every operator on their surface with an authenticated notice, so I can remediate a fleet without out-of-band chasing",
+  "rationale": "`brainstorm:channel-inbox#D-3`, `#F-6`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38c873fdbff42b998a650247cf145ad20fac9f194f512c9b3a4eef85a3d0f23b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.996Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

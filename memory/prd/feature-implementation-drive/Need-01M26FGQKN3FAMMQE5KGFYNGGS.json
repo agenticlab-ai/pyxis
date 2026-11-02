@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKN3FAMMQE5KGFYNGGS",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "implementation attempt executes in recorded owner domain",
+  "fit_criterion": "100% in-domain and zero overlapping ownership across both dogfood drives",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d364e9b534877b4af560b5c93aed2e9d81654c5b032a03cf400cbaa859a6a675",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.485Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

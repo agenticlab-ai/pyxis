@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKBRXS0PF72BTMZXG4H",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "NR-3",
+  "statement": "docgate verbs, the design index, and `gate` output are unchanged on trees containing sibling records",
+  "rationale": "the record class stays ungoverned until its own graduation trigger (WR-3)",
+  "fit_criterion": "zero diff under `cmd/docgate` + `internal/docgate`; gate green with records present",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0642e9b1b77d2d93ae0cc0c6df5c95d39cdea519efe96db001c5c40e2b3d94c3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.499Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

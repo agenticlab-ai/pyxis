@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPVCQKGA4YSBXKHJA90",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "EVT-5",
+  "statement": "launch_unaccounted fires when reconciliation finds a launch in the authoritative launch record with neither a record nor a capture-failure entry",
+  "intent": "task_id: string, process_id: string",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:53ca6f06245da721a83c5b532ba59d820a5be2198e135b6977ff00b0c0e25e08",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.611Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

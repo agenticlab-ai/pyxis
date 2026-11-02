@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ2HKDAV5E6NK2XEAVJK",
+  "kind": "Need",
+  "subject": "prd/argus-unattended-drive",
+  "family": "G3",
+  "statement": "We believe waking a drive on awaited completions via normalized, instruction-free signals; expected result: the operator stops being the clock; drive latency tracks the factory, not the human",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4cbda3f5650c9b2331f07f5cb3053705db4178a39f7891e3050cee0d125523fc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.937Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKHR80GR0766W7AFHXX",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "J2",
+  "statement": "When ready tasks produce proposals, I want review, request changes, and merge each task before dependents advance, so I can control every implementation increment without breaking DAG order",
+  "rationale": "`brainstorm:feature-implementation-drive#D-3/#D-9`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4879e181c8657bd6e6fa3e03393b4d381f9a4f4af1c32f395a0a15889526c285",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.481Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

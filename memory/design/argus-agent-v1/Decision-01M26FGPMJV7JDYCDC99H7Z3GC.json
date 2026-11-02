@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMJV7JDYCDC99H7Z3GC",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.3.1",
+  "statement": "two levels, one grammar. **Stage level**: reviewer verdicts and stage bounces route to Argus as the surrounding flow — it applies or declines-with-reason within grant (a declined blocking finding auto-escalates by the reviewers' own rule, becoming an Argus-level decision). **Argus level**: every human-bound escalation is a `brief-emitted` entry (self-contained: the single decision, options with risks, evidence, citations — EVAL-4's bar) that parks the problem fail-closed and **ends the session**. The frozen `class` enum maps the whole escalation space: **`override`** covers everything requiring the human to move a boundary they own — governance-tier content, a prior `A-n`, and the never-list's boundary rows (a self-grant attempt, the envelope, an ungranted outward surface — the brief's body names its row); **`deadlock`** covers convergence exhaustion (rounds spent, no legal assumption left). Park mechanics: the derived block flips to parked, and **where the repo binds a tracker, the problem's item gets the parked label pointing at the brief** (the record's D-7 clause). The answer arrives as an `A-n` append; the next front-door touch reconciles (`answer-received` citing it) and resumes.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8236e54fe2bf537f787428d10bbba2f9ec63f6770a97902b72ab28997d0d511c",
+    "source-design:8819235c5a03ebc20e8a41a309d7b00947d68c83161ce5dcc77d96f870647ba0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKMWJM6XXWJY18WKM9A6"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.49Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 42-42 in section 3.3; sha256:8236e54fe2bf537f787428d10bbba2f9ec63f6770a97902b72ab28997d0d511c"
+  }
+}

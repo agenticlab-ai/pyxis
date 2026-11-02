@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAPGMPNTG7S72YB6FZK",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-28",
+  "statement": "When invoked as `coverage`, docgate shall compute the requirements-coverage view — for every corpus ID and every live ledger unit, the live designs serving it and the explicit unserved remainder per family — from committed inputs on read and print it (a human table by default, `--json` for the machine face), committing it to no artifact; and `gen-index`/`verify-index` shall carry only the design-plane graph (design liveness and `serves_inverse`), never the coverage join, so that adding or amending a ledger never changes `docs/tech-design/index.*`.",
+  "rationale": "coverage is a cross-plane join; committing it anywhere couples the planes (issue #70). The universe already lives under `docs/prds/`, so computing on read removes the coupling in both directions and `index.*` regenerates only when designs change",
+  "fit_criterion": "temp-repo fixtures: `docgate coverage` yields the expected served/unserved partition in both faces; `gen-index` emits no `coverage` key/section and `verify-index` is green over the coverage-free index; **adding a ledger amendment leaves `index.*` byte-identical**; superseding a design still returns its solely-served anchors to unserved in `coverage` output; CI publishes the view as a job summary",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:da3cc10f592468ae548c6f9dbf2bb45ea42ad199a1e746f33dbc7c2511df8acf",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.198Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

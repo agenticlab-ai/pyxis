@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3XEPRCKAH09MPGDP1Z2BS10",
+  "kind": "Document",
+  "subject": "review/implement-now-008",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/implement-now-008.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:7a2cc87d85f14681b4cebddb83489f493899794f22e70c7e829d2d8e828c6569"
+  ],
+  "body_sha256": "7a2cc87d85f14681b4cebddb83489f493899794f22e70c7e829d2d8e828c6569",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:42:05Z",
+  "provenance": {
+    "source": "docs/reviews/implement-now-008.md",
+    "note": "offline reconciliation"
+  }
+}

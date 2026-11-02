@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M49KXN0RXWAP8E7NC9TVE7YR",
+  "kind": "Document",
+  "subject": "review/memory-proposal-withdrawal-v1",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/memory-proposal-withdrawal-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:0625e28d79ac435258d5c424458877e70bc30a731ac23f018bd459234e108faa"
+  ],
+  "body_sha256": "0625e28d79ac435258d5c424458877e70bc30a731ac23f018bd459234e108faa",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-06T22:04:07Z",
+  "provenance": {
+    "source": "docs/reviews/memory-proposal-withdrawal-v1.md",
+    "note": "offline reconciliation"
+  }
+}

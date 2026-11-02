@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V16N9A8J3QC9K77FWFHZVK",
+  "kind": "Need",
+  "subject": "prd/parallel-memory",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "Intersection of baseline paths changed by independent siblings",
+  "fit_criterion": "Zero shared policy paths across ten sibling fixtures and all 45 pairs in both integration orders before cutover",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9bbc9c89f897f8ef9288fc415f5c93d73430d348cd9efd5f6dc52058a1003c26",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

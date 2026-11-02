@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPFNSMA0TXY6ZVKSZBK",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-37",
+  "statement": "When authenticating a completed review artifact, the verifier shall treat the persistence adapter's code-host transport principal as non-authoritative: it need not differ from the implementation or operator principal and shall neither establish nor refute artifact authenticity; authenticity shall derive from the exact adapter receipt plus protected attempt proof, represented by separate non-secret references in every verified publication terminal. This rule shall not alter FR-16's author-attribution requirement for later operator-class finding dispositions.",
+  "rationale": "artifact location, artifact authorship, producer proof, and operator disposition authorship are distinct predicates; a shared transport account must not create a bot-credential distribution requirement or weaken disposition calibration",
+  "fit_criterion": "same-author and different-author artifact transport both verify only when the distinct native receipt and attempt-proof reference resolve and match; receipt/proof aliasing or substitution fails; operator-disposition attribution fixtures remain byte-identical and still exclude unattributable operator acts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d3eca26b465135077dd26bc87813f9941d74ebe1ee4b9e27310c9a06b15ae832",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.575Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

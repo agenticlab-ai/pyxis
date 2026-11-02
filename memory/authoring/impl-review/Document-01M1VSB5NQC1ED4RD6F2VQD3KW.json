@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB5NQC1ED4RD6F2VQD3KW",
+  "kind": "Document",
+  "subject": "authoring/impl-review",
+  "family": "guide",
+  "statement": "Imported Pyxis source document: .pyxis/authoring/impl-review.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/authoring",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "feb1580f11e8eb99f63e7b3b33841bd1d439a8744769c40a5ee8638cb6650b97",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:07Z",
+  "provenance": {
+    "source": ".pyxis/authoring/impl-review.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

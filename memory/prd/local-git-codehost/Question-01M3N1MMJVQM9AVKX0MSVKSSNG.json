@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJVQM9AVKX0MSVKSSNG",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-2",
+  "statement": "A key stored in the same agent-accessible filesystem or environment would let the agent produce its own approval signature. The route needs a signer that the agent cannot invoke without the operator's act.",
+  "intent": "Local code-host design review, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

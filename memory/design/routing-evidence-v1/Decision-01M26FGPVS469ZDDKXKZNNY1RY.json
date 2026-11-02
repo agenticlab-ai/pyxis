@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVS469ZDDKXKZNNY1RY",
+  "kind": "Decision",
+  "subject": "design/routing-evidence-v1",
+  "family": "decision.3.5.1",
+  "statement": "Every resolved attempt reaches exactly one `routed_attempt_completed`: `verified`, `failed`, or `blocked`. For an implementation attempt, that parent event and the implement-now `routed_task_outcome` are one atomic two-file composite with identical `attempt_id`, `demand_id`, `task_id`, optional proposal identity, usage, and evidence proof. The only valid terminal mappings are:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1626c8fcff5d6928c377418b02019c6000164e64bdd2e7f8bea6bf5db8a014e1",
+    "source-design:e5aede37de9d27aedcbde713870bd19a84dcbda30559a99ced0819f23f89cf71",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWW6DXH1BJ76CANEP432"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.721Z",
+  "provenance": {
+    "source": "docs/tech-design/routing-evidence-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/routing-evidence-v1.md lines 162-162 in section 3.5; sha256:1626c8fcff5d6928c377418b02019c6000164e64bdd2e7f8bea6bf5db8a014e1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M47A8Q7KFWNKB150R7SWS41Q",
+  "kind": "Document",
+  "subject": "review/argus-committed-plan-attribution",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/argus-committed-plan-attribution.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:f0b823764a26ab48da50508a31e2884885059c4aa1982a2001df69c07b29442a"
+  ],
+  "body_sha256": "f0b823764a26ab48da50508a31e2884885059c4aa1982a2001df69c07b29442a",
+  "literal_body": true,
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:36:55Z",
+  "provenance": {
+    "source": "docs/reviews/argus-committed-plan-attribution.md",
+    "note": "offline reconciliation"
+  }
+}

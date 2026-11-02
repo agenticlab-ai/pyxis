@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQRGGKXB8KVB4QWCT18",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "NFR-3",
+  "statement": "The system shall evolve its schema additively, so that a record written under one version remains readable under later ones.",
+  "intent": "Maintainability",
+  "fit_criterion": "a version *n* record parses under a version *n+1* consumer with no field losing meaning",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b3de321a43310746c954b2a6d0e3434102125734845a9f8fec660a3e5b0bce14",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.64Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V16N9PDQTP64KF3EQ0EX72",
+  "kind": "Need",
+  "subject": "prd/parallel-memory",
+  "family": "M2",
+  "statement": "M2: G1",
+  "intent": "Candidate record bytes or IDs changed solely after unrelated integration",
+  "fit_criterion": "Zero changed candidate bytes/IDs in both issuance orders, merge and squash fixtures before causal rollout",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6638a4ca7d07ebc577f7cc67e84f8436f5086f52af15f80c70bee6ac9588ac98",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

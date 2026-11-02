@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJM5VKVDC9BW7XCTDWE",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-2",
+  "statement": "While orienting, the skill shall read the basis, the live design corpus (the index and matching designs), the architecture principles, the incident registry, the glossary, and prior design-brainstorm records — routing surfaces first — and shall surface every overlap with a live design or prior record before exploration begins.",
+  "rationale": "direction already decided elsewhere is the cheapest session to end (covered); principles and incidents are the scoring substrate",
+  "fit_criterion": "on fixtures seeded with a covering live design and a prior record, the overlap is surfaced with its source before any framing/panel",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc0a3edefe2b77934476909c59f0b95b2aeae62e0d94fa2d14e15839d2d72d72",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.476Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

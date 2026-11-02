@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPT30D8W4F3RJXWM7K38",
+  "kind": "Decision",
+  "subject": "design/native-routing-policy-v1",
+  "family": "decision.3.6.1",
+  "statement": "In `strongest_satisfying` mode the resolver considers only the already-selected harness-role catalog and selects its unique strongest qualified profile if, and only if, that profile satisfies every requested minimum. Otherwise it returns `unsupported`. The mode changes candidate preference, not demand, harness, role, required review depth/count, or aggregation.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:dce30c702f6af43b31dfd4d3178a94c062815258658ba49f8640892c328de6b3",
+    "source-design:df3278e35a16498224497dc3c18bffb19ac339ec3c6fa91585f47f302028a062",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCT6YEY0VPZCSYACPC7E6"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.667Z",
+  "provenance": {
+    "source": "docs/tech-design/native-routing-policy-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/native-routing-policy-v1.md lines 109-109 in section 3.6; sha256:dce30c702f6af43b31dfd4d3178a94c062815258658ba49f8640892c328de6b3"
+  }
+}

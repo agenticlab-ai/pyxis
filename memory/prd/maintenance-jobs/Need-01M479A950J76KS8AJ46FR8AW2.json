@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A950J76KS8AJ46FR8AW2",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "J2",
+  "statement": "When Several hosts are available at the scheduled time, I want Select one attempt for that occurrence, so I can Avoid duplicate work and conflicting proposals",
+  "rationale": "Operator Git-ref coordination ruling",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

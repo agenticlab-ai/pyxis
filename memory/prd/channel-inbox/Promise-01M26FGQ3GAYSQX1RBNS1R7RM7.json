@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3GAYSQX1RBNS1R7RM7",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "ABUSE-3",
+  "statement": "A careless or compromised distributor floods `blocking` bulletins — vector: over-use of the emergency tier",
+  "intent": "notification fatigue trains operators to ignore",
+  "fit_criterion": "authoring discipline (signed, distributor-only) + the tier being a distributor-owned, auditable, append-only record; social, noted for the runbook",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9599183850a588e31ba889345ff40cb827bc0fc0fcfad69e1d63f4c4bb38d090",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.968Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

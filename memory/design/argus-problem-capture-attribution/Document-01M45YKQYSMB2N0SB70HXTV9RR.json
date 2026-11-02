@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M45YKQYSMB2N0SB70HXTV9RR",
+  "kind": "Document",
+  "subject": "design/argus-problem-capture-attribution",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/argus-problem-capture-attribution.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:eaf1c1f560b5371f51bf4de06740ce3c5bfdbb812767232eaf5a4abc15132bb6"
+  ],
+  "body_sha256": "eaf1c1f560b5371f51bf4de06740ce3c5bfdbb812767232eaf5a4abc15132bb6",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T11:53:59Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-problem-capture-attribution.md",
+    "note": "offline reconciliation"
+  }
+}

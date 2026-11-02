@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ092D9BZ8DDXCWDBXTM",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "UB-4",
+  "statement": "If If attribution cannot be derived in CI for a protected-path diff, then the system shall fail closed for the protected-path subset",
+  "intent": "a refusal with reason",
+  "fit_criterion": "an attribution-underivable protected-path fixture is refused",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:454e0bf35c8286de3fb736aba365f064da90072b07cb277a391ee34c19410d9f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.865Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

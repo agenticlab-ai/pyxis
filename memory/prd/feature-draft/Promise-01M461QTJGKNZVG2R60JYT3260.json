@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461QTJGKNZVG2R60JYT3260",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-8",
+  "statement": "An agent impersonates the operator — vector: self-declared author label",
+  "intent": "forged approval",
+  "fit_criterion": "FR-58, FR-51, UB-13",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:84b1d44ba46970adb1b921baf084cf80a04951c8cbdd9d4d332340040d0d0805",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRV7RF387633T4VX3X183N"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:48:38Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

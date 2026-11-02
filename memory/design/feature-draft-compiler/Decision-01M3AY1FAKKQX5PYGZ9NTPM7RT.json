@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3AY1FAKKQX5PYGZ9NTPM7RT",
+  "kind": "Decision",
+  "subject": "design/feature-draft-compiler",
+  "family": "prd",
+  "statement": "Draft PRD rows compile through the reconciler's shared claim mapping, while exact working-file texts become native literal Documents and only the PRD and tech spec determine the draft digest.",
+  "rationale": "One mapping prevents ledger and draft semantics from diverging, and exact text keeps lock preparation reproducible.",
+  "tags": [
+    "code:internal/draft/compile",
+    "code:internal/memory/reconcile"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T00:04:30Z",
+  "provenance": {}
+}

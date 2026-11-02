@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBJ1W3F4JK4H7XTMBYY2A",
+  "kind": "Document",
+  "subject": "brainstorm/skill-command-prefix-tech-design",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/skill-command-prefix-tech-design.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "09ea3fd715671a813d960118f623b9df25e96c408f6e73cb14131d2a92f14130",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:19Z",
+  "provenance": {
+    "source": "docs/brainstorms/skill-command-prefix-tech-design.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRK3FHWMCGXF1K1DEWZ4",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "J5",
+  "statement": "When a session dies mid-grilling, I want resume from the record without re-answering, so I can protect the rulings from context loss",
+  "rationale": "stage-1 precedent (FR-14 there)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3210ca664004e45278eb7a87e7333a8c30ba1040d5afc4479846d7f0f82acde9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.491Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

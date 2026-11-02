@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKD51Q04YW6B4WY943N",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "G2",
+  "statement": "We believe verified task landing as the only DAG-advance event will preserve dependency order through human review; expected result: every eligible transition corresponds to a landed blocker and no premature pickup",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:68e0f5e4671fe890bfd1149ea6a36b7bd91870f10e761f5b22f54c60b67f0a7a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.477Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

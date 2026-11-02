@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQV0JQ81S3141580WVZB",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "NR-10",
+  "statement": "A normal run with no ready implementation and no applicable review obligation performs no routing, claim, reviewer, or model work; a review-only recovery run never routes/claims implementation and never scans or attempts an unselected obligation.",
+  "rationale": "zero combined work remains zero inference, while recovery cannot launder pending work or widen the driver's bound",
+  "fit_criterion": "combined-empty fixtures emit zero work; selected/unselected/exhausted fixtures prove byte-identical task/proposal identities, zero implementation launches, and zero unselected review reads/attempts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:489514ff5c89ee54d0c0131b6684e1fc45245edd4c0646c69dbbf2d3583ce6eb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.72Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

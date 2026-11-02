@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJBAWZ1V4S9TVT7HCFY",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-1",
+  "statement": "When invoked, the skill shall verify the requirement basis before anything else: admit a merged per-feature PRD (reading its `effective.md`) or citable corpus requirement anchors; refuse a draft or unmerged PRD and a basis-free request, naming the state and the remedy, writing nothing.",
+  "rationale": "grilling against an unfrozen or absent contract yields a record citing unstable anchors (#D-3)",
+  "fit_criterion": "fixture sessions: merged-PRD and corpus bases admitted; draft-PRD and no-basis fixtures refused with state + remedy named, zero writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:23f04de3734ec720d4ce05fcc9b5f597b1b5e77c2ce311af4127c1df1334a29c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.467Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

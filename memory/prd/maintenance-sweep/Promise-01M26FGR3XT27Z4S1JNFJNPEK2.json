@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3XT27Z4S1JNFJNPEK2",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-10",
+  "statement": "Where a waiver names a package or a frozen plan, the sweep shall suppress that package's unwired finding or that plan's touches findings, and report each applied waiver with its recorded reason; a waiver entry carrying no reason shall refuse to load under UB-2's closed parse.",
+  "rationale": "deliberate exceptions stay visible — and justified — never silent (D-2), for both waiver kinds the detectors carry",
+  "fit_criterion": "a waived package produces an applied-waiver line surfacing the waiver's reason and no finding; a waived plan produces an applied-waiver line and zero touches findings for its tasks; removing either waiver restores the findings; a reasonless waiver entry faults the load (UB-2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d6d5ae22a016937aa4515e71ccc0c62ac785c5eaf96bbbe1ec494713a080b53b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.005Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

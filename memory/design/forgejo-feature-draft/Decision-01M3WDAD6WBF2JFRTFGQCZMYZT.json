@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6WBF2JFRTFGQCZMYZT",
+  "kind": "Decision",
+  "subject": "design/forgejo-feature-draft",
+  "family": "D-7",
+  "statement": "Extend the existing source push gate to observe working-draft authoring stage and defer only final draft-ready there; required PR readiness continues to judge the same contract predicate, and every preparation, prepared-head push, and lock uses complete memory integrity plus current-digest readiness. (design-brainstorm:forgejo-feature-draft-tech-design#D-7)",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6RCA9TV7H429MMZ5B0"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6KA1XQ6K734GDGEBDY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5W0XDJ0F1VHVZ7DRWM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5XQ95KJG91KQJTJRCX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD64TWPWAGF26KV3F6AE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD65VA25KH924C4219TT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6DBR2N0V2GX8KRT3TR"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

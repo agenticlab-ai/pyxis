@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQA0285GXA65WD6J5GAJ",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "UB-2",
+  "statement": "If If implementing code diverges from the approved solution-shape, then the system shall surface the divergence at the code PR (shape is superseded by code, divergence noted)",
+  "intent": "\"deviates from approved shape\" signal",
+  "fit_criterion": "a code change diverging from the approved shape is flagged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fae5baffbef5d6e6e7a013e6f344a4661a811dcfe3d5a2dcb1a838e99cc3f4ae",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.176Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

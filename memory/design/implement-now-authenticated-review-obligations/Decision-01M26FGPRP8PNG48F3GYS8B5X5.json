@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRP8PNG48F3GYS8B5X5",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "decision.3.6.1",
+  "statement": "A review attempt resolves `role=review` through only its effective backend's current qualified catalog. Its requested minimum is the exact `ProfileMinimum` retained from the verified execution demand, including the assurance band; normal least-cost-satisfying resolution selects exact or promoted capacity. The executor never supplies a weakest placeholder, `strongest_satisfying` as the normal mode, a numeric rung, another backend's policy, or an implementation-only native control.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b91b8155d5034dfb4aad32be7e57d1f7aec30d9267d05f32805ad00812480b8f",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.622Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-authenticated-review-obligations.md lines 173-173 in section 3.6; sha256:b91b8155d5034dfb4aad32be7e57d1f7aec30d9267d05f32805ad00812480b8f"
+  }
+}

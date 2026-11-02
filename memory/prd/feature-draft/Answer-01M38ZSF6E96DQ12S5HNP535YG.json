@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSF6E96DQ12S5HNP535YG",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Open, for the technical design to settle: how the memory-authority change for draft-born features lands on the mainline before any work relies on it (brainstorm:feature-draft#P-1). Owner: the tech spec author.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQVP787FFPFVNPMWKTBS3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:36Z"
+}

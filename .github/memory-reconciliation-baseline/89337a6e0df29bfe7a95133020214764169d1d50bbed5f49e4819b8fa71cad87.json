@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/local-work-tracker#Q3",
+  "feature": "local-work-tracker",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

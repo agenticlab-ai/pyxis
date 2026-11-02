@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4H6J26VX19JG0NR8NE",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "NR-2",
+  "statement": "docgate and codegate behavior is unchanged by the sweep's existence",
+  "rationale": "disjoint moments stay disjoint (NG-2)",
+  "fit_criterion": "docgate's and codegate's own suites pass unchanged with the sweep present; no shared mutable state exists",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:808d81a3c3d7d7400322274b913b28ce64ad05ee88a2747453b15d4763a9f052",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.025Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

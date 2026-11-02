@@ -1,0 +1,37 @@
+# The checks that judge the pull request itself share one job, and with it one
+# runner, checkout and Go toolchain: draft readiness (changed feature drafts
+# against mainline) and the description template
+# (.pyxis/templates/pr-description-template.md, including that its Lines of
+# code figure matches the diff). The job also runs when a description is
+# edited, so fixing a description re-runs the check without a push; the draft
+# check is cheap to repeat. Pull requests from feature-draft branches are
+# exempt from the description check: their description is the approval view
+# the feature-draft contract defines.
+name: pull-request
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYXIS_CI_BASE: "${{ github.event.pull_request.base.sha || github.event.before }}"
+      PYXIS_CI_EVENT: "${{ github.event_name }}"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: Judge changed drafts and the description
+        env:
+          PYXIS_PR_DESCRIPTION_RUN: "1"
+        run: .pyxis/scripts/code-gate-resolve.sh run --no-cache --group pull-request

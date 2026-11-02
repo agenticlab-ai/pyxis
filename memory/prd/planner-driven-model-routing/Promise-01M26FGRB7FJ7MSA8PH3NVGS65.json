@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB7FJ7MSA8PH3NVGS65",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-8",
+  "statement": "If a frozen v1 rung is unknown to the applicable compatibility table, then the system shall fail before claim and name the plan version and unsupported value",
+  "intent": "legacy compatibility error; plan unchanged",
+  "fit_criterion": "unknown-rung fixtures perform zero claim/invocation and zero rewrite",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ce78303a92a1a1878399f68d05f0ee1a646fdf5a7ed0ee0c9ce5d15a4acdcea4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.239Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

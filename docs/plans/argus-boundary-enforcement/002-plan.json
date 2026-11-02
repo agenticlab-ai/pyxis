@@ -1,0 +1,510 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Argus attribution hardening — the produced, forgery-resistant, positively-established authorship derivation — plan 002",
+  "feature": "argus-boundary-enforcement",
+  "prd": "docs/prds/argus-boundary-enforcement",
+  "design": "docs/tech-design/argus-attribution-hardening.md",
+  "plan_version": "002",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Harden the Argus attribution derivation — produce the authorship signal by construction, bind it to commit content forgery-resistant, and positively establish human authorship under a positively-Argus-wins precedence",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Confirm the shipped protected-path classifier and scope resolver stand under the hardened derivation",
+      "goal": "The shared protected-path classifier and the author-independent declared-scope resolver — the width derivation the hardened attribution gate keys its refusal off — remain unchanged and correct, so the scope-width derivation is provably not re-opened by this hardening.",
+      "current": "The classifier and the scope resolver are SHIPPED by plan 001: a target resolves into the authority-contract, governance-document, other-problem-ledger, out-of-declared-scope, or in-scope class, and a drive's permitted width derives from the named problem's committed delivery ledger (which a current drive cannot retroactively widen) or, on the first documentation PR, a slug-derived fixed set plus a fixed named allowlist that admits no code path and no same-PR self-attribution. The hardening changes the authorship signal, not this width derivation.",
+      "desired": "The classifier and resolver stay byte-for-byte the source of the width the hardened gate refuses against — the produced, content-bound trailer strengthens only the identification the width keys off, never the width itself. A drive naming a broader problem still buys only what that problem's merged ledger genuinely owns; the first-PR grammar still admits only the slug's own document subtrees and the fixed allowlist. The scope-integrity fixtures pass exactly as before, confirming no regression, and the hardened derivation reuses this predicate rather than deriving any boundary from an author-writable signal.",
+      "scope": [
+        "confirm the committed-ledger width derivation is unchanged and un-widenable by a current drive",
+        "confirm the first-PR slug-grammar plus named-allowlist width takes no author-controlled same-PR input and admits no code path",
+        "confirm the unresolvable-scope signal still fails a consumer closed"
+      ],
+      "out_of_scope": [
+        "the authorship derivation itself — who authored a diff, not how wide the scope is",
+        "any change to the width derivation — it is carried forward verbatim, not re-opened"
+      ],
+      "acceptance": [
+        "against a committed delivery ledger, a target the merged ledger does not own is out-of-scope even under a broader problem slug, and an owned target is in-scope",
+        "on a first-PR resolution the slug's own document subtrees and the named allowlist are in-scope while a code target and any same-PR self-attributed target are out-of-scope",
+        "an unresolvable declared scope still yields the unresolvable signal a consumer maps to fail-closed"
+      ],
+      "key_interfaces": [
+        "the protected-path classifier mapping a target to a protected-path class or the in-scope result",
+        "the author-independent declared-scope resolver with its committed-ledger and first-PR branches",
+        "the unresolvable-scope result a consumer maps to fail-closed"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/FR-9",
+        "prd:argus-boundary-enforcement/FR-10",
+        "design:argus-attribution-hardening#3.5",
+        "design:argus-attribution-hardening#DINV-6"
+      ],
+      "touches": [
+        "internal/argus/boundary"
+      ],
+      "size_band": {
+        "lo": 20,
+        "hi": 70
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T1",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Confirm the shipped authority-contract structure arm stands as the author-independent backstop",
+      "goal": "The authority-contract structure arm remains the complementary, author-independent catch the hardened attribution gate leans on for the raw-commit-forger residual, so an evade of the authorship signal cannot land a structurally-illegal authority contract.",
+      "current": "The structure arm is SHIPPED by plan 001: a base-free self-registered gate check parses the authority contract against version-pinned closed vocabularies and reports a named defect on a current tier absent from the ladder, a bare pointer flip (including a wiped or fabricated-birth history), a change-history row missing a required field, or a ladder token that is not a defined action class — for any author, independent of the attribution trailer. The hardening does not change this arm; it relies on it for the direction the trailer cannot cover.",
+      "desired": "The structure arm stays the sole layer inspecting the authority contract's structure for any author, so the hardened attribution gate's honestly-owned residual — a raw-commit-access forger who hand-writes a correctly-bound trailer — is backstopped: a structurally-illegal authority contract reds at the structure arm regardless of the trailer, closing the authority-contract evade path the trailer alone cannot. A legal contract and the born contract still pass, a malformed contract is still a named parse defect not a crash, and every non-authority-contract tree's verdict stays byte-identical.",
+      "scope": [
+        "confirm the structure arm still reds each authority-contract structural violation for any author",
+        "confirm a legal and a born contract still pass and a malformed one is a named parse defect",
+        "confirm the arm's governed set stays disjoint from the immutability check and non-authority verdicts stay byte-identical"
+      ],
+      "out_of_scope": [
+        "the attribution trailer and its content binding — a separate layer this arm complements",
+        "any new structural invariant — the shipped three-invariant evaluation is unchanged"
+      ],
+      "acceptance": [
+        "a structurally-illegal authority contract reds at the structure arm regardless of the diff's author",
+        "a legal contract and the born contract pass, and a malformed contract yields a named parse defect with a non-zero verdict",
+        "the gate verdict on every non-authority-contract tree stays byte-identical and the immutability check's governed set is unchanged"
+      ],
+      "key_interfaces": [
+        "the base-free self-registered structure-arm check over the authority contract",
+        "the version-pinned closed vocabularies of tiers, action-class tokens, and the change-history move enum",
+        "the named parse defect for an undelimitable or wrong-version contract"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/FR-4",
+        "prd:argus-boundary-enforcement/FR-5",
+        "prd:argus-boundary-enforcement/FR-6",
+        "prd:argus-boundary-enforcement/FR-7",
+        "prd:argus-boundary-enforcement/FR-8",
+        "prd:argus-boundary-enforcement/UB-3",
+        "prd:argus-boundary-enforcement/NR-1",
+        "prd:argus-boundary-enforcement/NR-2",
+        "design:argus-attribution-hardening#3.8"
+      ],
+      "touches": [
+        "internal/docgate/authoritycontract"
+      ],
+      "size_band": {
+        "lo": 20,
+        "hi": 70
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T2",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Confirm the shipped write hook stands as the fast at-write-time layer",
+      "goal": "The per-CLI write hook remains the fast at-write-time layer that denies a protected-path write before any bytes, fail-closed, so the honest layer split the hardened gate completes is intact — the write hook as the early layer, the attribution gate as the unbypassable backstop.",
+      "current": "The write hook is SHIPPED by plan 001: a canonical deny decision classifies a target against the shared protected-path predicate, denies fail-closed on a protected path, an unresolvable scope, or a hook-runtime error, and is wired per supported agent CLI as a pointer-only adapter that holds no protected-path knowledge; a CLI whose hook cannot fail closed is listed with the merge-boundary backstop as its stated guarantee. The hardening changes the merge-boundary attribution derivation, not this hook.",
+      "desired": "The write hook stays the fast layer that denies a protected-path write at write time, fail-closed on every ambiguity and hook-runtime error, wired per CLI with the knowledge authored once on the vendor-neutral surface and each CLI a pointer. It remains explicitly non-absolute — an out-of-band write skips it — which is exactly why the hardened attribution gate is the unbypassable merge-boundary backstop for a write that did not go through the honoring path.",
+      "scope": [
+        "confirm the canonical deny decision still denies a protected-path or out-of-scope write fail-closed and allows an in-scope one",
+        "confirm each supported CLI's wiring stays a pointer, with a non-honoring CLI listed under the merge-boundary backstop",
+        "confirm a hook-runtime error still denies fail-closed, never fails open"
+      ],
+      "out_of_scope": [
+        "the merge-boundary attribution derivation — the hardened layer this hook is the fast complement to",
+        "any new supported-CLI adapter — the shipped adapter set is unchanged"
+      ],
+      "acceptance": [
+        "a protected-path or out-of-scope write is denied fail-closed and an in-scope write is allowed",
+        "each supported CLI's wiring is a pointer with no protected-path content, and a non-honoring CLI is listed with the merge-boundary backstop as its guarantee",
+        "a forced hook-runtime error denies fail-closed, never allows"
+      ],
+      "key_interfaces": [
+        "the canonical deny decision over a target and a drive",
+        "the per-CLI pointer adapters on the vendor-neutral surface",
+        "the fail-closed deny on a hook-runtime error"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/FR-1",
+        "prd:argus-boundary-enforcement/FR-2",
+        "prd:argus-boundary-enforcement/FR-3",
+        "prd:argus-boundary-enforcement/UB-1",
+        "prd:argus-boundary-enforcement/UB-2",
+        "prd:argus-boundary-enforcement/UB-6",
+        "prd:argus-boundary-enforcement/NR-3",
+        "design:argus-attribution-hardening#3.8"
+      ],
+      "touches": [
+        "internal/argus/writehook"
+      ],
+      "size_band": {
+        "lo": 20,
+        "hi": 70
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T3",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "The producer: a commit-time Argus-Drive stamp out of the drive's reach",
+      "goal": "The authorship trailer is produced by construction on every commit a drive's work is landed as — stamped by the commit-authoring actor at commit-authoring time, never chosen by the model — so no drive path can land a commit whose Argus authorship is underivable, closing the latent-signal gap.",
+      "current": "Nothing produces the authorship trailer. The base attribution gate verifies an authorship trailer in a commit's final trailer block via the shared trailer key, but no producer exists — not the drive, a skill, a git hook, or a worker — so a real Argus-authored commit carries none, derives as human, and is served: the gate guards a signal that is never emitted. The commit-authoring actor is the supervisor/harness, and it stamps nothing today.",
+      "desired": "A commit-message hook on the repo's existing hook surface, activated once per clone exactly as the shipped documentation-gate hook is, appends the contractual authorship trailer keyed on the active drive's slug to the final trailer block of every drive-authored commit. The hook entry is a thin shell shim — a hook surface is a hard shell requirement — that holds no logic and delegates immediately to a new stamper binary that computes and appends the trailer and its content binding; all logic lives in that binary. The drive authors files, not commits, so it never reaches the surface that emits the trailer: it can neither add one to frame, omit one to evade, nor alter one — the signal is produced out of the drive's reach. A commit authored outside a drive carries no trailer and derives as human, correctly, since it is not a drive's landed work. Where a commit is authored through an agent CLI's own commit path, the producer is wired via that CLI's commit-message surface as a per-CLI pointer adapter — the stamp authored once on the vendor-neutral surface, each CLI a pointer, a new supported path a new adapter — mirroring the shipped write hook's author-once-wire-per-CLI posture.",
+      "scope": [
+        "the stamper binary that computes and appends the authorship trailer keyed on the active drive's slug",
+        "the thin shell hook shim on the existing hook surface that delegates to the stamper and holds no logic",
+        "the per-CLI pointer wiring for a CLI that authors commits through its own commit path",
+        "a commit outside a drive carrying no trailer"
+      ],
+      "out_of_scope": [
+        "the content-binding derivation and the gate-side verification of the binding — the derivation layer consumes the produced trailer",
+        "the three-state positive-establishment resolution — a separate gate-side concern",
+        "retroactively stamping pre-mechanism history — the transition is from-here-forward, never a history rewrite"
+      ],
+      "acceptance": [
+        "a drive-authored commit made through the producer hook carries the authorship trailer by construction, keyed on the active drive's slug, with no hand-addition",
+        "a commit authored outside any drive carries no authorship trailer and derives as human",
+        "the hook entry holds no logic and delegates to the stamper binary, and a CLI-specific commit path is wired as a pointer, not a content copy",
+        "the producer sits on the commit-authoring surface the drive never reaches, so the model can neither add, omit, nor alter the trailer"
+      ],
+      "key_interfaces": [
+        "the stamper binary that appends the contractual authorship trailer and its content binding",
+        "the thin shell hook shim delegating to the stamper on the existing hook surface",
+        "the shared contractual trailer key the base gate already reads",
+        "the per-CLI pointer adapter for a CLI's own commit path"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/FR-12",
+        "design:argus-attribution-hardening#3.1",
+        "design:argus-attribution-hardening#DINV-3"
+      ],
+      "touches": [
+        "cmd/argus-drivestamp",
+        "internal/argus/drivestamp",
+        ".githooks"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 190
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "The hardened derivation: content-binding, the positive-human reader, and the positively-Argus-wins three-state",
+      "goal": "The attribution derivation becomes forgery-resistant in strength and positively three-stated — an in-tree content binding closes replay credential-free, human authorship is positively established by its own single-sourced reader, and a protected-path diff resolves into positively-Argus, positively-human, or underivable under a stated positively-Argus-wins precedence — so absence fails closed without ever refusing a human, and a drive-plantable human attestation can never launder a positively-Argus diff.",
+      "current": "The base attribution derivation reads the authorship trailer from a commit's final trailer block and folds a file's introducing commits with an Argus-over-underivable-over-human precedence, refusing an Argus-authored protected-path diff and failing closed on an underivable one. But it has no content binding — a trailer lifted verbatim onto a different commit re-derives fine, so replay is not detected — and it defines human as the mere absence of the Argus trailer, so a stripped signal on a protected-path diff masquerades as a legitimate human edit. There is no positive-human reader; a positive human attestation is read elsewhere for a different predicate, not for authorship establishment.",
+      "desired": "The trailer carries a binding to the commit's own content that the derivation re-derives from the commit through the repository, credential-free with no ambient credential and no signing key, so a trailer lifted onto a different commit fails the binding and derives underivable — never Argus to frame, and on a protected-path diff fail-closed, never a silent human pass. Human authorship on the protected subset is positively established by a positive attestation signal read by its own single-sourced positive-human reader, distinct from the existing operator-attestation reader that answers a different predicate and evolves independently, so absence of the Argus signal yields underivable rather than human. A protected-path diff resolves into exactly three states evaluated positively-Argus-first: positively-Argus refuses — including a diff that is both positively-Argus and positively-human, because the drive-plantable positive-human attestation must never launder a produced, out-of-reach authorship stamp; positively-human and not positively-Argus passes, never refused; underivable fails closed. A determinable in-tree committer identity is non-adversarial best-effort disambiguation only, committer-settable, carrying no forgery-resistance, so no binding element rests on it — the derivation is decidable on the attestation and the precedence alone. The credential-free, badge-independent read is preserved and the scope-width derivation is untouched.",
+      "scope": [
+        "the in-tree content binding re-derived from the commit that detects a replayed trailer as underivable, credential-free",
+        "the single-sourced positive-human reader distinct from the existing operator-attestation reader",
+        "the positively-Argus-wins three-state resolution over a protected-path diff, including the both-signals collision refusing",
+        "the derivation staying credential-free and badge-independent with no signing key"
+      ],
+      "out_of_scope": [
+        "producing the trailer — the producer layer stamps it; this layer verifies and derives",
+        "the scope-width derivation — reused verbatim, not re-opened",
+        "a controlled signing key or a server-verified committing identity — rejected as the operator's to grant, never introduced"
+      ],
+      "acceptance": [
+        "a replayed trailer lifted onto a different commit fails the in-tree binding and derives underivable, and on a protected-path diff fails closed",
+        "absence of the Argus signal on a protected-path diff derives underivable, never human, while a positively-attested human diff derives positively-human and passes",
+        "a protected-path diff carrying both a produced authorship stamp and a planted human attestation refuses, positively-Argus winning the precedence",
+        "the derivation reads no ambient credential and no mutable badge, and no binding element rests on the committer identity"
+      ],
+      "key_interfaces": [
+        "the in-tree content-binding re-derivation over a commit, credential-free",
+        "the single-sourced positive-human reader for authorship establishment",
+        "the three-state resolution folding authorship under a positively-Argus-wins precedence",
+        "the committer-identity read as non-security-bearing best-effort disambiguation"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/FR-12",
+        "prd:argus-boundary-enforcement/FR-13",
+        "prd:argus-boundary-enforcement/FR-9",
+        "prd:argus-boundary-enforcement/FR-10",
+        "prd:argus-boundary-enforcement/UB-4",
+        "prd:argus-boundary-enforcement/NR-4",
+        "prd:argus-boundary-enforcement/NFR-1",
+        "design:argus-attribution-hardening#3.2",
+        "design:argus-attribution-hardening#3.3",
+        "design:argus-attribution-hardening#DINV-4",
+        "design:argus-attribution-hardening#DINV-5"
+      ],
+      "blocked_by": [
+        "T4"
+      ],
+      "touches": [
+        "internal/argus/attribution"
+      ],
+      "size_band": {
+        "lo": 150,
+        "hi": 290
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "The hardening corpus: the live drive-produced refusal, the forge/replay/strip proofs, and the both-signals collision",
+      "goal": "The corpus proves the hardened properties none of the shipped per-layer fixtures can: a genuine drive-produced signal refused by the gate on that produced signal, a forged or replayed or stripped signal that cannot flip the derived class either way, and the both-signals collision where a planted attestation cannot launder a produced stamp.",
+      "current": "The seeded abuse-and-legitimate corpus is SHIPPED by plan 001 and proves the cross-layer properties of the pre-hardening layers — each abuse class refused at its owning layer, the honest-split out-of-band write caught at the merge boundary, zero false refusals — but every attribution fixture hand-seeds a trailer directly, so nothing proves the trailer is actually produced on a real drive-authored commit, nothing exercises the content binding against a replayed trailer, and nothing exercises a planted human attestation on a positively-Argus diff. Those proofs did not exist before the producer and the content binding.",
+      "desired": "The corpus is extended with the hardening proofs against a real commit graph, built commit-by-commit through the producer rather than a hand-seeded trailer. A genuine end-to-end drive of a protected-path write, stamped by the producer, is refused by the gate on its produced signal — proving the signal is produced, not assumed. A forged trailer written on a raw commit does not flip a human diff to Argus; a replayed trailer lifted onto a different commit fails the content binding and derives underivable; a stripped trailer on a protected-path diff fails closed — the class flips in neither direction, never Argus-to-human to evade nor human-to-Argus to frame. A protected-path commit carrying both a produced authorship stamp and a planted operator attestation in its body is refused, not passed, the produced out-of-reach stamp winning the precedence so the drive-plantable attestation is inert — closing the injection-planted-attestation vector at the precedence, not the structural verdict. The legitimate positively-attested human protected-path diff still passes with zero false refusals.",
+      "scope": [
+        "the live drive-produced-signal refusal against a real producer-stamped commit",
+        "the forge, replay, and strip proofs showing the derived class does not flip in either direction",
+        "the both-signals collision refusing a produced stamp beside a planted attestation",
+        "the legitimate positively-human protected-path pass with zero false refusals"
+      ],
+      "out_of_scope": [
+        "the producer, the content binding, and the three-state logic themselves — proven-by-use here, authored in the producer and derivation tasks",
+        "the shipped pre-hardening cross-layer fixtures — carried forward unchanged, not re-authored",
+        "any authority-contract mutation — the corpus reads and asserts, never writing a protected path"
+      ],
+      "acceptance": [
+        "a genuine producer-stamped drive commit touching a protected path is refused by the gate on its produced signal",
+        "a forged, a replayed, and a stripped signal each leave the derived class un-flipped — no framing to Argus, no masquerade to human",
+        "a protected-path commit carrying both a produced stamp and a planted operator attestation is refused, the stamp winning the precedence",
+        "the legitimate positively-attested human protected-path diff passes with zero false refusals"
+      ],
+      "key_interfaces": [
+        "the live drive-produced-signal fixture built through the producer against a real commit graph",
+        "the forge, replay, and strip fixtures asserting no class flip in either direction",
+        "the both-signals collision fixture asserting refusal on the produced stamp",
+        "the legitimate positively-human protected-path control"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/DOD-10",
+        "prd:argus-boundary-enforcement/DOD-11",
+        "prd:argus-boundary-enforcement/ABUSE-2",
+        "prd:argus-boundary-enforcement/ABUSE-3",
+        "design:argus-attribution-hardening#3.13",
+        "design:argus-attribution-hardening#A-1",
+        "design:argus-attribution-hardening#A-3"
+      ],
+      "blocked_by": [
+        "T4",
+        "T5"
+      ],
+      "touches": [
+        "internal/argus/corpus"
+      ],
+      "size_band": {
+        "lo": 110,
+        "hi": 230
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Capstone: acceptance, composition, the glossary landings, and the incident-I1 bootstrap note",
+      "goal": "The hardened gate composes and reports as one self-registered check adding no shared line, its acceptance spine is green end to end, the candidate glossary terms land, and the introducing PR states the incident-I1 bootstrap exception — so the from-here-forward transition is complete and the one PR that installs the mechanism is honestly backstopped.",
+      "current": "The base attribution gate is SHIPPED by plan 001 as a base-requiring self-registered check the documentation-gate context runs, evaluating the PR's own commit range so pre-mechanism history is never in range. But the hardened acceptance — the live-produced-signal refusal, the forge-replay-strip corpus, the both-signals collision, the credential-free read with the binding re-derivation, the positively-human pass — is not yet assembled into the gate's acceptance evidence, no hardening glossary terms are landed, and no PR states the bootstrap exception for the mechanism whose own introducing PR cannot be gated by the producer and gate it installs.",
+      "desired": "The hardened gate stays one self-registered check that the required documentation-gate context runs over the PR's own commit range, adding no hand-edited shared enumeration line, dispatch line, or help line, and introducing no new egress, identity, secret, credential, or network surface — the producer a hook on the existing surface, the verification an in-tree read. Its acceptance is green end to end: a live drive-produced protected-path refusal, an underivable protected-path fail-closed with a positively-human control passing, a forge-replay-strip and both-signals corpus red in both directions, and a credential-free CI read that reads no mutable badge. The candidate glossary terms for the hardened derivation land in the wiki glossary, and the introducing PR carries the incident-I1 bootstrap note — the producer and gate cannot gate their own introducing PR, so operator review is that one PR's sole backstop while they bind every subsequent PR; pre-mechanism history is never refused because it is never in a later PR's evaluated range.",
+      "scope": [
+        "the composition proof that the gate adds no shared line and no new outward surface",
+        "the assembled acceptance evidence spanning the live-produced, fail-closed, forge-replay-strip, both-signals, and credential-free cases",
+        "the hardening glossary-term landings",
+        "the introducing-PR incident-I1 bootstrap note and the from-here-forward range"
+      ],
+      "out_of_scope": [
+        "the producer, derivation, and corpus logic themselves — assembled here, authored in their own tasks",
+        "retroactively stamping or refusing pre-mechanism history — outside every later PR's range by construction",
+        "a controlled signing key or any stronger-than-credential-free construction — the operator's to grant, deferred"
+      ],
+      "acceptance": [
+        "the gate composes as one self-registered check adding no shared enumeration line, dispatch line, or help line and no new egress, identity, secret, credential, or network surface",
+        "the acceptance evidence is green across the live-produced refusal, the underivable fail-closed with a positively-human control passing, the forge-replay-strip and both-signals corpus, and the credential-free read",
+        "the hardening glossary terms land in the wiki glossary",
+        "the introducing PR states the incident-I1 bootstrap exception and the gate evaluates only the PR's own commit range so pre-mechanism history is never refused"
+      ],
+      "key_interfaces": [
+        "the self-registered gate check composing with no shared line and no new surface",
+        "the assembled hardened acceptance evidence",
+        "the wiki glossary entries for the hardened derivation",
+        "the introducing-PR bootstrap note and the from-here-forward evaluated range"
+      ],
+      "traces": [
+        "prd:argus-boundary-enforcement/UB-5",
+        "prd:argus-boundary-enforcement/NFR-1",
+        "prd:argus-boundary-enforcement/NFR-2",
+        "prd:argus-boundary-enforcement/NFR-3",
+        "design:argus-attribution-hardening#3.6",
+        "design:argus-attribution-hardening#3.7",
+        "design:argus-attribution-hardening#DINV-7",
+        "design:argus-attribution-hardening#A-5",
+        "design:argus-attribution-hardening#A-6"
+      ],
+      "blocked_by": [
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "touches": [
+        ".github/workflows",
+        "docs/wiki/glossary.md"
+      ],
+      "size_band": {
+        "lo": 40,
+        "hi": 120
+      },
+      "mechanical": false,
+      "plan_task_id": "argus-boundary-enforcement/002/T7",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-1",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-2",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-4",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-5",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-6",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-7",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-8",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-9",
+      "tasks": [
+        "T1",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-10",
+      "tasks": [
+        "T1",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-12",
+      "tasks": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/FR-13",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-1",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-2",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-3",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-4",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-5",
+      "tasks": [
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/UB-6",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/DOD-10",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:argus-boundary-enforcement/DOD-11",
+      "tasks": [
+        "T6"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:b6bbb72f51b5116e84d3ece9a2a427c23c8d73dc8b28fc946200d21743455e83"
+}

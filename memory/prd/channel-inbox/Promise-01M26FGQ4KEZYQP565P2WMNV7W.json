@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4KEZYQP565P2WMNV7W",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "NFR-4",
+  "statement": "`pyxis doctor` shall surface inbox state — mute (with expiry), snapshot age, last-fetch outcome, and any invalid-signature fault — performing no mutation.",
+  "intent": "Operability",
+  "fit_criterion": "doctor reports each field across fixtures; the filesystem diff across a doctor run is empty",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0d3caeb827021d09de750aae0be58b5e7046dfad84ffd393cc4b14a374a01a62",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.003Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

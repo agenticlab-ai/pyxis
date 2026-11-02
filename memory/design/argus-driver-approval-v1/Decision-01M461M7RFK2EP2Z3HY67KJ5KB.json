@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M7RFK2EP2Z3HY67KJ5KB",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-7-argus-performs-review-and-its-granted-act.1",
+  "statement": "Replace the guide's unconditional lock-approval prohibition with\nan act-time grant check. For contracts, inspect the exact prepared contract\nafter both current-digest cold reviews and required native checks. For\nimplementation PRs, verify required checks and the independent exact-head\nimplementation review. Approve through the native command and journal the\nreview ID and policy commit. Without grant request the operator; keep explicit\nlocal Git's operator procedure. Continue to verify landed content before\nplanning or reporting delivery.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d19ce0e597f14b0e1ce7d9f08d96dd616d1d85e0c32d1c91f4a366286316d315",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:40Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 167-174 in section 3-d-7-argus-performs-review-and-its-granted-act; sha256:d19ce0e597f14b0e1ce7d9f08d96dd616d1d85e0c32d1c91f4a366286316d315"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8HRYMSXDJD2AGT28K0",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-2",
+  "statement": "Given the same contract inputs, the gate shall produce an identical verdict — no network access, no clock- or randomness-dependent behavior.",
+  "intent": "Determinism",
+  "fit_criterion": "repeated fixture runs byte-identical in verdict content (modulo declared timing fields); a network attempt by the gate fails the determinism suite",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:185e60a39492bc5f4fdd20984b24dbf3d1a4ba504e133cf902ab112a88565070",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.129Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

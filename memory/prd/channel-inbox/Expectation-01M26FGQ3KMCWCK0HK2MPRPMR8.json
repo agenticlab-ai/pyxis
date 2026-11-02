@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3KMCWCK0HK2MPRPMR8",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken (session unharmed, offline floor, existing hooks)",
+  "intent": "NR-1..NR-3",
+  "fit_criterion": "suite result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:768fab4669875f066a6d35c0931b3375b18a2166e1e5c54cb588b51112d222c0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.971Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

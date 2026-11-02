@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0RVFXXVC1M7X7SD4ME",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-25",
+  "statement": "Where the operator's repository answer declares a local-only install, the system shall derive `tracker=carina`, `ci_mode=local`, and `wiring.protection=none`, declare no gh-transport operation, and ask no GitHub question.",
+  "rationale": "the offline floor is v1 acceptance, not a fallback; an install that will never reach GitHub must not interrogate the operator about it",
+  "fit_criterion": "for the derived knobs the declared operation table contains zero gh-transport rows and the run performs no GitHub call; the interactive transcript contains no tracker, CI-mode, or protection question",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6618d34371a0282e5b14dc4c21c8fd532574380d8fe16c9e656cb0fa9e3cb31e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.904Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

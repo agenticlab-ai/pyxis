@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QZV93WQH9N8FW1487B42NS",
+  "kind": "Decision",
+  "subject": "design/codegate-format-output",
+  "family": "formatter-output-mode",
+  "statement": "The format check consumes the explicit StackDefaults.FormatOutputMode from ecosystem data. File-list mode fails on each nonblank stdout path; exit-status mode accepts successful informational stdout. Nonzero exits fail in both modes, and missing or unknown output modes fail closed.",
+  "intent": "Allow additional stacks to declare formatter semantics without per-stack verification code.",
+  "rationale": "The PR #1308 review reproduced a fourth stack returning zero while listing unformatted files; deciding semantics from the Go stack name would certify that formatter green and violate codegate A-1.",
+  "fit_criterion": "Tests preserve Go file-list and Python exit-status behavior, switch one fourth stack between both output modes, reject incomplete or unknown modes, and inspect comparisons and switch cases for Go stack branches.",
+  "tags": [
+    "code:internal/verify/checks",
+    "code:internal/verify/ecosystem"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-30T01:46:12Z",
+  "provenance": {
+    "pr": 1308,
+    "note": "Replaces the unlanded Go-name decision to address discussion_r4119416985; bound to the exact proposed code."
+  }
+}

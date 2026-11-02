@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWF77X6N7C9J0P7J2C9",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-10",
+  "statement": "When rung 2 runs, the harness shall execute the test verb and fail the rung on any test failure; while a baseline is bound for the repo, the rung shall instead evaluate no-new-failures against it — failing on any failure absent from the baseline and recording observed baseline shrinkage.",
+  "rationale": "full regression on healthy repos by default; honest binding on red-main repos; the ratchet only tightens",
+  "fit_criterion": "a clean fixture passes and one seeded failing test reds rung 2 (no baseline bound); the red-main fixture (K pre-existing failures) passes with zero new failures and fails when one new failure is seeded; a baseline-shrink run records the shrink in the verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d3e25cfa40699073e2e02e785197a60657faca8f23fb819c7b5ed8268a5a6a4d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.767Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

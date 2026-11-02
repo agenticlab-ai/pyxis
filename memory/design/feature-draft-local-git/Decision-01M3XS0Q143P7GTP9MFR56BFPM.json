@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0Q143P7GTP9MFR56BFPM",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.16.1",
+  "statement": "Explicit local-git selection resolves one configured bare origin,\nchecks that the working repository uses it, and requires the configured mainline\nto exist before draft open or preparation. It never falls back from a failed\nhosted approval. The separate first-mainline push is bootstrap, not a draft\nreview or lock (§3.2; `FR-53`; `design:local-git-codehost#D-1`, `#D-2`).\nEvery prepared draft-lock generation durably stores the review request's nonce\nand readiness digest before that request is presented; neither value is inferred\nfrom a later receipt.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f052fec647f947eabf801e3bb0035aa369799329efc6b986ab298396523b9100",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:17Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 274-281 in section 3.16; sha256:f052fec647f947eabf801e3bb0035aa369799329efc6b986ab298396523b9100"
+  }
+}

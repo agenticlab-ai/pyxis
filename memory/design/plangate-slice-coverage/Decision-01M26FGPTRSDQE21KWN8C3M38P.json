@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTRSDQE21KWN8C3M38P",
+  "kind": "Decision",
+  "subject": "design/plangate-slice-coverage",
+  "family": "decision.3.1.1",
+  "statement": "`fold` validates a plan's coverage matrix as before — every claimed requirement resolves to a **live** unit of the governing PRD and maps to ≥1 task, every task maps to ≥1 requirement or design anchor, Should/Could rows are covered or explicitly Deferred (unchanged) — but it **no longer demands that every live Must FR/UB of the feature appear**. The matrix *is* the plan's declared slice. A claim on a superseded or retired unit is still a defect; a dropped claimed requirement or a rogue task is still a defect (the internal-consistency + fog bar is untouched — plan-new-v1 §3, FR-16). Exact defect wording and the resolver live in the shape.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:48a6dd1afddcfdad4bd577b344307dab021c73347189733b506243652aef4f2a",
+    "source-design:0ea83e322d0283b789882107f66b09d9c23df47b2e6c185c511a30a16d45bd6b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCV8DBGQ42AWQCWKWFXD4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.688Z",
+  "provenance": {
+    "source": "docs/tech-design/plangate-slice-coverage.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/plangate-slice-coverage.md lines 39-39 in section 3.1; sha256:48a6dd1afddcfdad4bd577b344307dab021c73347189733b506243652aef4f2a"
+  }
+}

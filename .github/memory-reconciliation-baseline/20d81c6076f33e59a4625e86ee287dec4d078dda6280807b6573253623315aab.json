@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/pipeline-measurement#Q1",
+  "feature": "pipeline-measurement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

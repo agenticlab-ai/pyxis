@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFDNPTQXXRJ2Q8THEES",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-9",
+  "statement": "When the undo step is run, the system shall remove the installation — unchaining any chained hook to restore the prior hook path, deleting the paths adoption added, and clearing the epoch — preserving all post-adoption work, and shall name any manual addition for the human to reverse.",
+  "rationale": "reversibility is the trust lever; removal, not snapshot-revert, so a week of the operator's own work survives (D-8; refined by D-11)",
+  "fit_criterion": "after adopt → undo on the fixture, the whole tree is byte-identical to its pre-adoption state; a post-adoption commit made before undo survives",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fa16484c7860e35bb10caf431ad16f2673667a9096addc5dbfbc9556fc78d7e8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.349Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3XRQZMYMCY9JTEY7C1700KD",
+  "kind": "Document",
+  "subject": "design/feature-draft-local-git",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/feature-draft-local-git.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced"
+  ],
+  "body_sha256": "0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:31Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "offline reconciliation"
+  }
+}

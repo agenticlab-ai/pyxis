@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJS6QHYC31D9YKTA780",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-7",
+  "statement": "The skill shall maintain the record as typed sections under the versioned sibling template (`design-brainstorm-record/v1`) — sharing the stage-1 spine (routing-pair header, dense anchors, gate mechanics, citation grammar family) and carrying at minimum: rulings, facts, typed fog, alternatives-considered with their scores, a seam map, and parked product gaps — the exact section set pinned by this feature's technical design.",
+  "rationale": "the record is the cross-boundary contract (AP-6); the sibling class was pre-reserved (#D-2, #F-2); exact schema is a design decision (#P-1)",
+  "fit_criterion": "100% of gated fixture records pass the sibling structure checklist; the template pins its version and its coverage targets",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bec8d92dd6e5acbf630602306e7e50aaea3cd511c430dbc9b25d543835488966",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.481Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

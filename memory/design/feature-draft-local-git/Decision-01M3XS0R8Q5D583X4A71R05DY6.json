@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0R8Q5D583X4A71R05DY6",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.16.2",
+  "statement": "The operator command records a closed, versioned draft-lock\nreceipt with these required bindings (`FR-52`):",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6cd51216f0c632445059feff404f6cd0689f351d2e0c8627e984da9eb044aded",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:18Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 301-302 in section 3.16; sha256:6cd51216f0c632445059feff404f6cd0689f351d2e0c8627e984da9eb044aded"
+  }
+}

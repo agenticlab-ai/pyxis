@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3HY4CE2K5DADFE3PNQXTSYX",
+  "kind": "Decision",
+  "subject": "design/model-routing-retirement",
+  "family": "compatibility-retirement",
+  "statement": "Retire numeric model-routing fields, translation tables, legacy task carriers, review-demand reconstruction, and legacy routing-evidence production. Execution reads independent frozen implementation and review requirements, and unsupported legacy inputs fail closed before external effects.",
+  "rationale": "Native routing makes numeric compatibility redundant. Preserve historical bytes and deprecate the existing designs in living policy, while retaining codegate verification rungs and semantic capability profiles. Tracker transport, dispatch reporting, release authorization, conformance helpers, and integration fixtures follow the same boundary; touched-file harness cleanup preserves behavior. The merged native planning contracts retain intake and lock support; fixture and boundary tests cover malformed requirements and plan scopes.",
+  "tags": [
+    "code:cmd/implement-now",
+    "code:cmd/routing-release",
+    "code:internal/adapters/harness/opencode",
+    "code:internal/adapters/tracker/carina",
+    "code:internal/adapters/tracker/forgejo",
+    "code:internal/adapters/tracker/github",
+    "code:internal/executiondemand",
+    "code:internal/executiondemand/conformancetest",
+    "code:internal/executor/config",
+    "code:internal/executor/dispatch",
+    "code:internal/executor/port",
+    "code:internal/executor/report",
+    "code:internal/executor/reviewinvoke",
+    "code:internal/executor/reviewobligation",
+    "code:internal/executor/taskspec",
+    "code:internal/plangate/dialect",
+    "code:internal/plangate/plan",
+    "code:internal/plangate/project",
+    "code:internal/plangate/render",
+    "code:internal/routingevidence",
+    "code:internal/executor/taskspec/taskspectest"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-27T17:20:47Z",
+  "provenance": {
+    "source": ".pyxis/model-routing.md"
+  }
+}

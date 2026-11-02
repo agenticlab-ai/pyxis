@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7TS4G3HFGESVYCWVX4",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-16",
+  "statement": "When validating a disposition, the gate shall require every old binding to name an exact binding element on the superseded target, every replacement binding to name an exact binding element on the current live target, every mapping and conformance-evidence reference to resolve, every pinned fingerprint to match the evaluated revision, and the approval attestation to resolve under its exact current authority policy; the gate shall not infer consumed bindings, score compatibility, or itself decide completeness or contradiction.",
+  "rationale": "a deterministic gate can prove structure, freshness, and exact approval binding, while the independently authenticated human reviewer owns the consequential scope-completeness and compatibility judgment",
+  "fit_criterion": "positive fixtures validate exact mappings and attestations for both edge kinds; missing anchors, unresolved evidence, changed subject/target/mapping/record bytes, stale policy, unrelated approval, author-equal reviewer, non-approved verdict, and unauthorized or revoked reviewer each fail before the edge is cleared; inspection finds no model call, prose inference, or semantic scoring path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1321aecf8aa6595158aedfcc0ea831c610d2e9f08ff55df03e73dea44b207da4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.106Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

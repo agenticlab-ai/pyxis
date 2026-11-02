@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPZMWDHPMV7DT0AMYFDG2",
+  "kind": "Document",
+  "subject": "review/impl-review-000",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/impl-review-000.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:ed074dbc7ebeddabe94dfd61bcef032a20748d333efb8955ab8f3dae2d996b04"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC9PYCYW7T3DF2E37QPG1"
+    }
+  ],
+  "body_sha256": "ed074dbc7ebeddabe94dfd61bcef032a20748d333efb8955ab8f3dae2d996b04",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:31Z",
+  "provenance": {
+    "source": "docs/reviews/impl-review-000.md",
+    "note": "offline reconciliation"
+  }
+}

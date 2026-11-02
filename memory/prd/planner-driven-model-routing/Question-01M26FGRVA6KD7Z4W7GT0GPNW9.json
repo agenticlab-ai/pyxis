@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVA6KD7Z4W7GT0GPNW9",
+  "kind": "Question",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "Q3",
+  "statement": "Which compatibility values map each historical explicit rung while keeping absent v1 routing conservative? (`brainstorm:planner-driven-model-routing#P-3`)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; FR-15 fixes the absent-rung behavior and no-rewrite rule",
+  "fit_criterion": "Phase A design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:3ab7742bcbfd2b90f8d4307094f1524891f80e230928fc771c081494b0227bee",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.754Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

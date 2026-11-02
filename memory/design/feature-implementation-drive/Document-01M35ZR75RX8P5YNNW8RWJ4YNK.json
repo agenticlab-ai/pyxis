@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK",
+  "kind": "Document",
+  "subject": "design/feature-implementation-drive",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/feature-implementation-drive.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCQSGHPTQGNYZ6H14SMKD"
+    }
+  ],
+  "body_sha256": "0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:12Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "offline reconciliation"
+  }
+}

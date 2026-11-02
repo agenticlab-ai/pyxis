@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGA5RDNGDEFW24AZYV3",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "DOD-4",
+  "statement": "One real feature runs idea → gated record → `prd-new` → 000-base draft with zero synthesis decision-questions and 100% of decision-log rows anchored",
+  "intent": "FR-13, M1, M2",
+  "fit_criterion": "the record + the draft 000-base + the synthesis transcript",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2add8d00dda6920dd642e51fc6c643bdd7be987a6d4d964347306c48e0cf44e4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.378Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

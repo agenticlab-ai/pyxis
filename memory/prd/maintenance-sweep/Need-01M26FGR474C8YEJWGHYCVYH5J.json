@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR474C8YEJWGHYCVYH5J",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "J2",
+  "statement": "When after a frozen plan's tasks close, I want know if task surfaces the plan named never materialized, so I can catch charter under-delivery early",
+  "rationale": "F-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bedccd406ae5e861a293340e520c34039b152b02b18970a51971b17e4861cf5c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.015Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

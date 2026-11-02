@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3YSP8G9HJBT1KXS0TQ",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-2",
+  "statement": "When the unwired-packages detector runs, the sweep shall report each first-party package that no shipped binary's import graph reaches, excluding waived packages.",
+  "rationale": "the dead-feature class (#514/#515) (D-2)",
+  "fit_criterion": "on the pinned replay fixture of the pre-wiring mainline, the lane and wake package trees are reported; on a fixture with full wiring, zero unwired findings",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:391694e40dcf148c75fb1202fad957add46d3fe903a890889f0d148ec4213188",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.006Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

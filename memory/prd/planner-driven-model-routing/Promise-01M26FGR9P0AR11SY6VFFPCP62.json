@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9P0AR11SY6VFFPCP62",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-23",
+  "statement": "When the planner freezes a plan/v2 task for `/implement-now`, the planner shall record at least one resolvable evidence citation supporting its assessment values.",
+  "rationale": "the assessment must preserve why every executor task was classified, not only its labels",
+  "fit_criterion": "uncited or unresolved evidence fails plan validation before freeze; EVAL-1 proves that every recorded assessment value is supported by at least one cited anchor and rejects irrelevant, contradictory, or only partially supporting citation sets without requiring a distinct citation per axis",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4fe5ea1c93210db4dbd45731009bbb766a243cc12cd69e78014bde7f237ab437",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.19Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T4ZNNVPTB0F7G4NJQCGNQ",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "J3",
+  "statement": "When A previously abandoned feature is restored, I want require fresh authority for any later removal, so I can prevent an old decision from deleting a new generation",
+  "rationale": "Existing stale-evidence protections",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:926f07dea3169c192118719c157fe55f66586c10e56782ad40b8f64d181c6709",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:35Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

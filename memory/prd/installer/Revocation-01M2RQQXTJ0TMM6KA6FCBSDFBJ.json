@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M2RQQXTJ0TMM6KA6FCBSDFBJ",
+  "kind": "Revocation",
+  "subject": "prd/installer",
+  "statement": "Installer amendment 004 retires FR-12; the operator requires removal of the browser review runtime and its exclusive dependencies.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Promise-01M26FGR0DFZW2MG7KTQSW26VE"
+    }
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T22:28:06Z"
+}

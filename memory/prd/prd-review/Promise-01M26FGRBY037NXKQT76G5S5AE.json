@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBY037NXKQT76G5S5AE",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-15",
+  "statement": "The reviewer shall complete every review — to a verdict, with its artifacts — with zero human participation, and where a human overlay occurs, it shall read the same artifacts and block nothing.",
+  "rationale": "the world assumption (— #D-1)",
+  "fit_criterion": "the full fixture corpus runs unmanned end-to-end; the overlay fixture renders findings into the review surface with the verdict already recorded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1db5927a9c452d098d151d374044f288009a5fe06d4cd2a04ac6572ea999d978",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.262Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

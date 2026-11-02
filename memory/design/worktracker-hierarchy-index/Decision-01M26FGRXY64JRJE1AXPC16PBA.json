@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXY64JRJE1AXPC16PBA",
+  "kind": "Decision",
+  "subject": "design/worktracker-hierarchy-index",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:local-work-tracker/FR-19 · prd:local-work-tracker/FR-7 · prd:local-work-tracker/NFR-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ9DKXCV4P7RS6YTHBNT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR2K28H26PSQ1Z2NC3FY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR2SEE3ACAV0XN24V6TY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR3DHR0V5JKDRY0BBRW2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.838Z",
+  "provenance": {
+    "source": "docs/tech-design/worktracker-hierarchy-index.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6"
+  }
+}

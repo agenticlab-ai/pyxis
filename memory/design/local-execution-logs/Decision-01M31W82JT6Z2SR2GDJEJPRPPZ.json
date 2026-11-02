@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M31W82JT6Z2SR2GDJEJPRPPZ",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-5",
+  "statement": "Codegate invocation logs and pruning use .pyxis/logs/codegate, contract-gate's default report scratch uses .pyxis/logs/contract-gate, and e2e-design and e2e-review retain structured diagnostics under .pyxis/logs/reviews while continuing stderr output. Explicit shared report exports and codegate verdict, cache, and worktree state retain their existing artifact or state locations. The removed browser annotation driver no longer has a server-log producer.",
+  "intent": "Preserve the independent gate and review logging rules when retiring the browser annotation driver.",
+  "rationale": "The prior decision included the retired driver alongside independent diagnostic sinks. Superseding it removes the obsolete code scope while preserving the distinction between diagnostics, shared evidence, and durable state.",
+  "fit_criterion": "Codegate invocation and pruning tests use the log root, review logger tests cover JSON persistence and stderr fallback, and the browser annotation driver is absent from the source tree.",
+  "tags": [
+    "code:cmd/e2e-design",
+    "code:cmd/e2e-review",
+    "code:internal/docgate/contractgate",
+    "code:internal/verify/invoke",
+    "code:internal/verify/ladder"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26J1T3Z3YPPB0RGT95ZRBQN"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:39:59Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "note": "Preserves non-retired logging semantics from the superseded decision."
+  }
+}

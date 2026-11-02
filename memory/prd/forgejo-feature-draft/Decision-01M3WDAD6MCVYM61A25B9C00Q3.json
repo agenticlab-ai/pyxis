@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6MCVYM61A25B9C00Q3",
+  "kind": "Decision",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "R-1",
+  "statement": "Forgejo review and merged-PR fields or pagination differ from GitHub.",
+  "rationale": "Validate native response at installed version; malformed/missing identity refuses; installed test.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

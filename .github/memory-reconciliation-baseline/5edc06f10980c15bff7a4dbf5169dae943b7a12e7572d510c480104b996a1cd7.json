@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/pipeline-measurement#R2",
+  "feature": "pipeline-measurement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

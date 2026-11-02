@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M659N5RPGK62XJY0TQ0TV",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "decision.3.6.1",
+  "statement": "A shape is `authoritative` from its design's approval until the code implementing it exists; then its status becomes `superseded-by-code` and the code is the source of truth (FR-5). While `authoritative` and pre-code, a shape-confined change is a **re-approval** of the shape — the design is untouched (DINV-5); this is legal because the shape is non-frozen. A change that would alter the design's binding markup is not a shape change at all — it is a Decision change and takes the design's supersession path (DINV-5, FR-6). How \"the implementing code exists\" is signalled to flip the status is an open question (§7 Q2); until resolved, the flip is an explicit authoring act recorded in the shape header. A `superseded-by-code` shape is retained as a dated record but drops out of \"the authoritative shape\" resolution; the code answers \"what is the shape now.\"",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:fdd6bb6029a042c6ad1bb3d7bc74168437bc8e7fb093db442f4f361900b56503",
+    "source-design:ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPW3D55VGEWC45N3WB6M"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRZ599VTBS35Z9ENSAH28"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:35Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/solution-shape-v1.md lines 67-67 in section 3.6; sha256:fdd6bb6029a042c6ad1bb3d7bc74168437bc8e7fb093db442f4f361900b56503"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9CH8QQ3J28ZD9WHD49",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "FR-2",
+  "statement": "While a design is under review, the system shall present the concrete solution-shape in native form alongside the durable decisions in one review surface.",
+  "rationale": "native form is what engages shape review; one gate, not two",
+  "fit_criterion": "the review surface renders the shape as schema/interfaces (not prose) beside the decisions for representative designs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:05c32adc97b71ef627de6a21b4cc43a16149af1d2837e186c33ce523ac0a8c48",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.156Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

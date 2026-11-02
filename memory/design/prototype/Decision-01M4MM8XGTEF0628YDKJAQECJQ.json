@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGTEF0628YDKJAQECJQ",
+  "kind": "Decision",
+  "subject": "design/prototype",
+  "family": "D-3",
+  "statement": "A prototype's findings are written from a new prototype-record template into the next unused numbered file among the draft's brainstorm working files, each finding carrying an `L-n` anchor, its kind, what was tried, what was observed, and its answer (design-brainstorm:prototype-tech-design#D-2).",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG24F6N2AH0TB05W0XH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG3C4BXY5SG0E6R7FZB"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

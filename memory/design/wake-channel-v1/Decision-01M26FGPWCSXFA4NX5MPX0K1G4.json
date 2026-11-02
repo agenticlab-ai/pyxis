@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWCSXFA4NX5MPX0K1G4",
+  "kind": "Decision",
+  "subject": "design/wake-channel-v1",
+  "family": "decision.2.1",
+  "statement": "The wake channel is **registry-driven, push-preferred, backstop-guaranteed** — and **purely additive to the frozen argus pair**. Every drive stop on an external completion registers an **await** — the goal object and its completion condition — in the delivery ledger (the journal's stop entry is the authority; the derived block surfaces it in a typed grammar inside its existing Open-items element). Delivery is push-preferred: where an adapter can observe the completion it emits the normalized wake signal — problem slug + touch reason, nothing else — into the existing front door. The **bounded backstop tick** on the drive host is the guarantee: read the registered awaits, probe each awaited goal object with exact reads, invoke the agentic CLI once per due touch, exit — worst case one interval of latency, ~0 idle cost, zero cost for parks. Manual invocation remains the stated sequential fallback. No frozen prose moves: the contradiction walk (§3.7) shows every binding statement of the behavior design stays true, so this design `Builds-on` rather than supersedes. (design-brainstorm:argus-unattended-drive-tech-design#D-4, #D-5)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2e530398bbf4356d08cbbc98761a98fec4402571dbd5082ef27829d77cc1d086",
+    "source-design:aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYKH1ZFTCXZ2HF1JBR2G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.74Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-channel-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/wake-channel-v1.md lines 24-24 in section 2; sha256:2e530398bbf4356d08cbbc98761a98fec4402571dbd5082ef27829d77cc1d086"
+  }
+}

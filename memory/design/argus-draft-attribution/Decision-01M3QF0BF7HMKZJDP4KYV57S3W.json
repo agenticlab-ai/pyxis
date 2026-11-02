@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QF0BF7HMKZJDP4KYV57S3W",
+  "kind": "Decision",
+  "subject": "design/argus-draft-attribution",
+  "family": "decision.2.1",
+  "statement": "Keep the content-bound `Argus-Drive`/`Argus-Bind` pair on every drive-authored commit. Add only the active slug's working draft and compiled PRD/design record subtrees to the author-independent first-PR grammar. During `draft prepare-lock`, refresh bindings on replayed commits that already carry a valid stamp, retain unstamped commits as unstamped, and leave the Pyxis-generated lock commit unstamped. Treat stamps as auditable authorship evidence in the current single-user workflow; the operator's exact-head review remains the authority for merge.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:dea613a5de23a6fe34bc5163e27ff412df44580c8a3cc4d109ca69402334cb1c",
+    "source-design:50840bb44ee6bd5ac4ef45d4549e97811137877a00fcf9c7d76e5f2e0d12f77e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3QEXBNV1JSCVM6XR3V2ZYM0"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:51:52Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-draft-attribution.md lines 45-45 in section 2; sha256:dea613a5de23a6fe34bc5163e27ff412df44580c8a3cc4d109ca69402334cb1c"
+  }
+}

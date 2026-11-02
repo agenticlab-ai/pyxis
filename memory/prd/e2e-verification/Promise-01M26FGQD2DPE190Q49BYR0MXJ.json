@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD2DPE190Q49BYR0MXJ",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-25",
+  "statement": "When e2e-plan is invoked on an approved e2e design doc, the skill shall decompose it into an ordered plan of per-scenario tasks, plus a conventions task landing the harness's scenario contract and one worked scenario — omitted only when the repo already carries a scenario built against that harness — plus a harness task only when the feature's e2e harness does not already exist, and project it onto the tracker as ordinary tasks.",
+  "rationale": "the plan is the buildable output; ordinary tasks so the existing executor consumes them; the conventions task creates the shape parallel scenario workers copy instead of each inventing one; neither the conventions task nor the harness task is emitted when the repo already supplies it",
+  "fit_criterion": "on the dogfood, e2e-plan produces one task per scenario plus a conventions task iff no scenario is already built against the harness plus a harness task iff no harness already exists, projected onto the tracker; the tasks validate against the existing task and charter schema; a fixture with a pre-existing harness and existing scenarios yields zero harness tasks and zero conventions tasks",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5c7c2790886f9b4db3ef45169787507d8c142b5ceb8613734e956bb6bbd017d0",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.274Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXB1B7ATKG8Y9YNKJN3",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "EVT-2",
+  "statement": "brief_emitted / brief_answered fires when a breaking decision escalates; the human answers",
+  "intent": "brief id, class (override · deadlock), age, answer anchor",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ec746aae23033d62905a2df50bb270f30d004578287010e86632bb1ba8b00336",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.771Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

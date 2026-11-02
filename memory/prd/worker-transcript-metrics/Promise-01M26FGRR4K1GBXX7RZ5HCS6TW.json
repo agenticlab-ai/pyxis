@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRR4K1GBXX7RZ5HCS6TW",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-7",
+  "statement": "If If a reconciliation's independent source is unavailable, incomplete, or unreadable, then the system shall report that reconciliation as unavailable, never as clean",
+  "intent": "an explicit reconciliation-unavailable state, never a clean result",
+  "fit_criterion": "with the authoritative launch record withheld, FR-13 reports unavailable and M1 is not satisfied; with the required-figure set unreadable, FR-15 does the same for M2 — in neither case does a missing source read as zero discrepancies",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dae030db026ee41b35914703123b1c9e04139fad50d083b90d570027a527543a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.652Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

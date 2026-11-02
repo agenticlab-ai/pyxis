@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "worktracker.work-item/v1",
+  "description": "The schema-versioned machine projection of a work item (prd:local-work-tracker/FR-15). carina show --json validates against this golden schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "id", "type", "state", "title", "signals", "assignees",
+    "parent", "blocked_by", "created", "updated", "close_reason", "priority", "body", "log"
+  ],
+  "properties": {
+    "schema": { "const": "worktracker.work-item/v1" },
+    "id": { "type": "integer", "minimum": 1 },
+    "type": { "enum": ["feature", "milestone", "epic", "task"] },
+    "state": { "enum": ["open", "closed"] },
+    "title": { "type": "string" },
+    "signals": { "type": "array", "items": { "type": "string" } },
+    "assignees": { "type": "array", "items": { "type": "string" } },
+    "parent": { "type": "string" },
+    "blocked_by": { "type": "array", "items": { "type": "string" } },
+    "created": { "type": "string" },
+    "updated": { "type": "string" },
+    "close_reason": { "enum": ["", "completed", "rejected"] },
+    "priority": { "enum": ["", "none", "urgent", "high", "medium", "low"] },
+    "body": { "type": "string" },
+    "log": { "type": "array" }
+  }
+}

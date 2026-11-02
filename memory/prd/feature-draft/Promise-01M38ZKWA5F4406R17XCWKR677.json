@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKWA5F4406R17XCWKR677",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-2",
+  "statement": "While a feature draft is open, the system shall accept revisions to any of its parts in any round.",
+  "rationale": "Nothing locks before the loop converges (brainstorm:feature-draft#D-1)",
+  "fit_criterion": "A fixture draft revises each part in at least two rounds, including a PRD revision after both a tech-spec and a plan revision; zero revisions are refused for finality.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ace1478888fc2c083a48193d2d7a19305730bf24e8163717c32f650589851690",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:33Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

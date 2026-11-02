@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRA8MPGHTXW4S57VVMCZ",
+  "kind": "Need",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "J4",
+  "statement": "When an operator changes or audits routing policy, I want see the assessment, derived demand, selected profile, promotion, and outcome, so I can control spend and diagnose behavior without editing plans or adapter code",
+  "rationale": "`brainstorm:planner-driven-model-routing#D-9`, `#D-13`, `#D-14`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b09f80900d05f0504b0c5f3aa4ed87d22c7a96b5a44508af90f250c846605656",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.208Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

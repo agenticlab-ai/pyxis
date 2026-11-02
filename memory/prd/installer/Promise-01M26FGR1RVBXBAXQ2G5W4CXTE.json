@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1RVBXBAXQ2G5W4CXTE",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-12",
+  "statement": "If the repository question receives a blank answer or EOF — a bare Enter, a closed stdin, or a non-interactive pipe, then the system shall treat it as no destination chosen, never as a default destination, and stop cleanly before any write, exactly as the conditional coordinate exchange's absence ruling does",
+  "intent": "the pre-write refusal naming the missing destination",
+  "fit_criterion": "with stdin closed, init performs zero GitHub operations and zero writes and the target is byte-identical to its pre-run state; no repository is ever selected by default",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e206a78cf837efaac12f44ee7ba080a873ea0676527be57165d94ffb6407a8ee",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.936Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

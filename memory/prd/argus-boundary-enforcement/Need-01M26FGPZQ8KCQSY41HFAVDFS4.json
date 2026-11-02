@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPZQ8KCQSY41HFAVDFS4",
+  "kind": "Need",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "G2",
+  "statement": "We believe scoping the enforcement to Argus authorship and to protected paths; expected result: the human-author path stays fully open — legitimate human PRs to the same paths are never refused",
+  "fit_criterion": "M2 (legitimate-corpus false-refusal rate)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c23f66ce52e37e7651c27dac1d62fcb9df2f36941f231f383ee8106d982828f5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.847Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

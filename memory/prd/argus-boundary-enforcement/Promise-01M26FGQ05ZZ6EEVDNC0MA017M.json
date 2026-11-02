@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ05ZZ6EEVDNC0MA017M",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NR-4",
+  "statement": "The human-author path to protected paths",
+  "rationale": "the anti-segment must stay served; a human PR to the authority contract / governance docs / any path is never refused by the attribution gate",
+  "fit_criterion": "on the legitimate corpus, 0 human-authored PRs to protected paths are refused by FR-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d37cd3a976b1df55c093dbabf5495d1ca6ce169a8b5e853bfc8217c5d2afd9d3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.861Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

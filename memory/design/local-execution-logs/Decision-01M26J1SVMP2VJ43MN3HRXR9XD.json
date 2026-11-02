@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26J1SVMP2VJ43MN3HRXR9XD",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-3",
+  "statement": "Attended and unattended implement-now runs retain executor events at .pyxis/logs/executor/events.jsonl and tee operator diagnostics into a private per-run file. Watcher events use .pyxis/logs/watch, and phasemeter run records use .pyxis/logs/phasemeter. Explicit execution-log write destinations must remain inside the shared local-log boundary; readers can still consume explicitly supplied existing exports.",
+  "intent": "Make execution history available for local diagnosis across both execution modes without turning transient run records into shared project state.",
+  "rationale": "Attended execution needs the same retained diagnostics as unattended execution. Replacing scattered defaults with producer subdirectories gives users one ignored location, while write-path validation prevents an override from accidentally creating tracked logs.",
+  "fit_criterion": "Executor tests verify journal creation and unwritable destination errors. Phasemeter tests verify the new default and reject an outside-tree write destination before transcript access. Watch tests use the relocated store.",
+  "tags": [
+    "code:cmd/implement-now",
+    "code:cmd/phasemeter",
+    "code:internal/phasemeter/store",
+    "code:internal/watch"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T21:02:18Z",
+  "provenance": {
+    "source": ".pyxis/authoring/implement-now.md",
+    "pr": 1175,
+    "commit": "b8f9110c7262f587466a804e253337516daf6a7c",
+    "note": "Records executor, watcher, and pipeline measurement diagnostic storage."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9NZZY1ZWW0YDET2BXS",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-22",
+  "statement": "When the planner freezes a plan/v2 task for `/implement-now`, the planner shall record `reasoning`, `coupling`, `novelty`, `verification`, `impact_scope`, and `architectural_role` using the normative assessment vocabulary.",
+  "rationale": "every executor task needs complete inputs so dispatch cannot fall through to an absent, cheapest, or hardcoded route",
+  "fit_criterion": "every `/implement-now` plan/v2 golden carries exactly one accepted value for every field; missing and unknown values fail validation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:51361e37a230bd907b1674e92bd58d5af9a3a31bf749234d14aaf08dcb463467",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.189Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

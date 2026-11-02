@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWT21EC3643YRY9ZMJM",
+  "kind": "Decision",
+  "subject": "design/worktracker-hierarchy-index",
+  "family": "decision.3.6.1",
+  "statement": "the index is a directory of **empty marker files, one per edge**, under a parent-keyed shard: a child's membership under a parent is the *presence of its marker file*, carrying no data (`design-brainstorm:worktracker-hierarchy-query-tech-design#ALT-1`). A children query lists the parent's marker directory (bounded by k, the child count) and then reads each named child's authoritative item file; the rollup counts open ones from those reads. Empty markers mean the index can only ever *lag* membership, never hold a wrong value — the stale-value class of drift is structurally impossible, which is why decision-path re-verification (DINV-2) fully closes the correctness gap. The exact on-disk path layout (root, sharding, filename grammar) is in the solution-shape.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2a2c87f60f39f8a5a048b76973dfaaf909f7fecbaaa9ac935dde86c6c3be23ab",
+    "source-design:8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ9DKXCV4P7RS6YTHBNT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.754Z",
+  "provenance": {
+    "source": "docs/tech-design/worktracker-hierarchy-index.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/worktracker-hierarchy-index.md lines 78-78 in section 3.6; sha256:2a2c87f60f39f8a5a048b76973dfaaf909f7fecbaaa9ac935dde86c6c3be23ab"
+  }
+}

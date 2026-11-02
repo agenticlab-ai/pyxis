@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE5QADKQJHZKNWW3T8X",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "DOD-2",
+  "statement": "Failure behavior holds: missing surfaces named, unroutable problems refused, unbuilt stages never recommended as commands",
+  "intent": "UB-1, UB-2, UB-3",
+  "fit_criterion": "sandbox-run results in the implementation PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a5595b21ab3844f304f58e2162b65bb385117ca293cc9fcef800314f26bd4f26",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.309Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

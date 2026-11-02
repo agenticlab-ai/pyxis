@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXE584TC1R7N5TJMFWP",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-1",
+  "statement": "Rung 0 shall complete within 10 s at p95 on the reference (dogfood) repo.",
+  "intent": "Performance",
+  "fit_criterion": "p95 rung-0 wall-time ≤ 10 s on the dogfood repo across the dogfood run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:159e4d5b5a5372b16aefb5528766fe634593fe4425275ce4fb9fb5c0a9e58deb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.798Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

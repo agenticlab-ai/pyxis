@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3XRQ4SCAE8956Q7PHYTQRV3",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-11",
+  "statement": "Every active Must FR passes its fit criterion",
+  "intent": "active FR-1 through FR-55",
+  "fit_criterion": "acceptance corpus results for hosted and explicit local modes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aaad7910062207e12918dd1a7b292211faf461789c97c4b9d59034360e261d5d",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M38ZJAF4HGTHE7Z8Q1AQ1QNM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:03Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPEAQ6VRJF6ND4B0Q51",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-10",
+  "statement": "Rework is distinguishable: for a multi-process task, the first-pass process is identifiable from its own record",
+  "intent": "FR-11, J3",
+  "fit_criterion": "the batch's multi-process task records",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:11a0c63e390676d3bcf536513ac018db0aa2b414adfb33f6d82011454cde2528",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.598Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

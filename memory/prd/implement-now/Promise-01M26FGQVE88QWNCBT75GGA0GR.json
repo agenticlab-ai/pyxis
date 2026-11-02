@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVE88QWNCBT75GGA0GR",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-17",
+  "statement": "If an authored e2e test's verdict varies across runs on identical input, or depends on wall-clock, network, load, ordering, or ambient repository state, then the system shall stop that task before consuming further self-heal iterations, mark it failed naming the non-hermetic dependency, preserve its work, escalate, and never count it succeeded or wire it into required checks",
+  "intent": "task in the failed class with the non-hermetic dependency named",
+  "fit_criterion": "seeded flaky and environment-dependent fixtures stop with the dependency named, consume no self-heal iterations beyond detection, and are never counted succeeded; a hermetic test in the same run is unaffected",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4f757259cdd0356e1409f71759b723317ffebcd525dc145f0a1597177b506ff2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.734Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

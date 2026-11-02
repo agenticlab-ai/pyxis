@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC4TCK64WC8BAEZ6PQB0S",
+  "kind": "Document",
+  "subject": "research/harbormaster-self-drive-failure-taxonomy",
+  "family": "study",
+  "statement": "Imported Pyxis source document: docs/research/harbormaster-self-drive-failure-taxonomy.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/research",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "637abb18dd96623f375d89499e47e5fc84e79a0cb9e4f8104968c9ed8501f357",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:39Z",
+  "provenance": {
+    "source": "docs/research/harbormaster-self-drive-failure-taxonomy.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNGAB20B19F3MDQNKTXAT",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-47",
+  "statement": "The system shall bind a lock approval to the exact draft version presented and void the approval when the draft changes before the lock.",
+  "rationale": "An approval certifies what the approver saw (brainstorm:feature-draft#D-3)",
+  "fit_criterion": "A fixture draft changed after its approval request has its approval voided and is locked only after a new approval of the new version.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c2904eae2793f74c8dcf027f16940f862899cef4cdb35870b13f5b2f17e4b73",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:26Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

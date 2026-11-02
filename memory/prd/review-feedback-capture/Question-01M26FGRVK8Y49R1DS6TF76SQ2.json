@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVK8Y49R1DS6TF76SQ2",
+  "kind": "Question",
+  "subject": "prd/review-feedback-capture",
+  "family": "Q3",
+  "statement": "The privacy/redaction + access posture for captured verbatim comments",
+  "intent": "technical design",
+  "rationale": "open (`#P-3`)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d9373a304dd5363b68f0d52787a12aebbd749d7bfa58b7d5e6b30ecc590ada3b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.763Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M0TK45188MS26CYQ4QWM8",
+  "kind": "Decision",
+  "subject": "design/design-brainstorm-record-model",
+  "family": "decision.3.1.1",
+  "statement": "merge freezes a record uniformly; a reopened design effort starts a fresh record citing the frozen one (the class rule, unchanged). The needs-more-product path deliberately produces *two* PRs (record, then amendment): the record freezes the evidence before the contract moves, and the amendment's `Learned-from: operator-decision:design-brainstorm:<slug>#D-n` gives docgate's evidence classes a resolvable reference — exactly the pattern amendment 001 just exercised against a stage-1 record.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3ce00bd23d52b5f8dff4e583931b534a36372e955d73a29964241bd9c0e32d8f",
+    "source-design:88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPPPXDHSXF2XVZB77FDJ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQRWSTA3WXKR9HA3174WR"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:40Z",
+  "provenance": {
+    "source": "docs/tech-design/design-brainstorm-record-model.md",
+    "note": "exact Decision evidence at docs/tech-design/design-brainstorm-record-model.md lines 42-42 in section 3.1; sha256:3ce00bd23d52b5f8dff4e583931b534a36372e955d73a29964241bd9c0e32d8f"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Decision-01M44ZPM3YDKYJCMF0Y9X0HWYC",
+  "kind": "Decision",
+  "subject": "design/forgejo-feature-draft",
+  "family": "D-6",
+  "statement": "Select exactly one native merged proposal, verify the configured human's current-head review independently, establish mainline ancestry and exact compiled-record content/digest through Git, and publish or raw-byte-verify the annotated lock tag with race reconciliation. (design-brainstorm:forgejo-feature-draft-tech-design#F-6)",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M44ZPM3SRX9N973V4F1T1F3G"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M44ZPM3V9YENBF5W8MJ0G3R9"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M44ZPM3XASBDK7MSQSDSVBQS"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6H4QWE2ZNASVWZ3JSA"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M44ZPM3GANJEBJ2YGHZKG0EQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5VZ2A598C1EW89NFV1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD61Q8P2PWYXKRA7J0C6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD62FEQ5XZMDD9JPRSG2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD637TC0A2QSF2HXNVW3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD64TWPWAGF26KV3F6AE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD65VA25KH924C4219TT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD66FS5CPV7Z42QTAS5Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6ATJMPQ2F96DW49TR8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6CETYJXHV3SSCFAPHJ"
+    },
+    {
+      "type": "supersedes",
+      "target": "Decision-01M3WDAD6Y47DPMCG73BNQ2D4Z"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

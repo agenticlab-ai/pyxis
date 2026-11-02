@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAVASWY5P71HDDWBSJJ",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-32",
+  "statement": "When invoked as `check-projection-congruence` with a merge base, docgate shall evaluate every newly added amendment at its own immediately-before and immediately-after replay boundary and fail each after-only disagreement between a binding projected unit and its source-map record: missing on either face, non-live-but-rendered, live-but-absent, current-location drift, contract-field drift, or disagreement between the ID cell's human-visible lineage and machine lineage.",
+  "rationale": "deterministic generation can repeat two mutually inconsistent artifacts; the gate must prove agreement at the entry that changed them",
+  "fit_criterion": "each named mismatch class has an isolated red fixture; a same-ID mutation hidden in a section supersede is red; two added entries attribute only their own delta and name the actual inconsistent artifact plus the causative entry",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cdca391013b2fb4883c1ebf786c8778d473ce303e301c1f2cbd308438a21f8d0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.203Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

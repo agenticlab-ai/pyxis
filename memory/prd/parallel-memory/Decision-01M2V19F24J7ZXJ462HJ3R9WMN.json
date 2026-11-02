@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V19F24J7ZXJ462HJ3R9WMN",
+  "kind": "Decision",
+  "subject": "prd/parallel-memory",
+  "family": "R5",
+  "statement": "Bound Git process growth by reading all partition members in one batch after one tree listing; retain timing as advisory evidence.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The approved partition design trades one migration's file count for independent later edits. Exact operation counts establish the intended read strategy without a host-speed-dependent correctness threshold.",
+  "fit_criterion": "The 700-member Git fixture must use two Git processes for policy discovery and reading; malformed or unavailable members still fail, and fixed inputs yield deterministic results.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:29354134354b620002d4a3cb4095f39e0366347f0c22139f49660e6a46803e98",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:53:27Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN35ZWY590Q336ADQ0M",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-10",
+  "statement": "critical-pass independence and conservative aggregation",
+  "intent": "shared-context/output leakage, reversed order, split verdict, conflicting findings, post-edit, remediation-miscount",
+  "fit_criterion": "two distinct blind top-level contexts on one exact revision; order-invariant most-restrictive aggregate; edits rerun both",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4deaf0aa2626fdbb77de80148b99ca918f98c6adf6118925ff8af05ebf68437e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.531Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPQXKMHZZR5RP7P5AN1",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "G4",
+  "statement": "We believe pre-reviewed proposals at stage 9; expected result: the operator judges substance in minutes and says so",
+  "fit_criterion": "stage-9 capture-line minutes (M4, directional)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7131cf05a9ce93e8e35e2fdb3b9214a8543008a65b530f2fe0c0bcf3b4f87489",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.583Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8DYP9T37DYSJV2HWSE",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "mechanical defects the gate catches on the repo's own live contracts",
+  "fit_criterion": "the gate run over every live contract surfaces ≥ the known drift instance (§2.4) with zero false bounces, at the corpus-sweep checkpoint (before the hard gate is enforced)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f184be085764f715c7a8e712df269f7f8b18114683520b4dea1208083766be24",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.125Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

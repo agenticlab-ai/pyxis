@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNQY05KFJFP4NQ3G1JD",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-12",
+  "statement": "The reviewer shall cite, on every severity assignment, a row of a versioned calibration table maintained as reviewed data; a finding whose severity contradicts its cited row shall be structurally invalid.",
+  "rationale": "calibration as data — the anti-nitpick dial, auditable",
+  "fit_criterion": "schema validation enforces the citation; a contradiction fixture fails validation; the calibration file changes only via PR (history inspection)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cf773263532e7295c235d2ba9d0c344ecd3fb9968a204087d7fe2419e9482220",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.551Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

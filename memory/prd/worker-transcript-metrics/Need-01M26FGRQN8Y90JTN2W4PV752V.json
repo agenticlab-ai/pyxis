@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQN8Y90JTN2W4PV752V",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "M4",
+  "statement": "M4: G1",
+  "intent": "a launched process yields a record rather than a capture-failure entry",
+  "fit_criterion": "capture-failure entries ≤ 1% of launched processes across the same batch; malformed or unparseable input counts here (UB-5), never as an unavailability",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d70f00d702e2a8d52de7e5b2889705ac3e70798d7bf73bccc914f63c91928ce",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.637Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

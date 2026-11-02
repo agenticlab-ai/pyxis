@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP5CYZG2G18ZHD8PG72",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NR-2",
+  "statement": "The bootstrap-era review scripts and vendored runtimes are untouched",
+  "rationale": "maintained, never extended — the UI composes with them",
+  "fit_criterion": "zero diff under the review-tooling scripts and vendor trees",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:74fe26848fddcd3f6faefd805f4e3fbefa114ebd85cf34f52f3d494b569f5cba",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.589Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

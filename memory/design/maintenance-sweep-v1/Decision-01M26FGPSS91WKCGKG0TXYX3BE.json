@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSS91WKCGKG0TXYX3BE",
+  "kind": "Decision",
+  "subject": "design/maintenance-sweep-v1",
+  "family": "decision.3.3.1",
+  "statement": "The pass emits exactly one report per invocation: the **machine face** — one JSON object of a new closed, versioned schema (report + finding elements; the schema is the shape's) — on stdout; the **human face** on stderr (#D-2). Findings carry the PRD's four fields (detector, subject, evidence, remedy — prd FR-1); applied waivers are surfaced with their reasons (prd FR-10); a faulted detector appears as a named fault inside the report (prd UB-3). The **exit ranking is pinned**: any finding emitted → exit **1** (a coexisting detector fault stays named inside the report, never silently absorbed — the findings are the pass's actionable product); zero findings with any fault — pass-level (usage, misparse, unreadable state, malformed policy) or detector-level — → exit **2**; zero findings, zero faults → exit **0**; the machine face's `outcome` field maps by the same ranking (findings \u003e fault \u003e clean). The **human face is explicit on emptiness**: each clean detector prints its explicit \"0 findings\" line — never silence (the PRD's F1 empty state, held in this frozen half). The report pins the evaluated state honestly: `evaluated_state.commit` names HEAD, and a non-clean working tree sets a named `dirty` annotation on the machine face plus a human-face warning — the commit then names the base of the evaluated tree, not its exact bytes; the §3.7 correlation claim and every live bar run on clean checkouts (AP-13's clean-tree corollary). Ordering is fixed (detector order, then lexicographic subjects), and no machine-face field carries wall-clock content — the report is the event record (prd EVT-1) and a regenerable projection of state (the AP-28 posture the PRD states).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e43334d30a985952779d53a00b98cf0678704933c14804202c28f8091bf0a727",
+    "source-design:b49c1108056cb6e27cfdc8f53a55107ec21c42fdc8b75770b06d9bdfc579d2e8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSY3QQRTC6KH6V2VMXAT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.657Z",
+  "provenance": {
+    "source": "docs/tech-design/maintenance-sweep-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/maintenance-sweep-v1.md lines 64-64 in section 3.3; sha256:e43334d30a985952779d53a00b98cf0678704933c14804202c28f8091bf0a727"
+  }
+}

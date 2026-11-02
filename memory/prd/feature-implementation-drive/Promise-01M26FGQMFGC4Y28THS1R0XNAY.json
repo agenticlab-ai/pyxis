@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMFGC4Y28THS1R0XNAY",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-7",
+  "statement": "If If any required e2e route is failed, skipped, unavailable, inconclusive, or awaiting manual attestation, then the system shall keep the final proposal ineligible and surface the exact blocking route",
+  "intent": "verification blocked",
+  "fit_criterion": "Each route state independently blocks in the verdict matrix.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e9ff0e0767860b748a4f79654b8e42f3748e1e7eca034b869206a97abac687b7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.511Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

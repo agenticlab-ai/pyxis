@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFS7NREX2D41RHYP4W1",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-6",
+  "statement": "sweep_invoked fires when an executor sweep starts",
+  "intent": "initiator: enum(operator, drive-wake, other), scope: str (the plan/feature the sweep targets)",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:248a9bfe8095cc2dc3018f15013e027cfa04899354e5bdc79cb8d2aca8b99c12",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.385Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

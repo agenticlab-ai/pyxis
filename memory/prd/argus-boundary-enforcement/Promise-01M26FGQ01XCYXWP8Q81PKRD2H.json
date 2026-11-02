@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ01XCYXWP8Q81PKRD2H",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NFR-4",
+  "statement": "Every denial/defect/refusal shall name the path, the boundary, and a remedy.",
+  "intent": "Operability",
+  "fit_criterion": "each layer's fixtures assert a reason naming path + boundary + remedy (matching docgate's `{Verb, File, Op, Reason, Remedy}` shape)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:568967c6f4b744fe2efeff75867ff465236d9c75e5655ae25ef9bd070a1f6c47",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.857Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

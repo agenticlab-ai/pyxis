@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4Y0FK0FX4S0F91EMDQ8",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "FR-2",
+  "statement": "When the target contains the byte-identical frozen Learning with the supported inherited witness mismatch, the entry shall admit that Learning for repair.",
+  "rationale": "Incident boundary",
+  "fit_criterion": "#1437 reproduction admits; wrong-kind, rewritten, missing-history and new-record cases refuse",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

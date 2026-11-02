@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A9564W0Q24SD3A4QFW45",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "M1",
+  "statement": "M1: G1",
+  "intent": "Reinstallation matches the desired entries without writes",
+  "fit_criterion": "Zero writes on unchanged installs and exact owned-entry reconciliation at adoption",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3X1BDTXBGB5KV85NQN",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-10",
+  "statement": "When emitting a bulletin, `pyxis inbox` shall address the output to the relaying agent as a relay-to-the-operator instruction, and for the version advisory shall include the remedy (bump the pinned version and converge).",
+  "rationale": "the human hears it only if the agent relays; the remedy rides along",
+  "fit_criterion": "rendered output names the relay action and, for the advisory, the pin-bump-and-converge remedy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fa595b3060834de015d935214104c32ef12d098342ed1c1f621a594e5eabc2a1",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.981Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

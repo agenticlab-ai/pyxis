@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "Question-01M44ZPM41WEYM9QF177DDHTAM",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-9",
+  "statement": "FR-5 and blocking DOD-3 test unauthorized merges but do not require native negative direct/force-push or compiled-record path-rule bypass fixtures. The existing tech-spec D-5 forbids these bypasses; a mainline write could violate frozen design:feature-draft-v1 DINV-1 before post-merge lock verification refuses it.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

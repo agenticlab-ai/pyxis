@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3ZXYX2R1VNWKBA9BS6",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-4",
+  "statement": "When the rollup-staleness detector runs, the sweep shall report each living rollup whose last change predates the newest shipped-structure change by more than the configured bound.",
+  "rationale": "the post-017 freshness vacancy (D-2; F-2)",
+  "fit_criterion": "on a fixture where structure shipped after the rollup's last touch beyond the bound, the rollup is reported with the age delta; within the bound, zero",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e619bfdf0ad32a198e2b6f82135343cc488c49c6a221d8778bdeb4dfe58544f8",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.007Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

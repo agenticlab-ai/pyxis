@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQATX3NJP42QQ6A5CSVJ",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-31",
+  "statement": "When invoked as `check-content-paths`, docgate shall fail any system-footprint path reference (a `.pyxis/` path) in wiki entries or in the flat requirement corpus (its README included), and — when a merge base is given — in any PRD ledger entry or technical design added since the merge base; the live rollups, the root operating manual, generated artifacts, and documents present at the merge base are out of scope (rollups describe the shipped footprint; the root manual owns the pointers; frozen history is never retro-edited). Templates are cited by version pin.",
+  "rationale": "the corpus must survive footprint removal interpretable (repo-layout A-2/DINV-4); the promised grep gate becomes real, scoped forward-only (#54 A5)",
+  "fit_criterion": "fixtures: a wiki entry or corpus file containing a footprint path → red naming file and line; a ledger entry or design added since the merge base containing one → red; a pre-existing frozen document containing one → green; rollup and root-manual references → green; the real corpus green after the three known violations are fixed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:57de68c94a6fdd63a934b835a253cb87a559480e4908e9b53437818371dc691a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.202Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

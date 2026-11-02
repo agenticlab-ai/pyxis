@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGRCS33AYEQXT5JNE6S",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-13",
+  "statement": "While a record's gate verdict is ready-for-prd, every decision-shaped input `prd-new`'s template requires (problem, segments, jobs, goals direction, non-goals, appetite) shall hold a resolved decision, and every fog entry remaining in the record shall be typed non-blocking — sufficient for synthesis to proceed with no new operator decision-questions, remaining fog landing as the draft's open questions.",
+  "rationale": "the handoff is the product's success condition (M1); sufficiency must be checkable, not hoped — ready-for-prd with a gap in a decision-shaped input is a contradiction (FR-11)",
+  "fit_criterion": "`prd-new` run against every ready-for-prd fixture record asks median 0 (max ≤ 2) operator decision-questions (EVAL-5); the record-to-template coverage checklist reports full decision coverage of decision-shaped inputs and zero blocking fog",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f2d52b4e27ace5dfaa78c24bf50683fb355229b686e3560cf351012f91c32f8e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.392Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

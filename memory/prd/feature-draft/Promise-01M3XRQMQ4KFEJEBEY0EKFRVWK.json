@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQMQ4KFEJEBEY0EKFRVWK",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-54",
+  "statement": "While the switch-over is in effect, the system shall apply automated document-pipeline checks only to existing documents in repositories where those checks remain enabled, and shall apply none to draft-born contract parts. In the Pyxis source repository it shall preserve the approved memory-migration bypass; selecting local-git shall not restore legacy document checks.",
+  "rationale": "Frozen-document authoring rules survive independently of the operator-disabled source gate",
+  "fit_criterion": "Enabled document-pipeline fixtures retain existing-document immutability refusals and produce zero such findings for draft-born parts. A trusted Pyxis-source fixture continues to bypass legacy document checks at push and CI in both hosted and local mode; retained non-document checks still run. Inspection confirms that source authoring rules for frozen documents remain binding.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6380a738e3c29bb203aa0cf0c7a42f1a73e7eebed48f359185fe13295e92313",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZMFZK34K6B9AJA484TAGB"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:19Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNFB95MDEQZW6KDKTTJ",
+  "kind": "Decision",
+  "subject": "design/argus-write-hook",
+  "family": "decision.3.3.1",
+  "statement": "Two ambiguity/error conditions deny fail-closed: an **unresolvable declared scope** (treat the target as outside scope ⇒ deny) and a **hook process error / crash / timeout** (deny) *(design-brainstorm:argus-boundary-enforcement-tech-design#D-4; basis FR-2, UB-1, UB-6; AP-17)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6cb066930768d22f4725624406143bcd55ecfa8b1b880d628eabeb29a122deb2",
+    "source-design:dfc6f23a4cc2dece296b198784ba922223f6de3cf3c1852c94d19d33d77b9cde",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMF34NB9FBM4E3AAG4J4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.519Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-write-hook.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-write-hook.md lines 64-64 in section 3.3; sha256:6cb066930768d22f4725624406143bcd55ecfa8b1b880d628eabeb29a122deb2"
+  }
+}

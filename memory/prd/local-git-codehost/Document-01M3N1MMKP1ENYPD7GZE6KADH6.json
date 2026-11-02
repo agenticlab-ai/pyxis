@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMKP1ENYPD7GZE6KADH6",
+  "kind": "Document",
+  "subject": "prd/local-git-codehost",
+  "family": "problems",
+  "statement": "Draft problems.md",
+  "body_sha256": "6dc61e6883e38b8fb1c72fd0b9068d059cc203a5cf06389a39c7722cde166d0b",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

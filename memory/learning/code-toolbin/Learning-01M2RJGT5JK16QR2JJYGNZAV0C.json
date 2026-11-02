@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2RJGT5JK16QR2JJYGNZAV0C",
+  "kind": "Learning",
+  "subject": "learning/code-toolbin",
+  "statement": "toolbin resolves a sibling pyxis CLI to a runnable file by release pin or one-shot go build of ./cmd/\u003ctool\u003e, with PATH only as last resort.",
+  "intent": "Share one acquisition path so implement-now, plangate, and later callers do not reimplement carina lookup.",
+  "rationale": "Duplicated PATH-or-temp-build logic drifted and still missed source-mode checkouts.",
+  "fit_criterion": "Unit tests cover source build into .pyxis/bin, PATH fallback, missing tool, canceled context, and defective config.",
+  "learned_from": [
+    "internal/toolbin/toolbin.go"
+  ],
+  "tags": [
+    "code:internal/toolbin",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T20:56:50Z",
+  "provenance": {
+    "source": "internal/toolbin/toolbin.go"
+  }
+}

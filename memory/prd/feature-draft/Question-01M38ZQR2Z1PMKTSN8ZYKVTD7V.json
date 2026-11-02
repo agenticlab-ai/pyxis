@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M38ZQR2Z1PMKTSN8ZYKVTD7V",
+  "kind": "Question",
+  "subject": "prd/feature-draft",
+  "family": "Q2",
+  "statement": "When a migrating feature's memory capture has known gaps, does its draft open with each gap as a requirement problem, or does migration wait until reconciliation repairs the capture? Either way FR-11 through FR-16 refuse its lock until the gaps are resolved.",
+  "intent": "@mdarabi",
+  "rationale": "withdrawn — no migration in this release (brainstorm:feature-draft#D-26)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:4a216e7ddbf25e14a5365af1c3a0ab2235697137f6010ce45704e6adc57a071d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:40Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "captured from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

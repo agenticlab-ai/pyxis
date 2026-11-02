@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQEV9RZ213FYPR7FJ7F",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-11",
+  "statement": "If the proposal head differs from the revision bound to any live pass or aggregate, then the system shall mark the complete process `review-stale`, preserve it, and require every FR-24 pass on the new exact head before acceptance",
+  "intent": "stale process and forced full-set re-review",
+  "fit_criterion": "one post-review edit stales one-pass and two-pass processes alike; no old pass is reused; acceptance resumes only after the new full set satisfies",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c9f3ae30e915fd6b77a0a6b934b9f162dc11896ed5ab616ee7eec7d383c67f15",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.606Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

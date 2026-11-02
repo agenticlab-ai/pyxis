@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3G02E8S5NEHRPDGXKHSM",
+  "kind": "Document",
+  "subject": "skill/e2e-review",
+  "family": "lens-anti-gaming",
+  "statement": "Captured authored source: .pyxis/skills/e2e-review/lenses/anti-gaming.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:7af03580dd74a9f379119c1db769150a22e7a46881d69c38c5f56902203b8125"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB89PPB3CVTQK3ZH0824H"
+    }
+  ],
+  "body_sha256": "7af03580dd74a9f379119c1db769150a22e7a46881d69c38c5f56902203b8125",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:29Z",
+  "provenance": {
+    "source": ".pyxis/skills/e2e-review/lenses/anti-gaming.md",
+    "note": "offline reconciliation"
+  }
+}

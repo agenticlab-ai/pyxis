@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Learning-01M32Q6AY6GRGM6EJSVV9972ME",
+  "kind": "Learning",
+  "subject": "learning/forgejo-capability-bindings-and-credential-isolation",
+  "statement": "Pyxis selects task tracking, code hosting, source releases, distribution releases, and artifact downloads through explicit capability bindings; each connection keeps its own provider, server, repository, and credential reference. CI mode selects native hosted checks, local verification, or both for the selected code host.",
+  "intent": "Allow Forgejo and GitHub to coexist without a task operation, release download, or Git command silently using another capability's repository or account.",
+  "rationale": "A single global GitHub credential and owner/name coordinate cannot distinguish identical repositories on different servers or different accounts used by task, code, and release roles. Credentials therefore remain environment references, repository-scoped Git helpers match only their bound host/path, actor caches invalidate when the bound token changes, and supervisor-captured secret names stay denied to model and verification children even if those children edit their own config.",
+  "fit_criterion": "Independent-provider configuration matrices round-trip without secrets; malformed/unknown capability settings fail closed; Git helpers refuse another host or repository and restore previous settings after partial failure; verification cannot opt into a configured host token.",
+  "learned_from": [
+    "internal/integrations/config_test.go#TestProviderCombinationMatrix",
+    "internal/integrations/config_test.go#TestIndependentBindingsAndIdentity",
+    "internal/gitcredential/credential_test.go#TestCredentialsMatchOnlySelectedCodeRepository",
+    "internal/gitcredential/boundaries_test.go#TestCredentialConfigureRestoresAfterPartialWriteFailure",
+    "internal/executor/runtime/hostcredentials_test.go#TestVerificationCannotOptIntoConfiguredHostCredentials",
+    "internal/adapters/common/github/ghidentity/scoped_test.go"
+  ],
+  "tags": [
+    "forgejo",
+    "github",
+    "credential-isolation",
+    "code:cmd/pyxis",
+    "code:internal/docgate/config",
+    "code:internal/integrations",
+    "code:internal/adapters/common/forgejo",
+    "code:internal/adapters/common/github/githubauth",
+    "code:internal/gitcredential",
+    "code:internal/adapters/common/github/ghidentity",
+    "code:internal/executor/runtime",
+    "code:internal/adapters/codehost/github",
+    "code:internal/adapters/tracker/github"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2VP2AN1SPPJYC26H4RVB7SJ"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-21T19:30:54Z",
+  "provenance": {
+    "source": "internal/integrations/config.go",
+    "note": "Retarget Forgejo transport onto adapters/common/forgejo after the medium-to-port move."
+  }
+}

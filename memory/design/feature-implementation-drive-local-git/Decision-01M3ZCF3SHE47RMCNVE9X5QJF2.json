@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCF3SHE47RMCNVE9X5QJF2",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.6.1",
+  "statement": "A review or approval state is never completion. Open, changes-requested, approved-but-unlanded, and landed-unverified proposals leave tasks and dependents incomplete. The current reviewed proposal head/base and required checks/reviews must be verified, and landed revision L must be an ancestor of the freshly fetched feature-branch head before idempotent RecordLanding(task, proposal, reviewed_head, L, feature_head). Tracker ambiguity, wrong base, stale head, missing proof/revision, or failed ancestry blocks new routing and preserves artifacts. Hosted human review/merge and merge/squash/rebase result resolution remain unchanged.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:17b600377cbd2e94f74589f3285b123b66c66fe4673d8f7a522097de913cbf1d",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:26Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 182-182 in section 3.6; sha256:17b600377cbd2e94f74589f3285b123b66c66fe4673d8f7a522097de913cbf1d"
+  }
+}

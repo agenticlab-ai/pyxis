@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZMV6X2Z5EG1Y7QTAYJJ5",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.1.1",
+  "statement": "per stage, the loop is: *enter* (a `stage-entered` entry; the stage resolved by role against the pipeline map, never by enumeration — FR-3), *run the stage's own protocol as its decision principal* (the stage documents govern; Argus supplies answers, dispositions, and gate verdicts only as its grant allows), *record* (every ruling at its load-bearing spot with the artifacts' citation rule; the paired journal entry appended), *advance*. The assumption regime binds at every gap: **tier check** (contradicts no governance-tier content and no `A-n`), **channel check** (standing feature-tier content moves only through its sanctioned evolution channel), **regression check** (no unamended contract breaks) — a gap failing the tests first narrows (a smaller assumption that passes), and only when no legal assumption remains does it escalate (prd:argus/FR-5, FR-6). Grant checks are one ladder lookup **at act time** — and an **ungranted** decision/permission act has a defined form: it is *not* breaking and does not park; Argus journals a `ruling-recorded` entry (\"this act is ungranted at the current tier; requested from the human at <spot>\"), places the request at the spot where the act is needed (the gate table, the proposal), and the derived block carries it as an **open item** that ages under FR-15's aging-items arm. The human's own completion of the act is observed at a later touchpoint and journaled as `reconciliation` with its effect identity. Nothing is queued invisibly. **After triggering materialization (FR-9's confirm arm)**: Argus verifies each created item at the goal object — it exists and carries the repo-configured automated-implementation tag — journaling the verification, and routes any discrepancy back through the planning stage's own contract as a reconciliation, never by editing items itself.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b6171f68b636a42fc0dd7270c2ef4dca8c613e30bad661017d4469c740022fbc",
+    "source-design:214d3d1add47501bab82adae8a073eab292d8cfce8a3da6595f505674e204e67",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMGAJYKZZ14CGY1258S"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQKTK20RGZN39ZPQ5TZ7E"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:01Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 32-32 in section 3.1; sha256:b6171f68b636a42fc0dd7270c2ef4dca8c613e30bad661017d4469c740022fbc"
+  }
+}

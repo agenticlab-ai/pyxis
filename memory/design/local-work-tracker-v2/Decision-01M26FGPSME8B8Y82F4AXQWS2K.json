@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSME8B8Y82F4AXQWS2K",
+  "kind": "Decision",
+  "subject": "design/local-work-tracker-v2",
+  "family": "decision.3.8.1",
+  "statement": "the work-item store is **bucket-1 operand content** (footprint #DINV-1) — it is the user's backlog, git-versioned, and it *survives* `pyxis remove`; it is never placed under the system footprint (bucket 2, which uninstall deletes — losing the store). Its root is the closed-schema key `paths.work_items` on the footprint's closed config surface, defaulting to **`.workitems/`** at the operand root (v2's one delta — a dot-directory keeps the operand root clean; the key's mechanics are unchanged, so any operand may pin a different root, including v1's `work-items/`). The dot-directory carries an honest cost, accepted: hidden-skipping tools (`rg`, `fd`, shell globs, Finder) need `--hidden` or an explicit path to see the store — `git grep`/`git diff`/`grep -r`/`find` are unaffected, the store's primary reader is the machine, and A-8's legibility bar is read with the store path explicit. Implementation note: the default resolves at exactly one code point (the config default the `carina` CLI and, through it, plangate's projection consume); the flip, this repo's store rename, and nothing else move together, and frozen sibling designs whose prose names `work-items/` (e.g. the carina adapter's `ls` example) read as v1-era defaults; the signal vocabulary and any store metadata live under that same root, versioned with the backlog. This adds exactly one config key to the phase-1 surface and touches nothing else in it.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9ec9f4d88682efab5aebfc0d1bc6240c806df1fd9d976a504e788907c27e561f",
+    "source-design:10d1fc8c567108e38fb3e8dc670705e1a1a8a1f7cfebf1f20242f4c03067a95f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSMVZ614WQXXRTXX2J02"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.652Z",
+  "provenance": {
+    "source": "docs/tech-design/local-work-tracker-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/local-work-tracker-v2.md lines 99-99 in section 3.8; sha256:9ec9f4d88682efab5aebfc0d1bc6240c806df1fd9d976a504e788907c27e561f"
+  }
+}

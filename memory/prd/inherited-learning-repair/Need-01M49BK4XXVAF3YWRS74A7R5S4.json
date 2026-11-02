@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Need-01M49BK4XXVAF3YWRS74A7R5S4",
+  "kind": "Need",
+  "subject": "prd/inherited-learning-repair",
+  "family": "M1",
+  "statement": "M1: G1",
+  "intent": "Task and dispatch receipts",
+  "fit_criterion": "Five concurrent requests, one task, one dispatch",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

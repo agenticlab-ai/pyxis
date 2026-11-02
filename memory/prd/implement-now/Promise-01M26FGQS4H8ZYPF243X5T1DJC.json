@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS4H8ZYPF243X5T1DJC",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-13",
+  "statement": "The executor shall bound each worker's turns mechanically; a non-converging worker shall checkpoint, exit resumably, and be respawned up to a cap, then escalated.",
+  "rationale": "bound per-task spend; a model cannot count its own turns",
+  "fit_criterion": "a worker exceeding the turn bound checkpoints and exits; respawns are capped; at the cap it escalates",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4ebe5975814fd1cbf896e11d1db648fc91267953c803b79a3da9f230f9c6090",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.66Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

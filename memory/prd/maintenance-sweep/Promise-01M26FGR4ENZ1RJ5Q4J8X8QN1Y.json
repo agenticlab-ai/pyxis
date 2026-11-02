@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4ENZ1RJ5Q4J8X8QN1Y",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "NFR-2",
+  "statement": "The sweep shall state its steady-state cost: one bounded pass per invocation, zero between invocations.",
+  "intent": "Cost / operability",
+  "fit_criterion": "the statement present in the sweep's docs; process table zero between runs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3aa845510b89f1e1d54c2fbdaf98aae815c13149c89c6ee4df9884cd173bc170",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.022Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

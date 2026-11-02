@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC8GVM6FTA6HRK7F9QV",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-9",
+  "statement": "While re-reviewing, the reviewer shall examine only the previously named defects and regressions within changed spans; a finding raised against unchanged text in a re-review shall be recorded as a protocol violation and shall not reach the author.",
+  "rationale": "the scope lock makes rounds monotonic (— #D-2; T-2)",
+  "fit_criterion": "seeded round-2 novelties on unchanged text are self-detected, recorded as violations, and withheld (EVAL-4); zero reach the author",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:80007bfaacb15d9be6134b8798968ac822d800b6010553e7314101ccd104dd23",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.272Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

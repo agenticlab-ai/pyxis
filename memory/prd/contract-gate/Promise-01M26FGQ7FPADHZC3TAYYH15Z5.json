@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7FPADHZC3TAYYH15Z5",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "EVT-1",
+  "statement": "gate_run fires when every invocation completes (any verdict)",
+  "intent": "run_id: string, feature: string, trigger: enum(planning-entry·contract-doc-pr), verdict: enum, per-check: result, input_fingerprints: map, wall_ms: int",
+  "fit_criterion": "M1, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:77bbb1853b155ff66b2026a05ff077473f4252bcc9583c7166f42345e6fb178c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.095Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

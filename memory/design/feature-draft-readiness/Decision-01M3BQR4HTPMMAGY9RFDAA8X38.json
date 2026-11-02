@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BQR4HTPMMAGY9RFDAA8X38",
+  "kind": "Decision",
+  "subject": "design/feature-draft-readiness",
+  "family": "ruling-authority",
+  "statement": "Count a requirement ruling only when its declared author is the operator or Argus with a mainline rule-acceptance grant; require an explicit operator ruling for a declined blocking finding.",
+  "intent": "Prevent an engineering agent or ungranted Argus from silently closing a product problem or blocking review finding.",
+  "rationale": "Readiness checks declared authorship against the pinned Argus authority contract, leaves a refused problem unanswered, and presents its requirement edit as unruled. The operator later vouches for declared authorship by approving the exact lock request.",
+  "fit_criterion": "Operator and granted Argus rulings pass; ungranted, revoked, malformed, and other-agent rulings fail with the problem open and change unruled; blocking declines need an operator author and substantive reason; race, lint, and coverage gates pass.",
+  "tags": [
+    "code:internal/draft/readiness",
+    "code:internal/memory/cli"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T07:33:47Z",
+  "provenance": {}
+}

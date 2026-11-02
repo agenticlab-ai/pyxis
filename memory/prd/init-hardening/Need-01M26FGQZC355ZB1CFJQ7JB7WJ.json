@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZC355ZB1CFJQ7JB7WJ",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "J3",
+  "statement": "When init asks me a question, I want understand it unaided and trust the answer changes real behavior, so I can configure without vocabulary or archaeology",
+  "rationale": "`#F-9`, `#F-12`, `#D-10`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b614a219d5fe87549cc3a4a298507bb5c6612b4471912f56cff6f9fab54443dd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.86Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

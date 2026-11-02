@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P42FH9HT5Z54QVAWW027D",
+  "kind": "Document",
+  "subject": "distribution/source-workflows-self-host",
+  "family": "source",
+  "statement": "Captured authored source: .pyxis/dist/source-workflows/self-host.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:2cadca37a359fd58fe94ff53fe32bf8e967982398b97cd0d4b62bbb66b7559f6"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2645THC3TVJQYSJ52VHKRNC"
+    }
+  ],
+  "body_sha256": "2cadca37a359fd58fe94ff53fe32bf8e967982398b97cd0d4b62bbb66b7559f6",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:04:05Z",
+  "provenance": {
+    "source": ".pyxis/dist/source-workflows/self-host.yml",
+    "note": "offline reconciliation"
+  }
+}

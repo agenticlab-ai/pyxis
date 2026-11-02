@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFKF873MXY661Y6TYE9",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "J4",
+  "statement": "When I have adopted the factory and want to reconsider, I want remove it and return my repo to its prior state, so I can try it and back out",
+  "rationale": "brainstorm:existing-repo-onboarding#D-8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:11dabd649779c7e3ea547a2b19dc28645864be5f0dd8a70413182169ea1d1249",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.355Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

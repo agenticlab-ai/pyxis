@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHHNSYVGAH1GD1CQ0D1",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "NFR-3",
+  "statement": "The guide, template, and checklist shall follow the repo's authoring conventions (vendor-neutral content, versioned template, checklist derived from the prd-template's section list).",
+  "intent": "Maintainability",
+  "fit_criterion": "guide/glue split passes the AP-25 review check; record template carries a version; checklist rows map 1:1 to prd-template sections",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:50faed9f5ecc8574bc5ae7c2360d4393112c6d491cb1dfe99359bed7fa38698d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.417Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

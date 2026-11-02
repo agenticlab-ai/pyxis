@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ173PQ7NT8BQ0A31K7S",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "NR-3",
+  "statement": "The `docgate gate` umbrella's shared enumeration, dispatch, and `--help`/usage gain no hand-edited line to register either arm",
+  "rationale": "self-registered descriptors only; a hand-edited enumeration is the AP-23 anti-pattern",
+  "fit_criterion": "the umbrella's shared enumeration/dispatch/help files carry no manual entry for either arm; both appear solely via their descriptors",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e7afdb0668e4078cccca17aef45e64d1453c5bff9f8b195ce9c03618fd1d7ed3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.895Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

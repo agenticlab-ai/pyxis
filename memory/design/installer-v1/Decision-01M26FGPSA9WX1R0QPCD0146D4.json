@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSA9WX1R0QPCD0146D4",
+  "kind": "Decision",
+  "subject": "design/installer-v1",
+  "family": "decision.3.2.1",
+  "statement": "Every file a release installs carries one of three ownership classes — **engine-verbatim** (converge repairs byte-exact), **repo-owned** (converge validates against its closed schema, never rewrites), **generated** (converge regenerates) — assigned by an **authored class-policy file** committed in the source repo (the human input, AP-24); the release build walks the payload against it and derives the manifest (the aggregate, AP-27). A payload file the policy does not class **fails the release build** (DINV-6). The concrete schemas live in this design's solution shape.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:a2636218a16c718e5ddc723490fe4c6c2e8e7f68f1f8e6fb76a4b28183131868",
+    "source-design:5c77436e03f67de06fe736131bde819d3bf27ff6f476a4d7e44ccf41eaae1618",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSGG9V52VDBXSCJ7D9SG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.642Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/installer-v1.md lines 60-60 in section 3.2; sha256:a2636218a16c718e5ddc723490fe4c6c2e8e7f68f1f8e6fb76a4b28183131868"
+  }
+}

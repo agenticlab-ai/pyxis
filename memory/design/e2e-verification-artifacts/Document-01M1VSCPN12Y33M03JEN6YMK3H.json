@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCPN12Y33M03JEN6YMK3H",
+  "kind": "Document",
+  "subject": "design/e2e-verification-artifacts",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/e2e-verification-artifacts.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "655e7a5a29613004519944275a1e04150fab3c183782317d97e492bc8109cff6",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:57Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

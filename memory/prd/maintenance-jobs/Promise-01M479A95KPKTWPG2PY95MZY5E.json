@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95KPKTWPG2PY95MZY5E",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-11",
+  "statement": "When installation or job execution produces a lifecycle event or outcome, the CLI shall append inspectable structured evidence to the enrolled repository's `.pyxis/maintenance/logs.jsonl`.",
+  "rationale": "Debugging and audit require one local stream",
+  "fit_criterion": "Success/failure/timeout/skip/pre-claim-refusal fixtures produce versioned correlated records with available identity, config/route, phase/cause, timings, delivery and artifact references; concurrent writes do not interleave records; the journal is Git-ignored and credential-free",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

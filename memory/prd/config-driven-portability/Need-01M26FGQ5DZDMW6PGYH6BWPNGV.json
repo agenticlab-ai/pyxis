@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ5DZDMW6PGYH6BWPNGV",
+  "kind": "Need",
+  "subject": "prd/config-driven-portability",
+  "family": "G1",
+  "statement": "We believe making every target-facing surface resolve from config; expected result: the engine runs correctly against a layout other than its own",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6cb2f6e75c5ddc915efff1b3392c503689fcfd8e300d9f956e1f475a707dd8d1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.029Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

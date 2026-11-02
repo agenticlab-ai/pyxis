@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWR8TTJJC8729504NPGPZN",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.4.3",
+  "statement": "Positive Argus precedence, protected-path refusal, positive human attestation and underivable fail-closed behavior remain in force. No correction creates an operator attestation, action-class grant, lock approval, accepted plan or application acceptance. Planning still requires the actual binding lock and native precheck; first-proposal scope still excludes numbered plans. Configured roots relocate the same fixed grammars.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1257223b0a7ff7f1b5954f0606c133b7ef6444c597ecebed6557ea6c20425581",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:40Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 62-62 in section 3.4; sha256:1257223b0a7ff7f1b5954f0606c133b7ef6444c597ecebed6557ea6c20425581"
+  }
+}

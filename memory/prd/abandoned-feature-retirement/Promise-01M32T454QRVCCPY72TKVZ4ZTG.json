@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T454QRVCCPY72TKVZ4ZTG",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-12",
+  "statement": "When a retirement operation refuses, the system shall identify the action, trusted inputs, selected identity, ownership state, lifecycle state, and either one deterministic repair transition or an explicit irreparable outcome without exposing source bodies or credentials.",
+  "rationale": "Operators must repair a refusal without guessing, following a dead end, or leaking content.",
+  "fit_criterion": "Human and machine output identify the same transition; for every repairable closed refusal code, applying the emitted repair removes that predicate on exact retry without weakening policy; irreparable controls remain refused; no seeded body or credential appears.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a2a448bf6c736b014d7fc0925e2c58389addbe545ca88cbcc6a64e35e2aad15a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:08Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

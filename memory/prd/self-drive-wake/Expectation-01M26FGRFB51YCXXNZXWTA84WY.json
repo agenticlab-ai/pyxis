@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFB51YCXXNZXWTA84WY",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-11",
+  "statement": "Pending configured-review obligations participate in the same readiness decision as implementation work and survive kill/restart, unavailable/corrupt reads, unauthentic artifacts, moving heads, duplicate wakes, setup failure, and an empty implementation frontier; one durable driver round issues at most one executor sweep over its non-empty selected frontier, consumer recovery accounting includes every admitted sweep, the provider admits at most one attempt per selected obligation, and zero implementation work occurs. All-exhausted and whole-store-unknown rounds persist evidence/events and launch nothing. Only authenticated verification clears an obligation; exhausted/rearmed epochs retain immutable evidence.",
+  "intent": "FR-15, FR-16, NR-3, UB-9, UB-11, EVT-7, EVT-8",
+  "fit_criterion": "combined-frontier and 0/bound−1/bound truth tables; injected-clock first-observed age evidence; multi-obligation/duplicate-wake/mixed fixture proving one sweep; all-exhausted and unknown zero-preflight/zero-launch traces; setup-failure/crash accounting; kill/restart/forgery/moving-head/exhaustion/rearm; immutable replay; zero-implementation, EVT wire, status, and exit assertions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:345b78c6c2cce1f8e851046390e550c58415f0c79b84e453ae3b775a7797f33d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.371Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

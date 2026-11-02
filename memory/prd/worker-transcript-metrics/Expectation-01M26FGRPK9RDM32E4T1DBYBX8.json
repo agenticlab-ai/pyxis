@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPK9RDM32E4T1DBYBX8",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-6",
+  "statement": "Capture overhead is **measured and recorded** as a trend against the run's own duration, and reviewed against NFR-1's ceiling",
+  "intent": "NFR-1",
+  "fit_criterion": "recorded p95/p99 measurements with their trend",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ee88d6e9f1b263d336765d6c1353568b099ea6d1c63dc0f8c8f86761785b53a2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.603Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

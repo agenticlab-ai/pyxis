@@ -1,0 +1,8 @@
+{
+  "code": "invalid-prd-disposition",
+  "scope": "prd/feature-draft#Q7",
+  "feature": "feature-draft",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

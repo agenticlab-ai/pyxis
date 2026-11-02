@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWPD9FST86NPP04G6EJ",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-17",
+  "statement": "When all bound rungs pass, the harness shall report green if no rung was skipped and green-degraded if any skip-with-record occurred.",
+  "rationale": "the two-tier pass keeps degradation visible while letting brownfield repos function",
+  "fit_criterion": "the probe-less fixture yields green-degraded, never green; the fully-bound clean fixture yields green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ae8728c864609a852a67adad95c020ac970af6bee7de80ba261d6238f8bb942c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.774Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

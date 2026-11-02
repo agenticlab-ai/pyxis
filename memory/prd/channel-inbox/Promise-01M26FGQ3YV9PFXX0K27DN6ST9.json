@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3YV9PFXX0K27DN6ST9",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-11",
+  "statement": "Where a wired agentic CLI exposes no session-start lifecycle hook, the payload-shipped operand manual shall instruct the agent to run `pyxis inbox` at session start.",
+  "rationale": "no surface left dark (the fallback half of D-8)",
+  "fit_criterion": "for a CLI with no session-start hook, the operand manual contains the instruction; a wired CLI ships the hook fragment instead",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e7ae3d2f1b62e47e28f513aa6a2e6dce23f1237494467746287acde51b49c4dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.982Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

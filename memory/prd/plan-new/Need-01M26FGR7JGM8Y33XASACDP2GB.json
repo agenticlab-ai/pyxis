@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7JGM8Y33XASACDP2GB",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "M2",
+  "statement": "M2: G1",
+  "intent": "the executor dispatches on the planner's charter, never its own",
+  "fit_criterion": "100% of dogfood-plan tasks dispatched spec-valid — executor plan phase fires 0 times (checkpoint: \"first dogfood plan executed\")",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:492890e975a71d259f4a47cf48513b3a12e67d32d776d246356c52c7137e5a9e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.122Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CS9G11EY5J5H5EQ2D5CC7S",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-lock-approval-diagnostics",
+  "statement": "A missing exact-head operator approval names the feature and head and directs an operator review before lock recording.",
+  "intent": "Make agent, stale, or forged approval refusals actionable in the end-to-end lock flow.",
+  "rationale": "A lock tag cannot be created from an agent review or an operator review of an older head; the refusal carries the exact item and remedy.",
+  "fit_criterion": "The fresh-clone abuse fixture refuses both reviews, names the feature/head and operator approval action, and writes no lock tag.",
+  "tags": [
+    "code:internal/draft/lock"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T17:19:59Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

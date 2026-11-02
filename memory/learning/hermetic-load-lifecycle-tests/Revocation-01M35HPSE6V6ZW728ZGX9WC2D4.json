@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M35HPSE6V6ZW728ZGX9WC2D4",
+  "kind": "Revocation",
+  "subject": "learning/hermetic-load-lifecycle-tests",
+  "statement": "Retire memory that exclusively described the removed E2E test-generation code unit.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Learning-01M2NQ3J6YS1KVPNH1ZEKTZH87"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-22T21:52:45Z"
+}

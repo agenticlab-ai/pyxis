@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTZPD4AGBJHK7B1XY59",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.3.3.1",
+  "statement": "section supersession introduced after the activation boundary is\na parse–classify–commit transition, not a line splice. The fold builds\ncandidate lines without mutating live state, reparses the complete candidate\nbody under §3.2, compares the before and candidate inventories, validates\nevery unit transition, and commits the candidate `Doc` plus state updates only\nif the whole operation is valid.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c32c863a43444501c415afcbd2fbe5d866b49056d9cbc88a6f6a2ce2f0fc1c56",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.695Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 177-182 in section 3.3; sha256:c32c863a43444501c415afcbd2fbe5d866b49056d9cbc88a6f6a2ce2f0fc1c56"
+  }
+}

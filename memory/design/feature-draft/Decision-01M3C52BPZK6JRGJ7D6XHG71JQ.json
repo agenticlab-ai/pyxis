@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3C52BPZK6JRGJ7D6XHG71JQ",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "locked-plan-precheck",
+  "statement": "Plan a draft-born feature from the latest binding lock and recheck that version against current mainline before drafting, freezing, or projecting.",
+  "intent": "Keep a reopened draft from replacing the approved version as the planning basis.",
+  "rationale": "The planning entrypoint chooses the document contract gate when a PRD ledger exists; otherwise it discovers the remote lock, validates its stored text and approval record, and applies the shared readiness predicate to the locked Documents against current mainline.",
+  "fit_criterion": "A locked feature prints lock/<feature>/vN as its Basis, an open reopened draft keeps that Basis, missing locks and retired external citations refuse, and document-pipeline features still use contract-gate.",
+  "tags": [
+    "code:cmd/plangate",
+    "code:internal/plangate/precheck"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T11:26:34Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

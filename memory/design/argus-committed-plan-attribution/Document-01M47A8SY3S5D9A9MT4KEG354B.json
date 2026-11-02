@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M47A8SY3S5D9A9MT4KEG354B",
+  "kind": "Document",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/argus-committed-plan-attribution.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:da8de41fa70e7ea3ac28728cc85785677be519b643d49954066261c9105774f2"
+  ],
+  "body_sha256": "da8de41fa70e7ea3ac28728cc85785677be519b643d49954066261c9105774f2",
+  "literal_body": true,
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:36:57Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-committed-plan-attribution.md",
+    "note": "offline reconciliation"
+  }
+}

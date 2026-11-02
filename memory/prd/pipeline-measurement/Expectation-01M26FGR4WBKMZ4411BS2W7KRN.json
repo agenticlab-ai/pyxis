@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR4WBKMZ4411BS2W7KRN",
+  "kind": "Expectation",
+  "subject": "prd/pipeline-measurement",
+  "family": "DOD-5",
+  "statement": "Four-harness coverage: each of the four harnesses captures-or-declares on the reference run; the efficiency floor is present on 100% of phases",
+  "intent": "M2, FR-4, FR-5",
+  "fit_criterion": "per-harness run evidence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:98ee051e64a58b7ff92042a30ba0e2d59afc819f5c67d2d4d6c5f2efbf64f466",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.036Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

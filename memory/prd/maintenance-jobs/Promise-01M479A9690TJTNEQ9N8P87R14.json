@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A9690TJTNEQ9N8P87R14",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVT-2",
+  "statement": "maintenance_claim_result fires when Daily claim is won, lost, or unproved",
+  "intent": "job_id: string, job_date: date, timezone: IANA string, invocation_id: string, owner: string, outcome: enum, config_revision: string",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

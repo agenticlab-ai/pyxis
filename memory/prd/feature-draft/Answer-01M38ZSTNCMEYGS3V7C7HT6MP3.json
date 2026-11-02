@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSTNCMEYGS3V7C7HT6MP3",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered by the operator (design-brainstorm:feature-draft-tech-design#D-16): abandoning reduces the draft's pull request to one memory Learning stating why, which the operator approves and merges; the branch is then deleted.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQP8DGKENSB045PSXW6B1"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:48Z"
+}

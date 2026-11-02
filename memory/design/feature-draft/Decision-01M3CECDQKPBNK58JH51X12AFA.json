@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CECDQKPBNK58JH51X12AFA",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-events",
+  "statement": "Draft lifecycle events use a typed working-file log, with failed steps queued in a shared pending ref.",
+  "intent": "Keep opening, ruling, refusal, and reopening evidence attached to the contract through lock or abandonment.",
+  "rationale": "Successful steps compile the event log into memory or carry it in the abandonment Learning; failed steps leave working files unchanged and queue an event for the next successful step in any clone.",
+  "fit_criterion": "Opening and reopening emit their fields; a failed step leaves working files byte-identical and its event crosses clones; ruled changes deduplicate by ruling commit; lock and abandonment retain the resulting events.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/draft/compile",
+    "code:internal/draft/events",
+    "code:internal/draft/lifecycle",
+    "code:internal/draft/lock"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T14:09:21Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

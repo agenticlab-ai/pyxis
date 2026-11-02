@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9HTDZD9ZGYNH4T8YJF",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-15",
+  "statement": "When a frozen v1 task is read, the system shall translate its explicit rung through a versioned compatibility table or classify an absent rung as `legacy_unassessed` with frontier capability, maximum deliberation, extended context, and an assurance floor that existing risk signals may raise.",
+  "rationale": "old plans allowed no rung and cannot be rewritten",
+  "fit_criterion": "rung fixtures translate exactly; absent-rung fixtures receive the conservative profile; source bytes remain unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:647e6d983345d3a21cfe9ed52315efc2870f0fc2be16665064eca16be823fb4c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.185Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

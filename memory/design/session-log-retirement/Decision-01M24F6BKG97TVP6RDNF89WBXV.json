@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M24F6BKG97TVP6RDNF89WBXV",
+  "kind": "Decision",
+  "subject": "design/session-log-retirement",
+  "family": "D-1",
+  "statement": "Sessions create durable records only for decisions, constraints, or lessons that change future work. Optional operational logs create no memory coverage obligation and are excluded from ordinary retrieval.",
+  "intent": "Remove mandatory session bookkeeping in this repository and newly installed operands while retaining substantive historical evidence.",
+  "rationale": "The operator approved removing mandatory session logs, automatic log imports, empty legacy copies, and the three bookkeeping files in PR 1170. The one-time deletion exception binds exact empty Document envelopes and matching bodies, requires an unchanged base and no references, and preserves the ordinary checks for all other records.",
+  "fit_criterion": "Real Git regressions prove optional-log reconciliation and historical retrieval, a v1 baseline replays before retirement, exact approved empty pairs can be removed, and unapproved memory/source deletion still fails. A built-binary installer regression proves fresh operands neither create nor require session logs and ignore optional logs in Git.",
+  "tags": [
+    "code:internal/installer",
+    "code:internal/memory/cli",
+    "code:internal/memory/pack",
+    "code:internal/memory/packet",
+    "code:internal/memory/reconcile",
+    "code:internal/memory/search",
+    "code:internal/memory/sessionlog"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T01:33:53Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "commit": "c542b9b7cad95eb772ee34b6394ac5034fcce793",
+    "note": "Operator approved the complete session-log cleanup in this session."
+  }
+}

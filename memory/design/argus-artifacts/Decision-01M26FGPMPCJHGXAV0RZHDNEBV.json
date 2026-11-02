@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMPCJHGXAV0RZHDNEBV",
+  "kind": "Decision",
+  "subject": "design/argus-artifacts",
+  "family": "decision.2.1",
+  "statement": "Argus's data surface is **three versioned contracts and two citation grammars** (design-brainstorm:argus-tech-design#D-3, #D-4). Per problem, two sibling instances live at `docs/problems/\u003cslug\u003e/`: `problem.md` (`problem-ledger/v1`) — the idea verbatim plus an append-only-forever family of human authority entries `A-n` — and `delivery.md` (`delivery-ledger/v1`) — an append-only journal of typed, attributed entries `E-n` with a regenerated derived-state block, closing exactly once at content-verified delivery. At the agent's home, one `authority-contract/v1` file declares the **ordered tier ladder** — named bundles of action classes, one `current-tier` pointer, an append-only change history carrying checkpoint evidence — and the `revoked` below-floor tier is the kill switch. Citations run `problem:\u003cslug\u003e#A-n` and `delivery:\u003cslug\u003e#E-n`; **an assumption's load-bearing spot cites the journal entry that recorded it**, and post-close events reach a frozen ledger only by reverse citation. The never-list is frozen design content **here**, never data.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:25a47728c1e9ebcff4dea8f9ef691e43abb32d180728f17bb1ef9e731584c94d",
+    "source-design:8dc33c9a39f15198ce210bc812c53d02af3d5705440dc4da5b52660419b4df20",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKS61Z7RSCT74WBKMMRN"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.494Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-artifacts.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-artifacts.md lines 24-24 in section 2; sha256:25a47728c1e9ebcff4dea8f9ef691e43abb32d180728f17bb1ef9e731584c94d"
+  }
+}

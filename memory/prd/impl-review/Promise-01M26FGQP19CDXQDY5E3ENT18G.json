@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP19CDXQDY5E3ENT18G",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-24",
+  "statement": "When the planner's frozen assurance and impl-review's actual proposal band are available for one exact revision, the review orchestrator shall apply this closed join: `ordinary×skip→standard×1`, `ordinary×standard→standard×1`, `ordinary×deep→deep×1`, every `elevated` cell→`deep×1`, and every `critical` cell→`deep×2`; neither input may reduce the other's depth or the planned pass count, and an assurance pass means one top-level review rather than an internal remediation round.",
+  "rationale": "workload-independent consequences provide the minimum, actual proposal risk may only add scrutiny, and critical changes need corroboration",
+  "fit_criterion": "exhaustive 3×3 fixtures produce exactly the declared depth/count cells and all nine yield one or two passes; a zero-pass attempt fails under UB-16; every pass binds one identical proposal revision; remediation-miscount fixtures fail",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a438f948bec8782ad55b69b1bb3afe45a06adfb2b34c6ae4294db14573f8b55c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.561Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

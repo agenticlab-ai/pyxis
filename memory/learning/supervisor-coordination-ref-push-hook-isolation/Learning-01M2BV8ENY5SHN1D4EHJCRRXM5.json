@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2BV8ENY5SHN1D4EHJCRRXM5",
+  "kind": "Learning",
+  "subject": "learning/supervisor-coordination-ref-push-hook-isolation",
+  "statement": "Parentless task claims and refs/pyxis evidence-store commits are supervisor-owned coordination state, not branch code. Their Git operations need the existing scoped policy that disables repository hooks and fsmonitor for the individual command; ordinary branch publication must continue through the repository's required gates.",
+  "intent": "Allow claims and durable review/evidence compare-and-swap updates to coexist with composed repository hooks without executing repository code outside verification or bypassing feature-branch gates.",
+  "rationale": "The real installed Forgejo E2E failed after composed hooks were enabled because claim acquisition pushed a parentless coordination commit through a pre-push gate that tried to find a merge base with the feature base branch. Fetching more branch history cannot create ancestry for an intentionally parentless claim. Persistent repository-wide hook changes or relaxing the gate would cross the wrong boundary; only supervisor-owned coordination operations should carry command-scoped core.hooksPath=/dev/null and core.fsmonitor=false, while retaining their existing CAS expected-head checks.",
+  "fit_criterion": "The installed regression uses real Pyxis/docgate binaries, the installed payload, composed hooks, and a local bare Git remote. Supervisor claim acquisition/release and refs/pyxis evidence update/readback succeed; ordinary pushes of the same orphan claim object to a branch or a manual metadata ref are rejected by the real merge-base gate; a valid branch push succeeds. The parent-checkout guard remains active, core.hooksPath is unchanged, and parent HEAD is preserved.",
+  "learned_from": [
+    "internal/installer/e2e/metadata_hooks_test.go#TestInstalledComposedHooksSeparateSupervisorMetadataFromBranchPushes",
+    "internal/installer/e2e/forgejo_feature_test.go#TestLiveForgejoInstalledFeatureDevelopment",
+    "internal/githooks/hooks.go",
+    "internal/executor/lease/lease.go",
+    "internal/gitrefstore/store.go"
+  ],
+  "tags": [
+    "forgejo",
+    "composed-hooks",
+    "supervisor-coordination",
+    "code:internal/executor/lease",
+    "code:internal/gitrefstore",
+    "code:internal/installer"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:19:26Z",
+  "provenance": {
+    "source": "internal/installer/e2e/metadata_hooks_test.go",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616"
+  }
+}

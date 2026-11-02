@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Decision-01M48AEB2VZX9EM29Q5NNDVGYC",
+  "kind": "Decision",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "carina-feature-item-scope",
+  "statement": "For an Argus-attributed change to a Carina feature item, the Git attribution consumer may add exactly the changed canonical numeric item path to the active drive scope only when the item exists at the merge base and both the merge-base and current committed item parse as valid feature items with matching filename and record IDs and a first-body-line pointer to that same Argus problem. A same-proposal item, changed owner, malformed item, unrelated item, or code path grants no scope. This is a narrow tracker exception to the first-PR document grammar and applies to first and later PRs; the boundary policy version is argus-boundary/v5.",
+  "intent": "Permit the drive to update its preexisting Carina feature item while retaining the author-independent boundary for all other paths.",
+  "rationale": "A parked Argus feature must publish its Carina hold signal with truthful attribution. The existing document-only scope refuses that shared tracker edit; a blanket tracker allowlist would admit unrelated items.",
+  "fit_criterion": "Git-backed attribution tests cover the owned item, changed owner, malformed item, same-proposal claim, unrelated item, and code path; the focused race suite and docgate pass.",
+  "alternatives_rejected": [
+    "Allow all Carina item paths: rejected because another drive item would enter scope."
+  ],
+  "tags": [
+    "code:internal/argus/attribution/carina_scope.go",
+    "code:internal/argus/boundary/boundary.go"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "refines",
+      "target": "Decision-01M47AM4AAVQAPEW4K8H9DZB8R"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M3QV2TWZH5VCE5MAAKV50EA6"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M45YXGW540VAT3ZR7KM6927W"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T09:59:13Z",
+  "provenance": {
+    "source": "code:internal/argus/attribution/carina_scope.go",
+    "note": "Carry forward the retained predecessor decision Decision-01M45YXGW540VAT3ZR7KM6927W on the live successor design identity. Scope and rebase behavior remain in force; the policy version is now v5. The immutable original remains the decision's historical evidence. This replaces the unlanded proposal capture Decision-01M47B4YJXSCWTTYAPV1BMTXW4 after the root-path correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at ec23220418dbe9ff5e8d130afd6202187ad18e5c. This replaces the unlanded proposal capture Decision-01M47YBREG8092F773HV9SGNHN after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at c74eda1694aeb8c3b4d0eca104c088afd41c5375. This replaces the unlanded proposal capture Decision-01M480YFXNAVBFPFV81F2D5QE6 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 66dd6b211a353298b2c5bba073082f898085cd94. This replaces the unlanded proposal capture Decision-01M482AYBYH82DK3N3JD9KXQ1E after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 2bbf4634b663cb97b3371f559b1fcb7e5e956960. This replaces the unlanded proposal capture Decision-01M483P49WDMTBNR9N98MRMZD0 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 0720a4f2ee8a9a292f44e3660fea3cfcf17bd0df. This replaces the unlanded proposal capture Decision-01M4849NE4Y0HTV24QYDGPW5T0 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 72f3927cf656e4248b3a77f83ddfc1a496038931. This replaces the unlanded proposal capture Decision-01M485WSN7JRY490JP9FBP3HHB after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at ad49cd021f7d017faa31ab398870216747b81ab6. This replaces the unlanded proposal capture Decision-01M487QA1DJ2A6680D5VYTR5Y0 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at db91f998650704c3b9e4e1d1352dd02f3612bb21. This replaces the unlanded proposal capture Decision-01M488X0TDP8WNWHNVF55CYHRR after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 8fd0c98adc89eea27a778b6495aa7761f285e773. This replaces the unlanded proposal capture Decision-01M489RBXNAV7XXATQEDSE28GK after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 0ef50e5d5ce493defb9f92b7b7f2b1b1858f87dd."
+  }
+}

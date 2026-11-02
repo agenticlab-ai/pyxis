@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXGN3JSH810SEYGNPP5",
+  "kind": "Decision",
+  "subject": "design/prd-lifecycle-home",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-24.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:ff9eada4122511ce035ac08347e3c33ac5f6e3fa860f97dd6f5122b6de1dde1a",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVPRTBJMPGVK7T96SFQW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAKQKFZ3M8KKMD0B12Y"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.824Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-lifecycle-home.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header ff9eada4122511ce035ac08347e3c33ac5f6e3fa860f97dd6f5122b6de1dde1a"
+  }
+}

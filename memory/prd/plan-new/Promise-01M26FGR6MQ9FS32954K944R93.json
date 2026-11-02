@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6MQ9FS32954K944R93",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-18",
+  "statement": "When projecting an approved plan, the planner shall create each task at most once across any number of runs; partial reruns converge and duplicate nothing.",
+  "rationale": "idempotent projection",
+  "fit_criterion": "kill-mid-projection fixtures converge with one task each",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a9bab5083fbc34846c18e72d4405d6abed1656eb09995399673d992137fd804a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.092Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

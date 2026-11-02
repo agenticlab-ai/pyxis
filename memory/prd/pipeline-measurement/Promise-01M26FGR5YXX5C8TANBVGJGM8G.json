@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR5YXX5C8TANBVGJGM8G",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "UB-2",
+  "statement": "If If a model used by a phase has no price entry, then the system shall record its tokens with the cost flagged \"no price\", never a silent zero cost",
+  "intent": "a cost flagged as un-priced",
+  "fit_criterion": "an un-priced model yields tokens + a \"no price\" flag, not a $0 line",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c810cba5dcd576a7a7c356ace3cce91feb89b326c106c96b4be576398a69d9ba",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.07Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

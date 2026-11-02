@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPDAE0RMKB1WAKZ1MCYDB",
+  "kind": "Document",
+  "subject": "prd/plan-new",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/plan-new/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:09b7ab6170946ccc90adb7b1a81df3419c027b17334354ac6132d893d310a9fd"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBZN9GQ6XRB9D12GQPWK9"
+    }
+  ],
+  "body_sha256": "09b7ab6170946ccc90adb7b1a81df3419c027b17334354ac6132d893d310a9fd",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:13Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

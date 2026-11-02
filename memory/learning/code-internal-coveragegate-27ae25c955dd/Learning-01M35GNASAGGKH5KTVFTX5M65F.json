@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Learning-01M35GNASAGGKH5KTVFTX5M65F",
+  "kind": "Learning",
+  "subject": "learning/code-internal-coveragegate-27ae25c955dd",
+  "statement": "Package coveragegate measures repository-wide Go statement coverage from the standard coverage profile and applies a deterministic minimum. Measure runs go test with -timeout=25m and -covermode=atomic and omits -count=1 so an unchanged tree can reuse Go's cached coverprofile instead of re-running every package.",
+  "intent": "Keep coverage-gate honest on statement coverage while allowing the Go test cache to shrink the success-path pre-push.",
+  "rationale": "Explicit -count=1 disabled the test cache. Go stores coverprofiles in the cache, so a second Measure on an unchanged fixture reprints the same totals. The 25m package timeout still covers the long hermetic suites.",
+  "fit_criterion": "Measure's go test args include -timeout=25m and -covermode=atomic and do not include -count=1. A fixture Measure run twice reports the same Covered, Total, and file count. Deferred RemoveAll and Close errors are discarded with a reason.",
+  "tags": [
+    "code:internal/coveragegate",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2XTC02J43D7SRMPD2CR0RJY"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-22T21:34:29Z",
+  "provenance": {
+    "note": "Cacheable coverage profiles; keep 25m timeout."
+  }
+}

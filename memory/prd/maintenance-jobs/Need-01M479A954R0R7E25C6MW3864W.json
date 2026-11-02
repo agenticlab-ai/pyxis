@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A954R0R7E25C6MW3864W",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "G2",
+  "statement": "We believe Sharing attempted-occurrence authority; expected result: At most one agent attempt for the same scheduled work",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

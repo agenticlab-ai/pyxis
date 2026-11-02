@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMJW31T9EVBR2M4GB977",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Replace NFR-1 with explicit disclosure of unauthenticated local approval identity, and do not claim signature verification.",
+  "intent": "operator",
+  "rationale": "An independent signing key is outside the requested test setup.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJVQM9AVKX0MSVKSSNG"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

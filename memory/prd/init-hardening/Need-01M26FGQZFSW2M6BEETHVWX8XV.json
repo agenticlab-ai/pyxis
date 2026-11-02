@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZFSW2M6BEETHVWX8XV",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "M2",
+  "statement": "M2: G1, G3",
+  "intent": "refusal quality across the audit's failure classes",
+  "fit_criterion": "100% of refusal classes refuse pre-write with remedy (and route, where a route exists) — at release",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c39deb8c6ecd1884c36005f03f8a53117b8e531cdde6f0c12320a523249a5753",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.863Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

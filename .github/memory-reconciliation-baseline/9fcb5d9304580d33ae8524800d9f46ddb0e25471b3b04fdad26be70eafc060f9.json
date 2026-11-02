@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/pipeline-measurement-v2",
+  "feature": "pipeline-measurement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

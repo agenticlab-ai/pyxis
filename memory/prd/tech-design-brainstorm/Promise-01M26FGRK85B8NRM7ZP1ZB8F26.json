@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRK85B8NRM7ZP1ZB8F26",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "NFR-3",
+  "statement": "The guide, template, and checklists shall follow the repo's authoring conventions (vendor-neutral, versioned template, coverage targets pinned to the tech-design-template version).",
+  "intent": "Maintainability",
+  "fit_criterion": "AP-25 split passes review; version pins present; coverage rows map to design-template sections 1:1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:246943d25716152577966ab1237416355363961094f2ce5755de85f3fc009d0c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.496Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

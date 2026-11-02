@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCW4XS9PH12XZPJ7HKY",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-2",
+  "statement": "The coverage map shall map each required behavior of the feature to the scenario(s) that prove it, with no required behavior left unmapped.",
+  "rationale": "coverage is an explicit checkable list, not left to agent judgment — the reviewers' yardstick",
+  "fit_criterion": "on the fixtures, every required behavior enumerated from the feature's PRD/design appears in the coverage map with ≥1 scenario or an explicit routed disposition; a seeded uncovered behavior is detectable as an unmapped entry",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2789e89c812202e61fe6ac1b71dd4e45f594fa18f6f965bff3ec73c68655861b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.268Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

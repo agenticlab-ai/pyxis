@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA4AF4AE5HSCFZGSTHZ",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-4",
+  "statement": "Both templates' example ops parse as golden fixtures",
+  "intent": "§5.5 templates row",
+  "fit_criterion": "fixture manifest",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:99c42971806baef0cb51dccd3538d14c42397af447a766e03137965b59b718d4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.18Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2V16MVX5AFNR2JP6FGVC4TE",
+  "kind": "Expectation",
+  "subject": "prd/parallel-memory",
+  "family": "DOD-2",
+  "statement": "Accepted-debt validation, migration, and writer recovery satisfy every positive and negative case",
+  "intent": "FR-3, FR-4, FR-5, UB-1, UB-2, UB-3",
+  "fit_criterion": "Exact migration inventories, refusal evidence, interruption/retry/no-op manifests",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:007c8f94bbbd9a201145d746790a53777a0aac287acc0794e87c450256b2f5ab",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

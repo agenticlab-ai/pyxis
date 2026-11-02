@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ0XXEXTVAQX5TE2HFJX",
+  "kind": "Need",
+  "subject": "prd/argus-ledger-lint",
+  "family": "G1",
+  "statement": "We believe two self-registered docgate checks (a git-history arm + a cross-document arm) under the existing umbrella; expected result: the two silent-corruption paths becoming impossible to merge unnoticed — the ledger classes reach mechanical parity with every other class",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5fa6932351585153467591d86d6d03ed547648966f00848554fb31d9bbc8374e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.885Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRD6MXW2G6B43FMMT3D6",
+  "kind": "Expectation",
+  "subject": "prd/read-to-rule",
+  "family": "DOD-7",
+  "statement": "M1/M2 are computable from the sign-off records alone, with §0 having added no separate session or system",
+  "intent": "§5.7, NFR-3",
+  "fit_criterion": "a hand-computed M1/M2 over the first lined gates",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:62285638f020251f203c572309c9c1443a2a6de4c4d4f118e663ecb98430c917",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.302Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFNWPCXE7JP0TGAEAGQ",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "the emitted manual instructions are the only human work needed to reach green (nothing silently assumed)",
+  "fit_criterion": "pass (fixture asserts no residual manual step beyond the plan's)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2940cc9c72fd3346132a50d9e826dcdc7b2854adfdb22050f2185b219697c755",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.357Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3QEXDTVBR6XZBB8372FHPT3",
+  "kind": "Document",
+  "subject": "rollup/technical-spec",
+  "family": "current",
+  "statement": "Captured authored source: docs/techspec.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/root",
+    "reconcile:source",
+    "sha256:4c360b4faa7a026408aafbb3a456c3599934692cb34a2a54e6ccdb26c4c1b72f"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3Q4SNNG5NTY4Q1J319YB3KV"
+    }
+  ],
+  "body_sha256": "4c360b4faa7a026408aafbb3a456c3599934692cb34a2a54e6ccdb26c4c1b72f",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:50:17Z",
+  "provenance": {
+    "source": "docs/techspec.md",
+    "note": "offline reconciliation"
+  }
+}

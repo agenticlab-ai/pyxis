@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4009YKWVTRPCVFNY5ZKT",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-1",
+  "statement": "When a feature owner explicitly abandons a feature, the system shall preserve its merged product contracts, designs, brainstorms, plans, reviews, incidents, governing documents, and durable evidence as historical records.",
+  "rationale": "Abandonment must retain the reason and decision trail.",
+  "fit_criterion": "Every protected-class fixture and the pilot retain identical tracked bytes before and after cleanup.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e9320df52c451e589334cb8375477473f8b1470d32da90568520aa51a7c45df6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:03Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

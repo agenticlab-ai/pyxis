@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RR3DMV8XDFHC598NFBKTYN",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.1.1",
+  "statement": "One tag (`vX.Y.Z`) on the source repo triggers the release workflow: build every engine binary under the command tree — the set **derived by scan, never hand-kept** (AP-27) — for each supported platform; pack the payload archive (the system tree the manifest enumerates), with no browser-runtime dependency bundle (§3.3); generate the release manifest (per-file hash + ownership class, per-binary per-platform sha256, the system version); publish the complete set with checksums through the distribution door contracted in the installer PRD §5.5. Publishing is **upload-or-verify re-runnable** (AP-22): a re-run of a partially-published release completes it or verifies it byte-for-byte — never a second, different artifact set under the same tag.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:efccc09f04b183f5dc42a0081acb2fddfefa0be065ecdcdd6cb7bb9921968967",
+    "source-design:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:34:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 47-47 in section 3.1; sha256:efccc09f04b183f5dc42a0081acb2fddfefa0be065ecdcdd6cb7bb9921968967"
+  }
+}

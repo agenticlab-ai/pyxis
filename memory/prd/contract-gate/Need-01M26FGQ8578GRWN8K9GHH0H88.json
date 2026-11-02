@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8578GRWN8K9GHH0H88",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "G2",
+  "statement": "We believe making the ownerless currency and inverse-coverage checks gating over the machine faces; expected result: the drift and incompleteness that surface mid-build today being caught before planning",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1f338fa0b35082b82ee606f2ccf5a793541c1a0e86a583babb74210d479472d7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.117Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

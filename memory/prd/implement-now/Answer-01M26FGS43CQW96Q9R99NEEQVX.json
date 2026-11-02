@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Answer-01M26FGS43CQW96Q9R99NEEQVX",
+  "kind": "Answer",
+  "subject": "prd/implement-now",
+  "statement": "Consumer-owned git recovery ledger, one closed selected-frontier invocation per durable round, immutable exhaustion/rearm; design must realize it before activation.",
+  "learned_from": [
+    "prd:implement-now/Q-9"
+  ],
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M26FGRT3ASZHZ25C347CWR00"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.035Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "resolved approved PRD row"
+  }
+}

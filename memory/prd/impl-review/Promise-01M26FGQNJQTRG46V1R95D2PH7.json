@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNJQTRG46V1R95D2PH7",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-3",
+  "statement": "disposition_recorded fires when worker or operator disposes a finding",
+  "intent": "finding_id, actor: worker·operator, actor_attribution: string, verdict: applied·declined·accepted·rejected, reason: string?, at: opaque-ts",
+  "fit_criterion": "M2, §3.3 nit rate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d9508fef9199bd3e4854b3dd9eede1b623569f4863675e297728240b27c121f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.546Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

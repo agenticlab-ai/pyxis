@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX9XRAZ1PF6J0WGY383",
+  "kind": "Decision",
+  "subject": "design/native-routing-policy-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:impl-review/EVAL-11 · prd:impl-review/FR-25 · prd:impl-review/FR-28 · prd:impl-review/NFR-12 · prd:impl-review/NR-7 · prd:impl-review/UB-15 · prd:implement-now/ABUSE-5 · prd:implement-now/EVAL-2 · prd:implement-now/FR-23 · prd:implement-now/FR-24 · prd:implement-now/FR-26 · prd:implement-now/NFR-7 · prd:implement-now/NFR-9 · prd:implement-now/NR-6 · prd:implement-now/UB-18 · prd:planner-driven-model-routing/ABUSE-1 · prd:planner-driven-model-routing/ABUSE-4 · prd:planner-driven-model-routing/EVAL-2 · prd:planner-driven-model-routing/EVT-4 · prd:planner-driven-model-routing/FR-10 · prd:planner-driven-model-routing/FR-11 · prd:planner-driven-model-routing/FR-12 · prd:planner-driven-model-routing/FR-14 · prd:planner-driven-model-routing/FR-27 · prd:planner-driven-model-routing/FR-8 · prd:planner-driven-model-routing/FR-9 · prd:planner-driven-model-routing/NFR-1 · prd:planner-driven-model-routing/NFR-3 · prd:planner-driven-model-routing/NFR-5 · prd:planner-driven-model-routing/NFR-7 · prd:planner-driven-model-routing/NFR-8 · prd:planner-driven-model-routing/NR-1 · prd:planner-driven-model-routing/NR-7 · prd:planner-driven-model-routing/UB-4 · prd:planner-driven-model-routing/UB-6.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:df3278e35a16498224497dc3c18bffb19ac339ec3c6fa91585f47f302028a062",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCT6YEY0VPZCSYACPC7E6"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGQN408WARDZNA9SZHF83"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGQRKC22B04MZT7VF07AF"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGR937BP3P6GFH33AJEG2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQP2QAVT9SE42Z4KEEZ0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQP5JYH0HZKYK68KGAK6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQ2B295E9ZC5DFQV2MX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQBCSFAC0KXRB0VCY7Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQJXXV3Y6KCF50XXRH6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQR19964MCWN7P4GFSRM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSFVCY4CSGY0E6W4P0R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSGS5RVGKV09NYHQ7ZN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSJTCM9MVZFA9KVKKF4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTX89SWYP488FF76YF9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTYGWS5H2B8QC85MPQN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV5PYYP01C6SB0FHHJR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVFMTY154AMSPQHYPRH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR8N60GF0C5ADNDJHXP6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR8RCKKASWA9HQBYECB0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR98PPWQXN5YF372T4TZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9DR9CSGA82SAAEMK0X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9ECBAFNSJA9RQBZDJ8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9FMVRXQGNX0BS5H3K6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9GS0ZAKAT0W6J2632Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9T9D2BTV9YWTXA37XQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRA0W6F7V24NQ45ZZ1GX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRA1EKWYDGREDP024T81"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAF0TNCE1R56MC5WXGH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAHAYRKJJE7YFMCSMJS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAKPPN4NRA2J0C7TK3M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAMJKA7KKGHZCZPJCK4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRANM0V1Y0QZXVC9DYQA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAPT2FVT0ZFFGNM3AB3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRATDJ9VKWKQ8JMS1RN2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB4WQ7EKFTB2PY98982"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB5VCG7SSA5HDRV057T"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.817Z",
+  "provenance": {
+    "source": "docs/tech-design/native-routing-policy-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header df3278e35a16498224497dc3c18bffb19ac339ec3c6fa91585f47f302028a062"
+  }
+}

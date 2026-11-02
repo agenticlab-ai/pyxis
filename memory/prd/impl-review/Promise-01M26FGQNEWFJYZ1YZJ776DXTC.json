@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNEWFJYZ1YZJ776DXTC",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-11",
+  "statement": "`activation_checkpoint` fires when the ten-review pre-release checkpoint or final activation predicate evaluates",
+  "intent": "`reviews:int`, `coverage_pct:float`, `matrix_cells_required:int`, `matrix_cells_covered:int`, `blocking_disposed:int`, `precision:float?`, `nit_p50:float`, `dwell_p50:float`, `burst_flag:boolean`, `process_violations:int`, `availability_defects:int`, `live_blocking_dod_green:boolean`, `launch_readiness_green:boolean`, `parent_seam_green:boolean`, `activation_ready:boolean`, `activated:boolean`",
+  "fit_criterion": "§3.3, DOD-12, activation audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3fd3aec91aa70c1f201c55b8740a264b2b82d9533d29ee6fb0fadb0311853398",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.542Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

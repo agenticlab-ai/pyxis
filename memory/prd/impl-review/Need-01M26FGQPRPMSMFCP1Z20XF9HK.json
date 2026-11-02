@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPRPMSMFCP1Z20XF9HK",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "J1",
+  "statement": "When a factory proposal reaches my gate, I want read findings + dispositions + a verdict instead of a raw diff, so I can judge substance in minutes",
+  "rationale": "`brainstorm:impl-review#D-6`, `#F-6`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9cf2225c1e8d67fc2d094f5b98105ff176376d15719260814c13dae059491dde",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.584Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

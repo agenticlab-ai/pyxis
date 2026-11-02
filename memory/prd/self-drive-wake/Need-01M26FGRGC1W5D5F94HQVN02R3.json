@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGC1W5D5F94HQVN02R3",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "G1",
+  "statement": "We believe giving a running drive eyes (state reads) and an alarm (wake channel); expected result: the operator's only acts on a driven feature being reviews and merges — zero re-invocations",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a8009782d01eb1cc6e51727e9ceed059c13df7161e48ebbdd764b3f30a1cd002",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.404Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

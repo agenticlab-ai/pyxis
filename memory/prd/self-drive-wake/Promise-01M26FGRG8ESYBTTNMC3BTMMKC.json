@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG8ESYBTTNMC3BTMMKC",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-5",
+  "statement": "While no await is registered, the wake channel shall run no checks and place no medium calls.",
+  "rationale": "idle is free; parked problems keep zero steady-state cost",
+  "fit_criterion": "one idle hour emits zero medium calls and zero events of kind check_ran (event log)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bf1956d98943aa8963d8828b153039f9dd897d2ffd693dbf036d62659c9db245",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.4Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

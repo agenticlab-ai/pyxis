@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNM4PPAGSPV61FFY1AF",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-7",
+  "statement": "`assurance_pass_completed` fires when one top-level assurance pass produces a valid revision-bound review verdict after its canonical routed-attempt outcome is `verified`; failed/blocked attempts emit no EVT-7 and remain incomplete under UB-9",
+  "intent": "`review_process_id:string`, `pass_id:string`, `attempt_id:string`, `demand_id:string`, `task_id:string`, `proposal_id:string`, `reviewed_revision:string`, `effective_depth:enum{standard,deep}`, `pass_index:int`, `required_passes:int`, `routing_resolution_ref:string`, `routed_outcome_ref:string`, `top_level_context_id:string`, `internal_rounds:int`, `verdict:enum`, `findings:int`, `candidates:int`, `killed:int`, `tokens:int`, `wall_ms:int`, `provenance:closed object`",
+  "fit_criterion": "M1, NFR-6..NFR-8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:36520ff8d8aee312269cf7cb8590026b229ff1d6c6c7e15822a7d0a660aecd93",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.548Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

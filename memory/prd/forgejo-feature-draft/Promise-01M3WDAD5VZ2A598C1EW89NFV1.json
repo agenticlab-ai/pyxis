@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD5VZ2A598C1EW89NFV1",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "FR-6",
+  "statement": "When a prepared draft is merged, the system shall identify exactly one same-repository merged PR on the selected host, verify the operator's authenticated review of its exact prepared head, verify compiled records and ancestry on mainline, then publish or byte-verify an annotated lock tag for that merge.",
+  "rationale": "Badge alone cannot authorize planning.",
+  "fit_criterion": "Missing/multiple PRs, stale/agent/rejected reviews, unmatched records/digest, non-ancestor merge, and conflicting tag refuse; valid squash merge yields one tag with head/digest/review/PR/mainline commit; rerun idempotent.",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

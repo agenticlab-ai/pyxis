@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDY452QCAT9ET3QVMA9",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "UB-3",
+  "statement": "If a required behavior can be neither run in CI, sensibly mocked, nor cleanly made manual, then the system shall surface it as an explicit open item in the design doc, never silently drop it",
+  "intent": "the doc lists the unroutable behavior for the operator to decide",
+  "fit_criterion": "the unroutable-behavior fixture produces a doc that lists the behavior as an open item; zero required behaviors are absent from both coverage map and routes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:82cf2b6d712bc79dd7523b148d0b8a7c5fa30b2cfb16d62c418da489e1e983fb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.302Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

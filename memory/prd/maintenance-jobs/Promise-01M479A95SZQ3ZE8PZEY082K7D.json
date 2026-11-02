@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95SZQ3ZE8PZEY082K7D",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "NR-2",
+  "statement": "Enrolled source/untracked work/Git state, normal Git hooks, and existing Pyxis verbs",
+  "rationale": "Maintenance shares the installation; local journal/artifact writes are owned diagnostic exceptions",
+  "fit_criterion": "Isolation/hook/CLI suites show zero regressions outside prescribed ignored diagnostics; job definitions survive core convergence and upgrades",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

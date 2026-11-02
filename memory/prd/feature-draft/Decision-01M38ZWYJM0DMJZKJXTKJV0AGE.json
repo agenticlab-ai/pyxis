@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZWYJM0DMJZKJXTKJV0AGE",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R5",
+  "statement": "Bind the required PRD and tech-spec reviews to the exact version being locked (FR-16), keep reviews of intermediate rounds optional, and settle the reviewers' round protocol in the technical design (Q10).",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Reviewing every round of a moving draft repeats work on content that will still change. One required review of the version that locks keeps the guarantee and bounds the sessions spent.",
+  "fit_criterion": "A fixture draft revised after its last review is refused until both reviews re-run on the new version, and no lock requires a review of an intermediate round.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:731e836b7e58e9e3a292e425daa057856947a6dedbb755b970b90f211508a5aa",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:30Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

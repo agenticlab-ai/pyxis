@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPW6P3WMH8CWX72PJBQ1",
+  "kind": "Decision",
+  "subject": "design/standalone-docs",
+  "family": "decision.2.1",
+  "statement": "a merge-base gate verb, `check-standalone-docs`, fails a diff that touches a **governed contract class** if it also touches implementation code or a *second* governed class.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9f384f4a395e7ce233d7b05bd757cb9bbb63921ad45ea7d3a28faf7a9668c1da",
+    "source-design:e28fe6b36e48f42694b62ebe679ab2f4ad062a0569de817e6aea2576ef16619d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCXEPRSJ84QTGGWBBDD48"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.734Z",
+  "provenance": {
+    "source": "docs/tech-design/standalone-docs.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/standalone-docs.md lines 26-26 in section 2; sha256:9f384f4a395e7ce233d7b05bd757cb9bbb63921ad45ea7d3a28faf7a9668c1da"
+  }
+}

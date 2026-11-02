@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4DAMA8VJEM2WBWXC2GRW",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-3",
+  "statement": "When an operator selects a mutable authored source for retirement, the system shall require closed, replayable, typed evidence that assigns the source exclusively to the abandoned feature.",
+  "rationale": "Names and paths are not ownership authority.",
+  "fit_criterion": "Eligible-class controls pass; missing, inactive, shared, inferred, and conflicting owner evidence all refuse.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab48181f3e24df76a39725a8d91415ab7ca707edac6942dc59ae9bf276621b5d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:17Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG8XVNH77C45BHE5PXB",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "UB-1",
+  "statement": "If A prototype run fails for a reason no other row names, then the system shall Stop the run, record the cause, and report the failure, without retrying, repairing, or guessing",
+  "intent": "The failure and its cause; the draft continues without that run's findings",
+  "fit_criterion": "An injected failure to create the prototype's worktree ends the run with a reported cause and leaves the draft branch unchanged",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

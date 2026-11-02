@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB6MK62D9E8K4S5ED7DYF",
+  "kind": "Document",
+  "subject": "configuration/pyxis",
+  "family": "config",
+  "statement": "Imported Pyxis source document: .pyxis/config.yaml",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/config.yaml",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "8ddbee0c8bb95f15eacbd1f03a9649d43b55b94bfc0833665c51c6087ceaea4d",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:08Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

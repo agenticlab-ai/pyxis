@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR46H5EXYPSD2982F3F5",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "J1",
+  "statement": "When after features land, I want know if any first-party package is reachable from no shipped binary, so I can catch dead-feature rot before users or drives assume the feature works",
+  "rationale": "brainstorm:maintenance-sweep#F-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6b95eafcac62a270addc2d8a82dc10336fd43dd4d324467dba7f43770c1b504b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.014Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

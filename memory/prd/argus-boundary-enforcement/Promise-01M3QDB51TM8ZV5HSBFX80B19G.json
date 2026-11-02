@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3QDB51TM8ZV5HSBFX80B19G",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-14",
+  "statement": "Argus shall supply its problem slug on every drive-authored Git commit in the configured Pyxis workflow. When that slug reaches the `prepare-commit-msg` hook, the hook shall append `Argus-Drive: <slug>` and a content binding for the commit's tree and parent; when feature-draft preparation rebases an already stamped commit, it shall verify the original binding and refresh only a valid one without stamping an unstamped source commit. At CI, the attribution gate shall re-derive the binding from Git without a mutable platform badge or ambient credential. This is an audit signal in the single-user shared-account workflow; it does not assert that an agent with raw Git access cannot omit or forge the signal.",
+  "rationale": "Preserves verifiable attribution for ordinary drive commits and draft rounds while stating the shared-account limit and relying on exact-head operator review for merge",
+  "fit_criterion": "a real hook-produced drive commit and its rebased draft version derive as Argus; a stale or replayed binding is refused before rebase and underivable at the gate; a source unstamped commit remains unstamped; CI reads only in-tree Git metadata without a credential",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3114ae239f02355ef4df8a45fe93669525f9e785cde45dfb90b81392e4c15846",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGPZCQQQ4ZSDZX0MQWDY4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:22:49Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "note": "compiled from sha256:212c9395a691481c46f5bc8a0f3628b5e586a6dd98035e3c4ab08f37fcd134c7"
+  }
+}

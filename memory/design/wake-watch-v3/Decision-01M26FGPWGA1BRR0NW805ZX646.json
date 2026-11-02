@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWGA1BRR0NW805ZX646",
+  "kind": "Decision",
+  "subject": "design/wake-watch-v3",
+  "family": "decision.2.1",
+  "statement": "Wake-watch-v2 is incorporated as a frozen conformance component at Git object `52d724929450e5bd9db20b36d20c4543af129010`. Its in-process context-owned loop, proposal/task await derivation, adapter-advised cadence, instruction-free wake grammar, state-edge coalescing, idle-zero behavior for its original frontier, status/staleness semantics, local rotated JSONL events, reserved push slot, `DINV-1..DINV-9`, risks, and `A-1..A-13` remain binding and executable. A successor manifest maps every carried Serves/DINV/A anchor to the same named check/digest; omission, mutation, or favorable subset fails A-1.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b2ef1a697296dad38870ba17c4cb3f2505ae82c6d9fa51692b86b78cd35b8c3c",
+    "source-design:4104e74727037b9480b28fd396d308271e73b58d249e6a729c6041a9ca8e4f46",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ0NQSZSDAPFY392V4B8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.744Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-watch-v3.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/wake-watch-v3.md lines 41-41 in section 2; sha256:b2ef1a697296dad38870ba17c4cb3f2505ae82c6d9fa51692b86b78cd35b8c3c"
+  }
+}

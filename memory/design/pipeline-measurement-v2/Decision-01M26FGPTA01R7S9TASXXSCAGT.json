@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTA01R7S9TASXXSCAGT",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.8.1",
+  "statement": "a **phase stack** (`#D-3`). A skill-invocation marker in the harness's own record (a Skill tool-call or slash-command) **pushes** a phase; the artifact-write (the frozen doc / PR) **pops** it. Spend and turns attribute to the top of the stack — **innermost-active-phase** — so a nested sub-skill (e.g. `prd-new` invoking `prd-review`) gets its own record and the parent's record excludes the nested bracket (DINV-5, UB-5). The detector reads the *same* harness record the spend adapter does (it rides S-2, not a new seam). Rejected: *parent-absorbs* (over-charges the parent, hides the sub-skill's cost) and *split* (no principled ratio).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:12d60e05b58a91a8885b9e8ff45d065973543b37e49597a9ec4236362d55149e",
+    "source-design:848be6bb1101995e3e698ade196fe74ee1eddf3150285b46b2e557a5764b59d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.674Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 114-114 in section 3.8; sha256:12d60e05b58a91a8885b9e8ff45d065973543b37e49597a9ec4236362d55149e"
+  }
+}

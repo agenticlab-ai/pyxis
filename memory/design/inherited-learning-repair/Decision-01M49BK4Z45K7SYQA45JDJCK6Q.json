@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4Z45K7SYQA45JDJCK6Q",
+  "kind": "Decision",
+  "subject": "design/inherited-learning-repair",
+  "family": "D-5",
+  "statement": "Add a narrow branch in the existing worker's memory-gate failure handling that delegates only this supported inherited Learning case. Add a bounded scan mode to the same command for daily triggering.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y4PC6Q7MB9K0GKT6RR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y7FPA0Q4P2PRVZCRZ4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y8T3XFXP4TYPH6DYJR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YAA3N7T09DEZ1RRZDG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YB7YQVA7VVVYRJMJQ2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YC1ZV65MX2WA86QQHB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YF87SXEFXJ0B2GPNP1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YG1PZAW1PP6JXSR1PQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YMWXP0EPGK5KAPMQF5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YNCAAN4V0TADN9H7GN"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

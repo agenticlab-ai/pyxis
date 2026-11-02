@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26G51Y76F5VKNVDFGM3VG0T",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "The sourceable startup suite isolates fresh interactive sessions for Codex, Claude Code, Cursor, and OpenCode. Thin harness adapters classify each CLI's pass-through commands, option arity, project target, and path-bearing arguments; the shared worktree module admits only an interactive top-level launch from a .pyxis-adopted primary checkout, fetches origin/main, creates a no-track chore branch in a sibling linked worktree, preserves caller-relative paths, and launches there.",
+  "intent": "Give every supported interactive agent harness the same safe worktree lifecycle without changing headless, resume, utility, editor, or already-isolated invocations.",
+  "rationale": "Repository and Git lifecycle behavior belongs in one sourceable implementation, while harness-specific command grammars remain explicit and fail through unchanged when syntax is unknown or ambiguous.",
+  "fit_criterion": "Race-enabled pseudo-terminal tests exercise real Git repositories for all four harnesses, repository discovery from their native target options, relative-path preservation, pass-through modes and exit status, fetch failure, and optional comparisons with installed CLI help and version output without submitting prompts.",
+  "learned_from": [
+    "script/startup/README.md",
+    "script/startup/harness_worktree_test.go"
+  ],
+  "tags": [
+    "code:script/startup/claude-worktree.zsh",
+    "code:script/startup/cursor-worktree.zsh",
+    "code:script/startup/opencode-worktree.zsh",
+    "code:script/startup/startup.zsh",
+    "code:script/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26G426DCR23JJ9K5JYHEQ2M"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22G0N6G98RESAFEFT51S"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22GVCYBBS3117139SZDJ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22H43EASC24Y9CY5KG6D"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22HCHTZEXKWAYJTZX5D6"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22HRFVX70ADSYQD5Z6C2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:29:08Z",
+  "provenance": {
+    "source": "script/startup/README.md",
+    "commit": "1033cdd340f5015ddd1db35a901155935cb59cfc",
+    "note": "Corrects the immediately prior successor provenance and rebinds unchanged startup harness semantics to the installed script/startup identities."
+  }
+}

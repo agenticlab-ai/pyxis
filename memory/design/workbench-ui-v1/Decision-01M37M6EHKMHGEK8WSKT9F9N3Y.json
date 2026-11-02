@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M6EHKMHGEK8WSKT9F9N3Y",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.2.1",
+  "statement": "The reading room is **one Go process in the managed system footprint** (design-brainstorm:workbench-ui-tech-design#D-1, #D-2, #D-3). It reads the corpus **directly, machine-faces-first** — the generated one-writer JSON contracts (ledger projections, the design index's machine face, plan folds) are the primary inputs, and header/anchor scanning exists only for classes with no machine face, confined to a **class registry** that is the sole home of class knowledge. It serves **server-rendered pages over loopback**, guarded by a per-session secret in the URL path and Host validation. Markdown classes use a safe Go read-only presentation that preserves headings, anchors, and escaped source; plans use the existing Go plan-viewer package. It writes nothing inside the repository but gitignored scratch, exits with its terminal or on idle, and hands review to the operator conversation by exposing the exact repository path and tracked reference. It has no build-time asset pipeline or package-install stage.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b0ae4699ad95bd9df4a018ad29922837032597dc3f4ae019a6062001dcfeb2cd",
+    "source-design:24be06f7767abd54769887e81990f98fff1b3f8ff4cbeba9af2ce568eb46d727",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPWHD4P9ZGD8PVV7RXRE"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZS2DYVWXCWAD5KD5VWGH3"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:44Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 24-24 in section 2; sha256:b0ae4699ad95bd9df4a018ad29922837032597dc3f4ae019a6062001dcfeb2cd"
+  }
+}

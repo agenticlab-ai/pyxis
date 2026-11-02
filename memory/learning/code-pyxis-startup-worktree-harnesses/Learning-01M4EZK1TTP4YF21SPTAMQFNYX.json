@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Learning-01M4EZK1TTP4YF21SPTAMQFNYX",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "The sourceable startup suite isolates fresh interactive sessions for Codex, Claude Code, Cursor, and OpenCode, plus explicit Codex and Claude resumes. Harness adapters classify CLI arguments; the shared launcher fetches the repository's configured remote branch (origin/main unless its .pyxis/config.yaml names another), creates a chore branch in a sibling linked worktree, preserves the original checkout and caller-relative paths, and leaves the shell in the selected tree. Claude --resume and -r accept explicit IDs, names, or transcript files; relative transcript paths are resolved before changing directory. Existing linked worktrees are reused. Pickers, latest/continue selectors, headless commands, utilities, unknown syntax, native worktree options, and Cursor/OpenCode resumes preserve native behavior.",
+  "intent": "Resume supported conversations inside an isolated checkout while preserving both history and the original checkout's uncommitted work.",
+  "rationale": "An explicit session selector can be classified before launch without changing a directory-filtered picker. Claude uses the launch directory. Cursor stores history by workspace, so moving its --resume invocation to a new workspace starts without that history. OpenCode 1.17.20 routes session operations to the stored directory ahead of its launch directory. Those two harnesses need session migration before automatic worktree resume can be supported.",
+  "fit_criterion": "Real Git and pseudo-terminal regressions cover explicit resume forms, relative transcript paths, linked-worktree reuse, fetch failure, original checkout preservation, and pass-through boundaries. The machine installer is exercised in fresh zsh. Installed Codex and Claude resume isolated fixture sessions, with Codex /status and Claude SessionStart reporting the new working directory, without submitting model prompts. The full local code gate, including race tests and 90 percent per-file coverage, passed.",
+  "learned_from": [
+    "scripts/startup/README.md",
+    "scripts/startup/harness_worktree_test.go",
+    "scripts/startup/installer_test.go",
+    "scripts/startup/claude_cli_test.go",
+    "https://forum.cursor.com/t/cli-agent-in-one-session-forgets-everything-when-switching-to-new-root/162955/4",
+    "https://github.com/anomalyco/opencode/blob/v1.17.20/packages/opencode/src/server/routes/instance/httpapi/middleware/workspace-routing.ts"
+  ],
+  "tags": [
+    "code:scripts/startup/claude-worktree.zsh",
+    "code:scripts/startup/cursor-worktree.zsh",
+    "code:scripts/startup/opencode-worktree.zsh",
+    "code:scripts/startup/startup.zsh",
+    "code:scripts/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26RJS0565AYJHM2XJXWGKYM"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3FV04CERW35V4YDP8CN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3GHJENGWF1VRKE3BPBC"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3GSBCYJB9WATND8NBMG"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22HCHTZEXKWAYJTZX5D6"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26RG3H2K3260X8KY6SRG4VZ"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-10-09T00:04:14Z",
+  "provenance": {
+    "source": "scripts/startup/README.md",
+    "note": "Repoints the suite to scripts/startup after the launcher moved there from script/startup, and replaces the fixed origin/main base with the repository's configured mainline. Everything else is unchanged from the predecessor."
+  }
+}

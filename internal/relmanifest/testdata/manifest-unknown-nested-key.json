@@ -1,0 +1,18 @@
+{
+  "schema_version": "release-manifest/v1",
+  "system_version": "v1.2.3",
+  "source_commit": "0123456789abcdef0123456789abcdef01234567",
+  "binaries": {},
+  "payload": {
+    "archive_sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+    "files": [
+      {
+        "path": ".pyxis/config.yaml",
+        "sha256": null,
+        "class": "repo-owned",
+        "mode": "0755"
+      }
+    ]
+  },
+  "deps_bundle_sha256": "6666666666666666666666666666666666666666666666666666666666666666"
+}

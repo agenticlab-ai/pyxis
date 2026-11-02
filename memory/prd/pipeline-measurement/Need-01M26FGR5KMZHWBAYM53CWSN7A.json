@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5KMZHWBAYM53CWSN7A",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "M2",
+  "statement": "M2 — cross-harness coverage: G3",
+  "intent": "per-harness capture-or-declare, and structural-floor presence",
+  "fit_criterion": "4/4 supported harnesses either capture per-phase spend or record an honest \"unavailable\" (never a silent zero); efficiency floor present on 100% of phases regardless of harness — checkpoint: the reference run replayed on each of the four",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7b4275592ef0be946496e3de27fcb946783173825493078926e4ec8508c6cc37",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.059Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3XRQA1JYT5HQN3MKYBYAWF6",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-15",
+  "statement": "This scoped amendment and its successor design receive exact-source operator review and land in a contract-only proposal before any later proposal enables local code-host selection or receipt acceptance",
+  "intent": "FR-50; FR-52; NR-6",
+  "fit_criterion": "operator approval, independent mainline merge, and later implementation references to the merged contract",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9593d67cd13a463f2852f92be240304714a78a435ac7a6ac5524d31392bbbc0b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:08Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

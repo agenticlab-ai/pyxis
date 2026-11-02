@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ25N4V53W5MA57V0R48",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-16",
+  "statement": "While a problem is parked, the wake channel shall run no recurring process for it, and the problem shall wake only on its answer append or a human touch.",
+  "rationale": "parks stay zero-cost (argus-agent-v1 DINV-4; AP-19)",
+  "fit_criterion": "parked-problem drill: zero scheduled activity attributable to the park; the answer append wakes it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:295f21f5fc68fa0d482d0394e68665efc4c404662055062eabd5b7c276ab542a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.925Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

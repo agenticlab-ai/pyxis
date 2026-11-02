@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T69F61GMSP5Q7Q3ZB2GHT",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-9",
+  "statement": "If If complete active-surface discovery is unavailable or reports an omitted exclusive identity, unresolved entry point, unowned live reference, or shared identity without a disposition, then the system shall Refuse the whole authority batch",
+  "intent": "residual surface and required inventory repair",
+  "fit_criterion": "Every omission and unavailable-inventory fixture writes zero authority; complete controls report zero unexplained residual surface",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b9d0055032234d1da2478592fb464c6f8d86dd53a6e6fb6d2c088f27ae806771",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:18Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

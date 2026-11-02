@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRH4A3FX3VTM6ZH9CTGK",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "UB-7",
+  "statement": "If the write throttle saturates (burst exceeds the budget), then the system shall queue and delay writes, surfacing backpressure and queue depth as events; never drop a write, never let a platform rate-limit response occur",
+  "intent": "slower landings; events show throttle_deferred",
+  "fit_criterion": "replaces UB-6, whose criterion never checked the depth it required the system to surface: the FR-8 burst fixture — zero drops, zero platform 429s, queue drains — **and** a deterministic depth fixture: with N \u003e 1 writers held concurrently in deferral on one ledger, an emitted throttle_deferred reports queue_depth = N; no run in which more than one writer is concurrently deferred reports a maximum depth of 1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c611a1474bb6f6a2c776da879a8427475e1c4addf220c22448818ebaee991c8d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.428Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

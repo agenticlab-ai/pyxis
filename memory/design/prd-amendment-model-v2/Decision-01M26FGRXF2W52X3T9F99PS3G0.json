@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXF2W52X3T9F99PS3G0",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-1 · prd:docgate/FR-2 · prd:docgate/FR-3 · prd:docgate/FR-32 · prd:docgate/FR-33 · prd:docgate/FR-34 · prd:docgate/FR-35 · prd:docgate/FR-36 · prd:docgate/FR-37 · prd:docgate/FR-38 · prd:docgate/FR-39 · prd:docgate/FR-4 · prd:docgate/FR-40 · prd:docgate/FR-41 · prd:docgate/FR-42 · prd:docgate/FR-43 · prd:docgate/FR-5 · prd:docgate/FR-6 · prd:docgate/FR-7 · prd:docgate/FR-8 · prd:docgate/NFR-1 · prd:docgate/NFR-2 · prd:docgate/NFR-3 · prd:docgate/NR-2 · prd:docgate/NR-3 · prd:docgate/NR-4 · prd:docgate/UB-1 · prd:docgate/UB-2 · prd:docgate/UB-3 · prd:docgate/UB-4 · prd:docgate/UB-5 · prd:docgate/UB-6.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQA8FT3KN2F2HNZ2MF5E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAEKCR506W3E3QT6Z2N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQARJ2GVDEBYJ7PYX623"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAVASWY5P71HDDWBSJJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAWAPMWXB4CHSTE7RRW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAXC1RSTASHE9MV7PX6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAYBGHNSQGNM5V10V3P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAZMQT5TYPHKVHBH2NH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB0QEDCR7VT04K97M21"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB1T1S4351F218DYRPN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB2XEWCYQH39JHZMAWY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB3W8D9M7A2QNBWNMSY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB49GD4N0XY04VYAA3S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB5AWHJCVA1XZ4SDVMS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB62F3B20V1SSBVA0YB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB7257CZ9TVBG4AMRXE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB87VFXA6VFW74K1HRN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQB9TKCGRNHCRQA2VYMF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBAD05V307R2EW2J8VS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBBFCS5Q2BTMBXD69ZC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBP932ZEYPPE12922BP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBQ35T9AN4EJ8NX8GXY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBR2266VW572Y5H5QXS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBSR5S37GS03Z0CYCM1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBTD5K8JFTFPMF8EF15"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBVYCS0ZJMFDNKB9A5H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBW85P38RVYZ0Z3BA9Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBXMZNMBJR81R9H7RQ9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBYHNJCG9D9WYZP00QH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQBZ7BF7K7T4QCNNG2N5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQC0P5J6Q18YMYE98BRR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQC1JKR01HC5SXSVWC67"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.823Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6"
+  }
+}

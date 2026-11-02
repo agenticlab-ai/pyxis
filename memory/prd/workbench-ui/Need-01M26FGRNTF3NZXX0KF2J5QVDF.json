@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRNTF3NZXX0KF2J5QVDF",
+  "kind": "Need",
+  "subject": "prd/workbench-ui",
+  "family": "G1",
+  "statement": "We believe a read-only reading room over the corpus (browse · search · trace · progress); expected result: doc-system questions answered in the browser without raw files or grep",
+  "fit_criterion": "§5.8's human-judgment row (real tasks completed UI-only)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:79d6556bdae3206139ede80a11ff4b89c66879a562099ac669128ef36b06d7e3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.578Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2B73WNJM4WD44HAWEKBJ06D",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "The startup config copy requires a real destination .pyxis directory and an absent config.local.yaml path. Repository-controlled symlinks, dangling links, files, or directories cannot redirect or receive machine-local configuration. Rejected destinations and copy failures stop launch and clean up only the newly created worktree and branch.",
+  "intent": "Prevent fetched repository paths from redirecting local configuration into other files, and avoid abandoned worktrees on failed launches.",
+  "rationale": "PR 1181 review identified that cp -p follows pre-existing destination symlinks after worktree checkout and that the failure return left the new worktree and branch behind.",
+  "learned_from": [
+    "PR 1181 P1 and P2 review; real Git and terminal race tests cover nine unsafe destinations, unchanged external files, dangling targets, repeated copy failures, and preservation of existing worktrees."
+  ],
+  "tags": [
+    "code:script/startup/worktree.zsh"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T16:27:25Z",
+  "provenance": {
+    "source": "script/startup/worktree.zsh",
+    "pr": 1181,
+    "commit": "f0e03c32"
+  }
+}

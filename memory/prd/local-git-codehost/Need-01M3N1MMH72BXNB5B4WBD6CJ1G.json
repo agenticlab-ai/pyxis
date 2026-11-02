@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3N1MMH72BXNB5B4WBD6CJ1G",
+  "kind": "Need",
+  "subject": "prd/local-git-codehost",
+  "family": "G1",
+  "statement": "We believe A local proposal and approval route serves bare Git; expected result: At least one AEC feature reaches consistency-checked delivery",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

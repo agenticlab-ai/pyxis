@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35HVV447DPB7CMR98KXERJH",
+  "kind": "Document",
+  "subject": "wiki/index",
+  "family": "index",
+  "statement": "Captured authored source: docs/wiki/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/wiki",
+    "reconcile:source",
+    "sha256:08dd4ecc49ea7c1c88d7257a3c480555bf78e16b236a0391faaa5f142968dcff"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCZJQWSP14C78N918GHHW"
+    }
+  ],
+  "body_sha256": "08dd4ecc49ea7c1c88d7257a3c480555bf78e16b236a0391faaa5f142968dcff",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T21:55:31Z",
+  "provenance": {
+    "source": "docs/wiki/README.md",
+    "note": "offline reconciliation"
+  }
+}

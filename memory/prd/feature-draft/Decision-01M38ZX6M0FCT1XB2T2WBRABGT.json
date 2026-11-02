@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZX6M0FCT1XB2T2WBRABGT",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R8",
+  "statement": "Name each unfinished task of the current plan and its remedy, finish or cancel, when a reopen is refused (FR-43), and cancel a task known to be wrong promptly.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Reopens are refused while the current plan's tasks run (D-19), so a task known to be wrong must be finished or cancelled first. Naming each task and the remedy keeps that wait short and explicit.",
+  "fit_criterion": "A reopen of a fixture whose locked plan has one unfinished task is refused naming the task and the remedy, and proceeds once that task finishes or is cancelled.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:54d09a0be282dcc3d4c62b466ffeefd451cdce548a2bfc03a8eb1e50f7ddc509",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:38Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

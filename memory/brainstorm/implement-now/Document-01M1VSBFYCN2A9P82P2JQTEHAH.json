@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBFYCN2A9P82P2JQTEHAH",
+  "kind": "Document",
+  "subject": "brainstorm/implement-now",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/implement-now.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "8df7cd92d04669a6bc42d5d8094f30a8d969f6fa15f738667cde31a123958fa7",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:17Z",
+  "provenance": {
+    "source": "docs/brainstorms/implement-now.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

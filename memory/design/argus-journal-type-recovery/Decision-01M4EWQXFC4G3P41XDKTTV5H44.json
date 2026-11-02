@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWQXFC4G3P41XDKTTV5H44",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.1.1",
+  "statement": "The original journal entries remain byte-identical. A correction is a new dense `E-n` of canonical type `reconciliation`, carrying the actual principal, date and authority-contract version, and a reason. Its first labeled body line reads `journal-type-correction/v1; target=delivery:<slug>#E-n; sha256=<original entry digest>; from=<original unsupported token>; to=<canonical token>`, with exactly those four keys. The remainder explains the error and intended classification. The digest hashes the original entry block from its heading through its last content line, including original line endings and trailing spaces, excluding inter-entry blank lines and horizontal-rule separators. This exact-byte view is distinct from the existing normalized lint view.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:74eaead501b134d1b44745b22a818d18835122a3a01448009cbd976b3717ef66",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:28Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 36-36 in section 3.1; sha256:74eaead501b134d1b44745b22a818d18835122a3a01448009cbd976b3717ef66"
+  }
+}

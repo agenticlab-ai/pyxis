@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2VJRKJP8YSW7D63M4Y8SBNC",
+  "kind": "Learning",
+  "subject": "learning/durable-evidence-cache",
+  "statement": "A cached green code-gate result must rerun the memory check because matching source and ref fingerprints do not prove that required historical Git objects remain locally available.",
+  "learned_from": [
+    "internal/codegatemirror/cache_inputs_test.go"
+  ],
+  "tags": [
+    "code:internal/codegatemirror"
+  ],
+  "issuer": "Codex",
+  "created_at": "2026-09-19T00:58:49Z",
+  "provenance": {
+    "source": "internal/codegatemirror/cache.go"
+  }
+}

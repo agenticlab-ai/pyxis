@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2V16P56407Z91MVQA1N1REG",
+  "kind": "Document",
+  "subject": "review/parallel-memory-000",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/parallel-memory-000.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:2ab054f2b679cadb4388600fc8221f0c931c0df2fb1032755d93af9e476f1402"
+  ],
+  "body_sha256": "2ab054f2b679cadb4388600fc8221f0c931c0df2fb1032755d93af9e476f1402",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:56Z",
+  "provenance": {
+    "source": "docs/reviews/parallel-memory-000.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "offline reconciliation"
+  }
+}

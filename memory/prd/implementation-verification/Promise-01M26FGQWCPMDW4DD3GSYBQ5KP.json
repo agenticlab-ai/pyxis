@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWCPMDW4DD3GSYBQ5KP",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "EVT-4",
+  "statement": "catch_suite_run fires when the permanent catch suite executes in CI",
+  "intent": "seed_family: enum(tautology·silenced_test·machinery), case: string, blocked: bool",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0d0dc7ec0da882ed56a2289470243a0fdb821e303c547f44a280d744536f84a3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.764Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8GYEZZ3JX6Q6DE1WWX",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-1",
+  "statement": "The gate shall complete within 5 s at p95 on the repo's largest live contract.",
+  "intent": "Performance",
+  "fit_criterion": "p95 wall-time ≤ 5 s over the repo's live contracts in the dogfood sweep",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:18d2ef978d6fbb647abde969dff516e52651071bb5d59eb0ff5aed2e53fcc292",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.128Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

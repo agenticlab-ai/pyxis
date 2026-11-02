@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG7YK6WW1N57VQ0HXEM",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "NR-2",
+  "statement": "A feature drafted without a prototype passes through its stages, readiness, and lock as before",
+  "rationale": "The prototype is optional (brainstorm:prototype#D-5)",
+  "fit_criterion": "The existing draft, readiness, and review test suites pass unchanged, and a draft with no findings record meets readiness with no prototype-related condition",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

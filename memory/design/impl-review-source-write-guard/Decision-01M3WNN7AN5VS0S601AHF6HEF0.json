@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WNN7AN5VS0S601AHF6HEF0",
+  "kind": "Decision",
+  "subject": "design/impl-review-source-write-guard",
+  "family": "decision.2.1",
+  "statement": "Pyxis owns reviewer filesystem write permissions at the OS process boundary. Each reviewer and its descendants receive a read-only exact-revision checkout and read-only Git administration, with writable private runtime state outside the checkout. Harnesses use ordinary command and inspection tools under this guard. Native permissions must allow unattended inspection and must not install a conflicting nested sandbox.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:538b1af9f042ff03ce86822385eec043e128b82593804f38ff6671bf2fa7748a",
+    "source-design:62b8fee86fcf83b9c7961ac80ff4626e096dfee97b2ebfd42de2c2ccd55f4fe0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3WNH8RM72E569HY6QTZB9S2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-01T21:24:20Z",
+  "provenance": {
+    "source": "docs/tech-design/impl-review-source-write-guard.md",
+    "note": "exact Decision evidence at docs/tech-design/impl-review-source-write-guard.md lines 38-38 in section 2; sha256:538b1af9f042ff03ce86822385eec043e128b82593804f38ff6671bf2fa7748a"
+  }
+}

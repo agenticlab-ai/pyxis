@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQBCSFAC0KXRB0VCY7Q",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NR-7",
+  "statement": "Review harness selection remains the invoking configuration's explicit upstream decision; review-role routing never scans installed CLIs, switches harnesses, or reuses an implementation-role native decision implicitly.",
+  "rationale": "credentials, availability, and egress policy are not capacity decisions; role mappings differ",
+  "fit_criterion": "exact, promoted, unsupported, and kill-switch fixtures retain the same selected review harness and independently resolve the review role",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fa6f5e493dd58e73884b7f96674387eb13be89aa739b51612c3f59066b3b718a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.603Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

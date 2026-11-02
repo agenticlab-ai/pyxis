@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCBZRHS71AXYY09XD2KWA",
+  "kind": "Document",
+  "subject": "review/init-hardening-000",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/init-hardening-000.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "24ba3791358c21d18ba9b52c28d8fe7c761214cda4c07f308d0abe66255e64f9",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:46Z",
+  "provenance": {
+    "source": "docs/reviews/init-hardening-000.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

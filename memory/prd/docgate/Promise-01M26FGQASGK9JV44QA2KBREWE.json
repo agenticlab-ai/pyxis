@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQASGK9JV44QA2KBREWE",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-30",
+  "statement": "When invoked with a merge base, docgate shall fail a diff that touches a governed contract class — a PRD ledger entry (`NNN-\u003cslug\u003e.md`), an authored technical design (`docs/tech-design/*.md`, excluding the generated `index.*`), or the incident registry — if the same diff also touches implementation/capability paths or a second governed class; the generated projections (`effective.*`, `index.*`) and the live rollups (`docs/techspec.md`, `docs/prd.md`) are exempt, riding with their source or with the code respectively.",
+  "rationale": "one concern per PR becomes code for the governed classes; the contract is reviewed on its own before code builds against it, so FR-16 precedence holds in fact and not only at lint time",
+  "fit_criterion": "temp-repo fixtures: an amendment + a design → red (two classes); an amendment + code → red; a design + code → red; incident + code → red; a lone amendment with its regenerated `effective.*` → green; a lone design with its regenerated `index.*` → green; a pure code or rollup change → green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:680c082210c1d8470fdbf14f7857ca8699769e6d03c6836bce15ea029cb299c0",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.201Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

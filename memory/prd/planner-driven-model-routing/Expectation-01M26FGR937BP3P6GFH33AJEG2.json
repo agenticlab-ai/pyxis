@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR937BP3P6GFH33AJEG2",
+  "kind": "Expectation",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVAL-2",
+  "statement": "Each required routing-domain cell produces a qualified satisfying native profile or the explicit unsupported result appropriate to that cell.",
+  "intent": "harness adapter conformance corpus with representative implementation and independent-review tasks plus launch/failure capture",
+  "fit_criterion": "every required cell produces its specified result; every resolved cell produces a verified outcome; zero harnesses or derivable profiles are omitted; zero cells qualify by self-declaration alone",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:079895c046dec9f0bfefb3421cff4c5cadea1fddc23a8354b036cc54b3c98a5a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.171Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

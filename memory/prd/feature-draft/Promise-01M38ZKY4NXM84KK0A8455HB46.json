@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKY4NXM84KK0A8455HB46",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-20",
+  "statement": "When a change to a locked feature is started, the system shall open a new feature draft for it that starts from the feature's current locked version.",
+  "rationale": "One loop for creation and change (brainstorm:feature-draft#D-5)",
+  "fit_criterion": "Reopening a locked v1 fixture yields a draft whose parts equal v1 at opening.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d8d7f1df766b2acc9adfebe1a4e1b01a9514fdc1249815b34ccd629c21b708e7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:35Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

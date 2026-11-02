@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQEM66P2N07E5FHAZEHH",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "J3",
+  "statement": "When I'm brand new and want to know what to literally do first, I want get a short first-steps path, so I can reach my first productive action without a wiki crawl",
+  "rationale": "brainstorm:ecosystem-help#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9798eb82fd8c8d56f3e45aa0052079330319e57f173387a9d9077a03734e8dfe",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.324Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

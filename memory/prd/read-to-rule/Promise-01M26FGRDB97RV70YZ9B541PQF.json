@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDB97RV70YZ9B541PQF",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-3",
+  "statement": "When the synthesis flow authors a 000-base under the §0-bearing template, the synthesis flow shall write §0 from the document's own content, with every routed item resolving to an anchor in the same document.",
+  "rationale": "§0 routes to the contract; it never adds to it (brainstorm:gate-attention#D-3)",
+  "fit_criterion": "in the checkpoint window, 100% of §0 items resolve to live anchors in their document; zero §0-only claims",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7fb932869a56d0cf426f654934a999ae1931440430ecd912fa08cb2a8d0011a2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.307Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

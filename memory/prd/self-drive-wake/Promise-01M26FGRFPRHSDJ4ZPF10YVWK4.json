@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFPRHSDJ4ZPF10YVWK4",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-3",
+  "statement": "read_unknown fires when a read resolves unknown",
+  "intent": "medium: str, kind: enum(rate-limited, offline, parse-defect, timeout), count: int",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cae1d08cf1c3c6e0f2aa2e362cf0b096135fac9395054f7eff839c8be1b5038b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.382Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

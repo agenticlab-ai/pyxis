@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390XKFDXAC4EMVWES0SB95B",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.7: lock preparation rebases the draft onto the mainline and compiles its records once, with evidence taken at that tree; working files carry no evidence.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQXFYJYBWGK83DKWJSVZ9"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSGW0BC7RHQBFS19NQ4TF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:20Z"
+}

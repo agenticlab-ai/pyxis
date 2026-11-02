@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M479A976H12HBBZ1VNKGSYN8",
+  "kind": "Answer",
+  "subject": "prd/maintenance-jobs",
+  "statement": "Restrict v1 schedules to once per day. Scope the retained claim key to the repository remote, job ID, and date in the configured job timezone, derived from the invocation's captured start time. Remove minute matching and startup grace. Manual runs use the same daily key; attempted dates remain consumed and the next date stays eligible. Update FR-6/FR-7, UB-4, flows, and deferred scheduling scope accordingly.",
+  "intent": "@mdarabi",
+  "rationale": "Daily jobs in the near future need only “date+job_id” as their unique key.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M479A975GD15W96SWCP25XZA"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSP71YD83TS2AWSPT6N",
+  "kind": "Question",
+  "subject": "prd/feature-implementation-drive",
+  "family": "Q5",
+  "statement": "What repository retention policy controls post-delivery feature-branch and evidence cleanup?",
+  "intent": "operator/config design",
+  "rationale": "open — policy-owned; delivery proof and cleanup ordering are fixed by FR-24",
+  "fit_criterion": "launch gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:49531b31e27603684267008ee9f6107515399316c2f0ad1463639d4842b57cc6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.702Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

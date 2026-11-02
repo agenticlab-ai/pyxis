@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVY7KC76FYEK9FQ81K1",
+  "kind": "Question",
+  "subject": "prd/tech-design-review",
+  "family": "Q1",
+  "statement": "The artifact schemas/table/homes — and whether this feature's design Builds-on prd-review's artifact design or shares it verbatim (#P-1)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Artifact-contract phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:10e71be847a922e1505ed87e0772aa5ec752e010111edf1b447ec6a90f62b936",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.774Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

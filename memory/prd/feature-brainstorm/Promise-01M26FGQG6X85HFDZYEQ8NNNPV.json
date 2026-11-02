@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQG6X85HFDZYEQ8NNNPV",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "ABUSE-3",
+  "statement": "whoever edits a gated record between the gate and synthesis — inserting rulings the operator never made — vector: post-gate record tampering before `prd-new` consumes it",
+  "intent": "the PRD inherits unreviewed \"decisions\"",
+  "fit_criterion": "the record rides the 000-base's introducing PR, so stage-2 human review sees record and PRD together (§5.4); M2's anchor citations make an unanchored ruling visible in diff; mechanized fingerprinting staged as WR-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b9606821fd249207df3f7d65e9af16362920e6203b45094b4a90e5d9ff909f1e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.374Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

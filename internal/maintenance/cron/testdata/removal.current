@@ -1,0 +1,6 @@
+11 0 * * * echo before
+# pyxis-maintenance/v1 repo=2861aa6c79e595be59d6245707499455d5a51e76c155cab76fd8d525169f890a job=daily
+0 2 * * * PATH='/usr/local/bin:/usr/bin:/bin' '/opt/pyxis/bin/pyxis' maintenance run --repo '/srv/pyxis' --job 'daily' >> '/srv/pyxis/.pyxis/logs/maintenance/cron.log' 2>&1
+# pyxis-maintenance/v1 repo=1c8a91610064906e4760200132d3fc0cc3af0066ef7e5d431f41fde98d3470fd job=shared
+15 3 * * * PATH='/usr/local/bin:/usr/bin:/bin' '/opt/pyxis/bin/pyxis' maintenance run --repo '/srv/other' --job 'shared' >> '/srv/other/.pyxis/logs/maintenance/cron.log' 2>&1
+22 5 * * * echo after

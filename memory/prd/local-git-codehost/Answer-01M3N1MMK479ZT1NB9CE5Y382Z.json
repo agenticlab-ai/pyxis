@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMK479ZT1NB9CE5Y382Z",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Every proposal and receipt names its fully qualified target ref and exact old full SHA. Pyxis derives that ref from the configured mainline for a draft or the approved feature-integration destination for a task; an agent-provided alternate target is refused. Landing atomically updates that target and rejects a moved branch or target. The operator still reviews each exact code head.",
+  "intent": "operator",
+  "rationale": "A mainline-only receipt does not guard task landings on an integration branch.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMK3JYFV6CKC66D53MAZ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

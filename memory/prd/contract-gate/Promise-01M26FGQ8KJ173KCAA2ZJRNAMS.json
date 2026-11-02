@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8KJ173KCAA2ZJRNAMS",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-4",
+  "statement": "The gate shall ship as a single self-contained Go executable in the docgate/plangate/codegate family, with no runtime dependency beyond the repo's committed files.",
+  "intent": "Operability",
+  "fit_criterion": "inspection of the release artifact; a clean-checkout fixture run with no external service",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f02aa4247cf3508632fc7ff9335d1fd9329fda7866d5983757dc78bfc7c17d9f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.131Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

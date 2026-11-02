@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJRC11PKFE13YHJS3YF",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-6",
+  "statement": "When a ruling resolves, the skill shall append it to the record before the next question, re-reading the record from disk before each write so authority edits survive.",
+  "rationale": "capture rhythm; the record is collaborative",
+  "fit_criterion": "each ruling present before the next question turn on all fixtures; a seeded mid-session edit persists",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab6ba305d2a5417cfa72a1ca2c6718a253ec90df9d4ed4625c64948bce6b1db6",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.48Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

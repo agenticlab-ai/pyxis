@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJX0TC5YFC3DG296R9B",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-3",
+  "statement": "A branch-first, proposal-second write can leave a proposal naming a stale branch head when another writer moves the branch between pushes. A compare-and-swap on the proposal ref alone does not prevent the mismatch.",
+  "intent": "GitHub code review on PR #1312, discussion 4125900289, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

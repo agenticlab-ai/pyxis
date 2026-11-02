@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWDA53MAY0MF3QJ2CJD",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "EVT-5",
+  "statement": "portability_dry_run fires when the advisory Actions job completes",
+  "intent": "commit: sha, parity: bool (rung-for-rung vs local verdict)",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cc872271defd83dfa3b9f7dc1bb9c3300407f5ec040022c5e47a9a907ce2a1f3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.765Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

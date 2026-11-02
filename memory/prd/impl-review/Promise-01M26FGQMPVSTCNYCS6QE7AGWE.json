@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMPVSTCNYCS6QE7AGWE",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "ABUSE-7",
+  "statement": "implementing agent under pressure — vector: disputes every blocking finding or churns remediation to exhaust the internal round cap",
+  "intent": "review neutralized by attrition or remediation miscounted as corroboration",
+  "fit_criterion": "FR-20's per-pass cap and declined-blocking escalation, FR-31's brief+park, UB-16's pass-type invariant",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d86ab8a5d66fc40cc62e5b7bbe30b0d774d42a14eef46670a4890b368eeff5b7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.518Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

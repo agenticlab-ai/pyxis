@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC4EZC688J1NENX8PSJW5",
+  "kind": "Document",
+  "subject": "governance/product-vision",
+  "family": "vision",
+  "statement": "Imported Pyxis source document: docs/product-vision.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/root",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "bf0b6e2331412fc2d1c0c75f8a99a45250833e85bf540d40819438710e487808",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:38Z",
+  "provenance": {
+    "source": "docs/product-vision.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

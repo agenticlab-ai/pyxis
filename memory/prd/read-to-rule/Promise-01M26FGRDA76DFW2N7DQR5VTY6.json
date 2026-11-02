@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDA76DFW2N7DQR5VTY6",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-2",
+  "statement": "The template's §0 contract shall open the section with the normativity notice — on any conflict the body governs — and a reading-budget hint.",
+  "rationale": "the informative boundary must be visible at the point of use (brainstorm:gate-attention#D-4)",
+  "fit_criterion": "100% of §0 instances in the checkpoint window carry both lines",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d506edc1cdae71662d76a4567e8488962c3b33628228f1b421917ecdf15846d9",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.306Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

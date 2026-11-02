@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M47AM7ZF47E46P21HXJZB6V7",
+  "kind": "Decision",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "decision.3.3.1",
+  "statement": "The gate still reads commit metadata from Git without a code-host credential, compares each carried binding to the commit's tree and parents, and resolves protected-path diffs as positively Argus, positively human, or underivable. A positively Argus protected-path diff is refused; an underivable protected-path diff fails closed; a positive human attestation can admit a human diff but cannot launder a positively Argus diff. The authority-contract and governance classes remain fixed. After the first PR, the valid committed delivery ledger still supplies its exact historically owned paths and own problem subtree. It also admits the configured plans root plus `/<slug>/NNN-plan.md` and `NNN-plan.json`, where NNN is exactly three decimal digits, and the fixed `memory/problem/<slug>/` namespace already admitted during birth. No candidate path list, journal claim or title changes this grammar. The committed input is the active problem's `delivery.md` (`delivery-ledger/v1`), not its `problem.md` (`problem-ledger/v1`). A valid problem ledger alone grants no downstream plan scope. Both consumers refuse the new numbered plans when the committed delivery ledger is absent or malformed, even if a valid delivery ledger appears only in the candidate. With absent committed delivery input, the attribution gate retains its first-proposal grammar, including birth-time problem captures but excluding plans; malformed committed delivery input fails closed. Relocating the configured plans root moves the grammar instead of retaining the default location. The same pure resolver supplies both the write hook and merge-attribution gate.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:42accc11c1ee62284b935fd8afa585685f586f0772d4696cdb92fc2cd3fa0f2f",
+    "source-design:da8de41fa70e7ea3ac28728cc85785677be519b643d49954066261c9105774f2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M47A8SY3S5D9A9MT4KEG354B"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:43:12Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-committed-plan-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-committed-plan-attribution.md lines 56-56 in section 3.3; sha256:42accc11c1ee62284b935fd8afa585685f586f0772d4696cdb92fc2cd3fa0f2f"
+  }
+}

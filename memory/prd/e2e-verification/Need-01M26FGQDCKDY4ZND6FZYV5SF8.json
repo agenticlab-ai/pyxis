@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDCKDY4ZND6FZYV5SF8",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "J1",
+  "statement": "When a feature's implementation tasks have all landed, I want derive an explicit coverage map and auto-author an e2e design doc proving each behavior end-to-end, so I can have the feature's e2e scope stated and buildable without hand-writing it",
+  "rationale": "`brainstorm:e2e-verification#D-12`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:89d64fe8107a32e3c6211a0a8ba5bb509ab5ee208546bb54ff60953fede8d921",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.284Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

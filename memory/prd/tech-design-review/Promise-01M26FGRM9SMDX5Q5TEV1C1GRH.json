@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRM9SMDX5Q5TEV1C1GRH",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "FR-15",
+  "statement": "The reviewer shall complete every review to a verdict with zero human participation; where an overlay occurs, it shall read the same artifacts and block nothing.",
+  "rationale": "the world assumption (inherited, brainstorm:authoring-reviewers#D-1)",
+  "fit_criterion": "the corpus runs unmanned end-to-end; the overlay demo shows the verdict pre-existing",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1692231c0791ba27e265f7362d9dac1a789a3b88ae7aa4140464be55864f4c53",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.529Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

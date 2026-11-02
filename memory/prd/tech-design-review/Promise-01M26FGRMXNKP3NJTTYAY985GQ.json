@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRMXNKP3NJTTYAY985GQ",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "NFR-1",
+  "statement": "Each review's cost shall be bounded by construction.",
+  "intent": "Cost",
+  "fit_criterion": "worst case = 1 review + 1 re-review + 1 brief; no fixture exceeds it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0dfcfd0d291ff0bb2ee77656e5fd9477cac9c2a0f886f5b36cec94b1dd8461e1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.549Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

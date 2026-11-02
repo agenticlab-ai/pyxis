@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZTKS0MJQFETEZHGXE4",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "ABUSE-3",
+  "statement": "the installer itself over-reaching on the granted GitHub credential — vector: any API call beyond the declared wiring set",
+  "intent": "unwanted account mutation; trust collapse for an open-source installer",
+  "fit_criterion": "FR-10's declared-operation bound + EVT-4's audit record; preview (FR-19) shows the operation set before it runs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:161bac00c60b881fae2588825783a350c0da12691b60ebb04e11e6d403f610b0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.874Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

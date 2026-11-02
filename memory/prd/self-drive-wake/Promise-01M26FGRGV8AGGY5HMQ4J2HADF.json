@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGV8AGGY5HMQ4J2HADF",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NR-1",
+  "statement": "The executor remains a one-sweep primitive: no timer, no loop, no wake consumption is added to `implement-now` itself; its idle-frontier run still spends zero model tokens",
+  "rationale": "the drive owns the clock; the sweep's contract is frozen ground (prd:implement-now FR-12/FR-14)",
+  "fit_criterion": "the existing implement-now suites pass unchanged; inspection shows the executor gained no scheduling code path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a3bdd353182d505e4fe332cb707c2377e470e4e201e577ec846dd4352a06439d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.419Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

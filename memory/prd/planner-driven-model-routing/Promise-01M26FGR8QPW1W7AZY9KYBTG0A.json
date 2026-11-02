@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8QPW1W7AZY9KYBTG0A",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "ABUSE-3",
+  "statement": "adapter or tracker bypassing the contract — vector: discards fields, substitutes settings, or reports a false decision",
+  "intent": "unaudited or underpowered worker launch",
+  "fit_criterion": "FR-7, FR-24, UB-3, conformance suite",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d2f5fe25cf14b89665f16c4eef065382659ea1c75bfa842c72889cb29dbfa55d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.159Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

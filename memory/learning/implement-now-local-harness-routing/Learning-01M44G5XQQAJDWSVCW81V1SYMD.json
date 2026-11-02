@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Learning-01M44G5XQQAJDWSVCW81V1SYMD",
+  "kind": "Learning",
+  "subject": "learning/implement-now-local-harness-routing",
+  "statement": "Selecting a machine-local backend did not by itself establish that its configured model was available or that an isolated reviewer could authenticate. Resolve implementation and review routes independently, validate the selected model, and preserve authentication through the selected provider's credential snapshot in private runtime state. Native review modes are not the confinement authority: use the governing reviewer source-write-guard design when changing inspection permissions.",
+  "intent": "Preserve the earlier model-availability and authentication lesson without teaching workers to restore obsolete native review restrictions.",
+  "rationale": "The predecessor records why naming a backend was insufficient for a usable isolated route. Its recommendation to retain Cursor plan mode and an enabled native sandbox was overtaken by PR #1355: the governing design records ordinary source reads failing under nested native sandboxing and assigns source-write protection to the shared OS process guard. Retain the independently scoped authentication lesson and consult that design for current permissions.",
+  "learned_from": [
+    "Learning-01M2VP1KJS0Q02MW4PYGS20SP3",
+    "docs/tech-design/impl-review-source-write-guard.md"
+  ],
+  "tags": [
+    "code:cmd/implement-now",
+    "code:internal/executor/reviewinvoke",
+    "code:internal/executor/runtime",
+    "code:internal/adapters/harness/cursor",
+    "code:internal/adapters/harness/opencode",
+    "code:internal/harnessconfig"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2VP1KJS0Q02MW4PYGS20SP3"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-04T22:22:31Z",
+  "provenance": {
+    "source": "docs/tech-design/impl-review-source-write-guard.md",
+    "note": "Bounded correction of stale review-mode guidance after PR #1355; prior model and authentication observations are attributed to the predecessor, not claimed as newly reproduced experiments. Reconsider review permissions through the governing design when the process-guard boundary changes."
+  }
+}

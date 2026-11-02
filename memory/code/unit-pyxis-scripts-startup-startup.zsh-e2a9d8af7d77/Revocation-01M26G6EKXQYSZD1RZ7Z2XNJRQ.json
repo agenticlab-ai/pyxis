@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M26G6EKXQYSZD1RZ7Z2XNJRQ",
+  "kind": "Revocation",
+  "subject": "code/unit-pyxis-scripts-startup-startup.zsh-e2a9d8af7d77",
+  "statement": "The startup launcher moved intact to script/startup; its old path identity is retired and replaced by the reconciled script/startup anchor.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Need-01M26FGS58DXBCN6BY3MSH2D2F"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:29:54Z"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD6B7YCJGSD25PGJPZJZ",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "NFR-1",
+  "statement": "Credentials stay scoped and absent from output.",
+  "intent": "Security",
+  "fit_criterion": "Secret canary appears in no argv, URL, Git config value, log, error, PR body, event, tag, or compiled record.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

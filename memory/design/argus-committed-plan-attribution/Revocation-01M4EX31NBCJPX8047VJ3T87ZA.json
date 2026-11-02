@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M4EX31NBCJPX8047VJ3T87ZA",
+  "kind": "Revocation",
+  "subject": "design/argus-committed-plan-attribution",
+  "statement": "Proposed successor argus-journal-type-recovery retains the predecessor bindings, exact native Decision projections and coverage; the implementation-scope-and-rebase rationale is preserved at Decision-01M4EWTCQ8ZC6AAXXZEM281WTT. Retire this superseded design identity in the same reviewed Source proposal while preserving its immutable original and evidence.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M47AM7ZF47E46P21HXJZB6V7"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:20:33Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGNQM6C9QFTA27W7SQ4",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "M4",
+  "statement": "M4: G2",
+  "intent": "quiet-state diagnosis without the browser",
+  "fit_criterion": "operator diagnoses N of N seeded quiet-states correctly from the status verb alone, at the proof run (rubric in DOD-4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5d683ac0758f2b1b47c0b0c7590ed425c0f115c79087e079a8cf0b553981879",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.413Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5W6JDCCGWDMK8HNBG8EC",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-1",
+  "statement": "If If any feature requirement, governing design, or affected frozen-plan trace lacks a typed terminal disposition, then the system shall Refuse authority publication and cleanup",
+  "intent": "lifecycle precondition with exact unresolved anchor",
+  "fit_criterion": "One fixture per live or missing disposition writes zero authority and accepts zero deletions",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e747c45279c95eef32f0e24ac3aaf015109fdccf855ae249b635bd320712f486",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:05Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

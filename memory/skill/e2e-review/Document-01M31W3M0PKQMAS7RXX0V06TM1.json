@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3M0PKQMAS7RXX0V06TM1",
+  "kind": "Document",
+  "subject": "skill/e2e-review",
+  "family": "lens-coverage",
+  "statement": "Captured authored source: .pyxis/skills/e2e-review/lenses/coverage.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:7dbae9857f9ac68afb13c57aa8340d07ded3b81e45f5c74e2c7496ce96073d32"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB8FA9WAM9BQRC2ZAYG6W"
+    }
+  ],
+  "body_sha256": "7dbae9857f9ac68afb13c57aa8340d07ded3b81e45f5c74e2c7496ce96073d32",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:33Z",
+  "provenance": {
+    "source": ".pyxis/skills/e2e-review/lenses/coverage.md",
+    "note": "offline reconciliation"
+  }
+}

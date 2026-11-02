@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQRP24WHQRT825DKYSP4",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-10",
+  "statement": "`routed_task_outcome` fires when a resolved implementation attempt reaches a terminal worker class",
+  "intent": "`attempt_id:string`, `demand_id:string`, `task_id:string`, `proposal_ref:string?`, `class:enum{succeeded,failed,blocked}`, `verification:enum{verified,failed,not_reached}`, `usage:closed object`, `turns:int`, `evidence_ref:string`",
+  "fit_criterion": "M1, M2, M5, M6",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c24cf96c074a55b85d62b2ae72eb9f1235ea0b62f2dfbdc1ab4811a058a97db7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.646Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ5YPJ161HMT5EZS3EVT",
+  "kind": "Expectation",
+  "subject": "prd/context-pack",
+  "family": "DOD-4",
+  "statement": "Freshness holds: no stale pack is ever served",
+  "intent": "FR-6, UB-4, ABUSE-2, §3.3",
+  "fit_criterion": "a mid-stage source-change fixture",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca53a47982809fca7b5c09b3223413efb51579d687c7973fc09d546bf7d56f05",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.046Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQRFRFKZZW6AXRMMD8HE",
+  "kind": "Expectation",
+  "subject": "prd/implement-now",
+  "family": "DOD-36",
+  "statement": "Every live Must functional requirement passes its fit criterion, including field-identical plan transport, least-cost satisfying routing, immutable implementation evidence, exact-green durable review obligations, authenticated exact-artifact completion, the exact EVT-13↔EVT-17 reciprocal publication join with distinct native-receipt and attempt-proof fields, three-way failure significance, isolated bounded reviewers, selected-frontier review-only recovery, combined-frontier zero work, and direct activation.",
+  "intent": "FR-1..FR-5, FR-7..FR-10, FR-13..FR-18, FR-20..FR-26, FR-28..FR-32, FR-35, FR-40..FR-49",
+  "fit_criterion": "per-requirement evidence index including exact/promoted/unsupported/legacy/cutover, ordering/revision, setup/auth, assurance-band routing, attempt-attribution/receipt-substitution, EVT-13↔EVT-17 required/optional/status/failure-class/grammar/value joins, receipt-versus-proof non-alias, missing/duplicate/orphan/mismatch refusal, isolation/concurrency, failure-class, combined-empty, selected-frontier/driver-exhaustion, direct-cutover, fallback, and unreachable-hardcoded-path cases",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:04784e66dc6f2e5ed016d05ba23497a9cde8028ab821581917cc9a4e5636f1bf",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.639Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

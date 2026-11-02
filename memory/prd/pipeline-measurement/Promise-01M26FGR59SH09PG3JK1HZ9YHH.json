@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR59SH09PG3JK1HZ9YHH",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "FR-7",
+  "statement": "The system shall attribute the same per-phase spend figure regardless of whether the phase ran inline, as a subagent, or as a headless invocation.",
+  "rationale": "execution-agnostic — the mechanism is out of scope (NG-3)",
+  "fit_criterion": "the same phase run under two execution modes yields the same reconciled figure",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ba8e69b9b95575abe0eaac9169d0594ea2f224c574df80fc3e3804cb25d76a02",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.049Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M4640NX0HCCXXWBWSCBVR",
+  "kind": "Decision",
+  "subject": "design/memory-staged-contracts",
+  "family": "decision.2.1",
+  "statement": "Reconciliation distinguishes integrity defects from unfinished design work. Exact captured, live typed requirements that have no serving design are reported as undesigned; an unchanged frozen design whose exact declared source requirement has been superseded or retired is reported as reopened. These states remain visible and prevent feature closeout, but do not become debt allowances or block the preceding contract PR solely because design work is pending.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e0307f1effffb96bf7b6789520bb38a45645fb34bda6ede581bd3da552bef8eb",
+    "source-design:dbcfbb6c844172f615881edebb7826c89ef26900efdfd29ad0bcd9f373f9e0b1",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2VJE8ACEQK3X4H97A0YMP45"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRDK4SFX0GNDD0MGPNJ87"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:30Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-staged-contracts.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-staged-contracts.md lines 28-28 in section 2; sha256:e0307f1effffb96bf7b6789520bb38a45645fb34bda6ede581bd3da552bef8eb"
+  }
+}

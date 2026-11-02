@@ -1,0 +1,45 @@
+# docs-gate — the INSTALLED-repo variant of the required docs gate
+# (installer-v1 §3.10). An installed repository carries no engine source, so
+# this workflow holds ZERO source-toolchain steps — no toolchain setup, no
+# compile-and-check suite; those belong to the source repo's own workflow,
+# which keeps its own file. The gate itself runs through the exec grammar:
+# `pyxis exec docgate -- <argv…>` — argv passes verbatim, the binary is
+# hash-verified against the pinned release manifest before every execution
+# (DINV-1), and nothing unpinned executes.
+#
+# Desk parity: the payload's pre-push hook runs the identical umbrella verb
+# against {{remote}}/{{branch}} through the same exec grammar (docgate-v1 DINV-4) —
+# this job is that hook's hosted mirror, fetch-depth 0 so the merge base
+# resolves exactly as it does at the desk.
+#
+# The packer maps this file to .github/workflows/docs-gate.yml in operands;
+# the bootstrap step depends on the system release's shim — see README.md
+# beside this file for both contracts.
+name: docs-gate
+on:
+  pull_request:
+  push:
+    branches: [{{branch}}]
+jobs:
+  docs-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Fetch-verify the pyxis binary against the documented pin into the
+      # gitignored .pyxis/bin/ cache (the shape's cache-location contract),
+      # then put it on PATH. On a warm runner cache the shim re-hashes and
+      # skips the fetch; every later step speaks `pyxis` from PATH.
+      - name: bootstrap pyxis
+        run: |
+          bash .pyxis/scripts/pyxis-bootstrap.sh
+          echo "$PWD/.pyxis/bin" >> "$GITHUB_PATH"
+      - name: docgate gate
+        run: |
+          git fetch {{remote}} {{branch}}
+          pyxis exec docgate -- gate --merge-base {{remote}}/{{branch}} --defects-json -
+      - name: coverage (report only)
+        if: always()
+        continue-on-error: true
+        run: pyxis exec docgate -- coverage >> "$GITHUB_STEP_SUMMARY"

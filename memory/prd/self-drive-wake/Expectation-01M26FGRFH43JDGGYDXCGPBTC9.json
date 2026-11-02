@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFH43JDGGYDXCGPBTC9",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-5",
+  "statement": "Quiet-state diagnosis drill: the operator, using only the status verb, correctly classifies every seeded quiet-state — rubric: 5 of 5 scenarios (waiting-on-review, CI-running, blocked, offline, dead-checker)",
+  "intent": "G2, M4",
+  "fit_criterion": "drill record in the run report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:295e9c91ee235e79c8f7fff1f4b8b20ae57fae5a17106150ba43b7e5233d0270",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.377Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

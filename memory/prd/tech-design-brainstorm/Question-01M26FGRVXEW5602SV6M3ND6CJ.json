@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVXEW5602SV6M3ND6CJ",
+  "kind": "Question",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "Q5",
+  "statement": "The vision-§1 vs long-run-autonomy posture reconciliation — a human-authored vision append (carried non-blocking fog, brainstorm:tech-design-brainstorm#G-1)",
+  "intent": "@mdarabi",
+  "rationale": "open",
+  "fit_criterion": "nothing in this feature",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:8666149e722b327c1821832d7181ac6439e2e3eedc33a51d7d8fd10e9271b0c4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.773Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

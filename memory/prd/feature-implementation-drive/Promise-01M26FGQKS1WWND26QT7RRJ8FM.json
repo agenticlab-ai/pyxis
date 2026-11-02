@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKS1WWND26QT7RRJ8FM",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-1",
+  "statement": "The feature drive shall preserve single-owner execution under concurrent kickoff, resume, handoff, cancellation, and task-readiness races.",
+  "intent": "Concurrency integrity",
+  "fit_criterion": "In 100 repetitions of each race fixture, zero overlapping owners and zero foreign implementation attempts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d03c94056dde79c7e5cfb4cdf5cba1b43a3cc15f17a25e7fc3c05ea07fc08528",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.489Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

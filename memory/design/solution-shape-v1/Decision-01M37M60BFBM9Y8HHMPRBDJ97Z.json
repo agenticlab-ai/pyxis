@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M60BFBM9Y8HHMPRBDJ97Z",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "decision.2.1",
+  "statement": "The solution-shape is a **separate, non-frozen sibling document** of the technical design — the two are authored as a coupled pair and presented together in one operator conversation, so both are seen in a single review, while **only the design (the Decision) freezes**. The frozen design *references* its shape and never contains it, so the frozen Decision carries no volatile shape (FR-3/M2); the shape is authoritative as the implementation reference until the code that implements it exists, then it is retired. The partition is **by artifact** — durable decisions live in the design (marked by the existing binding markup: `**Decision:**` / `DINV-n` / `A-n`); concrete schema and interfaces live in the shape — and a gate enforces both the split and the pairing. This is *separate at rest, combined in review*, using the operator conversation and the docgate gate without an additional runtime.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2e7a5ad843999abfa8589d054b9ca140e5fe12650e919746be1d7bcffa4f0d34",
+    "source-design:ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPW1D3894MJYPJVV6KH7"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRZ599VTBS35Z9ENSAH28"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:30Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/solution-shape-v1.md lines 26-26 in section 2; sha256:2e7a5ad843999abfa8589d054b9ca140e5fe12650e919746be1d7bcffa4f0d34"
+  }
+}

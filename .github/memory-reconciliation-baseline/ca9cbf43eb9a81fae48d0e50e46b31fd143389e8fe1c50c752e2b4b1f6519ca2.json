@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/implementation-verification#Q1",
+  "feature": "implementation-verification",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

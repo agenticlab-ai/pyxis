@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3C8PYD8KXRGE60E1Q0XAB08",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-review-digest",
+  "statement": "Review each draft contract at a pinned committed head and record the shared PRD and tech-spec digest in its numbered working-file report.",
+  "intent": "Make the latest PRD and tech-spec reviews verifiably about the version that may lock.",
+  "rationale": "A read-only CLI prints the compiler-defined digest from committed regular files; both reviewers record it and readiness compares each latest report against the current contract digest.",
+  "fit_criterion": "Both reviewer reports carry an exact digest; an edit to either contract file makes the earlier review stale, while the prior report remains in the draft history.",
+  "tags": [
+    "code:cmd/pyxis"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T12:30:14Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

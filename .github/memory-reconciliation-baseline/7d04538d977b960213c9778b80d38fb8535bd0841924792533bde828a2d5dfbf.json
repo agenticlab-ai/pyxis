@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/installer-without-browser-review",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

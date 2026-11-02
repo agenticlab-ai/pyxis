@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1RB8R4B67P2107F4ZF8B",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.2.1",
+  "statement": "The e2e authoring line stays **three separate skills** — `/e2e-design`, `/e2e-review`, `/e2e-plan` — each its own command and a single invocation, reusing existing machinery under the hood. Amendment 002 changes what each does, not how many there are:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9e924a8deb606aa3024397717963268147e4d992466229cfc6501c00873447d7",
+    "source-design:3508462a6fb8b6b739ccfee9ea78d5c8e95242b483c987ee851b4df712cffe84",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQ893FQKQYJDKQ4Q28Y"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR0V7JNJC4TV5S6402BWF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:10Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 49-49 in section 2; sha256:9e924a8deb606aa3024397717963268147e4d992466229cfc6501c00873447d7"
+  }
+}

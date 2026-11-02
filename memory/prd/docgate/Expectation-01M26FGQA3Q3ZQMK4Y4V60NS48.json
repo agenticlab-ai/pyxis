@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA3Q3ZQMK4Y4V60NS48",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-3",
+  "statement": "Gate wired: required CI context + pre-push hook, same binary, same verbs",
+  "intent": "§5.5",
+  "fit_criterion": "branch-protection config + hook file",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:108bc9dfbc5929a7bc43d1baafc007053172c7ecf651e0270001f89e020f7e53",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.179Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

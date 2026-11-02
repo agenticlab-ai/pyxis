@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2NQ3J6YS1KVPNH1ZEKTZH87",
+  "kind": "Learning",
+  "subject": "learning/hermetic-load-lifecycle-tests",
+  "statement": "ConcurrentLoad retains its process-wide worker budget and real CPU burners, with a private injection seam for owned work and budget in lifecycle tests. Tests hold all admissions in flight to check the shared cap, then hold cancelled burners before exit to prove Run waits for every owned goroutine and returns every budget slot. Process-cancellation fixtures signal readiness before cancellation, including a descendant that inherits output pipes.",
+  "intent": "Prove bounded load and complete teardown through observable lifecycle transitions.",
+  "rationale": "Sleeping and comparing process-wide goroutine counts did not identify whether the owned burners had stopped. Explicit entry, cancellation, and exit acknowledgments make that ownership assertion deterministic.",
+  "learned_from": [
+    "internal/executor/e2eadmit/hermetic/perturbation_test.go",
+    "internal/executor/e2eadmit/hermetic/exec_test.go",
+    "Git tree 3acb1af40a751b2444a9bddca1a3ea3c5d35d32e at internal/executor/e2eadmit/hermetic, retained by the mainline snapshot introducing this record. Resolve the source paths below in that tree; no topic commit is required.",
+    "SHA-256 5f87372acb0d0b66ec0a7cdec4b578e1fbdbf26bb6d8e66aea6132e32bd692a9; Git mode 100644; path internal/executor/e2eadmit/hermetic/ambient.go",
+    "SHA-256 cdb5a3c9f89228d98fdbd8f2b5f06cd34633f0afbd180d3d3ea08b045e419a26; Git mode 100644; path internal/executor/e2eadmit/hermetic/battery.go",
+    "SHA-256 8eaa8afb72828d00b0761447d60c4f32b471630649f2d628d3b288bc8cacb91d; Git mode 100644; path internal/executor/e2eadmit/hermetic/doc.go",
+    "SHA-256 65e1129b3f9774fe6e145b449acb92586359a409439009e40dd8c711a121a9b0; Git mode 100644; path internal/executor/e2eadmit/hermetic/exec.go",
+    "SHA-256 ac2c2c0b5fe663120ff1cf784583154307576dc6fd38ebd4e57b1b19f40cc5c0; Git mode 100644; path internal/executor/e2eadmit/hermetic/exec_test.go",
+    "SHA-256 06af02149c3010f94d42a5affe34eadcbff5b7a9ce2634463bf0fb3954c74b9f; Git mode 100644; path internal/executor/e2eadmit/hermetic/output.go",
+    "SHA-256 0f6c074f03ca6fc9d2e11945a17479b7ecdaa8627d3b96ae0232043b9e2a2bd7; Git mode 100644; path internal/executor/e2eadmit/hermetic/perturbation.go",
+    "SHA-256 6eaf9e21d4538c8095998d1d1654ec740bfeaed0f1c1e826a7e1c0e9097cb7cc; Git mode 100644; path internal/executor/e2eadmit/hermetic/perturbation_test.go",
+    "SHA-256 448f59a10b7d525a55d1f15aa23535b11fe8753047bb8efc7b1941b6e669591e; Git mode 100644; path internal/executor/e2eadmit/hermetic/rejection.go",
+    "SHA-256 a731595c85a1b61e095b90a51f6e12a36abb937f53dbc8e51cdce1dd3224276a; Git mode 100644; path internal/executor/e2eadmit/hermetic/statichint.go",
+    "SHA-256 707ca2d5c37b31ec762afdf805106742847ceee3334e978f44c48bb2b17346e7; Git mode 100644; path internal/executor/e2eadmit/hermetic/types.go"
+  ],
+  "tags": [
+    "code:internal/executor/e2eadmit/hermetic",
+    "git-tree:3acb1af40a751b2444a9bddca1a3ea3c5d35d32e",
+    "sha256:dbe683a636497e35e590bdedf77b19a9f2c1df32e9fca4140e07e63b1e68a412"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-16T18:19:16Z",
+  "provenance": {
+    "source": "internal/executor/e2eadmit/hermetic/perturbation.go",
+    "pr": 1192,
+    "note": "Evidence is content-addressed by the git-tree tag and the file SHA-256 witnesses in learned_from. The tree is retained by the mainline snapshot introducing this record, including after a squash merge."
+  }
+}

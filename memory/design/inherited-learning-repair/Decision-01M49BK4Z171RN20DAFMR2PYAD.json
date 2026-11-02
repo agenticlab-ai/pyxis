@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4Z171RN20DAFMR2PYAD",
+  "kind": "Decision",
+  "subject": "design/inherited-learning-repair",
+  "family": "D-2",
+  "statement": "Fetch the configured code-host target and verify one pinned snapshot before admission. Use the verifier selected by that snapshot's existing source/release tool configuration. The caller's checkout and installed verifier are not evidence of current shared health.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4XZH4D10V1CMM7TRBAB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y5PVEHMYRWFA208E4N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y6J1M4EPM8DWKS2721"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YB7YQVA7VVVYRJMJQ2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YDF2MWV9G5DPJ4BFRG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YH6R5SET586R31WBZ3"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

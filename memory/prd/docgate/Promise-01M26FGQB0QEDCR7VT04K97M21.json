@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB0QEDCR7VT04K97M21",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-37",
+  "statement": "When discovering projected units for fold state or congruence, docgate shall retain the existing merged-base row-kind inference except that every row whose numbered-section ancestry contains §0 shall be non-addressable.",
+  "rationale": "the reproduced phantoms are human-only §0 rows, while exact-header enforcement would silently de-govern legitimate rows in frozen bases whose cosmetic labels predate the registered payload schemas; as-of-review evidence (2026-08-20): origin/main carried 95 drifted UB, 26 drifted J, and 5 drifted R rows outside §0",
+  "fit_criterion": "the real impl-review §0 and nested §0.1 routing tables plus a typed FR-24 supersede are green; an origin/main corpus audit proves zero non-§0 live source-map record disappears from fold state",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dce1aa4da0f42139fc3811debd172f823c18187d5d09202b94efe5ef2ff4072b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.208Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

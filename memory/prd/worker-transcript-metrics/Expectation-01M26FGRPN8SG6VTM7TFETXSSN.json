@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPN8SG6VTM7TFETXSSN",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-8",
+  "statement": "Rollout/staging evidence",
+  "intent": "§6.5",
+  "fit_criterion": "—",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:537e4ee3c3f304b055b24a093e9c0ff0043e1fb37cff627836603f07281414a5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.605Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

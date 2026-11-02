@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTK6BBCSYC1GV2D82HT",
+  "kind": "Question",
+  "subject": "prd/installer",
+  "family": "Q-5",
+  "statement": "The generated CI workflow's carriage of the release pin and the door credential (opened by amendment 003): `prd:config-driven-portability` FR-4 scopes that file's rendered content to branch, remote, and path references, and its UB-3 has converge regenerate any hand-edit, so that contract must be amended — and its substitution grammar extended past `{{lower_snake_case}}` — before any installer requirement can contract CI credential carriage",
+  "intent": "@mdarabi",
+  "rationale": "open — a carried cross-contract obligation; blocks nothing in this contract",
+  "fit_criterion": "before an installer amendment contracts CI credential carriage",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:4aeb8fd0380ac2035984bff244b72795de1f703df8352ea0288521342bb8699b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.731Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

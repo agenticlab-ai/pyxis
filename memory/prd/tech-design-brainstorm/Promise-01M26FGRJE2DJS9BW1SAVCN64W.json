@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJE2DJS9BW1SAVCN64W",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-12",
+  "statement": "When the frontier is empty, the skill shall put the gate to the authority and end only by recording their explicit verdict — ready-for-design, needs-more-product, needs-investigation, covered, or abandoned — with date and authority; a covered verdict shall name its covering design; a ready-for-design verdict shall embed the coverage-check result against the design-template's decision-shaped inputs.",
+  "rationale": "the five-verdict enum is the ruling (#D-5); an unconfirmed direction is an assumed one",
+  "fit_criterion": "100% of ended fixture sessions carry exactly one gate entry with the verdict-conditional fields",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ea29e05a7f854478eca9ca4fcc273f99b59c5808d29b795763c4cc867f9cc6ec",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.47Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

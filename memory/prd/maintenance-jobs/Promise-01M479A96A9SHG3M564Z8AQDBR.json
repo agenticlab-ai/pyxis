@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A96A9SHG3M564Z8AQDBR",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVT-3",
+  "statement": "maintenance_run_result fires when Invocation refuses/skips or attempt finishes",
+  "intent": "job_id: optional string, job_date: optional date, invocation_id: string, outcome: enum, phase: enum, cause: optional string, elapsed_ms: int, evidence_refs: string list",
+  "fit_criterion": "M3",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

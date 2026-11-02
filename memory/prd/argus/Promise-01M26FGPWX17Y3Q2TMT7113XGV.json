@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPWX17Y3Q2TMT7113XGV",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "ABUSE-2",
+  "statement": "authority creep — content or flows maneuvering Argus into widening its own grant — vector: self-referential amendments, \"helpful\" policy edits",
+  "intent": "delegation boundary dissolves",
+  "fit_criterion": "UB-1, FR-11, FR-14",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:76f3faa7eb3823184f6099486e5339476ec1b771c71891ffdf63281f05260d13",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.757Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGK6M6MCDB5RHH2M1S7",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "EVAL-7",
+  "statement": "question turns legible in the principal's register — example-anchored comparable options, no bare anchors (FR-18)",
+  "intent": "fixture corpus, all human-principal interview turns (agent-principal fixtures exempt — FR-16)",
+  "fit_criterion": "100% of turns carry the FR-18 form; zero unglossed corpus anchors; zero example-bearing turns with two options sharing an outcome; typed example-skips only where no illustrative case exists (judged at the report); example fidelity — every example presented as looked-up verifies against its named source at the report, and every invented example is marked hypothetical (a fabricated-as-real example is a fail)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1f5fe598c84ccd65aba5d909f23432d9c5d6a38d6ca28d11c194654d22db981f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.387Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

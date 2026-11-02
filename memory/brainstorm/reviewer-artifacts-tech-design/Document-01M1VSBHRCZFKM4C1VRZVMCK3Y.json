@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBHRCZFKM4C1VRZVMCK3Y",
+  "kind": "Document",
+  "subject": "brainstorm/reviewer-artifacts-tech-design",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/reviewer-artifacts-tech-design.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "2385aeb6cabb2c42bc3c30989fc0ba58d3d7dd4d4d3bc2459cee8f4ece76953c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:19Z",
+  "provenance": {
+    "source": "docs/brainstorms/reviewer-artifacts-tech-design.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

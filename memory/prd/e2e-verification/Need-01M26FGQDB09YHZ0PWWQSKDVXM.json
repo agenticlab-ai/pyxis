@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDB09YHZ0PWWQSKDVXM",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "G3",
+  "statement": "We believe making the coverage map, the per-scenario route, and the harness design mandatory, reviewable doc sections; expected result: the operator trusting the e2e scope is complete, honest, and buildable — unprompted reliance on the coverage map and the harness section when accepting",
+  "fit_criterion": "coverage-map-consulted-in-acceptance observed in dogfood and post-launch review (§6.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eb8323a43b10d401af9b8ca4621679c4508308a5ae0369f4fc64ad38bb8d6e14",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.283Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

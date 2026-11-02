@@ -1,0 +1,7 @@
+{
+  "code": "design-decision-memory-drift",
+  "scope": "design/implement-now-issue-entry#decision.3.2.1",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

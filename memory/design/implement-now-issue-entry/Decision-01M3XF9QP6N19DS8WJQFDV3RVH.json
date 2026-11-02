@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XF9QP6N19DS8WJQFDV3RVH",
+  "kind": "Decision",
+  "subject": "design/implement-now-issue-entry",
+  "family": "decision.3.1.1",
+  "statement": "Extend the skill with an issue branch and the Go command with mutually exclusive `--issue <native-number>` plus `--issue-input <file>` operands. The configured task binding selects the tracker instance and repository/root; a URL supplied to the skill must match that binding before conversion to a number. Plan mode remains its existing branch. Issue mode rejects plan operands, review-only operands, or missing paired issue/intake operands.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:54b325c5cef0265abd5a6b631d793aa237495502acdcefc9c37e774b5ee32e8e",
+    "source-design:b7b976439bd14fc92df09aafb7a30dd4eac98640eff1656b69e53d86dd1b0a47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XEZCMZGWEHV57ACCAJV1SD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:52:26Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-issue-entry.md",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-issue-entry.md lines 56-56 in section 3.1; sha256:54b325c5cef0265abd5a6b631d793aa237495502acdcefc9c37e774b5ee32e8e"
+  }
+}

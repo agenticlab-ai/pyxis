@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5NJ51JG89G6N3QZY3VHG",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NR-1",
+  "statement": "Completion closeout remains the only feature receipt that asserts implementation completeness",
+  "rationale": "Abandonment must not make a false delivery claim",
+  "fit_criterion": "Existing incomplete, missing-design, and misaligned-requirement closeout fixtures retain refusal; valid completion controls remain unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9ff725759688a97c0e6e805569a5df80ed4971ac3ce682b2564aa33a8154320e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:58Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

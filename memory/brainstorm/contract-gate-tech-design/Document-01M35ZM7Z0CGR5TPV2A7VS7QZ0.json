@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZM7Z0CGR5TPV2A7VS7QZ0",
+  "kind": "Document",
+  "subject": "brainstorm/contract-gate-tech-design",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/contract-gate-tech-design.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:bf4dde4f1f20a065d0eee57eea95bd78002c057abd9a53fb05b584eb46697a0d"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBEKNS1CSRZZR6X9Q75E8"
+    }
+  ],
+  "body_sha256": "bf4dde4f1f20a065d0eee57eea95bd78002c057abd9a53fb05b584eb46697a0d",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:02Z",
+  "provenance": {
+    "source": "docs/brainstorms/contract-gate-tech-design.md",
+    "note": "offline reconciliation"
+  }
+}

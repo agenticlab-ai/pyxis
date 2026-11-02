@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M49BK4Z6PB3ZBKVTHS4NK8C9",
+  "kind": "Document",
+  "subject": "feature/inherited-learning-repair",
+  "family": "events",
+  "statement": "Draft events.md",
+  "body_sha256": "b365b992d1e9a7b392ff7caa6c815b0786304a0d3a472838c94222f7914948be",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ485CR4KFFAKANEJ5TR",
+  "kind": "Need",
+  "subject": "prd/channel-inbox",
+  "family": "G1",
+  "statement": "We believe giving the distributor an authenticated voice on the operator's CLI surface; expected result: installed pins move sooner after a release, without polling",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2cba91c02612408322664dfbc85bf7788ca5cd6cc7a8c95593d937e6c32fcdd0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.992Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

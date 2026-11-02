@@ -1,0 +1,16 @@
+{
+  "schema": "impl-review-eval-provenance/v1",
+  "note": "The DECODE-PINNED configuration the eval suite runs each family under, recorded so a run is reproducible (design impl-review-v1 §3.5: 'a decode-pinned configuration recorded in the eval provenance'; PRD §5.9: 'recorded in EVT-4's provenance'). This is the run protocol AS DATA: N (the fixed per-family run count, >= 5), the pinned decode parameters (temperature/top_p/seed) the live lenses run under, and the model + prompts + calibration versions the run evaluated. The hermetic harness reads N and the caught-every-run rule from here; the gated live suite (build tag `eval`) additionally pins the decode parameters against the real backend. Changed only by a reviewed data PR.",
+  "runs_per_family": 5,
+  "caught_every_run": true,
+  "decode": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 20260717
+  },
+  "run_under": {
+    "model": "the factory's standing lens model",
+    "prompts_version": "impl-review-lenses/v1",
+    "cal_version": "impl-review-calibration/v1"
+  }
+}

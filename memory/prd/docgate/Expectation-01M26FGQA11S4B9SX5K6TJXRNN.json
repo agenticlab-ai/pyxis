@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQA11S4B9SX5K6TJXRNN",
+  "kind": "Expectation",
+  "subject": "prd/docgate",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..8",
+  "fit_criterion": "CI golden-suite run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1b28f1468a36cea60585f1e88022118e1f963947f324ad9483fa86c5eccc9266",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.177Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

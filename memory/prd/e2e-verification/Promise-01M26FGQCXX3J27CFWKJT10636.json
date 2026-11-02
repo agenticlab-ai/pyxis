@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCXX3J27CFWKJT10636",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-20",
+  "statement": "Where a harness able to drive the feature's primary external interface already exists in the repo, the harness section shall cite that harness and specify only this feature's additions to it — the fixtures, fakes, and helpers this feature needs — rather than restating or re-deciding its mechanics.",
+  "rationale": "the mechanical design is paid once per app shape and reused thereafter; a citation plus a delta keeps sibling features on one harness instead of forking it",
+  "fit_criterion": "on a fixture whose harness already exists, the harness section cites it and lists only additions, with no element of FR-19 re-decided; on a fixture with no existing harness, the section carries the full FR-19 design; a section that restates a cited harness's mechanics differently is a review finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a5a8a93ecf4af948b472eed309bbd4ced4bc2bdeded7d0169d88b281efc1afe3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.269Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

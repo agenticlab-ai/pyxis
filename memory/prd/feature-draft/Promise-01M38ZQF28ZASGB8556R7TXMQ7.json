@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQF28ZASGB8556R7TXMQ7",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-8",
+  "statement": "If If the mainline has moved since the draft's last readiness pass, then the system shall refuse the lock until readiness re-runs against the mainline the lock will land on",
+  "intent": "the refusal naming the mainline change",
+  "fit_criterion": "Every moved-mainline fixture is refused until the re-run, then passes when readiness holds",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:22b494eb035727a43c090ae09d2e7606b6abef7a806706110953415378ae58e1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:31Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

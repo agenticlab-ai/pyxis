@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDF83AF42F0B7W4DQPFM7",
+  "kind": "Document",
+  "subject": "session-log/2026-08-06-1939-e2e-verification-design-brainstorm-reopen",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-06-1939-e2e-verification-design-brainstorm-reopen.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "797de0957e43ccae3b5924ef7c3ed32a7212c83f0c758446b98fbcf5c6a45873",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:22Z",
+  "provenance": {
+    "source": "logs/2026-08-06-1939-e2e-verification-design-brainstorm-reopen.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

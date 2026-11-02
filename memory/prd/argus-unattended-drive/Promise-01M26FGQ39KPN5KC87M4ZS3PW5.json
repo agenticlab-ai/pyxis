@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ39KPN5KC87M4ZS3PW5",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-5",
+  "statement": "If If a wake signal names a parked or closed problem, then the system shall resume at most to reconciliation: a parked problem wakes only for its answer append or human touch; a closed ledger is never reopened (post-close events travel by reverse citation)",
+  "intent": "a journaled no-op touch, or nothing",
+  "fit_criterion": "parked/closed wake fixtures: no drive act beyond the journaled touch; the closed ledger is byte-untouched",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4c4a56f88bc280d2378085105d7ef536d1e6b809fef2754343524490d7d9b522",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.961Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

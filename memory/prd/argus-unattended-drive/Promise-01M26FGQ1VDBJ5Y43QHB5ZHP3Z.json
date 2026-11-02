@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1VDBJ5Y43QHB5ZHP3Z",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "EVT-2",
+  "statement": "auto_act fires when the machine identity approves/merges",
+  "intent": "proposal id: string · head revision: string · goal-verify: pass/fail · policy version: string",
+  "fit_criterion": "M1, M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0177444e71b4e95928b73fc7620057ee9bfeca8f214da7d4900f40861a0d0760",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.915Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

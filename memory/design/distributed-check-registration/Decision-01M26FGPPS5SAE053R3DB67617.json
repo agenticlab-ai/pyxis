@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPS5SAE053R3DB67617",
+  "kind": "Decision",
+  "subject": "design/distributed-check-registration",
+  "family": "decision.3.6.1",
+  "statement": "The migration is behavior-preserving and incremental. Each check\nmoves to its own file and self-registers; the moment a check is registered its\nline leaves the central enumeration, its case leaves the dispatch switch, and\nits entry leaves the hand-written help. Old and new coexist mid-migration — the\numbrella runs the registered checks and the shrinking hand-written remainder\ntogether — so the change lands check by check, not as one big cutover, and the\ncentral lists are deleted only once empty. The gate's verdict on any given tree\nis identical before and after; the only intended difference is that the defect\nstream and the help are ordered by verb (deterministic) rather than by the\nformer hand-written order. This is a `refactor` in effect: no check gains or\nloses power.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3c6c42149249c8fd3234bf3f6102a02b4c30f2b29edb80cd9edd80e35411f192",
+    "source-design:6b20e2c7691634af8abe8fe944c23ca2bf4a6a3af0158ee8674ee882b8e940e9",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNRXX0S9GRA146KH2655"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.561Z",
+  "provenance": {
+    "source": "docs/tech-design/distributed-check-registration.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/distributed-check-registration.md lines 136-146 in section 3.6; sha256:3c6c42149249c8fd3234bf3f6102a02b4c30f2b29edb80cd9edd80e35411f192"
+  }
+}

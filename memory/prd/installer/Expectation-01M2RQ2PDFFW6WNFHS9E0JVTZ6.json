@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2RQ2PDFFW6WNFHS9E0JVTZ6",
+  "kind": "Expectation",
+  "subject": "prd/installer",
+  "family": "DOD-13",
+  "statement": "All live Must FRs pass their fit criteria",
+  "intent": "every live Must FR in §5.1, excluding superseded and retired rows",
+  "fit_criterion": "CI run link",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:878e5dd0d072fad8737aa1b2bf064681e3f23daf0040a6addec8ba70c77ecd65",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M26FGR04Z52W14CTT7NTZ7CG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:16:30Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "note": "compiled from sha256:20433aec6e8ba6071760aee119e53dd41014bfc79024155057aca4b95faa4bb5"
+  }
+}

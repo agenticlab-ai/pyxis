@@ -1,0 +1,4 @@
+# Local execution diagnostics. Converge ships this rule to existing installs.
+/logs/
+# Repository-local maintenance lifecycle audit.
+/maintenance/logs.jsonl

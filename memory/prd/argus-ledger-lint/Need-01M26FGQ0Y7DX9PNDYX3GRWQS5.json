@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ0Y7DX9PNDYX3GRWQS5",
+  "kind": "Need",
+  "subject": "prd/argus-ledger-lint",
+  "family": "G2",
+  "statement": "We believe composing the arms as self-registered descriptors with zero shared-line edits; expected result: the ledger classes gaining full umbrella/desk/CI protection while every other class's verdict stays byte-identical",
+  "fit_criterion": "M1 (byte-identical clause)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:35db3105511c6e741fb96f12997e4ac5553c44a1065ce2eae803211658364835",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.886Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

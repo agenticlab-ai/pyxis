@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGA9QWFARHW0S16NJDX",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-2",
+  "statement": "Every finding of that feature is answered or set aside at its locked contract",
+  "intent": "FR-5",
+  "fit_criterion": "That feature's findings record at the locked head, with each finding's answer or set-aside reason, and both review reports at the locked digest",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

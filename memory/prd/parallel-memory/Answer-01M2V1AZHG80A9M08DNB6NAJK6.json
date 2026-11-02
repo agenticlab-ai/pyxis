@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M2V1AZHG80A9M08DNB6NAJK6",
+  "kind": "Answer",
+  "subject": "prd/parallel-memory",
+  "statement": "This ledger remains a supporting draft describing the two approved technical designs. The operator approved those designs, directed direct implementation without the formal planning process, and authorized publication as a three-PR stack. The operator then authorized fixing the conflicting staging gates before publication. Delivery proceeds under those instructions with the approved scope and no frozen plan; it does not claim a separate formal PRD sign-off. Any future frozen planning must obtain its own contract approval.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M2V16P1SYVQA00SE616CS3BD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:54:17Z"
+}

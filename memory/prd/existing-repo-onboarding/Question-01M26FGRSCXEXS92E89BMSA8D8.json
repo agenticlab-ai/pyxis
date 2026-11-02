@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSCXEXS92E89BMSA8D8",
+  "kind": "Question",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "Q4",
+  "statement": "The hermetic mechanism for the byte-identity round-trip proof (hashing the complement of managed paths)",
+  "intent": "technical design",
+  "rationale": "open — brainstorm:existing-repo-onboarding#P-4",
+  "fit_criterion": "design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:a6be6fb572af9ee042fc7a29e5c87a02520d75e86f72800ea162ca45c7ad6aed",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.692Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

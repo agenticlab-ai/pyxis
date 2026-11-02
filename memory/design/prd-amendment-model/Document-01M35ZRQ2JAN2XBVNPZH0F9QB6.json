@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZRQ2JAN2XBVNPZH0F9QB6",
+  "kind": "Document",
+  "subject": "design/prd-amendment-model",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/prd-amendment-model.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:170d6369c9fa0b34b98f12fd485b26d51af3a9f5daf041e0e227a17c70270248"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCVH9Q9J81XXP1EZDRKE5"
+    }
+  ],
+  "body_sha256": "170d6369c9fa0b34b98f12fd485b26d51af3a9f5daf041e0e227a17c70270248",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:28Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model.md",
+    "note": "offline reconciliation"
+  }
+}

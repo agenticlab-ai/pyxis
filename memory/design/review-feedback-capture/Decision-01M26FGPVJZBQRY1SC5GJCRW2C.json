@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVJZBQRY1SC5GJCRW2C",
+  "kind": "Decision",
+  "subject": "design/review-feedback-capture",
+  "family": "decision.3.4.1",
+  "statement": "the writer sets an entry's typed disposition (`applied` · `declined-with-reason` · `became-incident` · `no-action`) + outcome-ref **from an observed resolving event**, never by inference:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5b9235c496fc7aa1d9765c1d1195caf5e36b3eec47034fa241ee30a8c1bea5e0",
+    "source-design:4e3a8105ea45accb67ecd77d65b8eeb2a0f942e1231fc979c04f1bfd1bf82235",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWKDH895R5RT4YYW95E8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.714Z",
+  "provenance": {
+    "source": "docs/tech-design/review-feedback-capture.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/review-feedback-capture.md lines 56-56 in section 3.4; sha256:5b9235c496fc7aa1d9765c1d1195caf5e36b3eec47034fa241ee30a8c1bea5e0"
+  }
+}

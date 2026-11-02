@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRK6QA460WQ19ZY8126C",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "NFR-1",
+  "statement": "The skill shall orient through routing surfaces, loading full bodies only on a Relevant-when/Serves match with the basis or question.",
+  "intent": "Cost / orientation bound",
+  "fit_criterion": "every full-body load on fixtures is justified by a matching surface row; orientation ≤ 12 documents",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ea646f9e77820bb6202f9a9a012e68ed3c5e57885980f8dafe92495bc429ca6b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.494Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

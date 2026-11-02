@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EAE1JX4R6FQHP8Q8X2HPJ",
+  "kind": "Document",
+  "subject": "source-retirement/58397059d65c8e7784145babfc7b9ee160687c6da701b0dd3c876558b5f2251f",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/authoring/e2e-design.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "82dda5e6734fc44125e74ae7b134d65e3e6f409426a6e4113d1680bea54ee696",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:34Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/authoring/e2e-design.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

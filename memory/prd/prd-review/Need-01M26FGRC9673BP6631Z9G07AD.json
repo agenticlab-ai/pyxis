@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRC9673BP6631Z9G07AD",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "G1",
+  "statement": "We believe closable findings under adversarial survival; expected result: feedback the author accepts — valuable, not nits",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1dd9256f21d2dc0aa5c6986e70641a28b35434d28bbcf2fe5322604cbfeece31",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.273Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

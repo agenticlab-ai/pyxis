@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDM73V1Y6E4WSPSBFVV",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "G3",
+  "statement": "We believe honest routing (veto semantics, skip map, budget hint); expected result: the reviewer judges §0 worth-having, gate after gate",
+  "fit_criterion": "the DOD-4 rubric at the prove, re-applied at each sampled gate (FR-8); the rubric verdicts feed §6.7",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:66fc1a4b69521e67a854b7c02d8330c0ddff6ee4d244da412ee4f11b73fc0aed",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.316Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

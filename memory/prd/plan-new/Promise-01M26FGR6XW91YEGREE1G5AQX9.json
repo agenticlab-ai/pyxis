@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6XW91YEGREE1G5AQX9",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-26",
+  "statement": "When a plan is assembled, the planner shall check coverage against the plan's in-scope slice, mapping every slice requirement to at least one task and every task to at least one requirement or design anchor; prior-plan coverage is not re-demanded, while feature-level Must completeness is the union across the feature's plans and a live Must in no slice is a named defect.",
+  "rationale": "plan slices avoid re-planning shipped work without dropping feature-level Musts",
+  "fit_criterion": "amendment-slice, frozen-base, missing-live-Must, dropped-slice, and rogue-task fixtures produce the specified result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eb9d77c9a659a488a955fb08e2253882d5578309a478a1a7cb189f2b49052975",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.101Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979SVJXYQ950N3MTGJDPV2",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.3.6.3",
+  "statement": "Lock preparation refuses a reopened draft unless the draft branch's first commit carries exactly the binding version's stored PRD and tech-spec text; the refusal names the version that text matches, if any (#DINV-6). The check observes the starting point from content and never trusts the branch name (AP-18). It catches a draft that started from an older version: comparing it against a newer binding version would silently undo that version's changes. It also catches a branch seeded by hand. Once it passes, the approval request's change list is every difference the lock writes, because that list is computed from the branch's history since its first commit (`design:feature-draft-v1` #DINV-11; `prd:feature-draft/UB-1`). This fails closed instead of guessing (AP-17).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ef79c07c36ff70a83ff1e0004d7dbb5e566f996730e7b956da99794e74e1f408",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:51Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 108-108 in section 3.6; sha256:ef79c07c36ff70a83ff1e0004d7dbb5e566f996730e7b956da99794e74e1f408"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EAQCX3B4F6T7EVTGC7KR3",
+  "kind": "Document",
+  "subject": "source-retirement/f7d1485d0a9bca1991f69e7ee1876ac6f5db91a86113fb925fedac23eec794d5",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/e2e-review/lenses/buildability.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "1ca4faf445e8a212ae46bb01d72c3dd0be065f0c068d58d5f7238b0f3339c645",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:44Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/e2e-review/lenses/buildability.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

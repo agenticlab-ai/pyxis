@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWQTY034VY5VJXTC6TP",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-18",
+  "statement": "While a proposal diff's non-test half is empty or it adds and modifies no test files, the falsification check shall record not-applicable and emit no finding (the test-delta audit of FR-12 still applies on its own trigger).",
+  "rationale": "test-only and no-new-test diffs are not falsifiable; blocking them would be the wrong-block class R1 names — the not-applicable record keeps the vacuous pass visible",
+  "fit_criterion": "the test-only fixture records falsification not-applicable with no finding while its test-delta audit still evaluates; the code-only (no-test-change) fixture records not-applicable and can reach green — the WR-1 residual, named",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:867bdfc2c229084ec209fd0ec6caa4db262b8b7ef74e92dc97ccdaa0d4b5d64e",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.775Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

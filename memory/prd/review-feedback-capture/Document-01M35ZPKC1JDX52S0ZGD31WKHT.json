@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPKC1JDX52S0ZGD31WKHT",
+  "kind": "Document",
+  "subject": "prd/review-feedback-capture",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/review-feedback-capture/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:bb4f28fbcecedc64025af9f6235ab32b3b0b0a4e85709277dbfff438a8de7366"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC19QY2FZ33Z8AZQDKM5Z"
+    }
+  ],
+  "body_sha256": "bb4f28fbcecedc64025af9f6235ab32b3b0b0a4e85709277dbfff438a8de7366",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:19Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

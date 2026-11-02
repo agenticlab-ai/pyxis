@@ -1,0 +1,8 @@
+{
+  "code": "missing-serves-memory",
+  "scope": "design/brainstorm-record-model -\u003e prd:feature-brainstorm/NR-1",
+  "feature": "feature-brainstorm",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

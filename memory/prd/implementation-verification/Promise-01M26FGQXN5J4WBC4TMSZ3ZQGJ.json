@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXN5J4WBC4TMSZ3ZQGJ",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NR-2",
+  "statement": "implement-now's **drive-side** contract — claims, worktree isolation, agent driving, self-heal caps, escalation, PR raising — is untouched by integration",
+  "rationale": "the seam (D-2) confines this feature to the verify side; integration redefines only the sibling's local-gate slot, and since its PRD is still a draft, that lands as a draft-phase edit to its contract (adding the invocation seam and the composite genuinely-green definition), never a post-merge amendment",
+  "fit_criterion": "the integration change to implement-now's contract is confined to its local-gate rows (a draft-phase edit); its drive-side rows are byte-untouched",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b62c7a2949ee552209ffcf9b843f48f807e28218174e28c58116e4cbb7e45a7c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.805Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

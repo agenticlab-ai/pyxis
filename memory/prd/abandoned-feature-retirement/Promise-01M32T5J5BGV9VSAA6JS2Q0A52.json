@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5J5BGV9VSAA6JS2Q0A52",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-7",
+  "statement": "For P pinned snapshots and N inventoried identities, the system shall keep Git process launches O(P), independent of N, and repository-object processing O(P + N).",
+  "intent": "Work per check",
+  "fit_criterion": "With P fixed, inventories of N and 10N launch the same number of Git processes and perform no more than linear object work; elapsed time is advisory.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bb836f06e0ccf1571b73ff0e43f4efae3d67f8c15b7d3d6cb3be9150f6249544",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:54Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "code": "design-decision-memory-drift",
+  "scope": "design/feature-implementation-drive-argus-approval#decision.3.10.1",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

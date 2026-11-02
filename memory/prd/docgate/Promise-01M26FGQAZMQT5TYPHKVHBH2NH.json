@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAZMQT5TYPHKVHBH2NH",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-36",
+  "statement": "After a rebase checkpoint passes FR-35, docgate shall materialize every binding addressable row as one live checkpoint-origin fold-state and source-map record.",
+  "rationale": "rendered rows without fold state caused the dangling-target remedies and stale source map that motivated this amendment",
+  "fit_criterion": "a checkpoint containing at least one row from every FR-41 addressable table-schema prefix yields the same complete ID set in the projection, live fold state, and source map, with checkpoint origin on every record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4bfb612db54ec582cecd2d99c9e82eb37092a6afe98f0be2306e79224a8335c2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.207Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

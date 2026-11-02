@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ38GQ0YRRJZZWFT49J1",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-4",
+  "statement": "If If post-merge goal-object verification fails — the platform reports merged but the content is not an ancestor of the mainline, then the system shall halt the lane (no further AUTO acts), alarm on the delivery ledger, and require a human disposition",
+  "intent": "a halted lane + a ledger alarm naming the proposal",
+  "fit_criterion": "the seeded I2-class fixture halts the lane before any further act",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4eca1aacd0dc6546ae3f8999327bec3133a4f35c0d76819eac21e3c7e99562e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.96Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1DQR7Q6RFSK7HECYPN",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "ABUSE-3",
+  "statement": "an injector steers a drive via the wake surface — vector: forged or poisoned wake signals carrying embedded directives",
+  "intent": "the drive acts on planted instructions",
+  "fit_criterion": "FR-15 (instruction-free signal; content is data), the resume protocol (goal-object verification before any act), EVAL-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d4f8e2473b76232e3ba304c71e2b56f127629ae550462fec6c6a0799072e9f2f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.901Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

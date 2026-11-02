@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A96BNYP123RB27DPSVVM",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVT-4",
+  "statement": "maintenance_lifecycle fires when Configuration, routing, launch, publication, or cleanup advances/refuses",
+  "intent": "invocation_id: string, phase: enum, job_id/date: optional identity, config_revision: optional string, harness/native_route: optional typed selection, ownership/delivery/artifact_refs: optional typed evidence",
+  "fit_criterion": "M3",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

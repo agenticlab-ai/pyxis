@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXQRZDRJQY6PYKRD1P1",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-3",
+  "statement": "While a problem is open, Argus shall drive each pipeline stage that exists in the repo, addressing stages by role rather than enumeration.",
+  "rationale": "coverage extends as stages ship (brainstorm:autonomous-developer#D-8)",
+  "fit_criterion": "the dogfood feature traverses every existing stage with no human driving",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d6a49eea208aee96dee2e4499622f93a9af71102a9666126b1925ba67ce94077",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.783Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

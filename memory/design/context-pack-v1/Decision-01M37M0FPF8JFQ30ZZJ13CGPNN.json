@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M0FPF8JFQ30ZZJ13CGPNN",
+  "kind": "Decision",
+  "subject": "design/context-pack-v1",
+  "family": "decision.3.2.1",
+  "statement": "which stable classes a stage's pack holds is **configuration data, parsed closed** (AP-6), not code (prd:context-pack/FR-3). A stage declares an ordered list of **class entries**; each entry names a **kind** (from the closed set, §3.4) and a **selector** resolving that kind to concrete sources for a given subject.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9c0ee58baae4bbcda251187757479a131f1fd38b2f4ebd301887e5dd05fb926c",
+    "source-design:c0ccd1f732033abe5e7a43fbc57bda8c95e7c4f1b05692efccf3abedac9e10b6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPP9H2ZA2RKE1PQ31SGE"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQQ6NQXAWD9V8X2QJMZDA"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:29Z",
+  "provenance": {
+    "source": "docs/tech-design/context-pack-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/context-pack-v1.md lines 56-56 in section 3.2; sha256:9c0ee58baae4bbcda251187757479a131f1fd38b2f4ebd301887e5dd05fb926c"
+  }
+}

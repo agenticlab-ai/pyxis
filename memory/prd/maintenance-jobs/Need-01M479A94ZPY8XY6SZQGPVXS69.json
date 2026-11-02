@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A94ZPY8XY6SZQGPVXS69",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "J1",
+  "statement": "When Recurring maintenance settings change, I want Review and install the desired jobs, so I can Control their behavior without repeating setup",
+  "rationale": "Operator request",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

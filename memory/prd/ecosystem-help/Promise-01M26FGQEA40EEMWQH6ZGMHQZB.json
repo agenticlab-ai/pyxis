@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEA40EEMWQH6ZGMHQZB",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "FR-1",
+  "statement": "When invoked without a specific problem, the help skill shall present the ecosystem catalog: every skill on the installed surface and every pipeline stage from the shipped map, each with its one-line purpose, when-to-use, and the map's built-status, derived at invocation from the live surfaces.",
+  "rationale": "J1 — orient without reading the corpus",
+  "fit_criterion": "every skill present on the installed surface appears exactly once; every stage row of the shipped map appears carrying its status; zero entries lack a resolvable live source",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d9700e95de997cc92e563c4b387c57e194660fc8e15f8d5e21effd00afb5d35b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.314Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZNYTCP73DQCD793MQA",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "NR-3",
+  "statement": "`adopt`/`apply`/`undo` behavior is untouched",
+  "rationale": "routing points at it; nothing here may reshape it",
+  "fit_criterion": "existing onboarding suites pass unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1403817fbcf77f8c151cca92d8d008e283b086f33cc25308f1634e8bcdf9211e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.869Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

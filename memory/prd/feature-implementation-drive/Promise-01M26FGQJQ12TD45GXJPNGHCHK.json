@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJQ12TD45GXJPNGHCHK",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-18",
+  "statement": "Where an e2e scenario is declared manual-human, the feature drive shall accept only an explicit human attestation bound to the current candidate identity.",
+  "rationale": "Preserve manual route integrity.",
+  "fit_criterion": "Wrong-SHA, missing-identity, and machine-authored attestations are refused; a valid human attestation settles only its scenario.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:950bf422385876a58e475eebe55c9872d1d41b27f7dd8b5234b81b635e7bad59",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.455Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

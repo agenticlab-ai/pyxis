@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MC2EMS12NCFYV4PJNDBT",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-argus-approval",
+  "family": "decision.3.10.1",
+  "statement": "The existing wake channel carries feature-drive touches as the instruction-free pair `{feature_id, reason}`. Push adapters normalize review, merge, check, runner, and manual-attestation events; the bounded backstop scans only aggregates assigned to its owner domain and probes registered waits. Signals assert no completion and carry no authority. The router reads the aggregate only to choose the recorded owner domain; the reconciler independently verifies state and goal objects under the current epoch (`design-brainstorm:feature-implementation-drive-tech-design#D-5`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:22307b2844f89f6c0cd4c79be354c07702e22d459ed390adf32e90e07d0f757e",
+    "source-design:5375b9f1395246115eedf1a9f66c6c21da895c5ac04f8a0505c80e204089b010",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DG5DQ4MZARWRT0KZP4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:45Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-argus-approval.md lines 239-239 in section 3.10; sha256:22307b2844f89f6c0cd4c79be354c07702e22d459ed390adf32e90e07d0f757e"
+  }
+}

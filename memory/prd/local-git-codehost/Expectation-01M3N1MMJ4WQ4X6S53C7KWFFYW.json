@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ4WQ4X6S53C7KWFFYW",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-1",
+  "statement": "All local lifecycle requirements and failures pass in a real bare-origin fixture.",
+  "intent": "FR-1 through FR-10; UB-1 through UB-4",
+  "fit_criterion": "Conformance run",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Learning-01M3N5HT0T2XK377957JCR1ZK8",
+  "kind": "Learning",
+  "subject": "learning/ci-memory-workflow-retirement",
+  "statement": "The Forgejo source-workflow renderer excludes the standalone memory-reconciliation template; the required docs-gate still verifies memory on every PR and mainline push.",
+  "intent": "Remove duplicate CI execution while preserving the shared local and hosted memory predicate.",
+  "rationale": "The template is retained as captured authored source until memory retirement can seal its lineage, but the renderer skips it so new Forgejo source installations have no duplicate memory workflow.",
+  "fit_criterion": "Materialization emits eight workflows and no memory-reconciliation workflow; ci-parity confirms docs-gate still includes the shared memory group.",
+  "learned_from": [
+    "The 40-PR Actions audit found the standalone workflow repeated docs-gate memory work on PRs and mainline pushes."
+  ],
+  "tags": [
+    "code:internal/release",
+    "reconcile:code-semantics"
+  ],
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-28T23:28:10Z",
+  "provenance": {
+    "source": "code:internal/release"
+  }
+}

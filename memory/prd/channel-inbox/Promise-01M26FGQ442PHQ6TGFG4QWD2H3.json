@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ442PHQ6TGFG4QWD2H3",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "FR-6",
+  "statement": "When mute is active or a snapshot has been fetched, `pyxis inbox` status and `pyxis doctor` shall report the mute state (incl. expiry), the snapshot age, and the last fetch outcome.",
+  "rationale": "the state is inspectable",
+  "fit_criterion": "status/doctor output names mute state, snapshot age, and last fetch across fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:03827317dbcec626df4c004053298f8dfa78bdc6c2a978c92cffbf8c3d35aa79",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.988Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

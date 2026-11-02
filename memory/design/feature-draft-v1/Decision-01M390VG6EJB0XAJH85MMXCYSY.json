@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390VG6EJB0XAJH85MMXCYSY",
+  "kind": "Decision",
+  "subject": "design/feature-draft-v1",
+  "family": "decision.3.9.1",
+  "statement": "The lock approval is the operator's approving review of the draft pull request. Branch protection requires it: the operator owns the contract records a lock adds, so a lock needs the operator's code-owner review, with approvals dismissed when new commits arrive, approval of the latest push, and admins bound. A proposal that adds no contract records keeps today's merge policy, the merge lane included (`design:merge-lane-v1`; `design-brainstorm:feature-draft-tech-design#D-20`). The lock reads the review through an approval port whose first adapter is the code host (`design-brainstorm:feature-draft-tech-design#D-8`; `prd:feature-draft/FR-17`, `FR-46`, `FR-47`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:906b7e688a2b18cbe9968bc4f7237b3a5037cd807ec049ed26e68ed3e311c034",
+    "source-design:6756001a6610759571f68c5a19dea52b32c9746d651b534fc23d6f993abd0a76",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PK87J0YRYSDH5T0KPWGW"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:15:11Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-v1.md lines 145-145 in section 3.9; sha256:906b7e688a2b18cbe9968bc4f7237b3a5037cd807ec049ed26e68ed3e311c034"
+  }
+}

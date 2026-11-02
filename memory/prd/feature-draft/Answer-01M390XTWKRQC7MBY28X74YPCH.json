@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390XTWKRQC7MBY28X74YPCH",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.12: the agent instructions, the pipeline map, and the domain model describe the feature draft for new features, while existing documents keep their rules.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZR13TADQR5TTKR2VG83F6"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSM4BZV8PDKEZP86Z3HNQ"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:28Z"
+}

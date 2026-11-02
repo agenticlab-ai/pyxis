@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M3Z917HSR4TVBHCE0Z67P",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.4.1",
+  "statement": "`pyxis` is the product face and the acquisition owner. Verbs: `init` (§3.5), `converge`/`repair` (one converge; repair is its name on a damaged tree), `doctor` (read-only), `exec` (the grammar below), plus `version`. Every installed-repo invocation of an engine tool is `pyxis exec <tool> -- <argv…>`:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:45760a141517285456d2e8b06ef1479bdd9b54f9b33e9de1d4507998570e49ac",
+    "source-design:afc31305cc73422e8fdf6026398b64afba5035a0fef145f79766da27c8ffaef0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2RR3DP9RB4K45RYHHX3NMCQ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRA9HR9XHW6MAEWSB81C9"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 65-65 in section 3.4; sha256:45760a141517285456d2e8b06ef1479bdd9b54f9b33e9de1d4507998570e49ac"
+  }
+}

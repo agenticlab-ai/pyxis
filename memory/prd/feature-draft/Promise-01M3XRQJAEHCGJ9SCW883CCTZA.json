@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQJAEHCGJ9SCW883CCTZA",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-52",
+  "statement": "When the operator records a local draft-lock review, the system shall retain a closed, versioned receipt binding proposal identity and kind, proposal-record full OID and monotonic sequence, operation draft-lock, branch ref, exact full prepared-head SHA, workflow-derived fully qualified mainline target ref and its existing full SHA, readiness digest, and a unique request nonce. It shall publish that receipt once, revalidate it against the current pre-landing proposal, and retain its canonical bytes and digest with the final proposal and lock evidence.",
+  "rationale": "Prevents normal-route stale and same-origin replay errors and preserves clone-visible evidence after the review worktree is gone",
+  "fit_criterion": "Real bare-origin fixtures reject missing, malformed, wrong-proposal, wrong-operation, wrong-branch, wrong-head, wrong-target, wrong-digest, and wrong-generation receipts without advancing landing refs; a nonce cannot be overwritten; retry after a completed landing recognizes the original result instead of creating a second lock; a fresh clone detects missing or changed retained receipt bytes and reports consistency with unauthenticated actor and origin identity.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3063b6feeeda4e67e7c40664ef011c259ac98b53dafcf88512dc4be779ec7fd3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:17Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNK3PM40N3Y833NREV0",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-6",
+  "statement": "review_miss fires when a defect the reviewer missed is caught later (operator/stage-10/12) and tagged to its review",
+  "intent": "proposal_ref, missed_class: enum, caught_by: enum",
+  "fit_criterion": "§5.9 family growth (R2), the miss corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:647d250eaba98593b046348e7ae447f34517134fc1ec629fd0452da31d054c6c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.547Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

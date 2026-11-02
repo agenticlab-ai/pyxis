@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ0FRMA9Y263MKR7VTYF",
+  "kind": "Expectation",
+  "subject": "prd/argus-ledger-lint",
+  "family": "DOD-2",
+  "statement": "Every per-DINV defect fixture (edited `A-n`, edited/second/renumbered/deleted `E-n`, unattributed entry as applicable, cited derived block, dangling `delivery:` anchor) is red at exactly its arm; legal appends + legal `E-n` citations are green; and the cross-document arm is green on the repo's own citation-bearing prose (this PRD, the frozen record, argus-artifacts) whose literal-`\u003cslug\u003e` illustrations are not in-scope citations (FR-9)",
+  "intent": "FR-1..FR-4, FR-9, UB-2, argus-artifacts A-7",
+  "fit_criterion": "the fixture corpus (incl. the own-corpus non-regression fixture) + first-run defect report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5d032753e248854e9bc93d15e0400e0deb4d390c4ddb1d2d1d1d17c835818f4c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.871Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

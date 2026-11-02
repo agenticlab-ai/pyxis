@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9380GMS0VVXKV6QPAF",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-8",
+  "statement": "If a disposition's subject, target, binding, evidence, policy, or fingerprint no longer matches the evaluated revision, then the system shall classify the disposition as expired, leave its stale edge blocking, and name every mismatched or unresolved component and the need for a new reviewed disposition or a successor design",
+  "intent": "stale verdict with expired-disposition detail",
+  "fit_criterion": "mutations to each pinned component independently expire the record; no expired record clears an edge; restoring exact inputs reproduces the original result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:80182a75c3238852aed6e2068934f94c3517a5b5e67756ebd61f70bf89061030",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.147Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7MY86WM7H981DB7YBE",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-1",
+  "statement": "When planning is invoked for a feature, the planner shall call the gate on that feature's assembled contract and shall not draft, freeze, or project any plan unless the gate returns a clean verdict.",
+  "rationale": "the gate is the planning-entry hard stop; a broken contract must not reach decomposition",
+  "fit_criterion": "on fixtures, a planning invocation against a bouncing contract produces zero draft/plan output and surfaces the defect report; against a clean contract, planning proceeds",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b7a087712a7e96e0a0bdf05ca21a532767afb4a01a35ab0ad1af91a23864f2b3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.1Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2VWNPTDT5YX4Q2YRBX9BHE7",
+  "kind": "Decision",
+  "subject": "design/memory-standalone-source-retirement",
+  "family": "decision.2.1",
+  "statement": "Extend the existing memory CLI and reconciler with an exact standalone-source retirement seal. Eligible paths are canonical `skills/<slug>/SKILL.md` and `vendor/<slug>/README.md` regular files under Pyxis's vendor-neutral system root, already captured as active literal Documents and owned by no feature. This is an additional evidence type, not a new exemption list or a relaxed feature closeout.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6ac32afd36fa13dbd33c5abbf644960053c7bc8f1fe6d859cdc08295271c3108",
+    "source-design:d11dc72c17020f19e082237ec2d549339ed2cf7feeff022cfda15107a63b54d8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2VWB4JCY0HC24GDV7CHSGD3"
+    }
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T03:52:00Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-standalone-source-retirement.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-standalone-source-retirement.md lines 30-30 in section 2; sha256:6ac32afd36fa13dbd33c5abbf644960053c7bc8f1fe6d859cdc08295271c3108"
+  }
+}

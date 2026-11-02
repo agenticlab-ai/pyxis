@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ1A610SXEDV69K1NGJA",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "UB-3",
+  "statement": "If If a ledger file is structurally malformed such that entries or the derived-state region cannot be delimited, then the system shall report a named defect (which region could not be parsed) rather than crash or false-pass",
+  "intent": "a named parse defect, nothing mutated",
+  "fit_criterion": "on a malformed-ledger fixture, the affected arm reports a named parse defect and does not crash or emit a false green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:686ad933e88e0aec55303391c021c131ec123fe9d90aeb1df0725df7968875d7",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.898Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

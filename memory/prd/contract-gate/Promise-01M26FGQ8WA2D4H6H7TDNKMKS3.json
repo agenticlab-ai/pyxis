@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8WA2D4H6H7TDNKMKS3",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-10",
+  "statement": "If a disposition's approval attestation is absent, unresolved, non-compatible, bound to different disposition/edge/mapping/policy bytes, names a non-human or author-equal reviewer, or the reviewer is unauthorized or revoked under the pinned authority policy, then the system shall leave the edge blocking, emit a configuration/currency defect naming the exact approval failure and required independent review, and perform no implicit fallback to commit or PR status",
+  "intent": "unauthorized-disposition defect with the failed binding and unblock",
+  "fit_criterion": "each trigger independently blocks; a valid but unrelated approval reference, a green PR status without the attestation, and a changed disposition after approval all fail; only an exact current independent attestation permits FR-14",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bdffbc132e7333704a6754c84e277bdd22b857dd8bfadc5ebec26be9924765b6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.14Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

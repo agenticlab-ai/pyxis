@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3C8NM1E50W8D3QAW9Z1JR4T",
+  "kind": "Document",
+  "subject": "template/design-review-report-template",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/design-review-report-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:c6c387fc03b5249b1d63179449d04f4f3caafb5dc26adcc315cb26cb3ecde024"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBAWNTJDKNJ9D495T1RW1"
+    }
+  ],
+  "body_sha256": "c6c387fc03b5249b1d63179449d04f4f3caafb5dc26adcc315cb26cb3ecde024",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-25T12:29:31Z",
+  "provenance": {
+    "source": ".pyxis/templates/design-review-report-template.md",
+    "note": "offline reconciliation"
+  }
+}

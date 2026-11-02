@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M2YK4G7BJ9R47QDENY1HD",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.2.1",
+  "statement": "Every touch follows one transaction/effect loop; no adapter may bypass it:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6eecceb8ca5131b4f50456ffd34b2c7c9aef9992e96a01d203b44375173d383f",
+    "source-design:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPR1YBKGGDP2G4YRP7RH"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:50Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 78-78 in section 3.2; sha256:6eecceb8ca5131b4f50456ffd34b2c7c9aef9992e96a01d203b44375173d383f"
+  }
+}

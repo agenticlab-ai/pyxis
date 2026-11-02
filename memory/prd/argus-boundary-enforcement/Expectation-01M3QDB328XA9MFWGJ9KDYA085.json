@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3QDB328XA9MFWGJ9KDYA085",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-15",
+  "statement": "A stale or replayed `Argus-Bind` is refused before draft rebase and underivable at the gate, a protected-path diff with neither a valid Argus signal nor positive human attestation fails closed, and a positively Argus change cannot be laundered by a human-attestation trailer",
+  "intent": "FR-14; FR-13; FR-10",
+  "fit_criterion": "binding, absence, malformed, and both-signal fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e21bdc98f0d1805bcbb833d8a9c29b0ff7bdaec88632e2d7b784565b174032cb",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M26FGPYWFEB91BNFQCWJHDZZ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:22:47Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "note": "compiled from sha256:212c9395a691481c46f5bc8a0f3628b5e586a6dd98035e3c4ab08f37fcd134c7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461KZ4MZ618E13WNW5YEBRG",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-1-mainline-owns-the-approval-policy.1",
+  "statement": "`approval.operator_login` defaults to the historical `mdarabi`\nidentity; `approval.argus_login` is absent by default. They are closed config\nkeys and must be distinct accounts. A configured Argus account also requires\n`approve-merge` in the valid mainline authority contract. Reuse its existing\nparser, structural evaluator, inherited action bundles, and revoked kill\nswitch. Read raw `.pyxis/config.yaml` and the authority contract from the\nhost default branch's current commit, observed independently of the PR's\nlanding base. Implementation task PRs may target their feature integration\nbranch; that branch supplies no approval policy. Prepared contract PRs still\ntarget mainline. Never read candidate or local overlay bytes to grant\nauthority. A local overlay may name the credential environment variable.\nThe operator alone changes policy. This implementation does not promote any\nrepository.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c93a24c592dd42a11685bb82c248c44a62d352890f50b7dd193d6f590a1182d3",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:32Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 79-91 in section 3-d-1-mainline-owns-the-approval-policy; sha256:c93a24c592dd42a11685bb82c248c44a62d352890f50b7dd193d6f590a1182d3"
+  }
+}

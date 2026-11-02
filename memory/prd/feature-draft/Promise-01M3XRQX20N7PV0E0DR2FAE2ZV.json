@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQX20N7PV0E0DR2FAE2ZV",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-14",
+  "statement": "If If new-feature contract work is proposed as a PRD ledger entry, technical design, brainstorm record, or review report during cutover in a repository whose legacy document gate remains enabled, including a proposal opened before cutover, then the system shall refuse it, naming the feature draft as the path; preserve the Pyxis-source bypass and permitted existing-feature evolution",
+  "intent": "in an enabled repository, the refusal with the draft remedy; in Pyxis source, no restored legacy-gate finding",
+  "fit_criterion": "Enabled-cutover new-feature fixtures refuse each corpus-document kind with the remedy and accept plans; permitted existing-feature amendments and successors remain accepted. A Pyxis-source fixture does not produce an automated legacy finding for those files, and source authoring instructions still direct new features to drafts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1c232038be15bfd2f9d7cd857e64e692d5a713cd5daa7477f4511a3a8507d06f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZQ9NSQ7Z10JHV0BFEAY3D"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

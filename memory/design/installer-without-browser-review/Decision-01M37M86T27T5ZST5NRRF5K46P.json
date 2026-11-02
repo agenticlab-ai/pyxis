@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M86T27T5ZST5NRRF5K46P",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:installer/FR-1 · prd:installer/FR-10 · prd:installer/FR-11 · prd:installer/FR-13 · prd:installer/FR-14 · prd:installer/FR-15 · prd:installer/FR-16 · prd:installer/FR-17 · prd:installer/FR-18 · prd:installer/FR-2 · prd:installer/FR-20 · prd:installer/FR-21 · prd:installer/FR-24 · prd:installer/FR-26 · prd:installer/FR-27 · prd:installer/FR-31 · prd:installer/FR-32 · prd:installer/FR-4 · prd:installer/FR-5 · prd:installer/FR-6 · prd:installer/FR-7 · prd:installer/FR-8 · prd:installer/FR-9 · prd:installer/NFR-2 · prd:installer/NFR-5 · prd:installer/NFR-6 · prd:installer/NFR-7 · prd:installer/NFR-8 · prd:installer/NFR-9 · prd:installer/NR-1 · prd:installer/NR-2 · prd:installer/NR-3 · prd:installer/UB-10 · prd:installer/UB-11 · prd:installer/UB-14 · prd:installer/UB-15 · prd:installer/UB-3 · prd:installer/UB-4 · prd:installer/UB-5 · prd:installer/UB-6 · prd:installer/UB-8 · prd:installer/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:afc31305cc73422e8fdf6026398b64afba5035a0fef145f79766da27c8ffaef0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2RR3DM5JE22F9WZPPKSZ760"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0A80W8SXY935CKMZAR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0B65NREGTS3Y3YKC5R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0C55QDDVTQ0HJG71JS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0EVYTPJMVWWY8QR5GA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0FF4V4XQ3R9ZADETBC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0GGTZQEFG8NR2T96RG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0HC57ZGQW5XW2JFGC2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0J1JEK954SEE60J326"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0KRCKW3Y6RRQ9BNQHH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0MA11TBYX4YMYGXXJ7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0NB60C85VKR8YM3PTS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0P4JR84P9BGQHRBQXE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0QMEPJ2ZK238T55E52"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0SFGP4W5BKFT2MT1DZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0TPB12HKTGBW3JMW2A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0Y51TV8NCZGFG6DQPK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR0ZA9J7VTWW79BS67X3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR10PCEMD8Y0WXG9N91K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR11VRQF43XG2PNPHAY6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1266D5YXM097WPS0WQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR13356TJN32P1AN26KF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1E1QNB5M50YXBRJXX1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1F2VVXKRG8MDH2XJ3D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1G2SP9Z4J41EGMB84R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1H6R0HN1TVMQAGYCF0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1J4TZ5XRGJY5K1BHHQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1KD2PYXF42EPFS5M81"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1MQW4TBRT9MYGGK507"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1NST1JEZK6BRA514QN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1PW5MGYA0M0B5KHM6H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1QVH2NR17X0G485MFQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1V8ZK48N5MAFV0T5W1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1W5V93BAKGMHJSZXEQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1X4EPM1T22G099YC7P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR1Y8ZMSXAMH7QRKAYCV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR2035N9FVE9DCJFHD62"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR21TY9QDG5R8X1ETGZZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2RQ2PEMCG8YGWDCYD8P5K0S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2RQ2PF1WKG7228FHZSNDFYS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2RQ2PFHAREQPY0VRDFKHVCN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2RQ2PFSNKXXKMVGRSHCNX5A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M37KSP5FXNY22BEMC42Z9EGF"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRA9HR9XHW6MAEWSB81C9"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:42Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "projected from exact design header afc31305cc73422e8fdf6026398b64afba5035a0fef145f79766da27c8ffaef0"
+  }
+}

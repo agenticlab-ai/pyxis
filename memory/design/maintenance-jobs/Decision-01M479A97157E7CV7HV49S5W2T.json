@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A97157E7CV7HV49S5W2T",
+  "kind": "Decision",
+  "subject": "design/maintenance-jobs",
+  "family": "D-7",
+  "statement": "Verify the installer, shared claims, and headless profile before replacing the machine-local job in one backed-up crontab operation.",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96WCA1SCS1F50NDVJ22"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96YKXVY4X6SSA16Z426"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96Z3ASNH7J4NNPPZKTY"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A9706AA0B0HJQ26X6HC9"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96C0BFWX5S9YZJ7F5TX"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96DDBVFH89WB4DBCM51"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96E2BJ8YFSJPQ0ESMFP"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96FHWE8KRZ6S6JKYPAS"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96GH3QWCT2EKAY07TC9"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96HM9K53HWRBAPDVQYN"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M479A96J19GBCSY31KY68HJV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95KPKTWPG2PY95MZY5E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95P6YDN9SPTGQSANJK3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95QQ60TMTSRNSWEZSBY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95R27ARAZC91XFCMYSW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95SZQ3ZE8PZEY082K7D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95ZR4PT7RMKBQ14N0H8"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

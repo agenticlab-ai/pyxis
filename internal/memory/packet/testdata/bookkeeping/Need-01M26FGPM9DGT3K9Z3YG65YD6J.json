@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPM9DGT3K9Z3YG65YD6J",
+  "kind": "Need",
+  "subject": "code/unit-scripts-cut-pyxis-release.sh-61de6e44d147",
+  "family": "anchor",
+  "statement": "Production code unit scripts/cut-pyxis-release.sh exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at scripts/cut-pyxis-release.sh.",
+  "tags": [
+    "code:scripts/cut-pyxis-release.sh",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.481Z",
+  "provenance": {
+    "source": "code:scripts/cut-pyxis-release.sh",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline code inventory 3f2f5eee66ca8caffad255d2b34f7e756f5b3fa2d868b79ac8974b1d8dc02833"
+  }
+}

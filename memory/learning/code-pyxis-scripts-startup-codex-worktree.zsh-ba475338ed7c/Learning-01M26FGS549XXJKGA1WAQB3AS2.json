@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS549XXJKGA1WAQB3AS2",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-scripts-startup-codex-worktree.zsh-ba475338ed7c",
+  "statement": "The sourced zsh wrapper intercepts only fresh interactive top-level Codex launches in a .pyxis-adopted primary checkout, fetches origin/main, creates a no-track chore branch in a sibling linked worktree, preserves supported CLI and local-path arguments, and launches there; subcommands, existing worktrees, help or version, noninteractive calls, and non-adopted repositories pass through unchanged.",
+  "intent": "Isolate new interactive agent work from the shared primary checkout without changing Codex behavior outside the narrow opted-in launch case.",
+  "rationale": "A fresh session otherwise inherits and can disturb the primary checkout; a disposable linked worktree gives it a current mainline base while preserving the caller's checkout and native command semantics.",
+  "fit_criterion": "The startup PTY integration suite proves adopted-repository and --cd discovery, origin/main fetch and worktree creation, argument and attachment-path preservation, all pass-through cases, failure propagation, and the opt-in real-Codex trust-check regression.",
+  "tags": [
+    "code:.pyxis/scripts/startup/codex-worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS472MS8QBM3PS9MRTSP"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.068Z",
+  "provenance": {
+    "source": ".pyxis/scripts/startup/codex-worktree.zsh",
+    "commit": "154d41290aad479e2bedeee959138faa8ff46760",
+    "note": "Semantic memory for the sourced startup wrapper newly admitted to production-code inventory."
+  }
+}

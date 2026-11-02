@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T48GECFX03BSYC4RD8A0Q",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-14",
+  "statement": "Before retirement authority can be published, the system shall derive a complete active-surface inventory for the abandoned feature from typed ownership and capability references, require every eligible exclusively owned identity in that inventory to be selected, and assign every shared identity an explicit preserved or ordinary-reconciliation disposition.",
+  "rationale": "Exact selectors are safe only when omissions are also detectable.",
+  "fit_criterion": "The pilot and fixture features report zero unexplained active surfaces; omitted exclusive source, omitted code unit, unresolved entry point, unowned live reference, and undispositioned shared identity all refuse.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e92b0c2794126e5722c8acf1dade58fa79928dc5c52469ae8f333d8bb3aaeb79",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:12Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

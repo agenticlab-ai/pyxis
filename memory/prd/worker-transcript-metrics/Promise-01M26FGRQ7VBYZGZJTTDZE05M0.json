@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ7VBYZGZJTTDZE05M0",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-5",
+  "statement": "The system shall record no free-text content — no prompt body, command string, tool output body, or source text — in any record.",
+  "rationale": "keeps the record set free of secret-bearing text and of prompt-logging obligations *(#D-9)*",
+  "fit_criterion": "schema inspection finds no content-bearing field; a record produced from a transcript containing a known secret string does not contain that string",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:098d93f582312858ef42530d40806eb4243e62e0514f5189c6709d5635630fd2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.623Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

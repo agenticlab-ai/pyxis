@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMJGVXMQFPXNRTHV15XH",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "Q-4",
+  "statement": "Must a local draft open or prepare before the configured mainline's first push?",
+  "intent": "Repository operator",
+  "rationale": "resolved",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

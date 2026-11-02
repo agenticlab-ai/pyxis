@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZM3JT6ZJVZWE4KA1BFT55",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-23",
+  "statement": "While a feature draft is open, the system shall show, as a non-blocking notice, the other open proposals that the repository memory reports touching the same requirements or decisions.",
+  "rationale": "Memory's existing in-flight warning stays a free heads-up (brainstorm:feature-draft#D-22)",
+  "fit_criterion": "In a fixture with two open drafts sharing a requirement, each shows the other in a notice that blocks nothing.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:042e9eaba3259a935e76615c6e5af3239022bac3d66f9c0488dc3fbaea6aa52a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:40Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

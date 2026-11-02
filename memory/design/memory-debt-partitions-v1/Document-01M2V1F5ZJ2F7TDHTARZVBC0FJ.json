@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2V1F5ZJ2F7TDHTARZVBC0FJ",
+  "kind": "Document",
+  "subject": "design/memory-debt-partitions-v1",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-debt-partitions-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:adf702946ab6ed63c7ac3918aac5904f27117e4ad654eb7bda6bf81c281e8def"
+  ],
+  "body_sha256": "adf702946ab6ed63c7ac3918aac5904f27117e4ad654eb7bda6bf81c281e8def",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:56:34Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-debt-partitions-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "offline reconciliation"
+  }
+}

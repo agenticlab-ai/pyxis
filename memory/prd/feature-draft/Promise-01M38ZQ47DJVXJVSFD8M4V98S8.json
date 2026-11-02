@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQ47DJVXJVSFD8M4V98S8",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-2",
+  "statement": "If If any part of a draft changes after its last review round, then the system shall treat the earlier reviews as stale and refuse the lock until both reviews re-run on the current version",
+  "intent": "the lock refusal naming the stale reviews",
+  "fit_criterion": "Every post-review revision fixture is refused until re-review, then passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8f6928e087f0efd74bd2d7e41b85af25243c6b68d0099aff5e6dc9842f29191f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:19Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

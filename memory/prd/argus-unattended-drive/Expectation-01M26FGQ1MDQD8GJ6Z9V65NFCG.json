@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ1MDQD8GJ6Z9V65NFCG",
+  "kind": "Expectation",
+  "subject": "prd/argus-unattended-drive",
+  "family": "DOD-6",
+  "statement": "The activation runbook and the operator brief exist: the flip is decidable-on-sight (the acts, their scope, the ratification payload), and the feature refuses enforcement without them",
+  "intent": "FR-9, NG-1, NG-2",
+  "fit_criterion": "the runbook doc + the FR-9 refusal fixture",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2cc0509b3abbd8ce6c46169a9174d268061025e4e4fcb3d8b048ed3e93b57b9b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.908Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

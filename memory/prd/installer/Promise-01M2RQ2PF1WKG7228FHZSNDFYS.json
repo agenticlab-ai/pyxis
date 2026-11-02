@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2RQ2PF1WKG7228FHZSNDFYS",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "NFR-9",
+  "statement": "Init duration shall be recorded on reference CI runners against the existing advisory install targets; timing shall not determine a correctness verdict.",
+  "intent": "Performance",
+  "fit_criterion": "record p95 and p99 across release-candidate matrix runs against targets of p95 ≤ 5 min and p99 ≤ 8 min; results are advisory and cannot fail the release gate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2db896acaf62a2b23da7abbfce51f8acfe9ada51b08bc7b1bd225673026852f2",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGR1DABKMB1S9XW6QJTSB"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:16:30Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "note": "compiled from sha256:20433aec6e8ba6071760aee119e53dd41014bfc79024155057aca4b95faa4bb5"
+  }
+}

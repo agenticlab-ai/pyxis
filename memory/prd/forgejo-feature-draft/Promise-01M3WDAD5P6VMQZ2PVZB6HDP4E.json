@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD5P6VMQZ2PVZB6HDP4E",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "FR-1",
+  "statement": "When a draft verb runs, the system shall select `integrations.bindings.code_host` independently of the tracker and verify that the configured Git remote names the same bound server/repository before any credential-bearing API or Git request or host mutation; refuse credential-bearing redirects to an unbound destination.",
+  "rationale": "Keep AEC on Forgejo.",
+  "fit_criterion": "Matching Forgejo uses native host; a different server, port, base path, owner, repository, scheme, unsupported binding, or hostile redirect receives zero credential-bearing API/Git requests and zero writes; GitHub keeps its route.",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREXBKW72CP20MZCS41B",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NFR-1",
+  "statement": "Capture shall run off the review's critical path.",
+  "intent": "Performance",
+  "fit_criterion": "the review flow's completion time is unchanged by capture (no synchronous wait on the ledger write)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5ebb8d636ed6d72f876835eef51c5f3d21b375c6a6507bdd5558fc64e650edad",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.357Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

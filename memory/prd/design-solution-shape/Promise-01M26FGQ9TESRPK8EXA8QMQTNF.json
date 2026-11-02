@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9TESRPK8EXA8QMQTNF",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NFR-2",
+  "statement": "The durable Decision shall remain thin — only durable elements — so concrete churn does not touch the frozen record.",
+  "intent": "Maintainability",
+  "fit_criterion": "a concrete-only shape change produces zero edits to any frozen Decision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:db15afcc1ba3a7b06032625cdd71fb142198a3acbef1540682c59b7f71235866",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.17Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSJH52B2EE7WV6A3QNVTD",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Open, for the technical design to settle: how a draft-born plan's traces resolve against requirements and decisions that live in memory (brainstorm:feature-draft#P-3). Owner: the tech spec author.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQZA8RAKEGDNSECDT44R2"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:40Z"
+}

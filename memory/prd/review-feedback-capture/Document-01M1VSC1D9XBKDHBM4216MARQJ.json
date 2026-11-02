@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC1D9XBKDHBM4216MARQJ",
+  "kind": "Document",
+  "subject": "prd/review-feedback-capture",
+  "family": "amendment-001",
+  "statement": "Imported Pyxis source document: docs/prds/review-feedback-capture/001-recut.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "01653ca4af703244b2ac1640c0acb21770050225665b20d69215201128a40008",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:35Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/001-recut.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

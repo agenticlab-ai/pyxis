@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR6BN2MWH89VPXY3MFPD",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-9",
+  "statement": "Every live Must functional requirement passes its fit criterion, including complete model-backed execution demand, deterministic recomputation, and the evidence-support checkpoint on every plan/v2 task.",
+  "intent": "FR-1..FR-13, FR-16..FR-24, FR-26..FR-30",
+  "fit_criterion": "per-requirement evidence index including mechanical-task, tampered-demand, and completed checkpoint-rubric cases",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5a77d92c260300532127d3a5833a42226f35a6211c7db2088b1a4613b35a1464",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.083Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

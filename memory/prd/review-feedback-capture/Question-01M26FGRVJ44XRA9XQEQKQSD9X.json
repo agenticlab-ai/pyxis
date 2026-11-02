@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVJ44XRA9XQEQKQSD9X",
+  "kind": "Question",
+  "subject": "prd/review-feedback-capture",
+  "family": "Q2",
+  "statement": "The cross-citation grammar — how an entry cites the resolving artifact and links reviewer M2 / Argus `E-n`, and how `Learned-from: review-thread` resolves to a ledger anchor",
+  "intent": "technical design",
+  "rationale": "open (`#P-2`)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:6a9184d981ba8736b4f3fda8f3224d4480f8684f10c5bfdc66c77c0ab55068d5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.762Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

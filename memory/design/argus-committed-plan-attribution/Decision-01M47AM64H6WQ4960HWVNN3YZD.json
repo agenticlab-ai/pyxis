@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M47AM64H6WQ4960HWVNN3YZD",
+  "kind": "Decision",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "decision.3.2.1",
+  "statement": "Before rebase, `draft prepare-lock` compares each source stamp to its original commit tree and parents; a stale or replayed binding refuses preparation. It then runs its temporary-worktree rebase with an explicit rebase-stamp context and an empty ambient drive slug. The prepare-commit-msg hook reads the replayed commit's final trailer block: a complete `Argus-Drive` plus well-formed `Argus-Bind` supplies the existing slug, and the hook replaces the binding using the new staged tree and parent. An unstamped source commit stays unstamped. A partial or malformed stamp aborts the rebase. This operation refreshes an existing audit signal; it does not assign a new drive to an unstamped commit. The generated compilation commit runs with the rebase context and drive slug cleared, even if the caller exported them. In an installed repository, the temporary worktree shares the original checkout's ignored `.pyxis/bin` cache so its pinned hook tool remains available offline.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:effa196a80a809f997ede077ec38ee2db0f9c1eeb97d454c2af367862b5d3bb9",
+    "source-design:da8de41fa70e7ea3ac28728cc85785677be519b643d49954066261c9105774f2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M47A8SY3S5D9A9MT4KEG354B"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T00:43:10Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-committed-plan-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-committed-plan-attribution.md lines 48-48 in section 3.2; sha256:effa196a80a809f997ede077ec38ee2db0f9c1eeb97d454c2af367862b5d3bb9"
+  }
+}

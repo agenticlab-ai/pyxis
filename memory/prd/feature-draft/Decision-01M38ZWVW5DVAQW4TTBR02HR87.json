@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZWVW5DVAQW4TTBR02HR87",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R4",
+  "statement": "Settle in the technical design (Q5) how a long-lived draft satisfies the memory gate's ancestry and evidence rules, including re-evidencing at the lock.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The memory gate verifies record evidence against the landing tree and requires the mainline to be an ancestor, so a draft open across many rounds falls behind. The mechanism belongs to the technical design, not to the requirements.",
+  "fit_criterion": "The technical design names the re-evidencing step, and a fixture draft that fell behind the mainline during its rounds passes the memory gate at its lock.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:490da7cbd54dab116d6e58fe799a2470f94b0350e56ed91d98ace09e63f2cb78",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:27Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

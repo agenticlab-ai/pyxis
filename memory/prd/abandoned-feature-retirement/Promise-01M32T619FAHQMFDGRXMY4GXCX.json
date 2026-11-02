@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T619FAHQMFDGRXMY4GXCX",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-4",
+  "statement": "If If authority is introduced, changed, revoked, malformed, inactive, or unavailable in the deletion candidate rather than trusted at its base, then the system shall Refuse the deletion",
+  "intent": "authority and trusted-base remedy",
+  "fit_criterion": "Every candidate-authority and unavailable-history fixture accepts zero selected absences",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b12bc62ea5fb074433cb4739d6b1011c12d31d3c489960f99b4273920e8346f7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:10Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

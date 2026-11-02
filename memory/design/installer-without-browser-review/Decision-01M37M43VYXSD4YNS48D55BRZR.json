@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M43VYXSD4YNS48D55BRZR",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.12.1",
+  "statement": "New releases use release-manifest/v2 and omit the dependency-bundle hash. Current readers support both v2 and legacy v1; v1 still requires a valid bundle hash. Verification checks any pinned legacy bundle and refuses unpinned extra artifacts. Packaging refuses stale dependency archives in the output directory. Old v1-only readers reject v2 explicitly; users upgrade through `pyxis upgrade` or the bootstrap installer before repinning. The exact wire object is carried in the paired solution shape.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2a7e22abab3e27bb3582d34334d94f138e800c4ec132fae0e5b54ca77ba64ca6",
+    "source-design:afc31305cc73422e8fdf6026398b64afba5035a0fef145f79766da27c8ffaef0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2RR3DN7EZY1MGHV2ZR0YJHW"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRA9HR9XHW6MAEWSB81C9"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:28Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 133-133 in section 3.12; sha256:2a7e22abab3e27bb3582d34334d94f138e800c4ec132fae0e5b54ca77ba64ca6"
+  }
+}

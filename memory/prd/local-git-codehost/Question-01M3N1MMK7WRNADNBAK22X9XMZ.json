@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMK7WRNADNBAK22X9XMZ",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-8",
+  "statement": "A task target branch can move between approval and landing just as mainline can; the old failure row named only mainline.",
+  "intent": "GitHub code review on PR #1312, discussion 4125958223, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

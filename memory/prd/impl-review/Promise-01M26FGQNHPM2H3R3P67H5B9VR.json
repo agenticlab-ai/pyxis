@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNHPM2H3R3P67H5B9VR",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-2",
+  "statement": "finding_persisted fires when a finding lands on the proposal",
+  "intent": "finding_id, lens: enum, severity: enum, cal_row: string, path: string, line: int?",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:69438c8eeecfc209818fe8cda21429cc485dee04c8926ffc3c597d083d063627",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.545Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

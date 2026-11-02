@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRVEPPR44ZERNX3FTC4",
+  "kind": "Question",
+  "subject": "prd/contract-gate",
+  "family": "Q4",
+  "statement": "Whether the verdict's semantic-verdict fields (reserved for the LLM follow-up) are specified now or when the follow-up lands",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:39be395d9a97cbf6cb70921a52298c31c9d522378a9af951528b251cec662bd0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.675Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJ6VYC6K5DFD6R91W0HPG",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-7",
+  "statement": "A session wants work started before approval — vector: plans or executes from an open draft",
+  "intent": "execution acts on an unapproved contract",
+  "fit_criterion": "FR-5, FR-6",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:caaed0e134a57d16e3001048825e9d8ffe88b4d66943eb42391078727c134c46",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:38Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

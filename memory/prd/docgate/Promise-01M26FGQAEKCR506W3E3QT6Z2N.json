@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAEKCR506W3E3QT6Z2N",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-2",
+  "statement": "If an operation is invalid (dangling target, double-supersede, ID reuse, schema-violating payload), then docgate shall abort with a defect naming file, op, reason, and remedy — as human text on stderr and as one machine-readable JSON line per defect on a `--defects-json` stream.",
+  "rationale": "fail closed; authors fix fast; CI annotates precisely",
+  "fit_criterion": "100% of fixture defect cases produce the named quadruple in both forms; JSON parses against the defect-schema golden; zero best-effort output",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5f26758bafa988fde0020ba5c94ab366118066a119b8812bfa892058e31f0473",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.19Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

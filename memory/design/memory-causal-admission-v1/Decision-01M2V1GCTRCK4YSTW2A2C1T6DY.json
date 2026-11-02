@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V1GCTRCK4YSTW2A2C1T6DY",
+  "kind": "Decision",
+  "subject": "design/memory-causal-admission-v1",
+  "family": "decision.2.2",
+  "statement": "A candidate must not make a previously invalid or dangling\nhistorical act silently effective. Apply the existing before/after history\nprotection through one shared deterministic validator at both writing and\nmerge checking; weakening chronology is not permission to reinterpret history.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ab59687097297b7795c398399be8a0fa141698ef139d68b92df31d7eb9e42c7d",
+    "source-design:7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2V1F5Z1F7BZ7PPNX91JJ8PF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:57:14Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-causal-admission-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "exact Decision evidence at docs/tech-design/memory-causal-admission-v1.md lines 69-72 in section 2; sha256:ab59687097297b7795c398399be8a0fa141698ef139d68b92df31d7eb9e42c7d"
+  }
+}

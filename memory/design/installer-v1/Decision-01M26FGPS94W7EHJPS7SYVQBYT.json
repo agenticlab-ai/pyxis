@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS94W7EHJPS7SYVQBYT",
+  "kind": "Decision",
+  "subject": "design/installer-v1",
+  "family": "decision.3.1.1",
+  "statement": "One tag (`vX.Y.Z`) on the source repo triggers the release workflow: build every engine binary under the command tree — the set **derived by scan, never hand-kept** (AP-27) — for each supported platform; pack the payload archive (the system tree the manifest enumerates) and the platform-neutral dependency bundle (§3.3); generate the release manifest (§3.2 of the shape: per-file hash + ownership class, per-binary per-platform sha256, the system version); publish all of it with checksums to GitHub Releases on the source repo. Publishing is **upload-or-verify re-runnable** (AP-22): a re-run of a partially-published release completes it or verifies it byte-for-byte — never a second, different artifact set under the same tag.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2fcb5024ca5c582bc49e3f94cfd92eab56725095e53c35b6ffaead98f695814c",
+    "source-design:5c77436e03f67de06fe736131bde819d3bf27ff6f476a4d7e44ccf41eaae1618",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSGG9V52VDBXSCJ7D9SG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.641Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/installer-v1.md lines 52-52 in section 3.1; sha256:2fcb5024ca5c582bc49e3f94cfd92eab56725095e53c35b6ffaead98f695814c"
+  }
+}

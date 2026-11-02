@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8BABRY4XPM8VWG1982",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "J4",
+  "statement": "When I read a \"the contract passed\" signal, I want know exactly what that guarantee does and does not cover, so I can trust the green without over-trusting it",
+  "rationale": "`brainstorm:contract-compiler-2#D-7`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:435ad20cfdda20f8f736475d7710ed492a1ce444ed2e487433a96a857cbc083d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.123Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

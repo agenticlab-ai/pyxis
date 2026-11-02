@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMRDHNNB3S4Z9Q3SRY3",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-10",
+  "statement": "Every live Must functional requirement and unwanted-behavior row passes its fit criterion, including the complete demand join, one-review minimum, critical two-pass independence, review-role launch fidelity, canonical evidence, aggregation, fallback, invalidation, HUMAN forcing, and direct activation.",
+  "intent": "FR-3..FR-7, FR-12, FR-14..FR-16, FR-18..FR-31; UB-3, UB-9..UB-19",
+  "fit_criterion": "per-row evidence index including every matrix, route/outcome, seam, failure, recovery, and production case",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6272acadad1aba75e049fc907058eb3c216d02f24aefd0b314e5cf91aa798347",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.52Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

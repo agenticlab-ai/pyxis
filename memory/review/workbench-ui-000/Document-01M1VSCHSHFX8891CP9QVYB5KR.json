@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCHSHFX8891CP9QVYB5KR",
+  "kind": "Document",
+  "subject": "review/workbench-ui-000",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/workbench-ui-000.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "28664aef9be61fe094f5a956eee2359c327e873e932a74305e9e9429f1c157ce",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:52Z",
+  "provenance": {
+    "source": "docs/reviews/workbench-ui-000.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

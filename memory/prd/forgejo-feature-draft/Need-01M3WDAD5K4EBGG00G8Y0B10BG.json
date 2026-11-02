@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3WDAD5K4EBGG00G8Y0B10BG",
+  "kind": "Need",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "G2",
+  "statement": "We believe preserving exact-head approval and the GitHub route; expected result: zero non-human or stale-head locks while source GitHub remains usable",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

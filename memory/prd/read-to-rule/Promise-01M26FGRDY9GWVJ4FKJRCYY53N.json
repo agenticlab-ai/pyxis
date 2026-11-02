@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDY9GWVJ4FKJRCYY53N",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "NR-1",
+  "statement": "docgate verbs, the gate suite, and projections behave identically; §0 is ordinary section text to the fold",
+  "rationale": "NG-4 — this feature ships zero docgate behavior changes",
+  "fit_criterion": "the gate suite runs green across the existing corpus; zero changes to docgate's behavior or verb set — the mechanical accompaniments docgate's own template contract requires of any template PR (updated goldens, template-version registration) are expected and land with Phase 1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fec19599d4669441f21e515ba2fd094c1ccc2bb3c278866e9de3e015a6f5722c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.326Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

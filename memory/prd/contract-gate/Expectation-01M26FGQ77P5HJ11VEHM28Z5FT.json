@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ77P5HJ11VEHM28Z5FT",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-12",
+  "statement": "No live non-regression row is broken, including byte-identity of referenced documents and preservation of advisory stale flags for every non-gate reader.",
+  "intent": "NR-1..NR-4",
+  "fit_criterion": "one result per live NR row plus referenced-document manifest and before/after design-index comparison",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d668a570d4755c459a2493c4d832c7002d6883b4f8c22165b0c17414f06ee204",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.087Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

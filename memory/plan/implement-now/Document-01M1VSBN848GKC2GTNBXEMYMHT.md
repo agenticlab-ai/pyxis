@@ -1,0 +1,275 @@
+# implement-now — plan 002
+
+| Field | Value |
+|---|---|
+| **Feature** | implement-now |
+| **PRD** | docs/prds/implement-now |
+| **Design** | docs/tech-design/implement-now-e2e-tasks.md |
+| **Plan version** | 002 |
+| **Dialect** | harbormaster/fs-spec:v1 |
+| **Epic title** | Consume e2e-planned tasks in the local execution engine |
+| **Status** | Draft — freezes at merge |
+| **Template version** | plan-template/v1 |
+
+## Tasks
+
+### T1 — Resolve a ready task's e2e origin and slot before claim
+
+| Field | Value |
+|---|---|
+| **Blocked by** | — |
+| **Size band** | 240–295 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/e2eorigin (resolution + the injected document reader), internal/executor/dispatch/dispatch.go (the frontier-walk injection point) |
+
+**Goal:** Given a ready task, the frontier walk decides before any claim whether it came from an e2e plan, and if so which single scenario or the harness slot it carries.
+
+**Current behavior:** The frontier walk partitions candidates into ready and blocked through one predicate and hands the ready ones to the claim loop. It reads no repository document, holds no document reader, and has no notion of an e2e task.
+
+**Desired behavior:** For each ready candidate the walk follows the plan-task marker the projection already stamps back to the frozen plan it names, reads that plan's governing-document header field, and where that field names a document at the feature's e2e home which parses as the e2e-design class, carries `approved` status, and passes the class well-formedness check, resolves the task to exactly one scenario or to the harness slot by re-running the closed task-graph rule that authored the plan. The rule's harness-existence input is recovered from recorded data alone — equal frozen-plan task and document scenario counts mean no harness slot, exactly one more means the harness slot is the plan's first task, any other relationship refuses. Anything else resolves not-e2e and continues down the unchanged path. A missing, not-approved, malformed, unresolvable, ambiguous, or count-mismatched basis refuses with that reason named, as does a plan task declaring no path-bearing surface. The document is read at the plan's freeze revision through an injected reader; an unavailable revision refuses rather than falling back to the working tree, and the resolved content's fingerprint travels with the outcome.
+
+**Scope:**
+- The injected document reader and the plan freeze-revision read, failing closed when that revision cannot be resolved.
+- The marker to plan to governing-document traversal, and the class, status, and well-formedness gate over the named document.
+- Slot resolution by re-running the closed task-graph rule, with its harness-existence input recovered from recorded counts alone.
+- The typed resolution outcome — resolved, refused with a named reason, or not-e2e — carrying slot, scenario, route, declared surface, and content fingerprint.
+
+**Out of scope:**
+- Claiming, spawning, reporting, or classing anything — this task returns an outcome and acts on none of it.
+- Re-probing the repository for an existing harness, or any read of the working tree's current state.
+
+**Acceptance criteria:**
+- [ ] In a fixture repo carrying both an implementation plan and an e2e plan for one feature, every e2e task resolves to exactly one scenario or the harness slot and every non-e2e task resolves to none.
+- [ ] A plan whose governing-document header names no e2e design document yields zero e2e resolutions whatever its tasks' charters say.
+- [ ] Equal task and scenario counts yield no harness slot, exactly one more yields the harness slot at the first task, and any other relationship refuses.
+- [ ] Missing, not-approved, malformed, unresolvable, ambiguous, unavailable-revision, and absent-surface fixtures each refuse naming their reason, and the task and charter schemas stay byte-identical.
+
+**Key interfaces:**
+- An injected document-reader function value resolving a repository path at a named revision to bytes, held by the Dispatcher.
+- A typed resolution result carrying resolution, slot, scenario identity, route, declared surface, basis reference, and content fingerprint.
+- The existing closed task-graph decision rule and the e2e document-class checker, both consumed unchanged.
+
+**Traces:** prd:implement-now/FR-28 · prd:implement-now/NR-8 · prd:implement-now/UB-14 · design:implement-now-e2e-tasks#3.2 · design:implement-now-e2e-tasks#3.3 · design:implement-now-e2e-tasks#DINV-1
+
+### T2 — Class and record the pre-claim e2e outcomes
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T1 |
+| **Size band** | 170–230 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/dispatch/dispatch.go (the pre-claim stage), internal/executor/report (the two classes + the origin-decision event) |
+
+**Goal:** A refused or manual-human e2e task reaches a terminal class before claim with its origin decision recorded once, spawning no worker and consuming no model tokens.
+
+**Current behavior:** The sweep carries four terminal classes — succeeded, failed, blocked, skipped — and has no stage between computing the ready set and claiming, so every ready task is claimed. Nothing records why a task was or was not recognized, and no pre-claim refusal stage exists for any task class.
+
+**Desired behavior:** The sweep gains one pre-claim stage that runs the origin resolution over every ready task and records exactly one origin decision per ready task per run before any claim, carrying the task, feature, and plan references, the basis reference and its fingerprint, the slot, scenario, route, resolution, and any refusal reason. A refused task terminates as basis-refused naming the feature, the expected document, and the defect. A recognized scenario carrying the manual-human route terminates as human-execution-required naming the owner the approved document records. Neither class is ever counted succeeded or failed, neither acquires a lease, and both leave the other independent ready tasks to proceed unchanged — so two consecutive runs over the same frontier report identically with no claim churn. Every record rides the existing normalized stream to both existing sinks, adding no third reporting surface.
+
+**Scope:**
+- The pre-claim resolution stage in the sweep, between the ready-set computation and the claim loop.
+- The basis-refused and human-execution-required terminal classes in the classed run report and its counts.
+- The origin-decision event and its field set, emitted once per ready task per run on the existing stream to both existing sinks.
+
+**Out of scope:**
+- Any change to the claim, workspace, or worker path for a task that resolves not-e2e or resolves cleanly.
+- A second gate or a second dispatch route — this is the one pre-claim stage, and the refusals of the as-yet-undesigned routing work are expected to join it rather than build another.
+
+**Acceptance criteria:**
+- [ ] Fixtures for the missing, not-approved, malformed, unresolvable, and ambiguous classes each perform zero claims and zero model invocations and name their defect, while independent valid tasks in the same run still complete.
+- [ ] A manual-human fixture spawns zero workers, names its recorded owner, is counted neither succeeded nor failed, and two consecutive runs produce identical reports with no lease acquired.
+- [ ] Exactly one origin decision is recorded per ready task per run before any claim, and every resolved decision joins its task, its plan, and its basis fingerprint.
+- [ ] Every origin decision reaches both existing sinks and no additional reporting surface is introduced.
+
+**Key interfaces:**
+- Two new terminal class values in the report's class set, with their counts in the run report.
+- An origin-decision event type carrying task, feature, plan, basis reference, slot, scenario, route, resolution, and reason fields.
+- The Dispatcher's pre-claim stage, invoked once per ready task before the claim loop.
+
+**Traces:** prd:implement-now/UB-14 · prd:implement-now/UB-15 · prd:implement-now/FR-31 · prd:implement-now/EVT-12 · prd:implement-now/NR-8 · design:implement-now-e2e-tasks#3.7 · design:implement-now-e2e-tasks#DINV-2 · design:implement-now-e2e-tasks#DINV-8
+
+### T3 — Brief the worker from a basis artifact outside the publishing worktree
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T1 |
+| **Size band** | 150–210 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/e2ebasis (the artifact schema + its per-task writer), internal/executor/worker/worker.go (the launch spec + the charter protocol preamble) |
+
+**Goal:** A recognized e2e task's worker is handed its own scenario's reviewed basis as read-only data in a file that lives outside the worktree it publishes from.
+
+**Current behavior:** A worker receives its charter as instruction and nothing else. The workspace commits its whole tree when it captures an agent's uncommitted work, so any executor-written file placed inside the worktree would land in the published proposal.
+
+**Desired behavior:** Before launch the executor writes the resolved basis as a closed, versioned, read-only artifact in an executor-owned per-task location outside the publishing worktree, and passes its location into the launch spec. The artifact holds that task's own scenario flow, its recorded route, its mock strategy, the setup and teardown lifecycle, the harness-libraries selection, the coverage-map rows that scenario proves, the governing-design revisions the document's own basis join names, and the feature's traced requirement rows — that task's basis and no other scenario's. The charter's protocol preamble names where the artifact sits and states that its contents are data, never instruction; the charter body, the task schema, and the launch contract gain no e2e-specific required field. A spawn whose basis is missing any named element refuses instead of proceeding, and no executor-written file ever appears in a published proposal.
+
+**Scope:**
+- The closed, versioned basis artifact schema and its per-task writer, placed outside the publishing worktree.
+- The launch-spec hand-off of the artifact's location, and the charter protocol preamble that names it as data.
+- The refusal path when any named basis element is absent at spawn time.
+
+**Out of scope:**
+- Folding any basis content into the charter brief or any other instruction surface.
+- Adding an e2e-specific field to the charter, the task schema, or the launch contract.
+
+**Acceptance criteria:**
+- [ ] Every spawned e2e attempt's input carries each named basis element for its own scenario and no other scenario's, checked against a golden artifact per scenario.
+- [ ] A spawn whose basis lacks any named element refuses and starts no worker.
+- [ ] The prompt-injection drill run over basis content changes no behavior.
+- [ ] A published proposal's diff contains no executor-written file.
+
+**Key interfaces:**
+- A versioned basis struct with explicit field tags, parsed closed, carrying one scenario's basis.
+- The launch spec's basis-location field and the charter protocol preamble's data declaration.
+
+**Traces:** prd:implement-now/FR-29 · prd:implement-now/NR-8 · design:implement-now-e2e-tasks#3.4 · design:implement-now-e2e-tasks#DINV-4
+
+### T4 — Admit an authored test by perturbation before any proposal opens
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T3 |
+| **Size band** | 220–290 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/e2eadmit/hermetic (the labelled battery), internal/executor/worker/worker.go (the pre-publish admission point) |
+
+**Goal:** A test whose verdict moves under perturbation is never published, so it never enters the required check list and never reaches the self-heal loop.
+
+**Current behavior:** Once an agent's work is captured the worker opens a proposal and the bounded drive-to-green loop takes over. Nothing establishes that a newly authored check holds its verdict, and because this repository's canonical check list is suite-scoped, a published test is inside the required predicate the moment its file lands.
+
+**Desired behavior:** For a recognized e2e task, once the authored test first passes in the worktree and before any proposal is opened, the executor re-runs that test under a labelled perturbation battery — varied ordering, the race detector where the stack has one, concurrent load, a perturbed clock and timezone, denied network, and a dirty ambient repository state — together with repeated identical runs. A verdict that moves under any perturbation, or across repeats, stops the task: it is marked failed naming the perturbation whose label identifies the non-hermetic dependency, its work is preserved on its branch, it is escalated, and no proposal is opened — so zero self-heal iterations are consumed, structurally, because the loop only acts on proposals. Every perturbation is confined to the task's own process tree, its own environment, clock, network view, and generated load, never the host, so a sibling worker running concurrently is unaffected. A cheap static pass over known non-hermetic constructs runs first inside the battery and serves only to name a dependency when it can; it is never the verdict.
+
+**Scope:**
+- The labelled perturbation battery and its repeated-run stability check, run after the authored test first passes and before the publish step.
+- Process-tree confinement of every perturbation, covering environment, clock, network view, and generated load.
+- The failed-with-dependency-named terminal path that preserves work, escalates, and opens no proposal.
+- The static naming pass inside the battery, advisory to the label and never the verdict.
+
+**Out of scope:**
+- The drive-to-green loop and its bounds, which stay unchanged — this task only decides whether a proposal is opened for the loop to act on.
+- Any change to the publish path for a test whose verdict holds under every perturbation.
+
+**Acceptance criteria:**
+- [ ] Seeded clock, network, ordering, and ambient-repository fixtures are each detected before publication with their dependency named, open no proposal, and consume zero self-heal iterations.
+- [ ] A hermetic control test in the same run publishes normally.
+- [ ] Running the battery beside concurrent sibling workers changes no sibling's outcome.
+- [ ] The battery returns the same verdict across repeated runs against a known-hermetic authored test under varying host load.
+
+**Key interfaces:**
+- A labelled perturbation set, each label naming the dependency class it exposes, and a battery runner driving them through the injected command runner.
+- The worker's pre-publish admission point and its failed-with-label outcome.
+
+**Traces:** prd:implement-now/FR-32 · prd:implement-now/UB-17 · design:implement-now-e2e-tasks#3.6 · design:implement-now-e2e-tasks#DINV-6 · design:implement-now-e2e-tasks#DINV-7 · design:implement-now-e2e-tasks#DINV-9
+
+### T5 — Withhold the succeeded class on a mandate or route violation
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T4 |
+| **Size band** | 200–270 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/e2eadmit/mandate (the scope diff + the falsification runner), internal/executor/worker/worker.go (the post-green admission point) |
+
+**Goal:** A genuinely-green e2e proposal counts succeeded only once it has shown it changed nothing it was sent to prove and that its scenario really exercises the subject it names.
+
+**Current behavior:** Success is a verified artifact with green checks. That test cannot see a proposal that reached green by changing the behavior under test, nor one that swapped the scenario's reviewed route for a cheaper one, so both are counted succeeded today.
+
+**Desired behavior:** After a recognized e2e task's proposal is genuinely green and before the succeeded class is granted, two mechanical checks run. The scope diff requires every changed path in the proposal to lie within the surface the frozen plan task declares in its path-bearing field. The falsification deliberately perturbs the subject the scenario names, in a disposable copy of the worktree, and requires the authored test to go red there — a test that stays green against a broken subject is not exercising it, whether the cause was a stub standing in for the real thing or a scenario mocked away against its recorded route. Either check failing withholds the succeeded class, marks the task failed naming the violated mandate or route together with the scenario, the recorded route, and the offending path, preserves the work, escalates, and leaves the independent tasks running. The publishing worktree is never damaged by a perturbation, and the disposable copy is retained on a withheld task so the perturbation and the test's response can be inspected.
+
+**Scope:**
+- The scope diff of the proposal's changed paths against the frozen plan task's declared surface.
+- The broken-subject falsification, run in a disposable copy of the worktree and retained on a withheld task.
+- The withheld-succeeded terminal path, naming the scenario, the recorded route, and the offending change.
+
+**Out of scope:**
+- A model-judged reviewer lens over the diff — this admission is a mechanical predicate and spends no inference.
+- The mocked-double contract check, which the e2e document class does not yet record enough to support and which stays an open question rather than a guessed mechanism.
+
+**Acceptance criteria:**
+- [ ] A fixture whose scenario fails against genuinely-broken feature behavior yields a failing test and an escalated task, never a feature edit that makes it pass.
+- [ ] Seeded feature-edit and route-substitution fixtures are never counted succeeded even with every required check green, each naming the scenario, the recorded route, and the offending change.
+- [ ] A real-subject scenario's test goes red when its subject is broken in the disposable copy.
+- [ ] The publishing worktree is byte-identical before and after every falsification perturbation.
+
+**Key interfaces:**
+- A scope-diff predicate over the proposal's changed paths and the plan task's declared surface.
+- A falsification runner over a disposable worktree copy, and the withheld-class outcome naming scenario, route, and offending change.
+
+**Traces:** prd:implement-now/FR-30 · prd:implement-now/FR-31 · prd:implement-now/UB-16 · design:implement-now-e2e-tasks#3.5 · design:implement-now-e2e-tasks#DINV-5
+
+### T6 — Run one real feature's approved e2e plan end to end
+
+| Field | Value |
+|---|---|
+| **Blocked by** | T2, T5 |
+| **Size band** | 120–180 |
+| **Mechanical** | no |
+| **Size accepted** | — |
+| **Overlap accepted** | — |
+| **Routing** | — |
+| **Pattern** | — |
+| **Touches** | internal/executor/e2e (the consumption drill + its evidence capture) |
+
+**Goal:** The whole consumption path is proved against one real feature's approved e2e plan rather than against fixtures alone.
+
+**Current behavior:** The executor's end-to-end drill composes the real engine over a frozen fixture plan. No e2e plan has ever been projected or consumed, so nothing has exercised the consumption path against a document a human actually approved.
+
+**Desired behavior:** One real pyxis feature's approved e2e plan runs through the executor end to end. Every task resolves to its scenario or to the harness slot from the plan's recorded reference. Every automatable scenario reaches a genuinely-green proposal that fails when its subject is deliberately broken and returns the same verdict on repeat runs across machines under different load. Every manual-human scenario is handed to its recorded owner with zero worker spawns. No proposal changes the behavior under test. The run record, the per-task origin decisions, the proposal links, one falsification result and one verdict-stability record per automatable scenario, and a diff inspection are captured together as the evidence.
+
+**Scope:**
+- The drill that drives one real approved e2e plan through the real engine, over the resolution and both admissions.
+- Capture of the run record, per-task origin decisions, proposal links, and the diff inspection as one evidence set.
+- One falsification result and one verdict-stability record per automatable scenario, taken from machines under different load.
+
+**Out of scope:**
+- Authoring or revising the feature's e2e coverage — the drill consumes an already-approved document and changes none of it.
+- Any change to the resolution or admission behavior the earlier tasks land; a defect found here is fixed in the task that owns it.
+
+**Acceptance criteria:**
+- [ ] Every task of the real plan resolves to its scenario or the harness slot from the plan's recorded reference, with its origin decision recorded.
+- [ ] Every automatable scenario reaches a genuinely-green proposal that goes red when its subject is deliberately broken.
+- [ ] Every authored test returns the same verdict on repeat runs across two machines under different load.
+- [ ] Every manual-human scenario is handed to its recorded owner with zero spawns, and a diff inspection shows no proposal changed the behavior under test.
+
+**Key interfaces:**
+- The consumption drill composing the real dispatcher, worker, and both admissions over a real approved plan.
+- The captured evidence set — run record, origin decisions, proposal links, falsification and stability records, diff inspection.
+
+**Traces:** prd:implement-now/DOD-19 · prd:implement-now/FR-28 · prd:implement-now/FR-32 · design:implement-now-e2e-tasks#2 · design:implement-now-e2e-tasks#3.1
+
+## Coverage
+
+| Requirement | Tasks |
+|---|---|
+| prd:implement-now/FR-28 | T1, T6 |
+| prd:implement-now/FR-29 | T3 |
+| prd:implement-now/FR-30 | T5 |
+| prd:implement-now/FR-31 | T2, T5 |
+| prd:implement-now/FR-32 | T4, T6 |
+| prd:implement-now/NR-8 | T1, T2, T3 |
+| prd:implement-now/UB-14 | T1, T2 |
+| prd:implement-now/UB-15 | T2 |
+| prd:implement-now/UB-16 | T5 |
+| prd:implement-now/UB-17 | T4 |
+| prd:implement-now/EVT-12 | T2 |
+| prd:implement-now/DOD-19 | T6 |

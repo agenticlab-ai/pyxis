@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A9623K15540SGRR3421R",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "ABUSE-2",
+  "statement": "Competing host repeats expensive work — vector: Missing or lost shared claim",
+  "intent": "Duplicate proposals",
+  "fit_criterion": "FR-6, UB-2",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

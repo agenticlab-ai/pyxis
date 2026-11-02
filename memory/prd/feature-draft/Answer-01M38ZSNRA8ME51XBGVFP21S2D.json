@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSNRA8ME51XBGVFP21S2D",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Open, for the technical design to settle: how each tool that reads an overridden row applies the override (brainstorm:feature-draft#P-5). Owner: the tech spec author.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZR2WW3DKZB93Q9EQSY85M"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:43Z"
+}

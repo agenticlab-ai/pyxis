@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZ9M58JR5JKGSZ5703B4J",
+  "kind": "Decision",
+  "subject": "design/acquisition-trust-v1",
+  "family": "decision.2.1",
+  "statement": "Acquisition **verifies at fetch** and then **trusts the version-named cache**; it **authenticates to the default GitHub release host** through the API asset endpoint when a token is available; and the manifest-sha pin is **handed off by install.sh** over its own authenticated fetch. The manifest-sha stays the single trust root — a fetched byte is accepted only if it hashes to a pin rooted in the operand's committed config. **Auth governs *access*, never *acceptance*.**",
+  "tags": [
+    "code:install.sh",
+    "reconcile:design-decision",
+    "source-block:b6eda2a7284f931e5260b17a395c76d1d12807c2f88fbeed4c27f2bc8f5dd2be",
+    "source-design:74e1681d397e90ae2742cf27eab479ded67658721c7e86309994dc40a7947686",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMBCTVJF3WRFWFCACGC"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQJ7NKMA97Y40JQF54VGD"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:10:50Z",
+  "provenance": {
+    "source": "docs/tech-design/acquisition-trust-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/acquisition-trust-v1.md lines 45-45 in section 2; sha256:b6eda2a7284f931e5260b17a395c76d1d12807c2f88fbeed4c27f2bc8f5dd2be"
+  }
+}

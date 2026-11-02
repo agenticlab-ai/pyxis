@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ1E0GRH6VM6GJGG6PT",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-13",
+  "statement": "The system shall reconcile its records against an authoritative launch record produced independently of capture, and shall record any launch found in that record with neither a process record nor a capture-failure entry.",
+  "rationale": "every completeness figure needs a denominator capture cannot author: a process whose capture never ran emits no event of its own, so a metric fed only by capture's own events cannot see it — the silence this contract most needs to detect *(#D-6)*",
+  "fit_criterion": "seeding the checkpoint batch with a launch whose capture is suppressed entirely yields a recorded discrepancy naming that launch; the launch record's producer is the executor, not this feature",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ed7faffdb4b54dfddf18547dc577cda07a26373d52558ece39e25cbdf18b2507",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.617Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CQVKQNDGPW9HJD180CRH",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-58",
+  "statement": "Where GitHub is selected, the system shall authenticate an Argus approval from the host review's account identity and commit ID and a closed versioned driver decision binding repository, PR number, exact head, pre-merge policy commit, drive slug, prepared contract digest when applicable, and review evidence. It shall accept the same-account author's COMMENTED review only with that decision, and record the approval as Argus rather than human. The existing authenticated operator review and explicit local-git declared receipt routes shall remain supported.",
+  "rationale": "Supports an honest agent decision without impersonation or a second account requirement",
+  "fit_criterion": "Same-account COMMENTED and distinct-account APPROVED driver decisions pass; ordinary comments, malformed payloads, wrong accounts, stale heads, policy commits, and digests refuse; old human lock tags and local receipts remain readable.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:191b0a7faad28b06805095aaadedc569d9281b7675db54bd474ae982d8213781",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQFZEJ7ZENA1XK0R8E6CB"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:35Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

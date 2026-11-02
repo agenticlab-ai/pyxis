@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26702Q4HAKGC2FTX3FW3KEV",
+  "kind": "Decision",
+  "subject": "design/executor-lifecycle-delivery",
+  "family": "implementation",
+  "statement": "The executor report package provides distinct implementation-completed, task-delivered, and plan-completed events plus an opt-in durable Reporter. Registered handlers receive stable event identities in persisted publication order; failed handlers block their own later transitions while successful independent handlers retain their receipts. One reporter exclusively owns each ledger through an OS lock until Close or process exit.",
+  "intent": "Make consequential lifecycle reactions recoverable across storage failures and process restarts without losing events, overwriting another run, or repeating durably completed siblings.",
+  "rationale": "Publish records an event before any sink or handler sees it. Unsaved admissions and outcomes are flushed before further effects. Handlers remain idempotent across the unavoidable effect-to-receipt crash window. Ordinary progress does not drain pending work; Publish returns errors, Emit reports failures through an observer or structured log, and Resume retries pending work explicitly. Lifecycle owners still supply verified transitions and handlers; this change adds the reporting substrate rather than wiring production completion predicates.",
+  "fit_criterion": "Package regressions cover admission and receipt save failures, malformed state, cancellation, immutable payload identity, cross-process exclusive ownership, crash recovery after a real subprocess exits between effect and receipt, ordered retries across restart, all presentation sinks, and concurrent duplicate publication under the race detector.",
+  "tags": [
+    "code:internal/executor/report"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T17:49:08Z",
+  "provenance": {
+    "source": "internal/executor/report/delivery.go",
+    "pr": 1172
+  }
+}

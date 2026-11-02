@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG4G1CBAK6DA7KKT93M",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-5",
+  "statement": "While a feature's draft holds prototype findings, Pyxis shall answer each finding with a PRD row, a tech-spec decision, or a ruled requirement problem, or mark the finding set aside with a reason, before the contract locks.",
+  "rationale": "\"you apply that learning when you're going … through the feature draft and the actual implementation\" (brainstorm:prototype#D-8); implementation receives the learning through the locked contract",
+  "fit_criterion": "At the prepared lock head, every finding names the row, decision, or problem that answers it, or carries a set-aside reason; zero findings are unanswered",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

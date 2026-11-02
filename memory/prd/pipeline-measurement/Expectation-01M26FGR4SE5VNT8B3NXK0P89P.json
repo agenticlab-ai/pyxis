@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR4SE5VNT8B3NXK0P89P",
+  "kind": "Expectation",
+  "subject": "prd/pipeline-measurement",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..3",
+  "fit_criterion": "run artifacts + harness output byte-unchanged; docgate identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:703ddb3f591fa0af2fda4b726223e8fa271e85ec83f5999b8b38ee49a10ddb1c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.033Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

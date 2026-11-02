@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MDGQM9K7MWHW4Q2WMJW6",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-argus-approval",
+  "family": "decision.3.11.1",
+  "statement": "Terminal and ownership-changing transitions preserve artifacts and order destructive acts last (`design-brainstorm:feature-implementation-drive-tech-design#D-6`):",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6943610625fcfbce97a8e0affba75af77890899d11524ab69d4e979924dae378",
+    "source-design:5375b9f1395246115eedf1a9f66c6c21da895c5ac04f8a0505c80e204089b010",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DG5DQ4MZARWRT0KZP4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:46Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-argus-approval.md lines 245-245 in section 3.11; sha256:6943610625fcfbce97a8e0affba75af77890899d11524ab69d4e979924dae378"
+  }
+}

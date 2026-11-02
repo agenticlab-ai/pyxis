@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXNGCQCRFDC69BDY61T",
+  "kind": "Decision",
+  "subject": "design/serves-hardening",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-20.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:f30210e6325058d6db762612d37fb73543593c0f8486ec2d4745ccf2cbdaacc1",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCX0ZN1XNWPW1HAAYQ10F"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAFR67HF59C6V3Z5BG0"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.829Z",
+  "provenance": {
+    "source": "docs/tech-design/serves-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header f30210e6325058d6db762612d37fb73543593c0f8486ec2d4745ccf2cbdaacc1"
+  }
+}

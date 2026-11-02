@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BY4QAFS10QM2HF9HXHWMC0",
+  "kind": "Decision",
+  "subject": "design/feature-draft-lock-record",
+  "family": "annotated-mainline-tag",
+  "statement": "Record each approved draft lock as an annotated lock/<feature>/vN tag on its mainline merge commit, after rechecking the exact-head operator approval.",
+  "intent": "Keep a versioned, fresh-clone-readable approval and contract anchor after draft working files are removed.",
+  "rationale": "The push job inspects each first-parent mainline commit, identifies its merged draft pull request, reads the preparation digest and proposal count, and publishes a closed typed tag. Reruns compare the full record and reuse an unpublished matching local tag.",
+  "fit_criterion": "A lock merge writes one tag with version, both roles, capture line or lineless, head, digest, pull request, and proposal count; ordinary merges write none; reruns converge; a fresh clone reads the tag and renders the locked PRD.",
+  "tags": [
+    "code:internal/draft/lock",
+    "code:cmd/draft-lock-record"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T09:25:31Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

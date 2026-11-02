@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYK1XG8ZH1SE2YTD90R",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "UB-5",
+  "statement": "If If an act would cross an outward or irreversible surface not pre-granted (publishing, external comms, production-facing acts, real spend), then the system shall refuse and escalate",
+  "intent": "a brief naming the surface",
+  "fit_criterion": "EVAL-2 outward set: 100% refused",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0432b07991c3eb5ce36ae106cc83366fce4192a8f4b12410cca77be8e1002e32",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.811Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

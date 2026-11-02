@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMYACPGPYJRE6SP76FX",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "decision.3.3.1",
+  "statement": "Human authorship on the protected subset is **positively established** by a **positive attestation trailer** — the credential-free `Governing-Change: operator` *pattern* (a merge-base `git log` read of the attestation trailer), served by **its own single-sourced positive-human reader** distinct from the shipped `hasOperatorTrailer` (which answers a different predicate — see the AP-11 note below and `## Principles`) — with a determinable in-tree committer identity as an explicitly **non-adversarial, committer-settable best-effort disambiguation** carrying **no** forgery-resistance. A protected-path diff resolves into three states under a **stated precedence — positively-Argus wins** — and the gate acts on each *(design-brainstorm:argus-attribution-hardening-tech-design#D-3)*. This **replaces** the frozen `Human = Argus-trailer-absent` inference.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:fb1bc51716f85036afc1b962638c708c7fabc3d6563426c6d158ab220e2dabf2",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.502Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-attribution-hardening.md lines 69-69 in section 3.3; sha256:fb1bc51716f85036afc1b962638c708c7fabc3d6563426c6d158ab220e2dabf2"
+  }
+}

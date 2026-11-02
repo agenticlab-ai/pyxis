@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQDPNA8H9YXAQK5KG4Y",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "G2",
+  "statement": "We believe declaring every figure a harness cannot expose, rather than omitting it; expected result: consumers that can distinguish \"not measurable here\" from \"measured as zero\", and so can trust a zero",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f315dfccddfe96a4babe68d37e605f44f784aff11e8d11947008e3e1e8b1223b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.629Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

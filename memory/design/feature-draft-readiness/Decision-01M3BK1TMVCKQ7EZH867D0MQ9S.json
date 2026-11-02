@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BK1TMVCKQ7EZH867D0MQ9S",
+  "kind": "Decision",
+  "subject": "design/feature-draft-readiness",
+  "family": "structural-verdict",
+  "statement": "Judge draft currency, citations, PRD structure, and decision links from compiled records and a pinned mainline through one shared verdict.",
+  "intent": "Give local checks, the pull request check, and lock preparation the same readiness result for the same draft and mainline.",
+  "rationale": "The compiler preserves explicit links, the citation scanner shares the document gate grammar, and the verdict reads exact mainline memory and document bytes; malformed or stale references stay visible until repaired.",
+  "fit_criterion": "Condition fixtures, local and hosted parity, the no-draft check, and the Go race and coverage gates pass.",
+  "tags": [
+    "code:internal/draft/compile",
+    "code:internal/draft/readiness",
+    "code:internal/memory/cli",
+    "code:internal/docgate/gate"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T06:11:42Z",
+  "provenance": {}
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TBC98TERZ15NBYMXR2A03",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R3",
+  "statement": "Require typed terminal dispositions for product obligations, governing designs, and affected frozen-plan traces before retirement authority.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "An abandoned implementation cannot be removed while its authoritative contracts still require it. FR-2 and UB-1 make lifecycle coherence a preflight rather than cleanup fallout.",
+  "fit_criterion": "Live requirement, live design, missing supersession, and unresolved plan-trace fixtures publish zero authority; terminal controls pass.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:3e0d83040122e083ac815ebc402241caed30802a2b9788e149286ac1782ed9b8",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:26:05Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

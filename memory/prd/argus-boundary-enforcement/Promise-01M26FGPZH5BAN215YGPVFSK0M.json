@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZH5BAN215YGPVFSK0M",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-5",
+  "statement": "When the docgate gate runs, the structure arm shall report a named defect when any change-history row is missing its date, move (from the closed enum), resulting tier, or evidence refs (attribution incomplete).",
+  "rationale": "DINV-3 attribution present + DINV-4 history-mandatory (J2)",
+  "fit_criterion": "on the seeded fixtures (a history row missing each required field), the arm reports a defect naming the row and the missing field; a complete contract passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4ef5fff47ddb593a24a720f1dbc03b695733b7f152cbb78d378c545a23f24851",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.841Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQET72BFEAGMX4SRGN4Q",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "UB-3",
+  "statement": "If If a cataloged or routed entry's stage has no invocable mechanism on the installed surface (an unbuilt stage on the shipped map), then the system shall present the stage with its map status — never recommend a command for it",
+  "intent": "the stage named with its status, plus the nearest built entry point",
+  "fit_criterion": "across scenarios targeting unbuilt stages, zero commands recommended for them and the status stated every time (EVAL-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:43594ea5ad48353bad70e08fc63ecd071cfb9a2f0f44a7ca6e47b111f7e62345",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.33Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

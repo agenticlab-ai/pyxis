@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1Z4H6MVNKS9C20QGWPCX",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.2.1",
+  "statement": "e2e-review stands up as the **fourth instance of the reviewer program**, reusing `context-pack-v1`'s machinery via a stage declaration that maps the e2e design doc onto the admitted **frozen-subject** kind and the feature's PRD + live design set onto **governing-peer** kinds — all existing admitted kinds, no enum change — and reusing the sibling-session **blind fresh-context lens** runtime and scope-locked two-round convergence, emitting an `e2e-review-report/v2`.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:08f8665bdc9c14591142c807deb9632bfc6deb0a4f272a27ad5e2c0bb556572c",
+    "source-design:3508462a6fb8b6b739ccfee9ea78d5c8e95242b483c987ee851b4df712cffe84",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQB8XQ9X2WRKAKQ0GCT"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR0V7JNJC4TV5S6402BWF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:17Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 79-79 in section 3.2; sha256:08f8665bdc9c14591142c807deb9632bfc6deb0a4f272a27ad5e2c0bb556572c"
+  }
+}

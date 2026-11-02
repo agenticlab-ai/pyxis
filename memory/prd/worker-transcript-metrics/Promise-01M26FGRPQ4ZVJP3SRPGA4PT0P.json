@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPQ4ZVJP3SRPGA4PT0P",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "EVT-1",
+  "statement": "process_record_written fires when a process record is committed to the store",
+  "intent": "task_id: string, process_id: string, role: enum, harness: string, model: string, effort: string, duration_ms: int, schema_version: string",
+  "fit_criterion": "M1, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:460a64f69cbbb7328a4b95b2f9342f8fe3f11c758f789dd94336bf6088077657",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.607Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

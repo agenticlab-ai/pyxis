@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4J4BJ097VPTNDT6VJDXY",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-6",
+  "statement": "When authority identifies mutable source or code, the system shall bind the exact current generation so removal and later restoration create identities that old authority cannot cover, including a code unit that disappears and returns inside a persistent file.",
+  "rationale": "Matching bytes alone cannot distinguish restored work.",
+  "fit_criterion": "Real-Git add, edit, rename, copy, delete/re-add, root, merge-add, multi-file, and same-file unit restoration fixtures agree across every verifier; second deletion refuses old authority.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4fee45f89ccc3356e4a430d566d4d04a863cb8b7e780123f16e4ca1e7efefa0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:22Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQEYKYKYR4JME5NAB0TE",
+  "kind": "Expectation",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "DOD-2",
+  "statement": "The manual instructions are the only human work to reach green — nothing silently assumed",
+  "intent": "G2, M2, FR-6",
+  "fit_criterion": "the fixture e2e assertion",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bc9027cf3135f91a0b2d1fa093f0a6d975670af35fe89c0064f6dcf9c84aa7a6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.334Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

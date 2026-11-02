@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M390PET8XD1P87SV4PWJGY2D",
+  "kind": "Document",
+  "subject": "source/docs-solution-shapes-feature-draft-v1",
+  "family": "document",
+  "statement": "Captured authored source: docs/solution-shapes/feature-draft-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/solution-shapes",
+    "reconcile:source",
+    "sha256:0abf7bcd3c5bb8a22ddcf5dca9f0a1ea60c77b9c292df19a2a98c75fad47f5c6"
+  ],
+  "body_sha256": "0abf7bcd3c5bb8a22ddcf5dca9f0a1ea60c77b9c292df19a2a98c75fad47f5c6",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:12:26Z",
+  "provenance": {
+    "source": "docs/solution-shapes/feature-draft-v1.md",
+    "note": "offline reconciliation"
+  }
+}

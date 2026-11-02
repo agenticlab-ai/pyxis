@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYW6S0D52BW4NM9G7GR",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-14",
+  "statement": "When an install completes, the completion output shall state the gating boundary: the gates active on the operand and the code gate's pending status with its enabling step named.",
+  "rationale": "the welcome advertised a dead ladder (`#D-4`, `#F-10`)",
+  "fit_criterion": "completion output names the active docs gates and the manifest step; no advertised capability refuses on a fresh operand without that caveat",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1c53418d205d24647b658d3a590653e2319a94b7a4d1f992d7d94ea0605d7b79",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.844Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

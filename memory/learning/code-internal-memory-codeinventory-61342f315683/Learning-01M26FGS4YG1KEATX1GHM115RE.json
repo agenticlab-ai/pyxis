@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS4YG1KEATX1GHM115RE",
+  "kind": "Learning",
+  "subject": "learning/code-internal-memory-codeinventory-61342f315683",
+  "statement": "Package codeinventory deterministically classifies and hashes first-party production units from supplied pinned-tree entries and exact blob bytes: non-test Go packages under cmd, internal, or pkg; executable .sh and .mjs files; and regular or executable sourced .zsh files. It excludes test, fixture, generated, and vendor trees and fails closed on irregular paths, modes, duplicates, or missing blobs.",
+  "intent": "Make the production-code closure complete and reproducible, including sourced shell behavior that has no executable bit.",
+  "rationale": "The prior implementation and Learning treated production scripts as executable artifacts; the adopted Codex startup wrapper is sourced at mode 100644 and must participate in code-memory drift checks.",
+  "fit_criterion": "Codeinventory and pinned-snapshot tests prove order-independent identities, mode and byte sensitivity, inclusion of regular and executable zsh, exclusion rules, and rejection of malformed entries or absent blob bytes.",
+  "learned_from": [
+    "Learning-01M2680ZN72C3C7RHXD50RSDD7",
+    "source:.pyxis/scripts/startup/codex-worktree.zsh"
+  ],
+  "tags": [
+    "code:internal/memory/codeinventory",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26FGS22NV2FHGV2CRR46A41"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS4SGWZ0GNJ80Y7F03K9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.062Z",
+  "provenance": {
+    "source": "internal/memory/codeinventory/inventory.go",
+    "commit": "154d41290aad479e2bedeee959138faa8ff46760",
+    "note": "Supersedes the pre-zsh inventory description after sourced production scripts entered the closure."
+  }
+}

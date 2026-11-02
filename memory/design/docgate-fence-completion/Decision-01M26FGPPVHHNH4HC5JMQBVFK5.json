@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPVHHNH4HC5JMQBVFK5",
+  "kind": "Decision",
+  "subject": "design/docgate-fence-completion",
+  "family": "decision.2.1",
+  "statement": "The existing fence family widens; no new mechanism is\ninvented. `check-governing` gains the vision in its append-only loop\n(both governing docs are now line-frozen even with the trailer) and gains\nan always-on **purity scan** (no relative markdown links, no baseline\nrequirement-ID citations in either governing doc — bytes-only, no merge\nbase needed). `check-immutable` gains a third path class: merged flat\ncorpus files under the configured PRDs path (README exempt, ledger\ndirectories untouched) are add-only, exactly like ledger entries and\ndesigns — a byte-freeze imposing zero content rules. A new merge-base\ncheck, `check-config-policy`, fails any diff to the config surface's\ngate-policy keys (`grandfathered_designs`, `precedence_grandfathered`,\n`capability_paths`) without the `Governing-Change: operator` trailer —\nthe same attestation mechanism, because those keys *are* governance.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f345a7b4696da27246d8b165c274f76e2104a582ac6750f8279cbdf75415ce2d",
+    "source-design:3d8e1c1151e97cfb8f965613fe1f5596ac992406091413f37868999206e4d55d",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCP1CJJ8G0DMS00Y4SJBS"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.563Z",
+  "provenance": {
+    "source": "docs/tech-design/docgate-fence-completion.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/docgate-fence-completion.md lines 37-49 in section 2; sha256:f345a7b4696da27246d8b165c274f76e2104a582ac6750f8279cbdf75415ce2d"
+  }
+}

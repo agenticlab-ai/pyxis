@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYX9BGEFJDE8EHXSB1G",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-15",
+  "statement": "While an operand holds recognized code files without a verification manifest, doctor shall report the absence with the seeding or authoring remedy.",
+  "rationale": "the gap surfaces at implement-time otherwise (`#D-4`)",
+  "fit_criterion": "the code-without-manifest fixture yields the advisory; manifest-present and code-free fixtures stay silent",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4203257904e190a8c97f505e585c2c2d1779c6d9ce60a98bcdb866a2848ca22",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.845Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

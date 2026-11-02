@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD06F7PJWSR4XW2Q892",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-23",
+  "statement": "Each scenario shall declare a cost class — deterministic, bounded-model, or full-session — and a run cadence — per-change, scheduled, checkpoint, or on-demand — alongside its route, and the harness section shall state the per-run bound that keeps a scheduled run inside it.",
+  "rationale": "the route says how a behavior is proven and the cost class says what proving it costs; declaring both makes the suite's economics a reviewable property of the design rather than a surprise for the build",
+  "fit_criterion": "on the dogfood and the fixtures, every scenario carries exactly one cost class and one cadence, and the harness section states a per-run bound; a reviewer can derive the cost of a scheduled run from the doc alone; a scenario with no cost class or no cadence is a well-formedness defect",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:048e72184caa7fe2996957ed1a06180432be1140f76f199713c4c94a86de51b5",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.272Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

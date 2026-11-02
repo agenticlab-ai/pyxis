@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQKK6SMSPYQ8ZKMTNEK",
+  "kind": "Decision",
+  "subject": "design/execution-demand-contract-v1",
+  "family": "decision.3.1.1",
+  "statement": "`execution-demand/v2` is a tagged union with `plan_v2` and `plan_v1_compat` origins. All objects parse closed; unknown keys, values, versions, duplicate fields, and non-canonical encodings are defects.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9f54c4f47b99bef13fc7735980e31e4fe99da72ffb175b92d8208e87ecd40d01",
+    "source-design:1803a578f24d1fcd4e72fe323beac1ad9b7a2b7372c40c5c9193c843565778fd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQ6Z9AT7JMH430AQVRK2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.587Z",
+  "provenance": {
+    "source": "docs/tech-design/execution-demand-contract-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/execution-demand-contract-v1.md lines 53-53 in section 3.1; sha256:9f54c4f47b99bef13fc7735980e31e4fe99da72ffb175b92d8208e87ecd40d01"
+  }
+}

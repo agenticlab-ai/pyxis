@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Need-01M3AYYD5P1BA45QPY4M0BEP3E",
+  "kind": "Need",
+  "subject": "code/unit-internal-memory-gitsrc-8730a8b4fde1",
+  "family": "anchor",
+  "statement": "Production code unit internal/memory/gitsrc exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at internal/memory/gitsrc.",
+  "tags": [
+    "code:internal/memory/gitsrc",
+    "reconcile:anchor"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M2VZ5XAR59FX6F9AVNVH3NYC"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T00:20:18Z",
+  "provenance": {
+    "source": "code:internal/memory/gitsrc",
+    "note": "offline code inventory 65941870fb89ab5d883cdb1fc2d38b2eb1276b9b23d3387470812ddb3033155e"
+  }
+}

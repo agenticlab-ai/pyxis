@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96KPRV9E0M5HDFEFRTT",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVAL-1",
+  "statement": "Preserve CI validation and human publication authority",
+  "intent": "Representative cached-build, test-balance, weakened-check, paid-runner, and auto-merge proposal cases",
+  "fit_criterion": "Zero policy-violating cases accepted by the named report rubric",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR852RWCZ7DTDT7EN8EF",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "UB-7",
+  "statement": "If a plan/v2 task's execution demand is absent, partial, unknown, lacks a non-empty resolvable citation set, is inconsistent with deterministic derivation, is lowered below its assurance floor, contains any identifier forbidden by NFR-7, or has irrelevant, contradictory, or partially supporting evidence, then the system shall for structural, resolution, derivation, or portability defects, refuse checkpoint presentation; for semantic-support defects found by FR-30, refuse approval and return the whole plan to the checkpoint edit loop; in every case refuse freeze and projection and name every offending task, field, and rule",
+  "intent": "a demand defect that identifies the task, invalid field or unsupported assessment value, expected semantic contract, and remedy",
+  "fit_criterion": "one fixture per structural trigger produces zero checkpoint-ready artifact; one fixture per semantic-support trigger reaches the rubric but produces zero approval/freeze/projection; mixed valid/invalid task sets fail as a whole, and every defect carries task+field/value+rule+remedy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:825dfe286244da75992ce4b28dec9015a874f4380e21527e5b188ba2ad7a71a6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.141Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

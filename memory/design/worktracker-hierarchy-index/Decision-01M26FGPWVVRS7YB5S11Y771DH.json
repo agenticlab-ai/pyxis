@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWVVRS7YB5S11Y771DH",
+  "kind": "Decision",
+  "subject": "design/worktracker-hierarchy-index",
+  "family": "decision.3.7.1",
+  "statement": "the reverse edge is maintained **incrementally** at the base store's single edge-mutation choke point (`create`, `setParent`, `clearParent`), under the child's existing per-item lock, writing the item first and then creating/removing exactly one marker (DINV-5). Recovery is a **full `reindex`** — a pure O(N) rebuild from the item `parent` fields — run lazily on first use when `rev/` is absent, on a detected mismatch, and when a cheap dirty check trips (the hand-edit case, NR-2); it is the only drift-recovery (DINV-6). This split is deliberate and measured: the incremental write is orders of magnitude cheaper than a rebuild, so rebuild-on-write is rejected (it would blow the interactive/scheduling bound and go quadratic on bulk creation — `design-brainstorm:worktracker-hierarchy-query-tech-design#D-5`), while a full rebuild is cheap enough at the store's capacity target to be the *sole* recovery, which deletes a whole class of self-healing logic.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:0cb7ebb2868234bf6d402fb39a981a878801b965b8f6c9e269efc15999636a7f",
+    "source-design:8df30463c23e9931b2ba4347e5472a6bc7cd89080820b691c5e46dd611efb6d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ9DKXCV4P7RS6YTHBNT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.755Z",
+  "provenance": {
+    "source": "docs/tech-design/worktracker-hierarchy-index.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/worktracker-hierarchy-index.md lines 84-84 in section 3.7; sha256:0cb7ebb2868234bf6d402fb39a981a878801b965b8f6c9e269efc15999636a7f"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/argus#R6",
+  "feature": "argus",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

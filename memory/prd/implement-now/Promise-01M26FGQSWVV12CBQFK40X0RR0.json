@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSWVV12CBQFK40X0RR0",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-41",
+  "statement": "When a configured review attempt is admitted, the executor shall mint fresh attempt-scoped attribution material only after the implementation worker has terminated and its resources are released and bind its non-secret proof to the obligation, attempt identity, proposal, and revision. The launched reviewer process shall return exactly one schema-valid completed report to the **review artifact broker**: the impl-review-owned host-side persistence adapter that performs `prd:impl-review/FR-6`'s medium-appropriate proposal write and returns the exact native receipt; implement-now shall invoke and verify through that boundary but shall neither publish the artifact itself nor redefine impl-review's artifact contract. The review path shall remain inactive and implementation shall not proceed unless the live impl-review contract and design explicitly authorize that host-side adapter to perform FR-6 on the reviewer program's behalf and expose exactly-one publication returning that receipt; absent or ambiguous performer authority, receipt capability, or exactly-once semantics requires a sibling impl-review amendment and design first. The executor shall mark the obligation verified only after exact-reading that receipted artifact and authenticating its launched-attempt proof against canonical obligation/attempt/receipt state whose producer-signing authority is unavailable to every implementation and reviewer child process and workspace; generic repository/ref write credentials shall never authorize canonical state. The code-host author is transport metadata, need not differ from the implementation identity, and shall not participate in verification; raw attribution material shall never enter the implementation charter, workspace, event stream, or repository; and process exit, output text, a pre-existing or worker-authored artifact without that fresh proof, replayed proof, malformed artifact, a different proposal/revision, or worker-substituted evidence state shall never establish completion.",
+  "rationale": "the artifact is the goal object only if the impl-review persistence boundary publishes it and its protected receipt proves which fresh reviewer invocation produced it, independent of the account used to transport it; transport affordances cannot substitute for sibling-contract authority and capability",
+  "fit_criterion": "sibling-contract inspection blocks implementation and activation when host-adapter performer authority, receipt-returning publication, or exactly-once semantics is absent or ambiguous; once explicit, the launched reviewer has no direct proposal credential and hands exactly one completed report to the impl-review-owned broker; one broker proposal write returns one native receipt and its exact launched-attempt artifact verifies under either the same or a different code-host author; implement-now contains no second publisher; syntactically valid comments prewritten by the implementation worker, copied across attempts, replayed across proposal/revision, not matching the receipt, or paired with attempted obligation/attempt/receipt-store mutation fail as `artifact_untrusted`; missing/malformed/stale artifacts fail as `artifact_unverified`; write/read transport failure is infrastructure; capability and secret-scan fixtures find no raw attribution material or canonical producer-signing authority in either child launch",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ae9dfae0dd46e62e39619c2643a75de45ade75a488c55dbe46cbdc0f7ec8545b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.684Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

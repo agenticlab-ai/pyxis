@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYQENZQYGBVWBS8JJW3",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-1",
+  "statement": "When init runs, the system shall admit only a target that is an empty directory or a repository empty of tracked and untracked content, refusing every other target by name before any write.",
+  "rationale": "the destructive class dies at admission (`#D-7`, closing `#F-1`/`#F-2`)",
+  "fit_criterion": "across the admission fixtures (empty dir · empty repo · repo+content · non-git+content · dirty repo), exactly the two empty shapes proceed; every refusal performs zero filesystem and zero remote mutation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ecec001e3395858387c3011d00a5592bc16ae4fb962ebc1fc6b92a49504f68dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.839Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9Z2HZ0NEJE6Z0X8V1N",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-7",
+  "statement": "When a frozen task crosses planning, projection, tracker, claim, implementation, or review boundaries, the system shall preserve its assessment, assessment-evidence citations, derived profile, policy version, and planner-raise evidence without reinterpretation.",
+  "rationale": "current tracker reads lose routing data, and uncoupled evidence would make the judgment unauditable",
+  "fit_criterion": "boundary round-trip fixtures are field-identical for every supported tracker path, including every evidence reference",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6de103cbe01b49a655ee4321a2c413e8fa59bf9ebc25028f747ecbf37c69e87c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.199Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

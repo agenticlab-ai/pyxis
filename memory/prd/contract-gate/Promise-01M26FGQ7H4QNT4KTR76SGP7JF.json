@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7H4QNT4KTR76SGP7JF",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "EVT-3",
+  "statement": "planning_gated fires when a planning-entry invocation returns non-clean and planning refused",
+  "intent": "run_id: string, feature: string, verdict: enum",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a83e6e1e0a8346e16b7563b1adbbf71e26be77e2ae1fa21f5e6bdd044c0a7115",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.097Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZK6S07RXK2SV8K7Q6GKQR",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-7",
+  "statement": "checkpoint_inventory fires when the checkpoint in §6.7 is evaluated",
+  "intent": "features: list[string], new_corpus_files: int, reopens_by_cause: map[string]int",
+  "fit_criterion": "M3, M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2cceef4413e8ef6d11f952cc3fb1f1ba10d35b4197b1bf113e12caeda82c3b68",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:11Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

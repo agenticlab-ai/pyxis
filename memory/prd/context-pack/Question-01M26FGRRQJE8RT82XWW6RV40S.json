@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRQJE8RT82XWW6RV40S",
+  "kind": "Question",
+  "subject": "prd/context-pack",
+  "family": "Q2",
+  "statement": "Whether the pack is one artifact or a small set (e.g. governing vs subject) while remaining a single cacheable prefix",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:e37aa5fc60e35257a4de8c06b7039c06b3cc78d7acc3e6f569278ac1b096772a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.671Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

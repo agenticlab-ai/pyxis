@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M38ZJRM8T998A62ZDX9QAJJR",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-8",
+  "statement": "Instrumentation fires for every event in §5.7",
+  "intent": "EVT-1 through EVT-7, M1 through M4",
+  "fit_criterion": "event fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:89441c0513786869d52acafbb6743a36886e8a6d50474550098e4359ecd28455",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:56Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

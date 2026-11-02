@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCSVMXXB8GMVTNECRTY",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-15",
+  "statement": "The e2e plan shall freeze at operator approval and project idempotently onto the tracker — re-projection creates no duplicate tasks.",
+  "rationale": "a frozen, idempotently-projected plan, mirroring the existing planner",
+  "fit_criterion": "a re-run of the projection on the dogfood plan creates zero duplicate tracker items; the frozen plan artifact is byte-stable after approval",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6b6242c4012b32d8f82636f75807a118faee8306ce73b7347fc4723f73f0d6d3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.265Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

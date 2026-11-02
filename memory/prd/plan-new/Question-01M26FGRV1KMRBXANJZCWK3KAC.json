@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRV1KMRBXANJZCWK3KAC",
+  "kind": "Question",
+  "subject": "prd/plan-new",
+  "family": "Q2",
+  "statement": "The idempotency mechanism for projection (deterministic probe of the tracker vs a repo-resident projection record) and its race story",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Projection",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:b386ef2ed8a79b15246e9cb376ef57aff5665bc1842d4f8598038c18fac26795",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.745Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

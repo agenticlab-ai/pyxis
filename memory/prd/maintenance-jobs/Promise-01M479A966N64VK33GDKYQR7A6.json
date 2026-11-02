@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A966N64VK33GDKYQR7A6",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "NFR-3",
+  "statement": "The runner shall exclude authentication values from its serialized configuration and invocation diagnostics.",
+  "intent": "Privacy",
+  "fit_criterion": "Injected credential values are absent from runner-owned artifacts",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR92WZD95N2NVQFAKYHN",
+  "kind": "Expectation",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVAL-1",
+  "statement": "The planner assigns values from the normative assessment vocabulary, cites evidence that substantively supports every recorded value, never emits a task-level `no_inference` mode, and never produces a semantic profile below deterministic policy floors.",
+  "intent": "versioned clear-case and adversarial task corpus covering every accepted assessment/profile value, consequence floor, named promotion, planner raise, and mechanical-looking agent task; support rubric: every axis has explicit support in one or more cited anchors, one anchor may support multiple axes, and any contradiction or unsupported axis fails",
+  "fit_criterion": "100% structurally valid; 100% exact on unambiguous golden cases; zero unresolved, irrelevant, contradictory, or partially supporting citation sets; zero `no_inference` outputs; zero consequence/assurance under-floor outcomes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:650df2f304728559290904e5da3d84c1c337516cd5fbd082bff6ee1b07b090d5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.17Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

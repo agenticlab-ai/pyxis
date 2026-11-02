@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TC1NBCSPV1AQ64QBC8M6C",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R6",
+  "statement": "Confine abandoned-feature retirement to repository-local exclusive identities and exclude archive, remote cleanup, and delivered-feature decommissioning.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The approved appetite addresses one destructive repository lifecycle. NG-1, NG-4, and design review keep broader archival and decommission policy in separate contracts.",
+  "fit_criterion": "The design and plan map every implementation task to the in-scope lifecycle and contain no historical-record deletion, remote cleanup, shared-unit retirement, or delivered-feature decommission step.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:57df3218f3b83427949d2063a5ef12ccb9162f31b6d2723c3227bae78593f73c",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:26:27Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

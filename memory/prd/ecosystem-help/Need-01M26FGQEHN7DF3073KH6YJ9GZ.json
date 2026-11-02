@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQEHN7DF3073KH6YJ9GZ",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "G2",
+  "statement": "We believe the same front door serving the returning user's \"which skill?\" moment; expected result: `/help` invocations replacing operator questions",
+  "fit_criterion": "qual: observed use during dogfood; no instrumentation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1ac149f0bf34f4ab7c41f8a0d1941d86ba856deb0e6d72e8121bf716b3431550",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.321Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

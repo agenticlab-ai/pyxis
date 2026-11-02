@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6Q4T8ZHDW2YJBXTBHC",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-20",
+  "statement": "When projecting, the planner shall link tasks to the parent feature, embed the frontier rule, and not non-additively mutate any pre-existing item.",
+  "rationale": "planner blast radius is its own plan",
+  "fit_criterion": "linkage/frontier present; mutation audit clean",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cbdfb867f01b2f24a8dacf8cdf5b3af1e781782c869c1d2b5d6c95b4230619dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.095Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

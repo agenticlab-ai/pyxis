@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQH37PYWSCPXC7J3V8NB",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-8",
+  "statement": "The skill shall maintain the record as typed sections under a versioned template — idea verbatim, orientation summary, framings + destination, decisions, facts, fog (not-yet-specified, each entry typed blocking or non-blocking), out-of-scope rulings, candidate glossary terms, parked technical constraints, and the gate — each entry structured per the template's field contract.",
+  "rationale": "the record is a cross-boundary artifact and must be contractual, not prose (AP-6); `prd-new` and the checklist parse it",
+  "fit_criterion": "100% of gated fixture records pass the record-structure checklist (every section present or explicitly empty; every decision row complete)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:20cdd3a2f590e438426162ed0ef4a93da3911e5b6eaa2a9d9b11f8a3e434ab07",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.403Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

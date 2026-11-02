@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFG7GE63VXAVC82V6SK",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-4",
+  "statement": "The proof run: one real 6-task feature driven end-to-end on each backend with M1 = 0, M2 within bounds, M3 clean",
+  "intent": "§3.2, §3.3",
+  "fit_criterion": "the run report + event-log extracts (EVT-1..6)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d4558c641543a3f21974aca7a4b09126ab05a77692bdea3815d9356c83414525",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.376Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

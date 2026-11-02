@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M3WZ41KBQTFW43B6NQF9B",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.3.1",
+  "statement": "The payload contains the Go tools and independently consumed pinned assets declared by the class policy. Init, repair, doctor, release preflight, and document review require no Node.js, npm, package installation, or separate review server. Document review occurs in the operator conversation, while the Go plan viewer and generic feedback writer remain independent tools.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:901eacbdbf866e4191e09873d6e8d3c0e44067d0843811eec68b76340f56f336",
+    "source-design:afc31305cc73422e8fdf6026398b64afba5035a0fef145f79766da27c8ffaef0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M2RR3DP23J4M8ZHQWM5M4740"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRA9HR9XHW6MAEWSB81C9"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:21Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 59-59 in section 3.3; sha256:901eacbdbf866e4191e09873d6e8d3c0e44067d0843811eec68b76340f56f336"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M2RR57552X82MWHX8D1G8DR5",
+  "kind": "Revocation",
+  "subject": "design/installer-v1",
+  "statement": "The operator-approved installer-without-browser-review design supersedes installer-v1; its captured Decision records carry the current binding decisions, while this predecessor remains immutable history.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGPSB7G9YTYW3R0D7CDFR"
+    }
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-17T22:35:22Z"
+}

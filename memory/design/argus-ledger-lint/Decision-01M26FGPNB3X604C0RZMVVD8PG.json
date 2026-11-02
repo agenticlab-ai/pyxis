@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNB3X604C0RZMVVD8PG",
+  "kind": "Decision",
+  "subject": "design/argus-ledger-lint",
+  "family": "decision.3.4.1",
+  "statement": "One per-class package `internal/docgate/argusledger` holds the shared ledger parse; the two arms' descriptors are two separate `reg_*.go` files; the region/anchor registries live in `internal/docgate/schema` *(design-brainstorm:argus-ledger-lint-tech-design#D-7)*.",
+  "tags": [
+    "code:internal/docgate/argusledger",
+    "code:internal/docgate/schema",
+    "reconcile:design-decision",
+    "source-block:714d0ddf0cebcad5ce9c2cb598fb186e1677e006be94fdb50fa4e63d59fb7720",
+    "source-design:b891b13b932a14dcff38502e08c52cc2f79ab2f9aad8edaa9fab17d516f8fb9a",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMAS03B3EJB3T87JV576"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.515Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-ledger-lint.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-ledger-lint.md lines 119-119 in section 3.4; sha256:714d0ddf0cebcad5ce9c2cb598fb186e1677e006be94fdb50fa4e63d59fb7720"
+  }
+}

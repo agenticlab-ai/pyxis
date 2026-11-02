@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP6KXF0K9QF7GP74DBH",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-29",
+  "statement": "When a review mapping or native-profile qualification is found defective after activation, the system shall engage FR-28 for new work, mark every affected in-flight or unaccepted pass and aggregate `rerun_required`, preserve unaffected work, rerun the complete FR-24/FR-26 pass set on the exact current revision, and for already accepted artifacts preserve shipped state while emitting an operator remediation brief naming each affected artifact.",
+  "rationale": "defective capacity voids the evidence it produced but does not authorize destructive rollback",
+  "fit_criterion": "a seeded defect invalidates every affected open process, reruns all required passes, leaves unaffected processes valid, and creates one complete brief for accepted artifacts without mutating them",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8be9ca6c5f108c5c99108ad7661404a5c461b62e82f00db2e523c20d11625ce1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.566Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

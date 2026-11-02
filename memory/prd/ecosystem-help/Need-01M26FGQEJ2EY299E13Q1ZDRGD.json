@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQEJ2EY299E13Q1ZDRGD",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "J1",
+  "statement": "When I just got the pyxis surface on my repo and don't know what's in it, I want see what exists, one line each, with when-to-use, so I can grasp the ecosystem without reading the corpus",
+  "rationale": "brainstorm:ecosystem-help#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:366678cbd819bab26d07e16d08d1cbbd79eabb59da80edb6493fec2b6ed0742a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.322Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

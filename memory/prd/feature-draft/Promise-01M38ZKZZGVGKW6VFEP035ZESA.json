@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKZZGVGKW6VFEP035ZESA",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-21",
+  "statement": "While a reopened feature draft is open, the system shall keep the feature's previous locked version as its binding contract.",
+  "rationale": "The locked version stays in force until replaced (brainstorm:feature-draft#D-5)",
+  "fit_criterion": "During a fixture reopen, planning and execution read v1 exactly, and no reopened-draft content reaches them.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7d80945b74664479950f3f18150f44fba7e1815b4f2bc03dde80f679aa6154b0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:37Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

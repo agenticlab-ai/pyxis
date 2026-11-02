@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM20GAJP89CHZNANJ3C2B9",
+  "kind": "Document",
+  "subject": "system/pipeline",
+  "family": "map",
+  "statement": "Captured authored source: .pyxis/pipeline.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/pipeline.md",
+    "reconcile:source",
+    "sha256:6464042146261b2a60512ad97f1653f1c73f31379f740ac0c0e18cd9d472827e"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M461D1RAZCJH0JNBP5KEZ8B5"
+    }
+  ],
+  "body_sha256": "6464042146261b2a60512ad97f1653f1c73f31379f740ac0c0e18cd9d472827e",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:31Z",
+  "provenance": {
+    "source": ".pyxis/pipeline.md",
+    "note": "offline reconciliation"
+  }
+}

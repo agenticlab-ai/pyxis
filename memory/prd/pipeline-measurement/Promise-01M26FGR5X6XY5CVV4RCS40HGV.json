@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR5X6XY5CVV4RCS40HGV",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "UB-1",
+  "statement": "If If a harness exposes no per-model usage for a phase, then the system shall record the FR-6 \"unavailable\" marker and emit no zero",
+  "intent": "an unavailable marker naming the harness",
+  "fit_criterion": "a no-usage fixture yields a declared unavailable; no zero or estimate appears",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3293c6b3b7f2f933a7d85581364f63f370693975fecadd9bddeade76e1dc4945",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.069Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

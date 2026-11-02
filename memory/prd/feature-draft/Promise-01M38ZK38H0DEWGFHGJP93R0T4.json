@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZK38H0DEWGFHGJP93R0T4",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-5",
+  "statement": "lock_approved fires when a lock is approved",
+  "intent": "feature: string, version: int, approver: string, roles: list[string], proposals_since_open: int, readiness_digest: string, capture_line: string·null",
+  "fit_criterion": "M1; read-to-rule gate-time measurement",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f58383f04a71f057a7cade909e0d7cdef812e3d6079ae0e6cf7a2adff423ec5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:07Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

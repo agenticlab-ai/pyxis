@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3CM71CFEYAGH50WFDT7HSE4",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "draft-reopen-guards",
+  "statement": "A reopened draft lock verifies its first commit against the binding version, requires changed contract text, and refuses reused numbers or retired row IDs.",
+  "intent": "Keep every locked version grounded in its approved predecessor and preserve stable per-feature identities.",
+  "rationale": "An older or hand-seeded draft can undo prior edits; reused history numbers collide with retained records. Retrospective planning checks exempt the already locked version from its own number-reuse test.",
+  "fit_criterion": "Fixtures refuse stale, hand-seeded, unchanged, and unreadable reopen inputs; numbering fixtures refuse reused history and retired IDs; plan precheck accepts the locked version; the memory gate refuses an in-place edit with a reopen remedy.",
+  "tags": [
+    "code:internal/draft/lock",
+    "code:internal/draft/readiness",
+    "code:internal/memory/packet",
+    "code:internal/plangate/precheck"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T15:51:16Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

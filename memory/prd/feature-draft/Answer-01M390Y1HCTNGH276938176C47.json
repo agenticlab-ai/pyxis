@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390Y1HCTNGH276938176C47",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.13: Argus runs rounds and requests the lock, the operator's review stays the approval, and its problem and delivery ledgers stay where they are.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZR4QDHBCTWZAH7TMJCDNB"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSQBW8081B3AP8FDSSWGA"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:35Z"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M49KXJRH9N3QJDY3ZQQ53Q85",
+  "kind": "Document",
+  "subject": "source/pyxis-authoring-memory-capture",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/authoring/memory-capture.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:2c9a3c66a83a4a8f24f1fa1fc72256b3d6905c941c7b491ee6ce5da91abeb7e9"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3Q61EP9PZCQ8SBF9ZT8GBHZ"
+    }
+  ],
+  "body_sha256": "2c9a3c66a83a4a8f24f1fa1fc72256b3d6905c941c7b491ee6ce5da91abeb7e9",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-06T22:04:04Z",
+  "provenance": {
+    "source": ".pyxis/authoring/memory-capture.md",
+    "note": "offline reconciliation"
+  }
+}

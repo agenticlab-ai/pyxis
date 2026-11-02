@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ37T97F4DH7Y5NNVANF",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "UB-3",
+  "statement": "If If a proposal's diff touches the lane's own policy, classifier, activation state, the authority contract, or a governance document, then the system shall route HUMAN, always — the self-unlock guard",
+  "intent": "a HUMAN-lane proposal naming the floor class hit",
+  "fit_criterion": "100% of self-unlock fixtures route HUMAN; no policy state can change this outcome",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0be869709db4a9a21bab09ebce4cb5ff9c9cfde4459065493a7064c97d4dc5be",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.959Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

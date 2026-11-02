@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A96Z3ASNH7J4NNPPZKTY",
+  "kind": "Decision",
+  "subject": "design/maintenance-jobs",
+  "family": "D-5",
+  "statement": "Execute the configured existing harness in a private independent clone with one frozen native route; the Go supervisor owns verification, Git mutations, and draft-PR delivery.",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96V8GH36HRH6HX0BVCN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96XEMWJDP89KCGWP0B9"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96YKXVY4X6SSA16Z426"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95GW3VCD4SVX0ZMWRGD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95HRHV1D9WJXYE5WZQS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95J7Q97VSSMZ47WF9WC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95KPKTWPG2PY95MZY5E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95MSWR2EC20VGJP7XY7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95QQ60TMTSRNSWEZSBY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95SZQ3ZE8PZEY082K7D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95WS9S6X2GYBAQZS6PH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95XV8YDYWAZ0T1ECP4V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A960M0FMEFEWDBMQCS0Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A966N64VK33GDKYQR7A6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A9679YTT2R4A4SS5YBJD"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

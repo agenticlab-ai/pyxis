@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWGMSQKFFS7HDKRDVZV",
+  "kind": "Decision",
+  "subject": "design/argus-authority-contract-structure-arm",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: design:argus-artifacts#DINV-3 · design:argus-artifacts#DINV-4 · design:argus-artifacts#DINV-5 · design:distributed-check-registration · prd:argus-boundary-enforcement/ABUSE-1 · prd:argus-boundary-enforcement/FR-4 · prd:argus-boundary-enforcement/FR-5 · prd:argus-boundary-enforcement/FR-6 · prd:argus-boundary-enforcement/FR-7 · prd:argus-boundary-enforcement/FR-8 · prd:argus-boundary-enforcement/NFR-1 · prd:argus-boundary-enforcement/NFR-2 · prd:argus-boundary-enforcement/NFR-3 · prd:argus-boundary-enforcement/NR-1 · prd:argus-boundary-enforcement/NR-2 · prd:argus-boundary-enforcement/UB-3 · prd:argus-boundary-enforcement/UB-5.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:1bb594d884b7ae8c1090022eceae77745aee55b6e8cfb17bd7393a1b159d4163",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM6307PVCJYBDJKS3N45"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPYQPEEGN0B6VKH5CYF1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZG9HHW1T0YD0EMAMDQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZH5BAN215YGPVFSK0M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZJTQSA3K9J8KPPGA8H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZKY0WT2961YK0BZRN1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZM8JNPM6951K3WB6A1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZYGKNNEB28RAT7MXA1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPZZPNJR9E0DF6GCMD6Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ007DV6VB986GRY9T2R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ02911RAVWSB8ZA0AP4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ03FK72ART2A2FRAZX6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ082S6T05B5Q16FCW8Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ0A75XMA0CW2ZXDB9KR"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.792Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-authority-contract-structure-arm.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 1bb594d884b7ae8c1090022eceae77745aee55b6e8cfb17bd7393a1b159d4163"
+  }
+}

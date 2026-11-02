@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZWPM078P4R837R4QNWM04",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R2",
+  "statement": "Prove the draft process end to end from a fresh clone before release (DOD-4), keep draft content unchanged when a step fails (UB-9), and fix defects forward as the top priority.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The switch-over has no pilot and no way back (NG-6), so a draft-process defect would stop all new feature contracting. The end-to-end proof finds defects before release, and UB-9 keeps any later failure from losing draft content.",
+  "fit_criterion": "The DOD-4 run passes from a fresh clone before release, and injected failures at each step leave draft content byte-identical and name the failing step.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:3e641451fab2054cbde7e22d9b78e58c0549b38a425bae029cfb9305d1619771",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:22Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

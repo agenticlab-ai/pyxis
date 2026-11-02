@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQJ1SHMV9TZKN7EE609",
+  "kind": "Decision",
+  "subject": "design/execution-demand-contract-v1",
+  "family": "decision.2.1",
+  "statement": "Every executable task resolves to one immutable `execution-demand/v2` origin: a plan/v2 origin freezes the six cited raw assessment axes plus the four minima produced by one versioned derivation policy, while a plan/v1 origin records the raw rung's tagged presence/value and the result of one permanent compatibility table. One canonical codec, evaluator, identifier function, and sealed tracker capsule preserve that origin without native model, effort, harness, or downstream inference.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8f9d8c4955b171e2baa3a19d756dc00e61636c5f85aa67fb2397be68414c0318",
+    "source-design:1803a578f24d1fcd4e72fe323beac1ad9b7a2b7372c40c5c9193c843565778fd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQ6Z9AT7JMH430AQVRK2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.586Z",
+  "provenance": {
+    "source": "docs/tech-design/execution-demand-contract-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/execution-demand-contract-v1.md lines 45-45 in section 2; sha256:8f9d8c4955b171e2baa3a19d756dc00e61636c5f85aa67fb2397be68414c0318"
+  }
+}

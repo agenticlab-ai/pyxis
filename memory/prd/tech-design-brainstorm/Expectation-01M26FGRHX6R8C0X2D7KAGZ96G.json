@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRHX6R8C0X2D7KAGZ96G",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..15",
+  "fit_criterion": "eval-harness + checklist results on the fixture corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6cf39845cb11204c29c5112d988fc6c88211a44333a78ec764f9645e3c4dca6c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.453Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQMRFYMGQ5RQSD478SY",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-17",
+  "statement": "If a review mapping or native-profile qualification is found defective after production activation, then the system shall apply FR-29, invalidating all affected open pass/process evidence and requiring complete exact-revision replacement while preserving unaffected and accepted artifacts",
+  "intent": "affected identities and `rerun_required` or operator-remediation disposition",
+  "fit_criterion": "seeded defects cover open, unaffected, and already accepted artifacts exactly as FR-29 specifies",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0b270adafd9768135703f547b8a0f0fe3ab4d719aeef23f749c0bfb98dedc617",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.612Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQHA1QDFJ877BCNTJNK7",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "J3",
+  "statement": "When my idea is half-baked, I want have the unresolvable parts named and parked explicitly, so I can know whether to investigate before contracting, instead of discovering holes at review",
+  "rationale": "prd-template §0 rule 10 (ignorance explicit)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2824a41fa7652a2fbdeab5d4ad612abba61be3394f156bc2d877999fb2545e0b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.41Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

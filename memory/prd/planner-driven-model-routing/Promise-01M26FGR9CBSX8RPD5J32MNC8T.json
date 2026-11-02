@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9CBSX8RPD5J32MNC8T",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVT-9",
+  "statement": "`review_process_completed` fires when the assurance-pass set for one exact proposal revision reaches an aggregate terminal, including a floor violation",
+  "intent": "`review_process_id:string`, `demand_id:string`, `task_id:string`, `proposal_id:string`, `reviewed_revision:string`, `planned_assurance:enum{ordinary,elevated,critical}`, `proposal_band:enum{skip,standard,deep}`, `effective_depth:enum{standard,deep}`, `required_passes:int`, `completed_passes:int`, `pass_attempt_ids:string[]`, `top_level_context_ids:string[]`, `pass_verdicts:enum[]`, `aggregate_verdict:enum`, `result:enum{satisfied,floor_violation,conflict_nonaccepting}`, `evidence_ref:string`",
+  "fit_criterion": "M6, M5, §3.3 guardrail + health alert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:71685ee6369fe6b2246b18fd1b5aeb7f71b2a0bb605a4da3fb9b20aadd972058",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.18Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

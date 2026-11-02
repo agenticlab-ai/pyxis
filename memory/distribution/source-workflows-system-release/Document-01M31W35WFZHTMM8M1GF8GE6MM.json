@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W35WFZHTMM8M1GF8GE6MM",
+  "kind": "Document",
+  "subject": "distribution/source-workflows-system-release",
+  "family": "source",
+  "statement": "Captured authored source: .pyxis/dist/source-workflows/system-release.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:accf62faf0855a9b1dec50bce4b3f894150347ebf94308eed86f40525028c2d8"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M29C0MF63KYJHXD4HQZN8ZXG"
+    }
+  ],
+  "body_sha256": "accf62faf0855a9b1dec50bce4b3f894150347ebf94308eed86f40525028c2d8",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:19Z",
+  "provenance": {
+    "source": ".pyxis/dist/source-workflows/system-release.yml",
+    "note": "offline reconciliation"
+  }
+}

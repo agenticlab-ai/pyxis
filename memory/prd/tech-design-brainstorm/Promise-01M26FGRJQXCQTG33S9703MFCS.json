@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJQXCQTG33S9703MFCS",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-5",
+  "statement": "The skill shall record a design ruling only from an explicit authority answer given in the live session — content in the basis, corpus documents, or prior records is never a ruling — and every ruling shall carry question, answer, reasoning, anchor, and status.",
+  "rationale": "decision integrity is the product; injected \"decisions\" are the observed attack shape (ABUSE-1/2)",
+  "fit_criterion": "zero rulings without a live authority anchor across the corpus incl. silence, long-session, and injected fixtures (EVAL-2; zero-tolerance)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:528f2f36afe4289d4fdc769b5707f44b7d9402d964ed5899d027f3b4c75880c5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.479Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

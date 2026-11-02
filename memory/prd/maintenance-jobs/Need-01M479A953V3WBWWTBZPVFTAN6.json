@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A953V3WBWWTBZPVFTAN6",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "G1",
+  "statement": "We believe Reviewing and reconciling repository job definitions; expected result: Reproducible installation without configuration drift",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QV2TWZH5VCE5MAAKV50EA6",
+  "kind": "Decision",
+  "subject": "design/argus-draft-attribution",
+  "family": "carina-feature-item-scope",
+  "statement": "For an Argus-attributed change to a Carina feature item, the Git attribution consumer may add exactly the changed canonical numeric item path to the active drive scope only when the item exists at the merge base and both the merge-base and current committed item parse as valid feature items with matching filename and record IDs and a first-body-line pointer to that same Argus problem. A same-proposal item, changed owner, malformed item, unrelated item, or code path grants no scope. This is a narrow tracker exception to the first-PR document grammar and applies to first and later PRs; the boundary policy version is argus-boundary/v2.",
+  "intent": "Permit the drive to update its preexisting Carina feature item while retaining the author-independent boundary for all other paths.",
+  "rationale": "A parked Argus feature must publish its Carina hold signal with truthful attribution. The existing document-only scope refuses that shared tracker edit; a blanket tracker allowlist would admit unrelated items.",
+  "fit_criterion": "Git-backed attribution tests cover the owned item, changed owner, malformed item, same-proposal claim, unrelated item, and code path; the focused race suite and docgate pass.",
+  "alternatives_rejected": [
+    "Allow all Carina item paths: rejected because another drive item would enter scope."
+  ],
+  "tags": [
+    "code:internal/argus/attribution/carina_scope.go",
+    "code:internal/argus/boundary/boundary.go"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "refines",
+      "target": "Decision-01M3QF0DANYC5246388VPSV838"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-30T00:22:57Z",
+  "provenance": {
+    "source": "code:internal/argus/attribution/carina_scope.go",
+    "pr": 1313
+  }
+}

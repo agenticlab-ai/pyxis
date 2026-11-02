@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5NNYCGCZ9K19S522V40SEEV",
+  "kind": "Document",
+  "subject": "skill/impl-review",
+  "family": "lens-spec-fidelity",
+  "statement": "Captured authored source: .pyxis/skills/impl-review/lenses/spec-fidelity.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:31d687da54625ee8eb2b84744f02bd549041d5b611a0226cb826a567ab9ca053"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4YMTSSQS3MG7N2TCP1S0YRS"
+    }
+  ],
+  "body_sha256": "31d687da54625ee8eb2b84744f02bd549041d5b611a0226cb826a567ab9ca053",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-24T00:46:03Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/lenses/spec-fidelity.md",
+    "note": "offline reconciliation"
+  }
+}

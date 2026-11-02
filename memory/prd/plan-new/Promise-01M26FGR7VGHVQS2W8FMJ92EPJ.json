@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7VGHVQS2W8FMJ92EPJ",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NR-1",
+  "statement": "The document system's gates stay green: planner output edits no governing/frozen/generated document and `docgate gate` passes.",
+  "rationale": "doc system outranks planner",
+  "fit_criterion": "dogfood branches green; zero planner diffs under governing document paths",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:49157fda6863d766b70a5b87947cb51ca9c7aa47edc34c653c3cc230244b65f5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.131Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

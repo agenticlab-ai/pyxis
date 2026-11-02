@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5XXS5ESGWWDKT8M7GT9Z",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "UB-2",
+  "statement": "If If abandonment lacks explicit human authority, an owning feature drive is active, cancellation is pending, an attempt is not quiesced, ownership or routing remains assigned, the feature remains resumable, or legacy-equivalent terminal evidence is absent, then the system shall Preserve the surface and refuse destructive transition",
+  "intent": "lifecycle predicate and exact terminal transition required",
+  "fit_criterion": "Missing, inferred, agent-only, active, cancellation-pending, non-quiesced, routed, cancelled-but-resumable, stale, malformed, conflicting, and legacy-without-equivalent fixtures all refuse",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d66016fdb1e4453effe73d16c93435fbbb6fc1b2dfec9262f456455f3969e77c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:06Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

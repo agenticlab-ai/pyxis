@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFV3M7Q20Z329VHHP1Z",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-8",
+  "statement": "`review_state_unknown` fires when a combined-frontier derivation cannot exact-read a valid provider obligation store or consumer recovery ledger",
+  "intent": "`drive_round_id:string`, `scope:string`, `source:enum{obligation_store,recovery_ledger}`, `kind:enum{unavailable,permission_denied,invalid_envelope,unknown_field}`, `action:enum{defer}`, `retry_after_ms:int`, `reason:string`",
+  "fit_criterion": "M1, FR-15, UB-11",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9c32e9372959a966348641f3036d7777f0fcb629cfc33a89af9e8d37bd44d054",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.387Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

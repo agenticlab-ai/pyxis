@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWMVNWNJQ19682CVNG3",
+  "kind": "Decision",
+  "subject": "design/codegate-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implementation-verification/FR-1 · prd:implementation-verification/FR-10 · prd:implementation-verification/FR-11 · prd:implementation-verification/FR-12 · prd:implementation-verification/FR-13 · prd:implementation-verification/FR-14 · prd:implementation-verification/FR-15 · prd:implementation-verification/FR-16 · prd:implementation-verification/FR-17 · prd:implementation-verification/FR-18 · prd:implementation-verification/FR-19 · prd:implementation-verification/FR-2 · prd:implementation-verification/FR-3 · prd:implementation-verification/FR-4 · prd:implementation-verification/FR-5 · prd:implementation-verification/FR-6 · prd:implementation-verification/FR-7 · prd:implementation-verification/FR-8 · prd:implementation-verification/FR-9 · prd:implementation-verification/NFR-1 · prd:implementation-verification/NFR-2 · prd:implementation-verification/NFR-3 · prd:implementation-verification/NFR-4 · prd:implementation-verification/NFR-5 · prd:implementation-verification/NFR-6 · prd:implementation-verification/NR-1 · prd:implementation-verification/NR-2 · prd:implementation-verification/UB-1 · prd:implementation-verification/UB-2 · prd:implementation-verification/UB-3 · prd:implementation-verification/UB-4 · prd:implementation-verification/UB-5 · prd:implementation-verification/UB-6 · prd:implementation-verification/UB-7 · prd:implementation-verification/UB-8 · prd:implementation-verification/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:fb47372869e19517afdc80e696a1c7a2f8f1c8c38cc5b0f04abda68b28263410",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMZMSPFKX2SW4N3EKWRT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWE1NAPX1SBDCQA9TCH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWF77X6N7C9J0P7J2C9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWGS2QT1SMASN1C2HR3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWHJ7B63YKAE36RSV50"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWJSXRFHD9F2AP9XYMQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWKQHG7YHVJS591R6M7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWMBEHBD20Q7GGAFG4G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWNYZGD9QAJ1KRC7YFR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWPD9FST86NPP04G6EJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWQTY034VY5VJXTC6TP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWRBCTS5ZSJX7EMDH1K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWSMZ9XQ7DWYQXTM91P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWV8YZFWCFFC40JVDM4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWW4A8YXHB70455VZK6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWXND5ZPJ70T41QFFRB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWY7YDRT1GC5WBWFB79"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQWZH3SWVGZ69CDXTVXZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQX01Z9371W39KGJVNYD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQX17Q830V1E2EHWHFVR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXE584TC1R7N5TJMFWP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXFE78PYFGJMZDA6BV3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXG37D96APRN7NHCJ7M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXH7B355T6CK1WRPDF1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXJTK9D1H50591GJKEF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXK68JVS24P5ZPS92JS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXMCK6AWK8SVQN8V6FP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXN5J4WBC4TMSZ3ZQGJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXP0YM9CH7YR1E0GX3S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXS04RNMQZ9QDC6RQC2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXT3HJ08S5D8EB084R9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXV0T4ZWCW84KCGHNE3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXW2CQDT1JDNRVBTHVP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXXV2TZNWH836SW5N43"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXY1MH7CD8E7KMPR668"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQXZ5SK8AWM0J73PJ81D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQY0XP4KZYSR7YPPTXN1"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.796Z",
+  "provenance": {
+    "source": "docs/tech-design/codegate-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header fb47372869e19517afdc80e696a1c7a2f8f1c8c38cc5b0f04abda68b28263410"
+  }
+}

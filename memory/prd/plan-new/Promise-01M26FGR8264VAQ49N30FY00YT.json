@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8264VAQ49N30FY00YT",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "UB-4",
+  "statement": "If If projection fails partway (tracker API error, permission refusal, interruption), then the system shall halt without retry storms, emit the projection report naming what exists and what failed, and leave the tracker in a state from which re-running converges",
+  "intent": "partial report + resumable state",
+  "fit_criterion": "injected failures at each projection step: report accurate, re-run converges (FR-18's fixtures), zero retry loops beyond a stated bound",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0461bab1c9b2824154d5b770ce067f92d67ede84658ed689bafe88e3f76db5f9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.138Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

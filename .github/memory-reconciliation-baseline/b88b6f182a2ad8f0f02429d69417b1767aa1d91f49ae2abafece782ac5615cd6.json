@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/prd-review#R5",
+  "feature": "prd-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

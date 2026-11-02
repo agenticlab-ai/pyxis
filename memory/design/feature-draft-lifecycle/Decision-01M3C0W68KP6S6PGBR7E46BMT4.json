@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3C0W68KP6S6PGBR7E46BMT4",
+  "kind": "Decision",
+  "subject": "design/feature-draft-lifecycle",
+  "family": "reopen-abandon",
+  "statement": "Reopen a locked feature from its verified literal contract only after every current plan task is closed, and reduce abandonment to one reason Learning awaiting operator review.",
+  "intent": "Preserve the binding contract and a reviewable reason when a draft is reopened or withdrawn.",
+  "rationale": "The reopen path verifies the lock digest and copies its exact PRD and tech-spec bytes into the first commit of the next draft. Merged but unprojected plan tasks block it. Abandonment starts from mainline, leaves one Learning, checks the memory policy and gate, force-pushes with a lease, and requests the operator review without merging.",
+  "fit_criterion": "Real Git fixtures verify byte-exact seed, unprojected task refusal, one Learning, policy changes, agent publication, and operator review request; the stacked code and memory gates pass.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/draft/compile",
+    "code:internal/draft/lifecycle",
+    "code:internal/draft/lock"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T10:13:17Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

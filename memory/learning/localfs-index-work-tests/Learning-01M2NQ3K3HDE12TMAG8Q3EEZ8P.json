@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2NQ3K3HDE12TMAG8Q3EEZ8P",
+  "kind": "Learning",
+  "subject": "learning/localfs-index-work-tests",
+  "statement": "Localfs store reads use per-store functions initialized to the same os.ReadFile and os.ReadDir operations. The hierarchy test observes actual reads for eight children with 100 and 10000 unrelated items, checks the returned child IDs, and rejects a full-store scan. Capacity query tests retain expected result counts and record latency as advisory samples in every build mode.",
+  "intent": "Protect indexed lookup complexity and query correctness without treating host latency as a correctness predicate.",
+  "rationale": "A fast full scan can pass a latency threshold and a correct indexed query can fail on a busy host. Counting filesystem work tests the access-path requirement directly; AP-29 makes environment-dependent measurements advisory.",
+  "learned_from": [
+    "internal/worktracker/localfs/children_test.go",
+    "internal/worktracker/localfs/capacity_test.go",
+    "Git tree 26834672bf1e6e49f419eb293f708c0bcd43268f at internal/worktracker/localfs, retained by the mainline snapshot introducing this record. Resolve the source paths below in that tree; no topic commit is required.",
+    "SHA-256 09c7f15e8cbd910f58a2b6002ad5a7a4d01143cc3c9350b225121e7eded70b81; Git mode 100644; path internal/worktracker/localfs/capacity_test.go",
+    "SHA-256 8b872a30446cccce952eb6d59cdc387eeee7863647ef21800e22f25946dbae7f; Git mode 100644; path internal/worktracker/localfs/children_test.go",
+    "SHA-256 2a62f2251f5db6c1d64842b4d3b9bf3cad092549252164947d78bddc4ed6195e; Git mode 100644; path internal/worktracker/localfs/dependency.go",
+    "SHA-256 10219f1e849bb1f253ac68b604ae5c5a0e1d202684750f7bae93121e9c414ae9; Git mode 100644; path internal/worktracker/localfs/grammar.go",
+    "SHA-256 97f58449427412853f33c2d85496ad6815848acbb0594ff4dc320f8b7d9f06d7; Git mode 100644; path internal/worktracker/localfs/hierarchy.go",
+    "SHA-256 4c29a208761e1630ab821fbdabead88793aefc7fc354307ea0827255ef76d7d4; Git mode 100644; path internal/worktracker/localfs/lifecycle.go",
+    "SHA-256 611a7282b9d255135aae45ec265baab961019d31e425128816cf5468d7d73eec; Git mode 100644; path internal/worktracker/localfs/localfs.go",
+    "SHA-256 2b5b38988f82a5040f7000f77557d64924dd6b7a4a5417eb1d08a5fc0554d69a; Git mode 100644; path internal/worktracker/localfs/lock.go",
+    "SHA-256 66ed9c1e7bda39cc5b80694b4aad41f24a3af6dff5d27ed2dfdc8dc3e0cddbd3; Git mode 100644; path internal/worktracker/localfs/log.go",
+    "SHA-256 c6d30daf096b672fc5099fb85ee4da91b83f3862e5701bdedfd976100367ba1a; Git mode 100644; path internal/worktracker/localfs/mutate.go",
+    "SHA-256 46442d97b2fb11f86fa029a2e2460c3d39b512ca02b97950b3ad18ab87ef8de0; Git mode 100644; path internal/worktracker/localfs/predicate.go",
+    "SHA-256 117c005680a2be3435a81883034f71df13f919990f47d0e0684d012ab7bf999f; Git mode 100644; path internal/worktracker/localfs/query.go",
+    "SHA-256 0858b2e9067ab2082ad685c127fd136f15ac9cf636b02c9c857599012f6aac7e; Git mode 100644; path internal/worktracker/localfs/reindex.go",
+    "SHA-256 3f4a60193b7452a8af0523d5fca540584c60b0940db215dc54cba9a390121b10; Git mode 100644; path internal/worktracker/localfs/rev.go",
+    "SHA-256 26e3bfbc0ef148f07d0412484e25996d5fb1b59639d37b80ddf0dd6d45a63427; Git mode 100644; path internal/worktracker/localfs/signals.go",
+    "SHA-256 cb7b9fc18b0eeb57f35084f9a74a046e8c24ed14d184aa54ead874d574371123; Git mode 100644; path internal/worktracker/localfs/write.go"
+  ],
+  "tags": [
+    "code:internal/worktracker/localfs",
+    "git-tree:26834672bf1e6e49f419eb293f708c0bcd43268f",
+    "sha256:c555a1a8d99cdd959b877f71d6868e4126d93d8a88d9268422029fc18567eb09"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-16T18:19:16Z",
+  "provenance": {
+    "source": "internal/worktracker/localfs/localfs.go",
+    "pr": 1192,
+    "note": "Evidence is content-addressed by the git-tree tag and the file SHA-256 witnesses in learned_from. The tree is retained by the mainline snapshot introducing this record, including after a squash merge."
+  }
+}

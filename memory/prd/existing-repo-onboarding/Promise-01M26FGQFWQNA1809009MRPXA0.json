@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFWQNA1809009MRPXA0",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NR-3",
+  "statement": "The existing per-check grandfather exception surface (e.g. the citation exception list)",
+  "rationale": "the epoch adds to, never replaces, targeted exceptions",
+  "fit_criterion": "existing grandfather-list tests pass; both mechanisms coexist",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1fd1a99b7efda963d4c9a5bab4e617235dd0d7568a6822f22b342fd24971013c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.364Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

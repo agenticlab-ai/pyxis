@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR185BMX4WKYQN4AJ2TS",
+  "kind": "Need",
+  "subject": "prd/installer",
+  "family": "J1",
+  "statement": "When I start a new project, I want stand up a complete, green, factory-managed repository in minutes, deciding tracker, CI mode, CLI surfaces, and argus enablement at install time, so I can run the pipeline from day one",
+  "rationale": "`brainstorm:installer#D-3`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:166560cf968b8d4eacdb1a26bdf884f885ab773785454f0529933b6c3c0dfa08",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.92Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0GGTZQEFG8NR2T96RG",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-15",
+  "statement": "When init completes, the system shall emit next-steps and, where a tracker is wired, create a welcome work item directing the human to author the governing documents and run the first feature-definition stage.",
+  "rationale": "the authorship duty travels with the repo (SCAF-5 parity)",
+  "fit_criterion": "the welcome item exists with the authorship pointers; next-steps are printed in every mode",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:484b1327082a7d42a3e2d6af50b409f3bb1d894382fc3864143cbdc5e3d55ba4",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.896Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

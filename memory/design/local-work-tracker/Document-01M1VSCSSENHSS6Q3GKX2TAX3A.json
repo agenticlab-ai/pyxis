@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCSSENHSS6Q3GKX2TAX3A",
+  "kind": "Document",
+  "subject": "design/local-work-tracker",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/local-work-tracker.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "f99c68d58137140a9e338456a2a018f07e07e62a61a6727bfb7d2a30d526b54b",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:00Z",
+  "provenance": {
+    "source": "docs/tech-design/local-work-tracker.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

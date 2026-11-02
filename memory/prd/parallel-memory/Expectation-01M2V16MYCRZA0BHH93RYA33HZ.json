@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2V16MYCRZA0BHH93RYA33HZ",
+  "kind": "Expectation",
+  "subject": "prd/parallel-memory",
+  "family": "DOD-4",
+  "statement": "Adjacent integrity behavior and deterministic/private output remain protected",
+  "intent": "NR-1, NR-2, NR-3, FR-9, NFR-1, NFR-2, NFR-3",
+  "fit_criterion": "Existing regression suite, canonical output comparisons, operation counters, output fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e8763bb724b2da68793db19e460cd0d71f36f122b97011aae990b11f7270b5e2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

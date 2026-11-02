@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJKTAEKR809MJ5VE71T",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-17",
+  "statement": "While interviewing the authority, the skill shall present every question turn in the authority's register rather than the record's: the question phrased in plain language with every house term or corpus anchor glossed inline (never a bare `F-n`/`DQ-n`/`ALT-n`/document reference), grounded in one concrete example — a real case looked up from the basis, code, or corpus where one exists, marked hypothetical or illustrative otherwise, or replaced by an explicit `no example: \u003creason\u003e` line when no illustrative case exists; for a structural question (a seam, port, or document-class choice) the example is one concrete flow traced through each candidate shape — and carrying an enumerated option set (on a fired panel, the recorded alternatives) in which every option states its outcome on that same example (outcomes pairwise distinct, the FR-3 recommendation marked among them), or one to two sample answers with their meaning where the question is open-form; the record keeps its own register (NFR-2) untouched.",
+  "rationale": "an authority who cannot cheaply parse a design question either stalls, delegates (\"you decide\") more than they mean to, or rubber-stamps the recommendation — eroding the provenance the stage exists to produce; one example traced through every candidate shape converts an architecture question into a comparable-outcomes question, and the same-example trace is exactly what makes panel alternatives judgeable rather than wallpaper (UB-7, G3) (operator ruling 2026-07-30)",
+  "fit_criterion": "across the fixture corpus, 100% of authority-facing question turns carry the form — plain-language question, example or typed skip, enumerated options each stating its outcome on the turn's example (or sample answers for open-form), recommendation marked; zero turns present a corpus anchor without its inline gloss; zero example-bearing turns where two options share an outcome; on fired-panel fixtures, each presented alternative carries its outcome on the turn's example (EVAL-7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5e976a3c925fd057eeeb2e16a6720a2d82e9db87eb6e1b70158376bd22c3e72",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.475Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

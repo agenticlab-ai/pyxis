@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREKKZNAGXG6105XQXPC",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-9",
+  "statement": "The system shall write ledger entries only through a coded writer, never by hand-authoring.",
+  "rationale": "corpus discipline (AP-10); integrity",
+  "fit_criterion": "no code path or guide instructs a human to hand-write an entry; the writer is the sole producer",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:387080c82c9ccc3200b23081f67d5d8ece94051568ef4c9d269771a5774e3cdd",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.347Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBZ7BF7K7T4QCNNG2N5",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "UB-4",
+  "statement": "If If a named added amendment or rebase checkpoint is not replayed at the checked revision, then the system shall fail closed without a congruence verdict",
+  "intent": "a defect naming the missing entry, replay range, and remedy; never a silent pass",
+  "fit_criterion": "absent entry and entry outside the replay window each red; no case returns green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:75f1ad912d7cafff9a9b2705582d26c5ca5805dc216945ba1e2ac7b34520f769",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.239Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

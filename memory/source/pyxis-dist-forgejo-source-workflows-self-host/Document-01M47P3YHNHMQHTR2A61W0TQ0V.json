@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P3YHNHMQHTR2A61W0TQ0V",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-self-host",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/self-host.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:8205acc408b3077e78565808c0dcd460b5b3aa4771c2bd531a90cdd851d842a6"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2BVCP0CCKF8FDY131V70FDH"
+    }
+  ],
+  "body_sha256": "8205acc408b3077e78565808c0dcd460b5b3aa4771c2bd531a90cdd851d842a6",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:04:01Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/self-host.yml",
+    "note": "offline reconciliation"
+  }
+}

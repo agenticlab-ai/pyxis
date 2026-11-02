@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M4MM8XGNKV5KV3HFQ1JAXCRE",
+  "kind": "Answer",
+  "subject": "prd/prototype",
+  "statement": "kept on the local machine, unpublished, until the feature's draft locks or is abandoned, then removed with the same command that created them (design:prototype#D-1)",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M4MM8XGMTJNP924216JDXX8F"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

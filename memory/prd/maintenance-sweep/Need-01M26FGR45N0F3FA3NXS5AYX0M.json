@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR45N0F3FA3NXS5AYX0M",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "G2",
+  "statement": "We believe typed findings with named remedies; expected result: cheap dispositions (fix/waive/file) instead of re-derived audits",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d1f5c9fa797cf16fb7be4fdac0ac640c3e7af91582f977ef93b2934c06b03a57",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.013Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

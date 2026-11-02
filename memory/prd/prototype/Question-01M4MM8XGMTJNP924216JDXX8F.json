@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Question-01M4MM8XGMTJNP924216JDXX8F",
+  "kind": "Question",
+  "subject": "prd/prototype",
+  "family": "Q1",
+  "statement": "How long are a prototype's worktree and branch kept after its findings are written, and who removes them? (brainstorm:prototype#G-1)",
+  "intent": "Argus",
+  "rationale": "answered — kept on the local machine, unpublished, until the feature's draft locks or is abandoned, then removed with the same command that created them (design:prototype#D-1)",
+  "fit_criterion": "Solution gate",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0J2P7AN4ER5XZDDM6VVS",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.10.1",
+  "statement": "The memory reconciler authorizes a native decision serving a requirement claim that was itself written natively; a claim that mirrors a PRD document row stays covered only by what a design document declares (`design-brainstorm:feature-draft-tech-design#D-10`). A claim is native when its subject has no PRD ledger, so a document-pipeline feature's addresses can never become native (#DINV-5). Memory's integrity checks stay unchanged for every feature (`prd:feature-draft/NR-4`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8544910a4f4abedb208afb3ca65380640fa90bc754bc5c8ea1fbebcfccc82a76",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:12Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 226-226 in section 3.10; sha256:8544910a4f4abedb208afb3ca65380640fa90bc754bc5c8ea1fbebcfccc82a76"
+  }
+}

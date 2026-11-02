@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Decision-01M44ZPM3NHH0NQ2T9BSDQSCQP",
+  "kind": "Decision",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "R-2",
+  "statement": "Trusted Forgejo repository governance permits an out-of-band unapproved mainline write.",
+  "rationale": "Operator owns repository access and write policy under P-9; Pyxis independently verifies authenticated exact-head review and merged artifacts before authorizing a lock, without claiming that verification prevents or undoes the write.",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M3WDAD6NAATZVAX7Z0621FPC"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

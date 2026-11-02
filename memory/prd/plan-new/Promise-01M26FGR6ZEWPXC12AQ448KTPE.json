@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6ZEWPXC12AQ448KTPE",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-28",
+  "statement": "When emitting a task in a plan/v2 plan for `/implement-now`, the planner shall record a complete vendor-neutral execution demand containing the closed `reasoning`, `coupling`, `novelty`, `verification`, `impact_scope`, and `architectural_role` assessment, resolvable evidence citations supporting those values, the mechanically derived `capability`, `deliberation`, `context`, and `assurance` minimums, the derivation-policy version, and any evidence-backed planner assurance raise; every executable task, including a mechanical-flagged task, shall carry this model-backed demand.",
+  "rationale": "the planning session owns task semantics; native model/effort selection belongs to the selected harness adapter",
+  "fit_criterion": "every plan/v2 and dogfood task carries all six assessment axes, all four profile components, supporting citations, a policy version, and any raise evidence; mechanical fixtures carry complete demand; none reaches checkpoint/freeze absent or partial",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3df3a32eeca61839a66a6d12b65926e7edd7dec6fee6df665635570f596e0c23",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.103Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

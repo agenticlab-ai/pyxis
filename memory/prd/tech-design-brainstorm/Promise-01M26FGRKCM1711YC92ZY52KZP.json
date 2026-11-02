@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKCM1711YC92ZY52KZP",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "UB-1",
+  "statement": "If If the authority goes silent or defers mid-question, then the system shall park the open question as fog, note the pause, and stop — recording no ruling on their behalf",
+  "intent": "a parked question; a clean resume later",
+  "fit_criterion": "silence fixture: zero rulings during the absence; the parked question is first on resume",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:75b4f6aaa6079e7a0670950b1b12b4a89405c283572b29e303d374854c9e04d7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.5Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

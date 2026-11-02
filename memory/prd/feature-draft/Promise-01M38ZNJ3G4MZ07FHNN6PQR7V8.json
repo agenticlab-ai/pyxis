@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNJ3G4MZ07FHNN6PQR7V8",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-5",
+  "statement": "While a feature draft is open, the system shall keep the draft's content off the repository's mainline.",
+  "rationale": "Drafts reach the mainline only at the lock (brainstorm:feature-draft#D-1)",
+  "fit_criterion": "In every fixture, the end-to-end fixture feature included, no draft content appears in mainline history before its lock.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5d1e4e3094638834c2e0e65c0024070d2c86c3e667d6ba3c2003375cdaa21ef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

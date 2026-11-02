@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4ZS8J13RY6C9ACBYPV",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "EVT-1",
+  "statement": "phase_measured fires when a phase's record is written",
+  "intent": "run_id: str, phase_id: str, harness: str, per_model_quartet: map, cost: number, efficiency: map",
+  "fit_criterion": "M1, M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:321f0a86bc1103b7c42d38bec467fa26ce1383ee98a324e89636bd4c26468b17",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.039Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

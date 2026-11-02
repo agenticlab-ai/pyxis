@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZNXZ2CT781NG9C5JBE1BC",
+  "kind": "Document",
+  "subject": "prd/e2e-verification",
+  "family": "amendment-002",
+  "statement": "Captured authored source: docs/prds/e2e-verification/002-harness-designed-buildable-and-cost-bounded.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:287cc6badb1624388e9215d7b1cb7b5e55fede491eea3b8dce9288767b0d8524"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBV1XD2P0V1SKGH9TZEW9"
+    }
+  ],
+  "body_sha256": "287cc6badb1624388e9215d7b1cb7b5e55fede491eea3b8dce9288767b0d8524",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:57Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/002-harness-designed-buildable-and-cost-bounded.md",
+    "note": "offline reconciliation"
+  }
+}

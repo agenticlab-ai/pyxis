@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3B83PFKDKPWW24YAJ0CD9K9",
+  "kind": "Decision",
+  "subject": "design/feature-draft-compiler",
+  "family": "remaining-parts",
+  "statement": "Draft compilation reads tech-spec decisions and their Serves IDs, requirement problems and rulings, review digests, and every requirement-row edit from pinned first-parent branch history.",
+  "rationale": "The approval request can show ruled and unruled changes while readiness judges the same compiled records and review version.",
+  "tags": [
+    "code:internal/draft/compile",
+    "code:internal/memory/gitsrc"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T03:00:29Z",
+  "provenance": {}
+}

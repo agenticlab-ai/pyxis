@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQA8FT3KN2F2HNZ2MF5E",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-1",
+  "statement": "When invoked as `fold`, docgate shall emit `effective.md` and `effective.source.json` from the ledger deterministically, with the content fingerprint over normalized replayed-ledger bytes and the tool version recorded separately.",
+  "rationale": "the projection is derived, never authored; identity tracks contract, not tooling",
+  "fit_criterion": "byte-identical output across 100 runs on 2 platforms over the fixture corpus; fingerprint stable across a tool-version bump with unchanged ledger",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb587067964efd220a6f8973b393a8ed714e9e1e24d697d44045eae45618ab15",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.184Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

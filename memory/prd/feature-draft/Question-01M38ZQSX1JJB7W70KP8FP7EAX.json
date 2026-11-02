@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M38ZQSX1JJB7W70KP8FP7EAX",
+  "kind": "Question",
+  "subject": "prd/feature-draft",
+  "family": "Q3",
+  "statement": "Do the gates also refuse new brainstorm and review documents after the switch-over, or is FR-34 sufficient? Plan documents stay the plan's home (brainstorm:feature-draft#D-24).",
+  "intent": "@mdarabi",
+  "rationale": "answered — refuse them too; FR-27 and UB-5 extended (design-brainstorm:feature-draft-tech-design#D-15)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:24176dc541c99642dc9668496fc3b39f1c043ea88d2ca9ac0765cc4ff623f474",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:42Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "captured from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

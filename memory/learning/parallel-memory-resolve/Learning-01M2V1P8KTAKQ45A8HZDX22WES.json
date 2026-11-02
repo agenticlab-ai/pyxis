@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V1P8KTAKQ45A8HZDX22WES",
+  "kind": "Learning",
+  "subject": "learning/parallel-memory-resolve",
+  "statement": "The shared historical-transition check refuses insertion that makes an unchanged rejected or dangling historical act effective.",
+  "intent": "Replace repository-wide chronological exclusion with a precise guard against retrospective effects.",
+  "rationale": "The check compares exact retained carrier paths and bytes and actual honored relation maps, not just disappearing diagnostics. Revoked carriers do not act; dangling supersession still needs protection when its carrier is superseded because its transitive effect can survive. Missing projections fail closed and violations have deterministic ordering.",
+  "tags": [
+    "code:internal/memory/resolve"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T20:00:26Z",
+  "provenance": {
+    "source": "internal/memory/resolve/transition.go",
+    "commit": "30dcc43775174df02334c4b015784f481cdfec70"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZG9HHW1T0YD0EMAMDQ",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-4",
+  "statement": "When the docgate gate runs, the structure arm shall parse the authority-contract file (version-pinned) and report a named defect when its current-tier does not name a tier declared in the ladder, or when the latest change-history row's tier does not equal the current tier (a bare pointer flip).",
+  "rationale": "DINV-4 tier-in-ladder + no bare pointer flip (J2)",
+  "fit_criterion": "on the seeded fixtures (current-tier not in ladder; latest-history-tier ≠ current-tier), the arm reports a defect naming the file and the invariant; a legal contract passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d8ecfb1b8b679ba605ef7d6721761f401cb9e087df61d68169228171e29ce857",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.84Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG3HVSSB9SA3J4H6SBM",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-16",
+  "statement": "For each durable driver round — one cycle identified by a fresh `drive_round_id` from exact combined-frontier read through persisted decisions and either one settled selected-frontier executor invocation or a persisted no-launch exhausted/unknown decision, with duplicate wakes coalesced into that cycle — the wake consumer shall select every in-scope pending obligation whose `recovery_count \u003c recovery_bound`. If and only if that selected set is non-empty, it shall append-first increment each member's recovery count and issue exactly one review-only executor invocation carrying the round ID and selected IDs; a preflight/factory/auth failure still consumes admission even if the provider creates no attempt. `recovery_count == recovery_bound` is exhausted and excluded; when every pending obligation is exhausted, the round appends/replays EVT-7 evidence and launches nothing. The provider scans only the selected frontier and admits at most one attempt per member; the invocation performs zero implementation operations. Authenticated verification clears the await and closes recovery state; failure/interruption remains pending/red; exhaustion remains stale/escalated until explicit operator rearm creates a new epoch without erasing the old one.",
+  "rationale": "one sweep per obligation races an N-item provider scan; provider attempts miss setup failures; an all-exhausted frontier must not manufacture an empty sweep",
+  "fit_criterion": "multi-obligation and empty-implementation fixtures produce at most one sweep per round, one decision/count increment per selected obligation, and at most one provider attempt each; truth tables at 0, bound−1, bound plus duplicate-wake, all-exhausted, mixed eligible/exhausted, preflight, crash edges, restart, rearm, forgery, and infrastructure prove exact arithmetic, immutable prior epochs, zero provider preflight/attempt/implementation on all-exhausted, and no clean pending/exhausted result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2a3c387fd1608ed89b1cae16c84f4bc934a5872186a76dce7ff74d21c0bc5c7e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.395Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

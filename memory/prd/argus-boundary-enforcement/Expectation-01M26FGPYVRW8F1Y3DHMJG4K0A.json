@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPYVRW8F1Y3DHMJG4K0A",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-10",
+  "statement": "A genuine end-to-end drive of a protected-path write is refused **by the attribution gate** on its produced signal — proving the signal is actually produced on a real drive-authored commit, not assumed from a hand-seeded fixture.",
+  "intent": "FR-12; §3.2 M1",
+  "fit_criterion": "the live-drive artifact (the drive-authored commit) + the gate's refusal on it in CI",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:81584714915f8f7e54a09187112b1feb108cca14fca93027cb4aa40e7644b16f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.819Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

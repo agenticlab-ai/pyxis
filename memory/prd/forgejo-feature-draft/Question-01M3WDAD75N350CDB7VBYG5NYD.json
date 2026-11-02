@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3WDAD75N350CDB7VBYG5NYD",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-4",
+  "statement": "The stated fit criterion names drafting/locked states but lacks explicit reopened-draft and unmigrated document-pipeline cases promised by the body and frozen status contract.",
+  "intent": "Independent PRD review `reviews/001.md`, advisory FND-4.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

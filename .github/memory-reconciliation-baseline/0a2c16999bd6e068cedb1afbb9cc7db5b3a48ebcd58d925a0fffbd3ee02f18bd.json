@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/contract-gate#R4",
+  "feature": "contract-gate",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

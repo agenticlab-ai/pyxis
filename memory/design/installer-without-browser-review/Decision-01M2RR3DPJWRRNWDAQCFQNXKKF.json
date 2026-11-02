@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RR3DPJWRRNWDAQCFQNXKKF",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.7.1",
+  "statement": "\"The pyxis-config surface\" is bound as a **concept** — the sanctioned, closed-schema, per-repo configuration surface (AP-8) — materialized in v1 as named files under the system tree: the repo config plus named policy files (the verification manifest, the class policy). This closes the basis's Q-1 with zero amendments: the sibling PRD's requirement row is directory-silent, the frozen sibling design's \"surface\" wording remains true, and the glossary term's parenthetical is updated in this introducing PR (record D-7). If the vision's per-repo extension directory ever materializes, relocation is a later feature's converge migration (record O-4).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2fe4243842783728914cbfc1fa9b85f7b4a4bb6274edd18bbc9de0b1a8b24cfa",
+    "source-design:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:34:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 97-97 in section 3.7; sha256:2fe4243842783728914cbfc1fa9b85f7b4a4bb6274edd18bbc9de0b1a8b24cfa"
+  }
+}

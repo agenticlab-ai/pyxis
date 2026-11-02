@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR4XB73X506MV3ZS02VN",
+  "kind": "Expectation",
+  "subject": "prd/pipeline-measurement",
+  "family": "DOD-6",
+  "statement": "Near-zero overhead: zero model tokens consumed by measurement",
+  "intent": "NFR-1, FR-10, §3.3",
+  "fit_criterion": "token accounting of the measurement pass",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6464da33443ae0aa900315aee22dd3cecf446d2b6c133224689a5eb29f8b413f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.037Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

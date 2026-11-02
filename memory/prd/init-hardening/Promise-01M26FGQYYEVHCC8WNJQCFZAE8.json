@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYYEVHCC8WNJQCFZAE8",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-16",
+  "statement": "When init refuses for any reason, the refusal shall name the failing check or stage, the remedy, and the route where one exists.",
+  "rationale": "refusal quality is the product at first contact",
+  "fit_criterion": "an inspection sweep over every refusal class finds cause + remedy present; stale-capability claims absent",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:424374e84ff9cb440a58f57ee238a5d2dacacbc72610e81a03a80d89e2cad329",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.846Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

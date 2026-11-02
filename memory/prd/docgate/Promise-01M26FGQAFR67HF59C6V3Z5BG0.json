@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAFR67HF59C6V3Z5BG0",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-20",
+  "statement": "When invoked as `lint-tech-designs`, docgate shall validate every design's closed header schema, typed `Serves` grammar (enumerated refs only), reference resolution — with `corpus:` references resolving against requirement IDs actually present in the flat placeholder-corpus files — mandatory-by-name Observability and Security \u0026 privacy subsections with the header pair, slug rules, and a Status row recording `Approved`; shall fail any design whose `Serves` cites a `prd:` ledger without at least one requirement-row anchor (FR-n, UB-n, or NFR-n); and, when a merge base is given, shall fail any design added since the merge base whose `Serves` cites a superseded or retired ledger unit. Designs merged before the v2 gate stay grandfathered; the config's precedence grandfather list (I1) exempts from the precedence clause only.",
+  "rationale": "a resolvable stub must not read as a satisfied ordering rule (I1), an unresolvable corpus ref must not read as resolved, and dead intent must not anchor new designs (#54 A4)",
+  "fit_criterion": "corpus-ref-to-nonexistent-ID fixture red naming the ID; the real corpus green (`local-work-tracker`'s corpus refs resolve); with a merge base, a new design serving a superseded FR red, a pre-existing design serving one green (flag only); a `Status: Draft` design red; grandfathered designs green; every FR-16 fixture keeps its verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:61641442993db113b01d2e8f8c199b5d584d0fde227f2133f9b60af8e7b56013",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.191Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZ9JD2BWF8W5DQPR2EW",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "G3",
+  "statement": "We believe routing every wrong-door arrival by name; expected result: no dead ends: content-holders land in `adopt` without folk knowledge",
+  "fit_criterion": "M2 (refusal classes) + trial verbatims",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0908228ecf5aec47c4d5fecb389a527cf9fe677934e647c266d3d2cf58e8712f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.857Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

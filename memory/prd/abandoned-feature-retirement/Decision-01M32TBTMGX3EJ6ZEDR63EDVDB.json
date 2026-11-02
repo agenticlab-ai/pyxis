@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TBTMGX3EJ6ZEDR63EDVDB",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R5",
+  "statement": "Verify retirement authority and cleanup from a fresh mainline-only transport clone after squash merge and branch deletion.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Authority that depends on a proposal head or unavailable object cannot govern later deletion. FR-11 and the rollout require retained mainline evidence at both proposal boundaries.",
+  "fit_criterion": "Fresh-clone verification reproduces the exact authority and cleanup verdict after each head branch is deleted; missing-history controls refuse.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:51083a77b5e522192decdd794151c21d8eb2bf203a504b165fc9c16c07dc3bf3",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:26:20Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

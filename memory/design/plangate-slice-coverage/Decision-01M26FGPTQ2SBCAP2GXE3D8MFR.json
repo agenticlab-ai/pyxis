@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTQ2SBCAP2GXE3D8MFR",
+  "kind": "Decision",
+  "subject": "design/plangate-slice-coverage",
+  "family": "decision.2.1",
+  "statement": "a plan's fold checks coverage against its **own coverage matrix** — the plan's slice — never against the whole feature: every requirement the matrix claims must be **live** and map to ≥1 task, and every task must map to ≥1 requirement or design anchor (the internal-consistency + fog bar plan-new-v1 already enforces, minus the \"every feature Must\" demand). Feature-level Must completeness is a **separate** check: the **union** of all the feature's plans' matrices must cover every live Must FR/UB, and a live Must covered by no plan is a named **feature-level** coverage defect — surfaced by a feature-coverage check, *never* as a per-plan fold block (`design-brainstorm` n/a; direct from FR-26). So a frozen plan stays green after a later amendment, an amendment is planned by a new slice-plan covering only its new requirements, and no Must is silently dropped. Concrete forms (the gate signatures, the matrix-as-slice read, the feature-union check) live in the paired solution-shape.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:dafe48b2a9a537d13912596b2fc9eb085842a3ae441825682ecf1de645931550",
+    "source-design:0ea83e322d0283b789882107f66b09d9c23df47b2e6c185c511a30a16d45bd6b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCV8DBGQ42AWQCWKWFXD4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.687Z",
+  "provenance": {
+    "source": "docs/tech-design/plangate-slice-coverage.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/plangate-slice-coverage.md lines 24-24 in section 2; sha256:dafe48b2a9a537d13912596b2fc9eb085842a3ae441825682ecf1de645931550"
+  }
+}

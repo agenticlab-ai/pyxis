@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQRVMXFY034R8VYQ7TA2",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-17",
+  "statement": "`hosted_review_publication_terminal` fires when the executor records the same completed-report publication terminal emitted as `prd:impl-review/EVT-13`",
+  "intent": "`review_attempt_id:string`, `review_obligation_id:string`, `proposal_ref:string`, `revision:string`, `status:enum{verified,failed}`, `artifact_ref:string?`, `native_receipt:string?`, `attempt_proof_ref:string?`, `failure_class:enum{artifact_unverified,artifact_untrusted,infrastructure}?`, `reason:string?`, `escalated:boolean`; the first four identity fields are always required; `verified` requires all three distinct artifact/receipt/proof fields and forbids failure fields; `failed` requires failure fields, the same failure class, and exact optional-field presence from EVT-13; every field pair and grammar is governed by FR-49",
+  "fit_criterion": "M7, FR-49, DOD-36, cross-contract publication audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:11c25ddada1a6df1f6ed55c1a82ca299c079b2a432ac0ec9b586d63ad2063e41",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.651Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

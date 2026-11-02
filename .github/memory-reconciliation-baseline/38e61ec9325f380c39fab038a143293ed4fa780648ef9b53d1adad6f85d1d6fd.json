@@ -1,0 +1,8 @@
+{
+  "code": "invalid-prd-disposition",
+  "scope": "prd/installer#R8",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

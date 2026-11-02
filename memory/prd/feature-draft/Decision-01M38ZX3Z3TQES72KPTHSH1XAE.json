@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZX3Z3TQES72KPTHSH1XAE",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R7",
+  "statement": "Settle concurrent editing of one draft by several sessions in the technical design (Q9, Q10).",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The operator and several agent sessions may work on the same draft. An edit silently overwritten would corrupt the draft's history; whether edits merge or conflict is a design choice.",
+  "fit_criterion": "The technical design names the concurrency rule, and two fixture sessions editing one draft at once either both keep their edits or one is refused naming the conflict; no edit is lost silently.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:db91d45384183820dad8528b068035b8cd32dc175ce6f43f599ee6b2bf9fbda3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:36Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

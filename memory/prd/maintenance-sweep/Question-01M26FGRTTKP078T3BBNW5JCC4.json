@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTTKP078T3BBNW5JCC4",
+  "kind": "Question",
+  "subject": "prd/maintenance-sweep",
+  "family": "Q3",
+  "statement": "Should findings ever auto-file issues, under what dedup discipline?",
+  "intent": "operator (policy)",
+  "rationale": "open (G-3)",
+  "fit_criterion": "WR-3's revisit",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:9f75a212c36b8b3ad214943ccdc8672bfa6c1d12721acc2bf5f5e1d8a21ea849",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.738Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

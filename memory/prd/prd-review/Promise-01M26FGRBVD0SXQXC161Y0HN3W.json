@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBVD0SXQXC161Y0HN3W",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-12",
+  "statement": "The reviewer shall write only its own artifacts — findings, report, brief — never editing the reviewed document, never raising a finding that disputes a recorded decision's content, and never minting tracker items (the surrounding flow reacts to the verdict per the escalation convention).",
+  "rationale": "the boundary rules (— #O-2, #O-3, #O-7); complement, never compete",
+  "fit_criterion": "zero document diffs across all fixture runs; zero re-judgment findings on decision-seeded fixtures (EVAL-2, sev-1); zero tracker writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b0776c4d88d167ce88af6698bfccb08909229a4b69ae0b3a5f1a4a23bac1dc89",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.259Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

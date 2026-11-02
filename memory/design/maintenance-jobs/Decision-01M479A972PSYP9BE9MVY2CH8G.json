@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A972PSYP9BE9MVY2CH8G",
+  "kind": "Decision",
+  "subject": "design/maintenance-jobs",
+  "family": "D-8",
+  "statement": "Append versioned correlated installation and execution events to the enrolled repository's `.pyxis/maintenance/logs.jsonl`, with serialized writers, safe evidence references, and no credentials.",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96V8GH36HRH6HX0BVCN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96WCA1SCS1F50NDVJ22"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96XEMWJDP89KCGWP0B9"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96YKXVY4X6SSA16Z426"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96Z3ASNH7J4NNPPZKTY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95KPKTWPG2PY95MZY5E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95P6YDN9SPTGQSANJK3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95VD40X5A1436MESRNF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95WS9S6X2GYBAQZS6PH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95XV8YDYWAZ0T1ECP4V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95ZR4PT7RMKBQ14N0H8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A966N64VK33GDKYQR7A6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A9679YTT2R4A4SS5YBJD"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

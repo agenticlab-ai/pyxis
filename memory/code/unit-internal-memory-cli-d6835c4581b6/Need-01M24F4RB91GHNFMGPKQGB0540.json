@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M24F4RB91GHNFMGPKQGB0540",
+  "kind": "Need",
+  "subject": "code/unit-internal-memory-cli-d6835c4581b6",
+  "family": "anchor",
+  "statement": "Production code unit internal/memory/cli exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at internal/memory/cli.",
+  "tags": [
+    "code:internal/memory/cli",
+    "reconcile:anchor"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T01:33:01Z",
+  "provenance": {
+    "source": "code:internal/memory/cli",
+    "commit": "c542b9b7cad95eb772ee34b6394ac5034fcce793",
+    "note": "offline code inventory 7e41baa011b62ef0ecbcb6ac796766a941c6951d67ffa93981984d9a2f67a56c"
+  }
+}

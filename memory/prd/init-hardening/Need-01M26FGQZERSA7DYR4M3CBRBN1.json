@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZERSA7DYR4M3CBRBN1",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "M1",
+  "statement": "M1 (primary): G2",
+  "intent": "a first-attempt unaided install session by a pyxis-naïve person on a fresh machine",
+  "fit_criterion": "pass — green factory, zero operator interventions — at the first such attempt after release",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:990c4b64ae38277bbe1cf0895b54f8b9011004685337c16a975bba5ff16ddd04",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.862Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

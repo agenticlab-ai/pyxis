@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQJ0SKXAQSSTQPQES2AM",
+  "kind": "Expectation",
+  "subject": "prd/feature-implementation-drive",
+  "family": "DOD-3",
+  "statement": "The local-owned six-task dogfood completes through human-reviewed task PRs, seeded feedback, seeded e2e failure/repair, accepted candidate, and verified delivery with no guardrail breach.",
+  "intent": "M1–M4, §3.3, FR-1..FR-24",
+  "fit_criterion": "local drive journal, PR/evidence refs, metric rollup",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5e006622ef544ce4911c94c432f20443ff2989724cb738910f0c7ddefb8584bc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.432Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

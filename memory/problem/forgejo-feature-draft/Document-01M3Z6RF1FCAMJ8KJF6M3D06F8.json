@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3Z6RF1FCAMJ8KJF6M3D06F8",
+  "kind": "Document",
+  "subject": "problem/forgejo-feature-draft",
+  "family": "delivery",
+  "statement": "Captured authored source: docs/problems/forgejo-feature-draft/delivery.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/problems",
+    "reconcile:source",
+    "sha256:23f82ceba2c5a8b4757529fab66b59e2379d33a87097f0fb14360293e118f63c"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3XWET2W82C97DHZP14BPEH7"
+    }
+  ],
+  "body_sha256": "23f82ceba2c5a8b4757529fab66b59e2379d33a87097f0fb14360293e118f63c",
+  "literal_body": true,
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-02T21:01:41Z",
+  "provenance": {
+    "source": "docs/problems/forgejo-feature-draft/delivery.md",
+    "note": "offline reconciliation"
+  }
+}

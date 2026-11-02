@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQXBRTDTQCF8YWVW1RD8",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "seeded adversarial diffs blocked by the ladder",
+  "fit_criterion": "3/3 seed families blocked (tautological test · silenced test — deletion, skip-marker, assertion-removal · machinery edit), permanent in the harness's CI from the catch-suite checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c448b9fd1801c464705ab362b6cb41f5f38d327be7cce4e0ce74281b2f9fd63",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.795Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

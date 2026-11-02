@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4Z5NCRJ1DJJYKH3DQ08",
+  "kind": "Decision",
+  "subject": "design/inherited-learning-repair",
+  "family": "D-6",
+  "statement": "Make the #1437 reproduction the primary acceptance fixture and use the existing successor refusal cases as the negative boundary. Prove coordination with independent processes, not only a shared in-process mock.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YP3T20Z4R6SD6TFGKA"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YQ5YT009MGKJRH7B83"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YRHZ542W3CFTETYE1V"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YSDMSWY862GBN6JXGW"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YT4WATC73KCA16SG65"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M49BK4YV5JTJSTZCJYC00BCN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y96RRC20Z68A6PWHN0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YAA3N7T09DEZ1RRZDG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YB7YQVA7VVVYRJMJQ2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YJ3G9BVQPNJYA7QG4A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YKRMNSRV0MZKJXAMSK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YMWXP0EPGK5KAPMQF5"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

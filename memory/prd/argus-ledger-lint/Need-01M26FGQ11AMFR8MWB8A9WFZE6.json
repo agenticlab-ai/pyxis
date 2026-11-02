@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ11AMFR8MWB8A9WFZE6",
+  "kind": "Need",
+  "subject": "prd/argus-ledger-lint",
+  "family": "J3",
+  "statement": "When I add a *legal* entry (a new higher-numbered `A-n`/`E-n`) or cite a journal `E-n` correctly, I want have the guard stay silent, so I can append and cite normally without fighting a false alarm",
+  "rationale": "brainstorm:argus-ledger-lint#D-5 (green on legal appends)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5c2b83b40c587fdc582373279c16dc4e2e61444a9567ee86c958f7e57a0ceed6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.889Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

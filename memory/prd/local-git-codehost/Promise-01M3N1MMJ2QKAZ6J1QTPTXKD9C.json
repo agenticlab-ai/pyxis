@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMJ2QKAZ6J1QTPTXKD9C",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "EVT-2",
+  "statement": "local_proposal_landed fires when Consistent implementation landing",
+  "intent": "task: string, head: sha",
+  "fit_criterion": "M1",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

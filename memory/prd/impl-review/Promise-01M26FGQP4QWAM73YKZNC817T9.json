@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP4QWAM73YKZNC817T9",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-27",
+  "statement": "For every review process, the reviewer shall append immutable git event records that losslessly implement the parent contract's canonical routing-resolution, routing-failure, routed-attempt-outcome, review-process, and invalidation schemas; the linked proposal payload shall project the frozen demand origin, planned assurance, actual band, effective depth, required pass count, exact reviewed revision, selected review harness and policy version, per-pass attempt/context/native-profile identities and resolution/outcome terminals, internal remediation rounds, per-pass verdicts/findings, and one aggregate terminal, with no prompt or code payload in either face.",
+  "rationale": "the universal floor, route execution, and critical independence need durable reconstructable evidence rather than editable medium or session claims",
+  "fit_criterion": "every route links to exactly one canonical resolution or failure; every resolved route links to exactly one `verified`, `failed`, or `blocked` outcome and every failed resolution to none; the parent and proposal faces round-trip losslessly on both tracker media; reruns append and never overwrite; context identities are distinct; payload inspection finds no prompt/code content",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bfdfb48f77fab87f70a62a2468c82122b98e385c0a2b16ab317db9a192b3ffcf",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.564Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

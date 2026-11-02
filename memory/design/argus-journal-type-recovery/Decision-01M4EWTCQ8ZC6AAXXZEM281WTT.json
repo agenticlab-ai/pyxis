@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWTCQ8ZC6AAXXZEM281WTT",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "implementation-scope-and-rebase",
+  "statement": "Argus draft commits use slug-scoped first-PR paths; lock preparation verifies source bindings, rejects multi-parent source commits before rebase, refreshes valid stamps, shares the installed cache with its temporary worktree, and leaves unstamped and generated commits unstamped. After a valid delivery ledger is committed, the shared predicate also admits only its own three-digit numbered plan Markdown/JSON under the configured literal plan root and its native problem captures; actual-lock planning readiness remains separate.",
+  "intent": "Keep ordinary single-user draft pushes and lock preparation attributable without losing merge-only edits.",
+  "rationale": "The old docs-only scope rejects draft rounds; copied bindings fail after a parent change; refreshing a stale source binding would launder it; plain rebase skips merge commits; and a linked worktree omits the ignored installed binary cache.",
+  "fit_criterion": "Boundary, real-hook rebase, stale-source and merge-source refusal, installed-cache, attribution-gate, and prepare-lock integration tests cover the changed production units.",
+  "tags": [
+    "code:cmd/argus-stamp",
+    "code:internal/argus/attribution",
+    "code:internal/argus/boundary",
+    "code:internal/argus/stamp",
+    "code:internal/draft/lock"
+  ],
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3QDB51TM8ZV5HSBFX80B19G"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M3QGSFS7FAK8WX902W04FDJY"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M4667876WNM5EVXMCVHA6ZDE"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M48AE1G1NQWX743YQ8S6FAK7"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:15:49Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "Carry forward the unchanged implementation-scope-and-rebase decision Decision-01M48AE1G1NQWX743YQ8S6FAK7 to the proposed successor design. Its original statement, intent, rationale, fit criterion, code associations and relationships are retained; the predecessor remains historical evidence. New journal classification semantics require exact-head review and merge of this Source proposal."
+  }
+}

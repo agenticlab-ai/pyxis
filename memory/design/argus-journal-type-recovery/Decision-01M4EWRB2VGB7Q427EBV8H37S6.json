@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWRB2VGB7Q427EBV8H37S6",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.4.4",
+  "statement": "Shared-account Git stamps remain audit evidence, not adversarial isolation from a drive able to invoke Git. Exact-head approval under trusted-mainline policy, memory/code/document predicates and host protection govern merge. Pyxis Source continues its documented legacy-check exemption while retaining attribution; installed consumers retain the full document gate.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:908484fe32bfd45afe88adee1bb74e244f052474fe0e62dff18f4e9b9afdc28d",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:42Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 64-64 in section 3.4; sha256:908484fe32bfd45afe88adee1bb74e244f052474fe0e62dff18f4e9b9afdc28d"
+  }
+}

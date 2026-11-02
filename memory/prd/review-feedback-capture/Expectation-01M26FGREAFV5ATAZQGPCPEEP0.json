@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGREAFV5ATAZQGPCPEEP0",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-5",
+  "statement": "Provenance: a human-caused change resolves back to its ledger entry (M4)",
+  "intent": "FR-4",
+  "fit_criterion": "demo record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:18dd86c01995be010c3afe90110aa33018b0862fb0fe775bf2ad342a4661efdd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.338Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

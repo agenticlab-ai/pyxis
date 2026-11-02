@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSRXDRMV4E8TNCKFCV9",
+  "kind": "Question",
+  "subject": "prd/impl-review",
+  "family": "Q2",
+  "statement": "Field-level report/marker grammar extending codegate's core",
+  "intent": "technical design",
+  "rationale": "design-owned; FR-27 and DOD-13 fix its information and round-trip bars",
+  "fit_criterion": "Phase A",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:255db054ee87ad30d64b345b0e8c716e7b466c02a8c1c02a56e2a5e890e7c749",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.704Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

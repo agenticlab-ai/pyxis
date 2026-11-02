@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPBWYWGJAG9Q6NWNRVN",
+  "kind": "Decision",
+  "subject": "design/context-pack-v1",
+  "family": "decision.3.4.1",
+  "statement": "the admissible class **kinds** are a **closed enum** — the stable-context kinds (the governing documents, the frozen subject under work, the stage's calibration, and their peers) — and **no authoring-trail kind is a member**. The delivery journal, prior review dispositions, and orchestration notes have no kind a declaration can name, so the compiler has no path that reads them into a pack (prd:context-pack/FR-4, NFR-5). A cold reviewer's pack is free of the author's reasoning **by construction, not by a reminder to exclude**.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:836716c02a9c7ab6d114ceb6a2b4a46b9e957883e81edb27beb60a2ebde30fd6",
+    "source-design:0eda89b54f774ceeba16b812a431c85f38941582676f642e93662ed26fe49f3f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN812B4QY6CRBZJRAPBW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.547Z",
+  "provenance": {
+    "source": "docs/tech-design/context-pack-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/context-pack-v1.md lines 70-70 in section 3.4; sha256:836716c02a9c7ab6d114ceb6a2b4a46b9e957883e81edb27beb60a2ebde30fd6"
+  }
+}

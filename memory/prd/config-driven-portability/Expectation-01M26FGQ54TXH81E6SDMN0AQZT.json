@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ54TXH81E6SDMN0AQZT",
+  "kind": "Expectation",
+  "subject": "prd/config-driven-portability",
+  "family": "DOD-4",
+  "statement": "Zero target-facing surface literals remain in engine code (coherence)",
+  "intent": "G2, FR-1..FR-3",
+  "fit_criterion": "the grep/inspection result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:128130f5c0870ca5b9f3fe93e6777e741abd864f77ac82870e809d63c2fb9a97",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.02Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

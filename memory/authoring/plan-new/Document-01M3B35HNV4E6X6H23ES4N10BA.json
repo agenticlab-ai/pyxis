@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3B35HNV4E6X6H23ES4N10BA",
+  "kind": "Document",
+  "subject": "authoring/plan-new",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/plan-new.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:7cfd8916f3396a4134a0ae4fd72737664a30ebd3aad574e7f36125e528ff8f56"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M31W2QRMXEFPRPWSCT6XKKYT"
+    }
+  ],
+  "body_sha256": "7cfd8916f3396a4134a0ae4fd72737664a30ebd3aad574e7f36125e528ff8f56",
+  "literal_body": true,
+  "issuer": "agent:native-routing",
+  "created_at": "2026-09-25T01:34:07Z",
+  "provenance": {
+    "source": ".pyxis/authoring/plan-new.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4Y31446QEEQQ99SEHPY",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "FR-5",
+  "statement": "When the canonical task is ready, the owning entry shall invoke implement-now once under configured execution and review policy.",
+  "rationale": "Existing executor",
+  "fit_criterion": "Five live concurrent callers produce one admitted charter and one implementation invocation",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4DB2VSV2J67ECVAN6D",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "NFR-1",
+  "statement": "The sweep shall complete a full pass on a repository of this repo's class within its stated bound.",
+  "intent": "Performance",
+  "fit_criterion": "full pass ≤ 60s on this repo at the DoD checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4a4cb66438d0144edcfd5e57b01389d20d5323e057b3664b5051cfe6c0e86f2a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.021Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

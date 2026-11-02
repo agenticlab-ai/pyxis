@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4HCA1TE4NBK0F3YAAW",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "NFR-2",
+  "statement": "The bulletin source shall be integrity- and authenticity-verified before any field is read; the verifying trust anchor ships with the `pyxis` binary, not with the channel.",
+  "intent": "Security",
+  "fit_criterion": "tamper/forge/replay fixtures are all rejected before parse; the trust anchor is binary-resident",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:380ce684fee2938e3f94c3a6d8040ad25810ea306d5202f6483aaf349c4be887",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.001Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

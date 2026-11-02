@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXE8Q7JQJBP139K4355",
+  "kind": "Decision",
+  "subject": "design/plangate-slice-coverage",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:plan-new/FR-26.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:0ea83e322d0283b789882107f66b09d9c23df47b2e6c185c511a30a16d45bd6b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCV8DBGQ42AWQCWKWFXD4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6XW91YEGREE1G5AQX9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.822Z",
+  "provenance": {
+    "source": "docs/tech-design/plangate-slice-coverage.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 0ea83e322d0283b789882107f66b09d9c23df47b2e6c185c511a30a16d45bd6b"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQH4RP2BB1JJSBP40WMZ",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-9",
+  "statement": "When the operator's language conflicts with the glossary or uses one term for two concepts, the skill shall challenge it at that moment and record the resolution as a candidate glossary entry (term, definition, terms to avoid).",
+  "rationale": "stage 1 is where domain language is born; unresolved vocabulary becomes contract ambiguity",
+  "fit_criterion": "on a fixture seeded with a term collision, the collision is surfaced and the gated record carries ≥ 1 complete candidate entry",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8c00e116e6c35c1953912b922a74be027211da7b1e6ec01a453eaf3c2d3ec316",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.404Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

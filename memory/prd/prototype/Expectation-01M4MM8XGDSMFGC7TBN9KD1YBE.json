@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGDSMFGC7TBN9KD1YBE",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-5",
+  "statement": "Drafts without a prototype are unaffected",
+  "intent": "NR-2",
+  "fit_criterion": "The existing draft, readiness, and review suites passing in the implementing pull requests' required checks",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

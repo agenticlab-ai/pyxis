@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJH8Q54D4DJYXP7RVKA",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-12",
+  "statement": "When the human requests ownership handoff, the feature drive shall transfer ownership only after every active implementation attempt has finished or checkpointed.",
+  "rationale": "Preserve work and exclusivity.",
+  "fit_criterion": "Failure-injection across each attempt state produces zero overlap, zero lost checkpoint, and only post-transfer work in the new domain.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1956a49469951a2fd775847c680bea7ea209d948cf8e5a9c897dc1ec6cdaf010",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.449Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

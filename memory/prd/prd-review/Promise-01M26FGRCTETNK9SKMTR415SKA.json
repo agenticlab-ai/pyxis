@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCTETNK9SKMTR415SKA",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "UB-2",
+  "statement": "If If the lenses surface zero findings, then the system shall record approve honestly — an empty report is legal; the rubber-stamp risk is watched by the escalation-band and acceptance metrics, never by inventing findings",
+  "intent": "a clean approve",
+  "fit_criterion": "the clean-document fixture ends approve with an empty findings list and full measurement fields",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a474f48859cd2f0bcec6add1ca640ef21e207372bc68518bb8339fc5ddae3489",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.29Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

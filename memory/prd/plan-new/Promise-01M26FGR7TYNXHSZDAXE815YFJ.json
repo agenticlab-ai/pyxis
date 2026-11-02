@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7TYNXHSZDAXE815YFJ",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NFR-8",
+  "statement": "The planner shall record validation and projection duration as non-blocking measurements, separating local computation from tracker wait time where observable; elapsed time shall never change a validation, projection, or release verdict for otherwise identical semantic inputs and external outcomes.",
+  "intent": "Performance measurement",
+  "fit_criterion": "dogfood and 30-task fixture runs record both duration classes; injected local and tracker delay leave the semantic verdict unchanged; reports compare the measurements with the descriptive 5-second validation and 5-minute projection baselines without treating either baseline as pass/fail",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:824f310b313ed9c3af281b68d28da17559a23a34caba93eba9ff52aab0351d17",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.13Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

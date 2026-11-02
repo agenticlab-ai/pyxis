@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/planner-driven-model-routing#R1",
+  "feature": "planner-driven-model-routing",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRK4VAY92DABATTRMR7G",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "decision-questions `tech-design-new` asks the decision authority while authoring from a gated `ready-for-design` record",
+  "fit_criterion": "median 0, max ≤ 2, at checkpoint \"five designs through stage 3\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:066fe9259f23f73d037a1200da2df560496494aeda3b3c992677d82829be4879",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.492Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

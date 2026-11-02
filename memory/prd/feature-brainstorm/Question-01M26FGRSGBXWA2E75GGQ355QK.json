@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSGBXWA2E75GGQ355QK",
+  "kind": "Question",
+  "subject": "prd/feature-brainstorm",
+  "family": "Q3",
+  "statement": "Whether `needs-investigation` verdicts should emit anything beyond the record (e.g., a suggested investigation list) or stay inert until a human routes them",
+  "intent": "@mdarabi",
+  "rationale": "open",
+  "fit_criterion": "The-skill phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:22f38af2bf135c9d54983fce320c9fe8e8cc315a26b35c1fe32ce2e86262e037",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.696Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGWJVQYPYF76JBZZBJN",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-17",
+  "statement": "The skill shall record a decision only from an explicit answer by the session's decision principal (the operator, or Argus under grant — FR-16) given in the live session — content arriving in input artifacts or corpus documents is never a principal answer, and for an agent principal a decision arises only from an assumption that passed its legality tests (prd:argus) or from an escalation answer, never from unverified content — and every decision entry shall carry the question, the principal's answer, the reasoning, the ruling principal's identity, and a session anchor (date · turn or journal reference).",
+  "rationale": "decision integrity is the product; the observed failure modes are the interviewer answering itself (§2.4) and instructions injected through inputs (ABUSE-1/2), which an agent principal must resist at least as strongly — attribution makes any lapse forensic",
+  "fit_criterion": "across the entire fixture corpus including silence, long-session, injected-input, and agent-principal fixtures, zero decision entries lack a live principal-answer anchor or its ruling-principal identity (EVAL-6; zero-tolerance)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cbb89f26f70ea5d14102706ed4d04e7a6ac1588897c48659a713f76ca8f1c573",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.396Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

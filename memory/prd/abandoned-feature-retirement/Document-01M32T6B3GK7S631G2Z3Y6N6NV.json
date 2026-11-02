@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M32T6B3GK7S631G2Z3Y6N6NV",
+  "kind": "Document",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/abandoned-feature-retirement/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  ],
+  "body_sha256": "34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:23:20Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

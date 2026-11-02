@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRHF7ADY88SS8EHR60S9",
+  "kind": "Promise",
+  "subject": "prd/skill-command-prefix",
+  "family": "FR-5",
+  "statement": "By the M1 checkpoint (closing-PR merge), the glossary shall distinguish **Argus** (the AI Engineer persona) from **`/pyxis-argus`** (the harness skill identity). The candidate entry may land earlier with the PRD introducing PR (prd-new T-n routing); the closing PR confirms the prefixed skill form.",
+  "rationale": "vocabulary seam closed in-iteration",
+  "fit_criterion": "at M1, glossary Argus entry states persona vs skill split; avoid-list rejects treating them as interchangeable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:31e8237127a255b8426924f141b1b2f1e2b192a7cd7c363b8b00f889ad638766",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.439Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

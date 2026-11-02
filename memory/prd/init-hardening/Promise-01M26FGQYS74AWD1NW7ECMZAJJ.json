@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYS74AWD1NW7ECMZAJJ",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-11",
+  "statement": "Where `knobs.ci_mode` excludes hosted CI, the system shall not install the hosted docs-gate workflow; where it includes hosted CI, the system shall install it; desk hooks install in every mode.",
+  "rationale": "the knob answers changed nothing (`#D-3`, `#F-9`)",
+  "fit_criterion": "`local` installs ship no workflow file; `actions`/`both` ship it; hooks present and active in all modes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:088147482dc57493175ba76d1036f7f110682eb303f9c681194ae0648a6d87f0",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.841Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

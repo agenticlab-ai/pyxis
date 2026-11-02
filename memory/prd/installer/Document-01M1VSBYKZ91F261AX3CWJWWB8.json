@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBYKZ91F261AX3CWJWWB8",
+  "kind": "Document",
+  "subject": "prd/installer",
+  "family": "amendment-002",
+  "statement": "Imported Pyxis source document: docs/prds/installer/002-one-repository-question.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "72b309c76e748b5d439c6955ae1924947d4bc8cf88dc58e1523ba716117db3a6",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:32Z",
+  "provenance": {
+    "source": "docs/prds/installer/002-one-repository-question.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

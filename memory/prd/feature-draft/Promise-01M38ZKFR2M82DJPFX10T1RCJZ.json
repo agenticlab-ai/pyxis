@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKFR2M82DJPFX10T1RCJZ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-13",
+  "statement": "The system shall treat a feature draft as ready only when every Must requirement in its PRD is served by at least one decision in its tech spec.",
+  "rationale": "Every must-have requirement has a design decision (brainstorm:feature-draft#D-3)",
+  "fit_criterion": "A draft with one unserved Must requirement is refused naming it; adding a serving decision clears the condition.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:81d6931d9216f395446c42578763ae4ed30b2cc57a8e987b5f036681d05409ef",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:20Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPV5MH4WHWAKXJ1F3N32",
+  "kind": "Decision",
+  "subject": "design/prepush-ref-awareness",
+  "family": "decision.2.1",
+  "statement": "The shim delegates to a new **`pre-push` verb** instead of\n`gate` directly. The verb reads the hook protocol's ref lines from its\ninherited stdin (`\u003clocal-ref\u003e \u003clocal-sha\u003e \u003cremote-ref\u003e \u003cremote-sha\u003e`);\nwhen **every** parseable line is a deletion — the local SHA is all zeros\n— it passes with a one-line notice and runs nothing. In every other case\n(any non-deletion ref, empty stdin, unparseable lines) it runs the\nmerge-base gate exactly as today. Classification lives in Go; the shim\nstays a delegate-only one-liner (the language policy's letter and\nspirit), changing only its verb word.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5bdec7236e62d19932dec5be92d43966936a7a886206658e5b61f725854c09c4",
+    "source-design:af1c66d49b3f9588c789f30034e06a4bbbc5c93396f098799e04cea76d63d0f5",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCW01SAB0TNZFRK3VTMFM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.701Z",
+  "provenance": {
+    "source": "docs/tech-design/prepush-ref-awareness.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prepush-ref-awareness.md lines 32-40 in section 2; sha256:5bdec7236e62d19932dec5be92d43966936a7a886206658e5b61f725854c09c4"
+  }
+}

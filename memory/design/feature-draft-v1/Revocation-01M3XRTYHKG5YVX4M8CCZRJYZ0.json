@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3XRTYHKG5YVX4M8CCZRJYZ0",
+  "kind": "Revocation",
+  "subject": "design/feature-draft-v1",
+  "statement": "The proposed feature-draft-local-git successor preserves the continuing obligations and replaces the predecessor design. This transition is presented with that exact successor for operator PR approval and human merge.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M390VA4XAGF2Z2YPQN7JFY14"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:08Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ2E87KHSVDEKHKWFTBZ",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-9",
+  "statement": "If enforcement is attempted while the operator's recorded activation acts are absent — the org backstop change and the ratified AUTO-eligible class set — then the merge lane shall refuse to act and shall route every proposal HUMAN.",
+  "rationale": "the fail-closed activation gate: the boundary moves only by the operator's hand (A-1)",
+  "fit_criterion": "with activation absent, no fixture — however floor-clear — produces a lane act; the refusal names the missing act",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:068b8a42b9682411de07e64ddd095c1c3b2f0724dda443d961c56f7dba62c966",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.934Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRDZ4TYXQVTDQMN3JR8",
+  "kind": "Decision",
+  "subject": "design/fleet-bridge-v1",
+  "family": "decision.3.1.1",
+  "statement": "When the drive's frontier reaches a frozen plan's introducing proposal, the stop registers the await exactly as any other (wake-channel-v1 §3.1): goal object = the plan's introducing proposal landed on the mainline; condition = merged content an ancestor. The resumed touch re-verifies that condition itself (never trusting the wake's reason — the resume protocol's own rule), then triggers projection through the planning stage's contract as its decision principal, journaling the trigger with its effect identities. The projection reads **only the merged plan** (the stage's own invariant — an unmerged plan still refuses, unchanged), so unattended timing adds no new authority: the plan's merge *is* the consent event the stage already binds, and the trigger act is already granted at the drive's current tier. This closes the seam the projection design itself left open and pre-scoped — plan-new-v1 §7 **Q2** (auto-fire on plan-PR merge vs stay operator-invoked; owner: operator; \"revisit with the Trigger design; DINV-1 holds either way\"): this design is that anticipated revisit, the answer (the drive triggers on the wake-delivered plan-freeze touch) landing under FR-11's operator-approved authority — approved at the basis PRD's freeze and again at this design's introducing PR — with the projection contract's DINV-1 holding exactly as Q2 pre-stated.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:49543c89e7ca1db77542ae28dffcec16201e8ffb7f0a2f1b107e1350b3dc577f",
+    "source-design:5caf70f8c045d82995e2034d8f564b430b9b83ff89f853a639087478382c9f15",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQYHJS957C9Y9Z2SCKAF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.613Z",
+  "provenance": {
+    "source": "docs/tech-design/fleet-bridge-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/fleet-bridge-v1.md lines 30-30 in section 3.1; sha256:49543c89e7ca1db77542ae28dffcec16201e8ffb7f0a2f1b107e1350b3dc577f"
+  }
+}

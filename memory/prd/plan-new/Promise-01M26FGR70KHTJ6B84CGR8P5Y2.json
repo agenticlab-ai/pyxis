@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR70KHTJ6B84CGR8P5Y2",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-29",
+  "statement": "When validating a plan/v2 plan before checkpoint presentation or freeze, the plan gate shall validate the closed assessment and non-empty resolvable citation set, mechanically recompute the execution profile under the recorded policy version, and reject any missing/unknown value, absent/unresolved citation set, derived-profile mismatch, downward assurance change, or harness, vendor-product, native-model, native-effort, or provider-specific context identifier.",
+  "rationale": "deterministic validation enforces structure, citation resolution, derivation, and portability; EVAL-2 plus the checkpoint judge substantive support",
+  "fit_criterion": "missing/unknown, absent/unresolved citation, tamper, assurance-lowering, harness, vendor-product, native-model, native-effort, and provider-context fixtures fail before checkpoint/freeze with exact defects; valid demand is byte-identical across repeats; EVAL-2/checkpoint reject irrelevant, contradictory, or partial support",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a139b37bcef5f18dd28e7254287b89b685c36adae1217affdd84f605a31621d6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.104Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

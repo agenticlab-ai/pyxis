@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZPX24CP1HDGJ9W6F2XD5S",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-5",
+  "statement": "An existing document-pipeline feature keeps its merged PRD projection and live designs as its binding contract, and its already projected plans keep executing",
+  "rationale": "Existing features are not migrated in this release (brainstorm:feature-draft#D-26)",
+  "fit_criterion": "Planning state and execution of an existing fixture feature are unchanged across the switch-over",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b31065b8d1f7ee217219569c65fcb641921b377e68e3f781e52b8de4fc070102",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:12Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

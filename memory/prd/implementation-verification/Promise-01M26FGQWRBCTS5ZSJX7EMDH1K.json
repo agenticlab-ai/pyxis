@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWRBCTS5ZSJX7EMDH1K",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-19",
+  "statement": "While any rung result is fail or error, the harness shall report the overall verdict as red or error respectively.",
+  "rationale": "the safety invariant: a pass-class verdict can never coexist with a failed or errored rung",
+  "fit_criterion": "schema-level invariant tests: no verdict instance combines green or green-degraded with any fail or error rung result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e75c0d720ce507ad2d88751cbf0da1ca6806eeb4e2b4f80b37ffd05da6714534",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.776Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

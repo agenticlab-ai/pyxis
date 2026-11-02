@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2V16MY3DV4EV9ZA340T9W51",
+  "kind": "Expectation",
+  "subject": "prd/parallel-memory",
+  "family": "DOD-3",
+  "statement": "Every admission entry and gate mode preserves causal/history safety",
+  "intent": "FR-7, FR-8, UB-4, UB-5, UB-6, M3",
+  "fit_criterion": "Writer matrix, exact malicious fixtures, mode parity, snapshot/transition scope evidence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b4b6b607ddc94b06bb705f5e0eeddb7b4bc196e904db172f50d4e962a9d89e57",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRHJKS5A933XE04A9N0",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "decision.2.1",
+  "statement": "Implement-now commits one exact-revision `review-obligation/v1` beside the succeeded implementation outcome while the task claim is still held, then releases the claim and implementation capacity before admitting that obligation to a separate review frontier. Each review attempt uses one pre-authenticated effective backend, the obligation's verified semantic demand, a fresh read-only disposable workspace, and the exact process identity allocated by impl-review, which implement-now records as `review_attempt_id`. Implement-now separately mints unpredictable post-worker proof bound to that identity. Completion requires impl-review's exact native receipt, the distinct protected proof, and one verified field-identical EVT-13↔EVT-17 pair. The code-host author may be the same as or different from the implementation identity and does not participate in verification.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:56a49400a54c128979ba72bd007a433893ea882289770d03a784e91b81e9e019",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.617Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-authenticated-review-obligations.md lines 46-46 in section 2; sha256:56a49400a54c128979ba72bd007a433893ea882289770d03a784e91b81e9e019"
+  }
+}

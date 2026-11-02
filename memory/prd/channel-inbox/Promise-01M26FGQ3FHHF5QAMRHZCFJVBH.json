@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3FHHF5QAMRHZCFJVBH",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "ABUSE-2",
+  "statement": "Attacker forges or replays a bulletin — vector: publish an unsigned/forged file, or replay a stale one",
+  "intent": "fake or outdated notices reach the fleet",
+  "fit_criterion": "FR-9 integrity/authenticity verification; blocking bulletins clear on their stated condition so a replayed one auto-clears once the pin moved",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c766f13c9703f913de0fe87f9254181b902ae83777d98daf997f62c32535449b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.967Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

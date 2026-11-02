@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMV0882FEN761HFSFGZ",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-13",
+  "statement": "Before coordinated parent activation the compatibility path performs zero pre-invocation network I/O; after activation every pass-routing terminal is canonically appended and exact-read before selected review-model invocation or process-result use, with no other network operation in that interval, and the complete git/proposal evidence then round-trips losslessly.",
+  "intent": "FR-6, FR-16, FR-27, FR-30, NFR-10, NFR-12",
+  "fit_criterion": "pre-parent zero-network trace; post-parent append/exact-read ordering traces; zero-evidence and evidence-store-outage failures; git/GitHub/Carina golden round-trips plus overwrite and mismatch defects",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e038dcf2a1520e052aba5c8515c4a505cc1b2421d9d2bd4c2a4d48bdc69ae12c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.523Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

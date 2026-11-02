@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TAXT67S1G26D3G0XZKFZE",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R1",
+  "statement": "Require typed mutable-source ownership as a release precondition and refuse unowned retirement selections.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Exclusive ownership is the safety boundary for destructive source retirement. FR-3, UB-3, and the Gate phase require missing ownership to stop publication before any deletion authority exists.",
+  "fit_criterion": "Every eligible pilot source has one replayable active feature owner; missing, inactive, shared, inferred, and conflicting ownership fixtures publish zero authority.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:08c52ba113bb547f38e53748220f679f70012139c31495c45689a0391e8ff7d8",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:25:50Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

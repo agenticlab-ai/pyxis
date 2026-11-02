@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNDHQWK90MQBQ4FK9HA",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-10",
+  "statement": "`routing_evidence_invalidated` fires when UB-17 identifies review evidence produced under a defective policy/profile",
+  "intent": "`policy_version:string`, `native_profile_id:string`, `attempt_ids:string[]`, `review_process_ids:string[]`, `artifact_refs:string[]`, `disposition:enum{rerun_required,operator_remediation}`, `evidence_ref:string`",
+  "fit_criterion": "parent EVT-10 + UB-17 audit + health alert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:45582c6bf3c3d1f0a18fbf1ecd250d9e1c3944a663c084ba53a5a53d1da5f9e9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.541Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

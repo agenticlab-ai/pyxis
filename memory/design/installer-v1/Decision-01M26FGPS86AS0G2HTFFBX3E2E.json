@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS86AS0G2HTFFBX3E2E",
+  "kind": "Decision",
+  "subject": "design/installer-v1",
+  "family": "decision.2.1",
+  "statement": "Pyxis ships as an **atomic system release** — one tag builds every engine binary for every supported platform from one commit, packs the payload and the offline dependency bundle, and emits a build-derived **release manifest** that pins every artifact by hash and ownership class; an operand's config pins exactly the system version and the manifest hash (`design-brainstorm:installer-tech-design#D-1`). The release is consumed through **`pyxis`, the front-door orchestrator**: one binary owning init, converge/repair, doctor, and the single acquisition-and-execution path — `pyxis exec \u003ctool\u003e -- \u003cargv\u003e` — behind which every skill, hook, and CI line in an installed repo invokes the engine (`#D-2`). Acquisition is **lazy and per-exec-verified**: every execution re-hashes the cached binary against the manifest before running it, cache misses fetch-verify atomically, and `pyxis converge` pre-warms the full tool set so the offline floor holds (`#D-3`). Install, re-run/repair, and (later) upgrade are one converge over ownership classes; the bootstrap shim that fetches `pyxis` itself is the one shell first-mover, minimized and drilled.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:4247bf2c81afc6b66593278dfdd6d11ab76fe3d0a115211349b7196e7cfa3124",
+    "source-design:5c77436e03f67de06fe736131bde819d3bf27ff6f476a4d7e44ccf41eaae1618",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSGG9V52VDBXSCJ7D9SG"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.64Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/installer-v1.md lines 46-46 in section 2; sha256:4247bf2c81afc6b66593278dfdd6d11ab76fe3d0a115211349b7196e7cfa3124"
+  }
+}

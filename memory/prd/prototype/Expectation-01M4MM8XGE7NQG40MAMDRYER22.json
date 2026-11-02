@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGE7NQG40MAMDRYER22",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-6",
+  "statement": "A failed run stops and reports its cause",
+  "intent": "UB-1",
+  "fit_criterion": "A test that injects a worktree-creation failure and observes the reported cause and an unchanged draft branch",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

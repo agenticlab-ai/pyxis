@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP7SN89C63M9SQ2J4J7",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "UB-1",
+  "statement": "If If launched outside a governed repo or the corpus root is missing, then the system shall refuse with a defect naming the path, operation, reason, and remedy, leaving no server running",
+  "intent": "named defect in the terminal, nothing served",
+  "fit_criterion": "fixture matrix: each case yields the quadruple and a process audit shows no listener",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e8dc3e5eafba632f0e42803e63d47b5bb7f5a9ec581723dfff2e9cc58abbcfe",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.591Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

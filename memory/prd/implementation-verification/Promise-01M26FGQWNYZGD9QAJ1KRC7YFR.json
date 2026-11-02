@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWNYZGD9QAJ1KRC7YFR",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-16",
+  "statement": "The harness shall bind and run the full ladder on fixture repos of at least three distinct stacks (Go plus two others) using only their manifests and the ecosystem defaults — with zero per-stack code in the harness itself.",
+  "rationale": "technology-independence is a tested property, not a claim",
+  "fit_criterion": "the fixture matrix is green in the harness's CI; inspection confirms stack-specific behavior lives only in manifest data and the ecosystem table",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5b70d12dd7472b40a741da2e3527d919ec75fd753143c886a79e94892032a000",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.773Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

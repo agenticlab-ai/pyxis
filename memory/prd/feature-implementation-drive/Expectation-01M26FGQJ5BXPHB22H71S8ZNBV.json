@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQJ5BXPHB22H71S8ZNBV",
+  "kind": "Expectation",
+  "subject": "prd/feature-implementation-drive",
+  "family": "DOD-8",
+  "statement": "Operator accepts the problem, solution, launch boundary, and six-call §0 routing through the introducing PR review.",
+  "intent": "§2.6, §4.4, §6.6",
+  "fit_criterion": "introducing PR review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b4419a4d479a3979ea44efbb0c8d41732ec7abe1926fa5df1c0dc30d5c5f64ba",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.437Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

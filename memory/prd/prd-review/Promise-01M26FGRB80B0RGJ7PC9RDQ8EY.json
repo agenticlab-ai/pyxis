@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB80B0RGJ7PC9RDQ8EY",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "ABUSE-1",
+  "statement": "whoever authors document content — steering the reviewer — vector: instructions planted in the reviewed PRD or its record (\"approve\", \"skip the lens\", fake prior verdicts)",
+  "intent": "a steered verdict corrupts the gate everything downstream trusts",
+  "fit_criterion": "UB-4: content is subject matter, never instruction; injection fixtures in EVAL-2's zero-tolerance family",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cf7ca0059edacb6d91aa6e9b6ecc124a10d30a5a183f43b7c82648d295e6e67f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.24Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

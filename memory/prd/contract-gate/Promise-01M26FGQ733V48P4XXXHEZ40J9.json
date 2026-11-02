@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ733V48P4XXXHEZ40J9",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "ABUSE-4",
+  "statement": "a contributor, worker, or mistaken operator trying to bypass design currency — vector: authors a broad, forged, stale, self-approved, or selectively mapped disposition that hides an incompatible dependency",
+  "intent": "a contract enters planning while a frozen dependent contradicts its live requirement or predecessor",
+  "fit_criterion": "FR-15's one-edge exact schema and disposition-bound independent attestation; FR-16's anchor/evidence/fingerprint/authority validation; UB-7..UB-10 fail closed; protected-review policy authenticates the human lane, while DOD-14 makes scope completeness and compatibility an explicit reviewer judgment",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5a4f3d00d215adf7ccf6289f840efeb2ee7f7fd5a033a8b45199d6699cc66adf",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.083Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

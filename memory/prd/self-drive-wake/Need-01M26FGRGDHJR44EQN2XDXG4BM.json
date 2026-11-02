@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRGDHJR44EQN2XDXG4BM",
+  "kind": "Need",
+  "subject": "prd/self-drive-wake",
+  "family": "G2",
+  "statement": "We believe a status verb with wait ages and a too-long flag; expected result: \"waiting on me\" vs \"waiting on CI\" vs \"stuck\" diagnosed in one command, without the browser",
+  "fit_criterion": "M4 (qualitative drill)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca3eec4c393e5c1ab20396bd4e194b4b9aabbc9eca7bad0873a28c64967a7458",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.405Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJD7JAV18YZ9JM0MZKW",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-11",
+  "statement": "When a branch cannot yet be phrased as a precise question, the skill shall park it as a fog entry typed by what it blocks — blocking when it sits on the chosen direction or a design-template decision-shaped input (the §2 Decision, seam placement, the Serves set), non-blocking when the design document can carry it as its own open question — and while blocking fog remains, the skill shall recommend needs-investigation rather than ready-for-design.",
+  "rationale": "honesty about ignorance, retargeted at the design contract (#D-5)",
+  "fit_criterion": "on under-specified fixtures, zero fabricated directions; every seeded gap is typed; blocking fixtures end needs-investigation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:edf8473914f76d528b52b62c9b3262a1259fcfbb1f6d430b4d8059cae60f799a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.469Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPV3D49PH361YP895PJZ",
+  "kind": "Decision",
+  "subject": "design/prd-lifecycle-home",
+  "family": "decision.2.1",
+  "statement": "Post-merge lifecycle facts live in the **work tracker**,\nanchored by the base PRD's `Tracking` row — the ledger records **contract\nchanges only**. A gate passage or post-launch verdict is recorded on the\nfeature's tracking reference (today: the GitHub issue or PR the base\nnames; any future tracker medium equally, since the pointer is a typed\nreference, not a URL convention). When a verdict has contract\nconsequences — a *kill* retires rows, an *iterate* re-scopes — those\nconsequences travel as **normal amendment operations** whose\n`Learned-from` cites the verdict (`operator-decision:` or\n`telemetry-query:` evidence), which is exactly the model's existing\nshape. The envelope gains an optional `Tracking` row under\n`amendment-template/v2`, validated by declared version (FR-24), so an\namendment whose implementation lands later carries a durable pointer to\nthe work that owes it.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:34d696bb7a8ecbf735947443977066b2adfda4bc5b42c0390648dd04e16f0297",
+    "source-design:ff9eada4122511ce035ac08347e3c33ac5f6e3fa860f97dd6f5122b6de1dde1a",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVPRTBJMPGVK7T96SFQW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.699Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-lifecycle-home.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-lifecycle-home.md lines 33-46 in section 2; sha256:34d696bb7a8ecbf735947443977066b2adfda4bc5b42c0390648dd04e16f0297"
+  }
+}

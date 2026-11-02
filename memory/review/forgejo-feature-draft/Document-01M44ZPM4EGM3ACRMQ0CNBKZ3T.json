@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Document-01M44ZPM4EGM3ACRMQ0CNBKZ3T",
+  "kind": "Document",
+  "subject": "review/forgejo-feature-draft",
+  "family": "report-011",
+  "statement": "Draft reviews/011.md",
+  "tags": [
+    "draft-digest:sha256:5a0e19cec9228537f601f725e4823c5c79e1195398a236338632387830d29620"
+  ],
+  "body_sha256": "9a2cc2a1a9b51dad7817185e20ea314ed4a6a1fc0087da007785457b50905380",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

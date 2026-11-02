@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPY06Z3TXMJ5K81EK9N2",
+  "kind": "Need",
+  "subject": "prd/argus",
+  "family": "G3",
+  "statement": "We believe reserving escalation for breaking decisions; expected result: a high-signal human channel: few briefs, each genuinely the human's call",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1e3c296140afe4c514d960a8938e3f9da9a9a055e0fc1faa9f72eeeae261dd48",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.792Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

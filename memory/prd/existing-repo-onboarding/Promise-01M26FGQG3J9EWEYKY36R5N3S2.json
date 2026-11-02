@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQG3J9EWEYKY36R5N3S2",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "UB-7",
+  "statement": "If a prior pyxis config surface encountered at re-adopt or apply is absent-but-required, partial, or malformed under the closed schema, then the system shall refuse by name, naming the offending key, and change nothing",
+  "intent": "a named refusal naming the key and remedy",
+  "fit_criterion": "a fixture carrying a malformed prior config refuses by name; no tracked file changes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:22e8c05ee80772c9f9a4965fca12bb927b7b38838dabfb382b440cecefd20902",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.371Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

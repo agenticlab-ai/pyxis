@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEFY92DHTEHHDFWQP3J",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "FR-6",
+  "statement": "The help skill shall expose its first-steps path as a directly invokable entry, so an install-time welcome pointer can reference it without interactive navigation.",
+  "rationale": "the installer's future pointer target (Q1)",
+  "fit_criterion": "the documented invocation lands on the first-steps path directly",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1466884b16e142dda801125b14df9c12ee532a0ea970b3170aae75acebc11a5c",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.319Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

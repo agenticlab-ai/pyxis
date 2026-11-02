@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQX01Z9371W39KGJVNYD",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-8",
+  "statement": "If a proposal diff modifies verification machinery — the manifest, a baseline, or harness configuration — then rung 0 shall fail with a machinery finding naming the path.",
+  "rationale": "the implementer must not adjudicate its own gate; baselines are the most gameable artifact in a brownfield setup",
+  "fit_criterion": "catch seed 3 (a baseline addition riding a proposal diff) is blocked in the permanent catch suite; fixture diffs not touching machinery paths never trigger the finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c47dad53f8d1deba27400fcaa501e59a14c8d2393809c04c0259e89b928692c6",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.784Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

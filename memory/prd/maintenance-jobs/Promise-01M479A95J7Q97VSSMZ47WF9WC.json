@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95J7Q97VSSMZ47WF9WC",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-10",
+  "statement": "When a job launches its agent, the executor shall use the resolved native route through the existing unattended harness runtime and enforce the configured execution deadline.",
+  "rationale": "Bounded configured execution",
+  "fit_criterion": "Harness conformance verifies the selected model/effort and literal prompt; native settings remain adapter-owned; all four adapters terminate their process tree on cancellation or deadline",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

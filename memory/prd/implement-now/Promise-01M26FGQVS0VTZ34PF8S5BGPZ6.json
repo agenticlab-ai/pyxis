@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVS0VTZ34PF8S5BGPZ6",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-9",
+  "statement": "If a plan/v2 projected task is missing any frozen demand field, differs from the frozen plan, contains an unknown semantic value, or contains native dispatch data, then the system shall refuse the task before claim and identify the carrier, field, expected value or vocabulary, and remedy",
+  "intent": "task remains unclaimed with a plan-boundary integrity error",
+  "fit_criterion": "one fixture per missing/changed/unknown/native class performs zero claims and names every offending field; mixed task sets continue only independent valid tasks",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:20ff6eadade220ba933e8f650f223e0f304a9afa1c83c888f7cbe049f5870c9f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.745Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

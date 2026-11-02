@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/design-solution-shape#R2",
+  "feature": "design-solution-shape",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

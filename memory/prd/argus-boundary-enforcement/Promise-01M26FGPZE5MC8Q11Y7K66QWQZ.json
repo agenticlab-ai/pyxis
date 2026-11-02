@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZE5MC8Q11Y7K66QWQZ",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-2",
+  "statement": "Where a drive's declared scope cannot be resolved, the write hook shall treat the target as outside scope and deny the write (fail closed).",
+  "rationale": "an unresolvable scope must not fail open (AP-17)",
+  "fit_criterion": "a fixture with no resolvable declared scope denies a write and names the reason; never allows",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bce43332314915464dfe17b362227ecdf1fe6c509781530f51a4a25a216a6ad7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.838Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

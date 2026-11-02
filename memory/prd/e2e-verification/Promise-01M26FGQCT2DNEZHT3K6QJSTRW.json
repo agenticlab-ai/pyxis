@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCT2DNEZHT3K6QJSTRW",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-18",
+  "statement": "When e2e-design is invoked on a feature whose implementation tasks have all landed, the skill shall produce an e2e design doc containing scenarios, setup and teardown, a mock strategy, a harness design, a coverage map, and a per-scenario route.",
+  "rationale": "the design doc is the reviewed artifact everything downstream consumes, and it must carry the machine that proves the coverage as well as the coverage itself",
+  "fit_criterion": "on the dogfood feature and the fixture features, the produced doc contains all six parts, each non-empty or an explicit `none — \u003creason\u003e`; the harness part satisfies FR-19 or FR-20 rather than naming a library only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8bee1679a2402feee43f181b63d23588e1e61792f0a2546716060991916ca300",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.266Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

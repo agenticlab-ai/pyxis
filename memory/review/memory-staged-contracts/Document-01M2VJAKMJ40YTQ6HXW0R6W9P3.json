@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2VJAKMJ40YTQ6HXW0R6W9P3",
+  "kind": "Document",
+  "subject": "review/memory-staged-contracts",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/memory-staged-contracts.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:a26807c84dc077abdabc7ee71500bc177850ff91baac61fcf433358e9410e982"
+  ],
+  "body_sha256": "a26807c84dc077abdabc7ee71500bc177850ff91baac61fcf433358e9410e982",
+  "literal_body": true,
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T00:51:10Z",
+  "provenance": {
+    "source": "docs/reviews/memory-staged-contracts.md",
+    "note": "offline reconciliation"
+  }
+}

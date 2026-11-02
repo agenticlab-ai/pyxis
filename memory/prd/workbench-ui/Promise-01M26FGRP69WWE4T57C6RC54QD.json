@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP69WWE4T57C6RC54QD",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NR-3",
+  "statement": "The CI gate surface is unchanged by v1",
+  "rationale": "a reading tool must not grow gate authority",
+  "fit_criterion": "the docs-gate workflow and check set are diff-identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0b2888be0a7e9d346b69fa3983f16d7960b3e3a8b3d635ec64c8b75357f57d5e",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.59Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

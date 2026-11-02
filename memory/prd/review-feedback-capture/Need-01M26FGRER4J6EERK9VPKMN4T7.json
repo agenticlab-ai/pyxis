@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRER4J6EERK9VPKMN4T7",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "J2",
+  "statement": "When that comment has been acted on (or not), I want close the loop — attach a typed disposition and an outcome reference, so I can know *what happened after* every comment, with nothing left dangling",
+  "rationale": "`#F-7`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d3a4bd3fdbc94cff8ad678dba653652920de946d001ee9be165d61ac632db93c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.352Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

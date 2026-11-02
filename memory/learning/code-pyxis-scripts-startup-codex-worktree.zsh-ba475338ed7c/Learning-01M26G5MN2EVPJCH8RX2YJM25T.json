@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26G5MN2EVPJCH8RX2YJM25T",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-scripts-startup-codex-worktree.zsh-ba475338ed7c",
+  "statement": "The Codex startup adapter now declares Codex-specific top-level options, target and path arguments, and dynamically reads completion data to identify subcommands; it delegates interactive repository discovery and worktree creation to the shared startup module, while help, version, subcommands, unknown syntax, noninteractive calls, and existing linked worktrees pass through to native Codex unchanged.",
+  "intent": "Keep Codex launch classification current after extracting the reusable worktree lifecycle for all supported harnesses.",
+  "rationale": "The previous Codex-only wrapper owned both parsing and Git lifecycle. The refactor preserves its behavior while making the adapter narrow and the shared lifecycle independently testable.",
+  "fit_criterion": "Codex and multi-harness pseudo-terminal tests prove completion-driven subcommand pass-through, option and path preservation, adopted-repository worktree launches, native failure propagation, and the opt-in real-Codex trust-check regression.",
+  "learned_from": [
+    "Learning-01M26A317N8QPQNQA4TJNKMVBC",
+    "script/startup/codex_worktree_test.go"
+  ],
+  "tags": [
+    "code:script/startup/codex-worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M26FGS5DJ2CCVKK9VKB2NWF6"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22GGW00R55WCKQ0R8EY1"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26G22HRFVX70ADSYQD5Z6C2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:29:27Z",
+  "provenance": {
+    "source": "script/startup/codex-worktree.zsh",
+    "commit": "1033cdd340f5015ddd1db35a901155935cb59cfc",
+    "note": "Rebinds the Codex adapter semantics to its installed script/startup identity after the mainline path move."
+  }
+}

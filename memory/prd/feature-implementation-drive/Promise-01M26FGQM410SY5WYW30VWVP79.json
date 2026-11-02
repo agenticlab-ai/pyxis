@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQM410SY5WYW30VWVP79",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NR-4",
+  "statement": "Existing e2e design/review/plan artifacts and routes remain unchanged.",
+  "rationale": "This feature is the deferred build/run consumer.",
+  "fit_criterion": "Byte-level inspection shows no contract change to the e2e authoring line; its output is accepted as input.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca589b3877f95316b0010b502a8f72d0c81dae034564a6924a129190dba44dea",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.5Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

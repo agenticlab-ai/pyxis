@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE40KVC568TV56NDNHY",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..5",
+  "fit_criterion": "recorded run transcript riding the implementation PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:622cf126e7010945a4a6563d093c6301b74afeaf1bc3df8d4c33bef431e14787",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.308Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

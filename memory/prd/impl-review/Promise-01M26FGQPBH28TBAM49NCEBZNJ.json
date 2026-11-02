@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQPBH28TBAM49NCEBZNJ",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-33",
+  "statement": "When the host persistence adapter accepts one completed aggregate for a review-process attempt, it shall publish exactly one schema-valid artifact under an idempotency identity bound to the caller's review obligation, the review process, publication attempt, proposal, and revision, return that artifact's exact native receipt, and expose exact-read by that receipt; a retry after an indeterminate acknowledgement shall return the same receipt or remain non-accepting, never create a second completed-report artifact. The native receipt shall identify the medium object and shall never stand in for the distinct non-secret reference to protected launched-attempt proof.",
+  "rationale": "artifact location and producer proof answer different questions; exactly-once observable publication prevents retries from manufacturing competing evidence",
+  "fit_criterion": "GitHub and Carina fixtures cover success, concurrent duplicate calls, response loss after write, retry, and exact-read; each publication attempt produces one native artifact and one stable medium locator, duplicate bodies or proposal-wide matches never substitute for the receipted object, an indeterminate result stays non-accepting, receipt/proof substitution fails, and every hosted attempt preserves FR-35's reciprocal join",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6d1f5f81878842c74e90cacc6e62d46835485d70b70dab6701bba91a8a20ff10",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.571Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

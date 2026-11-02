@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8J6XEJDD6JEP8F49XN",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-3",
+  "statement": "Gate operation shall consume zero model tokens — every check is deterministic.",
+  "intent": "Cost",
+  "fit_criterion": "inspection: no model/API client linked; the dogfood sweep's gate spend is exactly zero tokens",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0cd43616cf5dbb8ffd6bf37cd55bbcef6f7669cbffc0e51998a31fa17fb799bc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.13Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

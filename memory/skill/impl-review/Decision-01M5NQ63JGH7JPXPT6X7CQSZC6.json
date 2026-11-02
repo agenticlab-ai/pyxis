@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Decision-01M5NQ63JGH7JPXPT6X7CQSZC6",
+  "kind": "Decision",
+  "subject": "skill/impl-review",
+  "family": "edge-case-likelihood",
+  "statement": "The implementation reviewer judges every edge case by how it arises, who can cause it, and what happens before it picks a calibration row. An ordinary case is one the software meets in normal life: any input its interface accepts, including empty, extreme and malformed values; a condition its environment produces in routine operation; or its own failure partway through, interruption, retry, second run, or data an earlier version left. An ordinary case takes the row its defect matches. A rare case needs the environment or stored data arranged deliberately, in a way neither the software nor ordinary use of it produces, and the charter and design do not name it; it cites its lens's rare-case row, CAL-14 to CAL-17, which is advisory in every band. A case a party outside the trust boundary can bring about is never rare, and a rare case that silently and irreversibly destroys or corrupts data the user did not ask to change keeps its blocking row. A blocking edge-case finding names the ordinary path that reaches it, or, for a rare case kept blocking for data loss, the data it destroys and the arrangement that leads there; the screen keeps a finding that names neither only as advisory.",
+  "intent": "Keep implementation review converging on the defects users meet: a task is not held for cases nobody reaches in ordinary use, while attacks and silent data loss still block it.",
+  "rationale": "In the prototype drive's task T1 (October 2026), review after review raised a new case that needed a deliberately arranged repository, and each one blocked: a separate Git directory named .git inside another directory, an initialized submodule, a linked worktree nested in an ignored path, another checkout holding the runtime-state path, leftover upstream configuration, a fetch mapping into the draft branch, a prototype inside another worktree, and an unborn branch with the prototype's name. Two of them needed new contract versions (problem:prototype#A-8 and A-9), a third run ran out of fix rounds, and T1's code outside tests grew to about 400 lines against a planned 180 to 280. The operator's rulings never reached the reviewer, which reads only the charter, the governing design and this calibration, and the correctness-critic lens hunted edge cases with no definition of which ones matter. On 2026-10-23 the operator ruled that likelihood is a dimension of an edge case, that a case which rarely happens should not block, and that the definition must be general rather than written for the repository cases.",
+  "alternatives_rejected": [
+    "Write the principle into each feature's charter or design: it bounds only that feature, and the lenses treat an instruction addressed to the reviewer inside the charter as a planted directive, so only the reviewer's own calibration can carry it.",
+    "Have the reviewer estimate each case's probability: a model's estimates vary from review to review, while how a case arises and who can cause it are checkable.",
+    "Ignore every rare case: a rare case that silently destroys user data costs more than the check that prevents it, so it keeps its blocking row; other rare cases stay visible as advisory findings.",
+    "Lower the reviewer's effort or raise the remediation bound: the first weakens every review, and the second runs the same loop longer."
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M5NP0EDHKMXW966X4VYARR13"
+    },
+    {
+      "type": "about",
+      "target": "Promise-01M26FGQNQY05KFJFP4NQ3G1JD"
+    }
+  ],
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-24T01:07:44Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/calibration.md",
+    "note": "The operator, on 2026-10-23: \"we are asking for the edge cases, but we are not explaining what the edge case even means\"; \"likeliness is one of the dimensions that we should consider. If an edge case is not gonna happen that often, or rarely happen, so we should simply ignore that as an edge case\"; and, on a first draft that named repositories set up by hand: \"It's not gonna generalize well to the definition of rare edge cases.\" The operator approved the general wording and asked for this change. The T1 sequence is in the prototype drive's delivery journal from entry E-50. The first version of this decision, merged in pull request 1606, required every blocking edge-case finding to name an ordinary path, which would have downgraded the rare data-loss case its own exception keeps blocking; the automated review of that pull request found the contradiction."
+  }
+}

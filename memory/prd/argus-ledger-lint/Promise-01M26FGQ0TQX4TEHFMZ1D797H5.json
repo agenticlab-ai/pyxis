@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0TQX4TEHFMZ1D797H5",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "FR-7",
+  "statement": "Both arms shall be report-only — they shall detect and report defects and shall mutate no file.",
+  "rationale": "docgate gate verbs never mutate (docgate-v1#DINV-3); the guard observes, it does not repair",
+  "fit_criterion": "across every fixture run, the working tree is unchanged by either arm; the only writes in a gate run are the sanctioned projection writes of other verbs, never these",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9c421b0c268198e60dad2c56ddceef55c162b235653346cdb11a998c50d639d5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.882Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2FKCVSS2HTN087DVED",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-15",
+  "statement": "When asked for any read or query, the tracker shall additionally emit schema-versioned, machine-readable structured output; and every mutation shall be scriptable and return the affected identifier(s).",
+  "rationale": "scripts and the engine consume structured data, never scraped prose (AP-6); `gh --json` parity the factory depends on (harbormaster sweep §2)",
+  "fit_criterion": "every read/query verb's JSON parses against its golden schema; mutations return ids parseable by a script",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d9985483fea2f9104ccad890d13a10067e850be76c82d32af954f36f1c794987",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.959Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

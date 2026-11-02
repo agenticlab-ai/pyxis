@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP2PEXGJ9GABQNANFXK",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NFR-3",
+  "statement": "The reading room shall function fully with no network egress, all assets local.",
+  "intent": "Offline integrity",
+  "fit_criterion": "a session under a deny-all egress filter completes every flow; an asset audit of served pages finds zero external references",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dafa58aecb24cbebe60dac227181bd510881a3dc84d09bfbc5c57bf96773ffc0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.586Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

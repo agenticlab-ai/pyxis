@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG3C4BXY5SG0E6R7FZB",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-4",
+  "statement": "If a prototype does not reach a working state, then Pyxis shall record what stopped the build as a finding.",
+  "rationale": "The purpose is to understand the challenges, and the hardest is often what stopped the build (brainstorm:prototype#D-9)",
+  "fit_criterion": "A run on an idea that cannot be built in the repository ends with a findings record whose findings name the obstacle",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EARF95KNY3REVW523TJWW",
+  "kind": "Document",
+  "subject": "source-retirement/cdffc28ba493eea83a753093983ecb90d46720e0612f240c1174d2e79d1d8a98",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/e2e-review/lenses/coverage.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "2eaa392e130035401d68cf0fe1b963f77ef3cb1b0ec648549e11a43df831f4d3",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:45Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/e2e-review/lenses/coverage.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

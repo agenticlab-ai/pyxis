@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NH88A9B3V5MYCK4NY01",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "NR-1",
+  "statement": "Code transitions, authored-source retirement, record evidence, and strict closeout retain existing checks",
+  "rationale": "Policy representation cannot bypass semantic obligations",
+  "fit_criterion": "Existing changed-code, stale-anchor, source-deletion, missing-evidence, and closeout negative fixtures still refuse through the new policy path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0291694c6619bade46302e142e234ae59d0b520448bb191096d71688cf1bb138",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

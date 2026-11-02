@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWK0HV8RMRVCMT9JSTF",
+  "kind": "Decision",
+  "subject": "design/code-gate-mirror",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implement-now/FR-8 · prd:implement-now/UB-5.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:4829ded8af479a35f457c7034c85f4b6b5da0be758f8c22edfd3d5d0e95b0674",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMVF4SXG45QTQ9Z76B67"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT7QQZAE1A3V74Y9AXS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVNR7J6P8SFS0GPF9PD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.795Z",
+  "provenance": {
+    "source": "docs/tech-design/code-gate-mirror.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 4829ded8af479a35f457c7034c85f4b6b5da0be758f8c22edfd3d5d0e95b0674"
+  }
+}

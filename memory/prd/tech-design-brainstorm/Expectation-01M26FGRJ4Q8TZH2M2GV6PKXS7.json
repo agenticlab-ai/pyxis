@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ4Q8TZH2M2GV6PKXS7",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "EVAL-1",
+  "statement": "one question per turn, recommendation attached",
+  "intent": "all interview turns, full corpus",
+  "fit_criterion": "≥ 95% single-question; 100% recommendation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6c91e1e9575e2759c1d639f2df4ffd84627d1d42be1d54b4717f4d6f0893e91",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.46Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

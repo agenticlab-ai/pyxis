@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXK68JVS24P5ZPS92JS",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-6",
+  "statement": "Adding a neutral check shall land as a new self-contained unit discovered by derivation — self-registration, scan, or build — with no edit to any shared list or existing rung code (AP-27).",
+  "intent": "Maintainability",
+  "fit_criterion": "demonstrated in-tree: the catch-suite's seeded checks and at least one neutral check land via the derived-registration seam; inspection confirms the demonstration diffs touch no central aggregate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c604bb03ea8d37d1ae91b8a9e9086735543f324fa20d887ef3c1e2cf25c20bea",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.803Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

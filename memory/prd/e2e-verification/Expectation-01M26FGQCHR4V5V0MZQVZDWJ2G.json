@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQCHR4V5V0MZQVZDWJ2G",
+  "kind": "Expectation",
+  "subject": "prd/e2e-verification",
+  "family": "EVAL-3",
+  "statement": "the buildability lens flags a harness section a worker could not build from — an element of FR-19 unanswered, or answered only by naming a library or tool — and a scenario that cannot be built against the harness as specified",
+  "intent": "a corpus of e2e design docs with seeded harness holes (an unanswered element, a library-name-only section, a scenario naming a seam the harness does not carry, a scenario with no owned artifact) plus complete controls",
+  "fit_criterion": "every seeded harness hole flagged; zero buildability findings on the complete controls",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:734a889522cc2f77e358b309c6f614de01c6d89fb46f209cd08da46464b9016d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.257Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

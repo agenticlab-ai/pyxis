@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR420JVXTTZAJVW6E3KZ",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-8",
+  "statement": "The sweep shall expose its outcome as distinct exit codes: clean, findings-present, and fault.",
+  "rationale": "scriptability for schedules and drives",
+  "fit_criterion": "fixture matrix: clean fixture → clean code; finding fixture → findings code; broken-repo fixture → fault code",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:061bdbced437dabb31dd995ab08568ea284fbf63af832d6f1d07fe854d360fa4",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.01Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

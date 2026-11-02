@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M37KSR8JEZP05JSD6FH8GADB",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "NR-2",
+  "statement": "Rendering remains self-contained and requires no server or JavaScript package installation",
+  "rationale": "the viewer must stay portable and offline",
+  "fit_criterion": "a clean fixture render succeeds with no network and no package installation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f326dc5a8104d73ed6911da9ac42f202c39903297fa57b2b819f942f3b8e961",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGR8JFK621FW0AT80QZCP"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:07:48Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "note": "compiled from sha256:a387fab5e6c17af36fd52f201f2862752581900889124086933013edab9bbc44"
+  }
+}

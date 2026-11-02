@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390TE6EEW8VFCB05GYYFYTK",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v2",
+  "family": "decision.2.1",
+  "statement": "The mechanical contract gate is a **docgate-hosted mode** — a `docgate contract-gate <feature>` verb that resolves a feature's assembled contract from docgate's own committed machine faces, composes a **feature-scoped subset of docgate's checks** (the live `check-citations` for links, `GenCoverage` for inverse coverage, the design index's stale flags for currency, plus two new self-registered checks for structural completeness and compilability), and returns one closed-schema **verdict**; on any failing verdict it emits **one dual-face defect report** which the host retains to git as an immutable event record. The gate itself is **read-only** — it emits, it never commits or mutates; a passing contract materializes nothing. plan-new invokes the verb at planning entry (a hard gate, via an additive amendment to its ledger); a docgate CI check runs the same checks as the advisory continuous surface.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b8b2b54b53d4acd81cc8fbe7a559db60d4b8178cff6111f9452d09a073d242a8",
+    "source-design:4e4e927ec4b3ae717592564f6dd062a57ff9bd03a88947d40409a3f270d9e70e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PH15Z89WJH6Z36TW8C03"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:37Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/contract-gate-v2.md lines 47-47 in section 2; sha256:b8b2b54b53d4acd81cc8fbe7a559db60d4b8178cff6111f9452d09a073d242a8"
+  }
+}

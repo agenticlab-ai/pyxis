@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8JFK621FW0AT80QZCP",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "NR-2",
+  "statement": "The bootstrap-era doc-review scripts and their vendored runtime are untouched",
+  "rationale": "maintained, never extended (repo language policy); the viewer composes with them, not into them",
+  "fit_criterion": "zero diff under the review-tooling scripts and vendor trees",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:48cead38c4452c427f11e8aaa8eca407f1e878dda7e8f79a9bd7fb7ca1dda77b",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.154Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

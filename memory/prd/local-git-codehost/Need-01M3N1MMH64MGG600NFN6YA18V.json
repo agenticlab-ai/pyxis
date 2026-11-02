@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M3N1MMH64MGG600NFN6YA18V",
+  "kind": "Need",
+  "subject": "prd/local-git-codehost",
+  "family": "J3",
+  "statement": "When A plan produces code, I want Review and land the exact code proposal locally, so I can Verify delivered work",
+  "rationale": "issue #1302",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

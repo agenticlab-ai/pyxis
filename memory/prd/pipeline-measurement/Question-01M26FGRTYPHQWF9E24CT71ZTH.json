@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTYPHQWF9E24CT71ZTH",
+  "kind": "Question",
+  "subject": "prd/pipeline-measurement",
+  "family": "Q3",
+  "statement": "The record's schema and home: a first append-only slice of the Ledger (system-design D7, open) or the delivery-ledger cost line (context-pack WR-3)",
+  "intent": "design",
+  "rationale": "open — `brainstorm:pipeline-measurement#P-3`",
+  "fit_criterion": "design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:87dd5b57e4ed1586e1f285c60bc830796fb362fa1bf9b7d2517ebe04502f5691",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.742Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

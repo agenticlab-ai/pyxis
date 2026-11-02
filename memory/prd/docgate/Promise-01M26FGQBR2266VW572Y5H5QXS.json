@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBR2266VW572Y5H5QXS",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "NFR-3",
+  "statement": "the repo's Go rules apply in full.",
+  "intent": "Maintainability",
+  "fit_criterion": "gofmt/go vet/golangci-lint clean; `go test -race` green; stdlib-only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:82595fa298a72e6ce6cfd667b6d32f6d1aa77b067ad9951ab370ef5e8cbe97d5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.232Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

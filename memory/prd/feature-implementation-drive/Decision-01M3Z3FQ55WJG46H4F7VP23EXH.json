@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3Z3FQ55WJG46H4F7VP23EXH",
+  "kind": "Decision",
+  "subject": "prd/feature-implementation-drive",
+  "family": "R9",
+  "statement": "verify exact canonical proof before landing and post-crash progress; atomic rejection and idempotent result observation",
+  "intent": "Preserve the source risk mitigation in the proposed local Git landing contract for operator PR review.",
+  "rationale": "Missing retained proof or a failed lease is treated as recoverable success.",
+  "fit_criterion": "Hosted mode retains authenticated human review and human merge with all existing required checks. Explicit local-git mode requires a complete satisfied ReviewGate for the current task, proposal generation, head, and feature base; an operator-declared once-only receipt binds that aggregate's retained origin ref, object id, and digest. Only the separate operator route may land; it atomically publishes the reviewed task tree at the leased feature base, final proposal/evidence/archive state, and real leased proposal-branch deletion. No task or dependent advances until the retained proof and landed revision are verified on the freshly fetched feature branch. Local output discloses unauthenticated actor and shared-account limits. Exactly one final proposal identifies current F, M, C and the scenario-set fingerprint. Hosted mode retains authenticated human merge and the required candidate verdict with current-base enforcement. Explicit local-git mode requires the complete accepted candidate-evidence/v1 envelope and every required scenario result, retained at an immutable origin ref and embedded in the final proposal. The declared once-only receipt binds proposal generation, head, target, F/M/C, scenario set, and evidence ref/object id/digest. The operator route atomically leases main M to a child L with tree(C), feature F to its retained child marker with tree(C), and a distinct final-proposal branch at F to deletion, together with final proposal/archive evidence. Any moved ref, absent/altered evidence, unaccepted result, or inconsistent receipt refuses landing and post-crash completion. The drive invokes zero local landing operations.",
+  "tags": [
+    "source-unit:f54cbbf9d94f372ebd912d5ed75f96166084520669dca35ef6d8fff480792a90",
+    "source:prd-ledger",
+    "reconcile:prd-disposition"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:04:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "Native source disposition proposed with amendment 001; operator approval and human merge remain pending."
+  }
+}

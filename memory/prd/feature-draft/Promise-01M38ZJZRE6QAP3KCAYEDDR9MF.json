@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJZRE6QAP3KCAYEDDR9MF",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-3",
+  "statement": "requirement_changed fires when a ruling changes a requirement",
+  "intent": "feature: string, requirement: string, ruling_author: string, reason_present: bool, problem: string",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:db879455511babb654b6c4d69082a598c6aa9cec7d54600663f7ea1ec9d83844",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:04Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

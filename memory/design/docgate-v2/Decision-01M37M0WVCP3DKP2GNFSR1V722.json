@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M0WVCP3DKP2GNFSR1V722",
+  "kind": "Decision",
+  "subject": "design/docgate-v2",
+  "family": "decision.2.1",
+  "statement": "v2 extends the same binary with five class linters and one\ngenerator, all composed into the existing `gate` umbrella (DINV-4\nunchanged — desk and CI identical): `lint-tech-designs` (header schema, typed\n`Serves` grammar, mandatory-by-name §Observability + §Security & privacy\nwith the none+reason escape and the security header↔subsection pair,\nslug rules, reference resolution); `gen-index` + `verify-index` (the\ndesign graph as `index.md` + `index.json` — generated, byte-verified,\nsole writer docgate, exactly the projection pattern of v1's fold);\n`lint-wiki` and `lint-rollups` (routing/metadata header presence and\nshape); `check-governing` (any diff touching the vision or principles is\na defect unless the commit carries the `Governing-Change: operator`\ntrailer — attestation, not authorization: the machine checks presence,\nreview checks truth); `lint-incidents` (append-only entries, dense `I…`\nIDs, four named fields). Class rules live in `internal/docgate/schema`\nas registries, like v1's table schemas. Semantic judgment stays human\neverywhere.",
+  "tags": [
+    "code:internal/docgate/schema",
+    "reconcile:design-decision",
+    "source-block:ea8bdae9a824abbc72dfb9088fc710f7f325bce0631ab3604a4e6951b42111cf",
+    "source-design:8b5717694760885a5b0f8069fc67c9c8747519d5c5c540d4bf2f2a3251bb07d3",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPPWE03945WFS6E7HV99"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQW4365NW9EADTF7EYN2W"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:42Z",
+  "provenance": {
+    "source": "docs/tech-design/docgate-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/docgate-v2.md lines 32-47 in section 2; sha256:ea8bdae9a824abbc72dfb9088fc710f7f325bce0631ab3604a4e6951b42111cf"
+  }
+}

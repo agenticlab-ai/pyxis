@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPYX4XVVRTCA85MCQ6FR",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-12",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "all live Must FRs (§5.1)",
+  "fit_criterion": "CI run link + fixture-corpus report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e4e3c5f644312458e244033c73af54740e0ead69ba5943ab7e207c42b43845f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.821Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3Z39MVZHKP1G80D3NCNPMM0",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "ABUSE-6",
+  "statement": "Drive bypasses review/progression — vector: lands or marks complete from proposal/receipt alone",
+  "intent": "premature integration",
+  "fit_criterion": "FR-31, FR-32, FR-10, NR-7 inside normal route; direct shared-account writes remain outside its guarantee",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:973f49b33a01820f2fa1ee190f90616ae6374aff2f7ec86aa5f1bf634250129b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGQHTG9ZJW1NQNF1DWVVP"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:10Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "compiled from sha256:21ff1c7841e4754da06e4ae3723f73de7456d4a66d1c82592f3ed8e357ae6153"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBW07HJ6HAEJ9SM52CQ",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-13",
+  "statement": "The reviewer shall run at both authoring moments: on the draft 000-base after the fold, and on an amendment after validate+fold+diff — reviewing the folded effect (diff, affected IDs, blast-radius declared-vs-computed honesty, Learned-from resolution) plus the resulting projection's chain integrity, scope-locked to the change.",
+  "rationale": "both doors guarded (— #D-7); amendments are where frozen contracts actually change",
+  "fit_criterion": "both moment fixtures run the full protocol; the amendment fixture catches a seeded blast-radius understatement and a dangling Learned-from",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:48a50b0971dd943d10c459faabe85451a7d48c7f4ef57d7cc01940de8d20169c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.26Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

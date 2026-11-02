@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRS3VS9M3DWMDE6BZB4A",
+  "kind": "Question",
+  "subject": "prd/e2e-verification",
+  "family": "Q3",
+  "statement": "The unmanned reviewer's advisory-ramp / adoption checkpoint (mirrors the existing reviewer program)",
+  "intent": "technical design",
+  "rationale": "open — design-owned; the human operator's acceptance is the gate meanwhile",
+  "fit_criterion": "design handoff",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:90b21350b7e0c06f6d83f4bb6a4d43cffb72caa7a380c7b6b972f2506ca6a71e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.683Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

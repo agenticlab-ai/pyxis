@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDEVKCQ1861DQRSBTQT",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "J3",
+  "statement": "When an e2e design doc is approved, I want turn it into an ordered plan of tracker tasks the executor can build in the right order, so I can hand the build off without hand-writing issues or wiring build order",
+  "rationale": "`brainstorm:e2e-verification#D-12`, `#D-10`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:207a0d760eb18e31b8ca3c63da7233cfeaa131e672672707c153468843096f31",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.286Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

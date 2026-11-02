@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Learning-01M32Q6E3XP47HNCBJBGCXT5SA",
+  "kind": "Learning",
+  "subject": "learning/forgejo-review-publication-and-scoped-evidence",
+  "statement": "Forgejo implementation reviews use the existing durable publication and recovery protocol with qualified proposal/receipt identities. Review obligations, process records, and publication evidence each accept a configured Git ref, and coordinator, publication adapter, and recovery verification all select those same refs.",
+  "intent": "Preserve review authenticity and restart behavior while allowing independent feature runs to reuse one remote repository safely.",
+  "rationale": "A proposal reference must preserve its provider, server port, and base path, and a receipt must identify the repository and native comment. Reusing default review evidence refs during a temporary shared-repository test would write into unrelated durable review state; creating only some alternate refs is insufficient because repair can still consult the defaults. All three evidence stores therefore need scoped configuration propagated through execution, exact-read publication, and repair.",
+  "fit_criterion": "Native Forgejo publication retains the same durable fence as GitHub; exact reads reject foreign or malformed receipts and preserve permission/trust checks; the configured-ref regression seeds the shared defaults, completes and repairs a review through alternate refs, and proves all seeded defaults remain unchanged.",
+  "learned_from": [
+    "internal/implreview/persist/proposal_identity_test.go#TestProposalRefPreservesProviderServerPortAndBasePath",
+    "internal/implreview/persist/github/native_test.go#TestNativePublicationUsesSameDurableFenceAndQualifiedReceipts",
+    "internal/adapters/persist/forgejo/harvest_test.go#TestForgejoHarvestTrustAndReceiptBoundaries",
+    "cmd/implement-now/review_evidence_ref_test.go#TestReviewConfiguredEvidenceRefsIsolatePublicationAndRepair",
+    "internal/executor/config/review_evidence_test.go"
+  ],
+  "tags": [
+    "forgejo",
+    "review-evidence",
+    "durable-publication",
+    "code:cmd/impl-review-harvest",
+    "code:internal/executor/config",
+    "code:internal/executor/reviewinvoke",
+    "code:internal/implreview/harvest",
+    "code:internal/implreview/persist",
+    "code:internal/adapters/persist/forgejo",
+    "code:internal/implreview/persist/github"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2BV7G9R46K8AVDRQXA3CN19"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-21T19:30:57Z",
+  "provenance": {
+    "source": "cmd/implement-now/review_evidence_ref_test.go",
+    "note": "Retarget Forgejo review persist/harvest onto adapters/persist/forgejo."
+  }
+}

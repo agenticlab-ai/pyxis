@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZP10A44NJYFA99GPWG9VH",
+  "kind": "Document",
+  "subject": "prd/feature-brainstorm",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/feature-brainstorm/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:9601116aaffc81a4105e269464a39747d600b9a7de85a485f629497983bea144"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBVFQJ7F80TEFCHD5JNYX"
+    }
+  ],
+  "body_sha256": "9601116aaffc81a4105e269464a39747d600b9a7de85a485f629497983bea144",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:00Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

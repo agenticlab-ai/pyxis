@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7MX69QB11SE582XNAT",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NFR-1",
+  "statement": "Given one frozen plan and one tracker state, projection shall produce one outcome: identical create/link/wire sets and an identical report, independent of run count or interleaving.",
+  "intent": "Determinism",
+  "fit_criterion": "property fixtures: byte-identical reports (modulo timestamps/ids) across repeated and interrupted runs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f9adaf13374df4b3eaab8b6282b1e234180d9e2d694a5ce6974167affc278e9e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.124Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

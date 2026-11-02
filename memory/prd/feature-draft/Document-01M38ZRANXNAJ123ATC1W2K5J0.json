@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M38ZRANXNAJ123ATC1W2K5J0",
+  "kind": "Document",
+  "subject": "prd/feature-draft",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/feature-draft/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  ],
+  "body_sha256": "7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:59Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

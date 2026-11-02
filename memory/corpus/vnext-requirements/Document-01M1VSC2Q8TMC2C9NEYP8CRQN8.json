@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC2Q8TMC2C9NEYP8CRQN8",
+  "kind": "Document",
+  "subject": "corpus/vnext-requirements",
+  "family": "requirements",
+  "statement": "Imported Pyxis source document: docs/prds/vnext-requirements.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "dcdcb44387b8dabdad1d4e6bce7b7e075a02b6f2eca3623271cf39353c94efa9",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:37Z",
+  "provenance": {
+    "source": "docs/prds/vnext-requirements.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDNK9D863X76KMT02NG",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "J1",
+  "statement": "When a new 000-base reaches its gates, I want rule on the ranked judgment calls, the numbers, and the author's questions in minutes, so I can sign (or veto) before merge freezes the base, without a full read",
+  "rationale": "brainstorm:gate-attention#D-2, #D-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:54c6debc626baf23d39632ad5537cfee5485fe0fb98f6815d744a765a698b2bf",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.317Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

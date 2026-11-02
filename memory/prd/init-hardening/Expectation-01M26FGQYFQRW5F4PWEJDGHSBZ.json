@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQYFQRW5F4PWEJDGHSBZ",
+  "kind": "Expectation",
+  "subject": "prd/init-hardening",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..NR-3",
+  "fit_criterion": "suite result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38a93195849d8b8cb1bf240c9bed20e5e277da8f805e3be5451aea7fcf9599d6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.831Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

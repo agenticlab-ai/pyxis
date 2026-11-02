@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M37KYA39P0Z19Q5B2ZZ08Y1N",
+  "kind": "Question",
+  "subject": "prd/workbench-ui",
+  "family": "Q3",
+  "statement": "Launch story: the Go verb/entry point and its home in the system release (#G-3)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "implementation",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:a78d0a4ec076fd69c782b0e350c7b8819e1b6f8029ceca69c7a4bd71a156434a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:10:17Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "note": "captured from sha256:f2e22c52e2f7f8075d7088a7c0a760fc624e3960295149df4cb0475294ba8418"
+  }
+}

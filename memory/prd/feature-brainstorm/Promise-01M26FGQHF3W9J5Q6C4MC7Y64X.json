@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHF3W9J5Q6C4MC7Y64X",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "NFR-1",
+  "statement": "The skill shall orient through routing surfaces (indexes, header tables, glossary) and shall load a full document body only when its Relevant-when matches the idea.",
+  "intent": "Cost / orientation bound",
+  "fit_criterion": "on fixture sessions, every full-body load is justified by a matching Relevant-when/header row; orientation reads ≤ 10 documents",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5e4572851bb52ce8cc3ee8a68340285f9e0a6e71eb728fafdacb29eefa4f1f58",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.415Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

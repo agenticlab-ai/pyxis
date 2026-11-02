@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ16MWRWPBCGRV64VNVD",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "NR-2",
+  "statement": "`check-immutable`'s governed set is unchanged, and the Argus ledger classes' appends never trip `check-immutable`",
+  "rationale": "the classes stay disjoint from `check-immutable`; the history arm is a *separate* guard (argus-artifacts §3.8)",
+  "fit_criterion": "`check-immutable`'s governed-path set is unchanged in code; a legal ledger append produces zero `check-immutable` defects",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d43e9381f0fa610fd7a7a02729d0eaa5ef2de1541b3d3a1210baf02d5b875d06",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.894Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ2DJ416PZYBM6CSGX6P",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-8",
+  "statement": "While the lane is unactivated, the lane classifier shall run in shadow — computing and recording lane verdicts without acting — and the recorded verdicts shall support the agreement measurement against actual human dispositions.",
+  "rationale": "earn enforcement with evidence (GATE-4 rollout posture)",
+  "fit_criterion": "over the shadow window, every evaluated proposal has a recorded verdict and zero acting side effects; the agreement report is computable from the records alone",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f3e995d1a686c8cb55ba0012e2f5bf07fc25d7dc1b331b0e7175175ae706fd4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.933Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP7G94P2ZNDSXXAAMTA",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-3",
+  "statement": "When reviewing, the reviewer shall generate through the four lenses — spec fidelity, design \u0026 convention conformance, security \u0026 abuse, correctness critic — and shall ship only candidates that survive independent adversarial screening.",
+  "rationale": "the class lens pack; screening kills plausible-but-wrong findings",
+  "fit_criterion": "lens attribution on 100% of findings; the §5.9 catch evals demonstrate each lens (EVAL-1/2/3/7) catching its seeded family; the screen fixture shows a seeded plausible-but-wrong candidate killed before shipping",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3f92a41e0ab88c9990326e5b98da5680cb5ac82232d4295b593fd59e934077e5",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.567Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

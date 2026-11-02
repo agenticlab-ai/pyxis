@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR3RRFQBE106GDJ4N919",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-sweep",
+  "family": "DOD-5",
+  "statement": "The scheduler shim exists, is delegate-only, and its shim test is green; the scheduling binding is documented",
+  "intent": "FR-7",
+  "fit_criterion": "the shim test run + the doc",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38d2e838be4f351b120fe25249c6b0a837b540d7a83c7013b1b5532307d9e2a7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

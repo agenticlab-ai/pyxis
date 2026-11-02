@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD61Q8P2PWYXKRA7J0C6",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "UB-2",
+  "statement": "If If agent token resolves to another login, operator login is absent/equal to agent, or review actor cannot be authenticated, then the system shall refuse without inferring a human identity.",
+  "intent": "identity refusal",
+  "fit_criterion": "Mismatch fixtures create no PR/tag; native review actor compared with configured human.",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

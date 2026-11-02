@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZME6Y19NXREFQ7J8ZMW7T",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-3",
+  "statement": "When a feature draft locks, the system shall store every part of it in the repository memory, each file's exact text included.",
+  "rationale": "One home for the contract, written at the lock; the plan stays outside it (brainstorm:feature-draft#D-24, brainstorm:feature-draft#D-25)",
+  "fit_criterion": "Every part of each locked fixture draft, the end-to-end fixture feature included, is retrievable from the repository memory as records and as each file's exact text; zero new files appear under the document corpus's PRD, tech-design, brainstorm, and review roots for any draft-born fixture; and the memory holds no record or capture of any draft-born plan.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8938afb94b668e59dd6c2d6d1dd1d4154efc98789aeff8e716851f756dfbe483",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:51Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

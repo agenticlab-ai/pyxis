@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8KPT38185G58WV3M35",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "UB-1",
+  "statement": "If If the plan directory is missing, empty, or the named version does not exist, then the system shall refuse with a defect naming the path, the operation, the reason, and the remedy, writing nothing",
+  "intent": "named defect, no output file",
+  "fit_criterion": "fixture matrix: each case yields the quadruple and zero writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b5491591e8ad944e9dc174e6371314efd8ea5b145ff7063d17c3b9b18eefdb86",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.155Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

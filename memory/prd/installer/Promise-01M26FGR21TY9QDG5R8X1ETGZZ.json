@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR21TY9QDG5R8X1ETGZZ",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-9",
+  "statement": "If an argument beginning with `-` occupies a positional slot, or an unknown flag is passed, on any `pyxis` verb, then the system shall refuse with a named usage error before performing any write or external operation",
+  "intent": "the usage refusal",
+  "fit_criterion": "misparse fixtures (flag-after-positional, unknown flag) on init/converge/doctor refuse with zero writes and zero external operations, in interactive and flag-only modes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6894fd0493d23f5a31173330da9b78af6027a3ebed17a4d29cfcaec0a47d9d11",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.945Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

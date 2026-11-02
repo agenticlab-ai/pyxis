@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3WDAD798QKTX4G02B4MGKK1",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-6",
+  "statement": "Zero writes does not prove that an unbound destination received no credential.",
+  "intent": "Already-proposed P-2 corrective patch, recorded under problem:forgejo-feature-draft#A-5; separate single-row attribution for the compiler.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

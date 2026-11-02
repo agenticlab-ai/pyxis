@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG24F6N2AH0TB05W0XH",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-3",
+  "statement": "When a prototype run ends, Pyxis shall record each thing the run taught as a finding of kind technical challenge or product conflict, stating what was tried and what was observed.",
+  "rationale": "\"try to understand what are the challenges technical challenges where the product conflicts that we need to think through\" (brainstorm:prototype#D-7)",
+  "fit_criterion": "The run's findings record holds at least one finding, or the explicit statement that the run found none; every finding carries its kind, what was tried, and what was observed",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

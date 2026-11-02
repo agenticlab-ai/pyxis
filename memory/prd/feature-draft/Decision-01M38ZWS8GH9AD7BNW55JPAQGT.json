@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZWS8GH9AD7BNW55JPAQGT",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R3",
+  "statement": "Keep existing features on their frozen documents, checks, and bindings, and defer moving them into drafts to WR-5.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The operator scoped the release to day one (brainstorm:feature-draft#D-26): new features start as drafts and no migration ships, so an existing feature's contract stays its merged documents (NR-5) and the document pipeline's checks keep guarding them (FR-30, NR-3).",
+  "fit_criterion": "After the switch-over, an existing fixture feature keeps its merged PRD projection, live designs, and projected plans unchanged, and its documents still trigger the existing immutability refusals.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:041ccfd4ba13fe4d2fa06cd0486a925cb573dc3a1afbf4a4bb8ebce94f0d0156",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:25Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDAE1881RJA01QF1BN4",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "G2",
+  "statement": "We believe reviewing the e2e design through blind lenses (coverage, anti-gaming, buildability) plus a human doc-review pass; expected result: coverage gaps, hollow or mocked-away scenarios, and harness designs nobody could build from all caught *before* anything is built",
+  "fit_criterion": "M2, M3, M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:219d1cedb26ea227e7d577c953a7ed0fcf8996192db2b23aef84bb8fa57ce53f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.282Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

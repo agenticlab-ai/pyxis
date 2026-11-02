@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDRNAKQZWZMK5BT4W9P",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "J4",
+  "statement": "When the convention has run a while, I want know whether §0 actually captures the feedback that matters, so I can trust the 80% trade-off with evidence, or recalibrate",
+  "rationale": "brainstorm:gate-attention#D-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cdf48585f0c53911c4c13e86b0964ab772b35cbf72749e1e2fb7b795bd784042",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.32Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

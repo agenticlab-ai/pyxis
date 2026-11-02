@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE8DAGAH9E39SZQ8TMT",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "DOD-5",
+  "statement": "Non-regression holds",
+  "intent": "NR-1",
+  "fit_criterion": "the implementation PR's diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d6fd0eca90cb27367f4ceeee54aa53ed3e2be74032238d938b64615e33a7e876",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.312Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

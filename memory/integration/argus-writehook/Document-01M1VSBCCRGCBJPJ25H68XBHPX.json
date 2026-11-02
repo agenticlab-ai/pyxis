@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBCCRGCBJPJ25H68XBHPX",
+  "kind": "Document",
+  "subject": "integration/argus-writehook",
+  "family": "overview",
+  "statement": "Imported Pyxis source document: .pyxis/writehook/README.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/writehook",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "c29e0841c0e457f52cc7ea85b46f8a01bf7ca9cb60d104526c79fab86e45e55c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:14Z",
+  "provenance": {
+    "source": ".pyxis/writehook/README.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

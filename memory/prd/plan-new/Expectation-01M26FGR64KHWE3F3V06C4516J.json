@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR64KHWE3F3V06C4516J",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-10",
+  "statement": "No live unwanted-behavior, non-regression, or abuse row is broken, including whole-plan refusal for invalid demand and zero mutation of frozen plan/v1.",
+  "intent": "UB-1..UB-7, NR-1..NR-4, ABUSE-2..ABUSE-3",
+  "fit_criterion": "suite results, plan/v1 byte-identity report, and audit notes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e34e27f687230fc5459854fe0faf1aa6922fab7af020d9157131236439fb437d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.076Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

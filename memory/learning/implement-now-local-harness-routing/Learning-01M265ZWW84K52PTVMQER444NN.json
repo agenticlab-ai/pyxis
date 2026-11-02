@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M265ZWW84K52PTVMQER444NN",
+  "kind": "Learning",
+  "subject": "learning/implement-now-local-harness-routing",
+  "statement": "Machine-local implementation and review harnesses resolve independently. OpenCode can bind the existing implementation profiles to explicit provider/model IDs after semantic profile selection. The config parser and adapter reject malformed mappings, missing selected profiles, and unavailable configured models; evidence-activated routing rejects these overrides. Cursor reviews use credential-only snapshots, bounded cancellable Keychain reads on macOS, and an isolated file credential store. They retain plan mode and the enabled sandbox while acknowledging workspace trust. Cursor data uses a relative path into runtime state to avoid its long-path fallback outside confinement.",
+  "intent": "Allow an operator to use authenticated OpenCode models for implementation and Cursor for review while preserving routing precedence and runtime isolation.",
+  "rationale": "A backend name alone did not ensure that the implementation model was available or that the isolated reviewer could authenticate. Bind the configured model through implementation continuations, keep review selection separate, and thread authentication context through review invokers and task-state preparation. Confined launches also require native CLI data to stay inside the allocated runtime state.",
+  "fit_criterion": "Hermetic command E2E verifies local OpenCode implementation and Cursor pre-publish/post-green review routing. Opt-in native smoke tests verify implementation file edits followed by supervisor commits and a read-only Cursor fixture review. Runtime tests cover credential isolation, cancellation, and long data paths.",
+  "learned_from": [
+    "cmd/implement-now/local_harness_e2e_test.go",
+    "cmd/implement-now/local_harness_live_test.go",
+    "internal/executor/runtime/environment_test.go"
+  ],
+  "tags": [
+    "code:cmd/implement-now",
+    "code:internal/executor/reviewinvoke",
+    "code:internal/executor/runtime",
+    "code:internal/executor/runtime/cursor",
+    "code:internal/executor/runtime/opencode",
+    "code:internal/harnessconfig"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T17:31:33Z",
+  "provenance": {
+    "source": "cmd/implement-now/resolver.go",
+    "pr": 1169,
+    "commit": "36dced093c6fda817fdbc0d7c0962502df96b6c1",
+    "note": "Records the local model policy and authenticated confined launches implemented and tested in this PR; it does not assert full live tracked-plan delivery."
+  }
+}

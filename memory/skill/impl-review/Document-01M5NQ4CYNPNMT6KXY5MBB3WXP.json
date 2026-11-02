@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5NQ4CYNPNMT6KXY5MBB3WXP",
+  "kind": "Document",
+  "subject": "skill/impl-review",
+  "family": "calibration",
+  "statement": "Captured authored source: .pyxis/skills/impl-review/calibration.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:583e99eb0bcab846d5d07052fe33ee692202e225b3cbd3c1bfe778a53555f06c"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M5NNX54XBJMAHJ9BJTT14QJW"
+    }
+  ],
+  "body_sha256": "583e99eb0bcab846d5d07052fe33ee692202e225b3cbd3c1bfe778a53555f06c",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-24T01:06:48Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/calibration.md",
+    "note": "offline reconciliation"
+  }
+}

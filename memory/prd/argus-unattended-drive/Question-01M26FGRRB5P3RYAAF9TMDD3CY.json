@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRB5P3RYAAF9TMDD3CY",
+  "kind": "Question",
+  "subject": "prd/argus-unattended-drive",
+  "family": "Q1",
+  "statement": "How does the lane compose with a future operator-granted Argus `approve-merge` (tier-4) — precedence, attribution, sole-merge-actor? (brainstorm:argus-unattended-drive#G-1)",
+  "intent": "operator + design",
+  "rationale": "open",
+  "fit_criterion": "WR-1's revisit (not this contract)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:bed95ed620aeff6636ad22de48e8f41ce1ea0490c1016b9bd11f57923e36f821",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.659Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

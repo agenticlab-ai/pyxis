@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJXZ1WYK5AR8NY7WVTNDJ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-2",
+  "statement": "draft_step_failed fires when a draft step fails for a reason other than readiness",
+  "intent": "feature: string, step: string, error_class: string",
+  "fit_criterion": "§3.3 defect guardrail",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c9f76984c73935ea2457d880ec7b1072a229b5b43a8b5d3ccbe611abeb63c0ff",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:02Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M4MM8XH1BHPJX8CJY4ACGT8S",
+  "kind": "Document",
+  "subject": "feature/prototype",
+  "family": "events",
+  "statement": "Draft events.md",
+  "body_sha256": "5a33d5969c77c48fc0672e7c1d6f6390b75302dc18eac18b99e7a79499569a48",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

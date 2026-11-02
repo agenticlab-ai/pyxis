@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQE2RCKQVPE52ZWRB6EQ",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "UB-8",
+  "statement": "If no existing harness fits the feature's primary external interface and some element of the mechanical design cannot be settled — for example no way to observe an outcome, or no way to isolate a run from its neighbours, then the system shall record that element as an explicit blocking open item naming what is unresolved and why, and hold the design doc short of approval until it is settled or the scenarios that depend on it are re-routed; never let a library name or a tool name stand in for missing mechanics",
+  "intent": "the doc lists the unsettled element as a blocking open item; the doc cannot be approved while it stands",
+  "fit_criterion": "the unsettleable-harness fixture produces a doc carrying the element as a blocking open item and does not reach approval; zero harness sections pass with an element answered only by a library name",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9feda0a70f32be9bb8ae2cd912d3487689597b69659ba00bf14c356e4b592cf8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.306Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

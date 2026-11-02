@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRK9PG60DMVMRJ94EBY",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "decision.3.2.1",
+  "statement": "Configuration parsing distinguishes an absent `executor.review` block from a present block whose optional `backend` is empty. Absence returns `ReviewInstall{Enabled:false}` and performs no build, auth, catalog read, or model work. Presence creates a closed `ReviewInstall` with a positive independent width, attempt budget, and either one explicit backend or inherited backend selection.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:afb65d4b1c8c01d34e68b8e89222f092e2afcfd6185fc85d2ac3021f765b4ea8",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.619Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-authenticated-review-obligations.md lines 60-60 in section 3.2; sha256:afb65d4b1c8c01d34e68b8e89222f092e2afcfd6185fc85d2ac3021f765b4ea8"
+  }
+}

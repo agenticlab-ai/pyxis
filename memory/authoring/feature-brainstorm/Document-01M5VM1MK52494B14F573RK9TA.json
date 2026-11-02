@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM1MK52494B14F573RK9TA",
+  "kind": "Document",
+  "subject": "authoring/feature-brainstorm",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/feature-brainstorm.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:6da54500c8fec84bbaff9be56668d5b614fc802f84d83f75bf580fbfc9810c56"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3C7R1QM479V55HPWENEQWAE"
+    }
+  ],
+  "body_sha256": "6da54500c8fec84bbaff9be56668d5b614fc802f84d83f75bf580fbfc9810c56",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:19Z",
+  "provenance": {
+    "source": ".pyxis/authoring/feature-brainstorm.md",
+    "note": "offline reconciliation"
+  }
+}

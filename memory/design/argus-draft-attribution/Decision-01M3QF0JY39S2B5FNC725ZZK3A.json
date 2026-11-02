@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QF0JY39S2B5FNC725ZZK3A",
+  "kind": "Decision",
+  "subject": "design/argus-draft-attribution",
+  "family": "decision.3.4.1",
+  "statement": "In the single-user shared-account workflow, a drive that can run Git can also omit the environment slug or alter local hooks. The stamp and its binding make honestly labeled commits checkable and detect accidental stale bindings or replay. They are not an adversarial isolation boundary against that drive. Human review of the exact prepared head, Argus attribution, memory, and code gates remain merge controls. A stronger supervisor-owned commit path or operator-held signing key requires a separate design and deployment. This change adds no key, credential, network call, or privileged service.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8c7ec03d96a9916e53265a6b7c91b77e7ecc00ee781b97901ffea1eb310dabe0",
+    "source-design:50840bb44ee6bd5ac4ef45d4549e97811137877a00fcf9c7d76e5f2e0d12f77e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3QEXBNV1JSCVM6XR3V2ZYM0"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:52:00Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-draft-attribution.md lines 71-71 in section 3.4; sha256:8c7ec03d96a9916e53265a6b7c91b77e7ecc00ee781b97901ffea1eb310dabe0"
+  }
+}

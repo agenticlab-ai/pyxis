@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVTTXKKTWD068MX6XTW",
+  "kind": "Decision",
+  "subject": "design/routing-evidence-v1",
+  "family": "decision.3.7.1",
+  "statement": "Proposal/report/tracker payloads and measurement datasets are deterministic projections from canonical events. A projection carries event IDs, evidence-ref proof, and its own digest. Acceptance exact-reads canonical events and rejects missing, stale, extra, or field-different faces.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d06fc643315ea72c2201b848a158414e372db37b539f52f63068bb50634fdfff",
+    "source-design:e5aede37de9d27aedcbde713870bd19a84dcbda30559a99ced0819f23f89cf71",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWW6DXH1BJ76CANEP432"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.722Z",
+  "provenance": {
+    "source": "docs/tech-design/routing-evidence-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/routing-evidence-v1.md lines 191-191 in section 3.7; sha256:d06fc643315ea72c2201b848a158414e372db37b539f52f63068bb50634fdfff"
+  }
+}

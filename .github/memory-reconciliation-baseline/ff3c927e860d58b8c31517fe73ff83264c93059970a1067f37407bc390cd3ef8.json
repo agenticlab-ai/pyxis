@@ -1,0 +1,8 @@
+{
+  "code": "missing-design-target-memory",
+  "scope": "design/init-hardening-v1 -\u003e prd:installer/FR-23",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

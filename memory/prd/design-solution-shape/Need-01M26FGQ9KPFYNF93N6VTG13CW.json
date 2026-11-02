@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9KPFYNF93N6VTG13CW",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "G2",
+  "statement": "We believe freezing only the durable Decision keeps the design record trustworthy over time; expected result: reviewers trusting a frozen Decision without cross-checking the code for the current shape",
+  "fit_criterion": "M2 + qualitative review verbatims",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4352b3fedc0c977968951e5ff5e3a778a697f0587788569f9576a2e89c99cf0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.163Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

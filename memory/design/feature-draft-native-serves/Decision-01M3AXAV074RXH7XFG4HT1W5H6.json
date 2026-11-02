@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3AXAV074RXH7XFG4HT1W5H6",
+  "kind": "Decision",
+  "subject": "design/feature-draft-native-serves",
+  "family": "authorization",
+  "statement": "A native Decision may serve an active native requirement claim only when its feature has no PRD ledger at the trusted base or candidate, and the trusted evaluator already includes this rule.",
+  "rationale": "Document-captured requirements retain indexed design coverage; a candidate cannot grant itself native authority.",
+  "tags": [
+    "code:internal/memory/reconcile",
+    "code:internal/memory/cli"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-24T23:52:08Z",
+  "provenance": {}
+}

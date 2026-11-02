@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3WDAD782GEKN5HTCA8K8VYV",
+  "kind": "Answer",
+  "subject": "prd/forgejo-feature-draft",
+  "statement": "Require pre-merge protection or an equivalent enforceable mechanism, positive exact-head human evidence, and unapproved, stale, agent, rejected, changed-head, and privileged-bypass merge negatives; retain independent post-merge review.",
+  "intent": "operator",
+  "rationale": "Same bounded repair instruction and interpretation as P-1, problem:forgejo-feature-draft#A-5; no additional product choice",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3WDAD77903R1372RCV6EX62"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NXD3WD12C7B67HXRQYG",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "UB-4",
+  "statement": "If If a candidate would make a previously rejected or dangling historical act effective, then the system shall Refuse the reinterpretation while preserving valid explicit retirement as the repair path",
+  "intent": "Carrier, relation, and prerequisite context",
+  "fit_criterion": "Exact backdated-document/revocation and dangling-target fixtures refuse even when another defect is present; a different rejection reason is not mistaken for activation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a262f3f3184844e1144ee493321cb2388f36b50acb4de27adf57786c5ad5963c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:56Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

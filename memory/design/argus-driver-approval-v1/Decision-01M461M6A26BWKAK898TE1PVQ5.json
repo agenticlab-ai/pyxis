@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M6A26BWKAK898TE1PVQ5",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-6-preserve-historical-lock-bytes-and-identify-delegated-locks.1",
+  "statement": "Keep human `draft-lock/v1` records byte-compatible. New driver\nlocks use `draft-lock/v2`, adding `approval_kind: argus`, `policy_commit`, and\n`approval_evidence`. Approver fields contain the actual host account; ReviewID\nis the real GitHub review ID, including a commented review. The lock core\nderives policy from the merge's first parent and supplies it through a bound\napproval port along with the prepared head and digest. Refuse a delegated\nresult without that exact pre-merge policy binding. Existing immutable-tag,\nidempotent-retry, compiled-text, and fresh-clone validation stay in place.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6560a5e313b617bed89cf33258672dd2da4a802f2e81d066662754ce33568320",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:39Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 154-161 in section 3-d-6-preserve-historical-lock-bytes-and-identify-delegated-locks; sha256:6560a5e313b617bed89cf33258672dd2da4a802f2e81d066662754ce33568320"
+  }
+}

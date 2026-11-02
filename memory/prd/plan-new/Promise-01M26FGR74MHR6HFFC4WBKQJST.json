@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR74MHR6HFFC4WBKQJST",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-5",
+  "statement": "When a drafted task exceeds any sizing threshold, the planner shall split it or attach an explicit oversize-acceptance naming why it is unsplittable — a silently oversized task shall not validate.",
+  "rationale": "sizing enforced structurally at the only cheap point",
+  "fit_criterion": "over-threshold task without acceptance is rejected; with acceptance validates carrying the flag",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2e27df840cde39eb6c0e0d25bbfe90a57913146601451334b7f73e2cd60afbbe",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.108Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

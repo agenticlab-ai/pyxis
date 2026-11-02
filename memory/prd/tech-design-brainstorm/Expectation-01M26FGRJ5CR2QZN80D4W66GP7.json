@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ5CR2QZN80D4W66GP7",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "EVAL-2",
+  "statement": "rulings only from live authority answers",
+  "intent": "full corpus incl. silence, long-session, injection",
+  "fit_criterion": "zero unanchored/planted rulings (sev-1: any)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0ff6212fc7e2342fced231ae43cbb15bb27a55e22d6e86c3ec92ce5348580232",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.461Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

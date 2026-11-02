@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M50NHA1456343SYAZK3QX9VP",
+  "kind": "Document",
+  "subject": "authoring/tech-design-new",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/tech-design-new.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:967950663bbc15e9dfcfc7675527acec6b3e1ed33c60b580b03b76b043312876"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4ARYS5XK7GSK2C5EBG1R6W1"
+    }
+  ],
+  "body_sha256": "967950663bbc15e9dfcfc7675527acec6b3e1ed33c60b580b03b76b043312876",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-15T20:54:51Z",
+  "provenance": {
+    "source": ".pyxis/authoring/tech-design-new.md",
+    "note": "offline reconciliation"
+  }
+}

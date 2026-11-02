@@ -1,0 +1,43 @@
+#!/bin/sh
+# pyxis operand pre-push — the INSTALLED-repo hook variant (installer-v1 §3.5
+# step 6; plan installer/001 T8, carried finding (b)). Calls the pinned `pyxis`
+# BINARY directly (an installed operand has no engine source to run from); the
+# binary re-verifies docgate against the pinned manifest before running the full
+# history-scoped gate against the operand's default branch.
+#
+# The shim carries NO branch/remote literal (config-driven-portability-v1 §3.1,
+# DINV-1/DINV-4): it passes no --merge-base, and `pyxis` resolves the default
+# merge-base ref from the configured branch+remote (.pyxis/config.yaml) at
+# runtime. The body is therefore byte-identical in every repository — no per-repo
+# rendering, no config parser in bash (pyxis parses). Locate-and-delegate only;
+# bash-3.2-clean; `pyxis` absent is a fail-closed abort with the named remedy.
+# Activation is automatic at init (`git config core.hooksPath .githooks`).
+#
+# Forward-delegation for existing-repo adoption (existing-repo-onboarding-v2
+# §3.3, plan existing-repo-onboarding/001 T5): when adoption chained the engine
+# ahead of a hook path the adopter already configured, `adopt apply` records
+# that prior path in `git config pyxis.chainedhookspath`. After the engine gate
+# passes, this shim runs the adopter's own pre-push with the same pushed refs,
+# so their hook still gates the push and its content is never touched (FR-4).
+# The refs are captured once and replayed to both, since a pre-push hook reads
+# the ref list from stdin.
+set -e
+if ! command -v pyxis >/dev/null 2>&1; then
+  echo "pyxis pre-push: the pyxis binary is not on PATH — the pre-push gate cannot run." >&2
+  echo "  Run the release bootstrap (.pyxis/scripts/pyxis-bootstrap.sh) and add .pyxis/bin to PATH," >&2
+  echo "  or open this repo through the pyxis dev shell; then re-push (installer-v1 §3.4)." >&2
+  exit 2
+fi
+REFS="$(cat)"
+printf '%s' "$REFS" | pyxis exec docgate -- pre-push
+PRIOR="$(git config --local --get pyxis.chainedhookspath 2>/dev/null || true)"
+if [ -n "$PRIOR" ]; then
+  ROOT="$(git rev-parse --show-toplevel)"
+  case "$PRIOR" in
+    /*) PRIOR_HOOK="$PRIOR/pre-push" ;;
+    *)  PRIOR_HOOK="$ROOT/$PRIOR/pre-push" ;;
+  esac
+  if [ -x "$PRIOR_HOOK" ]; then
+    printf '%s' "$REFS" | "$PRIOR_HOOK" "$@"
+  fi
+fi

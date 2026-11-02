@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQM06HBEZ87M8T9R278C",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-8",
+  "statement": "The feature drive shall fail closed on ambiguous authority, ownership, revision, or evidence state and preserve artifacts on destructive paths.",
+  "intent": "Security",
+  "fit_criterion": "All ambiguity/destructive-path fixtures stop work and delete no durable artifact without explicit human confirmation.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e0d8d4024454e8be8bdd21aafc47aeabc53e7fe84d4ead0ac2311e25348f9ae",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.496Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ76PRDBENAM5PK1DJ1M",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-11",
+  "statement": "Each of the five checks catches its seeded defect class and passes a clean fixture; the currency check additionally clears only exact, current `design_dependency` and `requirement_service` dispositions carrying a compatible independently authenticated approval over their exact edge, mapping set, policy, and record, and blocks uncovered, retired-without-replacement, malformed, expired, ambiguous, broad, empty, and unauthorized cases.",
+  "intent": "FR-3..FR-6, FR-14..FR-19, UB-7..UB-10",
+  "fit_criterion": "per-check fixtures plus complete positive/negative currency-disposition and approval-attestation matrix",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1f396dc83a8b225e9b28bdc2d7540ad37736624e2b15b36d6532005fc5861781",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.086Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

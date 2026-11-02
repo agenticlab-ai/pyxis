@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQK9ADDNTK6BYAFJ0A4",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-16",
+  "statement": "If effective depth or pass count falls below FR-24, a zero-pass terminal is attempted, critical passes share lineage or review different revisions, a remediation round is counted as a pass, or one required pass is absent, stale, invalid, non-accepting, or disagrees, then the system shall preserve all evidence, name every violated invariant, and refuse aggregate satisfaction until the complete correctly floored, mutually blind exact-revision set succeeds",
+  "intent": "non-accepting aggregate with contributing outcomes and exact violations",
+  "fit_criterion": "floor, zero-pass, single-pass-critical, shared-context, leakage, mismatched-revision, remediation-miscount, missing-pass, and split-verdict fixtures never accept",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d5c1039474708e5e4413327c0847dd90f80177b55fb1bc5b7d231aaf10ea00dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.611Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

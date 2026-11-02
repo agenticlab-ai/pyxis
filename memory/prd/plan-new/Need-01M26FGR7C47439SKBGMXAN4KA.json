@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7C47439SKBGMXAN4KA",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "J1",
+  "statement": "When a feature contract (PRD + design) is approved, I want decompose it into dependency-ordered, agent-ready tasks in one pass, so I can have the fleet implementing within one executor tick",
+  "rationale": "pyxis#58; inversion test (vision §1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:59cb82e9c3a8c616aa0ed5c69bbf3bfa54d58afe822ad65aa8bcff75a568902c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.116Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

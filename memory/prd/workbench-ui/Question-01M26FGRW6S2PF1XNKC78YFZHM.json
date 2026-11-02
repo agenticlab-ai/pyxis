@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRW6S2PF1XNKC78YFZHM",
+  "kind": "Question",
+  "subject": "prd/workbench-ui",
+  "family": "Q5",
+  "statement": "Annotation hand-off mechanics without UI-side review machinery (#G-5)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "implementation",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:c3b1522a64b2003f47af9f640b464927c3a74b28c7292ffc536ca26a8e8dbde7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.782Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

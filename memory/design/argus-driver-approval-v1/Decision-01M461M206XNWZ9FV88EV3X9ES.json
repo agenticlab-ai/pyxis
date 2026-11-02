@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M206XNWZ9FV88EV3X9ES",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-3-bind-the-whole-approval-subject.1",
+  "statement": "The closed decision carries schema, Argus principal, repository,\nPR number, full head, full pre-merge policy commit, drive slug, review evidence,\noptional capture line, and the prepared digest for contract PRs. Serialize\ncanonical JSON in one marked review block. Reject unknown fields, duplicate\nor noncanonical keys, trailing content, multiple markers, empty evidence, and\ninvalid full SHAs. A draft PR must name its explicit reviewed digest matching\nthe single `Draft-Digest` trailer on its native preparation commit. Non-draft\nPRs omit the digest. Both cold contract reviews remain the readiness check's\nresponsibility; implementation review remains its own protocol. The evidence\nis the driver's accountable summary and references, not an assertion that the\napproval command reran or independently authenticated a reviewer.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:880d8f6a130c544ef99de12c1ec5aeb28bb2b0a3fad0cf3de08a945dbf3564d6",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:35Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 109-119 in section 3-d-3-bind-the-whole-approval-subject; sha256:880d8f6a130c544ef99de12c1ec5aeb28bb2b0a3fad0cf3de08a945dbf3564d6"
+  }
+}

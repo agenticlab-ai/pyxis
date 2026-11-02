@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR95JM93Y90F6R9DE235",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVT-10",
+  "statement": "`routing_evidence_invalidated` fires when UB-10 or UB-14 identifies evidence produced under a defective policy/profile",
+  "intent": "`policy_version:string`, `native_profile_id:string`, `attempt_ids:string[]`, `review_process_ids:string[]`, `artifact_refs:string[]`, `disposition:enum{rerun_required,operator_remediation}`",
+  "fit_criterion": "health alert + UB-10/UB-14 audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7720b93b23512e535dcd91e072564d123e2dc5d7ea62e0a7951385b47fe5387b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.173Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

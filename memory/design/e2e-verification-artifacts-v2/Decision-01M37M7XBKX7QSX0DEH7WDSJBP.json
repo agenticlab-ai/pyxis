@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M7XBKX7QSX0DEH7WDSJBP",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-artifacts-v2",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:e2e-verification/FR-11 · prd:e2e-verification/FR-14 · prd:e2e-verification/FR-15 · prd:e2e-verification/FR-18 · prd:e2e-verification/FR-19 · prd:e2e-verification/FR-2 · prd:e2e-verification/FR-20 · prd:e2e-verification/FR-21 · prd:e2e-verification/FR-22 · prd:e2e-verification/FR-23 · prd:e2e-verification/FR-4 · prd:e2e-verification/FR-5 · prd:e2e-verification/NFR-5 · prd:e2e-verification/NR-1 · prd:e2e-verification/UB-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:43e2ab94e5e0be7a64141885d2fe583c7ca1bfb9079b8afc66be84d8856cb948",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRWVHJH50SZWVR0S524Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCQ8EB0QP7YN8K9NPNV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCRBHWVJJS5S8ZD2JTP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCSVMXXB8GMVTNECRTY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCT2DNEZHT3K6QJSTRW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCV0XKJ4VE38M1S11VY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCW4XS9PH12XZPJ7HKY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCXX3J27CFWKJT10636"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCYQCNKJDVWD88DGEV5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCZESBYP8EA08SYCNAA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD06F7PJWSR4XW2Q892"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD586AX0MT5793S662G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD670VSN2R1A5KX6S1V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDRSY1N8NH55YNYBDDX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDS6E740W362PF8TW79"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQE2RCKQVPE52ZWRB6EQ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQXR7H76CEY5F92599QMX"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:32Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-artifacts-v2.md",
+    "note": "projected from exact design header 43e2ab94e5e0be7a64141885d2fe583c7ca1bfb9079b8afc66be84d8856cb948"
+  }
+}

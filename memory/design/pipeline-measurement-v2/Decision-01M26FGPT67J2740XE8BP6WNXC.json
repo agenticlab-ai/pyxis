@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPT67J2740XE8BP6WNXC",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.11.1",
+  "statement": "a new **standalone tool** — a thin `cmd/\u003cname\u003e` main over an `internal/\u003cname\u003e` package (`#D-6`), **not** a docgate verb (docgate owns doc governance; measurement is a distinct concern, and folding it in would bloat docgate). Two faces: a **recorder** (post-hoc parse → bracket → capture → reconcile → write) and a **reader** (query → efficiency → present, FR-9). The recorder runs **post-hoc** over the harness's own session record, which is what makes it execution-agnostic (FR-7) and zero-overhead (FR-10) — no live hook into the model loop. The engine absorbs this tool later, as it absorbs the store. The two mains parse flags before positionals and refuse a flag-like positional as a usage error before any write (DINV-9, incident I3).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8bd4f9b1b4049a392e2d690bcc3c9fcda3f26a2a809cbebe79f093388b170302",
+    "source-design:848be6bb1101995e3e698ade196fe74ee1eddf3150285b46b2e557a5764b59d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.67Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 126-126 in section 3.11; sha256:8bd4f9b1b4049a392e2d690bcc3c9fcda3f26a2a809cbebe79f093388b170302"
+  }
+}

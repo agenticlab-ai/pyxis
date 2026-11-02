@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRHRGPMDN9VJ92E1WZXZ",
+  "kind": "Promise",
+  "subject": "prd/skill-command-prefix",
+  "family": "UB-2",
+  "statement": "If If the PR train is mid-flight (some skills renamed, some not), then the system shall allow the mixed surface until the closing PR; not enable the all-skills prefix gate early",
+  "intent": "some `/pyxis-*` and some legacy short names coexist temporarily",
+  "fit_criterion": "gate is absent or inactive until the closing PR; per-skill hard cuts still hold",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a9a6117884eb858e2b783a368272e744b191464b9214ccb3a529f52a4d8cc523",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.448Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

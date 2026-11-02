@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR51RA7M8BHM625XA3R7",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "EVT-3",
+  "statement": "reconciliation_check fires when a recorded figure is checked against harness accounting",
+  "intent": "phase_id: str, recorded: number, harness_reported: number, within_tolerance: bool",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6a375071f167336570d368c23ec4a3b20b564ba2068f58271cb045560de8d51f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.041Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

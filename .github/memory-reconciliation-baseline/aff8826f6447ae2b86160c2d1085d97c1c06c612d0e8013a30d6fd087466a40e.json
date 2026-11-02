@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/argus-ledger-lint#R4",
+  "feature": "argus-ledger-lint",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

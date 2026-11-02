@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M2ER4CQHQ8JTPGHC3ATP3",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.3.1.1",
+  "statement": "both faces are exposed as callables independent of `Run`. The **read** is near-existing — converge already offers a write-free classification callable (`Drift`, running the shared scan predicate) — so exposing it for `adopt` is trivial. The **write** is not yet separable: the per-class writes live inline in `Run`'s loop (entangled with archive acquisition and per-file manifest re-hash), so this design **exposes archive-backed engine-verbatim and generated write primitives** (returning the action set) extracted from that loop — a real, named converge change, not merely the read exposure. `adopt` consumes the classification findings **plus the generated-class desired bytes and the verified archive** (not the finding set alone) and never invokes `Run` (`design-brainstorm:…#S-1`); `Run` itself is not extended with adoption semantics (§3.7).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:31cabf6d75ca6651e7b4c00c618cc53e1bcf5d7eace62481a3085473f2adbe6a",
+    "source-design:391b7e5b557a6f3e5a74e3de11e245a069bc6e84b0036bd6fabfa241cd5c40df",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQR73R5BHX8DZ23AGNE"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR5M8VSD8XT5FX6ZKW1Y0"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:33Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 52-52 in section 3.1; sha256:31cabf6d75ca6651e7b4c00c618cc53e1bcf5d7eace62481a3085473f2adbe6a"
+  }
+}

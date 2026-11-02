@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7206EDP14B6R4KWH2R",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "ABUSE-3",
+  "statement": "a contract author faking a pass — vector: hand-edits a machine face (the source map or index) to fabricate coverage or currency",
+  "intent": "the gate trusts a forged input",
+  "fit_criterion": "the machine faces are docgate-generated and byte-verified in CI (`verify-generated`); a hand-edited projection fails the existing docgate gate before this gate runs — the gate inherits that guarantee rather than re-proving it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5b05b73724cd3ef6e46c2152b0ccb212f52c4e38a21945a61e0c64db4257417f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.082Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

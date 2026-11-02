@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGY3NYR8Z8MA58NR1RW",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-2",
+  "statement": "While orienting, the skill shall check the idea against merged capability and prior refusals (non-goal and waiting-room rows of merged PRDs; out-of-scope rulings in prior records) and shall surface every overlap with its source and reasoning.",
+  "rationale": "duplicate and re-litigated ideas are the cheapest sessions to end early",
+  "fit_criterion": "on fixtures seeded with a covered idea and a previously-refused idea, the overlap is surfaced with the governing row cited, before any framing is offered",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4981a0501e3014879c3d80ef6a720ad5a8a31e099885dd854e2d1b3411ba869f",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.398Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXJTK9D1H50591GJKEF",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-5",
+  "statement": "Harness operation shall consume zero model tokens — every v1 check is deterministic.",
+  "intent": "Cost",
+  "fit_criterion": "inspection: no model/API client linked; the dogfood run's harness spend is exactly zero tokens",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0b333da40259617fe3961c9a70c0793cefc9f0aa28fe850b69bcf2c1824f17de",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.802Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

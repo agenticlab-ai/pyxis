@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD66FS5CPV7Z42QTAS5Z",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "ABUSE-1",
+  "statement": "Agent or test attempts lock authorization. — vector: Synthetic or agent review",
+  "intent": "False human approval",
+  "fit_criterion": "Separate configured human actor and authenticated exact-head review",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

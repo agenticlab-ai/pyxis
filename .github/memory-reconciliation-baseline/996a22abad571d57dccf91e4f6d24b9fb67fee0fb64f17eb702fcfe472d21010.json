@@ -1,0 +1,8 @@
+{
+  "code": "invalid-prd-disposition",
+  "scope": "prd/abandoned-feature-retirement#R4",
+  "feature": "abandoned-feature-retirement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

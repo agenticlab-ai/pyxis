@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Document-01M2V11YN5PS8RSVK45FVHYF8P",
+  "kind": "Document",
+  "subject": "template/prd-template",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/prd-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:8effd5f736d2ee12284829b4d9e317930df81d86dfc53a8d2ce1e72d3b8a8476"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBBP2KK05QS4MDB5H6F3K"
+    }
+  ],
+  "body_sha256": "8effd5f736d2ee12284829b4d9e317930df81d86dfc53a8d2ce1e72d3b8a8476",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:49:21Z",
+  "provenance": {
+    "source": ".pyxis/templates/prd-template.md",
+    "commit": "bceecbfb978b1ead28d567eaa9d5cfd93263225c",
+    "note": "offline reconciliation"
+  }
+}

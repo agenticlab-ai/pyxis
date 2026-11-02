@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNRT5Y5XY6XGMVRVBAX",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-14",
+  "statement": "If the invocation carries no task charter, the reviewer shall refuse with a named defect; if the charter is present but materially defective for review (ambiguous, self-contradictory, or contradicting the governing design), the reviewer shall escalate an upstream-defect class (FR-17) and withhold findings against the defective span.",
+  "rationale": "honest scope; a broken spec is bounced, not silently reviewed against",
+  "fit_criterion": "the charter-less fixture refuses; the defective-charter fixture escalates with the upstream class and withholds the affected findings; no degraded silent pass exists",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a396e24f6e187146a280303e6eea2e3359f720eca633e9d1f6741e4ac561825e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.552Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

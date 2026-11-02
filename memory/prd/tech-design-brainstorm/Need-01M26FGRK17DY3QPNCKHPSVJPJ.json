@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRK17DY3QPNCKHPSVJPJ",
+  "kind": "Need",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "J3",
+  "statement": "When design grilling exposes a product hole, I want get a formal stop-and-bounce (`needs-more-product` → `/prd-amend`), so I can keep the PRD and the design telling one story",
+  "rationale": "#D-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:be3831e37cc64a34c9620136179dd579c85568a9ec4fa5bbbdea1eb540064dd0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.489Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

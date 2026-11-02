@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPX31Z9QZSKYPFP3PY07",
+  "kind": "Expectation",
+  "subject": "prd/argus",
+  "family": "DOD-4",
+  "statement": "The dogfood prove: Argus drives one real, small pyxis feature problem-stated → landed, with the graduated floor holding",
+  "intent": "§6.1 Phase 2",
+  "fit_criterion": "the delivered feature's ledgers + PRs, with per-PR mainline-ancestry verification (AP-26) and the FR-4 transcript + derivation audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8a7d422bcba5f32272198703d1a642b4fb3c825b31b13b89cb9d36e1070f9650",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.763Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

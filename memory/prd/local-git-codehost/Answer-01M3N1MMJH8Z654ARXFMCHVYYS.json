@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMJH8Z654ARXFMCHVYYS",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Operator chose pushing mainline first on 2026-09-28; the AEC origin already has mainline. P-13 records the ruling; FR-9 retains the separate first-push proof.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJGVXMQFPXNRTHV15XH"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

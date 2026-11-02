@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Question-01M4MM8XGPEQ26BJGWMV3446DR",
+  "kind": "Question",
+  "subject": "prd/prototype",
+  "family": "Q2",
+  "statement": "Does the session that asked for the prototype build it, or does a separate worker? (brainstorm:prototype#G-2)",
+  "intent": "Argus",
+  "rationale": "answered — a separate headless process always builds it, launched by a Pyxis command on the configured harness and model, or on the asking session's when none is configured (design:prototype#D-2)",
+  "fit_criterion": "Solution gate",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

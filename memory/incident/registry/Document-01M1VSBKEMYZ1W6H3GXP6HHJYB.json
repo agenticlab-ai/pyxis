@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBKEMYZ1W6H3GXP6HHJYB",
+  "kind": "Document",
+  "subject": "incident/registry",
+  "family": "incidents",
+  "statement": "Imported Pyxis source document: docs/observability/incidents.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/observability",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "a49dddfe8bdde1cd1d973103abaf087f835ae08534a4971ae84a950dde96f46b",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:21Z",
+  "provenance": {
+    "source": "docs/observability/incidents.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

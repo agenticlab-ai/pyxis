@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQBHRBV62RYGE4J099SQ",
+  "kind": "Need",
+  "subject": "prd/docgate",
+  "family": "J2",
+  "statement": "When I review an amendment PR, I want see before/after effect, affected IDs, and computed blast radius, so I can judge the change without replaying the ledger",
+  "rationale": "prd-amendment-model §5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ace77f30ff5f114055583f90d5544e6ef9b3e2e334b607ab96497bd58f081ab1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.225Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

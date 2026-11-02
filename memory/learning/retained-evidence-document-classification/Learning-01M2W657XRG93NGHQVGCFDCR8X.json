@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2W657XRG93NGHQVGCFDCR8X",
+  "kind": "Learning",
+  "subject": "learning/retained-evidence-document-classification",
+  "statement": "Standalone document proposals may carry the canonical retained memory evidence reports required to validate their provenance.",
+  "rationale": "The durable-evidence writer emits data under .pyxis/evidence/memory. Treating its exact report names as implementation blocks otherwise standalone PRDs and technical designs; broad directory exemptions would admit bundled code.",
+  "learned_from": [
+    "docs/tech-design/memory-durable-evidence-v1.md",
+    "internal/docgate/gate/gate_test.go"
+  ],
+  "tags": [
+    "code:internal/docgate/gate"
+  ],
+  "relations": [
+    {
+      "type": "about",
+      "target": "Need-01M2W62Z9X1FS57EAFSN5WPPSW"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-19T06:37:46Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-durable-evidence-v1.md"
+  }
+}

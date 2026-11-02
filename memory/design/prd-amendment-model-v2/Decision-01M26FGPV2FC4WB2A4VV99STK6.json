@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPV2FC4WB2A4VV99STK6",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.3.8.1",
+  "statement": "the implementation owner creates this file once from the exact\nmerge base at which the verb is first wired. A separate corpus-audit test\nreconstructs inventories directly from committed artifact bytes without using\nthe production comparator and byte-compares the sorted result. The golden's\nactivation revision and ledger fingerprints never move. Ordinary proposals do\nnot regenerate it. An explicit debt-repair proposal deletes only the exact\nrepaired multiplicity; a proven oracle defect requires a dedicated reviewed\ngate-fix while the verb is unwired.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:809d8434b9ea0ddbedbd9a7c6a8a1b591721f42f0da7e3b822e393788c69064e",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.698Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 567-574 in section 3.8; sha256:809d8434b9ea0ddbedbd9a7c6a8a1b591721f42f0da7e3b822e393788c69064e"
+  }
+}

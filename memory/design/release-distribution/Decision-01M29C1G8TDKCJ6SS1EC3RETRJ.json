@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Decision-01M29C1G8TDKCJ6SS1EC3RETRJ",
+  "kind": "Decision",
+  "subject": "design/release-distribution",
+  "family": "distribution-channel",
+  "statement": "R2 is the only managed consumer distribution channel. Mirror and cut --mirror validate the required R2 configuration, verify the artifact set, and publish artifacts plus the verbatim pinned installer directly to R2. Canonical GitHub Releases stay in agenticlab-ai/pyxis; distribution no longer publishes to or waits for access to a separate GitHub repository, and the obsolete publish --repo and --dist-repo flags are removed.",
+  "intent": "Allow consumer distribution to continue after the GitHub pyxis-dist repository is deleted, while retaining the existing R2 bucket and authenticated Worker.",
+  "rationale": "The operator selected R2 as the sole distribution channel on 2026-09-11. Publishing a GitHub mirror before R2 made an unused repository and its write credentials prerequisites for distribution.",
+  "fit_criterion": "Release tests verify that prefetched artifacts publish with no GitHub runner, canonical downloads only read the source release, missing R2 inputs and corrupt artifacts fail before R2 writes, and repeated publication verifies the same object set. CLI tests reject the removed mirror flags; the release wrapper has no distribution-repository access loop.",
+  "tags": [
+    "code:cmd/pyxis-release",
+    "code:internal/release",
+    "code:scripts/cut-pyxis-release.sh"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-11T23:15:01Z",
+  "provenance": {
+    "source": "README.md",
+    "pr": 1179,
+    "commit": "49914828ee0aeac6f81f37f2d2b9c87db0efb67f",
+    "note": "Records the operator-authorized R2-only distribution change and its implementation boundaries."
+  }
+}

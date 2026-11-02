@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX7C12TKPBXCJ178ZCE",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "J2",
+  "statement": "When the task looks done, I want get one definitive verdict that the proposal clears the local bar, so I can raise the proposal knowing it clears the bar",
+  "rationale": "`brainstorm:implementation-verification#D-8`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5cd0e76ddd249f94771c8aef9391e73d0a3a67311f47795bd77a6987787151f0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.791Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

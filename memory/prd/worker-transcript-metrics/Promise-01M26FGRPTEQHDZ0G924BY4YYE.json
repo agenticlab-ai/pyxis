@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPTEQHDZ0G924BY4YYE",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "EVT-4",
+  "statement": "capture_failed fires when capture fails for a process, including on malformed or unparseable input (UB-5)",
+  "intent": "task_id: string, process_id: string, reason: enum",
+  "fit_criterion": "M1, M4, NFR-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:169841523476b54c5ab2341719438421a7b67595909b99bc099adb357891e019",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.61Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

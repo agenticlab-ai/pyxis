@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCMMV67C2ZFT68KP5ZY",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "EVT-5",
+  "statement": "review_finding fires when an e2e-review lens emits a finding",
+  "intent": "lens: enum(coverage·anti_gaming·buildability), class: string, disposition: enum(open·resolved·rejected)",
+  "fit_criterion": "M2, M3, M4, §3.3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f32f1595cafc24383f9343ab64710a97e26cfc0e57c1d36d94c15a96cdb6116",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.26Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

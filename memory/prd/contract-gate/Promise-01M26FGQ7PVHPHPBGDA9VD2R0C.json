@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7PVHPHPBGDA9VD2R0C",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-12",
+  "statement": "The gate shall run headless and deterministically from a clean checkout with no agent, session, or network dependency, producing its verdict and (on failure) its defect report as its sole outputs.",
+  "rationale": "the same artifact runs at planning entry and as the CI context; determinism is what makes a gate trustworthy",
+  "fit_criterion": "the same contract inputs yield byte-identical verdicts across repeated runs (modulo declared timing fields); a network attempt by the gate fails the determinism suite; the CI-context and planning-entry invocations on one contract produce the same verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d370defaa83253216dacdbeaca57f84afe28b503976eec4eb9b7edb1eb554c9f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.102Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

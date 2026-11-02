@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXWRF6FN3FB7VCXNB9T",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-8",
+  "statement": "When the human answers a decision brief, Argus shall append the answer to the problem ledger and resume the parked drive citing it.",
+  "rationale": "answers accrete; intent lives in one place (brainstorm:autonomous-developer#D-4)",
+  "fit_criterion": "100% of answered briefs appear on the ledger; resumed work cites them",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bfa234bdbb811de969ca26205291dab8aaafd64ee3adc24ae24d5835ffc7fa57",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.788Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

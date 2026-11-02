@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XEPEZ1C841FK52EC7DT8ZF",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-53",
+  "statement": "After direct issue admission, the executor shall reuse the existing bounded implementation worker, isolated workspaces, claims, routing, verification, code-host publication, and authenticated review machinery. Direct entry shall require a configured, usable independent reviewer before implementation spend, and shall report a verified PR only when the published proposal's current revision equals both the verified local/CI revision and its authenticated successful review revision. Implementation success and pending review shall retain their existing distinct truth.",
+  "rationale": "a new input should not create a weaker executor or success predicate",
+  "fit_criterion": "selected issue traverses the existing worker on each tracker and supported code host; disabled/unusable review fails before implementation; stale head/check/review or pending review never yields a verified-PR result; no merge occurs; existing activation controls are neither enabled nor bypassed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ddcc756d6766f0b23dbce7cf1ec494d09afcddaf7e85664b29c9c3e91b901b1d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:41:55Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

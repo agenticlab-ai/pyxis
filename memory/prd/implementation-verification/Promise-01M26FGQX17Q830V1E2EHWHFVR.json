@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQX17Q830V1E2EHWHFVR",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-9",
+  "statement": "When rung 1 runs, the harness shall execute the build verb and fail the rung on a non-zero exit, attaching the build diagnostics by reference.",
+  "rationale": "nothing downstream is meaningful on a broken build",
+  "fit_criterion": "a fixture with a seeded compile error reds rung 1 with the diagnostic reference; a clean fixture passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aec7c372f2e2caa6921166632fa90c275710d5e14725432295f1836f872c4b9e",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.785Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

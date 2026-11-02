@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNXPVJAC4802MQK2BZA",
+  "kind": "Decision",
+  "subject": "design/codegate-v1",
+  "family": "decision.2.1",
+  "statement": "The verification harness ships as **codegate** — a sha256-pinned static Go binary (`cmd/codegate`) over an importable `internal/verify` core, shipped and acquired exactly like docgate (`design-brainstorm:implementation-verification-tech-design#D-1`, `#D-8`) — and hosts consume it through a **subprocess contract**: a clean workspace + diff base + mode in; exit class, one atomic revision-bound verdict artifact, and machine-parseable findings out (`#D-2`, `#D-3`). The prior verdict is the *only* incremental state (`#D-4`); falsification reverts in an ephemeral worktree, never the agent's tree (`#D-5`); repo binding is a closed-schema manifest on the pyxis-config surface with ecosystem defaults compiled into the binary (`#D-6`); checks self-register into codegate's own registry, DCR-style (`#D-7`).",
+  "tags": [
+    "code:cmd/codegate",
+    "reconcile:design-decision",
+    "source-block:9733aa64f88a2b0282c19ef87b2c61be998173fc17bc3bfb14bdc282a044cb17",
+    "source-design:fb47372869e19517afdc80e696a1c7a2f8f1c8c38cc5b0f04abda68b28263410",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMZMSPFKX2SW4N3EKWRT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.533Z",
+  "provenance": {
+    "source": "docs/tech-design/codegate-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/codegate-v1.md lines 24-24 in section 2; sha256:9733aa64f88a2b0282c19ef87b2c61be998173fc17bc3bfb14bdc282a044cb17"
+  }
+}

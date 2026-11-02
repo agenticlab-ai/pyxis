@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EAPBYG1BFERAEMVNX2A4R",
+  "kind": "Document",
+  "subject": "source-retirement/9c43f9b7da6a6c924ace90f2f94aaff6aab455a195387c0f88d38935e2ccef10",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/e2e-review/lenses/anti-gaming.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "82f806221454a3ab8a16dcd6295d071663f6128f3d9632cfda09b9ca22df17a7",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:43Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/e2e-review/lenses/anti-gaming.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

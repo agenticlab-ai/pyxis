@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9PP8YF8MAD37HPFVA1",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "J3",
+  "statement": "When revisiting a decision months later, I want read a durable record that holds only what survives, so I can trust it without re-deriving intent from the code",
+  "rationale": "this session",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ba3a04a243c16b02df8ae06b254f07d96aea6af3eaeb6f30b615d7cacf0f98db",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.166Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

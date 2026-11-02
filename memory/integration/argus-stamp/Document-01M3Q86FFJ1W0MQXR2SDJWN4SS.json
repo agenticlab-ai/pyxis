@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3Q86FFJ1W0MQXR2SDJWN4SS",
+  "kind": "Document",
+  "subject": "integration/argus-stamp",
+  "family": "claude",
+  "statement": "Captured authored source: .pyxis/stamp/claude.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/stamp",
+    "reconcile:source",
+    "sha256:7c781da0f65c048d154091edfe72cc0c6cb8717f9efd008f089dbffe65c58acf"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M298SRAF6AQRH40W69NTN9QF"
+    }
+  ],
+  "body_sha256": "7c781da0f65c048d154091edfe72cc0c6cb8717f9efd008f089dbffe65c58acf",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T18:52:53Z",
+  "provenance": {
+    "source": ".pyxis/stamp/claude.md",
+    "note": "offline reconciliation"
+  }
+}

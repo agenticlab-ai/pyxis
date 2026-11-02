@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQX8HFQFYY2M4SKQ4C9",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.2.1",
+  "statement": "One versioned, medium-neutral `FeatureDrive` aggregate is the durable authority for a feature's integration lifecycle, and one deterministic reconciler is its only behavior. Short-lived local commands and remote wake workers load the same aggregate, verify external goal objects, plan typed idempotent effects, persist each intent by compare-and-swap, execute through ports, and reconcile the observed result; the feature-blind executor remains an effect target, never the lifecycle owner (`design-brainstorm:feature-implementation-drive-tech-design#D-1`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:16fc4c43c7690a4996950920ec4c6e0d0ac9df4c4dccb5d4132843ef41c7dcb9",
+    "source-design:9ea7096e912167ecb729a6e4e1b927caa05db54140c93a34e0549e41ee37d4cf",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQSGHPTQGNYZ6H14SMKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.597Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 49-49 in section 2; sha256:16fc4c43c7690a4996950920ec4c6e0d0ac9df4c4dccb5d4132843ef41c7dcb9"
+  }
+}

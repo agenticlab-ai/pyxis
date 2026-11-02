@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0NT3360EQAQ77TDTKVS3",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.14.1",
+  "statement": "Abandoning an open draft retains its reason and closes the\nproposal. Hosted mode keeps the existing reason-only Learning proposal,\noperator approval, merge, and branch deletion. Local mode records a terminal\nabandonment event with the reason in the origin proposal history and retains\nthe reviewed-head archive (`design:local-git-codehost#D-2`); it creates no lock\nor locked contract version. An abandonment revision cannot reuse an earlier\ndraft-lock receipt. Nothing else from the abandoned draft lands.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:896b6469b8d2856e25cd1a851bed6f35b46daa98ede3bf0dc3dcd178f6b3c1a3",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:15Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 250-256 in section 3.14; sha256:896b6469b8d2856e25cd1a851bed6f35b46daa98ede3bf0dc3dcd178f6b3c1a3"
+  }
+}

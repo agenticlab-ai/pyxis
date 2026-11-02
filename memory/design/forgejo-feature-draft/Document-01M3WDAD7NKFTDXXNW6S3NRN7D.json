@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3WDAD7NKFTDXXNW6S3NRN7D",
+  "kind": "Document",
+  "subject": "design/forgejo-feature-draft",
+  "family": "design",
+  "statement": "Draft tech-spec.md",
+  "body_sha256": "57c44c89d029fef64f151a8458aacc6d503efe02597fbf818e1ce10529b2f25f",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

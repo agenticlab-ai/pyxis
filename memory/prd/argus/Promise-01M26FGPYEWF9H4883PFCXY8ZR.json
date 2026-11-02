@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYEWF9H4883PFCXY8ZR",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "NR-3",
+  "statement": "Gate verdicts on any given tree are author-independent",
+  "rationale": "the trust model this feature stands on",
+  "fit_criterion": "the gate suite's verdict is identical for the same content regardless of principal",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:390d719f9c1f4fa7ebf462425aaf2db19046dc7a58cfb341356d35847b8aaa18",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.806Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

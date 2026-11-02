@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD586AX0MT5793S662G",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-4",
+  "statement": "Each scenario shall carry a route — run-for-real, mocked, or manual-human — and no required behavior shall be dropped; a behavior not runnable in CI shall be routed mocked or manual, never omitted.",
+  "rationale": "the honesty valve against mocking away the hard part; nothing silently dropped",
+  "fit_criterion": "every fixture scenario carries exactly one route; a seeded not-CI-runnable behavior is routed mocked or manual and appears in the doc; zero required behaviors are absent from both the coverage map and the routes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:236c40f2aca442de4c5da17de1e0619c5cb9f235b7c99ea6fb5b3778fbdba66b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.277Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

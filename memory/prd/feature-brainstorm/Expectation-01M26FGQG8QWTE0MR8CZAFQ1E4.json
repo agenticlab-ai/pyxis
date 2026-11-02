@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQG8QWTE0MR8CZAFQ1E4",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "DOD-2",
+  "statement": "Every UB row and both NR rows hold",
+  "intent": "UB-1..5, NR-1..2",
+  "fit_criterion": "fixture results; prd-new guide diff; docgate diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f66dc0ec6382b3fdbaafd3865fa0a70fee96f756f379d7243db56226f2b39088",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.376Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

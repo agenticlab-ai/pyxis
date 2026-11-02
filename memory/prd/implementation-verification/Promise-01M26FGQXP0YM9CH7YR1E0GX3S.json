@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXP0YM9CH7YR1E0GX3S",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-1",
+  "statement": "If a verb cannot be spawned (missing binary, exec failure), then the system shall record the rung as error (infra), distinct from fail (check), and stop the run fail-closed",
+  "intent": "error verdict with an infra-classed finding",
+  "fit_criterion": "the missing-binary fixture yields rung result error with class `infra`, overall verdict error — never fail, never green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3419c0d6eb513c142e3f092b66cbe40152a2a7dbb43f885c41c94c148aff791f",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.806Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

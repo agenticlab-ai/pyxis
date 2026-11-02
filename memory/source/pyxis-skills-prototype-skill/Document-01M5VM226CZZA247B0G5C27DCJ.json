@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM226CZZA247B0G5C27DCJ",
+  "kind": "Document",
+  "subject": "source/pyxis-skills-prototype-skill",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/skills/prototype/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:827d578188374d932ba9b36e60b239993ab569904f878d68bb0ab1ac3198dbc3"
+  ],
+  "body_sha256": "827d578188374d932ba9b36e60b239993ab569904f878d68bb0ab1ac3198dbc3",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:33Z",
+  "provenance": {
+    "source": ".pyxis/skills/prototype/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMKMPKJDB2NA30DEEG4S",
+  "kind": "Document",
+  "subject": "feature/local-git-codehost",
+  "family": "events",
+  "statement": "Draft events.md",
+  "body_sha256": "016eb4e62e0c5e88ceb730f53051668f629dc65674eee117089e6a2cd8b9c6d7",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

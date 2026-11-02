@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRED96Z4JKPB8ZM36PQR",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-1",
+  "statement": "When a human annotation is confirmed in a doc-review session, the system shall record a ledger entry carrying the comment verbatim, its author, its timestamp, and its subject anchor.",
+  "rationale": "capture the doc-review touchpoint (J1)",
+  "fit_criterion": "for a session with N confirmed annotations, N entries exist, each with all four fields populated",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dd9eb59d5488db644d95e14124c76d084c71c20df16d5c5d788272543bb804da",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.341Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNQ1YYEDEPN7EK6VR32",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-7",
+  "statement": "The reading room process shall create and modify no files inside the repository, writing at most regenerable scratch under the gitignored render directory.",
+  "rationale": "read-only is the charter, not a preference",
+  "fit_criterion": "filesystem audit across a browse/search/trace/progress session: zero repo writes; any scratch confined to the gitignored path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cfd71e0bda196e0e3ba881b9175c6676aa5cd6183acd7c6f8db3dc86101049fc",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.575Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

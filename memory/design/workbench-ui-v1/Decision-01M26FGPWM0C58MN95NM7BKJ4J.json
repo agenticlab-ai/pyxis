@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWM0C58MN95NM7BKJ4J",
+  "kind": "Decision",
+  "subject": "design/workbench-ui-v1",
+  "family": "decision.3.6.1",
+  "statement": "One session per **working tree** (the statefile's home) — sibling worktrees of one repository run independent sessions over their own corpus states: launch mints a crypto-random secret, binds an ephemeral loopback port, writes the statefile into the render-scratch directory, and opens the browser at the secret URL. A second launch finds the statefile, probes liveness (pid + a guarded ping), and refuses with the named quadruple while the first lives (PRD UB-4) — a dead statefile is replaced, never trusted (acting on absence needs the liveness probe, AP-12/AP-17). The process exits on terminal end (SIGINT/SIGTERM), and auto-exits after a generous idle window with a named log line, so an abandoned session costs nothing (AP-19; default rides in the shape; revisit on usage evidence, Q1). Bind failure refuses the same way — no half-served state (UB-4). Exit removes the statefile; scratch pages are regenerable and may remain.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d98f1b59d4aa13cb097713053df5b0cc54735dc0efba4740b26f79f8b52376ce",
+    "source-design:5bd6e210a647b91ad19849731c61b8d4bf01344d41daeec11d27a993b8ecfd47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCZ557DNHE8RZ15Z6WNJA"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.748Z",
+  "provenance": {
+    "source": "docs/tech-design/workbench-ui-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/workbench-ui-v1.md lines 65-65 in section 3.6; sha256:d98f1b59d4aa13cb097713053df5b0cc54735dc0efba4740b26f79f8b52376ce"
+  }
+}

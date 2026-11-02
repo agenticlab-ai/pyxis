@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQFEQ072SVQ7MH3FG0B8",
+  "kind": "Need",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "G1",
+  "statement": "We believe offering an inspect → propose → apply negotiation with a provable never-touch guarantee; expected result: a generic existing repo can adopt the factory with no surprise mutation",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c3236336141c6d78c4e6deab32e2b896e8c52711495774bd626d236fd3ff1555",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.35Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

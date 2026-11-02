@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M38ZX1AFKKN506X5Q6EPTSYZ",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R6",
+  "statement": "Measure proposals per draft (M1) at the checkpoint after the first three draft-born features, and iterate the process on a miss.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "One proposal per draft is the draft's main promise (G1) and is still an assumption when a draft spans many sessions and rounds. Measuring it keeps the claim honest, and a miss changes the process instead of the target.",
+  "fit_criterion": "At the checkpoint, M1 reports the proposals from opening to lock for each of the first three draft-born features, and any feature above one proposal has a recorded process change.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d840079d5fd1b531d42222d34c98be1485c47aa54d448084339cbe3634db49b9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:58:33Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md"
+  }
+}

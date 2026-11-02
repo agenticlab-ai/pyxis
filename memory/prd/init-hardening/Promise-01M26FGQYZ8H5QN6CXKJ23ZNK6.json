@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYZ8H5QN6CXKJ23ZNK6",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "FR-2",
+  "statement": "If the target holds content, then the refusal shall name the adoption path and a runnable remedy.",
+  "rationale": "wrong door → right door (`#D-7`, `#F-11`)",
+  "fit_criterion": "both refusal classes (repo, non-git) name `adopt`; no refusal text contradicts shipped capability",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e720429f14b229a13652a1d015652de8e25d59d3da9ba52d2534a963694cb635",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.847Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQRQSA91YXEATT7YAPE8",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-11",
+  "statement": "`implementation_routing_evidence_invalidated` fires when UB-13 identifies implementation evidence produced under a defective policy/profile",
+  "intent": "`policy_version:string`, `native_profile_id:string`, `attempt_ids:string[]`, `task_ids:string[]`, `proposal_refs:string[]`, `disposition:enum{rerun_required,operator_remediation}`, `evidence_ref:string`",
+  "fit_criterion": "UB-13 audit + health alert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ba1240b32872de0b3eee82b30cc56ce894fe9324a216e11f5d89ba14bf76dae6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.647Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

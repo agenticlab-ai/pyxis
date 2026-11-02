@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3BP5X36D1GTZHN6N98F2BJD",
+  "kind": "Document",
+  "subject": "source/pyxis-templates-draft-tech-spec-template",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/templates/draft-tech-spec-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:7009d8d26b652922cc6c123559b0f39b63fdfa5495f3f71ba5dd7783156550d7"
+  ],
+  "body_sha256": "7009d8d26b652922cc6c123559b0f39b63fdfa5495f3f71ba5dd7783156550d7",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T07:06:21Z",
+  "provenance": {
+    "source": ".pyxis/templates/draft-tech-spec-template.md",
+    "note": "offline reconciliation"
+  }
+}

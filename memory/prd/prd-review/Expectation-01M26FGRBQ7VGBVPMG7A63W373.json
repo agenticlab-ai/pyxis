@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBQ7VGBVPMG7A63W373",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "EVAL-6",
+  "statement": "per-lens catch rate",
+  "intent": "per-lens defect-planted fixtures (vague fit criterion · broken chain · ignored incident · missing failure mode · dishonest blast radius)",
+  "fit_criterion": "each seeded defect class caught by its lens ≥ 90%",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:364c75be86c0041054f9cf473184c710ac78ff5cf9f0b4fe94c1c25ccace697c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.255Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

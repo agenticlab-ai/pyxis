@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ4A6ZSMBEMBKNQ4HN5",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-2",
+  "statement": "The system shall record, for each recorded process, every measurement its harness exposes about that process.",
+  "rationale": "capture is use-agnostic; a filtered capture discards signals whose value is not yet known *(#D-4)*",
+  "fit_criterion": "for each supported harness, every measurement enumerable from that harness's **own published output surface** — its documented output contract, not any description this feature authors — appears in the record or carries an FR-4 unavailability; the enumeration is frozen and reviewed **before** the capture path for that harness is built, so a measurement omitted from capture fails this row rather than disappearing from the standard it is judged against",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1cb35e343ba639299f635b85991fdc95092a600e6f1016c14c296e60dce8a0f1",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.62Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

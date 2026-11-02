@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ80DSB76A9P0D6C3MHR",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-5",
+  "statement": "When the gate runs, it shall verify that every live requirement carries a fit criterion and a declared verification method, that the PRD's definition of done (§5.8) is present, and that its contract-readiness section (§8) is present, failing with a **structural** defect naming each requirement or section missing a required field.",
+  "rationale": "a requirement with no stated way to verify it, or a missing DoD, is not plannable; this is field-presence, not adequacy (the adequacy judgment is WR-1)",
+  "fit_criterion": "a fixture with a Must lacking a fit criterion, and one lacking a verification method, each yield an `incomplete` verdict naming the requirement; a fixture missing §5.8 fails; a complete fixture passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8af6d7e48acfe04f829484d8c017bb13dc28cbbc6c637574715b5f28cbabc1a3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.112Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

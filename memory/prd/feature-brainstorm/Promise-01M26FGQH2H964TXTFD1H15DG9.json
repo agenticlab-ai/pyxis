@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQH2H964TXTFD1H15DG9",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-7",
+  "statement": "When a decision resolves, the skill shall append it to the record before asking the next question, re-reading the record from disk before each write so operator edits made between turns survive.",
+  "rationale": "batch-captured rulings die with the context window; the record is collaborative",
+  "fit_criterion": "on every fixture transcript, each ruling appears in the record before the next question turn; a seeded mid-session operator edit persists to the gated record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3fa8f143f4a4753c59d1afe38ef897e759cebd7f39a3de5a73425a41be4e4277",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.402Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

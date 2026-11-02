@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWE0CZE3CEXQ4CBZ916",
+  "kind": "Decision",
+  "subject": "design/argus-artifacts",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:argus/FR-1 · prd:argus/FR-11 · prd:argus/FR-12 · prd:argus/FR-13 · prd:argus/FR-14 · prd:argus/FR-15 · prd:argus/FR-2 · prd:argus/FR-4 · prd:argus/FR-8 · prd:argus/NFR-1 · prd:argus/NFR-2.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:8dc33c9a39f15198ce210bc812c53d02af3d5705440dc4da5b52660419b4df20",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKS61Z7RSCT74WBKMMRN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXFEJ1XNQNPFCZ0ENRA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXH14DRP9JY60QM4MTW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXJPXV7C7Q2FGDW38QF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXK45H3D73RHDTT52Y8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXMP2M4AMKSDNP6CGFM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXNF1ZF1SNJHXMMERD1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXPZBXY5YXWSM2RCCEB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXRBRP73EK28SQPZAJ7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPXWRF6FN3FB7VCXNB9T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPY8G8K4E01EFBJJBFV3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGPY9DN9RGTZA86EQ899C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.79Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-artifacts.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 8dc33c9a39f15198ce210bc812c53d02af3d5705440dc4da5b52660419b4df20"
+  }
+}

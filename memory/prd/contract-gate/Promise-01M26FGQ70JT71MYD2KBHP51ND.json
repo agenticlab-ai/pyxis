@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ70JT71MYD2KBHP51ND",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "ABUSE-1",
+  "statement": "a contract author clearing inverse coverage — vector: adds a live design that `Serves` every Must with an empty or substanceless body",
+  "intent": "coverage passes on a design that says nothing; a hollow contract enters planning",
+  "fit_criterion": "**honestly residual in v1**: the mechanical gate checks that a live design *serves* each Must (FR-3), not whether it has substance; catching the substanceless design is the LLM follow-up's adequacy judgment (WR-1). The **same present-but-substanceless residual applies to FR-5's structural check** — a bogus fit criterion or a verification method that names no real proof passes field-presence; the whole mechanical/semantic boundary is the follow-up's (WR-1, NG-2). The residual is named here, not hidden; until WR-1, `clean` means \"mechanically clean\" and reviewers are told so (FR-7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7f57f09cde224f02005b77a447fdd86cff157b0599128a5ae73341cf55020274",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.08Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZNQG3B2AWZ2F6CFPPMGYC",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-8",
+  "statement": "When an engineering-side session finds that a requirement in an open feature draft is wrong, missing, or unbuildable, the system shall record a requirement problem against that requirement and leave the requirement unchanged.",
+  "rationale": "Design flags, product rules; the PRD and tech spec never quietly disagree (brainstorm:feature-draft#D-9)",
+  "fit_criterion": "A fixture tech-spec session reporting a requirement defect produces one requirement problem naming the requirement, whose text stays byte-identical.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:946e789b46c5be1337bc4b6bf8acc4070b3f192097ec1572eb5100cbcd416636",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:34Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16N362FWT03XPHW7TXEHA",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "FR-3",
+  "statement": "When validating candidate debt policy, the system shall enforce an exact current inventory under the trusted base's existing monotonic rules and recognized one-way phase advances.",
+  "rationale": "Preserve accepted-debt authority",
+  "fit_criterion": "Exact matches, reductions, and existing phase advances pass; new addresses outside those advances, increased counts/severity, forbidden repairability changes, reversal, and reintroduced retired debt refuse",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:881f0ae6cd959fe782b4bb8a830f205269de34e3bd5193e1d0b4a37e7e81bca5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

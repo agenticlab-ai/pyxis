@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQGWGW557FFEQMSZAPTEF",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-9",
+  "statement": "If If a step of the draft process fails for a reason other than readiness, then the system shall keep the draft's content unchanged and report the failing step",
+  "intent": "the failing step and its error, with the draft intact",
+  "fit_criterion": "Injected failures at each step leave draft content byte-identical and name the step",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7c0b9639e59f2c22ddb2303e405bd07d62ce2659897216b368a29d38acfefe2d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:32Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

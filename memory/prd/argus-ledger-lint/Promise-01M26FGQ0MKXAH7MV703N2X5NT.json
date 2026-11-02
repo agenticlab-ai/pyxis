@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0MKXAH7MV703N2X5NT",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "FR-1",
+  "statement": "When a ledger-touching change is gated with a merge base present, the history arm shall report a defect if any previously-merged `A-n` or `E-n` entry is edited or removed — its body, anchor, numbering, or presence changed relative to the merge base.",
+  "rationale": "append-only-ness is a git-history property no per-file check can see (F-2); DINV-1/DINV-2 are declared absolute but unenforced",
+  "fit_criterion": "on the edited-`A-n`, edited-`E-n`, renumbered-entry, and deleted-entry fixtures, the history arm reports a defect naming the ledger and the disturbed entry; each is red at the history arm only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:44a388b92f2ba386222e9b93fbbabdc69524f7afab1374979364c11aec978faa",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.876Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

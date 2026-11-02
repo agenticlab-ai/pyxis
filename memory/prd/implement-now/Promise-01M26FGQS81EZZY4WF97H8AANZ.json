@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS81EZZY4WF97H8AANZ",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-17",
+  "statement": "The executor shall be drivable by the operator or by argus over the same worker core.",
+  "rationale": "both consumers, one core",
+  "fit_criterion": "the same run completes under an attended invocation and under an unattended journal-only invocation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a8625e789c3c42414c85453ac6f53f6ce346c3f0c1bd8aac9f840bc840ee1cbd",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.664Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

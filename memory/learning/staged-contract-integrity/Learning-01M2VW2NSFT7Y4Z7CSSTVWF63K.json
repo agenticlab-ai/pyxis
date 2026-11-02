@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2VW2NSFT7Y4Z7CSSTVWF63K",
+  "kind": "Learning",
+  "subject": "learning/staged-contract-integrity",
+  "statement": "Reconciliation evaluator v4 reports exact undesigned contracts and exact historical reopened design edges separately from integrity failures, preserving staged contract-first publication.",
+  "intent": "Permit approved PRD changes to precede their replacement design without fabricating coverage or granting integrity debt.",
+  "rationale": "The classifier requires exact source captures, native claim semantics, valid explicit retirement transitions, and trusted predecessor evidence for historical design decisions. Candidate policy cannot select historical enforcement. Planning and closeout still require completed coverage, and source deletion remains independently gated.",
+  "tags": [
+    "code:internal/memory/cli",
+    "code:internal/memory/reconcile"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T03:41:36Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-staged-contracts.md"
+  }
+}

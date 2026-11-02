@@ -1,0 +1,151 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Widget capability — plan 001",
+  "feature": "widget",
+  "prd": "docs/prds/widget",
+  "design": "docs/tech-design/widget-design.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Widget capability v1",
+  "status": "Draft",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Define the widget model",
+      "goal": "The widget model type exists with closed validation.",
+      "current": "No widget model exists; callers hold untyped maps.",
+      "desired": "A typed widget model validates closed and rejects an unknown field with a defect naming that field.",
+      "scope": [
+        "the widget model type and its closed validation"
+      ],
+      "out_of_scope": [
+        "persistence of widgets"
+      ],
+      "acceptance": [
+        "validating a widget with an unknown field yields a defect naming the field"
+      ],
+      "key_interfaces": [
+        "`Widget` — the model type callers construct"
+      ],
+      "traces": [
+        "prd:widget/FR-1",
+        "design:widget-design#3.1"
+      ],
+      "touches": [
+        "internal/widget/model"
+      ],
+      "size_band": {
+        "lo": 60,
+        "hi": 120
+      },
+      "mechanical": false,
+      "plan_task_id": "widget/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Serve widget lookups",
+      "goal": "Lookups return the stored widget or a named miss.",
+      "current": "No lookup surface exists.",
+      "desired": "A lookup returns the widget when present and a named miss when absent, never an empty success.",
+      "scope": [
+        "the lookup behavior over stored widgets",
+        "the named-miss result"
+      ],
+      "out_of_scope": [
+        "caching of lookup results"
+      ],
+      "acceptance": [
+        "a lookup for a stored widget returns it",
+        "a lookup miss names the widget it did not find"
+      ],
+      "key_interfaces": [
+        "`Lookup` — the read surface"
+      ],
+      "traces": [
+        "prd:widget/FR-2",
+        "prd:widget/UB-1",
+        "corpus:SCAF-1"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/widget/serve"
+      ],
+      "size_band": {
+        "lo": 80,
+        "hi": 160
+      },
+      "mechanical": false,
+      "plan_task_id": "widget/001/T2",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Vendor the widget schema bundle",
+      "goal": "The pinned upstream widget schema bundle lands unchanged.",
+      "acceptance": [
+        "the recorded checksum matches the vendored bundle"
+      ],
+      "provenance": [
+        "upstream tag v1.2.3 with its published checksum recorded beside the bundle"
+      ],
+      "traces": [
+        "prd:widget/FR-2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "vendor/widget"
+      ],
+      "size_band": {
+        "lo": 0,
+        "hi": 0
+      },
+      "mechanical": true,
+      "plan_task_id": "widget/001/T3",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:widget/FR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:widget/FR-2",
+      "tasks": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:widget/UB-1",
+      "tasks": [
+        "T2"
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "requirement": "prd:widget/FR-3",
+      "reason": "summaries have no consumer yet; next plan"
+    }
+  ],
+  "source_fingerprint": "sha256:7ac9fcfe3a7f6f3359ec16e7263d778b61e32d4a23c1a06cfd89ee078d920d3d"
+}

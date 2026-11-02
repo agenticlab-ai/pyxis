@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQH5GVH80FZ1XK8299NMM",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-51",
+  "statement": "The system shall bind a lock approval to the exact draft version presented and void it when the draft changes before lock. In local-git mode it shall also bind approval to the current proposal generation, workflow-derived target ref and existing target SHA, readiness digest, and request nonce, and refuse any mismatch at landing.",
+  "rationale": "Certifies the content and landing context that were actually presented, including a revision that restores an old head",
+  "fit_criterion": "Hosted change-after-request fixtures retain their verdicts. Local changed-head, changed-target-ref, moved-target, changed-digest, changed-proposal-generation, and H1→H2→H1 fixtures refuse the old receipt before any landing write and require fresh preparation and review.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:010a856a12ae4014b9197b371e66e0102d3ef97e59b8e2df7f71cbee64ddfe83",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZNGAB20B19F3MDQNKTXAT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:16Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

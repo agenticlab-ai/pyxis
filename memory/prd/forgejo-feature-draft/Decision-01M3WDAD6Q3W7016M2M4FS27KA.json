@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6Q3W7016M2M4FS27KA",
+  "kind": "Decision",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "R-4",
+  "statement": "Operator login config is a provisional separate-identity choice.",
+  "rationale": "delivery:forgejo-feature-draft#E-3; require explicit value and reject absent/equal login; operator may revise at lock review.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

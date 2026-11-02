@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9Y8PMACYA37R23CTM3",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-6",
+  "statement": "When the planner raises a derived assurance floor, the plan shall preserve the raised value and a non-empty evidence citation.",
+  "rationale": "richest-context judgment may add safety but not remove it",
+  "fit_criterion": "a justified raise validates; an attempted reduction or uncited raise is rejected",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:439289d346b66b340c200b1d84807556ec3aa45211490f4f94ab0e26cb5c05ee",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.198Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

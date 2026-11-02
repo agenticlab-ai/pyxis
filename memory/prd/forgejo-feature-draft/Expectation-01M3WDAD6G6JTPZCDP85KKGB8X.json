@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3WDAD6G6JTPZCDP85KKGB8X",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-3",
+  "statement": "Only real configured operator's latest authenticated exact-head review authorizes a lock.",
+  "intent": "FR-5/6, UB-2/4, ABUSE-1/2",
+  "fit_criterion": "Enforced pre-merge protection or an equivalent enforceable mechanism, positive human receipt, and unapproved/stale/agent/rejected/changed-head/privileged-bypass negative merges; independent post-merge review remains required; synthetic reviews only in tests",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

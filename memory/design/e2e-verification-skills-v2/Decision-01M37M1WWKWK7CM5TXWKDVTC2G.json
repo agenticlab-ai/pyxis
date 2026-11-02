@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1WWKWK7CM5TXWKDVTC2G",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.1.2",
+  "statement": "**whether a fitting harness already exists is the skill's own judgment over the repository** — it reads the existing test trees, judges whether any can drive this feature's primary external interface, and cites it by path. There is **no harness registry** and **no path convention**; existence is not a lookup and not a directory test (`design-brainstorm:e2e-verification-tech-design-2#D-4`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6e675384547f2f4560010b216a1e2bdcdba75479eae892b9581a817629f261b0",
+    "source-design:3508462a6fb8b6b739ccfee9ea78d5c8e95242b483c987ee851b4df712cffe84",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQAQ78F54XE5J6ZJC9F"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR0V7JNJC4TV5S6402BWF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:15Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 66-66 in section 3.1; sha256:6e675384547f2f4560010b216a1e2bdcdba75479eae892b9581a817629f261b0"
+  }
+}

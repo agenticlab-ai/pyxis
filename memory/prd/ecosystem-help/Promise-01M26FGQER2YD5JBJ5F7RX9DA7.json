@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQER2YD5JBJ5F7RX9DA7",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "UB-1",
+  "statement": "If If a derivation surface is missing or unreadable (e.g. no wiki in a distributed repo), then the system shall present what the remaining surfaces yield and name the absent surface — never fabricate entries for it",
+  "intent": "the catalog plus an explicit \"not present on this install\" note",
+  "fit_criterion": "with a surface removed in a sandbox copy, output contains zero entries derived from it and names the absence",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:78ef03cbd3e824eae6cc3b667c13b0b5f8a82235b00578848fcc0c58517318a4",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.328Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

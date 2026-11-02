@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Learning-01M29K4DT09VHDCWDN70KSPAAW",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "Fresh interactive harness worktrees inherit an independent copy of the optional .pyxis/config.local.yaml before the harness starts. Missing local config permits startup, failed copying stops startup, and existing worktrees retain their own local settings.",
+  "intent": "Preserve machine-local preferences across isolated harness sessions without copying unrelated untracked files.",
+  "rationale": "Git worktree creation restores tracked files only. The shared Zsh launcher owns the startup lifecycle, and the operator chose a direct optional cp -p step there to preserve contents and permissions.",
+  "learned_from": [
+    "Real Git and terminal regression tests cover absent, present, and empty config, copied permissions, independent edits, worktree reuse, missing destination directories, and copy failure. Installer tests cover the shipped startup assets across harness wrappers."
+  ],
+  "tags": [
+    "code:script/startup/worktree.zsh"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T01:18:56Z",
+  "provenance": {
+    "source": "script/startup/worktree.zsh",
+    "commit": "5538e464131f720a7cfe615ce672bca57e91aa19"
+  }
+}

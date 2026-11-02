@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ981DXN0J0JSBSENE8Q",
+  "kind": "Expectation",
+  "subject": "prd/design-solution-shape",
+  "family": "DOD-4",
+  "statement": "The follow-on technical design (mechanics: the projection, the review surface, the shape's home/format) is approved before build",
+  "intent": "§7.2 Q1–Q2",
+  "fit_criterion": "the approved design",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b5d33ab2194ce942501df6294ec6f2d6d4793835fc8f452f329e0e843bf3b61d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.152Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

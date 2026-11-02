@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3C6A59QYDQ8KHE135CQPFPF",
+  "kind": "Decision",
+  "subject": "design/feature-draft",
+  "family": "locked-plan-fold",
+  "statement": "Fold each draft-born plan against the immutable memory snapshot at its Basis lock.",
+  "intent": "Keep plan traces, decisions, and coverage bound to the version that authorized the plan.",
+  "rationale": "Plangate resolves the Basis tag to one commit, loads active requirement and design records from that tree, and applies the existing plan gates plus complete locked requirement coverage.",
+  "fit_criterion": "A plan folds without PRD or design files; unknown and retired traces refuse; an earlier plan survives a later retirement; a projection defect leaves the lock unchanged.",
+  "tags": [
+    "code:internal/plangate/plan"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T11:48:18Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

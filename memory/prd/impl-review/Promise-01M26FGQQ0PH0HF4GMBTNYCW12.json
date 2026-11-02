@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ0PH0HF4GMBTNYCW12",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NFR-10",
+  "statement": "The complete review process shall be reconstructable from immutable git event records and the linked proposal projection with no session state; the two faces shall be losslessly consistent.",
+  "intent": "Auditability",
+  "fit_criterion": "a fresh-clone fixture reconstructs demand, route/failure/outcome, pass, aggregate, findings, and invalidation through FR-27/FR-30 and detects any proposal/git mismatch",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7b5965720ab6511ea90dab883a4b8bfbb212531a7d669e6a6c9d1906cbbad051",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.592Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

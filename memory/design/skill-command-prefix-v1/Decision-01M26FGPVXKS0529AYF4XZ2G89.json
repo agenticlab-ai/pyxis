@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVXKS0529AYF4XZ2G89",
+  "kind": "Decision",
+  "subject": "design/skill-command-prefix-v1",
+  "family": "decision.3.1.1",
+  "statement": "Each skill PR owns all allowed live occurrences of that skill's identity; shared-ref deferral to closing for that skill's own strings is refused. (design-brainstorm:skill-command-prefix-tech-design#D-3)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ff12b931677c4e57db59b44c1d307990bcdc0002fff14aa2aeecbf588e60b0c6",
+    "source-design:3a6b8fea00e859a15e5cefba04a544e9cb943e9e3b66488645d62bb1b1923087",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCX5K2JNQRCGQ87X5EN31"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.725Z",
+  "provenance": {
+    "source": "docs/tech-design/skill-command-prefix-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/skill-command-prefix-v1.md lines 62-62 in section 3.1; sha256:ff12b931677c4e57db59b44c1d307990bcdc0002fff14aa2aeecbf588e60b0c6"
+  }
+}

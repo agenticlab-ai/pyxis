@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ0HBEWNEB028ZC9QGX9",
+  "kind": "Expectation",
+  "subject": "prd/argus-ledger-lint",
+  "family": "DOD-4",
+  "statement": "Both arms are report-only — the working tree is unchanged by either arm across every fixture run",
+  "intent": "FR-7, §3.3",
+  "fit_criterion": "session-end `git status` capture over the fixture runs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dbf9078b6c52aa9fa9839855981facb716768e519a19c4cf5c2179e297dbe859",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.873Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4YHP9TCACZYEGP0M3G",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-7",
+  "statement": "If If the operator writes a bulletin/state file by hand into user-global state, then the system shall verify it on read and ignore anything unverified or malformed, never trusting local unsigned content as channel content",
+  "intent": "nothing",
+  "fit_criterion": "a hand-planted unsigned bulletin in the cache is ignored (fails FR-9 verification)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d510a7d5d02965d5c12f7f2baaa4feee22cf6b824de470d1f8a7230151a50301",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.014Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

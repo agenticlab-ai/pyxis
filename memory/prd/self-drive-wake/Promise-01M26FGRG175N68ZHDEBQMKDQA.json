@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG175N68ZHDEBQMKDQA",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-14",
+  "statement": "When content writes originate concurrently from a process whose authenticated identity is resolved and a process on the same host whose identity is not, the write guard shall admit them against a single host bound, charging the resolved writer's identity ledger and the host umbrella and the unresolved writer's host umbrella alone.",
+  "rationale": "a coarser fallback is only a bound if the finer ledgers charge it; keyed-but-uncharged, it is a second full window (review-thread:pyxis#968)",
+  "fit_criterion": "a deterministic mixed-writer fixture across two processes on one host: the two writer classes together are admitted at most the platform's per-window cap (never twice it), every charged write appears in the umbrella, resolved writes appear in both ledgers, zero writes are dropped, and zero platform rate-limit responses occur",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1cb9b12c1fe117602f38cc24bbee99fe60086608d2166c2cd5b3e6ea0b84d042",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.393Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

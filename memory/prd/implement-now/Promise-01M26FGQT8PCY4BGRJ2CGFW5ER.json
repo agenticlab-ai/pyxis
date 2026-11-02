@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQT8PCY4BGRJ2CGFW5ER",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-9",
+  "statement": "When a proposal's checks are red, the executor shall attempt recovery through a bounded self-heal loop and, on exhausting the bound, escalate.",
+  "rationale": "recover routine CI failures without unbounded looping",
+  "fit_criterion": "red→fix→re-check converges or, at the bound, stops and escalates; the attempt count is bounded and observable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:64249d5d6013e7e43e2d7a5f4dfa6987a40f3654f7396ac6aba51f6851e30420",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.696Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

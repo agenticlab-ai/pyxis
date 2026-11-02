@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M2V16MYQXTYPQ4AN0HX4DN9Y",
+  "kind": "Expectation",
+  "subject": "prd/parallel-memory",
+  "family": "DOD-5",
+  "statement": "Staged adoption and recovery are executable and documented",
+  "intent": "§6.4, §6.5, §6.6",
+  "fit_criterion": "Compatibility and rollback rehearsal results, CLI documentation, implementation review, required shared-gate results for the proposed revision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4ea06971579c14f75f39dc5ab45518a7e5c2e68dbaffbd8abac3ed851fe2813c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EANA41FM00NMJHXJAFJDF",
+  "kind": "Document",
+  "subject": "source-retirement/6e1034385b6cbe35cdce425dc4072a11925f259dc954634338c27169b8372eed",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/e2e-review/calibration.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "059467a63268b950ed88ff9450e12343651bebfd5e8f3268b490c52736975dbd",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:42Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/e2e-review/calibration.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

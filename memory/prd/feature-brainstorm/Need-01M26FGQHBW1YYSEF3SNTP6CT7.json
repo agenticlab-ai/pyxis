@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQHBW1YYSEF3SNTP6CT7",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "J4",
+  "statement": "When a later stage asks why a requirement exists, I want trace it to the operator ruling that produced it — question, answer, date, so I can audit and amend contracts on evidence",
+  "rationale": "product-vision §6; AP-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7a9853366b2b039e66cf688aba9ac6fe19b0eb0302a5e90710edfb632a631504",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.411Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

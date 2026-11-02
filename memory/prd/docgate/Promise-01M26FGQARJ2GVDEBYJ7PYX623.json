@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQARJ2GVDEBYJ7PYX623",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-3",
+  "statement": "When invoked as `verify-generated`, docgate shall recompute the fold hermetically and byte-compare every generated artifact against the committed set, failing on any difference or fingerprint mismatch.",
+  "rationale": "unforgeable projection",
+  "fit_criterion": "hand-edited fixture projection → red naming the artifact; regenerated → green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:52741799d59153d3eac72376531cbc37bb5b77b4a478e4f7143dee6b83730000",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.2Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A96YKXVY4X6SSA16Z426",
+  "kind": "Decision",
+  "subject": "design/maintenance-jobs",
+  "family": "D-4",
+  "statement": "Use the existing Git-ref CAS store for retained per-job date records; launch only with positively established ownership, without automatic recovery.",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M479A96XEMWJDP89KCGWP0B9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95EEEAARRQYW2005GFE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95F2GMBN61QSJJ23FSD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95KPKTWPG2PY95MZY5E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95WS9S6X2GYBAQZS6PH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A95XV8YDYWAZ0T1ECP4V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M479A9679YTT2R4A4SS5YBJD"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNHK620E00DS114EMET",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-1",
+  "statement": "When launched in a governed repo, the reading room shall present the document corpus grouped by class, with every governed document appearing exactly once and opening into a rendered view.",
+  "rationale": "the catalog is the map the corpus lacks",
+  "fit_criterion": "fixture corpus: every committed doc of every class appears once and opens; a doc outside the classes does not appear",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8b3f0980b59d129f11e182608e65dbd314ac34b879a29572c0f54d30d97f2302",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.569Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

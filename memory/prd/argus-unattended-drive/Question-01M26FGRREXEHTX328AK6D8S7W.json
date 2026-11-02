@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRREXEHTX328AK6D8S7W",
+  "kind": "Question",
+  "subject": "prd/argus-unattended-drive",
+  "family": "Q4",
+  "statement": "Lane mechanics per medium: identity plumbing, protection interplay, required-context read, idempotent/raceable merge (P-1)",
+  "intent": "design (stages 3–4)",
+  "rationale": "open",
+  "fit_criterion": "Phase B design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:c9cb62039c7b05f757c04cd44b5268f4ea9b91f378c6310930e7edfbc03cc26f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.662Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

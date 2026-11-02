@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5WWA55X9QKCFPRY2ZWW6GDN",
+  "kind": "Document",
+  "subject": "authoring/prd-review",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/prd-review.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:a80f6145963b2f5d7c66bd6f5c2486fec9228acc494999b21198d74f08e14f79"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4BP21C87HHA9DEJB0G6PHQS"
+    }
+  ],
+  "body_sha256": "a80f6145963b2f5d7c66bd6f5c2486fec9228acc494999b21198d74f08e14f79",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T19:52:01Z",
+  "provenance": {
+    "source": ".pyxis/authoring/prd-review.md",
+    "note": "offline reconciliation"
+  }
+}

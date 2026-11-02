@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQSF7JCCYED0FVAJ6SPSJ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-7",
+  "statement": "Existing document-pipeline documents keep their bytes through the switch-over and their merged-document authoring rules, permitted typed amendments, supersession, and sanctioned retirement paths. Automated legacy immutability and append-only checks remain active only in repositories where that pipeline is enabled; Pyxis source keeps its approved bypass.",
+  "rationale": "Preserve historical authority without restoring checks the operator disabled during memory migration",
+  "fit_criterion": "Existing documents are byte-identical through cutover. Enabled-repository immutability fixtures still refuse edits and sanctioned retirement fixtures still pass. Source gate fixtures retain the bypass, while source instructions continue to forbid edits to frozen documents and permit their established evolution routes.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4e6a0fe1a22486ca37d2c96716f7f189d0b555becb99e431d301d120dbd64f33",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZPSF3FPTAGRFX5G20BB9K"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:24Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

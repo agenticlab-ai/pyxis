@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSB7PV8ZJWJ0JF1FH777MA",
+  "kind": "Document",
+  "subject": "skill/argus",
+  "family": "entry",
+  "statement": "Imported Pyxis source document: .pyxis/skills/argus/SKILL.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/skills",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "6ab1c818d15cba74da72475ea1bc3e6f5ca331cf5868d466a8fe6ecb3447f3c9",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:09Z",
+  "provenance": {
+    "source": ".pyxis/skills/argus/SKILL.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

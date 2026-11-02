@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRSQ1V3FEF5CHWYEVPV",
+  "kind": "Question",
+  "subject": "prd/contract-gate",
+  "family": "Q2",
+  "statement": "The check-input data path — enrich the fold's machine face with per-requirement kind/tier/fit/verification fields (a docgate amendment, single-parser) versus the gate parsing the projection tables (`#P-2`) — a §6.3 R1 budget risk",
+  "intent": "design",
+  "rationale": "open",
+  "fit_criterion": "technical design (before Phase A completes)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:60a1bafffe42dda176022f5bc30499263578e409c4aa61927482495bc91b1a59",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.673Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

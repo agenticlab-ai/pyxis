@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCYQCNKJDVWD88DGEV5",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-21",
+  "statement": "When the harness section is settled, each scenario shall be restated in that harness's own terms — naming the fixture it requires, the seam or seams it exercises, and the one artifact it exclusively owns under the harness's scenario contract.",
+  "rationale": "a scenario expressed in the harness's vocabulary is one a worker can build and a planner can assign; exclusive artifact ownership is what makes parallel scenario tasks safe",
+  "fit_criterion": "on the dogfood and the fixtures, every scenario names its fixture, its seams, and exactly one owned artifact; no two scenarios name the same artifact; a scenario naming a seam the harness section does not carry is a review finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7ebc703de88cacd85bce866acd321830b9cc54249c39903ee75ed4a9d12d7143",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.27Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

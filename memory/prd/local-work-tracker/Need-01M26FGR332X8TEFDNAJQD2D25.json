@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR332X8TEFDNAJQD2D25",
+  "kind": "Need",
+  "subject": "prd/local-work-tracker",
+  "family": "J5",
+  "statement": "When I am writing an engine test, I want run leasing, readiness, triage, and merge-authority behavior against a controlled medium, so I can verify invariants hermetically, with no network call",
+  "rationale": "RW-4; domain-model §8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9d800162ea6ad01b9b438a208045cb85b92bed4f55a1879e2209889a87f620c6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.979Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

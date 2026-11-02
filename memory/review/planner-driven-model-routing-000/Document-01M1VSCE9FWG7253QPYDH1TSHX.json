@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCE9FWG7253QPYDH1TSHX",
+  "kind": "Document",
+  "subject": "review/planner-driven-model-routing-000",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/planner-driven-model-routing-000.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "77a4eb61ad527f33d0837ea652263b37f8d774cc78a9462fd5683d2de9399d8a",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:48Z",
+  "provenance": {
+    "source": "docs/reviews/planner-driven-model-routing-000.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

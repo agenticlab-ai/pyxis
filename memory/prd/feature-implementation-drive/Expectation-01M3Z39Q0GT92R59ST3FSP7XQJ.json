@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3Z39Q0GT92R59ST3FSP7XQJ",
+  "kind": "Expectation",
+  "subject": "prd/feature-implementation-drive",
+  "family": "DOD-10",
+  "statement": "Existing executor, task-claim, generic-pool, signed ownership, e2e-authoring/attribution, and mainline-isolation behavior remains intact; hosted enforcement is unchanged and local code-host selection is explicit.",
+  "intent": "NR-1..NR-4, NR-6, NR-7",
+  "fit_criterion": "non-regression suite, composition inspection, and local trust-limit disclosure",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e2eb1152f598a440decef40ca742b8e6a555f9e04cb4792f1d0894c8f9dad64",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M26FGQHZFRNMSR3H5DWN9THP"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:12Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "compiled from sha256:21ff1c7841e4754da06e4ae3723f73de7456d4a66d1c82592f3ed8e357ae6153"
+  }
+}

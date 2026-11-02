@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/argus-journal-type-recovery",
+  "feature": "argus-boundary-enforcement",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

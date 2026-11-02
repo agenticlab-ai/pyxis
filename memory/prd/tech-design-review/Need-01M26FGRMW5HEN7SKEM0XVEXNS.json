@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRMW5HEN7SKEM0XVEXNS",
+  "kind": "Need",
+  "subject": "prd/tech-design-review",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "human-overlay residual after an approve verdict",
+  "fit_criterion": "median 0 at the same checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6e15932f4e8ac9e9ac395991ea2a8e6f5cb9c0460131dba3b441dd190520949f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.548Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

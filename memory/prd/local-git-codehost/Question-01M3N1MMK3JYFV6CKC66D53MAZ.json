@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMK3JYFV6CKC66D53MAZ",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-6",
+  "statement": "`implement-now` task proposals target a feature-integration branch, while the receipt and stale-ref checks named only mainline. A receipt for mainline would not bind the actual task landing.",
+  "intent": "GitHub code review on PR #1312, discussion 4125958223, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

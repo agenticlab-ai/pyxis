@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQH588V8W0870W20YGEJ",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "G1",
+  "statement": "We believe a disciplined elicitation front half producing a frozen record; expected result: PRD synthesis that never re-interviews and never invents — the contract reflects the operator's rulings",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0e68cbe98cebbcfb4b198e41624d67cb2f9d64e32df0f52b1aab860b6f48b658",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.405Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

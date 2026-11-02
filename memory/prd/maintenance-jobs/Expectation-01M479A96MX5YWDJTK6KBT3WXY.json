@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96MX5YWDJTK6KBT3WXY",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "EVAL-2",
+  "statement": "Measure the required CI gate honestly",
+  "intent": "Complete/incomplete required-check evidence, failed/cancelled runs, mixed commit/event samples, and local-only estimates",
+  "fit_criterion": "Every case labels evidence limits and rejects unverified target claims",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

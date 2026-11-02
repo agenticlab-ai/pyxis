@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ1W5XKZP1A2TECWEBQ",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NFR-11",
+  "statement": "Reviewer usage shall be summable across concurrent workers by harness, native review profile, effective depth, pass count, and internal round, with no fleet-wide correctness ceiling.",
+  "intent": "Fleet spend visibility",
+  "fit_criterion": "canonical routed outcomes plus EVT-7 reproduce per-process and fleet totals; missing/duplicate attempt identities fail the audit; any target comparison remains descriptive",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:24ed45ee18b3dab037edbccbeabdff4cc89c36f1060272f4ae0e669d3e9db977",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.593Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

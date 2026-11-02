@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M37KT2MMX5YQP303J29HNKGG",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-1",
+  "statement": "When an operator review comment is explicitly captured from the conversation, the system shall record a ledger entry carrying the comment verbatim, its author, its timestamp, and its subject anchor.",
+  "rationale": "capture the operator review touchpoint (J1)",
+  "fit_criterion": "for a session with N captured comments, N entries exist, each with all four fields populated",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5644e2f061d99c7af8e29b61bc4fa04b2b8fd72c93662211117aa78c92a99684",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGRED96Z4JKPB8ZM36PQR"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:07:59Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "note": "compiled from sha256:db352bc12b51ed5d5751ff52b4b092732ce4e80ff3b490e88375abd32b5f7d81"
+  }
+}

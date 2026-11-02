@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2VP1G7EXPH5FYCKQHJSPV3Q",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-4",
+  "statement": "Claude, Codex, Cursor, and OpenCode process adapters tee child stdout and stderr into private .pyxis/logs/agents/<harness>/<run> files in the persistent owning checkout. Capture preserves each adapter's existing output consumer, serializes shared stdout/stderr destinations, warns on storage failure without failing the child protocol, and closes files after process drain or failed launch.",
+  "intent": "Keep raw worker diagnostics available after disposable worktrees are removed without changing process protocols or introducing a race in Codex's combined output buffer.",
+  "rationale": "Worker output previously disappeared after execution or worktree removal. Capture owns only the diagnostic files and does not serialize launch environment or authentication state. A failed diagnostic sink must not prevent an otherwise valid child process from running.",
+  "fit_criterion": "Runtime tests exercise persisted stdout/stderr, linked-worktree ownership, private permissions, sink failures, and adapter process lifetimes under the race detector.",
+  "tags": [
+    "code:internal/executor/runtime",
+    "code:internal/adapters/harness/claude",
+    "code:internal/adapters/harness/codex",
+    "code:internal/adapters/harness/cursor",
+    "code:internal/adapters/harness/opencode"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26J1SZTFP5AFKKFNTVTQA6J"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-19T01:56:06Z",
+  "provenance": {
+    "source": "code:internal/executor/runtime/output.go",
+    "pr": 1175,
+    "note": "Retarget code associations after the port-axis adapter move."
+  }
+}

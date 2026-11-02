@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZJTQSA3K9J8KPPGA8H",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-6",
+  "statement": "When the docgate gate runs, the structure arm shall report a named defect when any tier bundle contains a token that is not a defined action-class token (so a never-class act cannot be granted by any data state).",
+  "rationale": "DINV-5 no grant of a never-class act — structural (J2)",
+  "fit_criterion": "on the seeded fixture (a bundle listing an undefined / never-class token), the arm reports a defect naming the token; the pinned legal vocabulary passes; the check verifies token-membership, not a separate \"no-never-grant\" scan (matching the template checklist)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2e2c1bad9d285816f977fa09ab9934a77c9f24f6eef68a723db25eab755610b9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.842Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

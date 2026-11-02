@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQH6GPNGS9441PGNNZ38",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "G2",
+  "statement": "We believe capturing every ruling with its question, answer, and anchor at the moment it lands; expected result: a complete provenance chain from raw idea to requirement",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9659642a01a7e7af7a5792ae75635df7cc25b1216d79b62fe866e31a16948c61",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.406Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

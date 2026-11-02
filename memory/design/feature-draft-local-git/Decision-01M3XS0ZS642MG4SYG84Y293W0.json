@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0ZS642MG4SYG84Y293W0",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.7.1",
+  "statement": "One lock-preparation step rebases the draft onto the current mainline, compiles its working files once, writes the records with evidence taken at that tree, stores each file's exact text, and removes the working files, so only freshly compiled records land (`design-brainstorm:feature-draft-tech-design#D-11`, `#D-13`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:cf3fcb3ad9cd181b8d5c558a41717595506f4ce9c564de8db92bced9ca7a8b6f",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:26Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 176-176 in section 3.7; sha256:cf3fcb3ad9cd181b8d5c558a41717595506f4ce9c564de8db92bced9ca7a8b6f"
+  }
+}

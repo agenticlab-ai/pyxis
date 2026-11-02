@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFRH0V0X96EVWVFMH7A",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-5",
+  "statement": "stale_flagged fires when an await or the checker exceeds its threshold",
+  "intent": "subject: enum(await, checker), age_s: int, threshold_s: int",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bde4e1636fe2c4d51a7f3bf3c6a2d561d216bfb6da7b775d21c728e5056b01eb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.384Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

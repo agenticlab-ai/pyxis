@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR87KPATP8WBREZZCJ78",
+  "kind": "Expectation",
+  "subject": "prd/plan-viewer",
+  "family": "DOD-2",
+  "statement": "No unwanted-behavior or non-regression row broken",
+  "intent": "UB-1..2, NR-1..2",
+  "fit_criterion": "suite results + diff audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b73866eefb351acee2c851a3227180f0303a1c52cfa1e4223699076ede1a42cb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.143Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

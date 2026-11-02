@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRDPZYESGE169HHQS8DE",
+  "kind": "Need",
+  "subject": "prd/read-to-rule",
+  "family": "J2",
+  "statement": "When an amendment changes a frozen contract, I want re-sign off the §0 delta without re-reading the document, so I can keep living contracts cheap to re-approve",
+  "rationale": "brainstorm:gate-attention#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b3ddbd26e43b22c47f68c9c431131aa6dd25016cde82341c6bc0291bf1af0300",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.318Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

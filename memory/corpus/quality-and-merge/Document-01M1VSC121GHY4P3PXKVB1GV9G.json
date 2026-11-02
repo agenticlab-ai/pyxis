@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC121GHY4P3PXKVB1GV9G",
+  "kind": "Document",
+  "subject": "corpus/quality-and-merge",
+  "family": "requirements",
+  "statement": "Imported Pyxis source document: docs/prds/quality-and-merge.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "4fbad0310585b577944c0cc069143a8af8c011b09307cd1b7b795191dd0ac08c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:35Z",
+  "provenance": {
+    "source": "docs/prds/quality-and-merge.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

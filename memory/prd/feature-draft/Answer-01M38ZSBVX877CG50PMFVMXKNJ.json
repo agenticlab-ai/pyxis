@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSBVX877CG50PMFVMXKNJ",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Withdrawn: this release migrates no existing feature; existing features keep their frozen documents, and moving them into drafts waits in WR-5 (brainstorm:feature-draft#D-26).",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQR2Z1PMKTSN8ZYKVTD7V"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:33Z"
+}

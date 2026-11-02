@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBYHNJCG9D9WYZP00QH",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "UB-3",
+  "statement": "If If the working tree contains uncommitted ledger changes during `verify-generated`, then the system shall verify against the working tree exactly and say so in output",
+  "intent": "verdict + dirty-tree note",
+  "fit_criterion": "dirty-tree fixture produces the note and correct verdict",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:98baa56b7e18aa376e914f6d94a45354deea2f442e228e24957de37a78632fbe",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.238Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

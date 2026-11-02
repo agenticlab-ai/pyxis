@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XGBA2WPSAKF55H24JD6",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-3",
+  "statement": "A prototype that cannot be made to work reports what stopped it",
+  "intent": "FR-4",
+  "fit_criterion": "One run on an idea chosen because it cannot be built in the repository, and its findings record",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCZZ39D0Y4YZSZSVDP3",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "ABUSE-1",
+  "statement": "an authoring flow (or whoever shapes its output) steering the gate by omitting or downranking a contentious call in §0 — vector: the reviewer rules off §0 and never reaches the buried call",
+  "intent": "a call that deserved a veto freezes at merge",
+  "fit_criterion": "omission: the whole-document signature (NG-1), the sampled full read surfacing omissions as outside-§0 items (FR-8), misses driving recalibration (§3.3 ship rule), and the unmanned reviewer's full-body coverage (NG-2). Burial and in-cap flooding: FR-4's ordering-rule conformance, the ranked-call bound (NFR-1), and the DOD-4/G3 worth-having rubric — a §0 padded to bury is a rubric fail at the prove and at every sampled gate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:879ecbd8add0fa04ca5337f881da94a47357d3185ff1ed739d56318bd118af53",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.295Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

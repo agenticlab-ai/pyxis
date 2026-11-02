@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVTFBP7W0P2FAC5V326",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "ABUSE-1",
+  "statement": "implementing agent optimizing to pass — vector: writes tests that assert without exercising the implementation (tautology)",
+  "intent": "green certifies nothing; defect ships",
+  "fit_criterion": "FR-11 (falsification). Named residual: FR-11 proves the new tests discriminate presence/absence of the implementation — a test that actively detects the revert environment and fails conditionally defeats it; that class waits for mutation-depth checks (WR-3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:10c241e9a72844690bc8d2b70f346229001ffb2e63e0d5f3283b8a6b50b4f8e2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.746Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

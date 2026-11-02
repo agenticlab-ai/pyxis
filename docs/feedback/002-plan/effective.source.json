@@ -1,0 +1,40 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "subject": "002-plan",
+  "as_of": "001",
+  "content_fingerprint": "sha256:4fc2066ee6efd9e252525cd73069fe0f7b0e22b1d530b68bd97eadc1c70a63ac",
+  "entries": [
+    {
+      "entry": "001",
+      "source": "doc-review",
+      "author": "Ali S",
+      "timestamp": "2026-07-28T18:59:49Z",
+      "subject_anchor": "002-plan#review",
+      "comment": "everything is ok",
+      "disposition": null,
+      "source_file": "001-doc-review.md"
+    }
+  ],
+  "measures": {
+    "total": 1,
+    "disposed": 0,
+    "open": 1,
+    "disposition_counts": {
+      "applied": 0,
+      "became-incident": 0,
+      "declined-with-reason": 0,
+      "no-action": 0
+    },
+    "applied_decline_ratio": {
+      "applied": 0,
+      "declined": 0,
+      "value": null
+    },
+    "edit_distance": {
+      "count": 0,
+      "sum": 0
+    }
+  }
+}

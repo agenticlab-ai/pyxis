@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR79G0GK4CXCM9PZ4Q0B",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "G1",
+  "statement": "We believe freezing all planning judgment at the richest-context site (the planning session) into charters the executor reads verbatim; expected result: tasks executing with zero re-planning and zero human fixup",
+  "fit_criterion": "M1, M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:925e3bf82a2240e722b6d8327e60407b0cf671b385178841580f7ca43a40760f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.113Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZHZR87TBWS2Q7VN5KS",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "NFR-2",
+  "statement": "The system shall send each credential only to the service that owns it during checks (gh→GitHub; the artifact door credential→its host), and no probe shall transmit repository content.",
+  "intent": "Security",
+  "fit_criterion": "inspection of probe calls; the credential-containment tests extend to the probes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4a156ef9d5ea9ed8e5548a319425426a2257bb21383fdff8ec65b708490f622b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.865Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX6JM5Q26JM00MZD3Z2",
+  "kind": "Decision",
+  "subject": "design/incident-machinery",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:incident-machinery/FR-1 · prd:incident-machinery/FR-2 · prd:incident-machinery/FR-3 · prd:incident-machinery/FR-4 · prd:incident-machinery/NR-1 · prd:incident-machinery/UB-1.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:4278031c04df70f1e41423635d309ec7030a7703f3b056cf104f05a4e6a3bf8b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCS2BRF5KEA4C2N3PY105"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQY6FXE3RPKS2WB94MWD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQY7FMR20EWHM18MRDY3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQY8D8XZ1Y1RFRVTJZ76"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQY97V6PFWPB4SZ884G1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQYA97KP1FK0FF0XJW05"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQYBXZBD5QAP17DH10J3"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.814Z",
+  "provenance": {
+    "source": "docs/tech-design/incident-machinery.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 4278031c04df70f1e41423635d309ec7030a7703f3b056cf104f05a4e6a3bf8b"
+  }
+}

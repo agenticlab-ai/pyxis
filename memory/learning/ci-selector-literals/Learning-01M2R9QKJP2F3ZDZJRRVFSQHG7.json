@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2R9QKJP2F3ZDZJRRVFSQHG7",
+  "kind": "Learning",
+  "subject": "learning/ci-selector-literals",
+  "statement": "Hosted selection names must remain literal shell words, and worker display names must not shadow the required docs-gate result.",
+  "intent": "Preserve the exact shared-check predicate when the workflow partitions checks through shell arguments.",
+  "rationale": "Registry membership alone does not make a name safe in an unquoted workflow command. A registered name containing ||true can make both partition steps mask a selection error while static set coverage appears complete. Hosted include and exclude lists therefore accept only literal word characters and commas. This restriction leaves the native configuration and local runner unchanged. Computed or whitespace-padded aliases of the required status are also refused.",
+  "fit_criterion": "TestRegisteredNamesCannotBecomeWorkflowShellSyntax rejects registered operator, glob, and variable-expansion names in both selection modes and in the complete partition. Aggregate mutations reject computed and padded required-status aliases. Focused race tests pass, and every parity-package source file remains above the 90 percent coverage floor.",
+  "learned_from": [
+    "Final review of the two-job partition found that an unsafe registered name could preserve the static union while changing the shell's actual arguments or exit status."
+  ],
+  "tags": [
+    "code:internal/ciparity",
+    "owner:design/code-gate-mirror",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Learning-01M2R9Q9ES4SHBPTAHEDC3P41F"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T18:23:16Z",
+  "provenance": {
+    "source": "code:internal/ciparity",
+    "commit": "6f618b26f7be022e7da6f6e456d42c30ef1337b2"
+  }
+}

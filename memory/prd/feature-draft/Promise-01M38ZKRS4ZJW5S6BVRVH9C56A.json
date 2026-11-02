@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKRS4ZJW5S6BVRVH9C56A",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-18",
+  "statement": "When the lock approval is requested, the system shall present every requirement change made during the draft together with its ruling, marking each change that no ruling names.",
+  "rationale": "The lock review shows who changed what and why (brainstorm:feature-draft#D-9)",
+  "fit_criterion": "The approval request of a fixture draft with five ruled changes and one unruled change lists all six, the five with author, reason, and triggering problem and the sixth marked unruled.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b4d2afd71b3503561ef54e950445d1eb89771c8315ce5b30c6e5688c03c9d84b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:29Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

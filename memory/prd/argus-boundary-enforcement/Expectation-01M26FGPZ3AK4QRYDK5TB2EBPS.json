@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ3AK4QRYDK5TB2EBPS",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-7",
+  "statement": "The introducing PR states the incident-I1 bootstrap exception (the structure arm cannot gate its own introducing PR; operator review is the backstop for that one PR)",
+  "intent": "UB-5; incident I1",
+  "fit_criterion": "the introducing PR's bootstrap note",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fd388c002f5af01e37598a2544ba722827e49291dc708cb525b901a0e62a1c3d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.827Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

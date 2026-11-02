@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3Q61HSFNJ32QKEHBXA15RM7",
+  "kind": "Document",
+  "subject": "template/operand-agents-manual",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/operand-agents-manual.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:ef9fb8671e1b37aad467e7fdcec580c9309179f47ab9c5d11463e243fa39696f"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M31W3T3VQGZHPCC69Y547G2N"
+    }
+  ],
+  "body_sha256": "ef9fb8671e1b37aad467e7fdcec580c9309179f47ab9c5d11463e243fa39696f",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T18:15:14Z",
+  "provenance": {
+    "source": ".pyxis/templates/operand-agents-manual.md",
+    "note": "offline reconciliation"
+  }
+}

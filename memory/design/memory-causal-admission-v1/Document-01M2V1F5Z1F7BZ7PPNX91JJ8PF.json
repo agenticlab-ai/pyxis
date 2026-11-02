@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2V1F5Z1F7BZ7PPNX91JJ8PF",
+  "kind": "Document",
+  "subject": "design/memory-causal-admission-v1",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-causal-admission-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813"
+  ],
+  "body_sha256": "7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:56:34Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-causal-admission-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "offline reconciliation"
+  }
+}

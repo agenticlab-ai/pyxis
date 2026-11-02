@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAKPPN4NRA2J0C7TK3M",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NFR-5",
+  "statement": "Among qualified native profiles that satisfy every semantic minimum, the resolver shall choose the declared least-cost profile.",
+  "intent": "Cost",
+  "fit_criterion": "exhaustive mapping tests prove no more costly satisfying candidate is selected when a cheaper qualified candidate exists",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3d728985d6b863941494eaf3f905c1e68353587e1c556d0bdb12095e031e82cf",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.219Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

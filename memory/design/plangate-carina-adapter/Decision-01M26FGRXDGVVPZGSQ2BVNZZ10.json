@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXDGVVPZGSQ2BVNZZ10",
+  "kind": "Decision",
+  "subject": "design/plangate-carina-adapter",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:plan-new/FR-25.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:647f94d27667ba074481e31c553cff0b9eb989b1fb0fbd67fb0542abff257beb",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCV3N5XY0RZ2PSZQ5E5N8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6WPS4VAA3CV17X1KGV"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.821Z",
+  "provenance": {
+    "source": "docs/tech-design/plangate-carina-adapter.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 647f94d27667ba074481e31c553cff0b9eb989b1fb0fbd67fb0542abff257beb"
+  }
+}

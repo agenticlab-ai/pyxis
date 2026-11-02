@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979KRS8V46JD0JP1J4XQNH",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.3.1.1",
+  "statement": "The reopen command writes the binding version's stored `prd.md` and `tech-spec.md` text, byte for byte, as the draft's first commit. The problems and events files start empty, and no brainstorm record or review report is copied: they stay in memory as the binding version's history (`design-brainstorm:feature-draft-tech-design-2#D-2`; `brainstorm:feature-draft#D-25`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:174793d5a8373396f0843fcab2eaeba4d4be60dad59f545cc20d7cf3792f40aa",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:45Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 62-62 in section 3.1; sha256:174793d5a8373396f0843fcab2eaeba4d4be60dad59f545cc20d7cf3792f40aa"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P3WJQRYR1V7HJWD6NA7G0",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-installer-e2e",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/installer-e2e.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:22272bfa259eba93eaea25e94bd6d98d7d1c022d2d896c7a570f615675026130"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2BVCNZFH4ZQ5R459F766B9N"
+    }
+  ],
+  "body_sha256": "22272bfa259eba93eaea25e94bd6d98d7d1c022d2d896c7a570f615675026130",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:03:59Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/installer-e2e.yml",
+    "note": "offline reconciliation"
+  }
+}

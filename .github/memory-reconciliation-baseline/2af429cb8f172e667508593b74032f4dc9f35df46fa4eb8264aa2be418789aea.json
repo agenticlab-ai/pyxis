@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/e2e-verification#Q6",
+  "feature": "e2e-verification",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

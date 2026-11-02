@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Answer-01M390XPM111SQMAM9F1X99V6N",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered in design:feature-draft-v1 §3.11: plan traces cite requirement IDs as today and resolve against the locked version's records, and a plan names the lock it was generated from.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQZA8RAKEGDNSECDT44R2"
+    },
+    {
+      "type": "supersedes",
+      "target": "Answer-01M38ZSJH52B2EE7WV6A3QNVTD"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:16:23Z"
+}

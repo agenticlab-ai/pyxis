@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3C7RDP33ARFCVWFM1NEFPP7",
+  "kind": "Document",
+  "subject": "skill/tech-design-new",
+  "family": "entry",
+  "statement": "Captured authored source: .pyxis/skills/tech-design-new/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:0028d01457869bcfd00f2645b5e767198d402e74db59bfa490de1f3bfe021645"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBA198222SRRYTYGFWTWD"
+    }
+  ],
+  "body_sha256": "0028d01457869bcfd00f2645b5e767198d402e74db59bfa490de1f3bfe021645",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-25T12:13:34Z",
+  "provenance": {
+    "source": ".pyxis/skills/tech-design-new/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

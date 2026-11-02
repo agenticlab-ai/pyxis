@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M49BK4XT0HC4PE2YYZ17EN90",
+  "kind": "Need",
+  "subject": "prd/inherited-learning-repair",
+  "family": "J2",
+  "statement": "When My checkout reports an already-fixed blocker, I want Obtain the fixing state, so I can Update and revalidate",
+  "rationale": "problem:inherited-learning-repair#A-3",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

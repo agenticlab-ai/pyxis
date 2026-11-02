@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVWGV7KMJ6KHNGJ3MJR",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "ABUSE-3",
+  "statement": "implementing agent clearing a red — vector: adds its new failure to the baseline, or unbinds a verb in the manifest, inside the proposal diff",
+  "intent": "the gate is redefined by the thing it gates",
+  "fit_criterion": "FR-8 (machinery protection); baseline writes human-lane by convention until remote enforcement (WR-5)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c01f9b44c06aab703f37c009e5c1df3377203bfe37880d1692b3d15449544d4d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.748Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

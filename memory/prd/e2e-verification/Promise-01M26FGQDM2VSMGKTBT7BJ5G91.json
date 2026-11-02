@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDM2VSMGKTBT7BJ5G91",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NFR-1",
+  "statement": "The authoring skills shall reason about e2e app-neutrally — producing a design and tasks, not a running system — carrying no app-shape-specific code that would tie them to one shape.",
+  "intent": "Portability (app-shape neutrality)",
+  "fit_criterion": "across fixtures of at least two app shapes, the skills produce a valid design + plan; inspection confirms shape-specific choices live in the authored content, not skill code",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a8a3097723f5d8c9c45bfdbea658d713a21c38a103c92eaa52b2fc67fee523c3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.292Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

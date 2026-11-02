@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M4A2NSYJW1TEPNPQMGRK8NW9",
+  "kind": "Document",
+  "subject": "governance/architecture-principles",
+  "family": "principles",
+  "statement": "Captured authored source: docs/architecture-principles.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/root",
+    "reconcile:source",
+    "sha256:affa97de200787aebce6f375d853aa32712a2b90979bc7e97c70084a9df72bfb"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBCTQZ49BBPS7RQ8T7CV5"
+    }
+  ],
+  "body_sha256": "affa97de200787aebce6f375d853aa32712a2b90979bc7e97c70084a9df72bfb",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-10-07T02:21:58Z",
+  "provenance": {
+    "source": "docs/architecture-principles.md",
+    "note": "offline reconciliation"
+  }
+}

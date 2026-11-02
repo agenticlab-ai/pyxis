@@ -1,0 +1,4 @@
+#!/bin/sh
+# docgate pre-commit — delegate-only shim; resolution lives in docgate-resolve.sh
+# (layout design §3.7). Activation: go run ./cmd/hooks-setup
+exec "$(git rev-parse --show-toplevel)/.pyxis/scripts/docgate-resolve.sh" gate

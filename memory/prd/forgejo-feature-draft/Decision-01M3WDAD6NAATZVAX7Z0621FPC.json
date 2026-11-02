@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6NAATZVAX7Z0621FPC",
+  "kind": "Decision",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "R-2",
+  "statement": "Forgejo protection alone may not prove a specific operator review.",
+  "rationale": "Configure protection and independently read exact-head human review before tag.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

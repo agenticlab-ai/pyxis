@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZNWW0QNF71KKF6ADD35KR",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "G2",
+  "statement": "We believe readiness checks before the lock; expected result: corrections move inside the draft without pushing gaps past the lock",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2e5419238bf99ff9df2cc76b5fba9e037efa0f72de357d2c69f69ac510148fab",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:39Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

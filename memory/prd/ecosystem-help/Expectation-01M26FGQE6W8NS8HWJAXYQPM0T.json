@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE6W8NS8HWJAXYQPM0T",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "DOD-3",
+  "statement": "The routing eval clears its bar",
+  "intent": "EVAL-1",
+  "fit_criterion": "the scenario checklist with results (manual harness until eval machinery exists)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7588cb08b99c7b285e9cf3eec6783b320067ce74b4936cf9264d521ea584a932",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.31Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

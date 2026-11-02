@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M38ZR8MMTBS5YBW36T2YVJAF",
+  "kind": "Document",
+  "subject": "brainstorm/feature-draft",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/feature-draft.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:a3dd0a56bce1b4375ee442bf7d9e4efce2bbf14e1b7cb453e1a0a009b80b1192"
+  ],
+  "body_sha256": "a3dd0a56bce1b4375ee442bf7d9e4efce2bbf14e1b7cb453e1a0a009b80b1192",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:57Z",
+  "provenance": {
+    "source": "docs/brainstorms/feature-draft.md",
+    "note": "offline reconciliation"
+  }
+}

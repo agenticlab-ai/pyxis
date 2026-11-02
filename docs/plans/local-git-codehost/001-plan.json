@@ -1,0 +1,2433 @@
+{
+  "schema_version": "plan/v2",
+  "generated_by": "plangate/v1",
+  "title": "Local Git code host — plan 001",
+  "feature": "local-git-codehost",
+  "prd": "prd/local-git-codehost",
+  "design": "design/local-git-codehost",
+  "basis": "lock/local-git-codehost/v1",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v2",
+  "epic_title": "Deliver exact-head local Git drafts and feature landings for AEC",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v2",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Select and diagnose the local Git code host",
+      "goal": "An installed repository can select `local-git`, and every affected command sees one code-host semantic port and a diagnostic of the configured bare origin.",
+      "current": "Draft and implementation paths invoke hosted code-host operations, and a bare `origin` makes draft status fail through `gh`.",
+      "desired": "The explicit local binding resolves a configured bare origin, refuses an absent or mismatched origin before writes, and routes code-host semantics through consumer-side interfaces. Doctor reports mainline and proposal readiness plus the shared-account, unauthenticated-approver, and copied-origin limits. Hosted bindings retain their existing behavior.",
+      "scope": [
+        "explicit local code-host selection and closed configuration validation",
+        "consumer-side code-host operations wired through composition roots",
+        "bare-origin and configured-mainline diagnostics with trust disclosures"
+      ],
+      "out_of_scope": [
+        "publishing proposal records or approval receipts (T2, T3)"
+      ],
+      "acceptance": [
+        "selecting local mode with a valid bare origin resolves the same configured origin across draft, implementation, and doctor commands",
+        "an absent or mismatched origin refuses before a write and names the configuration defect",
+        "a command-spy fixture records zero `gh`, Forgejo, or network calls in local mode",
+        "hosted adapter conformance and pinned-execution tests keep their prior expected results"
+      ],
+      "key_interfaces": [
+        "configured code-host binding and consumer-side proposal, review, and landing ports",
+        "doctor result fields for origin, configured mainline, and accepted trust limits"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-1",
+        "prd:local-git-codehost/FR-10",
+        "prd:local-git-codehost/UB-3",
+        "prd:local-git-codehost/NR-1",
+        "prd:local-git-codehost/NFR-1",
+        "design:local-git-codehost#D-1",
+        "design:local-git-codehost#D-7"
+      ],
+      "touches": [
+        "internal/docgate/config · internal/adapters/codehost · internal/draft · internal/executor · cmd/pyxis · cmd/doctor"
+      ],
+      "size_band": {
+        "lo": 140,
+        "hi": 250
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Selection and doctor cross configuration, draft, implementation, and code-host composition roots."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks every composition path for a hidden hosted call and an honest trust disclosure."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T1",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Publish discoverable local proposal records atomically",
+      "goal": "A clone can list each local draft or implementation proposal with its exact branch head and workflow-derived target.",
+      "current": "A bare Git origin has branches but no proposal identity or reviewable proposal state.",
+      "desired": "A closed proposal record names kind, identity, branch, current head, workflow-derived target ref and old SHA, state, and monotonic event sequence. Publication and revision update branch and proposal refs in one atomic push with expected old OIDs. A stale writer, unsupported atomic push, or interruption leaves the prior pair intact; a completed push is recoverable from a clone.",
+      "scope": [
+        "versioned local proposal object and dedicated origin ref",
+        "paired atomic branch and proposal publication with leases",
+        "clone-visible listing, revisions, abandonment, and idempotent recovery"
+      ],
+      "out_of_scope": [
+        "receipt publication and landing authorization (T3, T5, T8, T10)"
+      ],
+      "acceptance": [
+        "a fresh clone lists proposal identity, kind, exact head, and target from the configured origin",
+        "concurrent writers leave one consistent branch/proposal pair and refuse the stale writer",
+        "an origin without atomic push support refuses without advancing either ref",
+        "a crash before publication leaves the old pair; a retry after publication recognizes the new pair once"
+      ],
+      "key_interfaces": [
+        "closed proposal record with monotonic event sequence",
+        "atomic Git ref transaction with explicit expected old OIDs"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-2",
+        "prd:local-git-codehost/UB-4",
+        "prd:local-git-codehost/NFR-3",
+        "design:local-git-codehost#D-2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/adapters/codehost/localgit · internal/draft/lifecycle"
+      ],
+      "size_band": {
+        "lo": 200,
+        "hi": 300
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "The local proposal format and paired Git ref transaction establish a new durable code-host medium."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Race, crash, and clone fixtures must prove the branch and record never diverge."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Record exact-head receipts under the local approval contract",
+      "goal": "The operator can record one declared review of a prepared head, while Pyxis rejects stale or malformed receipts and states that local actor identity is unauthenticated.",
+      "current": "No local receipt protocol is implemented; T13 must first land the approved exception to the hosted review contract.",
+      "desired": "After T13 lands the scoped amendment and successor design, the operator command publishes a once-only receipt binding proposal record OID and sequence, operation, branch, exact head, target ref and SHA, digest, and nonce. A changed generation, head, target, or digest refuses, including `H1→H2→H1`; the retained receipt can be checked from a clone without an identity-authentication claim. Hosted review identity behavior remains.",
+      "scope": [
+        "once-only local receipt publication and canonical field validation",
+        "same-origin replay, proposal-generation, and target-ref checks"
+      ],
+      "out_of_scope": [
+        "user identity authentication under the accepted shared OS account",
+        "draft or implementation landing transactions (T5, T8, T10)"
+      ],
+      "acceptance": [
+        "T13's approved amendment and successor design are merged before any local receipt or approval route is enabled",
+        "missing, malformed, wrong-head, wrong-target, and changed-generation receipts refuse with no landing mutation",
+        "`H1→H2→H1` cannot reuse the first `H1` receipt, and a new matching receipt succeeds",
+        "a fresh clone checks the retained receipt and reports approval actor and repository identity as unauthenticated"
+      ],
+      "key_interfaces": [
+        "local review-request and receipt record schemas with proposal OID, sequence, and nonce",
+        "approval port's local consistency result and hosted identity-preserving result"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-3",
+        "prd:local-git-codehost/FR-4",
+        "prd:local-git-codehost/UB-1",
+        "prd:local-git-codehost/DOD-5",
+        "design:local-git-codehost#D-3"
+      ],
+      "blocked_by": [
+        "T2",
+        "T13"
+      ],
+      "touches": [
+        "internal/adapters/approval/localgit · internal/draft/approval"
+      ],
+      "size_band": {
+        "lo": 220,
+        "hi": 300
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Receipt code crosses the local adapter and draft approval boundary governed by the already merged T13 contract."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review verifies the predecessor contract is merged and adversarial replay cases refuse before local approval is enabled."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Drive draft status and rounds from the local origin",
+      "goal": "Draft status, open, round, reopen, and abandon work on a configured local bare origin after its first mainline push.",
+      "current": "Status and open call hosted APIs; an empty origin needs the separate base-free first-push gate before a draft has a mainline base.",
+      "desired": "The lifecycle reads local proposal refs through the code-host port, creates or revises paired refs, and preserves the existing draft event state. Open and preparation refuse an absent configured mainline with the first-push remedy. The already approved init-epoch proof supplies that separate first push; subsequent mainline pushes retain history gates, including a non-`main` configured branch.",
+      "scope": [
+        "local draft status, open, round, reopen, and abandonment paths",
+        "configured-mainline prerequisite and first-push gate integration",
+        "local proposal identity in draft event and status output"
+      ],
+      "out_of_scope": [
+        "compile, readiness, and reviewed lock landing (T5)"
+      ],
+      "acceptance": [
+        "a real initialized bare-origin fixture opens, revises, lists, reopens, and abandons a draft without hosted calls",
+        "before first configured-mainline publication, open and prepare refuse with the installed first-push remedy",
+        "the pinned init-epoch first push succeeds base-free; wrong epoch and later history violations refuse",
+        "a configured mainline branch other than `main` is used for draft targets and history checks"
+      ],
+      "key_interfaces": [
+        "lifecycle proposal-store port and configured-mainline resolver",
+        "first-push init-epoch proof from issue #1305 and PR #1307"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-2",
+        "prd:local-git-codehost/FR-9",
+        "prd:local-git-codehost/UB-3",
+        "design:local-git-codehost#D-2",
+        "design:local-git-codehost#D-4"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/draft/lifecycle · internal/adapters/draft · cmd/pyxis · internal/codegate"
+      ],
+      "size_band": {
+        "lo": 170,
+        "hi": 270
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Draft lifecycle verbs must consume local proposal state and the configured mainline instead of GitHub."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks both the missing-mainline refusal and the existing first-push gate against a real bare origin."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "Prepare and lock a reviewed local feature draft",
+      "goal": "One reviewed local draft becomes one durable lock whose exact PRD and tech-spec bytes a fresh clone can verify.",
+      "current": "Preparation, approval reading, and lock recording assume a hosted pull request and cannot land on a bare origin.",
+      "desired": "Preparation reuses rebase, compile, readiness, memory, and change-report gates against the pinned configured mainline. Operator-invoked lock rechecks the exact head, proposal generation, target and receipt, then atomically publishes the squash landing, lock tag, final proposal with embedded receipt, archive, and leased branch deletion. A crash before publication leaves the proposal; one after publication is recognized without a second lock.",
+      "scope": [
+        "local preparation with hosted-equivalent readiness and memory predicates",
+        "atomic reviewed squash lock, tag, proposal finalization, and archive publication",
+        "clone-visible lock verification and crash-safe idempotent recovery"
+      ],
+      "out_of_scope": [
+        "task and final feature implementation proposals (T6–T10)"
+      ],
+      "acceptance": [
+        "every hosted readiness negative fixture also refuses local preparation or lock",
+        "a matching receipt lands exactly the reviewed PRD and tech-spec bytes once, with one versioned tag",
+        "moved branch or mainline and missing or altered receipt ref refuse the whole transaction",
+        "a fresh clone verifies lock bytes, receipt consistency, and reviewed head after deleting the review worktree"
+      ],
+      "key_interfaces": [
+        "prepared draft request and lock record with receipt digest and readiness digest",
+        "atomic target, tag, final proposal, archive, and branch-deletion transaction"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-4",
+        "prd:local-git-codehost/FR-5",
+        "prd:local-git-codehost/FR-6",
+        "prd:local-git-codehost/UB-1",
+        "prd:local-git-codehost/UB-2",
+        "design:local-git-codehost#D-4"
+      ],
+      "blocked_by": [
+        "T3",
+        "T4"
+      ],
+      "touches": [
+        "internal/draft/lock · internal/adapters/codehost/localgit · internal/memory · cmd/pyxis"
+      ],
+      "size_band": {
+        "lo": 220,
+        "hi": 300
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Locking joins compile, memory readiness, approval, atomic Git landing, and durable version identity."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review must prove prepared bytes match the landed tree across stale-ref and crash cases."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "Authorize operator-run local feature-drive landings",
+      "goal": "The feature drive can request and observe local task and final proposals while only an operator procedure invokes their landing command.",
+      "current": "Its PRD requires human code-host merge and host-enforced final-candidate checks; a shared-account bare origin cannot provide that protection.",
+      "desired": "After T14 lands the scoped amendment and successor design, the drive opens or updates local proposals and verifies landed results but never calls the operator-only landing operation. Hosted mode retains required review/check enforcement.",
+      "scope": [
+        "drive-facing local proposal and observer interfaces",
+        "local landing command separated from Argus's request path"
+      ],
+      "out_of_scope": [
+        "task aggregate and landing mechanics (T7, T8)",
+        "final candidate and landing mechanics (T9, T10)"
+      ],
+      "acceptance": [
+        "T14's approved feature-drive amendment and successor design are merged before local task or final landing is enabled",
+        "an Argus drive can request a local task or final proposal and observe status without invoking the landing command",
+        "the landing surface presents the exact head, workflow-derived target, and unauthenticated actor boundary to the operator",
+        "hosted feature-drive authorization and required-verdict fixtures retain their prior outcomes"
+      ],
+      "key_interfaces": [
+        "feature-drive proposal request and landed-result observer ports",
+        "operator landing command boundary and local-mode policy disclosure"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/FR-8",
+        "prd:local-git-codehost/DOD-6",
+        "design:local-git-codehost#D-5",
+        "design:local-git-codehost#D-7"
+      ],
+      "blocked_by": [
+        "T3",
+        "T14"
+      ],
+      "touches": [
+        "internal/featuredrive · internal/adapters/codehost/localgit"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 210
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Feature-drive local proposal and landing boundaries must implement the already merged T14 contract across the host adapter and drive."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks the predecessor contract is merged and local operator invocation never grants Argus merge authority or weakens hosted rules."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Retain current task review evidence on the origin",
+      "goal": "A local task proposal carries the complete satisfying review aggregate for its current head on a durable origin ref.",
+      "current": "The hosted drive can inspect proposal reviews, but a local proposal has no clone-visible task ReviewGate aggregate.",
+      "desired": "Before the operator review request, the adapter exact-reads a complete satisfied aggregate and current codegate/check verdicts, then publishes canonical aggregate bytes with proposal OID and sequence under an immutable ref. The request and receipt bind that ref, object OID, and digest; a clone can recover it after the review worktree vanishes. Missing, partial, stale, or altered evidence blocks landing and later `RecordLanding`.",
+      "scope": [
+        "current task ReviewGate and codegate/check predicate",
+        "immutable aggregate envelope publication and receipt binding",
+        "fresh-clone recovery and missing-ref refusal"
+      ],
+      "out_of_scope": [
+        "constructing the task squash landing revision (T8)"
+      ],
+      "acceptance": [
+        "missing, partial, stale, or invalidated aggregates refuse before any target ref update",
+        "the immutable aggregate ref retains canonical bytes, proposal generation, OID, and digest after deleting the review worktree",
+        "an existing evidence ref is idempotent only when its object and bytes match exactly",
+        "missing or altered retained evidence blocks both landing and post-crash `RecordLanding`"
+      ],
+      "key_interfaces": [
+        "`ReviewGate` aggregate reader and `review-aggregates` origin evidence envelope",
+        "receipt evidence-ref, object-OID, and digest fields"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/UB-1",
+        "prd:local-git-codehost/NFR-3",
+        "design:local-git-codehost#D-5"
+      ],
+      "blocked_by": [
+        "T6"
+      ],
+      "touches": [
+        "internal/adapters/codehost/localgit · internal/executor/reviewgate · internal/featuredrive"
+      ],
+      "size_band": {
+        "lo": 170,
+        "hi": 270
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Task review aggregates must remain reachable and generation-bound across a lost worktree or process."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks aggregate completeness, evidence ref immutability, and recovery from a clone."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T7",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "Land reviewed tasks without losing parallel work",
+      "goal": "An operator-reviewed task proposal lands once on the feature-integration branch and preserves every earlier landed task revision.",
+      "current": "No local task merge exists; the feature drive expects a hosted merged revision and fresh feature-branch ancestry proof.",
+      "desired": "With reviewed head `H` descending from receipt-bound target base `B`, the local operator command prepares squash revision `L` with parent `B` and `tree(H)`. One atomic push leases the feature target, final proposal, reviewed-head archive, and proposal-branch deletion. `RecordLanding` verifies `L` and current feature ancestry. A parallel proposal from old `B` refuses after the first landing and must rebase, rerun checks/review, and obtain a new receipt before its child squash lands.",
+      "scope": [
+        "operator-invoked task squash and atomic update of target, proposal, and archive refs",
+        "landed-revision, tree, and feature-branch ancestry verification",
+        "parallel-root stale refusal and reviewed rebase recovery"
+      ],
+      "out_of_scope": [
+        "final feature-to-main candidate landing (T9, T10)"
+      ],
+      "acceptance": [
+        "the accepted task landing has `parent(L) == B`, `tree(L) == tree(H)`, and `L` ancestor of the fetched feature branch",
+        "a moved target or proposal branch rejects the complete transaction and retains review evidence",
+        "two parallel roots land in either operator-chosen order only after the second rebases and obtains fresh checks, aggregate, and receipt",
+        "`RecordLanding` refuses a missing or non-ancestor revision and advances zero dependents"
+      ],
+      "key_interfaces": [
+        "task landing result with reviewed head, base, squash revision, and feature head",
+        "`RecordLanding` verification boundary and atomic Git ref lease"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/UB-2",
+        "design:local-git-codehost#D-5"
+      ],
+      "blocked_by": [
+        "T7"
+      ],
+      "touches": [
+        "internal/adapters/codehost/localgit · internal/featuredrive · internal/executor"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 290
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Squash landing must coordinate Git target leases, retained review evidence, and feature DAG progression."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Parallel-root and stale-target fixtures must prove earlier landed revisions remain ancestors."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T8",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "Retain final candidate evidence for local review",
+      "goal": "The final proposal's accepted candidate and every required scenario result remain verifiable from a fresh clone.",
+      "current": "The hosted feature drive can publish candidate/evidence refs, but the local final proposal has no durable receipt-bound evidence envelope.",
+      "desired": "The adapter exact-reads accepted `candidate-evidence/v1` for `(F,M,C,scenario_set_fingerprint)`, requires one current accepted result for each required scenario, and publishes its complete canonical envelope with proposal OID/sequence on an immutable origin ref before operator review. The receipt and final proposal pin ref, OID, digest, candidate, and scenario-set fingerprint. A clone rechecks the same bytes; missing, negative, conflicting, or stale evidence refuses.",
+      "scope": [
+        "current candidate and required-scenario eligibility predicate",
+        "immutable final-candidate evidence envelope and receipt binding",
+        "clone recovery after evidence-worktree loss"
+      ],
+      "out_of_scope": [
+        "constructing and publishing the final mainline landing (T10)"
+      ],
+      "acceptance": [
+        "a failed, skipped, missing, conflicting, or stale scenario result blocks final review eligibility",
+        "complete accepted evidence is fetchable from the immutable origin ref after deleting the producing worktree",
+        "a changed feature head, main head, proposal generation, or scenario set invalidates prior evidence and receipt",
+        "an absent or altered evidence ref blocks landing and post-crash delivery verification"
+      ],
+      "key_interfaces": [
+        "`candidate-evidence/v1` result set and immutable local evidence envelope",
+        "final receipt's candidate identity, scenario fingerprint, and evidence-ref fields"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/UB-1",
+        "prd:local-git-codehost/NFR-3",
+        "design:local-git-codehost#D-5"
+      ],
+      "blocked_by": [
+        "T8"
+      ],
+      "touches": [
+        "internal/adapters/codehost/localgit · internal/featuredrive/candidate · internal/featuredrive/evidence"
+      ],
+      "size_band": {
+        "lo": 160,
+        "hi": 260
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Candidate identity, all required scenarios, and proposal generation must survive a deleted evidence worktree."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "composed",
+            "novelty": "first_of_kind",
+            "verification": "composed",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "deep",
+            "context": "large",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-composed",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-composed",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review verifies current accepted scenario coverage and immutable origin evidence before the operator sees a request."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T9",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T10",
+      "title": "Land and verify the final feature on local mainline",
+      "goal": "The operator's exact-head final feature review yields one mainline revision with the accepted candidate tree and a verifiable delivery result.",
+      "current": "The drive requires a host-enforced current-candidate verdict and hosted human merge; a local origin has neither route.",
+      "desired": "A distinct local final proposal ref at `F` and current evidence permit the operator command to prepare mainline revision `L` as child of accepted main `M` with `tree(L) == tree(C)`, plus retained feature marker `F'` as child of `F` with the same tree. One atomic push leases main, feature, proposal deletion, final proposal, and archive. Delivery verifies fresh mainline ancestry, `M`, candidate tree, and retained evidence before marking the feature complete.",
+      "scope": [
+        "local final landing object and feature marker construction",
+        "atomic multi-ref lease and stale-input refusal",
+        "post-crash candidate-tree, evidence, and mainline-ancestry proof"
+      ],
+      "out_of_scope": [
+        "a claim that the shared-account origin prevents direct writes outside Pyxis"
+      ],
+      "acceptance": [
+        "accepted delivery has `parent(L) == M`, `tree(L) == tree(C)`, and `L` ancestor of freshly fetched mainline",
+        "movement of main, feature, or distinct proposal branch rejects the entire push",
+        "a crash after publication recovers the final proposal, receipt, evidence, and landing without a second delivery",
+        "a direct write outside the normal route is disclosed as outside local enforcement, not certified as approved"
+      ],
+      "key_interfaces": [
+        "final landing result `(F,M,C,L,F')` and retained candidate evidence",
+        "atomic mainline, feature-marker, final-proposal, archive, and branch-deletion transaction"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/UB-2",
+        "prd:local-git-codehost/NFR-1",
+        "design:local-git-codehost#D-5"
+      ],
+      "blocked_by": [
+        "T9"
+      ],
+      "touches": [
+        "internal/adapters/codehost/localgit · internal/featuredrive · internal/draft/lock"
+      ],
+      "size_band": {
+        "lo": 200,
+        "hi": 300
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Final delivery joins accepted candidate bytes, leased main and feature refs, and the drive's delivery proof."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "first_of_kind",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-first-of-kind",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks stale-main refusal, distinct proposal/feature refs, and accepted-tree ancestry after crashes."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T10",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T11",
+      "title": "Report local proposal identities to Argus and Carina",
+      "goal": "Argus and Carina identify local drafts, task proposals, and landings by their real Git refs and full heads, with honest diagnostic events.",
+      "current": "Their proposal records expect hosted URLs or hosted status; a bare Git proposal cannot be reported accurately.",
+      "desired": "Argus journals local proposal identities and observed landing results without inventing PR URLs, and Carina links the same typed ref/head. Doctor, status, logs, and metrics label local mode, the current origin/prerequisite, receipt refusals, and the accepted trust limits. A tracker outage preserves a replayable local result and does not create a false delivery claim.",
+      "scope": [
+        "local proposal and landing identities in Argus and Carina records",
+        "local-mode doctor, status, structured logs, and metric events",
+        "tracker retry and recovery from retained Git state"
+      ],
+      "out_of_scope": [
+        "changing hosted proposal URL or review behavior"
+      ],
+      "acceptance": [
+        "an Argus-driven local draft and code proposal name real ref/full-head identities in the journal and Carina item",
+        "no local status or log claims a hosted PR review, authenticated approver, or protected origin",
+        "refused approvals emit a typed reason and proposal identity; successful locks and landings emit distinct events",
+        "tracker unavailability leaves a retryable local result and advances no unverified feature state"
+      ],
+      "key_interfaces": [
+        "typed local proposal identity and observed landing result in drive/tracker adapters",
+        "local diagnostic and event schemas for lock, landing, and approval refusal"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-8",
+        "prd:local-git-codehost/FR-10",
+        "prd:local-git-codehost/NFR-1",
+        "design:local-git-codehost#D-1",
+        "design:local-git-codehost#D-5",
+        "design:local-git-codehost#D-7"
+      ],
+      "blocked_by": [
+        "T5",
+        "T8",
+        "T10"
+      ],
+      "touches": [
+        "Argus guide · internal/adapters/tracker/carina · internal/featuredrive · internal/observability · cmd/pyxis"
+      ],
+      "size_band": {
+        "lo": 140,
+        "hi": 240
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Argus and Carina must consume typed local refs instead of hosted URLs across draft and implementation events."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "multi_surface",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "strong",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "elevated",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "impact-multi-surface",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks journal recovery, actual code-host claims, and metric refusal counts across tracker and adapter surfaces."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T11",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T12",
+      "title": "Prove the candidate release in AEC",
+      "goal": "A checksum-verified candidate from the current integration source demonstrates one AEC feature from local draft through reviewed code landing and verified delivery without hosted calls.",
+      "current": "AEC is pinned to a provisional local test release; five Argus drives park before brainstorm because draft status calls GitHub.",
+      "desired": "Pack and verify a candidate artifact set from the current Pyxis integration commit. In the separate AEC repository, prepare an operator-reviewed local proposal that pins this candidate and commits a tracked test report with one feature's draft lock, plan projection, code proposal, task/final landing, Carina state, gate and phase evidence, exact refs, and candidate hashes. Land that AEC proposal on its own mainline before T12 claims success. The Pyxis task exact-reads the landed AEC commit and report from the configured AEC origin, checks the pin and evidence against the candidate manifest, and carries their full commit/OID and digest in its own review package; it never writes AEC files through a Pyxis task proposal. A separate installed AEC fixture completes the deterministic local Git/Carina path with networking disabled and zero outbound calls; live Codex model traffic is reported separately. After T12 and the final feature land, repeat the installed proof from the final source commit before tagging, publishing the same verified artifacts, and repinning AEC; changed source or hashes require a new proof.",
+      "scope": [
+        "candidate pack and checksum verification in Pyxis",
+        "verification of the separately landed AEC pin, report, and local bare-origin proof from AEC origin",
+        "network-disabled installed local-route fixture",
+        "exact AEC commit/report evidence in the Pyxis review package and post-merge release handoff"
+      ],
+      "out_of_scope": [
+        "OCR, general language understanding, or a production RFP submission workflow",
+        "authoring or landing AEC repository files from the Pyxis task proposal",
+        "final tag, publication, and published-source repin before T12 and the final feature land"
+      ],
+      "acceptance": [
+        "all local lifecycle, stale-receipt, crash, and hosted-regression fixtures pass with zero hosted calls in local mode",
+        "a separate operator-reviewed AEC proposal containing the candidate pin and tracked test report lands on AEC mainline; the Pyxis task independently reads its full commit/OID and report digest from AEC origin and verifies one exact-head reviewed draft lock and code landing with Git, Carina, gate, and phase evidence",
+        "an installed AEC fixture with networking disabled completes the deterministic local Git/Carina draft-to-delivery path and records zero outbound calls",
+        "`pyxis-release verify` proves the candidate manifest and artifact hashes from the named integration commit; the landed AEC report pins those values, and the Pyxis review package requires a fresh installed proof from the final source commit before tag, publication, and AEC repin"
+      ],
+      "key_interfaces": [
+        "candidate artifact manifest, pin, and release-source identity",
+        "AEC origin commit/OID and report digest, checked against the candidate manifest and local Git/Carina evidence"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-1",
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/FR-8",
+        "prd:local-git-codehost/FR-9",
+        "prd:local-git-codehost/FR-10",
+        "prd:local-git-codehost/NR-2",
+        "prd:local-git-codehost/NFR-2",
+        "prd:local-git-codehost/DOD-1",
+        "prd:local-git-codehost/DOD-2",
+        "prd:local-git-codehost/DOD-3",
+        "prd:local-git-codehost/DOD-4",
+        "design:local-git-codehost#D-6",
+        "design:local-git-codehost#D-7"
+      ],
+      "blocked_by": [
+        "T4",
+        "T5",
+        "T8",
+        "T10",
+        "T11"
+      ],
+      "touches": [
+        "cmd/pyxis-release · internal/release · internal/adapters/codehost/localgit · internal/selfhost"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 200
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "complex",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "standard",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-complex",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "A candidate built from the intended release commit must be exercised through a separately reviewed and landed AEC proof, then verified from its owning origin."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "shared_substrate",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "deep",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-shared-substrate",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Review checks artifact hashes, the independently landed AEC commit and report, actual human review, local-only calls, Carina state, and release-source equivalence."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T12",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T13",
+      "title": "Approve the local feature-draft receipt contract",
+      "goal": "The feature-draft contract explicitly authorizes the accepted single-user local receipt boundary before any local approval implementation lands.",
+      "current": "Feature-draft approval requires authenticated hosted review, while a shared-account bare origin can verify only exact-head receipt consistency.",
+      "desired": "A scoped PRD amendment and reviewed successor design authorize operator-declared local receipts with no actor authentication or host-level mainline protection, retain hosted identity requirements, and define the proposal generation, exact head, target, digest, nonce, and replay checks T3 will implement. The contract PR lands independently before T3 code.",
+      "scope": [
+        "feature-draft amendment for the accepted local review boundary",
+        "successor design for receipt fields, freshness checks, and operator procedure",
+        "operator review and merged contract evidence"
+      ],
+      "out_of_scope": [
+        "receipt producer, verifier, or landing code (T3 and T5)",
+        "an operator-held signing key or authenticated local approver"
+      ],
+      "acceptance": [
+        "the amendment and successor design state the shared-account limit and preserve authenticated hosted review",
+        "the contract defines once-only, generation-bound exact-head receipts and refusal of stale or replayed approvals",
+        "operator review approves the precise contract source before its independent PR merges",
+        "T3 can cite the merged amendment and design without enabling local approval in this task"
+      ],
+      "key_interfaces": [
+        "approved local receipt and review-request contract for T3",
+        "explicit hosted and local assurance statements"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-3",
+        "prd:local-git-codehost/FR-4",
+        "prd:local-git-codehost/DOD-5",
+        "design:local-git-codehost#D-3"
+      ],
+      "touches": [
+        "docs/prds/feature-draft · docs/tech-design/feature-draft-local-git.md"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 200
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "An offline local receipt changes the feature-draft review guarantee and needs its own approved, merged contract before code uses it."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Operator review verifies the exact local exception and that hosted approval retains authenticated review."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T13",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T14",
+      "title": "Approve the local feature-drive landing contract",
+      "goal": "The feature-drive contract authorizes local task and final landings through the operator procedure before any local landing implementation is enabled.",
+      "current": "Feature drive requires human hosted merge and host-enforced candidate checks, which the accepted bare origin cannot independently provide.",
+      "desired": "A scoped amendment to FR-7, FR-22, and NR-5 and a reviewed successor design define operator-invoked local landing, current task ReviewGate and final candidate evidence, and the shared-account limit. The drive may request and observe proposals but cannot invoke landing; hosted mode keeps required review and check enforcement. The contract PR lands independently before T6 code.",
+      "scope": [
+        "feature-drive amendment for local task and final landing",
+        "successor design for the operator command boundary and evidence requirements",
+        "operator review and merged contract evidence"
+      ],
+      "out_of_scope": [
+        "drive, review aggregate, or landing implementation (T6–T10)",
+        "authenticated local identity or host-protected mainline"
+      ],
+      "acceptance": [
+        "the amendment and successor design define the operator-only local landing procedure and accepted trust limit",
+        "task ReviewGate and final candidate evidence remain required at the exact proposal head",
+        "hosted human-merge and required-check guarantees remain unchanged",
+        "operator review approves the precise contract source before its independent PR merges and T6 can cite it"
+      ],
+      "key_interfaces": [
+        "approved drive-facing proposal and operator landing boundaries for T6",
+        "task and final evidence obligations for T7–T10"
+      ],
+      "traces": [
+        "prd:local-git-codehost/FR-7",
+        "prd:local-git-codehost/FR-8",
+        "prd:local-git-codehost/DOD-6",
+        "design:local-git-codehost#D-5",
+        "design:local-git-codehost#D-7"
+      ],
+      "blocked_by": [
+        "T13"
+      ],
+      "touches": [
+        "docs/prds/feature-implementation-drive · docs/tech-design/feature-implementation-drive-local-git.md"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 200
+      },
+      "mechanical": false,
+      "requirements": {
+        "schema_version": "task-requirements/v1",
+        "implementation": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:goal"
+              },
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Local task and final landing changes the feature-drive human-merge and candidate-verdict boundary and must land as a contract before enabling code."
+        },
+        "review": {
+          "assessment": {
+            "reasoning": "difficult",
+            "coupling": "cross_boundary",
+            "novelty": "adapt",
+            "verification": "cross_boundary",
+            "impact_scope": "system_wide",
+            "architectural_role": "system_core",
+            "citations": [
+              {
+                "id": "task:acceptance"
+              }
+            ]
+          },
+          "profile": {
+            "capability": "frontier",
+            "deliberation": "maximum",
+            "context": "extended",
+            "assurance": "critical",
+            "applied": [
+              {
+                "id": "coupling-cross-boundary",
+                "kind": "floor"
+              },
+              {
+                "id": "critical-frontier",
+                "kind": "promotion"
+              },
+              {
+                "id": "impact-system-wide",
+                "kind": "floor"
+              },
+              {
+                "id": "novelty-adapt",
+                "kind": "floor"
+              },
+              {
+                "id": "reasoning-difficult",
+                "kind": "floor"
+              },
+              {
+                "id": "role-system-core",
+                "kind": "floor"
+              },
+              {
+                "id": "verification-cross-boundary",
+                "kind": "floor"
+              }
+            ],
+            "policy_version": "1.0.0",
+            "policy_digest": "18c78e0a33de0a40ef779f657d9d2b71bf64690a91e02b48bce553e1a98e64db"
+          },
+          "rationale": "Operator review verifies the operator-only local landing route, retained review evidence, and unchanged hosted requirements."
+        }
+      },
+      "plan_task_id": "local-git-codehost/001/T14",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:local-git-codehost/FR-1",
+      "tasks": [
+        "T1",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-2",
+      "tasks": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-3",
+      "tasks": [
+        "T3",
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-4",
+      "tasks": [
+        "T3",
+        "T5",
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-5",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-6",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-7",
+      "tasks": [
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T12",
+        "T14"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-8",
+      "tasks": [
+        "T6",
+        "T11",
+        "T12",
+        "T14"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-9",
+      "tasks": [
+        "T4",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/FR-10",
+      "tasks": [
+        "T1",
+        "T11",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/UB-1",
+      "tasks": [
+        "T3",
+        "T5",
+        "T7",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/UB-2",
+      "tasks": [
+        "T5",
+        "T8",
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/UB-3",
+      "tasks": [
+        "T1",
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/UB-4",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/NR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/NR-2",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/NFR-1",
+      "tasks": [
+        "T1",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/NFR-2",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/NFR-3",
+      "tasks": [
+        "T2",
+        "T7",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-1",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-2",
+      "tasks": [
+        "T3",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-3",
+      "tasks": [
+        "T1",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-4",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-5",
+      "tasks": [
+        "T3",
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:local-git-codehost/DOD-6",
+      "tasks": [
+        "T6",
+        "T14"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:3ba0dacb1a8d7be331a5e13e31cf1fab7c8ed0556df4b89f619ca2172dcf9a40"
+}

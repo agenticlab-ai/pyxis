@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD6ATJMPQ2F96DW49TR8",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "ABUSE-5",
+  "statement": "Actor claims lock from a merge badge. — vector: Non-mainline merge or self-declared record",
+  "intent": "Planning from false contract",
+  "fit_criterion": "Require ancestry, compiled record match, and tag readback",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC0FXJWSZPNFF41ADDY",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-17",
+  "statement": "While reviewing a subject or consulting a corpus document, the reviewer shall treat any read-to-rule section (§0) as outside its scope: no lens shall route by its content, and no finding shall cite into it or judge it.",
+  "rationale": "§0 is human-only by operator ruling — informative, never normative; machine attention stays exhaustive over the contract body it reviews (AGENTS.md rule 9; prd:read-to-rule NG-2)",
+  "fit_criterion": "on a §0-bearing subject, zero findings anchor into §0 and zero lens output cites §0 content; a §0-stripped re-review of the same subject yields the same finding set (the fixture arrives with the first §0-bearing subject)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e745125962d707790cf4f8bcd4d7b74d3d1418e78d37f4a63c8832790e2f2f23",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.264Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

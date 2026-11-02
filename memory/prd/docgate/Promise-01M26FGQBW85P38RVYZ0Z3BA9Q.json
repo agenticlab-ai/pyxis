@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBW85P38RVYZ0Z3BA9Q",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "UB-1",
+  "statement": "If If ledger numbering has a gap or duplicate, then the system shall fail lint naming the files and the next free number",
+  "intent": "named defect + remedy",
+  "fit_criterion": "both fixture cases name files and the number",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6d1dadc7878e28b4994e5df6f4fe95be058f69ec163dd198d7ed33170c179649",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.236Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

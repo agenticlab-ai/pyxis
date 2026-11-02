@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95GW3VCD4SVX0ZMWRGD",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-8",
+  "statement": "When cron or a manual invocation selects a job, the executor shall use that job's validated published policy from the configured remote branch without mutating the enrolled checkout's Git storage.",
+  "rationale": "Central publication controls isolated execution",
+  "fit_criterion": "Published prompt/disable/routing updates apply; unmerged policy supplies zero instructions; fetch and coordination fixtures preserve enrolled refs, FETCH_HEAD, index, source/untracked work, and configuration; only prescribed ignored diagnostics may be appended/exported there",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

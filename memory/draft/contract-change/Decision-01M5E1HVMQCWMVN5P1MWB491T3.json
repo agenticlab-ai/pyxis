@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Decision-01M5E1HVMQCWMVN5P1MWB491T3",
+  "kind": "Decision",
+  "subject": "draft/contract-change",
+  "family": "one-pull-request",
+  "statement": "A change to a locked feature resolves in one pull request. `pyxis draft reopen` starts the next contract version on a local branch even while the current plan's tasks are unfinished, and those tasks keep running. On that branch the author changes the contract text, the live plan's affected task charters in place (same plan file, plan version, and task IDs, with a task added under the next free ID when the change needs new work), and the problem ledgers. `pyxis draft prepare-lock` publishes the branch and opens its one pull request. When that plan still has unfinished tasks on the configured task tracker — or its task state cannot be read, which counts as unfinished — preparation moves the plan's Basis to the version being locked, folds it against the prepared records, and refuses a plan that no longer fits, that drops a task, or that adds, removes, or edits any plan version but the live one: a new split of the work is planned from the new lock in its own pull request. On a tracker whose task comments cannot change, such as Carina, preparation refuses to move a plan that is still in use. A finished plan stays history: a draft that edits it is refused. After the operator merges, `plangate project` withdraws the routing label of every task that changes until its final route step, and rewrites the titles and bodies of the task and epic issues and the spec comments it created, keeping every issue number; it withdraws a routing label a task no longer routes to, keeps the mechanical label in step with the task, and withdraws a dependency edge between two of the plan's tasks that the plan no longer names, so a paused task resumes on its existing branch with the new charter. A reopened draft abandoned before preparation opens its one pull request with the abandonment record.",
+  "intent": "Keep the cost of a contract correction proportional to the correction: one operator sign-off, no cancelled tasks or recreated issues, and implementation unblocked as soon as the change lands.",
+  "rationale": "In the prototype drive's task T1 (October 2026), the first implementation review escalated a one-sentence gap in design decision D-1. Under the earlier rules a reopen was refused while plan tasks ran (feature-draft FR-43, from the ruling brainstorm:feature-draft#D-19), a merged plan changed only by a new plan version (plan-new NG-5), and a draft could write only paths that a merged journal entry named, so settling the gap needed a journal PR, a lock PR, and a plan PR, plus closing and recreating every task and the epic. On 2026-10-19 the operator ruled that any resolution, whatever it touches, has exactly one pull request to sign off; that in-place edits are acceptable because Git keeps the history; and that the earlier reopen rulings need no amendment. The operator's approval of the exact prepared head remains the only act that makes contract or plan text binding.",
+  "alternatives_rejected": [
+    "A typed amendment grammar for locked contracts and plans: Git already keeps every version, so the grammar would add authoring cost without adding history.",
+    "Letting journal entries in the same pull request widen the drive's write scope: the Argus boundary deliberately takes no same-PR input. Publishing only the prepared head keeps draft working files out of the published diff instead.",
+    "Closing a task that a plan change removes during projection: only the completion owner closes tasks, so a plan changed in place keeps every task and a task is cancelled by closing its issue as not planned."
+  ],
+  "tags": [
+    "code:internal/draft/lock/change.go",
+    "code:internal/draft/lifecycle/reopen.go",
+    "code:internal/plangate/plan/pending.go",
+    "code:internal/plangate/project/project.go"
+  ],
+  "relations": [
+    {
+      "type": "about",
+      "target": "Promise-01M38ZN959ZEBTX7V7WTM0AXJQ"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M38ZX6M0FCT1XB2T2WBRABGT"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M3C0W68KP6S6PGBR7E46BMT4"
+    },
+    {
+      "type": "about",
+      "target": "Promise-01M26FGR7WGQPBN6Q8TQCZQ6RX"
+    }
+  ],
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-21T01:35:00Z",
+  "provenance": {
+    "source": "code:internal/draft/lock/prepare.go",
+    "note": "On 2026-10-19 the operator ruled: \"No matter if we have to update the contract or the plan or whatever, there should be only one PR that the operator has to sign off\", and, asked whether to amend feature-draft FR-43, NG-8 and R8 and plan-new NG-5: \"let's not worry about the decisions we made in the past of reopening the feature draft, all this stuff. Just update the memory to capture that.\" The T1 sequence is in the prototype drive's delivery journal, entries E-36 to E-51."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR4CMXRA72PRF2NWYVCV",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "M3",
+  "statement": "M3: G2",
+  "intent": "findings carrying a remedy that a consumer can act on without re-analysis",
+  "fit_criterion": "100% of emitted findings carry detector, subject, evidence, remedy",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:226be3d1f8549813c2fccca0d443735fd4fb7be05b8236bf1d6fe00b150f9ab4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.02Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

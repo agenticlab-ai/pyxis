@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNX82F4F2GREZJKN34P",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-20",
+  "statement": "Within each assurance pass, when the worker applies or disputes a blocking finding, the reviewer shall record the disposition and may run one scope-locked remediation re-review over named defects plus changed spans; declined blocking findings shall escalate under FR-31, a third internal round shall be refused, and no remediation round shall satisfy another assurance-pass requirement.",
+  "rationale": "remediation verifies closure inside one independent judgment lineage; counting it as critical corroboration would be false independence",
+  "fit_criterion": "per-pass fixtures enforce the two-round cap, mandatory dispute reason, declined-blocking escalation, unchanged-content withholding, and a distinct top-level pass identity for critical pass two",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c003945d5dad6a712fe0866a0c4ccaee2dad901d088db2931d8dd922b5e8b205",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.557Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

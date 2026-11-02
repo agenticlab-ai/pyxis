@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2QBKD1YZH0KRKTH79D",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-5",
+  "statement": "When asked to append a comment to a work item, the tracker shall add it to an append-only, time-ordered comment record without rewriting prior comments.",
+  "rationale": "human and agent dialogue is preserved history",
+  "fit_criterion": "N appended comments all present and ordered; none overwritten",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:31bd5fbe7c3c9adaf030548acb63b6d728ebc62b35b056995226f2867b41a9b2",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.967Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

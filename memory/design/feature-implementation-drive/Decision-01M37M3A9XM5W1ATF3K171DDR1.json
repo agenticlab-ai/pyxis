@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M3A9XM5W1ATF3K171DDR1",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.7.1",
+  "statement": "Once every planned and repair task is RecordLanding-complete, the `CandidateBuilder` fetches exact feature head `F` and exact target-main head `M`, verifies both refs resolve to those objects, and computes one canonical synthetic merge `C` (`design-brainstorm:feature-implementation-drive-tech-design#D-4`). It uses the repository's declared merge policy and a version-pinned builder algorithm to produce a merge tree, then a two-parent commit `(M, F)` with canonical author/committer identity, message, and deterministic timestamp rule. The candidate identity records builder version, merge-policy version, `F`, `M`, `C`, and tree id.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:4ae068c9a20596581f2645207b6a7189d2f6d50d513083eb00ff8c27da28e047",
+    "source-design:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPR6JC9MFPMV1XQ33QGG"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:02Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 142-142 in section 3.7; sha256:4ae068c9a20596581f2645207b6a7189d2f6d50d513083eb00ff8c27da28e047"
+  }
+}

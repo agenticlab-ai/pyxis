@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR6CQTZC7T1T62DHY03T",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "EVAL-2",
+  "statement": "Decomposition output always lands inside the structural envelope and every plan/v2 task carries a complete evidence-backed assessment plus exact mechanically derived vendor-neutral profile; no task-level `no_inference` or native dispatch identifier is emitted.",
+  "intent": "versioned corpus covering every accepted assessment/profile value, consequence floor, promotion, planner raise, mechanical-looking task, wide refactor, fog, overlap, and oversize; each family runs at least 5 times per release on a decode-pinned configuration recorded in the eval report",
+  "fit_criterion": "every required run passes structural validation; 100% exact output on unambiguous goldens; zero unresolved/irrelevant/contradictory/partial citation sets; zero missing demand, `no_inference`, native identifier, or under-floor outcomes; the report records required/executed counts and any failed run keeps its family red",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:44273bd463675925d7c8a52e2cd6532dd9ba7f21ff50066306bbbee0ebd46622",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.084Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

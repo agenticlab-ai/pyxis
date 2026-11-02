@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEE8NTVWHRB9ZYNSWJX",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "FR-5",
+  "statement": "Where the pyxis agent surface is installed in a repository, the help skill shall be invocable from every supported agentic CLI via the vendor pointer directories.",
+  "rationale": "vendor neutrality (AP-25)",
+  "fit_criterion": "the skill resolves through each vendor pointer present in the repo",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0edd0af99af42f0aafcb045ebd76448b9ce04bf956cb82fbac3040d213948d87",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.318Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

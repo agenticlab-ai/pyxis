@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFPFZ7SS90W55H7E5QR",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "NFR-1",
+  "statement": "The system shall bound post-adoption gate cost to the volume of content changed since the epoch, independent of the pre-existing corpus size.",
+  "intent": "Performance / scale",
+  "fit_criterion": "the gates visit only content changed since the epoch; total gate cost grows with the changed set, never with the count of unchanged corpus files",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c15beffd04d45033308a240685305585ee763db7bb8e7f88154626d291411011",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.358Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

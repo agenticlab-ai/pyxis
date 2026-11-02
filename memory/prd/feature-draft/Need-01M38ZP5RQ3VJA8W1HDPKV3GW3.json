@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP5RQ3VJA8W1HDPKV3GW3",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "J3",
+  "statement": "When a locked feature must change — new learning, or another feature's change, I want change it through the same loop, with the old version binding until the new one locks, so I can avoid an amendment, a superseding design, and a new plan as separate proposals",
+  "rationale": "brainstorm:feature-draft#D-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:80b9e637109b977ffb789d49c474e0d993979211c0b9a410fb08254c2ac04413",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:48Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

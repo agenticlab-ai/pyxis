@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZJJ6Q75XWT4JR2FSARB0",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.2.1",
+  "statement": "Argus's behavior is a **guide-bound drive protocol** — vendor-neutral, requiring only sequential agentic execution, file access, and a shell — executed per problem in **one preferred continuous session** (design-brainstorm:argus-tech-design#D-6): orient on the problem ledger and repo; loop the pipeline stages **by role** against the pipeline map, entering each as decision principal under its landed seam; at every gap run the **legality tests** (tier · channel · regression) and rule by recorded assumption or escalate the breaking residue as a self-contained brief that **parks the problem fail-closed and ends the session** (#D-7); bridge the approved plan through the planning stage's own materialization; drive proposals to **content-verified landed**; close the journal once. Continuity is the sibling design's journal, animated here by the **resume protocol** — replay, then verify every pending external effect against its goal object before any redo (#D-2). Every act that decides or permits passes a **grant check against the ladder at act time**; the never-list needs no *grant* check — the protocol contains no path that performs self-grant, governance authoring, or override acts — **with one exception that binds by measurement, not by path: the envelope**, which §3.2's envelope watch implements (driving itself spends). The harness (#D-9) proves the zero-tolerance families red-first before the floor grant is exercised.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:51e6e78eaa7acf89dc4127f6f4c7e311d57541f272d76dc495a5fa0257609e10",
+    "source-design:214d3d1add47501bab82adae8a073eab292d8cfce8a3da6595f505674e204e67",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMFBWH6C4HJB95BDVJT"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQKTK20RGZN39ZPQ5TZ7E"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:10:59Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 24-24 in section 2; sha256:51e6e78eaa7acf89dc4127f6f4c7e311d57541f272d76dc495a5fa0257609e10"
+  }
+}

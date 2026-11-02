@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2P5NXPXYYTRKJE82HEDST7Q",
+  "kind": "Learning",
+  "subject": "learning/stacked-shim-trusted-base",
+  "statement": "Pass the trusted event base through shared code-gate environments and shim reachability tests; defaulting a stacked pull request to origin/main creates a false design-plus-code diff.",
+  "learned_from": [
+    ".pyxis/scripts/tests/test-docgate-hook.sh",
+    ".pyxis/scripts/tests/test-resolver-delegates.sh",
+    "cmd/pyxis/delegate_shim_test.go",
+    "internal/codegatemirror/repository_wiring_test.go"
+  ],
+  "issuer": "Codex",
+  "created_at": "2026-09-16T22:33:57Z",
+  "provenance": {
+    "source": ".pyxis/config.yaml"
+  }
+}

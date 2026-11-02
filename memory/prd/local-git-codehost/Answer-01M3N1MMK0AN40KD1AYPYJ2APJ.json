@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMK0AN40KD1AYPYJ2APJ",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Pack and verify a candidate artifact set from the intended merged release commit, pin it in AEC through the local artifact-source override, and run DOD-4 before publication. The final tag must point to the same commit and publish that same verified set; AEC then repins the published source and runs installation smoke checks. Any changed commit or artifact hash requires repeating the installed proof.",
+  "intent": "operator",
+  "rationale": "The final release cannot be a prerequisite of its own installed acceptance test.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMJZP9DT4SJE8VKSFJWA"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRV2XK6SAP8H17PNC4J690",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-2",
+  "statement": "An agent, or Argus beyond its grant, wants its own work locked — vector: approves its own lock",
+  "intent": "an unread contract reaches execution",
+  "fit_criterion": "hosted: FR-48, FR-49, UB-12; local: FR-49, FR-50",
+  "tags": [
+    "source-unit:e6c0d63619774e1f6258be64f8236f7c8bf08918625dad945b3e85fe0c551986",
+    "source:prd-ledger",
+    "reconcile:prd"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZHY2Y1DMCDYX38MZFK307"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:12Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

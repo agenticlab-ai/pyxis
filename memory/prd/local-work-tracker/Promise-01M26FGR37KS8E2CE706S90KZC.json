@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR37KS8E2CE706S90KZC",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "NFR-2",
+  "statement": "The tracker shall sustain a realistic backlog without degradation past NFR-1.",
+  "intent": "Capacity / scale",
+  "fit_criterion": "NFR-1 holds at 10,000 work items",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:47e058d246455816de19fbc9c997c153ff8e33bb1668cb0c3e622f524585d774",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.983Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

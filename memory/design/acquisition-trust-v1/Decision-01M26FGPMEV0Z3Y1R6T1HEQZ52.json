@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMEV0Z3Y1R6T1HEQZ52",
+  "kind": "Decision",
+  "subject": "design/acquisition-trust-v1",
+  "family": "decision.3.3.1",
+  "statement": "install.sh carries the release `manifest_sha256` and, after installing the CLI, records it with the system version at `$XDG_CONFIG_HOME/pyxis/release.env` — written only for the pinned version, whose manifest sha the script ships. `pyxis init` resolves the version and manifest sha256 in order: the `--system-version`/`--manifest-sha256` **flag**, else the `PYXIS_*` **env var**, else **release.env**; it refuses by name, listing all three sources, when none supply a pin.",
+  "tags": [
+    "code:install.sh",
+    "reconcile:design-decision",
+    "source-block:19ae25382755cab75dce352afbc26471b3f73de3e932a9cb6d0454bf1ae80103",
+    "source-design:08058a7b2c7d9fe316a9fdd1923eea8618d620657b7200dfe359c9db1ebb8330",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKGQ83KAVER02919FP6C"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.486Z",
+  "provenance": {
+    "source": "docs/tech-design/acquisition-trust-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/acquisition-trust-v1.md lines 87-87 in section 3.3; sha256:19ae25382755cab75dce352afbc26471b3f73de3e932a9cb6d0454bf1ae80103"
+  }
+}

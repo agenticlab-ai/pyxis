@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJ53JKPKNN56DTPKVGARB",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-6",
+  "statement": "A proposal wants the overrides for an existing feature — vector: cites FR-31 through FR-33 for a feature still in the document pipeline",
+  "intent": "the document pipeline's checks are bypassed",
+  "fit_criterion": "FR-30, NR-3, NR-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:44d1aa14f6fbf2ac00abbd1e2925587a11cec36c2b92964504b1ed2850adca06",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:36Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

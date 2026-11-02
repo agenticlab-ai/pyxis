@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BFW2GQAZWZ3GEZC7XVQ5ZV",
+  "kind": "Decision",
+  "subject": "design/feature-draft-readiness",
+  "family": "content-verdict",
+  "statement": "Judge each open feature draft with one typed readiness verdict over compiled records, PRD fields, and version-bound reviews.",
+  "rationale": "The local command, CI gate, and lock preparation must name the same unmet content conditions and refuse stale or incomplete contracts.",
+  "tags": [
+    "code:internal/draft/readiness",
+    "code:internal/draft/compile",
+    "code:internal/memory/cli"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T05:16:08Z",
+  "provenance": {}
+}

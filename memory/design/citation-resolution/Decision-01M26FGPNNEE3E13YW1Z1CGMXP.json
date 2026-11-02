@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNNEE3E13YW1Z1CGMXP",
+  "kind": "Decision",
+  "subject": "design/citation-resolution",
+  "family": "decision.3.1.1",
+  "statement": "the check parses a **closed set** of typed citation grammars, each with a defined resolvable universe (AP-6 — an unknown `word:`-shaped token is out of scope, never a lenient pass):",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:31064be9f2a3a64ce4ceaea3067d059dfef3518ae91373ac939663506fa737ac",
+    "source-design:cac96f4349b575c0b7e5483f1b23687d97b9d1d441813ff5abdb486509ae55bd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMQMAA0XZ6N51V68PN3W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.525Z",
+  "provenance": {
+    "source": "docs/tech-design/citation-resolution.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/citation-resolution.md lines 32-32 in section 3.1; sha256:31064be9f2a3a64ce4ceaea3067d059dfef3518ae91373ac939663506fa737ac"
+  }
+}

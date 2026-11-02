@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M49KXPWRRTV6K7CFW84SSRNH",
+  "kind": "Document",
+  "subject": "design/memory-proposal-withdrawal-v1",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-proposal-withdrawal-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:a286e90e933f6c49c09f62369c3ef6cef9441e48edc21546013c713d0c5783df"
+  ],
+  "body_sha256": "a286e90e933f6c49c09f62369c3ef6cef9441e48edc21546013c713d0c5783df",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-06T22:04:08Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-proposal-withdrawal-v1.md",
+    "note": "offline reconciliation"
+  }
+}

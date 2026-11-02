@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZQ90GZ0DQ16VH0A2APZC7",
+  "kind": "Document",
+  "subject": "review/read-to-rule-tech-design-v1",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/read-to-rule-tech-design-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:d5e512ab914803e8a9698f162facbe3e7073e618003654578a1e1590190de033"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCF6MXDT2JXEV44KXKYMM"
+    }
+  ],
+  "body_sha256": "d5e512ab914803e8a9698f162facbe3e7073e618003654578a1e1590190de033",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:41Z",
+  "provenance": {
+    "source": "docs/reviews/read-to-rule-tech-design-v1.md",
+    "note": "offline reconciliation"
+  }
+}

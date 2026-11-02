@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9ENQ8N3MTG1ZJ4XR54",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "FR-4",
+  "statement": "While no implementing code exists, the system shall treat the concrete solution-shape as the authoritative implementation reference, changeable only by re-approval.",
+  "rationale": "the shape is the pre-code baseline",
+  "fit_criterion": "a concrete-only change to an approved shape is accepted via re-approval with no edit to any frozen Decision",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:585e95e03ce1b406f480d2e55c78b9507bd6782722aab38177ebc985791af000",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.158Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

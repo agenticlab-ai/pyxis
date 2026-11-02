@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3C26T6H46WDFWMXXW8DJ5V3",
+  "kind": "Decision",
+  "subject": "design/feature-neutral-plan",
+  "family": "basis-intake",
+  "statement": "Name a plan by its Feature or Intake header, require a lock Basis for draft-born feature plans, and omit feature-only fields from non-feature plan handoffs.",
+  "intent": "Let feature and non-feature work share the same plan fold and tracker projection while preserving existing feature plan bytes.",
+  "rationale": "The parser keeps the closed header grammar, the model derives task and epic identities from the naming row, and the fold checks coverage only for a governing PRD. Task bodies, spec carriers, projection reports, and the viewer omit absent feature fields. Existing document-pipeline faces verify byte for byte.",
+  "fit_criterion": "A draft-born header parses with a lock Basis, an intake fixture folds and projects in both legacy and native dialects without feature-only fields, and the existing feature-draft plan verifies against its committed face.",
+  "learned_from": [
+    ".pyxis/templates/plan-template.md"
+  ],
+  "tags": [
+    "code:internal/executor/taskspec",
+    "code:internal/plangate/dialect",
+    "code:internal/plangate/plan",
+    "code:internal/plangate/project",
+    "code:internal/plangate/render"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T10:36:34Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

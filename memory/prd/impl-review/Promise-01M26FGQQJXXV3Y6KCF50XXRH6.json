@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQJXXV3Y6KCF50XXRH6",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-15",
+  "statement": "If a review-role mapping is missing, malformed, incompatible, weakening, unqualified, cannot satisfy the joined demand, or the actual launch differs from the resolved harness/role/native settings, then the system shall stop before invocation where possible; otherwise record `route_execution_mismatch`, invalidate the affected pass evidence, retain the selected harness, and keep the process non-accepting",
+  "intent": "invalid/unsupported route or mismatched launch with unmet/differing components",
+  "fit_criterion": "every negative mapping fixture invokes zero affected passes; every launch-mismatch fixture produces no accepting pass evidence; all retain harness and preserve independent unaffected work",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c5dd35b07674d061694b0621d1a00625b1c7a0693191c3905890705df235b0a4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.61Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

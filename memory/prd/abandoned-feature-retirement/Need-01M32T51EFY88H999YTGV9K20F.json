@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T51EFY88H999YTGV9K20F",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "Complete authorized active surface accepted as absent by every gate mode",
+  "fit_criterion": "100% of exact selected pilot identities accepted after prior authority lands, zero unexplained residual surface, and 0% accepted in the same proposal",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ee3e8e190f318ab31fb5f6f9f40a13c52e911ceed29f2317837a1566cb9865e8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:37Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

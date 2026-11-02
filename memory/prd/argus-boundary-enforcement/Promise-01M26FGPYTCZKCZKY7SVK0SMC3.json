@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYTCZKCZKY7SVK0SMC3",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "ABUSE-4",
+  "statement": "a bypass writes a protected path out-of-band (raw shell, a non-honoring CLI) to evade the write hook — vector: out-of-band write not passing the hook",
+  "intent": "the fast layer is skipped",
+  "fit_criterion": "by design, the merge-boundary layers (FR-4..6 structure arm, FR-9 attribution gate) are the unbypassable backstop — no desk bypass escapes CI (brainstorm:argus-boundary-enforcement#D-4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:96905a539f6c4539a72f17d012d10296fb08f66a6419c407b1a9a4a38929046d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.818Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

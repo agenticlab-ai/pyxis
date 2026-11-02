@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR4883XWTQT48MVT8CEM",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "J3",
+  "statement": "When periodically, I want know if the living rollups lag the shipped structure, so I can trust docs/techspec.md and docs/prd.md as current",
+  "rationale": "F-2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4aab95cb4f901e5bda632b7e7ab5d14a7aeb342d15cada7e6d329de96fbd273e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.016Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

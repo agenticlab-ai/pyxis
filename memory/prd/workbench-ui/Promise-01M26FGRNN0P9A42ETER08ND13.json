@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNN0P9A42ETER08ND13",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-5",
+  "statement": "The reading room shall present a per-feature progress view derived solely from the committed corpus and git history, naming each feature's furthest pipeline artifact and its pending human gates, with each cell linking to its artifact.",
+  "rationale": "\"what stage is X at\" is today a multi-directory investigation",
+  "fit_criterion": "fixture corpus with features at distinct stages: each row names the expected stage and gates; adding an artifact to a fixture feature advances its row; the view is identical with networking disabled",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:69982949a0b2fd459972131b6ef4d7881c5faa5c9178444474d5e18ff0dfacc4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.573Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

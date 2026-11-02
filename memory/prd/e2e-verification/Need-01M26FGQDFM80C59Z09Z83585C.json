@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDFM80C59Z09Z83585C",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "J4",
+  "statement": "When the factory hands me a drafted e2e design, I want review and accept it, deciding run/mock/manual when asked, so I can approve the e2e scope with taste and judgment, not authorship",
+  "rationale": "`brainstorm:e2e-verification#D-11`, `#D-12`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e571a1d0d5b7eb15b77909454854a7e2dd19fd48b4a72fcf7b910533feb17a0d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.287Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

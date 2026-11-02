@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M461D62FTREA4BE25RVH84D0",
+  "kind": "Document",
+  "subject": "prd/feature-draft",
+  "family": "amendment-002",
+  "statement": "Captured authored source: docs/prds/feature-draft/002-argus-driver-approval.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:474a4ee753fc7f03936a9f8c526eb411ad0d5185319f6227ef7ab543e5c39c02"
+  ],
+  "body_sha256": "474a4ee753fc7f03936a9f8c526eb411ad0d5185319f6227ef7ab543e5c39c02",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:49Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/002-argus-driver-approval.md",
+    "note": "offline reconciliation"
+  }
+}

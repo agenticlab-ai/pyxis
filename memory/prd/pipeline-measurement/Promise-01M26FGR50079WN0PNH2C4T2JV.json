@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR50079WN0PNH2C4T2JV",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "EVT-2",
+  "statement": "spend_unavailable fires when a harness cannot expose a required figure",
+  "intent": "harness: str, phase_id: str, missing_figure: str",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a66eb8131faec25cd2d10b2c6197481267330ae0bceb9fa6c498417a16ec80ac",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.04Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

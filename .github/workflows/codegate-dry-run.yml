@@ -1,0 +1,33 @@
+# codegate advisory dry-run (codegate-v1 §3.11, A-9; prd:implementation-
+# verification/FR-15, NFR-3): proves the harness produces a rung-for-rung
+# identical verdict whether it runs headlessly here or by a local operator
+# run on the same fixture content (EVT-5). Explicitly advisory:
+# continue-on-error stays set at the job level, and this workflow is NEVER
+# registered as a required check — required-check registration and any
+# enforcement semantics stay parked (basis WR-5).
+name: codegate-dry-run
+on:
+  pull_request:
+    paths:
+      - 'cmd/codegate/**'
+      - 'internal/verify/**'
+      - '.github/workflows/codegate-dry-run.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'cmd/codegate/**'
+      - 'internal/verify/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version-file: go.mod, cache: false }
+      - name: headless parity run (EVT-5)
+        run: go test -tags dryrunparity -run TestDryRunParity_MatchesLocalReference -v ./cmd/codegate/...

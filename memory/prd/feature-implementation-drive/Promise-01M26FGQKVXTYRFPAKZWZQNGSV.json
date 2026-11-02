@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKVXTYRFPAKZWZQNGSV",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-3",
+  "statement": "The feature drive shall reconstruct every non-terminal state from durable adapter state after process loss.",
+  "intent": "Resumability",
+  "fit_criterion": "Restart injected at every lifecycle transition resumes to the same owner, DAG, proposal, and evidence state with zero duplicate proposals.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e7c8828ad4508bf48aa99a5c3b194c47451cfac42a4b61846b2ce62ed113e355",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.491Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

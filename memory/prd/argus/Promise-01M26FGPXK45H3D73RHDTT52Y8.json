@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXK45H3D73RHDTT52Y8",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-13",
+  "statement": "When a human overturns an Argus ruling through the normal channels, Argus shall record the overturn as measurement data feeding M2/M3.",
+  "rationale": "overturn is measurement (brainstorm:autonomous-developer#D-6, #D-7)",
+  "fit_criterion": "each staged overturn appears in the measurement fields",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f91358fa68a5ec3ae5947dcf556286f2f46e871fd007f77ffb8268b3fd6d4b87",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.779Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

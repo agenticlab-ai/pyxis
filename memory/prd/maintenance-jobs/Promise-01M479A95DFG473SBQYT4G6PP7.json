@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95DFG473SBQYT4G6PP7",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-5",
+  "statement": "When installed entries equal desired entries, the maintenance CLI shall leave crontab unwritten.",
+  "rationale": "Idempotent installation",
+  "fit_criterion": "Repeated identical install calls produce zero provider writes",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

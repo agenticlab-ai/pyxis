@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR608DXJHVCKN4TFEBNZ",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "UB-4",
+  "statement": "If If a run switches harness mid-pipeline, then the system shall name, per record, the harness that ran that phase; never blend spend across harnesses",
+  "intent": "per-phase harness identity",
+  "fit_criterion": "a harness-switch fixture yields records each naming their harness; no blended figure",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cccd603a234e809f72f041146bfa4305b47eb8c6facc6d7d832c8a138b53b9a7",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.072Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

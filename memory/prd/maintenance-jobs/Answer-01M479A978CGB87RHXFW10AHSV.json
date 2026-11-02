@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M479A978CGB87RHXFW10AHSV",
+  "kind": "Answer",
+  "subject": "prd/maintenance-jobs",
+  "statement": "Strengthen FR-8/FR-9 so policy fetches and claim transport use runner-owned Git storage before launch; only the winner receives a private independent clone for edits, tests, and supervisor-owned publication. Preserve the enrolled checkout's files, branch, index, configuration, and refs.",
+  "intent": "@mdarabi",
+  "rationale": "A job modifying code or raising a PR outside its own worktree “can cause issue”.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M479A977FQ5TJT40ZDTFGAMG"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

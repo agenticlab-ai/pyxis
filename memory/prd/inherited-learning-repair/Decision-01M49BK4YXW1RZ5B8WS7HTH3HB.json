@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4YXW1RZ5B8WS7HTH3HB",
+  "kind": "Decision",
+  "subject": "prd/inherited-learning-repair",
+  "family": "R1",
+  "statement": "Old verifier rejects an adopted correction",
+  "rationale": "Target-pinned verification and DOD-2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

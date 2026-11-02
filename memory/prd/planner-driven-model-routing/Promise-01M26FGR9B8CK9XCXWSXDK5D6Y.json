@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9B8CK9XCXWSXDK5D6Y",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "EVT-8",
+  "statement": "`legacy_execution_demand_translated` fires when a frozen plan/v1 task is translated for `/implement-now` without rewrite",
+  "intent": "`demand_id:string`, `task_id:string`, `plan_version:string`, `rung_present:boolean`, `original_rung:string?`, `compatibility_version:string`, `translation:enum{explicit_rung,legacy_unassessed}`, `translated_profile:closed object`, `policy_version:string`",
+  "fit_criterion": "M2, M5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fbc62f46afbd13e1d8cdc83bd6135c730cdd59ee6d70b742553a453b51da5c9d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.179Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

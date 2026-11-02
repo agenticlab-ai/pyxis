@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYQPEEGN0B6VKH5CYF1",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "ABUSE-1",
+  "statement": "Argus (drifted or injected) grants itself a never-class act / promotes its tier by editing the authority contract — vector: a write to the authority-contract file",
+  "intent": "the agent's authority model is compromised — the highest-cost lapse",
+  "fit_criterion": "FR-1 (write denied at write time) + FR-6 (DINV-5 structural token-membership fails the gate) + FR-9 (Argus-authored authority-contract diff refused at CI) — three layers",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9b15e6b7157829d5eb1c1289c26046f4939b4d27620addb75a77a4e9e85d4432",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.815Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

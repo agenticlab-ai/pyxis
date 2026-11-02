@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQZ8T5VN6CHBXN89SK1T",
+  "kind": "Need",
+  "subject": "prd/init-hardening",
+  "family": "G2",
+  "statement": "We believe a glossed, truthful question-and-refusal surface; expected result: a pyxis-naïve person completing an install unaided",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6cd81ffca916ed4ac2e32efd1aba74800ac8dece03da42395c16c33abc468b58",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.856Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

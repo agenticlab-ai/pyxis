@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNWV01JQ2SER74M0DCE",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-19",
+  "statement": "When an assurance pass is invoked, it shall run in a fresh top-level execution context distinct from the implementing session and every sibling assurance pass, reading the exact proposal revision, task charter, codegate verdict, and governing design binding elements; sibling passes shall receive no other pass's session, candidates, findings, verdict, or output before their own terminal.",
+  "rationale": "same-mind and cross-pass leakage defeat the independent scrutiny promised by critical assurance",
+  "fit_criterion": "provenance shows distinct implementer/pass context identities and one identical reviewed revision; leakage fixtures for session, candidates, findings, verdict, and output are refused; pass-order changes do not alter the aggregate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:de5b58b9f8fac1cd4c3b0b2ec4babcf7e37ae7c4821bf061bc3252a87b68437f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.556Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

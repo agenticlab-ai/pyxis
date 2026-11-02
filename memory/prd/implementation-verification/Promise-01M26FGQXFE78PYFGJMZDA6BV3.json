@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXFE78PYFGJMZDA6BV3",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "NFR-2",
+  "statement": "Given the same workspace, diff, manifest, and baseline, the harness shall produce an identical verdict — no network access, no clock- or randomness-dependent check behavior.",
+  "intent": "Determinism",
+  "fit_criterion": "repeated fixture runs byte-identical in verdict content (modulo timing fields — timestamps and durations — segregated to declared fields); a network-access attempt by the harness itself fails the determinism suite",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:43c471d795d1f9d20f635d38197055066ac75cc5470e6597b56c4e4e71de4056",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.799Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

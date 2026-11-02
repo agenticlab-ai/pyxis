@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVZSMW0D3G4BFTBS7XV",
+  "kind": "Question",
+  "subject": "prd/tech-design-review",
+  "family": "Q2",
+  "statement": "Eval fixture encoding for paired subjects and supersessions; corpus home",
+  "intent": "implementation",
+  "rationale": "open",
+  "fit_criterion": "Eval-harness phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:74ad2712ff9c3277f28c38b9022c1b03837635217d8fb21276c6d2ab97016812",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.775Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

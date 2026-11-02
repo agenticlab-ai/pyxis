@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQH93BZB6W7Q7BS0KAAR",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "J2",
+  "statement": "When `prd-new` synthesizes the 000-base, I want have every decision it needs already resolved and cited in one input, so I can get a faithful contract with zero re-interviewing",
+  "rationale": "`.pyxis/authoring/prd-new.md`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1b78847c6febbb7ad4730b0be0a1aa62180e69e125ce21535897c6c945554eae",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.409Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJW6CCZWXBC7N3ENG7D12",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-1",
+  "statement": "draft_opened fires when a feature draft opens",
+  "intent": "feature: string, origin: new·reopen, basis_version: int·null, opened_at: timestamp",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3500404781231105e8b7a8d9e78e52b29b9bbac2a2bbef539a23a82f2fc61f56",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:00Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

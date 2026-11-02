@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXPZBXY5YXWSM2RCCEB",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-2",
+  "statement": "When a problem is accepted, Argus shall open a delivery ledger holding stage position, open items, and escalation states, sufficient to resume the drive in a fresh session.",
+  "rationale": "continuity is files-as-truth, never in-memory (brainstorm:autonomous-developer#D-8)",
+  "fit_criterion": "a killed session resumes from the ledger alone and reaches the same next action",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9c44ede5010dddebb8d5fdedce09fe8b8104782f8da647f67aaee561a6b72d1d",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.782Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3Z39XH6BRP2TH5BYXP6T2N9",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-32",
+  "statement": "When all required candidate evidence is current and accepted, the feature drive shall raise one final operator-reviewed proposal from the feature branch to main without approving or landing it.",
+  "rationale": "Present one complete result while keeping landing outside the drive.",
+  "fit_criterion": "Exactly one final proposal identifies current F, M, C and the scenario-set fingerprint. Hosted mode retains authenticated human merge and the required candidate verdict with current-base enforcement. Explicit local-git mode requires the complete accepted candidate-evidence/v1 envelope and every required scenario result, retained at an immutable origin ref and embedded in the final proposal. The declared once-only receipt binds proposal generation, head, target, F/M/C, scenario set, and evidence ref/object id/digest. The operator route atomically leases main M to a child L with tree(C), feature F to its retained child marker with tree(C), and a distinct final-proposal branch at F to deletion, together with final proposal/archive evidence. Any moved ref, absent/altered evidence, unaccepted result, or inconsistent receipt refuses landing and post-crash completion. The drive invokes zero local landing operations.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2d9eaa793be366789c3a8ed1d04177f066bb4510bc4dd2492fd649e95833d79c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGQJWG6N31EDKQP74J7D8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:18Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "compiled from sha256:21ff1c7841e4754da06e4ae3723f73de7456d4a66d1c82592f3ed8e357ae6153"
+  }
+}

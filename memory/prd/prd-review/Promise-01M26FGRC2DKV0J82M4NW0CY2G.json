@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRC2DKV0J82M4NW0CY2G",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-3",
+  "statement": "The reviewer shall generate candidate findings through four parallel lenses — contract quality (incl. §5.9 eval adequacy), coherence, upstream alignment (vision · principles · **incidents** · sibling-PRD overlap · record-fed basis fidelity), and the completeness critic (incl. cost consciousness) — each candidate tagged with its lens.",
+  "rationale": "the adopted lens pack (— #D-5, #D-6)",
+  "fit_criterion": "seeded per-lens defects are each caught by their lens on the fixture corpus (EVAL-6)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:924f5683f7eea7c74ca7f1a9ca097c89d836f6b0b810871a61332ceb04e72ebf",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.266Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

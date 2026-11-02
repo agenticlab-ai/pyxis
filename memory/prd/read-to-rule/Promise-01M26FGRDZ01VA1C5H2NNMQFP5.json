@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDZ01VA1C5H2NNMQFP5",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "NR-2",
+  "statement": "the unmanned reviewers' guides, fixtures, and protocols are untouched",
+  "rationale": "NG-5 — their evolution channel, not this feature's",
+  "fit_criterion": "zero diff under the reviewer skill and authoring surfaces",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:94a47be65ac38740836ced2dcfd649f623783af5551fc055f0161ef41d3858bc",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.327Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461MMR7F8HP0PB3NAFHW26Q",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-argus-approval",
+  "family": "decision.3.5.1",
+  "statement": "Feature tasks are routable only through projections derived from the current aggregate. On each frontier reconciliation, the drive computes `ready = open ∧ all blockers RecordLanding-complete ∧ no open proposal ∧ no active claim`, then projects routing only for those task ids to the current owner domain. Local ownership projects the registered machine's routing signal; remote ownership projects the configured remote-domain signal. An unowned, quiescing, cancelled, abandoned, delivered, or blocked drive projects none.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:962a608e7cb625ab76a9ed048f99162591d539a62abb7df0ab3a75090cc630f3",
+    "source-design:5375b9f1395246115eedf1a9f66c6c21da895c5ac04f8a0505c80e204089b010",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DG5DQ4MZARWRT0KZP4BK"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:54Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-argus-approval.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-argus-approval.md lines 185-185 in section 3.5; sha256:962a608e7cb625ab76a9ed048f99162591d539a62abb7df0ab3a75090cc630f3"
+  }
+}

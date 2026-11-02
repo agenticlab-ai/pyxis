@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVA1385RGCA195023DE",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-13",
+  "statement": "If an effective implementation mapping or native-profile qualification is found defective after production activation, then the system shall engage FR-26 for new work, stop new affected claims, append EVT-11 marking every affected in-flight or unaccepted attempt `rerun_required`, preserve unaffected work, and require replacement evidence on the exact affected task/proposal revision; for already accepted artifacts, preserve shipped state and emit an operator remediation brief without destructive rollback",
+  "intent": "exact policy/profile versions, attempts, tasks, proposals, revisions, and disposition are named; affected open work cannot be accepted until replacement evidence passes",
+  "fit_criterion": "a seeded defect marks every affected open attempt non-evidentiary, permits unaffected work to continue, reruns the exact affected revision successfully, and produces one complete operator brief for an accepted artifact without mutating it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:43b5d2b0319ef8427d8393d5f457baf6a85112241c8b1651affb6c724467ba54",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.73Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

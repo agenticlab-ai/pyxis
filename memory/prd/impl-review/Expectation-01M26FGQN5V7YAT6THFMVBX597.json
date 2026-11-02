@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN5V7YAT6THFMVBX597",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-2",
+  "statement": "seeded design-conformance break caught",
+  "intent": "fixtures citing real design binding blocks",
+  "fit_criterion": "caught on every required run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7b0f662a8d1a76b263b6d4f0140f333c6f3051ba19b0dd1104add974a4e42a9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.533Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTDYGYE2W5MMNX4EBGY",
+  "kind": "Decision",
+  "subject": "design/plan-new-routed-demand",
+  "family": "decision.3.1.1",
+  "statement": "Plans remain dense-numbered bucket-1 documents at `\u003cpaths.plans\u003e/\u003cfeature-slug\u003e/NNN-plan.md` (default `docs/plans/`). The authored Markdown source and generated JSON machine face commit together; merge is approval and freeze. The successor changes the generated schema to `plan/v2` for new plans but preserves the source→fold→verify lifecycle, plan-task identity, coverage matrix, charter contract, sizing policy, overlap handling, and all-or-nothing fog refusal.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7a6ca80a14ba8d862123959184bb72dc51aab82780a2c847375724a29174d982",
+    "source-design:2ab87137b5d7a8635d2a5dc697e7525dd8de80f53ec455b977d7afc3d7033dc2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTN5XVD1NFJ51EMC2RJ8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.677Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-new-routed-demand.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/plan-new-routed-demand.md lines 66-66 in section 3.1; sha256:7a6ca80a14ba8d862123959184bb72dc51aab82780a2c847375724a29174d982"
+  }
+}

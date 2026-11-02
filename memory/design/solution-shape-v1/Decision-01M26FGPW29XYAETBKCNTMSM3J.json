@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPW29XYAETBKCNTMSM3J",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "decision.3.1.1",
+  "statement": "A solution-shape is a document class of its own, homed in a `paths`-configured directory **distinct from and never nested under the technical-design corpus** — so it is never admitted to the design index and never reached by the immutability gate. Each design has at most one shape in v1, named to pair with its design (the same slug), so the pairing is resolvable by name without a registry.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f753976a0efc625ceeb4832c6bdfa5b43fa9c175f4b1ecb6f31ccdd1a1687fce",
+    "source-design:55276febfbea20a48b3db61ce24d4a473df4869bbb2c1dc52ddc6d9ca7a37c47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCXA3SDJWY02N1B6SZR5K"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.73Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/solution-shape-v1.md lines 32-32 in section 3.1; sha256:f753976a0efc625ceeb4832c6bdfa5b43fa9c175f4b1ecb6f31ccdd1a1687fce"
+  }
+}

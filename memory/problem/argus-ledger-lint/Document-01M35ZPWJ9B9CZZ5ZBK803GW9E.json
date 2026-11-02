@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPWJ9B9CZZ5ZBK803GW9E",
+  "kind": "Document",
+  "subject": "problem/argus-ledger-lint",
+  "family": "delivery",
+  "statement": "Captured authored source: docs/problems/argus-ledger-lint/delivery.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/problems",
+    "reconcile:source",
+    "sha256:3381ff48e726bfdaffb8de4ed4f053d5cf5dac20120408fedc5b43a22448aa39"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC3S542WP6V9FNBQ9SYE1"
+    }
+  ],
+  "body_sha256": "3381ff48e726bfdaffb8de4ed4f053d5cf5dac20120408fedc5b43a22448aa39",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:28Z",
+  "provenance": {
+    "source": "docs/problems/argus-ledger-lint/delivery.md",
+    "note": "offline reconciliation"
+  }
+}

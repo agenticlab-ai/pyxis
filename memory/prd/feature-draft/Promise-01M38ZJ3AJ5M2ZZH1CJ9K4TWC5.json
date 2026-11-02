@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZJ3AJ5M2ZZH1CJ9K4TWC5",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-5",
+  "statement": "A session wants to skip a reopen's readiness and approval — vector: edits a locked version in place",
+  "intent": "an unapproved contract change binds execution",
+  "fit_criterion": "FR-19, UB-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38748c05d76e1494e972f7cad96f6489dc8303482375c9676a116ed5e06dcb03",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:35Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

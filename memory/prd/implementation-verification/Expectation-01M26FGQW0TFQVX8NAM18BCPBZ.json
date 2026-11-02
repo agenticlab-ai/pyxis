@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQW0TFQVX8NAM18BCPBZ",
+  "kind": "Expectation",
+  "subject": "prd/implementation-verification",
+  "family": "DOD-10",
+  "statement": "Living rollups updated for the shipped capability (techspec/prd)",
+  "intent": "repo convention (AGENTS.md rule 3)",
+  "fit_criterion": "the implementing PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d0c6bba54eafe9ee6968aff9e161eb6ab3f4c24c5f705a11d8b0026d5104c8be",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.752Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

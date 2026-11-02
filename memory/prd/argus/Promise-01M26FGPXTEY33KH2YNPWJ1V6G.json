@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXTEY33KH2YNPWJ1V6G",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-6",
+  "statement": "If a decision is breaking — a governance override or a convergence deadlock — then Argus shall stop that thread, emit a decision brief, and park the problem fail-closed.",
+  "rationale": "the escalation trigger (brainstorm:autonomous-developer#D-4, #D-5)",
+  "fit_criterion": "EVAL-1: 100% of the breaking set escalated, zero assumed through",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4bbcb0b0d5d02daab177a60dcc9361f4d5824cc1626283f2cbd393b87df51891",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.786Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

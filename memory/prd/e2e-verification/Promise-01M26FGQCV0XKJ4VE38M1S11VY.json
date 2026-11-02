@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCV0XKJ4VE38M1S11VY",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-19",
+  "statement": "Where the feature has no existing harness to reuse, the e2e design doc's harness section shall specify the harness mechanically, answering each of ten elements — the driver (how a scenario starts the system under test and what it gets back), the world (what the run executes against and who creates it), the scenario contract (what one scenario is as an artifact and where it lives), the seams (the named interfaces a fake attaches to), the observation surface (what a scenario is handed to assert on), lifecycle and isolation (setup, teardown, what is shared, what must run serially), determinism controls (clock, randomness, model tier, retries, and what an assertion may therefore claim), cost controls (the per-run bound and how it is enforced), failure diagnostics (what a red run leaves behind), and the boundary (what the harness does not do).",
+  "rationale": "the harness is the most reused and most load-bearing code in the suite and was the least designed part of the doc; specifying it at design time is what lets the review see it and lets a scenario be written against a known contract",
+  "fit_criterion": "across fixtures of at least two app shapes and on the dogfood, the harness section carries a stated answer for each of the ten elements; a section naming libraries with an element unanswered fails the well-formedness check and the buildability lens (FR-24); the buildability lens returns no finding against the section",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6c82249b7e78237f2ec09d23142d3a69389837bed8f9b0e92276201b1f6ed6b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.267Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

@@ -1,0 +1,22 @@
+#!/bin/sh
+# pyxis operand pre-commit — the INSTALLED-repo hook variant (installer-v1 §3.5
+# step 6; plan installer/001 T8, carried finding (b)). An installed operand
+# carries NO engine source, so it cannot run pyxis from source the way the
+# source repo's delegates do — it calls the pinned `pyxis` BINARY directly. `pyxis`
+# reaches PATH through the release cache (.pyxis/bin, primed by the bootstrap
+# shim and appended to PATH by the dev shell / CI); every `pyxis exec <tool> --`
+# then re-verifies the tool against the pinned manifest before running it.
+#
+# Locate-and-delegate only; NO logic, NO fetch, NO parse. bash-3.2-clean (POSIX
+# sh). `pyxis` absent is a fail-closed abort with the named remedy — a commit
+# must not slip past the gate because the front door is missing. `exec` hands the
+# tool's exit code straight back as this hook's. Activation is automatic at init
+# (`git config core.hooksPath .githooks`).
+set -e
+if ! command -v pyxis >/dev/null 2>&1; then
+  echo "pyxis pre-commit: the pyxis binary is not on PATH — the desk gate cannot run." >&2
+  echo "  Run the release bootstrap (.pyxis/scripts/pyxis-bootstrap.sh) and add .pyxis/bin to PATH," >&2
+  echo "  or open this repo through the pyxis dev shell; then re-commit (installer-v1 §3.4)." >&2
+  exit 2
+fi
+exec pyxis exec docgate -- gate

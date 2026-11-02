@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ534841HQ9MWT31450T",
+  "kind": "Expectation",
+  "subject": "prd/config-driven-portability",
+  "family": "DOD-3",
+  "statement": "No non-regression broken; default-config behavior byte-identical",
+  "intent": "NR-1, NR-2",
+  "fit_criterion": "suite result",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7306231db9672dfec52164170ca8231fa29554acc1d95105d650b23d7b41e273",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.019Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "implement-now — plan 001",
+  "feature": "implement-now",
+  "prd": "docs/prds/implement-now",
+  "design": "docs/tech-design/implement-now.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Build the pyxis-native local execution engine (/implement-now)",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Define the five ports and the single-task Worker cycle",
+      "goal": "A single-task Worker runs the whole cycle — claim → workspace → run agent → open+verify proposal → release — end to end against inline fakes, hermetically.",
+      "current": "No executor exists; pyxis plans and projects but has no code that turns a claimed task into a verified proposal.",
+      "desired": "Given one task charter + repo access, the Worker claims, prepares a workspace, invokes the runtime, opens a proposal, verifies success by artifact (a proposal exists and is green — else `hollow`, never succeeded), and releases; it reads no sibling or session state.",
+      "scope": [
+        "The five consumer-side port interfaces (WorkTracker, Lease, Workspace, AgentRuntime, CodeHost) as the engine's declared contracts.",
+        "The Worker composition of those ports into the one-task cycle, with hollow detection at verify.",
+        "Inline test fakes for all five ports proving the cycle in-process."
+      ],
+      "out_of_scope": [
+        "Any real adapter (git, gh, or a CLI) — those are their own tasks.",
+        "Concurrency and the frontier walk — the Dispatcher's task."
+      ],
+      "acceptance": [
+        "Driving the Worker with inline fakes runs claim→workspace→run→verify→release for one task and returns `succeeded`.",
+        "A fake run that produces no proposal is reported `hollow`, never `succeeded`.",
+        "The Worker reads only its one task charter — a test asserting no sibling/session state is consulted passes."
+      ],
+      "key_interfaces": [
+        "`WorkTracker`, `Lease`, `Workspace`, `AgentRuntime`, `CodeHost` port interfaces; `Worker` with a `Run(ctx, charter)` contract returning a typed outcome."
+      ],
+      "traces": [
+        "prd:implement-now/FR-3",
+        "prd:implement-now/FR-10",
+        "design:implement-now#3.1",
+        "design:implement-now#DINV-3",
+        "design:implement-now#DINV-10"
+      ],
+      "touches": [
+        "internal/executor/port (the five interfaces)",
+        "internal/executor/worker (the cycle + hollow)",
+        "internal/executor/worker/worker_test.go (inline fakes)"
+      ],
+      "size_band": {
+        "lo": 200,
+        "hi": 290
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "The Dispatcher and the frontier-sweep run model",
+      "goal": "One run computes the ready frontier over the frozen plan's DAG, dispatches Workers claim-serially then run-in-parallel, and ends with a classed report of succeeded, failed, and blocked tasks — consuming zero model cost when the frontier is empty.",
+      "current": "The Worker (T1) runs one task; nothing walks the plan's DAG or bounds concurrency.",
+      "desired": "The Dispatcher reads open∧unblocked∧unclaimed tasks through one predicate, claims up to the parallel-width bound one at a time (no two Workers per task), runs the claimed Workers concurrently, and reports each task's terminal class; an empty frontier reports and exits before any model call; one task's failure never halts the run.",
+      "scope": [
+        "The single frontier predicate (open ∧ unblocked ∧ unclaimed) over the DAG.",
+        "Claim-serially / run-concurrently scheduling to a parallel-width bound.",
+        "The classed run report (succeeded / failed / blocked) and the empty-frontier zero-cost exit."
+      ],
+      "out_of_scope": [
+        "Real tracker/runtime adapters (uses the T1 fakes/ports).",
+        "Turn caps, CI self-heal, and resume — later robustness tasks."
+      ],
+      "acceptance": [
+        "A fixture plan with a foundation task and two file-disjoint leaves runs the foundation, then both leaves, and reports 3 succeeded.",
+        "A run whose frontier is empty emits zero model calls and reports nothing-ready.",
+        "With one leaf failing, the other independent leaf still completes and the report classes every task."
+      ],
+      "key_interfaces": [
+        "`Dispatcher` with a `Sweep(ctx, plan)` contract; the frontier predicate; the `RunReport` shape."
+      ],
+      "traces": [
+        "prd:implement-now/FR-1",
+        "prd:implement-now/FR-11",
+        "prd:implement-now/FR-12",
+        "prd:implement-now/FR-15",
+        "prd:implement-now/FR-18",
+        "design:implement-now#3.6",
+        "design:implement-now#DINV-4",
+        "design:implement-now#DINV-8"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/executor/dispatch (frontier + scheduler + report)",
+        "internal/executor/dispatch/dispatch_test.go"
+      ],
+      "size_band": {
+        "lo": 210,
+        "hi": 290
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Workspace adapter: worktree isolation off freshly-fetched mainline",
+      "goal": "Each task gets an isolated git worktree branched off the freshly-fetched mainline, with the parent checkout mechanically protected from mutation and worktrees reaped when done.",
+      "current": "The Workspace port exists (T1) with only a temp-dir fake; no real git isolation.",
+      "desired": "Preparing a task fetches the mainline and creates a per-task worktree on a fresh branch off that tip; any attempt to mutate the parent clone is blocked by a guard; a completed (merged ∧ closed) or aged worktree is reaped; a task is never based off an unmerged blocker's branch.",
+      "scope": [
+        "Worktree creation per task, branched off the freshly-fetched mainline tip.",
+        "A mechanical guard blocking mutation of the parent checkout.",
+        "Worktree reaping on completion or age."
+      ],
+      "out_of_scope": [
+        "Claim coordination (the Lease adapter's task).",
+        "Any stacked-branch base selection — the base is always fetched mainline."
+      ],
+      "acceptance": [
+        "A Worker's writes appear only in its worktree; a parent-checkout mutation attempt is blocked.",
+        "A dependent task's worktree is based off freshly-fetched mainline, never an unmerged blocker branch; no stacked PR is created.",
+        "A worktree for a merged-and-closed task is reaped."
+      ],
+      "key_interfaces": [
+        "The `Workspace` port's git adapter; a worktree prepare/reap contract; the parent-guard."
+      ],
+      "traces": [
+        "prd:implement-now/FR-4",
+        "design:implement-now#3.1",
+        "design:implement-now#DINV-1",
+        "design:implement-now#DINV-2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/executor/workspace (git worktree adapter + parent guard + reaper)",
+        "internal/executor/workspace/workspace_test.go"
+      ],
+      "size_band": {
+        "lo": 170,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Lease adapter: the git-ref CAS claim shared with the fleet",
+      "goal": "At most one Worker anywhere holds a task, via the same git-ref compare-and-swap the external fleet uses, plus a local in-process guard — every claim released on every terminal path.",
+      "current": "The Lease port exists (T1) with an in-memory fake; no cross-process claim.",
+      "desired": "Acquiring a claim is a create-or-fail git-ref CAS keyed by (repo, task); a local in-process guard prevents two local Workers racing before the CAS; a losing racer skips with no error; every terminal outcome releases the claim (fire-or-release); the executor coexists with the external fleet with no double-grab.",
+      "scope": [
+        "The git-ref CAS acquire-or-skip claim, keyed by (repo, task), with holder identity.",
+        "A local in-process guard against intra-run double-grab.",
+        "Structural release on every terminal path."
+      ],
+      "out_of_scope": [
+        "Cross-machine heartbeat/lease-expiry reaping (fleet concern, not the local runtime).",
+        "Workspace isolation (its own task)."
+      ],
+      "acceptance": [
+        "In a concurrent local+fleet claim race on one task, exactly one Worker ever holds it; the loser skips.",
+        "Every terminal outcome (success, failure, crash-path) leaves no claim held.",
+        "A lost race returns a distinct skip, never a hard error."
+      ],
+      "key_interfaces": [
+        "The `Lease` port's git-ref adapter; an acquire/release contract with holder identity; the in-proc guard."
+      ],
+      "traces": [
+        "prd:implement-now/FR-2",
+        "prd:implement-now/NR-2",
+        "design:implement-now#3.1",
+        "design:implement-now#DINV-5"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/executor/lease (git-ref CAS adapter + in-proc guard)",
+        "internal/executor/lease/lease_test.go"
+      ],
+      "size_band": {
+        "lo": 170,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "gh adapters: WorkTracker frontier/claim/verify + CodeHost proposal/checks",
+      "goal": "Real GitHub adapters read the ready frontier and item tags, mark claims and comment, open a proposal from a task's head branch, and read its required-check states — all via exact, fresh reads.",
+      "current": "WorkTracker and CodeHost ports exist (T1) with fakes; nothing talks to GitHub.",
+      "desired": "The WorkTracker gh adapter enumerates open tagged items, verifies an item's automated-implementation tag, and comments; the CodeHost gh adapter opens a PR from the exact head branch and reads required-check states through the Checks API; every decision-critical read is exact and fresh (never a search index or cacheable conditional GET); the plan-new projection contract is consumed unchanged.",
+      "scope": [
+        "The WorkTracker gh adapter: frontier read, tag verify, claim-mark, comment.",
+        "The CodeHost gh adapter: open a proposal from the head branch, read required-check states via the Checks API.",
+        "Exact/fresh reads for every consequential lookup."
+      ],
+      "out_of_scope": [
+        "The claim CAS mechanism (the Lease adapter's task).",
+        "The CI self-heal loop (the drive-to-green task)."
+      ],
+      "acceptance": [
+        "The WorkTracker adapter returns exactly the open, automated-implementation-tagged items for a fixture repo state.",
+        "The CodeHost adapter opens a proposal from the exact head branch and reports its required-check states.",
+        "A stale-read fixture proves consequential reads use the fresh path, not a cache."
+      ],
+      "key_interfaces": [
+        "The `WorkTracker` and `CodeHost` gh adapters; the Checks-API read contract; the automated-implementation tag."
+      ],
+      "traces": [
+        "prd:implement-now/FR-1",
+        "prd:implement-now/FR-7",
+        "prd:implement-now/NR-1",
+        "prd:implement-now/NR-3",
+        "design:implement-now#3.1",
+        "design:implement-now#3.10"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/executor/ghtracker (WorkTracker gh adapter + tracker_test.go)",
+        "internal/executor/ghcodehost (CodeHost gh adapter + codehost_test.go)"
+      ],
+      "size_band": {
+        "lo": 200,
+        "hi": 290
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "AgentRuntime contract and the Claude adapter",
+      "goal": "A fresh headless Claude process implements a task from an inline brief in its worktree, its completion read from the process exit and its token/cost parsed from JSON — behind the one runtime contract, with a conformance harness other adapters reuse.",
+      "current": "The AgentRuntime port exists (T1) as an interface with a fake.",
+      "desired": "`launch` spawns a fresh non-interactive process per task (no session reuse) with the full charter + relevant context inline; `await` reads completion from the exit code; the adapter parses the CLI's JSON for tokens/turns; `authcheck` preflights install+auth and degrades loudly with a stated remedy on a missing credential, consuming no attempt; `tiermap` maps the frozen rung to (model, effort) with native IDs kept inside the adapter; a self-registration registry (no central switch) admits adapters.",
+      "scope": [
+        "The runtime contract (`launch`/`await`/`kill`/`authcheck`/`tiermap`) with exit-code completion and JSON token parsing.",
+        "The Claude adapter, self-registered, spawning a fresh headless process with the inline brief.",
+        "The auth preflight + loud degrade; a reusable adapter conformance harness."
+      ],
+      "out_of_scope": [
+        "The other three CLI adapters (their own tasks).",
+        "Turn caps and the CI self-heal loop (later tasks)."
+      ],
+      "acceptance": [
+        "The Claude adapter drives a fixture task to a green proposal through the runtime contract, with a fresh process (no reuse).",
+        "A missing/unauthenticated backend degrades loudly with a stated remedy and spawns no counted Worker.",
+        "Parsed token/turn usage is reported for a completed run."
+      ],
+      "key_interfaces": [
+        "The `AgentRuntime` contract; the self-registration registry; the ephemeral brief assembly; the Claude adapter + conformance harness."
+      ],
+      "traces": [
+        "prd:implement-now/FR-5",
+        "prd:implement-now/FR-16",
+        "prd:implement-now/FR-19",
+        "design:implement-now#3.7",
+        "design:implement-now#DINV-11",
+        "design:implement-now#A-11"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/executor/runtime (the contract + registry + brief + authcheck + runtime_test.go)",
+        "internal/executor/runtime/claude (adapter + claude_test.go)"
+      ],
+      "size_band": {
+        "lo": 200,
+        "hi": 290
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T6",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Codex AgentRuntime adapter",
+      "goal": "A fresh headless Codex process (`codex exec`) implements a task through the one runtime contract, self-registered, passing the adapter conformance test.",
+      "current": "The runtime contract + registry + conformance harness exist (T6); no Codex adapter.",
+      "desired": "The Codex adapter runs `codex exec` non-interactively with approval/sandbox bypass, reads completion from exit, parses its JSON for usage, and self-registers; it passes the same conformance test the other adapters do.",
+      "scope": [
+        "The Codex adapter: headless `exec` launch, exit-code completion, JSON usage parse, `tiermap`.",
+        "Self-registration (no central switch)."
+      ],
+      "out_of_scope": [
+        "The runtime contract itself (T6).",
+        "Routing which task uses Codex (the config task)."
+      ],
+      "acceptance": [
+        "The Codex adapter drives a fixture task to a green proposal through the runtime contract.",
+        "The adapter self-registers and passes the shared conformance test."
+      ],
+      "key_interfaces": [
+        "The Codex `AgentRuntime` adapter; its `tiermap`."
+      ],
+      "traces": [
+        "prd:implement-now/FR-5",
+        "design:implement-now#3.7",
+        "design:implement-now#A-4"
+      ],
+      "blocked_by": [
+        "T6"
+      ],
+      "touches": [
+        "internal/executor/runtime/codex (adapter + conformance)",
+        "codex_test.go"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 170
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T7",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "Cursor AgentRuntime adapter (under a pty)",
+      "goal": "A fresh headless Cursor process (`cursor-agent -p` under a pseudo-terminal) implements a task through the one runtime contract, self-registered, passing conformance.",
+      "current": "The runtime contract + registry + conformance harness exist (T6); no Cursor adapter.",
+      "desired": "The Cursor adapter runs `cursor-agent -p --output-format json --force` inside a pseudo-terminal (the CLI requires a TTY), reads completion from exit, parses JSON usage, and self-registers; it passes the shared conformance test.",
+      "scope": [
+        "The Cursor adapter: headless print-mode launch wrapped in a pty, autonomy flag, exit-code completion, JSON usage parse, `tiermap`.",
+        "Self-registration."
+      ],
+      "out_of_scope": [
+        "The runtime contract (T6).",
+        "Backend routing (the config task)."
+      ],
+      "acceptance": [
+        "The Cursor adapter drives a fixture task to a green proposal through the runtime contract, running under a pty.",
+        "The adapter self-registers and passes the shared conformance test."
+      ],
+      "key_interfaces": [
+        "The Cursor `AgentRuntime` adapter; the pty wrapper; its `tiermap`."
+      ],
+      "traces": [
+        "prd:implement-now/FR-5",
+        "design:implement-now#3.7",
+        "design:implement-now#A-4"
+      ],
+      "blocked_by": [
+        "T6"
+      ],
+      "touches": [
+        "internal/executor/runtime/cursor (adapter + pty wrap + conformance)",
+        "cursor_test.go"
+      ],
+      "size_band": {
+        "lo": 110,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T8",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T9",
+      "title": "OpenCode AgentRuntime adapter",
+      "goal": "A fresh headless OpenCode process (`opencode run`) implements a task through the one runtime contract, self-registered, passing conformance.",
+      "current": "The runtime contract + registry + conformance harness exist (T6); no OpenCode adapter, and OpenCode is not installed on the authoring machine.",
+      "desired": "The OpenCode adapter runs `opencode run --format json` non-interactively, reads completion from exit, parses JSON usage, uses `provider/model` naming in `tiermap`, and self-registers; the exact current headless flags are confirmed at implementation and locked by the conformance test.",
+      "scope": [
+        "The OpenCode adapter: headless `run` launch, exit-code completion, JSON usage parse, `provider/model` `tiermap`.",
+        "Self-registration; flags confirmed against the live CLI at implementation."
+      ],
+      "out_of_scope": [
+        "The runtime contract (T6).",
+        "Backend routing (the config task)."
+      ],
+      "acceptance": [
+        "The OpenCode adapter drives a fixture task to a green proposal through the runtime contract.",
+        "The adapter self-registers and passes the shared conformance test against the live CLI."
+      ],
+      "key_interfaces": [
+        "The OpenCode `AgentRuntime` adapter; its `provider/model` `tiermap`."
+      ],
+      "traces": [
+        "prd:implement-now/FR-5",
+        "design:implement-now#3.7",
+        "design:implement-now#A-4"
+      ],
+      "blocked_by": [
+        "T6"
+      ],
+      "touches": [
+        "internal/executor/runtime/opencode (adapter + conformance)",
+        "opencode_test.go"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 170
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T9",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T10",
+      "title": "Drive-to-green: local gate mirrors CI + bounded CI self-heal",
+      "goal": "A Worker drives its proposal to genuinely green — a local gate that runs the same checks required by CI, then a bounded self-heal loop that fixes remote-CI failures, capped, then escalates.",
+      "current": "A Worker opens a proposal (T1/T5) but does not verify or repair its checks beyond a green/not-green read.",
+      "desired": "Before push, a local gate runs the same deterministic checks required by CI (one predicate — a change failing a required CI check also fails locally); on a red proposal, a bounded state machine reads the Checks API, feeds redacted+clamped failed-CI logs to a fixer run, re-pushes, and re-checks, to a configured cap; at the cap it stops and escalates.",
+      "scope": [
+        "The local gate that mirrors required CI (one shared predicate).",
+        "The bounded CI self-heal loop (read checks, redact+clamp logs to a fixer, re-push, re-check).",
+        "The cap-then-escalate terminal."
+      ],
+      "out_of_scope": [
+        "The turn cap / checkpoint-resume of a single Worker run (its own task).",
+        "Merging or landing the green proposal (never in scope — the driver lands)."
+      ],
+      "acceptance": [
+        "A change that fails a required CI check also fails the local gate on the same input.",
+        "A red proposal is driven to green within the cap in a fixture, with failed-CI logs redacted before reaching the fixer.",
+        "At the self-heal cap, the task stops, is flagged failed, and escalates."
+      ],
+      "key_interfaces": [
+        "The drive-to-green loop; the local-gate-mirrors-CI predicate; the bounded self-heal state machine."
+      ],
+      "traces": [
+        "prd:implement-now/FR-7",
+        "prd:implement-now/FR-8",
+        "prd:implement-now/FR-9",
+        "design:implement-now#3.6",
+        "design:implement-now#DINV-4"
+      ],
+      "blocked_by": [
+        "T5",
+        "T6"
+      ],
+      "touches": [
+        "internal/executor/drivetogreen (local gate + self-heal state machine)",
+        "drivetogreen_test.go"
+      ],
+      "size_band": {
+        "lo": 220,
+        "hi": 300
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T10",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T11",
+      "title": "Bounded execution and resume",
+      "goal": "A Worker's turns are mechanically bounded and a non-converging Worker checkpoints, exits resumably, and is respawned up to a cap then escalated; a killed run resumes in-flight tasks from their pushed branches with no duplicate proposal.",
+      "current": "Workers run unbounded (T1); the Dispatcher (T2) has no resume path.",
+      "desired": "Each Worker's turns are capped by a native flag where present and a uniform wall-clock/budget cap + kill where absent; a Worker over the bound checkpoints and exits resumably; the Dispatcher respawns it up to a cap, then escalates; a re-invocation re-probes the tracker and continues in-flight tasks from their pushed branches, producing no duplicate proposal.",
+      "scope": [
+        "Mechanical per-Worker turn bound (native flag or uniform wall-clock/budget + kill).",
+        "Checkpoint-exit + bounded respawn + escalate.",
+        "Crash/re-invocation resume from the tracker + pushed WIP, idempotent (no duplicates)."
+      ],
+      "out_of_scope": [
+        "The CI self-heal loop (its own task).",
+        "The in-session wake-driven auto-resume layer (a future design)."
+      ],
+      "acceptance": [
+        "A Worker exceeding the turn bound checkpoints, exits, is respawned up to the cap, then escalates.",
+        "A killed mid-run re-invocation resumes in-flight tasks from pushed branches with no duplicate proposal.",
+        "The turn bound holds uniformly across a native-flag backend and a wall-clock-enforced backend."
+      ],
+      "key_interfaces": [
+        "The turn-bound enforcement; the checkpoint-exit + respawn contract; the resume-from-tracker probe."
+      ],
+      "traces": [
+        "prd:implement-now/FR-13",
+        "prd:implement-now/FR-14",
+        "design:implement-now#3.7",
+        "design:implement-now#DINV-9"
+      ],
+      "blocked_by": [
+        "T2",
+        "T6"
+      ],
+      "touches": [
+        "internal/executor/worker (checkpoint-exit + turn cap enforcement + worker resume_test)",
+        "internal/executor/dispatch (respawn + resume-from-tracker + dispatch resume_test)"
+      ],
+      "size_band": {
+        "lo": 190,
+        "hi": 280
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T11",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T12",
+      "title": "Backend routing and the caps config",
+      "goal": "Backend selection and the caps are closed-schema policy on the pyxis-config surface — a default backend plus an optional per-repo table, and the turn, self-heal, and parallel-width caps — with unknown keys erroring and enforcement mechanical.",
+      "current": "Backends are self-registered (T6–T9) but nothing selects one per task; caps are hardcoded or absent.",
+      "desired": "An executor config block carries a default backend plus an optional per-repo `(task type | phase) → backend` table, and the worker-turn / CI-self-heal / parallel-width caps, with sensible defaults + per-repo override; config parses closed (unknown keys error); the frozen rung is clamped to (model, effort) within the chosen backend; caps are enforced mechanically, never model-judged.",
+      "scope": [
+        "The default-backend + per-repo routing table on the closed-schema config surface.",
+        "The three caps as config with defaults + override.",
+        "The downstream rung clamp to (model, effort)."
+      ],
+      "out_of_scope": [
+        "Per-task CLI override (deferred to a future plan-charter field).",
+        "The plan-time rung envelope (routing-envelope owns it)."
+      ],
+      "acceptance": [
+        "A repo config selects the default backend and a per-repo table routes a matching task to its backend.",
+        "An unknown config key is a parse error.",
+        "The caps read from config are enforced mechanically in a fixture."
+      ],
+      "key_interfaces": [
+        "The executor config block schema; the routing lookup; the caps; the rung clamp."
+      ],
+      "traces": [
+        "prd:implement-now/FR-6",
+        "prd:implement-now/FR-11",
+        "design:implement-now#3.8"
+      ],
+      "blocked_by": [
+        "T6",
+        "T2"
+      ],
+      "touches": [
+        "internal/executor/config (routing table + caps",
+        "closed-schema)",
+        "config_test.go"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 200
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T12",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T13",
+      "title": "The /implement-now surface and two-sink reporting",
+      "goal": "The operator (attended) and argus (unattended) drive the same frontier-sweep through one normalized event stream — a live progress view in the session, or argus's delivery journal with fail-closed escalation — via the vendor-neutral `/implement-now` surface.",
+      "current": "The Dispatcher runs a sweep (T2) but emits no normalized events and has no operator/argus surface.",
+      "desired": "A run emits one normalized event stream (dispatched → verified → outcome → finished) delivered to two sinks: attended → a live in-session progress view + a classed final summary; unattended → argus's existing delivery journal, a stuck/failed task fail-closed-escalating to argus; intervention is coarse (cancel a run / kill a Worker); the surface is a vendor-neutral skill + authoring guide with a thin `cmd` main.",
+      "scope": [
+        "The one normalized event stream and the two sinks (operator live view · argus journal + escalation).",
+        "The vendor-neutral `/implement-now` skill + authoring guide + thin main.",
+        "Coarse intervention (cancel/kill)."
+      ],
+      "out_of_scope": [
+        "The argus drive protocol itself (argus owns it; this feeds its journal).",
+        "Landing/merge (merge-lane's)."
+      ],
+      "acceptance": [
+        "The same run completes and reports under an attended invocation (live view) and an unattended (journal-only) invocation.",
+        "The event stream carries the per-task lifecycle events, and a stuck task escalates fail-closed to the argus sink.",
+        "Cancelling a run kills its in-flight Workers and releases their claims."
+      ],
+      "key_interfaces": [
+        "The normalized event stream; the two sink adapters; the `/implement-now` skill + authoring guide + `cmd` main."
+      ],
+      "traces": [
+        "prd:implement-now/FR-17",
+        "design:implement-now#3.9",
+        "design:implement-now#DINV-7"
+      ],
+      "blocked_by": [
+        "T2",
+        "T12"
+      ],
+      "touches": [
+        "cmd/implement-now (thin main)",
+        "internal/executor/report (event stream + sinks + report_test.go)",
+        "the implement-now skill + authoring guide (the vendor-neutral agent surface)"
+      ],
+      "size_band": {
+        "lo": 190,
+        "hi": 280
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T13",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T14",
+      "title": "End-to-end verification, dogfood, and the stage-8 map re-pin",
+      "goal": "A real small pyxis feature is implemented end to end by `/implement-now` locally, the Worker core proves runtime-agnostic behind a second (fake/remote-shaped) Dispatcher adapter, and the pipeline map's stage-8 row states the native-local binding.",
+      "current": "The engine's parts exist and are unit/conformance tested; no whole-system drill or map correction has run.",
+      "desired": "An end-to-end drill runs a real frozen plan through `/implement-now` to green PRs (operator only reviewing/merging); the Worker core + ports pass conformance behind a fake Dispatcher adapter with zero Worker change (the reusability check); the pipeline map's stage-8 row is moved to state the native-local runtime binding alongside the external fleet.",
+      "scope": [
+        "The end-to-end drill (a real plan → green PRs via `/implement-now`).",
+        "The reusability check (the Worker core behind a second Dispatcher adapter, no Worker change).",
+        "The pipeline-map stage-8 row correction."
+      ],
+      "out_of_scope": [
+        "The remote/Docker Dispatcher binding itself (a future design).",
+        "Any PRD amendment content (the FR-10/FR-20 re-pin is a follow-up amendment, not this task)."
+      ],
+      "acceptance": [
+        "`/implement-now` implements one real small pyxis feature end to end locally, with the operator only reviewing/merging.",
+        "The Worker core passes conformance behind a second (fake/remote-shaped) Dispatcher adapter with no Worker change.",
+        "The pipeline map's stage-8 row states the native-local binding."
+      ],
+      "key_interfaces": [
+        "The end-to-end drill; the second Dispatcher adapter (the reusability witness); the pipeline-map stage-8 row."
+      ],
+      "traces": [
+        "prd:implement-now/FR-20",
+        "design:implement-now#A-9",
+        "design:implement-now#A-12"
+      ],
+      "blocked_by": [
+        "T3",
+        "T4",
+        "T5",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11",
+        "T13"
+      ],
+      "touches": [
+        "internal/executor/e2e (end-to-end drill + reusability check)",
+        "the operational pipeline map's stage-8 row"
+      ],
+      "size_band": {
+        "lo": 130,
+        "hi": 220
+      },
+      "mechanical": false,
+      "plan_task_id": "implement-now/001/T14",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:implement-now/FR-1",
+      "tasks": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-2",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-3",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-4",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-5",
+      "tasks": [
+        "T6",
+        "T7",
+        "T8",
+        "T9"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-6",
+      "tasks": [
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-7",
+      "tasks": [
+        "T5",
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-8",
+      "tasks": [
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-9",
+      "tasks": [
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-10",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-11",
+      "tasks": [
+        "T2",
+        "T12"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-12",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-13",
+      "tasks": [
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-14",
+      "tasks": [
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-15",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-16",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-17",
+      "tasks": [
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-18",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-19",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/FR-20",
+      "tasks": [
+        "T14"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/NR-1",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/NR-2",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/NR-3",
+      "tasks": [
+        "T5",
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/NR-4",
+      "tasks": [
+        "T13"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-1",
+      "tasks": [
+        "T2",
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-2",
+      "tasks": [
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-3",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-4",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-5",
+      "tasks": [
+        "T10"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-6",
+      "tasks": [
+        "T11"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-7",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:implement-now/UB-8",
+      "tasks": [
+        "T2",
+        "T4"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:1e17c2c37340c4a0258eec72a641e5ad8018bd65788c3df4aea4ae6b56758884"
+}

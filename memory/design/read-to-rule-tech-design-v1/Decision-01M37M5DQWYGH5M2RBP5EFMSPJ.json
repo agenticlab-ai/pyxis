@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M5DQWYGH5M2RBP5EFMSPJ",
+  "kind": "Decision",
+  "subject": "design/read-to-rule-tech-design-v1",
+  "family": "decision.3.4.1",
+  "statement": "This design ships the §0 **routing section** only; it does **not** extend `read-to-rule-v1`'s federated capture-line convention to design review gates. The capture line measures review efficiency by federating per-gate minutes and per-item routing into the review-feedback ledger — machinery `read-to-rule-v1` scoped to PRD gates and tied to the still-maturing review-feedback-capture feature. Design review has two candidate gates — the unmanned `tech-design-review` and the human approval — either of which could one day carry the line, but binding that measurement now would couple this template change to another feature's timing, the I1-class inversion `read-to-rule-v1` itself rejected as its ALT-2. The graduation path is explicit and symmetric with `read-to-rule-v1`'s own: when design-review efficiency measurement is wanted, a later change extends the capture-line convention to design gates through the review-feedback feature's channel (Q2). Until then, §0 for designs is a routing aid with no measurement obligation.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:347c2c80018c73b11bf6af698511d0b674b656ecc9bc7dd2b79c63b19d2d4c79",
+    "source-design:17a803f8ab34444bc2ce676b48baa6a98a8489e6262d14555910164c83859a2f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPV90X5AYBEP2F0YX1QZ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRTBYER6EZ8Y13JDTZMGM"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:11Z",
+  "provenance": {
+    "source": "docs/tech-design/read-to-rule-tech-design-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/read-to-rule-tech-design-v1.md lines 86-86 in section 3.4; sha256:347c2c80018c73b11bf6af698511d0b674b656ecc9bc7dd2b79c63b19d2d4c79"
+  }
+}

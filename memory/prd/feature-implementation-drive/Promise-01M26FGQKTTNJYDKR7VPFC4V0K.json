@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKTTNJYDKR7VPFC4V0K",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-2",
+  "statement": "The feature drive shall bind every review, manual attestation, e2e outcome, and delivery proof to the acting identity and exact revision identities required by its decision.",
+  "intent": "Evidence integrity",
+  "fit_criterion": "Replay, wrong-head, missing-identity, and stale-input corpus: 100% refused; clean controls: 100% accepted.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f79e94080fd788124f1278cc7d19de150c7a80ade0d1227c2baaf998fd6120d0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.49Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

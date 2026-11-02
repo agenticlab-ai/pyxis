@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR41C2X9Y6WYV6XPK422",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-7",
+  "statement": "The sweep shall complete each invocation as one bounded pass with no resident process, and shall be bindable to the host scheduler through a delegate-only shim.",
+  "rationale": "the wake-tick pattern; stage 11's \"periodic\" without a daemon (D-4; F-6)",
+  "fit_criterion": "process table shows zero sweep processes between runs; the shim passes the repo's shim test conventions (delegate-only, bash-3.2-clean)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e0d98aa1f3c196895e642342c7172c1a3b621e6e557459f5a271b7cdc898a96d",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.009Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

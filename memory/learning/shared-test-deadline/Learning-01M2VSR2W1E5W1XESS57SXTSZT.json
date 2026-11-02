@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2VSR2W1E5W1XESS57SXTSZT",
+  "kind": "Learning",
+  "subject": "learning/shared-test-deadline",
+  "statement": "Coverage measurement supplies an explicit 20-minute Go package timeout, matching the shared required gate's existing outer budget.",
+  "intent": "Allow the complete real-Git integration suite to finish under concurrent race and coverage execution without an earlier implicit package alarm.",
+  "rationale": "The full memory CLI race suite passed alone in 346 seconds, while the concurrent shared runs reached Go's implicit 600-second package deadline without assertion failures. Every test, uncached coverage measurement, coverage floor, race check, and outer deadline remains enforced. The 90 sibling-merge cases now use four isolated checkouts at a time.",
+  "tags": [
+    "code:internal/coveragegate"
+  ],
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T03:00:52Z",
+  "provenance": {
+    "source": "internal/coveragegate/run.go"
+  }
+}

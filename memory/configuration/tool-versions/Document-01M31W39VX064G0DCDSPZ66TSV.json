@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W39VX064G0DCDSPZ66TSV",
+  "kind": "Document",
+  "subject": "configuration/tool-versions",
+  "family": "config",
+  "statement": "Captured authored source: .pyxis/scripts/versions.env",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/scripts",
+    "reconcile:source",
+    "sha256:af95995091675808aea58662022303eae35b25022d8e81d47decda801b39614b"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB7HG5MJACNJ2B7BSAZ87"
+    }
+  ],
+  "body_sha256": "af95995091675808aea58662022303eae35b25022d8e81d47decda801b39614b",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:23Z",
+  "provenance": {
+    "source": ".pyxis/scripts/versions.env",
+    "note": "offline reconciliation"
+  }
+}

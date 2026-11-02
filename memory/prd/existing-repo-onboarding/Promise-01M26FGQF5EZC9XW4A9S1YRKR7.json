@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQF5EZC9XW4A9S1YRKR7",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-11",
+  "statement": "When apply is re-run against an already-applied plan, the system shall land only content that has drifted from the plan, making no other change.",
+  "rationale": "idempotent re-apply inherits SCAF-2 (F-4); the basis for UB-4's re-adopt",
+  "fit_criterion": "a second apply of the fixture plan lands zero further changes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab68ff4db28e08ede45f1eac9b237474b141b531abede5f224212604202070f5",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.341Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

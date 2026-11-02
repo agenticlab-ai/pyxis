@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQRJM87XGDNQMN6DVG4J",
+  "kind": "Expectation",
+  "subject": "prd/implement-now",
+  "family": "DOD-9",
+  "statement": "The pipeline map's stage-8 row states the native-local binding",
+  "intent": "FR-20",
+  "fit_criterion": "the map diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ceb22ed1aede0f739e8bbff585db3c8d3ecdad832ef7fa02b6c6afc6ef321afe",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.642Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

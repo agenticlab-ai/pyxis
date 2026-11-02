@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR08A1QCBP5RS07T7E1E",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "EVT-4",
+  "statement": "wiring_applied fires when GitHub wiring finishes",
+  "intent": "operations: str[], partial: bool",
+  "fit_criterion": "ABUSE-3 audit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:38c7bea545aca7c22c3677af6c87cbe55a64c04d67f494d3653bceb18afb120d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.888Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

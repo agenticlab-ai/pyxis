@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBG069JSWXC2NGACS0W",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "DOD-6",
+  "statement": "Packaging honors the vendor-neutral surface; calibration table and artifact schemas versioned; measurements computable from reports alone",
+  "intent": "NFR-3, FR-14",
+  "fit_criterion": "layout + a hand-computed M1/M2 from fixture reports",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8e12ff14654e6b86fba41b893aeb45639801a99709fb68be96b3cfa71446d29e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.248Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

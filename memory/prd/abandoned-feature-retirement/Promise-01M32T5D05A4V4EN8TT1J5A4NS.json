@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5D05A4V4EN8TT1J5A4NS",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-4",
+  "statement": "The retirement decision shall remain equivalent across supported local and hosted gate modes and a fresh transport clone.",
+  "intent": "Portability",
+  "fit_criterion": "Mode matrix returns the same normalized classification and evidence identity for every fixture.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a4c01a4b0c880ba7f58697e1d6f677ffecc0f7cad8927fd60cc5809597c2dcbc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:49Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

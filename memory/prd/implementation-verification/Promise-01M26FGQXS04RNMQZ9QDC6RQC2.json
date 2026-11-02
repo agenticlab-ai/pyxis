@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXS04RNMQZ9QDC6RQC2",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-2",
+  "statement": "If a verb exceeds its time bound, then the system shall terminate it and record error-timeout for the rung, fail-closed",
+  "intent": "error verdict naming the verb and its bound",
+  "fit_criterion": "the hanging-verb fixture terminates within its bound plus the runner's declared termination grace (a constant the verdict schema records) and records error-timeout",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bd4e80cd68b824f1f2ab8d0a20a44c453e2713fc4b2af1e5a19fc021935acb8e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.809Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

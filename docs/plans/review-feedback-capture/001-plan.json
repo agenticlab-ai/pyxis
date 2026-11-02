@@ -1,0 +1,444 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Review-feedback capture — plan 001",
+  "feature": "review-feedback-capture",
+  "prd": "docs/prds/review-feedback-capture",
+  "design": "docs/tech-design/review-feedback-capture.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Build the review-feedback ledger — the operator-conversation capture slice",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Build the review-feedback ledger storage class and its fold",
+      "goal": "a per-subject append-only ledger entry can be written to disk and a fold produces a byte-verified machine projection.",
+      "current": "no ledger exists; human review comments are discarded.",
+      "desired": "a per-subject directory holds one append-only markdown file per entry (id · source · author · timestamp · subject-anchor · verbatim comment); a fold reads all entries and regenerates a schema-versioned projection; the projection is byte-verified (a stale/hand-edited projection reds the gate); an entry file is append-only (capture writes the initial block, a later disposition transition appends, prior content never rewritten).",
+      "scope": [
+        "the entry schema (typed, append-only) and the per-subject directory layout",
+        "the fold that produces the machine projection, wired as a docgate verb + byte-verify"
+      ],
+      "out_of_scope": [
+        "the writer/adapters (T2/T3); disposition (T4); citations (T5)"
+      ],
+      "acceptance": [
+        "writing N entries under a subject yields N append-only files, each with all header fields populated",
+        "the fold regenerates the projection deterministically; a byte-mismatch reds `verify-generated`",
+        "appending a disposition transition to an entry leaves its captured text and attribution unchanged"
+      ],
+      "key_interfaces": [
+        "the ledger `Entry` schema-versioned type; the fold entry point; the projection contract"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-7",
+        "prd:review-feedback-capture/FR-1",
+        "design:review-feedback-capture#3.1"
+      ],
+      "touches": [
+        "internal/reviewfeedback (ledger types + fold)",
+        "cmd/docgate (fold verb wiring)",
+        "docs/feedback/"
+      ],
+      "size_band": {
+        "lo": 150,
+        "hi": 300
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Introduce the CaptureSource port and the coded writer",
+      "goal": "the coded writer produces a ledger entry from a captured comment, taken through the consumer-side CaptureSource port.",
+      "current": "T1 can persist an entry, but nothing produces one from a review comment.",
+      "desired": "a consumer-side `CaptureSource` interface yields a schema-versioned captured comment (comment · author · timestamp · subject-anchor · source-id); the writer is the sole producer of entries (no hand-authoring path) and imports no adapter package (boundary lint-enforced). *(Plan decision: the port is built now — the frozen design's DINV-2 binds it, and the WR-4 code-host adapter forward-composes on it; the conversation adapter is live in this slice, added in T3.)*",
+      "scope": [
+        "the `CaptureSource` interface and the writer, with a test/stub adapter for the conformance suite",
+        "the import-boundary lint that keeps the writer core adapter-free"
+      ],
+      "out_of_scope": [
+        "the real conversation adapter (T3); disposition (T4)"
+      ],
+      "acceptance": [
+        "the writer produces one entry per captured comment via the port, verified with a stub adapter",
+        "the import-boundary lint fails if the writer core imports an adapter package",
+        "no code path or guide permits hand-authoring an entry"
+      ],
+      "key_interfaces": [
+        "`CaptureSource` interface; `CapturedComment` type; the writer contract"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-9",
+        "design:review-feedback-capture#3.3"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/reviewfeedback (CaptureSource interface + writer)"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Capture operator-conversation comments through the port",
+      "goal": "explicitly capturing an operator-conversation comment persists it as a ledger entry without coupling capture to the source edit.",
+      "current": "operator-conversation comments can cause source edits, but the comments are not automatically persisted.",
+      "desired": "an explicit capture command uses the conversation adapter to record the selected comment as a ledger entry. Capture stays independent from editing: a failed write reports the failure and leaves the supplied comment available for retry, while source edits remain governed by the operator conversation.",
+      "scope": [
+        "the conversation adapter implementing `CaptureSource`; the explicit capture command and retry-safe failure behavior"
+      ],
+      "out_of_scope": [
+        "disposition (T4); operator-conversation editing behavior itself (NR-1, guarded in T8)"
+      ],
+      "acceptance": [
+        "an explicitly captured conversation comment produces one entry with all fields; source editing remains independent",
+        "a simulated write failure loses no comment and blocks no review (UB-1)",
+        "the command contains no capture logic beyond parsing input and invoking the adapter and writer"
+      ],
+      "key_interfaces": [
+        "the conversation adapter (implements `CaptureSource`); the explicit capture-command contract"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-1",
+        "prd:review-feedback-capture/UB-1",
+        "design:review-feedback-capture#3.3"
+      ],
+      "blocked_by": [
+        "T2"
+      ],
+      "touches": [
+        "internal/reviewfeedback (conversation adapter + explicit capture command)"
+      ],
+      "size_band": {
+        "lo": 80,
+        "hi": 200
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Tag dispositions at resolution (conversation side)",
+      "goal": "an entry closes to a typed disposition + outcome-ref when its resolving event is observed — deterministically, never by inference.",
+      "current": "entries are captured open, with no disposition.",
+      "desired": "the writer records the edit-commit an annotation produced at capture; the fold observes that commit's landing on the subject and tags the entry `applied` with a stable outcome-ref (merged sha / PR / amendment id — never a working-branch sha); an entry whose annotation produced no landed change closes `no-action` with a reason; one not yet resolvable stays open, flagged pending; one whose subject anchor no longer resolves is retained, flagged stale. Every disposition transition names the observed event it was set from.",
+      "scope": [
+        "the disposition state machine; the deterministic resolving-event (commit-landing) observation; and the pending, no-action, and stale-subject handling"
+      ],
+      "out_of_scope": [
+        "fuzzy comment→diff inference (explicitly excluded); measures (T7)"
+      ],
+      "acceptance": [
+        "a landed annotation-edit closes its entry `applied` with a stable outcome-ref naming the observed commit",
+        "a no-change subject closes `no-action`; an unresolved one stays pending; a superseded-or-deleted subject stays flagged-stale (UB-3, UB-5, UB-6)",
+        "every disposition transition cites its resolving event; no code path sets a disposition without one"
+      ],
+      "key_interfaces": [
+        "the disposition enum + transition; the resolving-event observer; the outcome-ref shape"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-3",
+        "prd:review-feedback-capture/UB-3",
+        "prd:review-feedback-capture/UB-5",
+        "prd:review-feedback-capture/UB-6",
+        "design:review-feedback-capture#3.4"
+      ],
+      "blocked_by": [
+        "T2",
+        "T3"
+      ],
+      "touches": [
+        "internal/reviewfeedback (disposition + git observation)"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "The review-feedback citation grammar and its enforced resolution check",
+      "goal": "an entry resolves by its `review-feedback:` citation, and a dead citation or outcome-ref reds the gate.",
+      "current": "`Learned-from: review-thread` refs resolve to nothing; nothing enforces resolution.",
+      "desired": "entries carry a `review-feedback:\u003csubject-stem\u003e#\u003centry-anchor\u003e` citation (a sibling of the existing grammar, grep-resolvable); `Learned-from: review-thread` resolves to a `review-feedback:` anchor through the amendment model's existing free ref slot (no amendment-model change); a registry-born docgate check (extending the check-registration pattern) fails any entry `outcome` ref or `Learned-from: review-thread` ref that does not resolve.",
+      "scope": [
+        "the `review-feedback:` citation family; the registry-born resolution check"
+      ],
+      "out_of_scope": [
+        "any change to the amendment model (its free ref slot is used as-is); cross-links (T6)"
+      ],
+      "acceptance": [
+        "a `review-feedback:` citation resolves by grep to its entry; a dead ref reds the resolution check",
+        "a `Learned-from: review-thread` ref pointing at a real entry passes; a dangling one reds the check",
+        "the amendment-model files are unchanged by this task"
+      ],
+      "key_interfaces": [
+        "the `review-feedback:` anchor grammar; the resolution check registration"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-4",
+        "design:review-feedback-capture#3.5"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/docgate (registry-born check)",
+        "internal/reviewfeedback (citation anchors)"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T5",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "Cross-link entries to the existing captures, read-only",
+      "goal": "an entry cross-links to a reviewer M2 residual or an Argus `E-n` disposition, one-directionally.",
+      "current": "no linkage between the ledger and the existing partial captures.",
+      "desired": "an entry may cite the reviewer M2 report / Argus `E-n` where relevant; the links are one-directional (we cite them; `review-report/v1` and the Argus ledgers are never edited to cite back).",
+      "scope": [
+        "the one-directional cross-link citations from an entry"
+      ],
+      "out_of_scope": [
+        "any write to `review-report/v1` or the Argus ledgers (NG-5)"
+      ],
+      "acceptance": [
+        "an entry's cross-link resolves to its target; the target files are unmodified"
+      ],
+      "key_interfaces": [
+        "the cross-link citation shape"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-8",
+        "design:review-feedback-capture#3.5"
+      ],
+      "blocked_by": [
+        "T5"
+      ],
+      "touches": [
+        "internal/reviewfeedback (cross-link anchors)"
+      ],
+      "size_band": {
+        "lo": 50,
+        "hi": 150
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T6",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T7",
+      "title": "Compute the ledger-native measures in the fold",
+      "goal": "the fold exposes disposition counts, the applied-vs-decline ratio, and `edit_distance` — all from the ledger alone.",
+      "current": "no measures are computable.",
+      "desired": "the fold's projection exposes disposition counts per type, the applied-vs-decline ratio over disposed entries, and an `edit_distance` frozen in each `applied` entry at write time (computed when the writer tags the outcome — no later diff read); all read by inspecting the projection (the event stream is deferred, WR-6).",
+      "scope": [
+        "the measure computations in the fold; `edit_distance` capture at disposition-write"
+      ],
+      "out_of_scope": [
+        "the all-proposals rejection rate (optimizer's, NG-1); a consumer reading the measures (WR-5)"
+      ],
+      "acceptance": [
+        "disposition counts + applied-vs-decline ratio + `edit_distance` compute from the projection alone, for a subject class",
+        "`edit_distance` is frozen in the entry at disposition-write, not recomputed on read"
+      ],
+      "key_interfaces": [
+        "the measures block of the projection; the `edit_distance` field"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/FR-5",
+        "design:review-feedback-capture#3.6"
+      ],
+      "blocked_by": [
+        "T1",
+        "T4"
+      ],
+      "touches": [
+        "internal/reviewfeedback (measures in the fold)"
+      ],
+      "size_band": {
+        "lo": 80,
+        "hi": 200
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T7",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T8",
+      "title": "Guard the non-regressions",
+      "goal": "the change is provably additive — operator-conversation review, the reviewers' posture, the merge path, and the existing captures are untouched.",
+      "current": "these behaviors exist and pass their suites today.",
+      "desired": "operator-conversation editing remains independent from capture (NR-1); no pipeline path acquires a required human-review step (NR-2); merge authorization / required checks / risk lanes are unchanged (NR-3); `review-report/v1` and the Argus ledgers are unchanged (NR-4).",
+      "scope": [
+        "regression tests / inspections asserting each non-regression holds"
+      ],
+      "out_of_scope": [
+        "none — this task only verifies, it changes no behavior"
+      ],
+      "acceptance": [
+        "the existing conversation-capture, reviewer, and merge-path suites pass",
+        "no diff touches `review-report/v1`, the Argus ledgers, or the merge-path config"
+      ],
+      "key_interfaces": [
+        "the non-regression assertions"
+      ],
+      "traces": [
+        "prd:review-feedback-capture/NR-1",
+        "prd:review-feedback-capture/NR-2",
+        "prd:review-feedback-capture/NR-3",
+        "prd:review-feedback-capture/NR-4"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/reviewfeedback (regression tests)"
+      ],
+      "size_band": {
+        "lo": 50,
+        "hi": 150
+      },
+      "mechanical": false,
+      "plan_task_id": "review-feedback-capture/001/T8",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:review-feedback-capture/FR-1",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-3",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-4",
+      "tasks": [
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-5",
+      "tasks": [
+        "T7"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-7",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-8",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/FR-9",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/UB-1",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/UB-3",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/UB-5",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/UB-6",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/NR-1",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/NR-2",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/NR-3",
+      "tasks": [
+        "T8"
+      ]
+    },
+    {
+      "requirement": "prd:review-feedback-capture/NR-4",
+      "tasks": [
+        "T8"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:2f0002e8534b62ab3ce0c08beaf9c777228faccf9e6ab1d30f00c40dd367d5ff"
+}

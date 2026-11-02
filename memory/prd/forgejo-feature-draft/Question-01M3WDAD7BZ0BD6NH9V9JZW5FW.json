@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3WDAD7BZ0BD6NH9V9JZW5FW",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-7",
+  "statement": "The blocking credential evidence must include delivery to an unbound destination as well as output leakage.",
+  "intent": "Already-proposed P-2 corrective patch, recorded under problem:forgejo-feature-draft#A-5; separate single-row attribution for the compiler.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

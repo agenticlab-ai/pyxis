@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPZ2JFFYHC34WXD8S3P",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-11",
+  "statement": "When a process is launched for a task, the system shall record that process's ordinal position within the task and the occasion that launched it.",
+  "rationale": "J3 asks which work was rework; role alone cannot answer it, since a first-pass process and a CI-fix process share the role recorded by FR-7",
+  "fit_criterion": "for a multi-process task in the checkpoint batch, each record carries a distinct ordinal and an occasion drawn from the closed set {first-pass, ci-fix, review-remediation, resume}, and a consumer can identify the first-pass process without reading any other record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b55b63ac6a0d8e0e00aefbec43fe39a0379e9b8f726f5c25de0ce708b765151f",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.615Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

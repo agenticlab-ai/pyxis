@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJDC3FS9EQSFG4E3T8N",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "EVT-8",
+  "statement": "feature_delivery_verified fires when final delivery ancestry settles",
+  "intent": "feature_id: string, proposal_ref: string, verified_revision: string, main_head: string, outcome: enum",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1f24a899ddf26b779067c689116d267c8f58e670bd78c7af467ddecfec96bfc3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.445Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

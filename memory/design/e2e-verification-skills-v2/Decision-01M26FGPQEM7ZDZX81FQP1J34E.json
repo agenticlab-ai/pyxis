@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQEM7ZDZX81FQP1J34E",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.3.2",
+  "statement": "e2e-plan **refuses** on an e2e design doc that is not operator-approved (`prd:e2e-verification/UB-4`), and **refuses** on an approved doc whose scenarios do not each name one exclusively-owned artifact — naming the offending scenarios and projecting zero tasks (`UB-9`, `#DINV-7`). Ownership is a property the design must supply and the review must have seen; a planner that invented it would be assigning work the review never checked, and would own the resulting collisions itself.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f5ced94c731ab5426ff682f64f32ed64453391d995bd25172be145a755370a4c",
+    "source-design:c0e92b035008945c7a680f55db892690be2f5f4a1e831350bb069e76a776ed35",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPSE8DQV6D4QV1EK64F8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.582Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 106-106 in section 3.3; sha256:f5ced94c731ab5426ff682f64f32ed64453391d995bd25172be145a755370a4c"
+  }
+}

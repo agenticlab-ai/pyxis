@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJWG6N31EDKQP74J7D8",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-22",
+  "statement": "When all required candidate evidence is current and accepted, the feature drive shall raise one final human-reviewed proposal from the feature branch to main without merging it.",
+  "rationale": "Present one complete result.",
+  "fit_criterion": "Exactly one final proposal exists, identifies the accepted candidate inputs/evidence, and has no drive-authored merge event.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2169badd446eab80fdc6ac17f7853b32977566fa976a16e473a106458f6db971",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.46Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

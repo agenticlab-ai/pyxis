@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M37KT0JF8ECA9RZ10N5CBPGW",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken (operator review, reviewers' posture, merge path, existing captures)",
+  "intent": "NR-1..NR-4",
+  "fit_criterion": "suite results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a86d23ae19295611b64a3b5cbfacf2a25f93832a2b5b8045b72aa55389dd9ee7",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M26FGRE80NGXQBYZWHK5TBHH"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:07:57Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "note": "compiled from sha256:db352bc12b51ed5d5751ff52b4b092732ce4e80ff3b490e88375abd32b5f7d81"
+  }
+}

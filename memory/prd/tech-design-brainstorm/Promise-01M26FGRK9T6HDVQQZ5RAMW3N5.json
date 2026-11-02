@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRK9T6HDVQQZ5RAMW3N5",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "NR-1",
+  "statement": "The shipped feature-brainstorm surface — guide, glue, template, fixtures — is untouched by this feature",
+  "rationale": "no shared primitive: the disciplines evolve separately (#D-6); blast radius stays zero on stage 1",
+  "fit_criterion": "zero diff under the stage-1 skill's files in this feature's PRs; stage-1 eval corpus untouched and green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2c4466feaf35d100b0e9c3339aa57dff08146df3d30bbc4597ac1a7c1b1db1e8",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.497Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

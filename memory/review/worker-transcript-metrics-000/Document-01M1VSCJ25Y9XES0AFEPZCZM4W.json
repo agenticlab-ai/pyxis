@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCJ25Y9XES0AFEPZCZM4W",
+  "kind": "Document",
+  "subject": "review/worker-transcript-metrics-000",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/worker-transcript-metrics-000.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "b4ca8b22eae2159d4f3023e1bcbef29d58a021fd597eee4a2b76e7bf6ec4486c",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:52Z",
+  "provenance": {
+    "source": "docs/reviews/worker-transcript-metrics-000.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

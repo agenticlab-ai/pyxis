@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXT3HJ08S5D8EB084R9",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-3",
+  "statement": "If the manifest is missing, unparseable, or contains unknown keys, then the system shall emit a configuration-error verdict naming the defect, with zero rungs executed",
+  "intent": "configuration-error verdict",
+  "fit_criterion": "the three malformed-manifest fixtures each yield configuration-error with the defect named; no verb executes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cb39439c1d885a0c273ad9d020c7d275a0950bf1586169d2a9ab50bb8d9888e4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.81Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

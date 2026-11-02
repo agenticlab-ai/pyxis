@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBQ033R4QY31K0S4G21YD",
+  "kind": "Document",
+  "subject": "policy/maintenance-sweep",
+  "family": "policy",
+  "statement": "Imported Pyxis source document: docs/policy/maintenance-sweep.yaml",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/policy",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "42602f1a1eca7e2d9698033af17c794b958e52fa6d62beb8993743ecf1050e80",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:25Z",
+  "provenance": {
+    "source": "docs/policy/maintenance-sweep.yaml",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

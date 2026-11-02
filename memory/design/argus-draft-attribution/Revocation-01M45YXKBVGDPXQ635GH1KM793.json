@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M45YXKBVGDPXQ635GH1KM793",
+  "kind": "Revocation",
+  "subject": "design/argus-draft-attribution",
+  "statement": "The source design argus-draft-attribution is superseded by argus-problem-capture-attribution in this candidate. The live design carries its six explicit decisions and both retained scope/rebase and Carina exception decisions; withdraw the obsolete active Decision while retaining its immutable history.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M3QF08NKVQR6GFKEHA3A8ZNM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T11:59:21Z"
+}

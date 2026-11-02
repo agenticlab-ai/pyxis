@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M51ZP0ATE9CBWB0F32XY4",
+  "kind": "Decision",
+  "subject": "design/plan-viewer-v1",
+  "family": "decision.3.6.1",
+  "statement": "one `html/template` (stdlib) page, inline CSS, five regions\nin reading order: **(1) header** — feature, plan version, dialect, status,\nsource fingerprint, totals (task count, band sum, largest-task share);\n**(2) graph** — a mermaid `graph TD` of the task DAG, nodes labeled\n`T<n> — <title>` and styled by foundation level, edges from the folded\n`blocked_by` set (DINV-4); **(3) task cards** — one per task, anchored\n`id=\"T<n>\"`, rendering every §4.5 layer-2 charter field plus badges\n(mechanical, size band, foundation, routing, size/overlap acceptances) and\nthe task's traces; **(4) coverage** — the matrix with each task reference\nan in-page link to its card, deferred rows visually distinct (PRD FR-4);\n**(5) flags** — every recorded size/overlap acceptance with task and\nreason (PRD FR-5). Charter text renders as text (HTML-escaped by the\ntemplate engine); the page never interprets plan content as markup.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9d7894ff1ddd6cb68e92fa8c09222a79b79f8a459c5e88006852cc12b6d23f55",
+    "source-design:fd325ee9e441cdff9eee6547a3e888235b777a15420cd3db2304ceead2ec7eff",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPTJ4Z9NYBAZ26PXS2K6"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRNE4ZX9ZE1VNDFX0HT2Z"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:13:59Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-viewer-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/plan-viewer-v1.md lines 118-130 in section 3.6; sha256:9d7894ff1ddd6cb68e92fa8c09222a79b79f8a459c5e88006852cc12b6d23f55"
+  }
+}

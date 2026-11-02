@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7515E3B313NJPHV1XK",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-6",
+  "statement": "The planner shall read its sizing thresholds from a closed-schema, versioned policy artifact, such that changing a threshold is a data change requiring no behavior-code change.",
+  "rationale": "policy as data",
+  "fit_criterion": "unknown key errors; threshold edit flips a fixture with zero behavior-code diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b13855eb555952a1bb495d45f060d7fcf2602ebfe55708e880cbd63cb76ad227",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.109Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

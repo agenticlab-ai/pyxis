@@ -1,0 +1,18 @@
+{
+  "schema": "impl-review-eval-budgets/v1",
+  "note": "The band token + latency budgets the eval suite reads as VERSIONED DATA (design impl-review-v1 §3.5: 'the band token/latency budgets as versioned data'; the run runtime is 'budgeted as data beside the calibration table'). These are STARTING VALUES tuned only by a reviewed data PR (the calibration-governance class) — never a code edit. A removal or a relaxation is a reviewed decision. The eval harness loads this file CLOSED (an unknown key is an error) and enforces the per-band budgets on the live suite; the diff-read byte budgets that bound the truncation family live beside these in internal/implreview/band (BandBudgets) — this file carries the COST budgets (tokens, latency) the review runtime is held to per band.",
+  "bands": {
+    "skip": {
+      "max_tokens": 0,
+      "max_latency_ms": 0
+    },
+    "standard": {
+      "max_tokens": 60000,
+      "max_latency_ms": 120000
+    },
+    "deep": {
+      "max_tokens": 200000,
+      "max_latency_ms": 300000
+    }
+  }
+}

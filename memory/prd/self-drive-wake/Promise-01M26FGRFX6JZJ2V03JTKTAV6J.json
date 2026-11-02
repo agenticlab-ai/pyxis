@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFX6JZJ2V03JTKTAV6J",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-10",
+  "statement": "The wake signal shall carry only the await identifier and the transition kind; the wake channel shall accept no inbound content that its consumers could receive as instruction.",
+  "rationale": "the injection posture extends to this surface",
+  "fit_criterion": "schema inspection + a poisoned-fixture test: extra fields are rejected at parse, never forwarded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:926f098870a976f72476ef5049ee7c56b312c566ec31e7d25d008a7999fac21a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.389Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

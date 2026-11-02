@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXC0XH30RWAQBR5VXAF",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "EVT-3",
+  "statement": "problem_delivered fires when the delivery ledger closes with evidence — delivery verified by mainline content (AP-26), never platform status",
+  "intent": "touches count, breaking count, spend",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7ed469b24e086223ddc850fafad2b93fb2d27757ad4f3a0881824e4be0dc17ad",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.772Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

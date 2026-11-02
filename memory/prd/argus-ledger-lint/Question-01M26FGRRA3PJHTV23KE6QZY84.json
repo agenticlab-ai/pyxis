@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRA3PJHTV23KE6QZY84",
+  "kind": "Question",
+  "subject": "prd/argus-ledger-lint",
+  "family": "Q2",
+  "statement": "Whether the third *structure* arm (DINV-3/4/5 + the templates' checklists) ships with these two arms, after them, or as its own feature",
+  "intent": "@mdarabi / technical design",
+  "rationale": "open — a scoping decision for the technical design or a follow-on brainstorm *(brainstorm:argus-ledger-lint#G-1; see WR-1)*",
+  "fit_criterion": "(does not block this PRD's gates)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d3af2259f2ef5a7731b72a9922ffee45fbabf16a71735a36b798f0d4ed3dd3c0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.658Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

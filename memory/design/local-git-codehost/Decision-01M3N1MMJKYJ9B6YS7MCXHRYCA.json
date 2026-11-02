@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJKYJ9B6YS7MCXHRYCA",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-2",
+  "statement": "One proposal has a closed, versioned record with kind (`draft` or `implementation`), feature or task identity, branch ref, current head, target ref and its observed full SHA, state, and monotonic event sequence. The target is derived from the workflow's configured mainline for a draft lock or from the approved feature-integration destination for an implementation task, constrained to canonical `refs/heads/…`; a proposal cannot choose a different target or name a Pyxis evidence ref. Its target must already exist on the configured origin. The record is stored in a dedicated Git ref namespace in that origin. Its reviewable content is the pushed branch at the recorded head. Every publication or revision prepares the branch and proposal objects locally, then updates both refs in one `git push --atomic` with explicit expected old OIDs for both refs. A stale writer is refused without leaving a branch/proposal mismatch. The object can be fetched and inspected from a clone of the configured origin without Carina or network access.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHCW55FT4157JHZ1S0K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHD5E7B2FNSY2HDF1AF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHKBJRH7JKPZHPJ07Z3"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

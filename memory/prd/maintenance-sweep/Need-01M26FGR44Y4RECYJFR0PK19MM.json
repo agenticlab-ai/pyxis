@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR44Y4RECYJFR0PK19MM",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "G1",
+  "statement": "We believe a mechanical periodic sweep over the three rot classes; expected result: rot surfacing as findings before humans trip over it",
+  "fit_criterion": "M1 (replay), M2 (live precision)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:52ef3e6f0405a017742e4a5284f8ab739e3fb7461fac8d4c9cd32646a634e781",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.012Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

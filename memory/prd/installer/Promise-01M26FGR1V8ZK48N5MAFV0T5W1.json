@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1V8ZK48N5MAFV0T5W1",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-3",
+  "statement": "If any fetched artifact fails checksum verification, then the system shall refuse execution, name expected vs actual, and exit non-zero",
+  "intent": "a checksum refusal",
+  "fit_criterion": "tampered binary, payload, and dependency fixtures are all refused with zero execution",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f3c563fd2d80513d10d406a778b4fd5033aa1bf9a12b5e9de5a92d38267fc64a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.939Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

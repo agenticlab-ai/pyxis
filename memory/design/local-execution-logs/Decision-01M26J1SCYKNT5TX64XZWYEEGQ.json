@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26J1SCYKNT5TX64XZWYEEGQ",
+  "kind": "Decision",
+  "subject": "design/local-execution-logs",
+  "family": "D-1",
+  "statement": "Execution diagnostics use .pyxis/logs/\u003cproducer\u003e inside the owning repository. The shared runlogs package resolves repository-relative or absolute overrides only within that tree, rejects traversal and symlinked descendants, creates private per-run files, and finds the persistent checkout that owns a linked worker worktree.",
+  "intent": "Give every diagnostic producer one local storage boundary while keeping shared workitems, decisions, review artifacts, and retained evaluation evidence in Git.",
+  "rationale": "The operator approved consolidating execution output under ignored .pyxis/logs subdirectories and explicitly retained Carina workitems and other shared state in Git. Credentials, locks, queues, caches, and rate-limit state keep their separate state locations.",
+  "fit_criterion": "Path tests reject outside-tree overrides, traversal, and symlink escapes; private-file and real Git worktree tests verify safe creation and persistent checkout ownership.",
+  "tags": [
+    "code:internal/runlogs"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T21:02:18Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "pr": 1175,
+    "commit": "b8f9110c7262f587466a804e253337516daf6a7c",
+    "note": "Records the approved log ownership rule and the implemented path resolver."
+  }
+}

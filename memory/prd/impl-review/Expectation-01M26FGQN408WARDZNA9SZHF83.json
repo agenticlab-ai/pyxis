@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN408WARDZNA9SZHF83",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-11",
+  "statement": "selected-harness review-role resolution and launch fidelity",
+  "intent": "every supported harness×joined profile through the real runtime; differing implementation/review mappings, promotion, unsupported, mismatch, fallback",
+  "fit_criterion": "cheapest qualified dominating review profile; actual launch exactly matches route; unsupported invokes zero passes; fallback preserves process",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7c334703d28cf2a7038d69f5793188a9fd0705912300caa34c0412826a246a6b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.532Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

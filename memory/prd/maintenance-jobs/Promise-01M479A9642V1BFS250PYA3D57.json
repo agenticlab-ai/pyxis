@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A9642V1BFS250PYA3D57",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "NFR-1",
+  "statement": "The maintenance capability shall ship as Go within the core Pyxis module.",
+  "intent": "Maintainability",
+  "fit_criterion": "No new logic-bearing shell artifact, nested module, or separate maintenance executable",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

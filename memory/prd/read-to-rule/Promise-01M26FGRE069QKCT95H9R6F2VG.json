@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE069QKCT95H9R6F2VG",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "NR-3",
+  "statement": "§1's one-pager contract is unchanged",
+  "rationale": "NG-3 — §0 routes; §1 summarizes",
+  "fit_criterion": "the template diff leaves §1's contract untouched",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f9692a59cdd3b9338a33432677093b8e63c183a600ed46ea1ffd302229125ea8",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.328Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

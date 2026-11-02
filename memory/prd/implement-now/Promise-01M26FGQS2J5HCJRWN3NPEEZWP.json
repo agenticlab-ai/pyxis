@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS2J5HCJRWN3NPEEZWP",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-10",
+  "statement": "The executor shall count a task succeeded only on a verified proposal artifact, and shall report a worker that returned without one as hollow.",
+  "rationale": "success is an artifact, never self-report",
+  "fit_criterion": "a worker that exits without a proposal is reported hollow, never succeeded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f788d76ebb4387fe2f1565438cef501785a218c07fcddf836f3e87e017ccaa9c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.658Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

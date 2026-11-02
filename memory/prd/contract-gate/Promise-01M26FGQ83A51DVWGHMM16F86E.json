@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ83A51DVWGHMM16F86E",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-8",
+  "statement": "When the gate returns any failing verdict, it shall emit exactly **one** structured, template-governed defect report bundling every failed check's defects — each carrying its check id, the specific offender, and what unblocks it — in two faces, a machine-readable projection and a human-readable rendering; and when the verdict is `clean`, it shall emit no report and materialize no artifact.",
+  "rationale": "one named, parseable bounce the owner and downstream consumers can act on; nothing persists on a pass (`#D-5`, `#D-1`)",
+  "fit_criterion": "every failing fixture emits one report validating against both faces and enumerating all failed checks with offenders + unblocks; every clean fixture produces zero report and zero materialized artifact (filesystem + tracker inspection)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9beae104e8b52f82f2c5513c4a8852de7872b2760d59cf7f6fae29fb7a2dbda9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.115Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

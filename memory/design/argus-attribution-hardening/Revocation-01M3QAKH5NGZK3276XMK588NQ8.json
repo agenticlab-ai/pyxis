@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3QAKH5NGZK3276XMK588NQ8",
+  "kind": "Revocation",
+  "subject": "design/argus-attribution-hardening",
+  "statement": "Superseded by approved argus-draft-attribution design; its active requirements are served by the successor coverage decision.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGRWFX2KEAQND14CTBZNZ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T19:34:58Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ93KA4TDEAMAE0JFPQ",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NR-5",
+  "statement": "the merge lane's classifier and floor are untouched by impl-review, which adds no lane-side risk logic; the reviewer EMITS a well-formed downgrade signal (the persisted verdict) — the lane's CONSUMPTION of that signal is an owed separate merge-lane amendment (a `Downgrader` adapter that reads the verdict), not the existing GATE-4 slot today",
+  "rationale": "AP-11 — one risk predicate; impl-review reads the lane's risk classes and emits a downgrade signal, it does not redesign the lane. The base NR-4 overstated \"the existing slot consumes it\": merge-lane's `Downgrader` seam is synchronous, diff-only, and nil-by-default, so end-to-end lane-forcing requires the owed adapter (design:impl-review-v1#3.6, §7 Q4; the codegate-NR-2 corrective precedent)",
+  "fit_criterion": "zero impl-review-side diff to the merge lane's classifier or floor (inspection); the persisted verdict validates as a well-formed downgrade signal a lane adapter can read; the consuming `Downgrader` adapter is named owed work (design:impl-review-v1 §7 Q4), gated before adoption relies on lane-forcing — never asserted as an existing consumption",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:358bd2cf7bf74dfab155a4f3ecc42db12b57b483538fcd23a361719a93be17ff",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.601Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2035N9FVE9DCJFHD62",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-8",
+  "statement": "If a captured path key is set to a non-default value, then the system shall refuse with the named not-yet-configurable error (never a silent ignore, never a partial honor)",
+  "intent": "the named refusal citing the key",
+  "fit_criterion": "every captured path key exercised non-default refuses by name",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e4a7cfbc0ada233abca2677968070589a5fcebec37c908f401d56ee46737138",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.944Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

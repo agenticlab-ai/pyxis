@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZNH6J0XYC71XV36KAX",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "FR-9",
+  "statement": "When a PR is evaluated in CI, the attribution gate shall fail the PR if an Argus-authored diff in it touches the authority contract, a governance document, or a file outside the drive's declared scope, returning a reason naming the path and the boundary.",
+  "rationale": "the authorship-scoped merge-boundary refusal (J3)",
+  "fit_criterion": "on the seeded PR fixtures (Argus-authored diff touching each protected-path class), CI fails with a reason naming the boundary; on a human-authored diff to the same paths, CI does not fail on this layer",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5aa59afaf48c8de26f44b5292ee7501b2b812de827a69c3c8e4cfbae1431b55",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.845Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB62F3B20V1SSBVA0YB",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-42",
+  "statement": "At each replay boundary, docgate shall classify a Q as answered if and only if either its validated replay-base checkpoint carries `question_answered: true` under FR-43 or a successful `answer Q\u003cn\u003e` operation targeting that ID occurs after that replay base and at or before the boundary; otherwise it shall classify the Q as unanswered. Repair routing shall not read or interpret the Q row's free-text `Status` cell, and missing or invalid required checkpoint state shall fail under FR-43 rather than default to unanswered.",
+  "rationale": "merged Q status cells contain multiple open-like forms and answer-rendered prose, while operations before the latest checkpoint are outside the replay window; both text classification and replay-window-only classification lose a decidable answer state",
+  "fit_criterion": "Q rows whose Status cells contain `open`, qualified open prose, `resolved (001) — …`, or arbitrary text but have neither a true replay-base value nor a post-base successful answer op classify unanswered and route to `answer`; after a successful `answer Q1`, another `answer Q1` and a section mutation are red with the `supersede Q1` fresh-Q remedy; after a semantic-no-op checkpoint, the same Q remains answered solely through `question_answered: true`, and a fresh Q introduced after the checkpoint begins false",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:58b43a7e5269530ef848ee17a770d1e8643bfd81e43119a917ce65d2d6bc95dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.214Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRD5ZDMDWKD0STDZ026V",
+  "kind": "Expectation",
+  "subject": "prd/read-to-rule",
+  "family": "DOD-6",
+  "statement": "Non-regression holds: gate suite green corpus-wide; zero docgate behavior/verb changes and zero reviewer diffs (template-PR accompaniments per docgate's own contract excepted); §1's contract untouched",
+  "intent": "NR-1..3",
+  "fit_criterion": "CI result + diff scope",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ae6349f5e5d574953416b082494c852718d8c4cec9be40c1d277c238c157ba4a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.301Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390TM5VK31XWHYBWA6PFNTF",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v2",
+  "family": "decision.3.6.1",
+  "statement": "The structural-completeness and inverse-coverage checks read per-requirement inputs from an **enriched fold machine face**, not a second parser. The fold gains additive typed fields on each requirement unit — its **priority** (Must/Should/Could, where the table carries a Priority column), whether it carries a non-empty **fit criterion**, and its declared **verification method** — projected from the row cells the fold *already tokenizes* (`ledger.Unit.Cells`, keyed to the header by `Table.Cols` column name). The gate consumes these fields; it never re-parses `effective.md`.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:2436e9a15a5c9f5cfb542b222843bc7b9223bf767e20d6d8a3a2e957d8b5fa4a",
+    "source-design:4e4e927ec4b3ae717592564f6dd062a57ff9bd03a88947d40409a3f270d9e70e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PH15Z89WJH6Z36TW8C03"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:43Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/contract-gate-v2.md lines 101-101 in section 3.6; sha256:2436e9a15a5c9f5cfb542b222843bc7b9223bf767e20d6d8a3a2e957d8b5fa4a"
+  }
+}

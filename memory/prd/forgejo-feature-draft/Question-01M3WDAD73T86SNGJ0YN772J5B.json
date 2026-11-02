@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3WDAD73T86SNGJ0YN772J5B",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-3",
+  "statement": "FR-7's \"applicable\" and \"remaining\" checks do not explicitly require the separate full memory-integrity gate at the final head, contrary to the narrow operator A-4 exception and the existing integrity obligation.",
+  "intent": "Independent PRD review `reviews/001.md`, FND-3.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

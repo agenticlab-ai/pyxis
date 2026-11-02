@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQRT3VR88ADHJREYN0E1",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-16",
+  "statement": "`run_finished` fires when a run ends after implementation work and configured-review reconciliation settle for that invocation",
+  "intent": "`succeeded:int`, `failed:int`, `blocked:int`, `tokens:int`, `routing_exact:int`, `routing_promoted:int`, `routing_unsupported:int`, `routing_invalid:int`, `review_completed:int`, `review_failed:int`, `review_pending:int`, `review_artifact_unverified:int`, `review_artifact_untrusted:int`, `review_infrastructure_failed:int`",
+  "fit_criterion": "M1, M2, M4, M6, M7, FR-42, FR-46",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:885ee7dcb4d6145cf4a5dd8f6a2a93a4c7967cfd217f17c8e46ddaacb4264688",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.65Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

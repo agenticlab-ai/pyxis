@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR3SHZHJSD99PRNCECXF",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-sweep",
+  "family": "DOD-6",
+  "statement": "Every Must FR passes its fit criterion",
+  "intent": "the live Must set as of 001: FR-1, FR-2, FR-4, FR-6..FR-10",
+  "fit_criterion": "the test-suite run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:23372c4c35a01866516865ea0bc7f69c4959bc3402932fabbe3ce00e878db0ee",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.001Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

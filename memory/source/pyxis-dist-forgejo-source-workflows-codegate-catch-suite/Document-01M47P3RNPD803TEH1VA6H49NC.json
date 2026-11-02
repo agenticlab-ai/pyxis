@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M47P3RNPD803TEH1VA6H49NC",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-codegate-catch-suite",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/codegate-catch-suite.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:2ef32978e3e0640ff377782a28901754c226a8db399a94fe82d118b5932eb4e9"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2BVCNXDC3WJ2CW5KY2R9YHD"
+    }
+  ],
+  "body_sha256": "2ef32978e3e0640ff377782a28901754c226a8db399a94fe82d118b5932eb4e9",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-10-06T04:03:55Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/codegate-catch-suite.yml",
+    "note": "offline reconciliation"
+  }
+}

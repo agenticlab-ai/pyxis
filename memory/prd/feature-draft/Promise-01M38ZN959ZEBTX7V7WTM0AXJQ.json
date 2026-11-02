@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZN959ZEBTX7V7WTM0AXJQ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-43",
+  "statement": "When a change to a locked feature is started while any task of its current plan is unfinished, the system shall refuse it and name each unfinished task with the remedy — finish it or cancel it.",
+  "rationale": "No reopen while the current plan's tasks run (brainstorm:feature-draft#D-19)",
+  "fit_criterion": "A reopen of a fixture whose locked plan has one unfinished task is refused naming the task and the remedy, and proceeds once that task finishes or is cancelled.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f46f706eeb2ceee2fd5ee9dc322a350f4085174b3d596488dc4c6084b1344940",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:19Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

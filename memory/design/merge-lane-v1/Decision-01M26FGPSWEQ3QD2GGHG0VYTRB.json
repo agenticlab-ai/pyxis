@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSWEQ3QD2GGHG0VYTRB",
+  "kind": "Decision",
+  "subject": "design/merge-lane-v1",
+  "family": "decision.3.1.1",
+  "statement": "Classification is a fixed pipeline: **floor first** — the policy's hard-gated classes, derived from the diff's paths and change classes, never from author-declared metadata; any hit routes HUMAN and records which class hit. The floor's **self-unlock minimum is design content, never merely policy content** (UB-3's \"no policy state\" bar): the control-plane paths (workflow and hook surfaces), the governing documents, the risk policy and activation state themselves, **the lane's own code** — the classifier verb, the shared validator, the acting workflow glue, **and the review-verdict check arm** whose published state DINV-3 consumes as its trust source, all as named packages, never the whole codebase — **the lane's own build inputs** (the module manifests `go.mod`/`go.sum` — a dependency substitution there poisons the next mainline build of the lane's own binaries, so they are part of the lane's trust base under the same \"no policy state\" bar), the Argus authority contract and the agent's home, **the operating manual** (the standing merge convention's home, in both its faces), and the rest of the **agent-control surface** (the drive and reviewer guides, the skills, the templates, the pipeline map — the distributable agent tree, with the vendor-dir pointers into it). The shared validator refuses to load any policy whose floor fails to cover this minimum (§3.6); a ratified policy may widen the floor beyond it, never shrink below it. Engine and feature code outside the lane's own packages — and any *other* code class's build-input reach — is deliberately **not** in the minimum: floor-clear code proposals must exist for the recommended fleet-task class to have members, and whether any code class rides AUTO stays the operator's ratification call (the basis's Q2 recommendation); the minimum covers only the lane's *own* trust base — its code, its check arm, and its build inputs — so no recommended AUTO code class may claim `go.mod`/`go.sum` in its perimeter (§3.6), closing the two-step ratify-then-plant path where a build-input or arm edit rides AUTO under a code class and then greens a planted verdict. **Classes second** — a floor-clear proposal is an AUTO candidate only when its *entire* diff falls inside **one** ratified AUTO-eligible class's perimeter: each class in the closed set is a data-defined deterministic predicate — a name, a whole-diff path perimeter, and its precondition flags (e.g. whether the artifact class carries a reviewer verdict) — carried in the policy schema itself and validated closed (§3.6), computed from the diff's paths and change classes only; any out-of-perimeter hunk routes HUMAN. **Intelligence last and optional** — where a model-driven review stage is configured it may only downgrade AUTO → HUMAN, and its ambiguity, timeout, or error routes HUMAN (deferred by default; the basis's WR-3).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:0fcba225c3bdb592bb7830cd5633d9c5d756f2f1b052b5ff3acefe2593a701a6",
+    "source-design:c32e493cfe971b356c08109d96d2c1b8f2436e7c1a00f6abc087c3db490d37e7",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCT2QGGXHBT7NC4Z1M48R"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.66Z",
+  "provenance": {
+    "source": "docs/tech-design/merge-lane-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/merge-lane-v1.md lines 32-32 in section 3.1; sha256:0fcba225c3bdb592bb7830cd5633d9c5d756f2f1b052b5ff3acefe2593a701a6"
+  }
+}

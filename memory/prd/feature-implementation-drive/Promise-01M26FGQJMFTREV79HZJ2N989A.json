@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJMFTREV79HZJ2N989A",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-15",
+  "statement": "The feature drive shall keep all implementation and repair changes off main until a final feature proposal is eligible.",
+  "rationale": "Keep main releasable.",
+  "fit_criterion": "Main ancestry inspection before final eligibility contains none of the fixture's task revisions.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:49ca5fe56ba5303f9d7fc92bf7490d72d4c3f951dd4aa6f92360d88e448b5b7f",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.452Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

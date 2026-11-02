@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWZBCBVQMX44NNEZRYV",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:existing-repo-onboarding/ABUSE-1 · prd:existing-repo-onboarding/ABUSE-2 · prd:existing-repo-onboarding/FR-1 · prd:existing-repo-onboarding/FR-10 · prd:existing-repo-onboarding/FR-11 · prd:existing-repo-onboarding/FR-2 · prd:existing-repo-onboarding/FR-3 · prd:existing-repo-onboarding/FR-4 · prd:existing-repo-onboarding/FR-5 · prd:existing-repo-onboarding/FR-6 · prd:existing-repo-onboarding/FR-7 · prd:existing-repo-onboarding/FR-8 · prd:existing-repo-onboarding/FR-9 · prd:existing-repo-onboarding/NFR-1 · prd:existing-repo-onboarding/NFR-2 · prd:existing-repo-onboarding/NFR-3 · prd:existing-repo-onboarding/NFR-4 · prd:existing-repo-onboarding/NR-1 · prd:existing-repo-onboarding/NR-2 · prd:existing-repo-onboarding/NR-3 · prd:existing-repo-onboarding/UB-1 · prd:existing-repo-onboarding/UB-2 · prd:existing-repo-onboarding/UB-3 · prd:existing-repo-onboarding/UB-4 · prd:existing-repo-onboarding/UB-5 · prd:existing-repo-onboarding/UB-6 · prd:existing-repo-onboarding/UB-7.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:c7cc38bb76acd3c8c1fd815af93bd17c9784b6970dc137db8217b9211f7dea5b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQGAZMPMP7NKJ3947Q9G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQEVCPHFVZT2W25DCFVD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQEWMGBCAMN8ZMV6QV9S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF3E3Q1P6NSKGQKBMET"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF4PBWFG6V9S0DGF0T7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF5EZC9XW4A9S1YRKR7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF6BJVV2X47FAQDDC1W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF7DTTCYEZ3CEQHTP0P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF8AX2EBQ4XKYHHKR6J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQF935WW263XQ67JB78S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFATT3WA5R4VJZ8PTW6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFBQRJ9KFTVGTNGZB0E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFCWZ2DBFBKJ895PGMW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFDNPTQXXRJ2Q8THEES"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFPFZ7SS90W55H7E5QR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFQSXX7EQ8QPR37NEV3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFR75BJFMNNHYJ8H6QP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFSYS7RTMTJF6P13B43"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFTQW0RR9S4JW2NQ85Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFVDB7DF2AF7A7N2R6D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFWQNA1809009MRPXA0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFXMR3JWXA5EC7NMZ8N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFYNS16MSX9HD3FBTM2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQFZVMXA8N8Y0YX9PA4B"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQG0434EHWXA84PMRDBC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQG1VB4GP646NYFCNCA8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQG21Q5WQ1J4FJA8QKGX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQG3J9EWEYKY36R5N3S2"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.807Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header c7cc38bb76acd3c8c1fd815af93bd17c9784b6970dc137db8217b9211f7dea5b"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "code": "stale-document",
+  "scope": ".pyxis/dist/forgejo-source-workflows/system-release.yml",
+  "count": 1,
+  "blocking": true,
+  "writable": true
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3C7R8QNFK47SMVK3EZ2NBJ0",
+  "kind": "Document",
+  "subject": "skill/feature-brainstorm",
+  "family": "entry",
+  "statement": "Captured authored source: .pyxis/skills/feature-brainstorm/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:fb42bf27131e7236fea63b3d02ba1ab7e85e46336dced7986e2c5a6b05bb7eec"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB8HQ0VQKYY4XC72HYZYE"
+    }
+  ],
+  "body_sha256": "fb42bf27131e7236fea63b3d02ba1ab7e85e46336dced7986e2c5a6b05bb7eec",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-25T12:13:29Z",
+  "provenance": {
+    "source": ".pyxis/skills/feature-brainstorm/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

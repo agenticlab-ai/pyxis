@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSKNH2Q82TPHFPX4TYP",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-28",
+  "statement": "When a ready task's originating plan names a feature's approved e2e design doc in the plan's own governing-document header, the executor shall establish that e2e origin before claim from that recorded reference — never by inference over charter prose — resolve the task to exactly one scenario or to the harness slot in that document, and carry the resolved basis into the attempt, adding no e2e-specific task type and no additional required charter field.",
+  "rationale": "e2e tasks are ordinary tracker tasks by upstream contract, so the origin must be read from a recorded machine-readable reference in a field the plan class already requires; inferring it from prose is exactly the free-form cross-boundary signal AP-6 forbids, and it cannot deliver the exclusivity this row states",
+  "fit_criterion": "in a fixture repo carrying both a feature-implementation plan and an e2e plan for the same feature, every e2e task resolves to exactly one scenario or the harness slot and every non-e2e task resolves to none; a plan whose header names no e2e design doc yields zero e2e classifications regardless of charter wording; the task and charter schemas are byte-unchanged; an unresolvable or ambiguous basis refuses under UB-14",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2c50b3287fee7cccadf277f62dd7a191180c67065e228b5b0a5a74d7638db8d4",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.675Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

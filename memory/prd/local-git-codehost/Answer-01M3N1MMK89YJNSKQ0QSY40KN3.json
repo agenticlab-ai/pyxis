@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMK89YJNSKQ0QSY40KN3",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Atomically compare and swap the named target ref and leased proposal branch with the final proposal state. A moved target or branch refuses the whole landing and keeps the receipt evidence for new review.",
+  "intent": "operator",
+  "rationale": "An implementation target can move after approval and must fail the same stale-ref check as mainline.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMK7WRNADNBAK22X9XMZ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3T1KEQXR7VATE6ZYTV5RAAF",
+  "kind": "Decision",
+  "subject": "design/first-mainline-push",
+  "family": "installation-publication",
+  "statement": "Installation collects the Git destination, initializes Git when absent, and publishes its own verified two-commit head to the configured local Git, GitHub, or Forgejo destination before declaring completion. The first push atomically requires the destination branch to be absent, verifies the received head, and establishes its upstream; protection and hosted welcome work follow publication. Ordinary docgate pushes always require the configured mainline or trusted CI base and never authenticate a base from epoch.commit or a public commit subject. A possibly published installation retains installer-owned local pending state and can resume only the identical head, branch, epoch and destination with unchanged tracked files and a green committed gate.",
+  "intent": "Make the first push part of repository installation after the operator supplies its destination, and prevent candidate-controlled epoch metadata from weakening ordinary history checks.",
+  "rationale": "The operator explicitly requested publication during installation to the destination selected by that installation. PR review reproduced forged installer-root authentication and showed that the old fallback also re-gated historical changes when creating a mirror. The installer knows the actual commits it created and can perform a narrowly scoped genesis push without granting normal pushes an epoch exception. Local pending state survives uncertain transport results or later hosted-wiring failures because deleting an installation after possible publication would leave the destination stranded.",
+  "fit_criterion": "Real local-bare Git tests verify new-directory and adopted-empty-repository installation, received head, upstream, active hooks and committed local work items. Destination conflicts and concurrent creation never overwrite a branch. Lost acknowledgments and late welcome failures resume without reinstalling or repushing an existing head; changed installed content, head, epoch or destination refuses. Installed-binary tests reject unauthorized post-install governing changes. Direct docgate dispatch refuses HEAD and forged-root epochs without a configured baseline and accepts mirror creation against the existing configured mainline. Hermetic GitHub and Forgejo wiring tests use the selected binding and preserve protection order and prefix handoffs. A delayed receive after an empty readback retains the installation and resumes without another push.",
+  "learned_from": [
+    "operator-decision:PR-1307-installation-owned-first-push",
+    "review-thread:https://github.com/agenticlab-ai/pyxis/pull/1307#discussion_r4119404162",
+    "review-thread:https://github.com/agenticlab-ai/pyxis/pull/1307#discussion_r4119466163",
+    "review-thread:https://github.com/agenticlab-ai/pyxis/pull/1307#discussion_r4119565937"
+  ],
+  "alternatives_rejected": [
+    "Keep a docgate fallback based on a parentless commit and public init subject: rejected because those bytes are candidate-controlled and mirror creation can incorrectly include unrelated historical changes.",
+    "Require a hosted destination: rejected because the operator explicitly includes local Git destinations."
+  ],
+  "tags": [
+    "code:internal/installer",
+    "code:internal/wire",
+    "code:cmd/pyxis"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-30T20:55:22Z",
+  "provenance": {
+    "source": "docs/techspec.md",
+    "pr": 1307,
+    "note": "The operator authorized moving the first push into installation and confirmed its destination is collected during installation. Obsolete unmerged fallback records were withdrawn from the candidate before issuing this replacement; their failure evidence and authoring commits remain in PR history."
+  }
+}

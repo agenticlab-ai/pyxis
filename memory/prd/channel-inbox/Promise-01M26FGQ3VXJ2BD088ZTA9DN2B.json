@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3VXJ2BD088ZTA9DN2B",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "EVT-3",
+  "statement": "inbox_fetch_outcome fires when a snapshot refresh is attempted",
+  "intent": "outcome: enum(ok·timeout·offline·rejected), age_ms: int",
+  "fit_criterion": "NFR-1, NFR-4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bff084134e66b6302649908a2750b3904d8a8afd125d3e639d2e50205c7f9c46",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.979Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

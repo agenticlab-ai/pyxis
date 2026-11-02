@@ -1,0 +1,117 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "as_of": "001",
+  "content_fingerprint": "sha256:cf96e6803c7614fda115e9334d4fc3b2833335eaa2ceb697b3b1d31b25d3ab06",
+  "units": {
+    "DOD-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.8",
+      "current_location": "effective.md#DOD-1",
+      "verify_method": "Test"
+    },
+    "DOD-2": {
+      "status": "live",
+      "introduced_by": "001-shard-limits.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "001-shard-limits.md#op: add DOD",
+      "current_location": "effective.md#DOD-2",
+      "verify_method": "Test"
+    },
+    "FR-1": {
+      "status": "superseded",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": "FR-3",
+      "source_location": "000-base.md#5.1",
+      "current_location": "",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-2": {
+      "status": "retired",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.1",
+      "current_location": "",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-3": {
+      "status": "live",
+      "introduced_by": "001-shard-limits.md",
+      "supersedes": "FR-1",
+      "superseded_by": null,
+      "source_location": "001-shard-limits.md#op: supersede FR-1",
+      "current_location": "effective.md#FR-3",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-4": {
+      "status": "live",
+      "introduced_by": "001-shard-limits.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "001-shard-limits.md#op: add FR",
+      "current_location": "effective.md#FR-4",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "FR-5": {
+      "status": "live",
+      "introduced_by": "001-shard-limits.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "001-shard-limits.md#op: rescope NG-1",
+      "current_location": "effective.md#FR-5",
+      "priority": "Should",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "NG-1": {
+      "status": "rescoped",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": ""
+    },
+    "Q1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#7.2",
+      "current_location": "effective.md#Q1"
+    },
+    "UB-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#5.2",
+      "current_location": "effective.md#UB-1",
+      "priority": "Must",
+      "has_fit_criterion": true,
+      "verify_method": "Test"
+    },
+    "WR-1": {
+      "status": "live",
+      "introduced_by": "000-base.md",
+      "supersedes": null,
+      "superseded_by": null,
+      "source_location": "000-base.md#3.4",
+      "current_location": "effective.md#WR-1"
+    }
+  }
+}

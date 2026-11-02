@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMK9EPBQRC73Y6QX63XK",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-9",
+  "statement": "The revised FR-2 fit criterion names a clone of the configured origin, but the packet did not attribute that scope change to a product ruling.",
+  "intent": "Exact-head lock packet review for PR #1312 at `9236f9c395b1446bdbce868694a1d7f3ecc9a612`, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

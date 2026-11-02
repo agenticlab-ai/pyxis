@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ6ASYJB9A78TFVE9QSM",
+  "kind": "Promise",
+  "subject": "prd/context-pack",
+  "family": "FR-7",
+  "statement": "Where a stage declares no source for a class, the compiler shall record the absence in the manifest rather than emit an empty or fabricated section.",
+  "rationale": "honest partial state; no invented context",
+  "fit_criterion": "a stage lacking calibration yields a header noting the absence and no empty body section",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:71dd198896513a0d715c0645ec4560f5b31e1eb9e13252c729ced62c8a03d8d7",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.058Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

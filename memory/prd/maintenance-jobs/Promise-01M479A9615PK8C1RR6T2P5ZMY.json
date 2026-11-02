@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A9615PK8C1RR6T2P5ZMY",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "ABUSE-1",
+  "statement": "Misconfigured job executes unintended command text — vector: YAML or cron quoting",
+  "intent": "Unintended authenticated execution",
+  "fit_criterion": "UB-1, FR-3, FR-10",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

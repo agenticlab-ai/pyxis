@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRP4DS7R4EWPBENKXQT3",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NR-1",
+  "statement": "The write-side doc tooling (fold, gate, plan verbs) behaves byte-identically with the reading room present",
+  "rationale": "the UI is read-side only; the write side is frozen contract",
+  "fit_criterion": "existing suites pass unchanged; fold/gate outputs on the fixture corpus byte-identical before and after",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b810e33816f42531055ef3e942ef02f0b22820abccb6cf12fb4340e6d34de5f5",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.588Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

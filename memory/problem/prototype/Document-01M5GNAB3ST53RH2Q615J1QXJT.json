@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5GNAB3ST53RH2Q615J1QXJT",
+  "kind": "Document",
+  "subject": "problem/prototype",
+  "family": "problem",
+  "statement": "Captured authored source: docs/problems/prototype/problem.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/problems",
+    "reconcile:source",
+    "sha256:104a45ed20847de02f70a475809a1e658716240ef8ace7fba9a0380e330152ba"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M50HABJXJJK2YJDNW053YGGY"
+    }
+  ],
+  "body_sha256": "104a45ed20847de02f70a475809a1e658716240ef8ace7fba9a0380e330152ba",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-22T01:58:54Z",
+  "provenance": {
+    "source": "docs/problems/prototype/problem.md",
+    "note": "offline reconciliation"
+  }
+}

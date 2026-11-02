@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPCR6P8ZYDWFACXMBDE",
+  "kind": "Decision",
+  "subject": "design/context-pack-v1",
+  "family": "decision.3.5.1",
+  "statement": "the pack is a **pure function** of the declaration and the sources' content at a revision (prd:context-pack/FR-5). Concretely: declared order (never filesystem enumeration order), verbatim bytes (no reflow, no re-encoding), a fixed manifest serialization, and **no wall-clock value anywhere in the output** — `built_from` is the repo revision, the temporal anchor, and the only one. Two builds of the same (stage, subject) at the same revision are byte-identical; that identity is what makes the pack a cacheable shared prefix across a stage's sessions and what lets a consumer's `digest` check mean something.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:9532b7a6f1b5312491d7e14979f8f1fa7901f1b681f26254fe760878d70daa00",
+    "source-design:0eda89b54f774ceeba16b812a431c85f38941582676f642e93662ed26fe49f3f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN812B4QY6CRBZJRAPBW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.548Z",
+  "provenance": {
+    "source": "docs/tech-design/context-pack-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/context-pack-v1.md lines 76-76 in section 3.5; sha256:9532b7a6f1b5312491d7e14979f8f1fa7901f1b681f26254fe760878d70daa00"
+  }
+}

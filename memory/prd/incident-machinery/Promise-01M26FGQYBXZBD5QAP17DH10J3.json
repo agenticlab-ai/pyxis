@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYBXZBD5QAP17DH10J3",
+  "kind": "Promise",
+  "subject": "prd/incident-machinery",
+  "family": "UB-1",
+  "statement": "If If the registry at the configured path is missing or already fails lint, then the system shall refuse the operation and write nothing",
+  "intent": "the lint defect naming file and reason",
+  "fit_criterion": "missing-file and pre-corrupted-registry fixtures both refuse with named defects; nothing written",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7709e1e84c9c0c4fe5c0e07fdeb22e8c16c482f69684adc0703abd068a0d2d6a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.827Z",
+  "provenance": {
+    "source": "docs/prds/incident-machinery/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:82a6e4d6bce3dfa328cccc63df1a7ecb87faa72d2b13f44638ac5b7176597f57"
+  }
+}

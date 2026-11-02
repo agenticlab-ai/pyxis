@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQCADDH6T743GB3Q1D6M",
+  "kind": "Expectation",
+  "subject": "prd/e2e-verification",
+  "family": "DOD-5",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..3",
+  "fit_criterion": "CI + inspection note (existing skills/executor byte-unchanged)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ecf4c73decb8c1ff97ea3295316c5a415ece474917ec7d0310ee69fcacb146c8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.25Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

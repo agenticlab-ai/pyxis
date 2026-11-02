@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5NNXRWM1J41XRS79S3JMF0E",
+  "kind": "Document",
+  "subject": "skill/impl-review",
+  "family": "lens-design-conformance",
+  "statement": "Captured authored source: .pyxis/skills/impl-review/lenses/design-conformance.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:b523bdffac7b69f8dc5a76dc38f12cd22c09d15d3fb9ce5278c1e0a916b271e4"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4YMT65XS9QY502AHTNBXZ28"
+    }
+  ],
+  "body_sha256": "b523bdffac7b69f8dc5a76dc38f12cd22c09d15d3fb9ce5278c1e0a916b271e4",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-24T00:45:43Z",
+  "provenance": {
+    "source": ".pyxis/skills/impl-review/lenses/design-conformance.md",
+    "note": "offline reconciliation"
+  }
+}

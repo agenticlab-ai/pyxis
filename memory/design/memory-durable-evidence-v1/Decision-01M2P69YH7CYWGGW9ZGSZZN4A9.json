@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2P69YH7CYWGGW9ZGSZZN4A9",
+  "kind": "Decision",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "decision.3.7.1",
+  "statement": "New bindings and new source-bearing records are fully enforced;\nunchanged legacy records already present at the trusted base are reported as\nlegacy-unverified where durable evidence cannot be proven. This classification\ncomes from exact trusted-base record bytes, not an author-controlled tag,\nclock, cut-off date, or allowance entry. New invalid references cannot join it.\nExisting valid mainline references can be verified without rewriting them.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:baab45d531a9c2f4ba28354f2f7b7e9f3c70dd05adec8684dc80149200660f89",
+    "source-design:d5d8f44b0c9b5f456fb8f4fb69663c0391ba020eb50ac180e9065002b3927f40",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2P69SD99WM3Z9D3T1X6NBBT"
+    }
+  ],
+  "issuer": "Codex",
+  "created_at": "2026-09-16T22:44:53Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-durable-evidence-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-durable-evidence-v1.md lines 278-283 in section 3.7; sha256:baab45d531a9c2f4ba28354f2f7b7e9f3c70dd05adec8684dc80149200660f89"
+  }
+}

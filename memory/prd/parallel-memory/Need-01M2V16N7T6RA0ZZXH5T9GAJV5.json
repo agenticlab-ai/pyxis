@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V16N7T6RA0ZZXH5T9GAJV5",
+  "kind": "Need",
+  "subject": "prd/parallel-memory",
+  "family": "J1",
+  "statement": "When Another unrelated proposal lands first, I want Integrate my existing contribution unchanged, so I can Continue without memory-only rework",
+  "rationale": "§2.4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a938e36f11ab39163e8ecabd1396a15a1993a6d0dcf748545072d1b91e4db30d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

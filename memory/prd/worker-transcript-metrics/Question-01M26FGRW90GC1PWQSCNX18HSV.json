@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRW90GC1PWQSCNX18HSV",
+  "kind": "Question",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "Q3",
+  "statement": "What retention applies to records, given FR-2's capture is unbounded over time?",
+  "intent": "@mdarabi",
+  "rationale": "open — deferred by WR-1",
+  "fit_criterion": "after volume is measured",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0c06bf36ad9a62da4caa74acef23841b82f2bc8db645cc24ab431b636a7c9fdb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.785Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

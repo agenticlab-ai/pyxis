@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAMN2ENJEP0CG8FFJNS",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-25",
+  "statement": "When invoked as `lint-incidents`, docgate shall verify the registry at its configured path is append-only vs the merge base — committed `I\u003cn\u003e` blocks immutable except the sanctioned `Links:`-line growth — and that each entry carries a dense `I\u003cn\u003e` ID, a `YYYY-MM-DD` date, a bracketed tag list of one or more comma-separated kebab-case tokens, and the four named fields (Decision, Broke, Lesson, Links) each present as a `- **\u003cField\u003e:**`-anchored line within the entry.",
+  "rationale": "tags are the retrieval key and fields are the contract — silhouette checks let malformed entries read as conformant (#54 E7)",
+  "fit_criterion": "empty-tag and non-kebab-tag fixtures red naming the entry; a field present only as an unanchored substring red; `I1` and the real registry green; graduation `Links:` growth still green; density and append-only fixtures keep their verdicts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:757a8616b84a9b7c6d5f8a1b237e09421dc9de90027494adb54a389691f74b06",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.196Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

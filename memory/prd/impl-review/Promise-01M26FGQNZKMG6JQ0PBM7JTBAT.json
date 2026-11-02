@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNZKMG6JQ0PBM7JTBAT",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-22",
+  "statement": "While an assurance pass runs at effective depth `deep`, whether raised by planned assurance or actual proposal band, the reviewer shall give all four lenses the served PRD's ABUSE rows and incident registry as mandatory context and shall escalate the critic's calibration so a load-bearing critic finding ships blocking.",
+  "rationale": "deep means the same scrutiny regardless of which monotonic input raised it",
+  "fit_criterion": "elevated×skip and critical×standard fixtures receive the deep context and critic rule; ordinary×standard does not; the deep eval legs catch every seeded family",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e5a33dbc80edaabfbb5da0621dd6ea4a2e5d2537ab514f38ef03a4a68980b987",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.559Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

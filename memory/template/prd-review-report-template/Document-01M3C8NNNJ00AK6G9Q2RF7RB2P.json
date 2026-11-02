@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3C8NNNJ00AK6G9Q2RF7RB2P",
+  "kind": "Document",
+  "subject": "template/prd-review-report-template",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/prd-review-report-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:53de6b2bbb58f7785e4b545745024eaf2fd00c87ee6140e6009695433b652b3a"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBBKAA2YD4XH8KD5NG15K"
+    }
+  ],
+  "body_sha256": "53de6b2bbb58f7785e4b545745024eaf2fd00c87ee6140e6009695433b652b3a",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-25T12:29:32Z",
+  "provenance": {
+    "source": ".pyxis/templates/prd-review-report-template.md",
+    "note": "offline reconciliation"
+  }
+}

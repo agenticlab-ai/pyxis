@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3ZCF6J1V7CFSJMBE453YC3H",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "decision.3.8.1",
+  "statement": "`candidate-evidence/v1` is immutable per candidate and scenario-set fingerprint. Its closed identity is `{feature, F, M, C, tree, builder_version, merge_policy_version, scenario_set_fingerprint}`; each required scenario result adds `{scenario_id, route, runner_identity, actor_identity, started_at, completed_at, outcome, evidence_ref}`. Outcomes are closed: `passed`, `failed`, `manual-accepted`, `manual-rejected`, `pending`, `skipped`, `unavailable`, `inconclusive`. Only `passed` and `manual-accepted` are accepted.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:bdfd012155b983be3647935be5fa126d0f60ec4dd25ee1929fb92007d8e83849",
+    "source-design:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:41:29Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-local-git.md lines 204-204 in section 3.8; sha256:bdfd012155b983be3647935be5fa126d0f60ec4dd25ee1929fb92007d8e83849"
+  }
+}

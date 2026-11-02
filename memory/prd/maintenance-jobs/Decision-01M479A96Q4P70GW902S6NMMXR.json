@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M479A96Q4P70GW902S6NMMXR",
+  "kind": "Decision",
+  "subject": "prd/maintenance-jobs",
+  "family": "R2",
+  "statement": "Native cron cannot wake a sleeping host or portably express arbitrary foreign timezones",
+  "rationale": "Refuse unsupported timezone; no catch-up promise; WR-3 and WR-4 own expansion",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

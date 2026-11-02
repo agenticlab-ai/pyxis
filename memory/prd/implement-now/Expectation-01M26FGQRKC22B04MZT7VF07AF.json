@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQRKC22B04MZT7VF07AF",
+  "kind": "Expectation",
+  "subject": "prd/implement-now",
+  "family": "EVAL-2",
+  "statement": "each supported harness's implementation adapter maps every derivable execution profile to its qualified least-cost satisfying native profile or explicit unsupported result, preserving harness and avoiding `no_inference`, hardcoded global pins, or charter-derived inference",
+  "intent": "exhaustive harness×profile implementation corpus plus exact, promotion, override, fallback, legacy, and invalid-policy capture",
+  "fit_criterion": "every required cell yields its declared result; every resolved launch matches; zero omitted/unqualified/downgraded/switched/no-inference/hardcoded cases",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:64a1e912cac301f5f7cdd9aaaf344a76b72468a02c29b6a3a9534ef18b1943c1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.643Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

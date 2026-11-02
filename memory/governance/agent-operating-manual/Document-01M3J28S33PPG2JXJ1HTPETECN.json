@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Document-01M3J28S33PPG2JXJ1HTPETECN",
+  "kind": "Document",
+  "subject": "governance/agent-operating-manual",
+  "family": "manual",
+  "statement": "Captured authored source: AGENTS.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "Capture the combined feature-draft and newly merged routing guidance after rebasing T18 onto main.",
+  "tags": [
+    "reconcile:source",
+    "class:repo-root"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3D4VFZCJ32PDY2BDY3N9JN1"
+    }
+  ],
+  "body_sha256": "ca565167c90485e2faf0abdf4b635d43724eb6af74de1ce30837f397938b91e7",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-27T18:33:05Z",
+  "provenance": {
+    "source": "AGENTS.md",
+    "pr": 1300
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXV0T4ZWCW84KCGHNE3",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-4",
+  "statement": "If rung 3's revert cannot apply cleanly (conflicting hunks, binary paths), then the system shall record rung 3 as error with the reason — never a false pass, never a silent skip",
+  "intent": "error verdict; the finding names the revert failure",
+  "fit_criterion": "the conflicting-diff fixture yields rung-3 error, overall not-green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:77f94ac89d03439a7f2be5fac1a2402f736126cd52b88ab791f314d01c4cab3d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.811Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

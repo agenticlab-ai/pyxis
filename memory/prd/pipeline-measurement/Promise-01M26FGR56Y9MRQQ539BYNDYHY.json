@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR56Y9MRQQ539BYNDYHY",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "FR-4",
+  "statement": "For every phase, the system shall compute the efficiency signals — questions, fog, rework, defects, latency — from the frozen artifacts and git history, with no runtime instrumentation.",
+  "rationale": "the universal floor that interprets cost (J2)",
+  "fit_criterion": "for a reference run on each supported harness, every phase carries efficiency signals derived solely from artifacts+git, identical across harnesses for the same run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:af424c98619eee0d49f7e4ae51ed2c3a66b62d934b213cecfeea709816bae83c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.046Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

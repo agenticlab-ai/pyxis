@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V181Y36Q3FZPE2MNJAQQW2",
+  "kind": "Decision",
+  "subject": "prd/parallel-memory",
+  "family": "R3",
+  "statement": "Limit the independence claim to disjoint code units, claim families, and finding addresses; preserve coordination on shared semantics.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "The two approved designs do not change code-unit granularity, exclusive claim ownership, record immutability, or same-address debt authority. Distinct filenames alone do not prove semantic independence.",
+  "fit_criterion": "The real-Git harness must cover ten disjoint branches and 90 pair/order merges, while competing family, moved-head, code-anchor, record-byte, and same-address cases remain visible or refused.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0de32475d1da59c794b09a93997e716c8ac9965ae760932e5cefe6de0bc6ff1e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:52:41Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0"
+  }
+}

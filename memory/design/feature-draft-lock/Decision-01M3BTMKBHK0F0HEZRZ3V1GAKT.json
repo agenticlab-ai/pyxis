@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3BTMKBHK0F0HEZRZ3V1GAKT",
+  "kind": "Decision",
+  "subject": "design/feature-draft-lock",
+  "family": "preparation",
+  "statement": "Prepare a ready draft on current mainline in a detached worktree, write literal contract Documents and records, remove working files in the preparation commit, and request operator review of that exact head; a later round reverts the commit.",
+  "intent": "Make the approval request and landed records correspond to one verified draft digest without losing the drafting files on failure.",
+  "rationale": "The detached worktree lets rebase, readiness, compilation, and memory gate finish before the author branch changes. The preparation commit carries the compiled records and deletes the source files together; the revert restores their bytes and digest.",
+  "fit_criterion": "Preparation reruns readiness on moved mainline, adds only records and working-file deletions, passes the memory gate, and renders all rulings within the description limit; a round restores the exact draft digest; race, lint, and per-file coverage gates pass.",
+  "tags": [
+    "code:cmd/pyxis",
+    "code:internal/draft/compile",
+    "code:internal/draft/lock",
+    "code:internal/draft/readiness",
+    "code:internal/memory/cli"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T08:24:17Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/002-plan.md"
+  }
+}

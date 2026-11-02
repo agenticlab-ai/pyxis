@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQE791GEGZBGDX8P1CRV",
+  "kind": "Expectation",
+  "subject": "prd/ecosystem-help",
+  "family": "DOD-4",
+  "statement": "The newcomer-proxy protocol passes",
+  "intent": "M1",
+  "fit_criterion": "the recorded proxy session",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cffe7eef8494f866816c2d8be7b10d0a4d3a9c30ae3c47003dd82dfa0f138982",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.311Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

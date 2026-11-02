@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YNCAAN4V0TADN9H7GN",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "EVT-1",
+  "statement": "learning_repair_outcome fires when Intake or wait returns",
+  "intent": "outcome:string; record_id:string; target_commit:string; repair_ref:string; task_ref:string; proposal_ref:string",
+  "fit_criterion": "M1, M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

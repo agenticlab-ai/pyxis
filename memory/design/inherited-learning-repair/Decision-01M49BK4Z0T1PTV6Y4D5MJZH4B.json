@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49BK4Z0T1PTV6Y4D5MJZH4B",
+  "kind": "Decision",
+  "subject": "design/inherited-learning-repair",
+  "family": "D-1",
+  "statement": "Add `memory repair` as a Go orchestration verb. Accept one `--record Learning-\u003cULID\u003e`, one `--report \u003cJSON-file\u003e` containing a unique matching Learning, or `--query \u003ctext\u003e` containing one literal Learning identity. Reject conflicting operands, multiple identities and text with no usable identity. Do not infer an identity through an LLM, a summary hash or task-description similarity.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4XZH4D10V1CMM7TRBAB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y0FK0FX4S0F91EMDQ8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y13VEXDTSNBD4YN2TG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4Y96RRC20Z68A6PWHN0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YC1ZV65MX2WA86QQHB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M49BK4YJ3G9BVQPNJYA7QG4A"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

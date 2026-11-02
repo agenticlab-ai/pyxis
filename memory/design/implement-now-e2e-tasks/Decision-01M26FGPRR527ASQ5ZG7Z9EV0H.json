@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRR527ASQ5ZG7Z9EV0H",
+  "kind": "Decision",
+  "subject": "design/implement-now-e2e-tasks",
+  "family": "decision.2.1",
+  "statement": "The executor gains **one pre-claim resolution stage and two admission stages**, all inside the existing Worker and Dispatcher shape and behind the unchanged frontier and claim path. Before claim, the frontier walk follows the plan-task marker every projected item already carries back to the frozen plan, reads the governing-document field the plan class already requires of every plan, and — where that names an `approved`, well-formed `e2e-design/v1` document — recovers the task's slot by re-running the same closed rule that authored the plan, resolving a task to exactly one scenario, to the harness slot, or to nothing (`design-brainstorm:implement-now-tech-design-2#D-3`, `#ALT-1`). The resolved basis reaches the worker as a **read-only artifact outside the publishing worktree**, named by the charter's protocol but never folded into it — data, structurally, not instruction (`#D-4`, `#ALT-5`). The authored test then faces two admissions in different positions, each placed where its consequence can actually bind: a **labelled perturbation battery before the proposal is ever opened**, so a check that cannot hold its verdict is never published and therefore never enters required CI or the self-heal loop (`#D-6`, `#ALT-11`, as refined at review by `#D-9`); and, once a proposal is genuinely green, a **scope diff and broken-subject falsification** that together establish the test tests and the feature was not bent to satisfy it (`#D-5`, `#ALT-8`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:737b14675a8f402d863feac6262ff941efdb2f99eed9b11962b89d2b373e607d",
+    "source-design:43762eb5722d8ef8f813bd0ee78c8066d56074c2e41e3230bdbea7902a7076b8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRN6VWT1G8VWM2XNP6DD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.624Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-e2e-tasks.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-e2e-tasks.md lines 54-54 in section 2; sha256:737b14675a8f402d863feac6262ff941efdb2f99eed9b11962b89d2b373e607d"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZPSF3FPTAGRFX5G20BB9K",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-3",
+  "statement": "Existing document-pipeline documents keep their bytes, and merged-document immutability and append-only rules keep refusing edits; sanctioned retirement paths stay unchanged",
+  "rationale": "Old documents are frozen history (brainstorm:feature-draft#D-6)",
+  "fit_criterion": "Every existing document is byte-identical across the switch-over; the existing immutability fixtures still refuse; the existing closeout and source-retirement fixtures still pass",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f6cbcef859dcff0ba6a38e01db24373195298fa32703fbc207400bdc504293c8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:08Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

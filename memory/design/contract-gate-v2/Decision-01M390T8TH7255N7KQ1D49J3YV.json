@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390T8TH7255N7KQ1D49J3YV",
+  "kind": "Decision",
+  "subject": "design/contract-gate-v2",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:contract-gate/FR-1 · prd:contract-gate/FR-11 · prd:contract-gate/FR-12 · prd:contract-gate/FR-13 · prd:contract-gate/FR-3 · prd:contract-gate/FR-4 · prd:contract-gate/FR-5 · prd:contract-gate/FR-6 · prd:contract-gate/FR-7 · prd:contract-gate/FR-8 · prd:contract-gate/NFR-1 · prd:contract-gate/NFR-2 · prd:contract-gate/NFR-3 · prd:contract-gate/NFR-4 · prd:contract-gate/NFR-5 · prd:contract-gate/NFR-6 · prd:contract-gate/NR-1 · prd:contract-gate/NR-2 · prd:contract-gate/NR-3 · prd:contract-gate/UB-1 · prd:contract-gate/UB-2 · prd:contract-gate/UB-3 · prd:contract-gate/UB-4 · prd:contract-gate/UB-5 · prd:contract-gate/UB-6 · prd:feature-draft/FR-31.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:4e4e927ec4b3ae717592564f6dd062a57ff9bd03a88947d40409a3f270d9e70e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PH15Z89WJH6Z36TW8C03"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7MY86WM7H981DB7YBE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7NTB2GGZBCNPJM512Q"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7PVHPHPBGDA9VD2R0C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7Q943TFA6A458P02ZB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7YAS15XDNQX63Q66QJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ7ZE39Y6HTKGCNRWR75"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ80DSB76A9P0D6C3MHR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ819ZTWJGD2HGZXNMTY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8268V7A3DJRRT4PJSZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ83A51DVWGHMM16F86E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8GYEZZ3JX6Q6DE1WWX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8HRYMSXDJD2AGT28K0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8J6XEJDD6JEP8F49XN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8KJ173KCAA2ZJRNAMS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8M9F16HJ3ZR8TZ9MEW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8NF62MGXZPDNPG6VJ9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8QMT7P1DT6QQXQ4VA0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8RYB9DFA2HCZYG9JTD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8S6XAF1TF10FGM6F7C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8V1KHH52SJDAFWRR3N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8XJJ2TGHJJ52MAQGZH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8YEHMT37B7X0AV2B2Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ8Z71R5KY1GY816QVG9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ90ZGCAHJF0E972WWXP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQ91SNC5RY0J1WZYHRWY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M38ZMHR1EY4AMTXXQQRM0ZP1"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:14:31Z",
+  "provenance": {
+    "source": "docs/tech-design/contract-gate-v2.md",
+    "note": "projected from exact design header 4e4e927ec4b3ae717592564f6dd062a57ff9bd03a88947d40409a3f270d9e70e"
+  }
+}

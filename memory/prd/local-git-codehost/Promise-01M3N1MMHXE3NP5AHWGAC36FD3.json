@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMHXE3NP5AHWGAC36FD3",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "ABUSE-3",
+  "statement": "Agent bypasses the normal Pyxis route — vector: Edits hook or main ref under shared OS account",
+  "intent": "Mainline changes outside approval",
+  "fit_criterion": "Accepted residual risk under Q-1",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

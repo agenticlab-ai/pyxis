@@ -1,0 +1,68 @@
+# Review: argus-ledger-lint — design-review report
+
+| Field | Value |
+|---|---|
+| **In one line** | The two-arm mechanical guard is well-composed and faithful to its record and frozen upstream, but its FR-9 recognition boundary (slug-resolvability) does not deliver the green-on-own-corpus guarantee it binds — the cross-document arm reds the feature's own PRD and stage-1 record — and the history arm's §3.1 in-scope set overreaches its `A-n`/`E-n` mechanic; both blocking, both cleanly closable. |
+| **Relevant-when** | auditing or consuming the review of design:argus-ledger-lint; asking why it was request-changes; tuning tech-design-review calibration |
+| **Subject** | design:argus-ledger-lint · shape: none · supersedes: — |
+| **Moment** | new-design |
+| **Reviewer** | tech-design-review · .pyxis/authoring/tech-design-review.md (2026-07-11) |
+| **Date(s)** | 2026-07-11 |
+| **Verdict** | approve *(round 2 of 2, terminal; advisory period — blocks nothing until the ten-review checkpoint; the history below is authoritative)* |
+| **Tracking** | the design's introducing PR |
+| **Template version** | design-review-report/v1 |
+
+## Round 1
+
+*Subject carries no solution-shape (shape: none) — every evidence quote is `design:`. Record-fed: the basis record docs/brainstorms/argus-ledger-lint-tech-design.md (Argus, tier-2) rides the same PR; its D-1..D-8 / ALT-1..6 / S-1..S-4 are treated as the basis and were checked for fidelity (all live D-n carried, every fired-panel ALT verdict honored, citations resolve). The lint floor (header schema, Serves resolution/liveness, mandatory §Observability + §Security & privacy) is excluded — the gate is green and none of what it enforces is reported below.*
+
+### FND-1 — The FR-9 recognition boundary does not deliver its own green-on-own-corpus guarantee: the cross-document arm reds the feature's PRD and stage-1 record
+
+- **Severity**: blocking (CAL-1)
+- **Lens**: coherence
+- **Evidence**: The Decision fixes recognition on target-resolvability of the *slug* alone — `design:` §3.2: "A reference is an **in-scope citation** … **only** when `<slug>` names an existing `docs/problems/<slug>/delivery.md` ledger … The boundary is **target resolvability**, never the string's textual shape alone. **This is what keeps the arm green on its own citation-saturated governing corpus (this design, the record, the PRD, argus-artifacts).**" The arm then classifies a recognized citation by region (§3.2 table): an anchor into the `## Derived state` region → DINV-6 defect (FR-3); an anchor resolving to neither a journal `E-n` nor a derived field → unresolvable-anchor defect (UB-2). Binding row `design:` A-6: "on the repo's own citation-bearing prose (this design, the record, **the PRD**, argus-artifacts) the arm is green." — vs — the actual tracked corpus the arm scans (`design:` §3.2 corpus = `git ls-files`): the PRD's own §4.4 scenario prose plants a **concrete, resolvable-slug** string `delivery:argus-ledger-lint#Status` at `docs/prds/argus-ledger-lint/effective.md:193` and `docs/prds/argus-ledger-lint/000-base.md:186`; `argus-ledger-lint` resolves to the existing `docs/problems/argus-ledger-lint/delivery.md`, and `#Status` is a field of that ledger's `## Derived state` region → the arm, as specified, fires a **DINV-6 defect (FR-3)** on the PRD. Independently, the stage-1 record `docs/brainstorms/argus-ledger-lint.md:8` writes the concrete-slug string `delivery:argus-ledger-lint#E-n` (literal `E-n`, not a number), which resolves to no journal `E-<num>` and no derived field → an **unresolvable-anchor defect (UB-2)** on the record. Both are the arm reding its own basis — exactly the failure §3.2, §3.9 ("the arm's own governing corpus stays green"), R4, the §3.3 guardrail, and PRD NR-1 promise it will not produce. The design's own defense against this risk is scoped only to the *literal-`<slug>` metavariable* case: §4 rejects the string-shape alternative because it "false-reds … dozens of **literal-`<slug>` illustrations**," and R4 names only "the **literal-`<slug>` illustrations**." FR-9 correctly neutralizes those (an angle-bracketed `<slug>` resolves to nothing), but neither the mechanic nor A-6's fixture (§6: a journal citation + a literal-`<slug>` + a `no-such-slug` mention — **no concrete-slug-into-derived/unresolvable case**) covers a concrete resolvable slug used illustratively in prose, which is what the feature's own governing documents contain.
+- **Acceptance condition**: Make the recognition boundary (or the scanned span) actually deliver the A-6 / §3.2 green-on-own-corpus guarantee against the concrete-slug case the corpus contains — e.g., narrow recognition to genuine citation contexts and exclude occurrences inside inline-code/backtick spans and fenced blocks (which is how effective.md:193, 000-base.md:186, and the record's line 8 write these strings), or otherwise exclude a resolvable-slug reference that is demonstrably an illustration rather than a citation — and extend the A-6 fixture to include a concrete-slug `#Status`-style (derived-region) reference and a concrete-slug literal-`#E-n` (unresolvable) reference drawn from the repo's own prose, both asserted green. State the chosen rule in §3.2/§3.6 DINV-3 so the boundary matches the guarantee it binds.
+- **Disposition**: **applied** — in the draft design (unmerged), by Argus at authority-contract/v1 (tier-2); `dispose-blocking-finding` granted; delivery:argus-ledger-lint#E-29. The finding is correct and the fix belongs **in the design** (a recognition-mechanic refinement faithfully implementing the frozen FR-9's intent — illustrations out, real citations in, green-on-own-corpus — not a defect in the requirement, so no PRD amendment). Recognition is now a **two-stage** gate: **stage 1 — citation context** (exclude any `delivery:` occurrence inside a fenced code block or inline-code/backtick span, reusing the sibling `check-links`' established fenced/`stripCodeSpans` corpus convention in the same package), then **stage 2 — target resolvability** (the prior slug-into-existing-ledger test). Stage 1 is what closes the finding: the corpus's self-referential resolvable-slug strings — the PRD §4.4 `` `delivery:argus-ledger-lint#Status` `` (into a derived field) and the stage-1 record's `` `delivery:argus-ledger-lint#E-n` `` (unresolvable anchor) — are all written inside backtick spans, so they are dropped before resolvability is ever consulted. Edited §3.2 (two-stage Recognition + mermaid), §3.5 (must-not-infer bullet), §3.6 DINV-3, §3.9 (added the concrete-slug-in-code-span failure row), §3.10 (test seams), §4 (added the resolvability-alone rejection row; refined the string-shape row), §5 R4, and §6 A-6 (fixture now asserts green on a backtick-span concrete-`#Status` and a fenced-block concrete-`#E-n`). gen-index + gate re-run green (base-free and `--merge-base origin/main`).
+
+### FND-2 — The history arm's §3.1 in-scope-file set names the authority-contract, which its `A-n`/`E-n`-only mechanic and the design's own scope do not cover
+
+- **Severity**: blocking (CAL-1)
+- **Lens**: coherence
+- **Evidence**: `design:` §3.1 enumerates the history arm's in-scope files as "the `A-n`-bearing problem ledgers and `E-n`-bearing delivery ledgers under the problems root, **and the authority contract at the agent's home** (the classes argus-artifacts §3.1–§3.3 define)," and builds "two maps of `anchor → block-bytes` … where `<anchor>` is the dense `A-n`/`E-n` identifier." — vs — the authority-contract has **neither** `A-n` nor `E-n` entries: argus-artifacts §3.3 defines its append-only change history as `checkpoint` entries (date · `move` · resulting `tier` · evidence refs), not `A-n`/`E-n` anchors. An `A-n`/`E-n`-keyed parse of the authority-contract yields an empty anchor map, so the arm enforces nothing on a file it lists as in-scope. This also contradicts the design's own boundary statements: the Scope row says the history arm implements "DINV-1/DINV-2 of argus-artifacts" (append-only for problem/delivery ledgers only), §3.6 DINV-1 speaks only of "every `A-n`/`E-n` entry," and §3.5 + PRD NG-4 explicitly park all authority-contract structure/content validation (including its DINV-4 no-bare-pointer-flip / history-mandatory property) as the third **structure** arm (WR-1), out of this design. Listing the authority-contract among the history arm's in-scope files therefore overreaches what the mechanic delivers and what the design elsewhere says it covers. (Not load-bearing for acceptance — no A-row exercises the authority-contract under the history arm — but a genuine §3.1-vs-mechanic/scope inconsistency.)
+- **Acceptance condition**: Reconcile §3.1's in-scope-file list with the arm's mechanic and the design's scope — either drop the authority-contract from the history arm's in-scope set (its append-only-ness is the parked WR-1 structure arm's concern, per §3.5 / NG-4), or state explicitly that only `A-n`/`E-n`-shaped entries are in scope and that the authority-contract carries none, so the arm is intentionally a no-op on it.
+- **Disposition**: **applied** — in the draft design (unmerged), by Argus at authority-contract/v1 (tier-2); `dispose-blocking-finding` granted; delivery:argus-ledger-lint#E-30. Took the first acceptance option (drop the authority-contract from the history arm's in-scope set) as the more faithful reconciliation — it removes the overreach outright rather than documenting a no-op, and aligns §3.1 with the arm's `A-n`/`E-n`-keyed mechanic, the Scope row ("DINV-1/DINV-2 of argus-artifacts" = the two ledger classes), and §3.6 DINV-1. §3.1 now names only the `A-n`-bearing problem ledgers and `E-n`-bearing delivery ledgers, and states explicitly that the authority contract is deliberately excluded (its change history is `checkpoint` entries with no `A-n`/`E-n` anchors, so this arm's mechanic finds nothing there; its append-only-ness — DINV-4 no-bare-pointer-flip / history-mandatory — is the parked third *structure* arm's concern, WR-1 / §3.5 / PRD NG-4). Verified §1's problem-statement mention of all three classes stays correct (they are the classes with no *mechanical* guard; WR-1 covers the authority-contract's structure). gate re-run green.
+
+## Round 2 (scope-locked)
+
+*Examined only the two round-1 dispositions against their acceptance conditions and regressions within the changed spans (the two-stage recognition mechanic wherever threaded; the §3.1 scope drop). Gate re-run green base-free and `--merge-base origin/main`. No finding on unchanged content.*
+
+**FND-1 — closed.** The acceptance condition asked the recognition boundary (or scanned span) to actually deliver green-on-own-corpus against the concrete-resolvable-slug case the corpus contains, and to extend A-6 accordingly. The applied two-stage gate satisfies it on the merits:
+- **The in-design (not PRD-amendment) resolution is sound.** FR-9's frozen intent already *binds* green-on-own-corpus (PRD §4.4 / DOD-2 / NR-1) and says "illustrations are not citations … never string shape alone"; it does not mandate resolvability as the *sole* filter nor forbid a context filter before it. So the gap was the design under-implementing the *how*, not a defective requirement — the fix belongs in the design, and no amendment is owed. Faithful to FR-9, contradicts nothing frozen.
+- **The `check-links` precedent is real** (not invented): `reg_check_links.go:23-28` docstring ("Fenced blocks, code spans … are [excluded]") and its `fenced` toggle + `stripCodeSpans(l)` before `linkTargets` (line 54-63), via the shared `stripCodeSpans` helper (gate_v3.go:43). Stage 1 inherits an established repo convention.
+- **Green-on-own-corpus holds:** the offending occurrences — the PRD's `` `delivery:argus-ledger-lint#Status` `` (resolvable slug → derived field) and the record's `` `delivery:argus-ledger-lint#E-n` `` (resolvable slug, unresolvable anchor) — are inside backtick spans, so stage 1 drops them before resolvability is consulted (§3.2, DINV-3, R4). A-6's fixture now pins exactly these: a backtick-span concrete-`#Status` and a fenced-block concrete-`#E-n`, both asserted green.
+- **Genuine violations still red:** a *bare-prose* resolvable `delivery:<slug>#<derived-field>` is not dropped at stage 1, resolves at stage 2, and reds as a DINV-6 defect — pinned by A-2 ("cited derived block red at exactly its arm") and A-6's classified case (i). The two stages are genuinely complementary, not a blanket silencer. Threading across §3.2/§3.5/§3.6 DINV-3/§3.9/§3.10/§4/§5 R4/§6 A-6 is internally consistent; no regression.
+
+**FND-2 — closed.** §3.1 now names only the `A-n`-bearing problem ledgers and `E-n`-bearing delivery ledgers and states the authority-contract's deliberate exclusion (its change history is `checkpoint` entries with no `A-n`/`E-n` anchors; its append-only-ness is the parked WR-1 structure arm's concern). Reconciles §3.1 with the arm's mechanic, the Scope row, and §3.6 DINV-1; §1's three-class mention stays correct. First acceptance option, cleanly taken; no regression.
+
+**No round-2 findings on the changed spans.**
+
+## Verdict history
+
+| Round | Verdict | Date |
+|---|---|---|
+| 1 | request-changes | 2026-07-11 |
+| 2 | approve | 2026-07-11 |
+
+## Escalation brief
+
+none
+
+## Measurements
+
+- **Rounds**: 2
+- **Findings**: 2 blocking · 0 advisory
+- **Dispositions**: 2 applied · 0 declined · 0 withheld-as-violation *(both blocking findings disposed by Argus, authority-contract/v1 tier-2, holding dispose-blocking-finding — FND-1 delivery:argus-ledger-lint#E-29, FND-2 delivery:argus-ledger-lint#E-30; both applied in the draft design, none declined → no auto-escalation; both closed at round 2)*
+
+## Overlay corrections
+
+none

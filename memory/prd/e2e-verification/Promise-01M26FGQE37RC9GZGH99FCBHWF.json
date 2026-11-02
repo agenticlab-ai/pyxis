@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQE37RC9GZGH99FCBHWF",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "UB-9",
+  "statement": "If e2e-plan is invoked on an approved e2e design doc whose scenarios do not each name the one artifact they exclusively own, then the system shall refuse, naming the scenarios that carry no owned artifact — a plan that cannot assign exclusive ownership would emit tasks guaranteed to collide",
+  "intent": "refusal naming the un-normalized scenarios; zero tasks are projected",
+  "fit_criterion": "the un-normalized-doc fixture yields refusal naming each offending scenario; zero tasks are projected",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:394a80ef122601adba1962fe54166cb4741483b06dc592b903b15eab17b9dd86",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.307Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

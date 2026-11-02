@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQR97TNFQ8QBYK9KE5Z77",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-6",
+  "statement": "Hosted authenticated review, code-owner protection, stale-approval dismissal, latest-head approval, and admin enforcement retain their behavior; local mode is explicit and never selected as an approval fallback",
+  "rationale": "The operator accepted a reduced boundary only for the shared-account local Git workflow",
+  "fit_criterion": "Hosted conformance fixtures retain their verdicts; a failed hosted approval cannot be satisfied by a local receipt; this contract-only amendment and its approved successor design merge independently before a later proposal enables local selection or receipts.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fa92f26987c002cec01a026aee2f2a2396e72646bdbb56ce050abe23850e0e3c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:23Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

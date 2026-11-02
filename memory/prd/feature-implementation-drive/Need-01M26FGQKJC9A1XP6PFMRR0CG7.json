@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKJC9A1XP6PFMRR0CG7",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "J3",
+  "statement": "When all feature tasks have landed, I want verify the exact result that would combine with current main, so I can know the complete feature works before proposing it to main",
+  "rationale": "`brainstorm:feature-implementation-drive#D-11/#D-12`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0a8c6f70b8b99c8a7f8fb0446a824cec27c1555be8f8790f7d91fb6cf76bdf46",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.482Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

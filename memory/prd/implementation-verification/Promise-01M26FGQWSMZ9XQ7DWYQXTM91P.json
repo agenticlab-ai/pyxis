@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWSMZ9XQ7DWYQXTM91P",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-2",
+  "statement": "When a rung fails, the harness shall return machine-parseable findings — each carrying check id, location (file:line where the check class has one), and a one-line message — with full tool output attached by reference, never as the primary payload.",
+  "rationale": "compact feedback is the loop's fuel; log dumps burn the agent's context",
+  "fit_criterion": "100% of fixture-produced findings validate against the finding schema and carry check id + message; lint/build/test findings carry file:line; no finding payload embeds more than the schema's bounded excerpt",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:97005cb13f39325bcea8ee14d25883bd46a6cb1572392577cdd1754d7e72d19f",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.777Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

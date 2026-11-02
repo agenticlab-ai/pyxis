@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB9EVFAVW89666KQ05V",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "ABUSE-2",
+  "statement": "whoever can edit the calibration table — silently defanging the reviewer — vector: a severity table change dropping blocking classes",
+  "intent": "rubber-stamp by data",
+  "fit_criterion": "the table is versioned, reviewable data (FR-6); changes ride PRs; the escalation-band + M2 residual expose defanging",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4c2fb924878637fddcd1851a631d2cd9799688d6157f24c8d9e442d3e0855c71",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.241Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

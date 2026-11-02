@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQBVYCS0ZJMFDNKB9A5H",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "NR-4",
+  "statement": "§0 and all of its subsections remain human-only: no docgate contract-unit parser, fold comparison, source-map projection, or gate verdict treats an ID-looking row anywhere in that subtree as an addressable unit",
+  "rationale": "read-to-rule routing prose binds nothing and automated consumers are contractually forbidden to read, cite, or obey it",
+  "fit_criterion": "the complete prd-template/v2 §0 fixture, including exact and slash-joined live IDs under §0 and §0.1, contributes zero units and cannot shadow a binding row with the same ID",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6be87fb22ab6e0beecdf115ad9524c1f782f88548c9d3796ad729db5f5043755",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.235Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPYYC8RBCJ87M3EX7RQG",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-13",
+  "statement": "Every violation class in the seeded corpus is refused by the layer that owns it, red at exactly that layer; every legitimate case passes (0 false refusals)",
+  "intent": "§3.2 M1, M2; all live Must FRs (§5.1)",
+  "fit_criterion": "the golden violation + legitimate corpus + first-run refusal report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b6343096719228a285401f4dbc08a1f9569a1d01926780f575d9df2f9a6d3705",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.822Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

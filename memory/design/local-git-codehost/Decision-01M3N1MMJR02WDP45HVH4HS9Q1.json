@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJR02WDP45HVH4HS9Q1",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-7",
+  "statement": "The mode is opt-in. Existing installed repositories keep their selected hosted route. `doctor` reports whether the local origin, configured mainline, and proposal refs are ready, names the first-push remedy if mainline is absent, and states the accepted shared-account trust limits. `pyxis exec` continues to verify candidate and final artifacts. Before local task or final feature landing is enabled, the feature-implementation-drive contract needs a scoped PRD amendment to FR-7, FR-22, and NR-5 plus a reviewed successor design. They must state that the operator invokes the local landing command after exact-head review, while Argus only opens and observes proposals; the shared-account route cannot authenticate that actor or prevent direct writes. The successor must also authorize D-5's current review-aggregate and candidate-evidence checks, atomic ref leases, and explicit outside-route limitation. This draft alone does not supersede the merged feature-drive contracts. After those and the scoped feature-draft PRD amendment and successor design land, the implementation merges, and local conformance passes, `pyxis-release pack` and `verify` produce a candidate set from the intended release commit without requiring a release tag. AEC pins that candidate via the local artifact-source override and completes DOD-4. Only then does the operator tag that same commit and publish the **same verified artifact set** as the final versioned release; AEC repins the published source and reruns installation/doctor smoke checks. A changed source commit or artifact hash invalidates the candidate proof and requires another installed run.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHBGVY99DQGG93E40VJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHM9C7KZG8XAVGCV30C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHY3Z80BH30DNYHR1M1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMJ0MEVAHKN7NRYDF168"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

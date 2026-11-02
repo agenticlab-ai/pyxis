@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF2ZWAE0DEVN7W8S1BQ",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NR-1",
+  "statement": "doc-review's propose-and-confirm edit behavior and its zero-git-mutation-of-its-own posture",
+  "rationale": "capture is additive, must not change how review edits work",
+  "fit_criterion": "the existing doc-review tests pass unchanged; capture is a separate write",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aad2cee283e84a54cafba1fb1860439a7c958b8463fcf2d4285d6f8daa26e3f8",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.362Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

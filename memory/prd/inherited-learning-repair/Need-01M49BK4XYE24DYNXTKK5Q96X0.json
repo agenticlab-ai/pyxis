@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Need-01M49BK4XYE24DYNXTKK5Q96X0",
+  "kind": "Need",
+  "subject": "prd/inherited-learning-repair",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "Effects after a landed correction",
+  "fit_criterion": "Zero task creations and dispatches for stale callers",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

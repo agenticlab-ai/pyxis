@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ007DV6VB986GRY9T2R",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NFR-3",
+  "statement": "Each layer shall be extensible by addition (a new protected-path class, a new supported CLI adapter) without editing a shared hot line.",
+  "intent": "Maintainability",
+  "fit_criterion": "a new supported-CLI adapter is a new file/pointer; a new docgate check composes as a new descriptor (AP-23/AP-27)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:59b1a30ce59a1873ba848fed62d30961032138469f31f50e064f01ef7aedd2d3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.856Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

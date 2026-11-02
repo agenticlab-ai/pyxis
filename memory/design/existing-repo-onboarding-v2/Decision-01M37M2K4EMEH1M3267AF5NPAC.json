@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M2K4EMEH1M3267AF5NPAC",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.3.4.1",
+  "statement": "the install-epoch is the already-present `epoch.commit` config field (`design-brainstorm:…#F-2`); `apply` records the repository's current commit into it and **creates no commit of its own** — the operator commits the adoption, so adoption makes no undisclosed change to history (DINV-4; `prd:existing-repo-onboarding/J1`). The tree-local gates honour it by a **single `git diff --name-only epoch.commit..HEAD` (∪ working-tree changes) computed once per gate run and intersected with the scan-set**: only content changed since the epoch is checked, so the grandfathered corpus is never visited and gate cost scales with the changed set, not the corpus (DINV-6; NFR-1). History-scoped checks (immutability, governing) already compare against a ref and are unaffected. An unreachable epoch commit (a shallow clone) **fails closed** — gate everything, naming the cause. The per-check grandfather exception lists remain available for targeted exceptions alongside the epoch (NR-3).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b42b3112b07c1bd0c3c6b5eb65581b36c8b46e60cd38e45e3b3293ce49041a90",
+    "source-design:391b7e5b557a6f3e5a74e3de11e245a069bc6e84b0036bd6fabfa241cd5c40df",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQT574ZXV8Z2A7Z3SAW"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR5M8VSD8XT5FX6ZKW1Y0"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:38Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 104-104 in section 3.4; sha256:b42b3112b07c1bd0c3c6b5eb65581b36c8b46e60cd38e45e3b3293ce49041a90"
+  }
+}

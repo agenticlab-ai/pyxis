@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN0HDZHZ5JN1D7F58VK",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-18",
+  "statement": "The live impl-review contract and approved successor design expose one impl-review-owned host persistence adapter that accepts exactly one outer-process aggregate, performs exactly one GitHub-comment or Carina-decision-record publication, returns and exact-reads the native receipt, and grants the outer execution, blind pass contexts, and implementation workers no proposal/evidence-store write capability. Side-effect-free preflight proves current authenticated read/write readiness before reviewer work. A closed retry policy, durable host state, and kill/restart recovery at every publication boundary converge to one artifact plus one verified EVT-13 or one named failed EVT-13 within the policy bound. Every hosted publication terminal joins exactly one separately contracted reciprocal host terminal through FR-35's four always-required identity pairs and three schema-optional evidence pairs that are all present on verified terminals and otherwise presence-and-value-equal; native receipt and attempt-proof reference remain distinct, and publication-attempt identity remains distinct from the stable review obligation. Implement-now amendment 005 alone is proven insufficient and hosted launch stays blocked until its reciprocal amendment supplies this contract. Same and different completed-artifact transport authors behave identically because author identity is not a verifier predicate, while FR-16 operator-disposition attribution remains unchanged. Absent or ambiguous performer authority/capability/reciprocal contract, direct child/caller publication, response loss, duplicate invocation, malformed/surplus handoff, replay, receipt/proof/state substitution, and inferred or mismatched cross-contract joins all fail closed.",
+  "intent": "FR-6, FR-32..FR-37, UB-20..UB-23, EVT-13, ABUSE-8, WR-4",
+  "fit_criterion": "successor design and reciprocal-host-contract references; both-media exactly-one/native-receipt/attempt-proof/EVT-13 traces; seven-field equality/presence/mismatch matrix including verified-terminal completeness; receipt-versus-proof and publication-attempt-versus-obligation non-alias assertions; implement-now-005 insufficiency fixture; current-auth preflight with zero reviewer spend; pass/orchestrator/outer-handoff trace; execution/caller capability scan; same/different-author artifact matrix plus unchanged FR-16 disposition fixtures; closed retry-policy exhaustion; kill/restart at pre-write, post-write/pre-receipt, and post-receipt/pre-ack; missing-capability, concurrent-retry, malformed/surplus handoff, direct-write, replay, and state-substitution matrix",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5b1c86df33215faf248f40f4eb481ffb859ab442a4540d53d85155714a780bcd",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.528Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

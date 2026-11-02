@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQYJMH86085E3RR5YAC3",
+  "kind": "Expectation",
+  "subject": "prd/init-hardening",
+  "family": "DOD-5",
+  "statement": "The installer ledger's alignment amendments landed (its preview/admission/`ci_mode` rows no longer contradict this contract)",
+  "intent": "§6.2",
+  "fit_criterion": "ledger diff",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:79f284ebf600502f026aa29be24c06a64c5b5568d955c3be5edd4df66a51a73d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.834Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

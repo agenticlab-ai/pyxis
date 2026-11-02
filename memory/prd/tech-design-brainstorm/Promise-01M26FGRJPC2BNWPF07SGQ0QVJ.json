@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRJPC2BNWPF07SGQ0QVJ",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "FR-4",
+  "statement": "When a question is answerable from the corpus, code, or prior records, the skill shall answer it by lookup and record it as a fact with its source, reserving authority questions for genuine design decisions.",
+  "rationale": "the authority's attention is the budget",
+  "fit_criterion": "≥ 95% of seeded doc-answerable questions resolved by lookup with source (EVAL-3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c5e450b96e26179efe225d92abe339c06ec74ae609d06231cbb48edaf86beb09",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.478Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR8F5BQ9QTDX2WCXGKKP",
+  "kind": "Promise",
+  "subject": "prd/plan-viewer",
+  "family": "FR-6",
+  "statement": "The viewer shall operate read-only over the plan's source and folded machine face — including a draft (unmerged) plan — writing nothing but the output page.",
+  "rationale": "the checkpoint reviews drafts on open PRs; a viewer that mutates or demands a merged plan cannot serve it",
+  "fit_criterion": "a filesystem audit across a render shows exactly one file created and zero modified; a draft plan renders",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c9bee9d10218f96c8fe9a50612b27ce08484c401d23f253cb772f95f3f46d3ab",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.151Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "code": "stale-document",
+  "scope": ".pyxis/dist/forgejo-workflows/README.md",
+  "count": 1,
+  "blocking": true,
+  "writable": true
+}

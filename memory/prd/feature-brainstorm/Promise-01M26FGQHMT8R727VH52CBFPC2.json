@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHMT8R727VH52CBFPC2",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "UB-1",
+  "statement": "If If the operator goes silent or defers mid-question (\"later\", no answer), then the system shall park the open question as fog, note the pause in the record, and stop — recording no decision on the operator's behalf",
+  "intent": "a parked question and a paused session that resumes cleanly",
+  "fit_criterion": "on the silence fixture, zero decisions are recorded during the absence; the parked question is the first offered on resume",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c5550a21ea8916130427bfebfa378375b73ebd2560fe83c1a6bbbdfa7a5b5e71",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.42Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8YEHMT37B7X0AV2B2Y",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-3",
+  "statement": "If the gate is invoked on a contract whose PRD is not yet merged (still a draft), then the system shall refuse with a `configuration-error` verdict — the gate operates only on merged, reviewed documents",
+  "intent": "configuration-error verdict",
+  "fit_criterion": "the unmerged-PRD fixture yields configuration-error; no check runs against draft content",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9d08c150e6ea669cc15ea736b471c5a03a6d28561f067fb5639d4cdb34452246",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.142Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

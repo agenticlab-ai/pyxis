@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M49M9SZ9WX3S26M7DEMY30C8",
+  "kind": "Decision",
+  "subject": "design/memory-proposal-withdrawal-v1",
+  "family": "decision.3.2.1",
+  "statement": "Writes share the native memory writer lock. Pins and file state\nare rechecked after archival and around removal. An observed failure restores\nfiles removed by this attempt using exclusive creation; it never overwrites a\nconcurrent replacement. A restoration conflict reports the affected path and\nretains the archive. Process interruption may leave a partial withdrawal;\nrerunning the identical command on unchanged pins safely finishes it. Success\nrequires every selected file absent and the pins and unselected memory still\nunchanged.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:745916e806ec9ec64d50290a595fd8bf16ef3f9aa941521dfe24bf85bf446602",
+    "source-design:a286e90e933f6c49c09f62369c3ef6cef9441e48edc21546013c713d0c5783df",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M49KXPWRRTV6K7CFW84SSRNH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-06T22:10:45Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-proposal-withdrawal-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-proposal-withdrawal-v1.md lines 83-90 in section 3.2; sha256:745916e806ec9ec64d50290a595fd8bf16ef3f9aa941521dfe24bf85bf446602"
+  }
+}

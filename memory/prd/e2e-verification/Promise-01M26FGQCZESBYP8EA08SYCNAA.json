@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCZESBYP8EA08SYCNAA",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-22",
+  "statement": "Where the feature under test requires human decisions inside the flow it exercises, the harness section shall specify a decision-authority stand-in that supplies those decisions with no live human — a scripted answer set consulted first, a persona fallback constrained to a written character sheet, every fallback answer recorded as an improvisation with the assertions depending on it reported non-authoritative, at least one adversarial persona (silence, contradiction, or refusal), and no visibility of the run's assertions to the stand-in.",
+  "rationale": "an agentic feature has no other way to reach its own end-to-end behavior; a stand-in that only agrees, or that can see what the test asserts, manufactures a green rather than proving one",
+  "fit_criterion": "on the agentic fixture committed in §4.2, the harness section specifies all five properties; a stand-in specified as improvising silently, as cooperative-only, or with sight of the assertions is a review finding; specifying the stand-in is authoring, and building or running it remains the deferred follow-on (NG-1, WR-1)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:076fa34a6101be42ea925f6468b0525298ae10d5236317291b38b8ae25d88fa9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.271Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

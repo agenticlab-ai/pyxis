@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRNKED2RZBBXMPTVHZRW",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-3",
+  "statement": "When given a search query, the reading room shall return matches across the corpus with document, heading/anchor context, and open-at-match navigation; a query matching an anchor-ID grammar shall rank its exact matches first.",
+  "rationale": "search is the index humans lack; IDs are the corpus's native names",
+  "fit_criterion": "fixture queries: free-text hits carry doc + context and open at the match; ID queries land their defining row first; a no-hit query returns an explicit empty state",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f0ffda97a9785616e6be3b99d06770d9263475062cf95d351733ee5cab2fc8cf",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.571Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

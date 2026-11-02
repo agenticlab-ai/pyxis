@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Question-01M38ZQJPZ1RS3CBGD54DGQ6SD",
+  "kind": "Question",
+  "subject": "prd/feature-draft",
+  "family": "Q1",
+  "statement": "Is the living rollup `docs/techspec.md` renamed or annotated so \"tech spec\" names only the per-feature design, and do the living rollups survive the move to memory (brainstorm:feature-draft#G-1)?",
+  "intent": "@mdarabi",
+  "rationale": "answered — the rollup keeps its name; its header notes that it is the system-wide architecture rollup, not a feature's tech spec, and the rollups stay (design-brainstorm:feature-draft-tech-design#D-17)",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:c846b538fbbb9afa391a3f4b8f047a8d33fcd8e88394cdb4d80794e7ac83b677",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:34Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "captured from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR7Y7F9X8XR01ZSRVF61",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "NR-4",
+  "statement": "Frozen plan/v1 artifacts remain byte-immutable and valid inputs to their existing downstream compatibility path; from §6.5's Stage-0 plan/v2 schema cutover onward, plan-new creates only plan/v2 and never backfills or infers execution-demand fields into plan/v1.",
+  "rationale": "merge freezes planning judgment; post-freeze inference violates provenance",
+  "fit_criterion": "frozen plan/v1 corpus byte-identical and accepted; zero v1 writes; every plan frozen from Stage 1 onward is v2 and satisfies FR-28/FR-29/FR-30",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f0097c32a2e6471df0876550a7a114dfc2777331028aae38b3ff97ac715e545b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.134Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

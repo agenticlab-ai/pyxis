@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZN1C7XXKEED7JC41ERXMV",
+  "kind": "Document",
+  "subject": "brainstorm/skill-command-prefix",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/skill-command-prefix.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:7996d0dba24b35316e00e845f4026e3874a184064b1d6a1600ae2f1d86d91543"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBJ4SXXR9TSFTBKPKA4BA"
+    }
+  ],
+  "body_sha256": "7996d0dba24b35316e00e845f4026e3874a184064b1d6a1600ae2f1d86d91543",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:28Z",
+  "provenance": {
+    "source": "docs/brainstorms/skill-command-prefix.md",
+    "note": "offline reconciliation"
+  }
+}

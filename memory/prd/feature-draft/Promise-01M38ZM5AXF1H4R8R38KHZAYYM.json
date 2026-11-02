@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZM5AXF1H4R8R38KHZAYYM",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-24",
+  "statement": "When a lock is requested, the system shall compute readiness against the mainline the lock will land on.",
+  "rationale": "The second draft to lock must see what the first locked, and the mainline admits merges checked against an older state (brainstorm:feature-draft#D-22, brainstorm:feature-draft#F-15)",
+  "fit_criterion": "A fixture draft whose readiness passed before another draft locked a conflicting change is refused at its own lock and passes once revised; zero locks are accepted on a readiness result computed against an older mainline.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:999e3dbc4b5aa1eac39836666c9fc89b3a2ae4188ffd987ebba88527872956d3",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:42Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

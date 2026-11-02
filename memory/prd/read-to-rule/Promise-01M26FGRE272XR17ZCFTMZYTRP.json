@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE272XR17ZCFTMZYTRP",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "UB-2",
+  "statement": "If If a §0 item routes to content an amendment superseded (stale routing), then the system shall the reviewer falls back to the body for that item, and the miss is recorded as an outside-§0 item",
+  "intent": "a dead route, a recorded miss",
+  "fit_criterion": "staleness incidents appear as recorded misses, never silently",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:381f43f603f40d92c1bf43605ef8e265d6901d87a715a10722c9515c10bfbc09",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.33Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

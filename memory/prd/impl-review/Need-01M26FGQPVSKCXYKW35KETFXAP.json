@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQPVSKCXYKW35KETFXAP",
+  "kind": "Need",
+  "subject": "prd/impl-review",
+  "family": "J4",
+  "statement": "When a proposal's risk demands a human, I want have the machine verdict force the HUMAN lane mechanically, so I can keep the AUTO lane honest as autonomy grows",
+  "rationale": "`brainstorm:impl-review#D-6`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:af17b5472063ef3247cf076d8f5196a9cfe32f146cbcfaee21cce70a5030fd2d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.587Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

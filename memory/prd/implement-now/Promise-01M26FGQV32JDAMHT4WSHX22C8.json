@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQV32JDAMHT4WSHX22C8",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "NR-4",
+  "statement": "The argus principal/hands split remains: executor implements, argus never self-implements.",
+  "rationale": "preserve agency boundary",
+  "fit_criterion": "argus-driven fixture shows all task work in executor attempts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8c9d75abb375f77209ce4ea2bc14dc7fbd37fe68538378095bf3a051fa6f5548",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.723Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

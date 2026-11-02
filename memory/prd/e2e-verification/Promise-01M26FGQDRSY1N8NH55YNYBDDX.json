@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDRSY1N8NH55YNYBDDX",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NFR-5",
+  "statement": "The e2e design doc shall carry the run cost of the suite it specifies as a reviewable property — the per-scenario cost class and cadence (FR-23) together with the harness section's stated per-run bound — so that the cost of the suite is judged at review time rather than discovered when it is built.",
+  "intent": "Cost (the specified suite)",
+  "fit_criterion": "on the dogfood and the fixtures, a reviewer can derive the cost of one scheduled run from the design doc alone; every scenario carries a cost class and a cadence and the harness section states its per-run bound; a doc from which the scheduled-run cost cannot be derived is a review finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8c45d6fb0ccf4126c237d8b5190e8e68d6645ee914aefb5553048d1d51e9f431",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.296Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

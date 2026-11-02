@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TC8Q2FGJ5VY9R69T4WSSA",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R7",
+  "statement": "Require a complete typed active-surface inventory with zero unexplained residual feature entry points before authority publication.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "An exact selector can still be incomplete. FR-14, UB-9, DOD-6, and DOD-7 make omitted sources, units, entry points, and shared dispositions visible before cleanup.",
+  "fit_criterion": "The pilot and fixture inventories report zero unexplained residual surface; every omitted exclusive identity, unresolved entry point, unowned live reference, and undispositioned shared identity refuses.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d447960e18a6b702896963dc05bd200187373d2b2f008005d5601a763c2d7e44",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:26:34Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

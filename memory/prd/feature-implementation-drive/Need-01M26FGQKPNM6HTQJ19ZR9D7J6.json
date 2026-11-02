@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKPNM6HTQJ19ZR9D7J6",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "task readiness transition follows verified blocker landing",
+  "fit_criterion": "100% valid transitions and zero premature dependent pickups in the six-task fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c0f9d937da68659ddddc608e30d64d950c00920f4e24cdad508cc2b234c62ab7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.486Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

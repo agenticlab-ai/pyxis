@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3BP5TKT988P88BFX0XK8F4X",
+  "kind": "Document",
+  "subject": "source/pyxis-templates-draft-problems-template",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/templates/draft-problems-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:bc0cb77ef84e3eab5e861612468943490402e790337ffcd889d146ec208294ca"
+  ],
+  "body_sha256": "bc0cb77ef84e3eab5e861612468943490402e790337ffcd889d146ec208294ca",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T07:06:19Z",
+  "provenance": {
+    "source": ".pyxis/templates/draft-problems-template.md",
+    "note": "offline reconciliation"
+  }
+}

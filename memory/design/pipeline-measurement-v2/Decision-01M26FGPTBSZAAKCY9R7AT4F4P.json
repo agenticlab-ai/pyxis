@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTBSZAAKCY9R7AT4F4P",
+  "kind": "Decision",
+  "subject": "design/pipeline-measurement-v2",
+  "family": "decision.3.9.1",
+  "statement": "the per-phase per-model total is the **sum of the harness's own per-turn usage within the phase bracket**, cross-checked against the harness's authoritative total for the same span where one is reported (`#D-4`). The tolerance is **tiered** (DINV-4): `exact` where the harness reports an authoritative per-model figure (recorded must equal it, count-exact); `harness-precision` where only a coarser/rounded figure exists (the tolerance is the harness's own precision — no invented digits); `unavailable` where non-reconcilable. The tier is recorded per figure, so a consumer sees exactly how trustworthy each number is.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e5c79b02a905d89346c1d8bb95e7f25034c58b53526de3848841050797e662d5",
+    "source-design:848be6bb1101995e3e698ade196fe74ee1eddf3150285b46b2e557a5764b59d6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTBC07W2TWJSA04S694W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.675Z",
+  "provenance": {
+    "source": "docs/tech-design/pipeline-measurement-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/pipeline-measurement-v2.md lines 118-118 in section 3.9; sha256:e5c79b02a905d89346c1d8bb95e7f25034c58b53526de3848841050797e662d5"
+  }
+}

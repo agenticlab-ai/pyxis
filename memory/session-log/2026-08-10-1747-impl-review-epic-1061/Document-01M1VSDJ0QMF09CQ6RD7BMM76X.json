@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDJ0QMF09CQ6RD7BMM76X",
+  "kind": "Document",
+  "subject": "session-log/2026-08-10-1747-impl-review-epic-1061",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-10-1747-impl-review-epic-1061.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "1778e840853a32e468d5c04dcd0a8331d5dab2371442d2ac85b00807fcecc458",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:25Z",
+  "provenance": {
+    "source": "logs/2026-08-10-1747-impl-review-epic-1061.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

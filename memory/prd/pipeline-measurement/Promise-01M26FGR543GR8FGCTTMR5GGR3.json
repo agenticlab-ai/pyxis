@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR543GR8FGCTTMR5GGR3",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "FR-2",
+  "statement": "For each model on a phase record, the system shall record a dollar cost derived from versioned per-model price data.",
+  "rationale": "the operator's budget is in dollars, not raw tokens (J1)",
+  "fit_criterion": "each per-model line's cost equals its tokens × the pinned price entry; a model with no price entry is flagged, never silently zero-costed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bb2237e61df0eaec3ff448c7de4a022285c6eba06e2f40541aac32023cbe9833",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.044Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

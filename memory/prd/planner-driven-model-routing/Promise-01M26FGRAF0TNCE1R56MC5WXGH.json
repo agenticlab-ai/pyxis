@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAF0TNCE1R56MC5WXGH",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NFR-1",
+  "statement": "For identical assessment, policy version, selected harness, role, and override, the system shall produce an identical semantic and native routing decision.",
+  "intent": "Determinism",
+  "fit_criterion": "repeated and reordered-input fixtures are byte-identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f5939d2d6d9128c3044d7d2ebc941f84358d0c2875b7dec01130d9f228cf0177",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.215Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

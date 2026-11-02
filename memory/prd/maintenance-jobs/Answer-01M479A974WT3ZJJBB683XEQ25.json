@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M479A974WT3ZJJBB683XEQ25",
+  "kind": "Answer",
+  "subject": "prd/maintenance-jobs",
+  "statement": "Add FR-15 for Claude, Codex, Cursor, and OpenCode through existing runtime adapters and native routing. A job records its harness and semantic routing requirements; native model/effort selection and invocation translation reuse existing owners. Update scope, FR-2/FR-10, integrations, and verification consistently. Codex remains an explicit choice for the initial job.",
+  "intent": "@mdarabi",
+  "rationale": "Pyxis already supports “4 different harness” and “a job can simply have the config for the harness and the routing”; the operator accepted the proposed capability/deliberation/context/assurance shape with “sounds good”.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M479A973FHEZDM69PMRJ94H3"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

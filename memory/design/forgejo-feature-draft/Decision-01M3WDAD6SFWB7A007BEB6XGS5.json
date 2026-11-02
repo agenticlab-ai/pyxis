@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6SFWB7A007BEB6XGS5",
+  "kind": "Decision",
+  "subject": "design/forgejo-feature-draft",
+  "family": "D-2",
+  "statement": "Resolve the code-host binding independently, validate the configured Git remote offline before any credential-bearing API/Git operation, then authenticate the explicit draft agent and require a separately configured operator; contain credentials across API redirects and Git requests. (design-brainstorm:forgejo-feature-draft-tech-design#D-2)",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6RCA9TV7H429MMZ5B0"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6JHJ3PEQCMRDBB3HHE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5P6VMQZ2PVZB6HDP4E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5RMDRD9374B1NNRD0M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD60FA26600CXN3MA3G2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD61Q8P2PWYXKRA7J0C6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD67KD1T1QYVHB4HNS85"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD68JQJKKZC8KSQRTMNH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6B7YCJGSD25PGJPZJZ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

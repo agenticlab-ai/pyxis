@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRE778X29HFJXSXWZN8K",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..FR-8",
+  "fit_criterion": "CI run link",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:28ad5ee9219e953041f156abaa1ea7731d825abda6376beee01b1693d99ec5aa",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.335Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

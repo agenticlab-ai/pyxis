@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMWM77Y4W47BNM45VVBSK",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-37",
+  "statement": "When a plan is generated from a locked feature draft, the system shall require the plan to pass the rules the plan projection enforces.",
+  "rationale": "No plan reaches projection unless it passes the projection's rules; the plan follows the lock (brainstorm:feature-draft#D-25)",
+  "fit_criterion": "A plan that breaks one projection rule — a dependency cycle, an oversize task without an accepted size, a trace to a nonexistent requirement — is refused naming the rule; a valid plan passes.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7552f50ef7e12fc78b0a71bd0a3b4b2517788d6f903239b98d55abe0e343fe30",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:06Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

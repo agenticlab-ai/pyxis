@@ -1,0 +1,9 @@
+# Permit the CI sandbox launcher to create user namespaces on Ubuntu hosts.
+# Bubblewrap then enforces the task's mount policy and drops capabilities.
+# Host prerequisite: https://documentation.ubuntu.com/security/security-features/privilege-restriction/apparmor/
+abi <abi/4.0>,
+include <tunables/global>
+
+profile bwrap /usr/bin/bwrap flags=(unconfined) {
+  userns,
+}

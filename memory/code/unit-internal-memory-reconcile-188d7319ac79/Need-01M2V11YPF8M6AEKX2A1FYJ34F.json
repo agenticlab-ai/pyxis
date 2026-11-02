@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Need-01M2V11YPF8M6AEKX2A1FYJ34F",
+  "kind": "Need",
+  "subject": "code/unit-internal-memory-reconcile-188d7319ac79",
+  "family": "anchor",
+  "statement": "Production code unit internal/memory/reconcile exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at internal/memory/reconcile.",
+  "tags": [
+    "code:internal/memory/reconcile",
+    "reconcile:anchor"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Need-01M2P3KBSD5WAXHR2B5Q9HDT7T"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:49:21Z",
+  "provenance": {
+    "source": "code:internal/memory/reconcile",
+    "commit": "bceecbfb978b1ead28d567eaa9d5cfd93263225c",
+    "note": "offline code inventory 522d33cee6a46e49a366a6e329054d6a864d77c4629b317b5f77a2f505aa6e76"
+  }
+}

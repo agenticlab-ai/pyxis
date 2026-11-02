@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQWNY80SZ6PK871VWQ3",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "UB-9",
+  "statement": "If a required pass fails or exceeds its bound after bounded retry, then the system shall record the pass `review-absent`, preserve partial evidence, and keep the aggregate non-accepting until the complete exact-revision pass set succeeds",
+  "intent": "the failed pass, bound, retry count, and non-accepting aggregate",
+  "fit_criterion": "injected backend error and timeout never yield acceptance or an unbounded wait; a recovered full-set rerun converges",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7460825dbe2f1be9138a59c8b27fab0dd911c1ae60c88b284f7e99c0ea34953c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.62Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

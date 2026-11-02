@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQYN229YVNM3X2E4W1BJ",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "EVT-2",
+  "statement": "init_refused fires when any pre-write refusal",
+  "intent": "check: string, remedy_present: bool, route_present: bool",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7f6b6b93d1c53fafba8813bba237f89097a83707ff6ee0b87d3c050a7f8b78f7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.837Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

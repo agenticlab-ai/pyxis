@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWWD73SQ2H1GVD88DQM",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:e2e-verification/FR-10 · prd:e2e-verification/FR-18 · prd:e2e-verification/FR-19 · prd:e2e-verification/FR-20 · prd:e2e-verification/FR-21 · prd:e2e-verification/FR-22 · prd:e2e-verification/FR-23 · prd:e2e-verification/FR-24 · prd:e2e-verification/FR-25 · prd:e2e-verification/FR-26 · prd:e2e-verification/FR-3 · prd:e2e-verification/FR-7 · prd:e2e-verification/FR-9 · prd:e2e-verification/NFR-1 · prd:e2e-verification/NFR-2 · prd:e2e-verification/NFR-3 · prd:e2e-verification/NFR-4 · prd:e2e-verification/NFR-5 · prd:e2e-verification/NR-1 · prd:e2e-verification/NR-2 · prd:e2e-verification/NR-3 · prd:e2e-verification/UB-1 · prd:e2e-verification/UB-2 · prd:e2e-verification/UB-3 · prd:e2e-verification/UB-4 · prd:e2e-verification/UB-5 · prd:e2e-verification/UB-7 · prd:e2e-verification/UB-8 · prd:e2e-verification/UB-9.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:c0e92b035008945c7a680f55db892690be2f5f4a1e831350bb069e76a776ed35",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPSE8DQV6D4QV1EK64F8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCPF86XAGB8PG9HQSYQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCT2DNEZHT3K6QJSTRW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCV0XKJ4VE38M1S11VY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCXX3J27CFWKJT10636"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCYQCNKJDVWD88DGEV5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQCZESBYP8EA08SYCNAA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD06F7PJWSR4XW2Q892"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD11X8NJ1PAMR97YFXN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD2DPE190Q49BYR0MXJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD33X4S138B1H2YA6C8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD4AXT4Z7A2EMVFTYXM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD7F003ZSESNR0QMXYT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQD87VFG0M9K2JH9GNYM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDM2VSMGKTBT7BJ5G91"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDNPR3D2DFCD6N0AB35"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDPCG11AGE8P3C5841N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDQW8XRC4BWJAAGT319"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDRSY1N8NH55YNYBDDX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDS6E740W362PF8TW79"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDTCAV9W054T3TCK8AB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDVTBYP6QH6NZ6C6AG6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDW7J3BFSXMQY28ZK26"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDXW6SZ5D1S0BEWRHNV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDY452QCAT9ET3QVMA9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQDZD001FCPYNSEXFDWW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQE05MSACDG8PSAY0TXW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQE15JAE8YZTHXKSB5VV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQE2RCKQVPE52ZWRB6EQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQE37RC9GZGH99FCBHWF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.804Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header c0e92b035008945c7a680f55db892690be2f5f4a1e831350bb069e76a776ed35"
+  }
+}

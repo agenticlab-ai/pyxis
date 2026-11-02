@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2VP2CBAZC3MB1E57AGTQ20Z",
+  "kind": "Learning",
+  "subject": "learning/forgejo-native-task-code-and-lifecycle-identity",
+  "statement": "Native Forgejo task projection, execution, pull-request state, feedback, lane handling, and wake processing carry provider/server/repository-qualified identities through the existing ports. Native issue and comment identifiers survive reloads, while claims and task-session state separate identical numeric IDs from different hosts.",
+  "intent": "Run the same feature-development lifecycle on either forge without misrouting work, reusing another repository's claim, duplicating feedback, or treating stale checks as proof for the current head.",
+  "rationale": "Forgejo's GitHub-like object shapes do not make owner/name plus issue number globally unique. Native dependencies, label filters, draft proposals, reviews, effective branch rules, and failed Actions logs require provider-specific interpretation and readback. Unknown capability, malformed state, moving heads, partial reads, or unavailable identity must remain errors rather than manufacture a green or completed result.",
+  "fit_criterion": "The shared task-capsule conformance suite passes on Forgejo; concurrent hierarchy updates retain both edges; equal issue numbers on distinct task hosts receive separate claims; comments and review feedback retain native identities; checks and failed logs select the latest evidence at the exact proposal head; durable wake resolution uses the selected host and exact object.",
+  "learned_from": [
+    "internal/plangate/tracker/forgejo_test.go#TestForgejoAdapterRunsSharedCapsuleConformance",
+    "internal/plangate/tracker/forgejo_test.go#TestForgejoConcurrentChildAdditionsPreserveBothEdges",
+    "internal/executor/lease/scope_test.go#TestClaimsSeparateIdenticalNumbersAcrossTaskHosts",
+    "internal/executor/tasksession/feedback_ids_test.go#TestFeedbackNativeIDsSurviveReloadAndDisambiguateTimestamps",
+    "internal/adapters/codehost/forgejo/host_test.go#TestRequiredChecksUseEffectiveRuleAndLatestStatuses",
+    "internal/adapters/codehost/forgejo/logs_test.go#TestFailedLogsUseLatestWorkflowRunAtExactHead",
+    "internal/wake/host/binding_test.go#TestNativeWakeUsesDurableHostAndExactObjects"
+  ],
+  "tags": [
+    "forgejo",
+    "task-identity",
+    "native-lifecycle",
+    "code:cmd/implement-now",
+    "code:cmd/lane",
+    "code:cmd/plangate",
+    "code:internal/executor/dispatch",
+    "code:internal/adapters/codehost/forgejo",
+    "code:internal/adapters/tracker/forgejo",
+    "code:internal/executor/lease",
+    "code:internal/executor/port",
+    "code:internal/executor/tasksession",
+    "code:internal/executor/trackeridentity",
+    "code:internal/lane/githost",
+    "code:internal/plangate/tracker",
+    "code:internal/wake/host"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2BV7FFJ7AMVPPD4SJ85BJ9D"
+    }
+  ],
+  "issuer": "cursor-agent",
+  "created_at": "2026-09-19T01:56:35Z",
+  "provenance": {
+    "source": "internal/adapters/codehost/forgejo/host.go",
+    "note": "Retarget code associations after the port-axis adapter move."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4FEXPDE0V50G7QEEVT",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "NFR-3",
+  "statement": "The sweep shall emit both a human-readable face and a machine-readable face of the same findings.",
+  "intent": "Operability",
+  "fit_criterion": "on the fixture corpus both faces carry the same findings; the machine face parses under its published schema",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:feee80eb4816a668a7792ff18c958302e236cbc35c65b48e26571970f3b9983a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.023Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

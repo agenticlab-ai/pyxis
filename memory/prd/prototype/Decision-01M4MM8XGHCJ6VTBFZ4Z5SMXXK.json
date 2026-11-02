@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGHCJ6VTBFZ4Z5SMXXK",
+  "kind": "Decision",
+  "subject": "prd/prototype",
+  "family": "R1",
+  "statement": "The prototype grows into a second implementation and costs more than it teaches",
+  "rationale": "The step builds the smallest version that exercises the idea and stops at the first working path or the first obstacle understood; the build is bounded in time; its findings record states what was left out",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

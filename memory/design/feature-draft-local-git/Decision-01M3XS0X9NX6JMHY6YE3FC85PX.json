@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0X9NX6JMHY6YE3FC85PX",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.2.1",
+  "statement": "The existing reopen design and solution shape continue to govern\ntheir unchanged seed, compile-delta, numbering, and layout rules\n(`design:feature-draft-reopen`; `doc:docs/solution-shapes/feature-draft-v1.md`).\nTheir references to the predecessor's retained compiler and lifecycle remain\ncompatible; this successor changes the approval medium and its declared trust\nboundary. It does not restore the source repository's disabled legacy document\nchecks. Existing frozen-document authoring rules still apply.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:1ccf3218de4958473cd3eb19b98a4a1b7cee0df5e1b0f7b89142869fb8755318",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:23Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 116-122 in section 3.2; sha256:1ccf3218de4958473cd3eb19b98a4a1b7cee0df5e1b0f7b89142869fb8755318"
+  }
+}

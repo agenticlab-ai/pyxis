@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/worker-transcript-metrics#R5",
+  "feature": "worker-transcript-metrics",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

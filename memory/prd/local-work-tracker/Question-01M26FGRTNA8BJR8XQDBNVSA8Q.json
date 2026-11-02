@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRTNA8BJR8XQDBNVSA8Q",
+  "kind": "Question",
+  "subject": "prd/local-work-tracker",
+  "family": "Q2",
+  "statement": "The identifier scheme — global monotonic vs per-repo, and how it stays stable and collision-free under parallel creation across nodes (AP-23)",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Core-store phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:7a7db513d95974c05e26bcc5eb4f50ea80f71d8bf4aa73895c75cdb81d13c6d1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.733Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

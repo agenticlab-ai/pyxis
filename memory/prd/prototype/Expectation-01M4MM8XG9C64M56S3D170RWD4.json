@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M4MM8XG9C64M56S3D170RWD4",
+  "kind": "Expectation",
+  "subject": "prd/prototype",
+  "family": "DOD-1",
+  "statement": "A prototype asked for with an idea is built in its own worktree and yields a findings record before the PRD is authored",
+  "intent": "FR-1, FR-2, FR-3",
+  "fit_criterion": "On the first feature drafted with a prototype request: its findings record, the prototype's branch and head commit, and the draft history showing the record ahead of PRD content",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

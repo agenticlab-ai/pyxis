@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26C6TP9YRNTEHXDCCTGMXRQ",
+  "kind": "Learning",
+  "subject": "learning/machine-shell-startup",
+  "statement": "Machine installation embeds the shared and harness-specific zsh launchers from script/startup, outside the .pyxis repository payload. install.sh delegates to the verified binary's shell install command. Complete content-addressed assets are prepared before one managed zshrc source block is updated, preserving user content, rc symlinks, permissions, and existing setups when installation fails.",
+  "intent": "Make interactive worktree startup available after installation without a source checkout or a manual source line.",
+  "rationale": "The existing verified Go binary can own machine configuration while the repository payload stays focused on repository tooling. Capability detection keeps older pinned binaries installable, and the wrappers preserve native headless, help/version, resume, and utility behavior.",
+  "learned_from": [
+    "script/startup/installer_test.go",
+    "internal/shellinit/install_test.go",
+    "The complete local code gate passed, including race tests and the 90 percent per-file coverage check."
+  ],
+  "tags": [
+    "code:cmd/pyxis",
+    "code:install.sh",
+    "code:internal/shellinit"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T19:20:12Z",
+  "provenance": {
+    "source": "script/startup/README.md",
+    "commit": "718afc6d0194aeafe2dfcdeb424f32839131d279",
+    "note": "Installed-flow tests use the actual binary, install.sh, Git, and zsh; launch recorders observe the final harness boundary without submitting model prompts."
+  }
+}

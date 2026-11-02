@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQQ1J78G1AFZH5JKYDC",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.2.1",
+  "statement": "`adopt` is a **layer over converge, not a rewrite of it** (`design-brainstorm:existing-repo-onboarding-tech-design#D-1` · `#ALT-1`). It consumes converge's ownership-class classification as the single source of tree-vs-manifest truth — one classifier, so no second list drifts (AP-11; the failure `docs/observability/incidents.md#I5` records) — and owns the adoption-specific concerns on top: the plan, the collision resolutions, the epoch, and undo. converge's steady-state `Run` is not overloaded with one-time adoption semantics (NR-2). The **adoption plan** is one durable, closed-schema receipt (`adoption-plan/v1`) in the engine's system namespace, rendered human-readable for review, with a lifecycle draft (`adopt`) → applied (`apply` stamps it with the undo-data) → consumed (`undo`) — the agreement and the receipt are one artifact (`#D-2`). The **install-epoch** is the already-present `epoch.commit`, consumed by the tree-local gates through a single `git diff --name-only epoch..HEAD` filter at scan-set construction, so grandfathering costs O(changed-set), never O(corpus) (`#D-3`). Collisions resolve **additive-adjacent where an honest mechanism exists** — hook chaining, a distinct workflow filename — and **by named instruction where none does** (an existing root convention file); nothing the repo owns is rewritten (`#D-4`; NG-3). **Undo removes the installation and preserves post-adoption work**, failing closed on operator-edited artifacts (`brainstorm:existing-repo-onboarding#D-11`). A reader who stops here knows the shape: **one classifier, one durable plan-receipt, an epoch-scoped gate, and a reversible install that never touches what the repo owns.**",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:27f193ce82caa77f635379e32e2e9b0a867fec38d6b3d7824151d7bf220b51e4",
+    "source-design:c7cc38bb76acd3c8c1fd815af93bd17c9784b6970dc137db8217b9211f7dea5b",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQGAZMPMP7NKJ3947Q9G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.591Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 46-46 in section 2; sha256:27f193ce82caa77f635379e32e2e9b0a867fec38d6b3d7824151d7bf220b51e4"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ03FK72ART2A2FRAZX6",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NR-2",
+  "statement": "`check-immutable`'s governed set and its file-granular mechanic",
+  "rationale": "the Argus classes stay disjoint from it; the structure arm is a separate check (argus-artifacts §3.8)",
+  "fit_criterion": "`check-immutable`'s governed set is unchanged in code; the structure arm is a distinct verb; a legal ledger/contract append raises zero `check-immutable` defects",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6c092c8dd43d83d6180b34a898e3d8f19c53fbe5f2b810005c73db6bc7d4e622",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.859Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

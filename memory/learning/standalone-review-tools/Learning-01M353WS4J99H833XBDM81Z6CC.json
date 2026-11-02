@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Learning-01M353WS4J99H833XBDM81Z6CC",
+  "kind": "Learning",
+  "subject": "learning/standalone-review-tools",
+  "statement": "The Go plan viewer and confirm-time feedback capture remain independently usable after the browser annotation runtime is removed. Plan rendering uses .pyxis/scratch and the pinned Mermaid browser bundle. The feedback command, resolver shim, and adapter retain the stable doc-review ledger identity for confirmed review comments; Codex transcript analysis does not depend on the removed skill or scripts.",
+  "intent": "Preserve independent diagram rendering, feedback records, and transcript measurements while removing the browser runtime and its prompts.",
+  "rationale": "Mermaid has a live Go renderer consumer, and the generic feedback writer has a standalone CLI; neither is an exclusive dependency of the retired annotation UI.",
+  "fit_criterion": "Plan-renderer tests verify the independent diagram bundle, feedback-capture tests preserve ledger semantics, and Codex adapter tests use current independent skill examples.",
+  "tags": [
+    "code:.pyxis/scripts/feedback-capture-resolve.sh",
+    "code:cmd/feedback-capture",
+    "code:cmd/plangate",
+    "code:internal/docgate/feedback/adapters/docreview",
+    "code:internal/adapters/spend/codex",
+    "code:internal/plangate/render"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-22T17:51:21Z",
+  "provenance": {
+    "source": "internal/plangate/render/render.go",
+    "note": "Records which review tooling has independent consumers after Lavish removal."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M4MM8XGXJXXR65FDHXA42Y3F",
+  "kind": "Question",
+  "subject": "prd/prototype",
+  "family": "P-1",
+  "statement": "The contract leaves a prototype's build to whichever session asked for it, so Pyxis never chooses the harness and model and a repository cannot set them. No requirement lets the operator control what executes a prototype.",
+  "intent": "Operator, in review of the prepared lock on pull request 1547, 2026-10-10.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

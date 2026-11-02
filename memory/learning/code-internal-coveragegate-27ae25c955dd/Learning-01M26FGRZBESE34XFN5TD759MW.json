@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGRZBESE34XFN5TD759MW",
+  "kind": "Learning",
+  "subject": "learning/code-internal-coveragegate-27ae25c955dd",
+  "statement": "Package coveragegate measures repository-wide Go statement coverage and applies a deterministic minimum.",
+  "intent": "Preserve the implemented responsibility of internal/coveragegate in durable software memory.",
+  "rationale": "Source-code audit found production code without a dedicated semantic memory record.",
+  "fit_criterion": "Offline reconciliation finds active semantic memory explicitly covering code unit internal/coveragegate.",
+  "learned_from": [
+    "offline-reconciliation:0daf48dabae40160f2f3bc950cc567f640b5d914"
+  ],
+  "tags": [
+    "code:internal/coveragegate",
+    "ownership:unresolved",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGPFNXCGFYX04335AFGT9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.883Z",
+  "provenance": {
+    "source": "code:internal/coveragegate",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "offline semantic backfill from internal/coveragegate/profile.go; code unit fba5e6ee896b3f7cece0f305bd9b7b8e44621ea51f15235de4084a17741fa3d4"
+  }
+}

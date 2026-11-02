@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWTGV470ENNX7NMP4BY",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-20",
+  "statement": "Where a repository holds recognized stack marker files (the ecosystem defaults' marker set — one detection source) and no verification manifest, the codegate seed verb shall write a closed-schema-valid template manifest declaring the detected stack — verb commands filled from the ecosystem defaults where real defaults exist, and as named to-be-edited placeholders otherwise — for the operator to own and edit; the harness's runtime reading is unchanged (FR-5).",
+  "rationale": "the authoring aid that closes the fresh-operand gap while the manifest stays declared, human-owned data",
+  "fit_criterion": "on manifest-less fixtures per supported stack, seed writes a manifest that closed-parses (FR-5's parser), declares the marker-matched stack, carries real defaults where the ecosystem ships them and named placeholders otherwise; the harness consumes the seeded manifest identically to a hand-authored one",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1dff2660980c1390022f378f1cdcd46483d049f718d458ef85ab47cbf514067c",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.778Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

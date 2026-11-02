@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPSTN25MK92GFAGE1YD",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "EVT-3",
+  "statement": "task_rollup_written fires when a task rollup is committed; it serves the J1/J3 reads and feeds no completeness metric, since those count processes rather than rollups",
+  "intent": "task_id: string, process_count: int, duration_ms: int, incomplete_figures: int",
+  "fit_criterion": "—",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:443ffc3bbc297a26b716c17bdf9b83b3532b6156c0935d762c6296e5d4d7647d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.609Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

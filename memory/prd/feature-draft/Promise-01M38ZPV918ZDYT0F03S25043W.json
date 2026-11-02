@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZPV918ZDYT0F03S25043W",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "NR-4",
+  "statement": "Memory integrity checks keep refusing edited or deleted records, dangling relations, invalid evidence, and widened debt for every feature, and keep refusing unauthorized design coverage for features that are not draft-born",
+  "rationale": "Relaxing document authority must not weaken integrity (brainstorm:feature-draft#P-1)",
+  "fit_criterion": "The existing memory packet, reconciliation, and evidence fixtures keep their verdicts; the native-serves scenario outside a draft-born feature is still refused",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e26404220c5512429e1f404cd15de2c61bcc9d851a4a53b620d3c377acf123a9",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:10Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

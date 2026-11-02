@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M7V0CX0T0WYXCFVC1G3D8",
+  "kind": "Decision",
+  "subject": "design/design-brainstorm-record-model",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:tech-design-brainstorm/FR-11 · prd:tech-design-brainstorm/FR-12 · prd:tech-design-brainstorm/FR-13 · prd:tech-design-brainstorm/FR-14 · prd:tech-design-brainstorm/FR-2 · prd:tech-design-brainstorm/FR-7 · prd:tech-design-brainstorm/FR-8 · prd:tech-design-brainstorm/NR-2.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGRWRGMWRBE1A8P9PW8NY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJD7JAV18YZ9JM0MZKW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJE2DJS9BW1SAVCN64W"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJF5B76KT009WFYA487"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJGHM1V5NNHS0JS2NT9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJM5VKVDC9BW7XCTDWE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJS6QHYC31D9YKTA780"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRJT6922BCJE7M8QFSQW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRKAJKXD4GT01TC7QVFT"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQRWSTA3WXKR9HA3174WR"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:15:30Z",
+  "provenance": {
+    "source": "docs/tech-design/design-brainstorm-record-model.md",
+    "note": "projected from exact design header 88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49"
+  }
+}

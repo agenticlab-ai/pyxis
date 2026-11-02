@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVYGSBNR41X1VNSK8VN",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "ABUSE-5",
+  "statement": "implementing agent or misconfigured host — vector: never invokes the harness, or fabricates a \"green\" claim without a verdict artifact",
+  "intent": "the bar is bypassed wholesale",
+  "fit_criterion": "honestly residual in v1: absence is visible **to the human lane** reviewing the proposal (the verdict artifact is the evidence; none attached = not verified); the future AUTO lane merges on required-checks-green and would not notice — until WR-5 lands, the AUTO class ratification must exclude harness-hosted task proposals or verdict presence must join the floor (the recorded interim guard); the unbypassable point is the remote gate (WR-5)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b7716dbf4e08b3ab10f91d3d126830cbe5058ce8b9c1312aae27aea4eb49b6cd",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.75Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPZVWT3GZRYCXJFTBP7Q",
+  "kind": "Need",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "J3",
+  "statement": "When a PR contains an Argus-authored diff, I want have CI refuse the PR if that Argus-authored diff touches the authority contract, a governance doc, or a file outside the drive's declared scope, so I can catch a boundary violation that slipped past the desk hook, at the unbypassable merge boundary, without blocking a human's own PR to those paths",
+  "rationale": "brainstorm:argus-boundary-enforcement#D-4, #D-5",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4f8d18a102170ce9f138738b92870f3e9264b89a43d9e5f0584972dbc960cc3c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.851Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

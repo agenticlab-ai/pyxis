@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95HRHV1D9WJXYE5WZQS",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-9",
+  "statement": "When a claimed job performs repository work, the executor shall provide that attempt a private independent checkout for edits, tests, and publication.",
+  "rationale": "Preserve active and concurrent work",
+  "fit_criterion": "Every winning attempt receives separate work and Git metadata; fixtures preserve enrolled source/Git state and other attempts' checkouts, allow only prescribed ignored diagnostic writes, and constrain the agent to its own workdir",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

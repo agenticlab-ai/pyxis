@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7S30NY8N6YK064N6XM",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-15",
+  "statement": "A `currency-disposition/v1` record shall be a closed, versioned, committed datum covering exactly one stale edge and declaring: unique disposition id; author principal; edge kind `design_dependency` or `requirement_service`; feature and subject design; superseded target; one current live replacement target; a non-empty exact old-to-new binding mapping; conformance-evidence references; subject, old target, replacement target, cited-binding, mapping-set, and policy fingerprints; and one typed reference to a separate closed approval attestation. The projection shall compute a canonical disposition-record fingerprint without self-reference. The attestation shall bind that disposition id and computed fingerprint, exact edge, mapping-set digest, `compatible` verdict, explicit complete-scope and no-known-contradiction assertions, authenticated human reviewer principal distinct from the author, approval-authority policy id and fingerprint, and evidence reference. Wildcard, range, whole-document, empty, and multi-edge claims are forbidden.",
+  "rationale": "the independent human review is the authority for which predecessor bindings were actually consumed; the gate validates that exact judgment rather than pretending the whole-document `Builds-on` edge already exposes a machine completeness oracle",
+  "fit_criterion": "schema fixtures accept both complete variants and reject every unknown key, missing field, unknown enum, empty/multi-edge/wildcard/range/document-level mapping, absent live replacement, non-human or author-equal reviewer, non-compatible verdict, false scope assertions, or separate attestation not bound to the exact disposition/edge/mapping/policy fingerprints; fingerprint fixtures prove canonical non-self-referential reproduction",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:758515adebb48fae9fec6ec78a35050c39066dbee03f52520661caae6b71c47a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.105Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQ7WHPHZSCKN39H209X7D",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-4",
+  "statement": "If If a change to a locked version's parts is proposed outside a reopen, then the system shall refuse the change, naming the reopen path",
+  "intent": "the refusal with the reopen remedy",
+  "fit_criterion": "Every in-place edit fixture on a locked part is refused; the locked bytes are unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:65ec69c4590ec90aec52cb13da2e700f3ed574c2f89244acd58202b400c43b6e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:23Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3Z91TM1Z1TWXX8J39BQSCBS",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive-failure-local-git",
+  "family": "decision.2.1",
+  "statement": "The feature drive has one deterministic `FailureDisposition(trigger, observed state) → disposition` predicate whose closed rows are §3.1. A disposition is durable aggregate state, not log prose: it names the blocked/transition state, removes or preserves routing as specified, records exact evidence and one user remedy, and may clear only after §3.2's positive recovery precondition is observed through the predecessor's reconciler.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:db25ecffa76e497701f1d23804aea29c5b63fbca2865f2df3539f2dd41a0e4a2",
+    "source-design:ca491c29498b1e43b162309593e93a5c48d3c429430a1289c10396d9d6b601f0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3Z8Q2V461EN2E00K91BWQMD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T21:41:45Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-failure-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive-failure-local-git.md lines 44-44 in section 2; sha256:db25ecffa76e497701f1d23804aea29c5b63fbca2865f2df3539f2dd41a0e4a2"
+  }
+}

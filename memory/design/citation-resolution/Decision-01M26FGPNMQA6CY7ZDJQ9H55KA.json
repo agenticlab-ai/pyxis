@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNMQA6CY7ZDJQ9H55KA",
+  "kind": "Decision",
+  "subject": "design/citation-resolution",
+  "family": "decision.2.1",
+  "statement": "A base-free docgate check, **`check-citations`**, resolves every typed cross-document citation in the governed documents to a real anchor. A citation whose target is **present — live *or* superseded** — resolves and passes; a citation whose target is **absent from its resolvable universe** is a **dangling** defect and fails the gate. It covers the grammars nothing else checks (`prd:`, `brainstorm:`, `design-brainstorm:`, `corpus:`, `design:#anchor`), reusing `check-links`'s fenced-block and inline-code exemption so a citation shown as an example never fires. It **leaves `gen-index`'s `stale-serves` flag intact**: a design serving a *superseded* requirement stays the deliberate non-fatal signal (tech-design-conventions §3.2, the §12 stale-cite posture) — that target still resolves, so `check-citations` passes it; the new fatal class is the *never-existed* target the flag never distinguished.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:61f2d5ed09ff1136e0181b7ef17fb3be8c039bc44e12924d8851473a4e9ce798",
+    "source-design:cac96f4349b575c0b7e5483f1b23687d97b9d1d441813ff5abdb486509ae55bd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMQMAA0XZ6N51V68PN3W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.524Z",
+  "provenance": {
+    "source": "docs/tech-design/citation-resolution.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/citation-resolution.md lines 24-24 in section 2; sha256:61f2d5ed09ff1136e0181b7ef17fb3be8c039bc44e12924d8851473a4e9ce798"
+  }
+}

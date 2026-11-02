@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ02911RAVWSB8ZA0AP4",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NR-1",
+  "statement": "Every existing docgate check's verdict on every non-authority-contract tree",
+  "rationale": "additive composition must not change any unrelated verdict (the argus-ledger-lint precedent)",
+  "fit_criterion": "`docgate gate` output on the pre-existing corpus is byte-identical with and without the structure arm; the arm reports only on the authority contract",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17362dba5a758efec449f60aa9e6d08103987cc0982be8a608022d1e63d669de",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.858Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

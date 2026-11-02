@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4MA0DEMQ8S9964749K",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "UB-3",
+  "statement": "If If one detector faults mid-pass, then the system shall complete the remaining detectors and report the faulted one as a named defect alongside their findings",
+  "intent": "partial results + the named fault",
+  "fit_criterion": "fault-injected fixture: remaining detectors' findings present, the fault named, findings-present-or-fault exit code honest",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8ab51b7ec94fb6ff9dc2c99391c3d0a7f76eb8c2c3d0e30055b33fd1639bd8d2",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.028Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCR1Y5YY8YW78P3N5AG",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "NR-3",
+  "statement": "the stage-1/3 skill surfaces and record classes are untouched",
+  "rationale": "sibling programs stay decoupled (— #D-4's posture)",
+  "fit_criterion": "zero diff under the four authoring-skill surfaces",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:00d60b9321ffca298d6bcc1321242d87a9aa5ae8f3aacc44bfe1a52a3fe0eee3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.288Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

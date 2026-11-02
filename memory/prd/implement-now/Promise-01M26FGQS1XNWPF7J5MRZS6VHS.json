@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS1XNWPF7J5MRZS6VHS",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-1",
+  "statement": "When invoked on a frozen plan, the executor shall build the ready frontier of tasks that are open, dependency-unblocked, and unclaimed.",
+  "rationale": "the DAG defines what may run",
+  "fit_criterion": "given a fixture plan+tracker state, the computed frontier equals the open∧unblocked∧unclaimed set",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:92cc265e2952041ecb3f3481039cb587b98d74f40c7169c439889d5368d0c317",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.657Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

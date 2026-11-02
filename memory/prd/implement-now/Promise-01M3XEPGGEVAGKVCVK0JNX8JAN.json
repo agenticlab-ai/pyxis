@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XEPGGEVAGKVCVK0JNX8JAN",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-54",
+  "statement": "For a direct issue proposal, the host shall publish a schema-versioned execution summary correlated to the admitted contract, attempts, and exact proposal revision, containing observed harness/model/effort by execution role, available token totals, attempt counts, and command-start-to-terminal elapsed time with that boundary stated. Every unavailable counter, including tool counts and intake-session usage when unobservable, shall be explicitly unavailable; unknown shall never be rendered as zero.",
+  "rationale": "the host can report a useful baseline without reconstructing harness transcripts or inventing full end-to-end attribution",
+  "fit_criterion": "GitHub and Forgejo summaries round-trip closed typed JSON and readable text; observed and unavailable counter fixtures remain distinct; launch choices match captured execution rather than declared preferences; elapsed-time boundary is explicit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7c6d9f126814d164ffdca92aaa20f74e66b9736e30fc723ad1424a73984a6f37",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:41:57Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

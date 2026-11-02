@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9FNZW36DA11FA5P883",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "FR-5",
+  "statement": "When code implementing the solution-shape exists, the system shall treat the code as the source of truth and retire the shape as non-authoritative.",
+  "rationale": "the shape is throwaway-until-code",
+  "fit_criterion": "after implementation the shape carries a superseded-by-code marker; a \"current shape\" query resolves to the code, not the shape doc",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8792f56be82dc6a816fba6ac510b684594c6bd2d9308320b8ff0de5716fed9ae",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.159Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

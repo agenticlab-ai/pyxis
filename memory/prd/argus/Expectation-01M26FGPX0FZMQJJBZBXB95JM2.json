@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPX0FZMQJJBZBXB95JM2",
+  "kind": "Expectation",
+  "subject": "prd/argus",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "every Must FR row in §5.1",
+  "fit_criterion": "run links + artifact anchors",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:32eaa0f2cc0d4125552a55baf7db296c59a3f9c8a84e59932dc0dec02ec3211d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.76Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/docgate#R4",
+  "feature": "docgate",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

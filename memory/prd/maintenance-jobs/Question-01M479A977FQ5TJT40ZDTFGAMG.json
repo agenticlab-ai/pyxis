@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M479A977FQ5TJT40ZDTFGAMG",
+  "kind": "Question",
+  "subject": "prd/maintenance-jobs",
+  "family": "P-3",
+  "statement": "Fetching published policy without switching the operator checkout does not by itself exclude writes to its shared refs or Git metadata.",
+  "intent": "Operator review, 2026-10-05.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

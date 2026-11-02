@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZR2E195R3FV3GAJ7ME30P",
+  "kind": "Document",
+  "subject": "design/e2e-verification-skills",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/e2e-verification-skills.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:8a66a81db44c78a079c640b9daa99518f9a3f37d599c9981344d6568564f6b2b"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCPXSRFQ15BZGM1QY2YXY"
+    }
+  ],
+  "body_sha256": "8a66a81db44c78a079c640b9daa99518f9a3f37d599c9981344d6568564f6b2b",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:07Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills.md",
+    "note": "offline reconciliation"
+  }
+}

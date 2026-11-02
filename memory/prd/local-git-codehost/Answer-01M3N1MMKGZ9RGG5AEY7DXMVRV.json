@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMKGZ9RGG5AEY7DXMVRV",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Doctor, receipts, and clone verification must disclose that limit alongside the already accepted unauthenticated approver and absent host-level protection.",
+  "intent": "operator",
+  "rationale": "Without a separate origin-ID protocol, the configured-origin check does not authenticate an independent repository identity.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMKFHKYJ369AQ0C3JZPC"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

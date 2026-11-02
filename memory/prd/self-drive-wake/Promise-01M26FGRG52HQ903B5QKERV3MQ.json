@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRG52HQ903B5QKERV3MQ",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "FR-2",
+  "statement": "When a batch state request covers N proposals on a metered medium, the medium's adapter shall satisfy it in a number of API round trips bounded by a constant independent of N (within the medium's page size).",
+  "rationale": "per-item reads are an unfixable N+1 on metered media (measured §2.4)",
+  "fit_criterion": "the conformance kit asserts round-trip count: a 50-proposal batch on the GitHub adapter completes in ≤ 2 API calls",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ffcc7ca9364592d6610697039234d5cd190df948009b7ee1c74ef5daca2b939d",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.397Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

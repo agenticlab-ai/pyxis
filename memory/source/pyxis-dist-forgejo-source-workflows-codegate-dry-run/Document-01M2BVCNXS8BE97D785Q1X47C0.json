@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M2BVCNXS8BE97D785Q1X47C0",
+  "kind": "Document",
+  "subject": "source/pyxis-dist-forgejo-source-workflows-codegate-dry-run",
+  "family": "document",
+  "statement": "Captured authored source: .pyxis/dist/forgejo-source-workflows/codegate-dry-run.yml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/dist",
+    "reconcile:source",
+    "sha256:f7a359d3ff9b752d5c2bc7e8544cfe5475da742883bd3ec568957b1186162112"
+  ],
+  "body_sha256": "f7a359d3ff9b752d5c2bc7e8544cfe5475da742883bd3ec568957b1186162112",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-12T22:21:44Z",
+  "provenance": {
+    "source": ".pyxis/dist/forgejo-source-workflows/codegate-dry-run.yml",
+    "commit": "067526282a293b04bf7fded3384bf50fc4458616",
+    "note": "offline reconciliation"
+  }
+}

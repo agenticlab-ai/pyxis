@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XF9M05CPC3RZF7WH3P57Q3",
+  "kind": "Decision",
+  "subject": "design/implement-now-issue-entry",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implement-now/DOD-37 · prd:implement-now/FR-50 · prd:implement-now/FR-51 · prd:implement-now/FR-52 · prd:implement-now/FR-53 · prd:implement-now/FR-54 · prd:implement-now/FR-55 · prd:implement-now/NR-11 · prd:implement-now/UB-22.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:b7b976439bd14fc92df09aafb7a30dd4eac98640eff1656b69e53d86dd1b0a47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XEZCMZGWEHV57ACCAJV1SD"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3XEP8AQJMV5G1SQQZXYMF8S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPAFT6K8YSWF4JFHHM0K3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPBYNPN4QDDX5S1T9PK9C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPDE3ZM1ZGJAEDKCAPEYH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPEZ1C841FK52EC7DT8ZF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPGGEVAGKVCVK0JNX8JAN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPJ0PQKZ27XEKWME3SX45"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPKGHTHTPRCG59447VZS3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3XEPMZM58DEQNEHBW6TPMN5"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:52:23Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-issue-entry.md",
+    "note": "projected from exact design header b7b976439bd14fc92df09aafb7a30dd4eac98640eff1656b69e53d86dd1b0a47"
+  }
+}

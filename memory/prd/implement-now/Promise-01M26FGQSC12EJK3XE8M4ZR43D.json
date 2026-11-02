@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQSC12EJK3XE8M4ZR43D",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-20",
+  "statement": "The executor's stage-8 binding shall be introduced by moving the pipeline map's stage-8 row and re-pinning the binding through the sanctioned hook, not by a second pipeline.",
+  "rationale": "the operational binding lives on the map",
+  "fit_criterion": "the pipeline map's stage-8 row states the native-local binding; the change rides this feature's implementation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f85289583f58e55916911e6e373eba16b128c3c0823e811a2c566c27e0859199",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.668Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

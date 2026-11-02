@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Policy-01M3NGA5ST6A43SYV7H3T2YTE8",
+  "kind": "Policy",
+  "subject": "governance/semantic-memory",
+  "family": "capture",
+  "statement": "Capture semantic memory only when it preserves information that cannot be reliably reconstructed from code and adds value to future work. Preserve requirements, intended constraints, decision reasons and rejected alternatives, attributed rulings, and reusable lessons. Derive architecture as implemented, file existence, package responsibilities, hashes, and test inventories from source. Code changes alone do not require new semantic records; reuse still-applicable knowledge and retain required verification evidence in its owning workflow.",
+  "intent": "Give future agents the reasons and constraints needed to make sound decisions without filling their context with reconstructable implementation details.",
+  "rationale": "The operator narrowed semantic memory to valuable knowledge beyond code after reviewing generated file-existence Needs and package-summary Learnings. Mandatory per-unit capture and per-digest issuance produced bookkeeping with no new meaning.",
+  "alternatives_rejected": [
+    "Require a fresh semantic record for every changed production unit: rejected because byte changes do not establish a change of intent or a new lesson.",
+    "Delete historical bookkeeping records: rejected because immutable evidence and existing references must remain readable; exclude recognized derived records from ordinary retrieval instead."
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T02:36:14Z",
+  "provenance": {
+    "source": "conversation:semantic-memory-capture-2026-09-28",
+    "note": "Operator ruling: information that could not be extracted from the code and can add value for the future; architecture as implemented is derivable. Operator then instructed: update the memory system accordingly to improve the quality of semantic memory and avoid capturing useless information. Authored by Codex from that instruction."
+  }
+}

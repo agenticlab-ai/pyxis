@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2RR3DP23J4M8ZHQWM5M4740",
+  "kind": "Decision",
+  "subject": "design/installer-without-browser-review",
+  "family": "decision.3.3.1",
+  "statement": "Remove the vendored browser annotation runtime, its package manifests and lockfile, driver/setup/Markdown-rendering scripts, version pin, and dependency archive. Init performs no npm installation, and init, repair, doctor, and release preflight do not require Node.js or npm. No replacement review server or new dependency manager is introduced.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3aef6a2ee90cfe3386da1c1f683761b0ce0b834730b7398f1dde76faf16824fc",
+    "source-design:1bcba05df51b0d507a7280b8033d96f03c02ac052961f2c817e102dd89a5f225",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2RR0WVGBW67H4JZHZ1X4Y9A"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T22:34:23Z",
+  "provenance": {
+    "source": "docs/tech-design/installer-without-browser-review.md",
+    "note": "exact Decision evidence at docs/tech-design/installer-without-browser-review.md lines 59-59 in section 3.3; sha256:3aef6a2ee90cfe3386da1c1f683761b0ce0b834730b7398f1dde76faf16824fc"
+  }
+}

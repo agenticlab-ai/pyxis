@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4A1VD0GW4JZ9ZXCSVGAW",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-15",
+  "statement": "When a retirement result carries a failure or judgment signal, the system shall retain one bounded immutable Git event linked to the action, pinned inputs, selector or authority identity, refusal, and disposition before a later action for that identity can be accepted; exact clean rechecks shall create no event.",
+  "rationale": "Destructive failures are improvement evidence under AP-28.",
+  "fit_criterion": "Every non-clean fixture produces exactly one schema-valid event in retained history before repair acceptance; exact clean retries produce zero events; duplicate and mutable event fixtures refuse.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c92fb55b9004be35fa380c65a313aa9bea3505be066bacf01fa576d7b7621c3a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:13Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

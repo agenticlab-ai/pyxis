@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFQESF8WX6ABVJWKFPP",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-4",
+  "statement": "throttle_deferred fires when the write guard decides to delay a write — emitted at the deferral decision, before the wait, and again at each re-evaluation",
+  "intent": "ledger: enum(identity, host-umbrella) — which of the two windows blocked; queue_depth: int — writers concurrently inside the guard for that ledger in the emitting process, counted from guard entry to guard exit and sampled at the emission instant; deferred_ms: int — the *projected* wait, never elapsed; reset_at: timestamp — when the blocking window refills",
+  "fit_criterion": "M3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:365fb336e6c7ee148ad65923d14e3d14aa620d676c81e00bb0b0dc1d72647041",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.383Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSP7YJN61MT14WANSNY",
+  "kind": "Decision",
+  "subject": "design/maintenance-sweep-v1",
+  "family": "decision.2.1",
+  "statement": "The maintenance sweep is **its own thin binary over one focused package** — never a verb on the document gate or the wake tick — running **one bounded, read-only pass**: load the single closed-parse **policy file** (waivers and bounds; reason-required entries), evaluate the **three detectors** as pure functions of the evaluated state (prd §4.1), and emit **one deterministic report** — a new closed machine-face schema on stdout, a human face on stderr, exit codes clean/findings/fault — then exit, nothing resident. Concrete schemas, paths, and the CLI grammar live in the paired non-frozen shape `shape:maintenance-sweep-v1`; this document carries only the decisions and invariants. (design-brainstorm:maintenance-sweep-tech-design#D-1, #D-2, #D-3)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:cb96503a5a64b66f0d6d4871a6b56c007f0ad165513ef92f47883dd4ebcf1afd",
+    "source-design:b49c1108056cb6e27cfdc8f53a55107ec21c42fdc8b75770b06d9bdfc579d2e8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSY3QQRTC6KH6V2VMXAT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.654Z",
+  "provenance": {
+    "source": "docs/tech-design/maintenance-sweep-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/maintenance-sweep-v1.md lines 44-44 in section 2; sha256:cb96503a5a64b66f0d6d4871a6b56c007f0ad165513ef92f47883dd4ebcf1afd"
+  }
+}

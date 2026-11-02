@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRM7QQNM290A2C53R6PG",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "FR-13",
+  "statement": "When the subject is a superseding design, the reviewer shall additionally verify the supersession's integrity: valid content carried forward or explicitly dropped with reason, the contradiction genuine (versus a Builds-on misdeclared), and no live dependent stranded (via the index's edges) — as findings, never as relitigation.",
+  "rationale": "supersession is where the class changes (— #D-1)",
+  "fit_criterion": "the supersession fixtures catch a stranded A-row, a false contradiction, and a silent drop; the predecessor's content is never itself a finding target",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ce2512bd003c5a04fe2145c595fa9b9f1d3606febba9c4467673ce6b7a154a67",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.527Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

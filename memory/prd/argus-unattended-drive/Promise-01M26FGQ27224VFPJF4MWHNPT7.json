@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ27224VFPJF4MWHNPT7",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-2",
+  "statement": "When a proposal is classified, the lane classifier shall evaluate the deterministic floor first — versioned policy data naming the hard-gated classes (control-plane paths, governance documents, the risk policy and activation state themselves, the Argus authority contract and agent home) — and shall route HUMAN on any floor hit.",
+  "rationale": "the non-negotiable floor; self-unlock and governance classes never ride AUTO",
+  "fit_criterion": "100% of floor-hit fixtures route HUMAN regardless of any other signal; the floor derives from the diff's paths and classes, never from author-declared metadata",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:554e66c8ad859784cb66708fa51b9b91eaf898cb8aaf6a080d53bfc2e43f7668",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.927Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

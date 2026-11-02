@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQENWHH39KC6GEDVG1ET",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "the newcomer-proxy protocol: a fresh session (or human on a fresh machine) with zero pyxis context on an onboarded repo answers (a) \"what does this factory offer?\", (b) one real problem's entry command, (c) \"what do I do first?\" — via `/help` alone",
+  "fit_criterion": "3 of 3, unaided, at the checkpoint: before the first outside distribution; re-run at the first outside install",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4e3493db0edf9fc30443b51da4b2c00fc203fd62a697285abab47bd245fa7b96",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.325Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3D4VDY9F4YQEKTBT45HJZK7",
+  "kind": "Document",
+  "subject": "policy/model-routing",
+  "family": "policy",
+  "statement": "Captured authored source: .pyxis/model-routing.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/model-routing.md",
+    "reconcile:source",
+    "sha256:7c3b37a6ee68d55b3c08c2efbae301bf5093fe5995f94d4103d1c6f1cb60493a"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3B3MZV0DT6NQ0RFCWEPJVWQ"
+    }
+  ],
+  "body_sha256": "7c3b37a6ee68d55b3c08c2efbae301bf5093fe5995f94d4103d1c6f1cb60493a",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-25T20:42:01Z",
+  "provenance": {
+    "source": ".pyxis/model-routing.md",
+    "note": "offline reconciliation"
+  }
+}

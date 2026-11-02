@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRFTVQMZ1J12S5951RR0",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "EVT-7",
+  "statement": "`review_recovery_decision` fires when the driver evaluates one pending review obligation for a durable round",
+  "intent": "`drive_round_id:string`, `review_obligation_id:string`, `task_id:string`, `proposal_ref:string`, `revision:string`, `action:enum{invoke_review_only,defer,exhausted,rearmed}`, `provider_attempt_count:int`, `recovery_epoch:string`, `recovery_count:int`, `recovery_bound:int`, `last_failure_class:enum{artifact_unverified,artifact_untrusted,infrastructure}?`, `evidence_ref:string?`, `reason:string?`; `evidence_ref` is required for exhausted/rearmed",
+  "fit_criterion": "M1, FR-15, FR-16, UB-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:40e00f371abc3b7ee548f4feaa67ea37072861d9a11200bc66fb1f87b015c65b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.386Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

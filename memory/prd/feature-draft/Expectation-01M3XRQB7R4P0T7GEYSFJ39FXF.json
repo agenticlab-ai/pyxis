@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3XRQB7R4P0T7GEYSFJ39FXF",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-16",
+  "statement": "Every active non-regression row passes its scoped fit criterion",
+  "intent": "active NR-1 through NR-7",
+  "fit_criterion": "hosted conformance, existing-feature and memory-integrity fixtures, enabled-document-pipeline regressions, and source-bypass inspection",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:34c3bdc65c602d4faee91fcebc4493d8e0183c0aff33ef67152ea5c78732a95d",
+    "source:prd-ledger"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M38ZJDYFT35MP9NGPAR1YXP3"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:10Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

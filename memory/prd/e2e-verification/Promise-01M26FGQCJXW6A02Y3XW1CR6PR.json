@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCJXW6A02Y3XW1CR6PR",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "EVT-1",
+  "statement": "e2e_line_step fires when an e2e-design / e2e-review / e2e-plan invocation completes",
+  "intent": "feature_id: string, step: enum(design·review·plan), outcome: enum(produced·refused·accepted), tokens: int",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4646e159d4cb1f0c32ddf62552bfbeac65a4a66009bbda739b17daa727b9b52e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.258Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

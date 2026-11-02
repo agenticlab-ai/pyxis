@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMRHWQV6ZE7PTTPE2B7",
+  "kind": "Decision",
+  "subject": "design/argus-artifacts",
+  "family": "decision.3.2.1",
+  "statement": "`docs/problems/\u003cslug\u003e/delivery.md` holds: a closed header (slug only — status is derived, per DINV-6), a **derived state block** (**status: `open | parked | delivered`** — the one closed enum, derived from the journal — plus stage position against the pipeline map, open items, park state with ages; regenerated on every append, never cited, never authoritative), and the **`E-n` journal** — append-only typed entries from a **closed type vocabulary**: `stage-entered` · `ruling-recorded` · `assumption-recorded` · `item-materialized` · `brief-emitted` · `answer-received` · `proposal-disposed` · `reconciliation` · `bump-issued` · `delivered`. Every entry carries: type, date, **principal identity + authority-contract version** (FR-12), a gist body, and — wherever the act touched anything external — the **external-effect identity** (tracker item id, PR number, commit) that lets a resuming session verify the effect against its goal object before any redo. Type-specific fields bind the PRD's typed event properties: a `brief-emitted` entry carries `class: override | deadlock`; the `delivered` entry carries the touch count, breaking count, and spend fields (adapter-honest, `unavailable` legal); an `answer-received` entry cites its `A-n`. The journal closes with exactly one `delivered` entry, recorded only after mainline-content verification, and the file freezes; post-close overturns never touch it — the overturning artifact carries `overturns delivery:\u003cslug\u003e#E-n`, discoverable by reverse citation (design-brainstorm:argus-tech-design#D-8).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:167aeb0f5e9dd1f4e9350174944e3e56edfb58fbdc4ea0643ebc5c8d58be59f0",
+    "source-design:8dc33c9a39f15198ce210bc812c53d02af3d5705440dc4da5b52660419b4df20",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKS61Z7RSCT74WBKMMRN"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.496Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-artifacts.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-artifacts.md lines 36-36 in section 3.2; sha256:167aeb0f5e9dd1f4e9350174944e3e56edfb58fbdc4ea0643ebc5c8d58be59f0"
+  }
+}

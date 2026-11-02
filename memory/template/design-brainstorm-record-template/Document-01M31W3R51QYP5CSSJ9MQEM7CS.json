@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3R51QYP5CSSJ9MQEM7CS",
+  "kind": "Document",
+  "subject": "template/design-brainstorm-record-template",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/design-brainstorm-record-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:698aed773064104c8adf3278e11eae951ecee56001e51ff067af2f456e2272d0"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBASSVDP7EW0C15TQZSVX"
+    }
+  ],
+  "body_sha256": "698aed773064104c8adf3278e11eae951ecee56001e51ff067af2f456e2272d0",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:38Z",
+  "provenance": {
+    "source": ".pyxis/templates/design-brainstorm-record-template.md",
+    "note": "offline reconciliation"
+  }
+}

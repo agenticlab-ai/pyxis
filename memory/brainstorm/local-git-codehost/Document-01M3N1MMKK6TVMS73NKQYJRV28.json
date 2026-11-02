@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3N1MMKK6TVMS73NKQYJRV28",
+  "kind": "Document",
+  "subject": "brainstorm/local-git-codehost",
+  "family": "record-001",
+  "statement": "Draft brainstorm/001.md",
+  "body_sha256": "a5429b63cddc669ab95e7c33ca2963caa7406f5bda97efcd13595f6876b733d6",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQW8BC18P9XD0S6935SM",
+  "kind": "Expectation",
+  "subject": "prd/implementation-verification",
+  "family": "DOD-9",
+  "statement": "Unwanted-behavior rows demonstrated",
+  "intent": "§5.2 rows",
+  "fit_criterion": "failure-injection fixture results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d2cbf1335d786937b192e8fd82650f716b9874250322e931729b2e84fc020462",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.76Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "cursor-native-routing-decode-fixtures/v1",
+  "adapter_generation": "cursor-agent-native-routing-v3",
+  "cases": [
+    {"role":"implementation","native_profile_id":"implementation-composer-2-5","model_parameter":"composer-2.5","decoded_effort":"medium","controls":{"force":true,"output_format":"json","print":true},"provides":{"capability":"standard","deliberation":"standard","context":"large","assurance":"ordinary"}},
+    {"role":"implementation","native_profile_id":"implementation-grok-4-5-medium","model_parameter":"cursor-grok-4.5-medium","decoded_effort":"medium","controls":{"force":true,"output_format":"json","print":true},"provides":{"capability":"strong","deliberation":"deep","context":"extended","assurance":"elevated"}},
+    {"role":"implementation","native_profile_id":"implementation-grok-4-5-high","model_parameter":"cursor-grok-4.5-high","decoded_effort":"high","controls":{"force":true,"output_format":"json","print":true},"provides":{"capability":"frontier","deliberation":"maximum","context":"extended","assurance":"critical"}},
+    {"role":"review","native_profile_id":"review-composer-2-5","model_parameter":"composer-2.5","decoded_effort":"medium","controls":{"force":true,"output_format":"json","print":true,"sandbox":"disabled","trust":true},"provides":{"capability":"economy","deliberation":"light","context":"standard","assurance":"ordinary"}},
+    {"role":"review","native_profile_id":"review-grok-4-5-medium","model_parameter":"cursor-grok-4.5-medium","decoded_effort":"medium","controls":{"force":true,"output_format":"json","print":true,"sandbox":"disabled","trust":true},"provides":{"capability":"strong","deliberation":"deep","context":"extended","assurance":"elevated"}},
+    {"role":"review","native_profile_id":"review-grok-4-5-high","model_parameter":"cursor-grok-4.5-high","decoded_effort":"high","controls":{"force":true,"output_format":"json","print":true,"sandbox":"disabled","trust":true},"provides":{"capability":"frontier","deliberation":"maximum","context":"extended","assurance":"critical"}}
+  ]
+}

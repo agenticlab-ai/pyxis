@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3Z39YTC5034DN4ERCCC6HE4",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NR-7",
+  "statement": "Hosted human merge authority and required review/check/current-base enforcement remain unchanged; explicit local-git task and final landings use only the operator procedure in FR-31/FR-32 with the accepted unauthenticated shared-account limit.",
+  "rationale": "The drive gains no approval or landing operation; the local route must not claim guarantees its origin cannot enforce.",
+  "fit_criterion": "Hosted authorization and ruleset fixtures retain prior outcomes. Local fixtures prove generation/evidence/ref consistency and zero drive-invoked landings, while status and landing output state that the operator and agent share an OS account that can directly edit hooks and refs. No independent approval signing key, copied-origin identity, or host-level mainline protection is required. Existing signed execution ownership, task claims, e2e runner authentication, and manual-human candidate attestations retain their contracts; a local receipt cannot stand in for them. No implicit local fallback or re-enabling of Pyxis source's disabled legacy document checks occurs.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e0043661a4e9a9305ed07402ac59c69c74ed5cebb2ea3007d13af66e0a4b3ce",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGQM5KBCK3F9P930K4MHD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T20:01:20Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "note": "compiled from sha256:21ff1c7841e4754da06e4ae3723f73de7456d4a66d1c82592f3ed8e357ae6153"
+  }
+}

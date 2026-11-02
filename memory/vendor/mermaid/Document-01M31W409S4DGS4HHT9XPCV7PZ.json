@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W409S4DGS4HHT9XPCV7PZ",
+  "kind": "Document",
+  "subject": "vendor/mermaid",
+  "family": "readme",
+  "statement": "Captured authored source: .pyxis/vendor/mermaid/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/vendor",
+    "reconcile:source",
+    "sha256:ef1d8df2956eb315d80f1127bb9387725e46081fb2e34ee7388d692a705ad171"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBC9XTPX0X1R215JEBQFS"
+    }
+  ],
+  "body_sha256": "ef1d8df2956eb315d80f1127bb9387725e46081fb2e34ee7388d692a705ad171",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:46Z",
+  "provenance": {
+    "source": ".pyxis/vendor/mermaid/README.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR63Y063VC61PHQYF6A2",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "ABUSE-3",
+  "statement": "an author trying to steer workers toward unauthorized or underpowered changes — vector: poison an approved design/PRD so charter content, assessment values, or evidence citations authorize unreviewed intent or minimize execution demand",
+  "intent": "the fleet implements unapproved scope or routes it below the scrutiny its real workload/consequence requires",
+  "fit_criterion": "FR-1 admits only approved inputs; FR-26 rejects untraceable task scope; FR-28/FR-29 require cited closed assessment and deterministic floors; EVAL-2 rejects semantically unsupported/minimizing evidence; FR-17 exposes the complete task and demand at the operator checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f09e6551954b163ac9fedff1a454369d1e3051d00820ca7cfb558630e69fea31",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.075Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

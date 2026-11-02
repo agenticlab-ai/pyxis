@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/tech-design-review#Q3",
+  "feature": "tech-design-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

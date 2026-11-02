@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQZJ38GSJWJACQD1BWHB",
+  "kind": "Promise",
+  "subject": "prd/init-hardening",
+  "family": "NFR-3",
+  "statement": "Every refusal shall keep the exit-code grammar and emit its structured event (§5.7).",
+  "intent": "Operability",
+  "fit_criterion": "refusal fixtures assert exit class + event",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9fbb579559eaf6fc9b5dd6e00f1ec019d1519a0602fe5f1001b625016812958e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.866Z",
+  "provenance": {
+    "source": "docs/prds/init-hardening/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:89acf02fc208a75769915de41f723f071560eb81f5f84dc2326c2ceb520430d9"
+  }
+}

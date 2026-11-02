@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRX4TDAJKCH6Z84W70HQ",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implement-now/ABUSE-1 · prd:implement-now/ABUSE-2 · prd:implement-now/ABUSE-3 · prd:implement-now/ABUSE-4 · prd:implement-now/ABUSE-5 · prd:implement-now/ABUSE-6 · prd:implement-now/EVAL-3 · prd:implement-now/EVT-1 · prd:implement-now/EVT-10 · prd:implement-now/EVT-11 · prd:implement-now/EVT-12 · prd:implement-now/EVT-15 · prd:implement-now/EVT-16 · prd:implement-now/EVT-17 · prd:implement-now/EVT-3 · prd:implement-now/EVT-4 · prd:implement-now/EVT-7 · prd:implement-now/EVT-8 · prd:implement-now/EVT-9 · prd:implement-now/FR-1 · prd:implement-now/FR-10 · prd:implement-now/FR-11 · prd:implement-now/FR-13 · prd:implement-now/FR-14 · prd:implement-now/FR-15 · prd:implement-now/FR-16 · prd:implement-now/FR-17 · prd:implement-now/FR-18 · prd:implement-now/FR-19 · prd:implement-now/FR-2 · prd:implement-now/FR-20 · prd:implement-now/FR-21 · prd:implement-now/FR-22 · prd:implement-now/FR-23 · prd:implement-now/FR-24 · prd:implement-now/FR-25 · prd:implement-now/FR-26 · prd:implement-now/FR-28 · prd:implement-now/FR-29 · prd:implement-now/FR-3 · prd:implement-now/FR-30 · prd:implement-now/FR-31 · prd:implement-now/FR-32 · prd:implement-now/FR-35 · prd:implement-now/FR-4 · prd:implement-now/FR-40 · prd:implement-now/FR-41 · prd:implement-now/FR-42 · prd:implement-now/FR-43 · prd:implement-now/FR-44 · prd:implement-now/FR-45 · prd:implement-now/FR-46 · prd:implement-now/FR-47 · prd:implement-now/FR-48 · prd:implement-now/FR-49 · prd:implement-now/FR-5 · prd:implement-now/FR-7 · prd:implement-now/FR-8 · prd:implement-now/FR-9 · prd:implement-now/NFR-1 · prd:implement-now/NFR-2 · prd:implement-now/NFR-3 · prd:implement-now/NFR-4 · prd:implement-now/NFR-5 · prd:implement-now/NFR-6 · prd:implement-now/NFR-7 · prd:implement-now/NFR-9 · prd:implement-now/NR-1 · prd:implement-now/NR-10 · prd:implement-now/NR-2 · prd:implement-now/NR-3 · prd:implement-now/NR-4 · prd:implement-now/NR-5 · prd:implement-now/NR-6 · prd:implement-now/NR-8 · prd:implement-now/UB-1 · prd:implement-now/UB-11 · prd:implement-now/UB-12 · prd:implement-now/UB-13 · prd:implement-now/UB-14 · prd:implement-now/UB-15 · prd:implement-now/UB-16 · prd:implement-now/UB-17 · prd:implement-now/UB-18 · prd:implement-now/UB-2 · prd:implement-now/UB-20 · prd:implement-now/UB-21 · prd:implement-now/UB-3 · prd:implement-now/UB-4 · prd:implement-now/UB-5 · prd:implement-now/UB-6 · prd:implement-now/UB-7 · prd:implement-now/UB-8 · prd:implement-now/UB-9 · prd:planner-driven-model-routing/FR-17 · prd:planner-driven-model-routing/NR-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGQRMD4NV9W0H423Z7MY3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQX51JGVBEZN76V4E6H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQYCQJ0NCAMN5TRHZ40"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQQZXDVFZGNDY0JMDA4J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQR0NPT9KE28APQKC56D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQR19964MCWN7P4GFSRM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQR2JERXVPZ2ZVZJZFNJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRN1Z7EDWV4JNNAYHH7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRP24WHQRT825DKYSP4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRQSA91YXEATT7YAPE8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRR1AZZWK57SFGT6TG4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRS9G3TDH84VMZV9BCD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRT3VR88ADHJREYN0E1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRVMXFY034R8VYQ7TA2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRWJCY7N5TV8NGJNP3K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRX0VD7T9WYCJ3YT8ZV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRYVM0VJ14NM3K3G8HC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQRZ3SY0DA8ZS65S2G3C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS0X6YFKQBH6M4A6Q6Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS1XNWPF7J5MRZS6VHS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS2J5HCJRWN3NPEEZWP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS38A2TZE8KVB3VK195"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS4H8ZYPF243X5T1DJC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS5EH6Y4AACFD2XCEPC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS664414174N1HS3AT7"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS7FE8TRNFFW80HSS60"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS81EZZY4WF97H8AANZ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQS9GJ8KXCE0MEVFZEQY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSAQZGNHVN16289ZWYB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSBFBQXXFKQ380ZBTH5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSC12EJK3XE8M4ZR43D"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSDERQHNKWBKEX8W31P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSENBYTA8YFM1V9MZ5K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSFVCY4CSGY0E6W4P0R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSGS5RVGKV09NYHQ7ZN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSH72JYQW9P38T5DQ9K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSJTCM9MVZFA9KVKKF4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSKNH2Q82TPHFPX4TYP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSM8BGEYVTZPJ4XCMR9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSNHZGRW5TVHDRW3DHM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSPXEK1CCQDZEZWJEGY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSQN745TGSY945ZHNFW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSRW4PFTGY5PBX2QCAM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSSD1G64TMCVN9Q1F4B"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSTC5WNAXSXRNYGB5CH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSV1XBRHJJ04NKT2ATJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSWVV12CBQFK40X0RR0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSXN0DRDDQR7X53GH1J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSYA7WP8B6Y31A7RZ3F"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSZF66KQYEVDH5A9PR5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT0079DABVXAVKPHWDK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT1TZ2H26GZZJ76TZ1X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT2JMBECVB8MAWRDVWB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT3EBN713QFACGXRDF1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT4KEFM8NFFDPNZ2Q3Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT535AF55H3SG3A3TRC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT6Z4B1SERDYPMVTDQK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT7QQZAE1A3V74Y9AXS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQT8PCY4BGRJ2CGFW5ER"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTQ1YX9Z1E96WJG625F"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTRCGMGQYXEWBYN11F4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTS07ZMPDEDAKDNK2XP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTTHWC51A705RDX21N4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTVGQ58C93BGDVQ607P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTW6HYMWN737060Y143"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTX89SWYP488FF76YF9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTYGWS5H2B8QC85MPQN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTZ2GFK9DPYSJKGYTK5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV0JQ81S3141580WVZB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV12XSH4E9QF7AZ2BWM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV2DDBAN3JJCMCS4DCH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV32JDAMHT4WSHX22C8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV4359J43SB9JZDZ9T3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV5PYYP01C6SB0FHHJR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV6HTVRXV8KFYSYXDEB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV7N18GMDADRYTDB00A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV8XMQ6R9VV0XFRYYWA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV9CJPBAEZ5ZM4WMVJF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVA1385RGCA195023DE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVBTBS0VJJ9D02G6M5Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVCME3QR6Y5KTZSRSHK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVD9XMVDMK9BBN0PZ6G"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVE88QWNCBT75GGA0GR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVFMTY154AMSPQHYPRH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVG8QZPG8RCKBYXBC1Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVHSQ93C34H9XE32WK4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVJ3QZRRFQ0NYJG2A86"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVKFQGVN7R8RAJPKSB5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVM758NSB4HC7CF7059"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVNR7J6P8SFS0GPF9PD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVPGDBAV8AXEXGK5M49"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVQVZB95Z9J3W93ZNQA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVRMWW99DQFGAE08C1V"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVS0VTZ34PF8S5BGPZ6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9JMPMYB2P6BJFYAH5X"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAVJN2CW4A47AEHRY3V"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.812Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0"
+  }
+}

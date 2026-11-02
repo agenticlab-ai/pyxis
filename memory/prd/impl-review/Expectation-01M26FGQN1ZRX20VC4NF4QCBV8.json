@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQN1ZRX20VC4NF4QCBV8",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-9",
+  "statement": "Living rollups updated; the report/verdict/finding-schema + glossary terms (proposal boundary, impl-review) land in the introducing PR",
+  "intent": "repo convention; FND-28",
+  "fit_criterion": "the PRs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:72f0f4cfdaf477923ae06593252d009c3edd1292dabbbc6bba17a591ceff990f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.529Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

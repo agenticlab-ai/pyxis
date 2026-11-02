@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRD7E0C08X1RPPK9P54D",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "EVT-1",
+  "statement": "gate_capture_line fires when a §0 gate signs",
+  "intent": "minutes: int · items: list of {gist: string, routing: in-§0 \\",
+  "fit_criterion": "the sign-off record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a04f69740d331ad5273bfba2215407ac21443bb10082315a24d8f94bc1dc0d84",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.303Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQF7DTTCYEZ3CEQHTP0P",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-3",
+  "statement": "When apply is run against an approved plan, the system shall apply exactly that plan, changing no path the plan does not name.",
+  "rationale": "apply is bound to the reviewed plan (D-6)",
+  "fit_criterion": "applying the fixture plan produces the intended tree; no path absent from the plan changes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:63a6ec96b1548b8ff33bd189dc44822c9d386569202688ad60cd7160164cf229",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.343Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

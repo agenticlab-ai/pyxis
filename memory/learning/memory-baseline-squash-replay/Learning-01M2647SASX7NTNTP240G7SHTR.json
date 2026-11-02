@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2647SASX7NTNTP240G7SHTR",
+  "kind": "Learning",
+  "subject": "learning/memory-baseline-squash-replay",
+  "statement": "A squash merge can carry an unchanged reconciliation baseline beside source or code changes absent from its original inventory. Baseline replay accepts an explicit locally available snapshot only when both its baseline bytes and all four input hashes equal the baseline already trusted at the base. Allowances remain monotonic, and source retirement and semantic code transitions are checked from both the original snapshot and the actual trusted base.",
+  "intent": "Repair stale baseline provenance without accepting new debt or overlooking intervening changes.",
+  "rationale": "The initial baseline from 3ed3ffb1 was reproduced exactly, while current main could not reproduce its source and code identities. Replay separates proof of those original inputs from authority at the current base. Current candidate identities and findings still have to match its tightened baseline exactly.",
+  "fit_criterion": "Git-based regressions cover a non-ancestor snapshot after squash, rejection of changed baseline bytes and inputs, missing snapshots, added debt, source retirement before and after the trusted base, and intervening code changes without fresh semantic memory.",
+  "tags": [
+    "code:internal/memory/cli"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-10T17:00:55Z",
+  "provenance": {
+    "source": "internal/memory/cli/baseline_replay.go",
+    "commit": "bae567f1d728a5062d35e2451caf7db363ea9c71",
+    "note": "Recorded while repairing the reproduced debt-ratchet failure in PR 1171."
+  }
+}

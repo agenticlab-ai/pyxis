@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMHH8BQ2D9ZVE6ANYFV0",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "FR-7",
+  "statement": "When an implementation proposal lands locally, Pyxis shall require an exact-head review receipt naming its workflow-derived target ref and verify that ref's landing result.",
+  "rationale": "Delivery checkpoint for feature-integration branches as well as mainline",
+  "fit_criterion": "Missing, stale, or proposal-chosen wrong-target receipts refuse; consistent receipt lands once through Pyxis",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

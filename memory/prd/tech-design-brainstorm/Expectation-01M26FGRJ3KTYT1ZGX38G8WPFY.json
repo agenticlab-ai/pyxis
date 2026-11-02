@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRJ3KTYT1ZGX38G8WPFY",
+  "kind": "Expectation",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "DOD-7",
+  "statement": "A full session leaves the tree clean except the record path; `docgate gate` stays green",
+  "intent": "FR-15, NR-3",
+  "fit_criterion": "session-end status capture + gate output",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:29de23932ecb53c29d345708c5630fcea86f0cfbed23b07d56c7f5c9dec0bc66",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.459Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

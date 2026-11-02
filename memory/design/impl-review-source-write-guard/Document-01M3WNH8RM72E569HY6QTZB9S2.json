@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3WNH8RM72E569HY6QTZB9S2",
+  "kind": "Document",
+  "subject": "design/impl-review-source-write-guard",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/impl-review-source-write-guard.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:62b8fee86fcf83b9c7961ac80ff4626e096dfee97b2ebfd42de2c2ccd55f4fe0"
+  ],
+  "body_sha256": "62b8fee86fcf83b9c7961ac80ff4626e096dfee97b2ebfd42de2c2ccd55f4fe0",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-01T21:22:10Z",
+  "provenance": {
+    "source": "docs/tech-design/impl-review-source-write-guard.md",
+    "note": "offline reconciliation"
+  }
+}

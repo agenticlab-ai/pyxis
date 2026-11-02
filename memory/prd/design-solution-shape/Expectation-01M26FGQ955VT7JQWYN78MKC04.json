@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ955VT7JQWYN78MKC04",
+  "kind": "Expectation",
+  "subject": "prd/design-solution-shape",
+  "family": "DOD-1",
+  "statement": "All Must FRs pass their fit criteria",
+  "intent": "FR-1..6",
+  "fit_criterion": "CI + review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9ff30ea43332dc9c9e4675395348e4ce730ede57a89eb15a95ec4a5e3e526975",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.149Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

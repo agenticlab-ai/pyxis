@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR11VRQF43XG2PNPHAY6",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-7",
+  "statement": "When init runs in an empty target — a directory holding no tracked content; where no git repository exists, init shall initialize one — it shall seed the governed-document skeletons the gates require, the empty-but-valid registries and taxonomy directories, and no governing content beyond template structure and guidance.",
+  "rationale": "green-on-install without counterfeit governance; one command from nothing (D-4)",
+  "fit_criterion": "post-init docgate passes from both a bare directory and a git-initialized empty repo; seeded skeletons contain only template-derived structure/guidance (diffed against the shipped templates)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:506a55bceda8398f7488eb2094830efa3547736a846c4c4fa293676f630296f7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.913Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

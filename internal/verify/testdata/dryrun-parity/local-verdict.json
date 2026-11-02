@@ -1,0 +1,117 @@
+{
+  "run_id": "run-1784497528874716000",
+  "workspace": "/var/folders/2l/k718vvhn61j7ysc8yrcdchz80000gn/T/tmp.rhNUrsYrQh",
+  "mode": "full",
+  "state": "green-degraded",
+  "start_time": "2026-07-19T14:45:28.874716-07:00",
+  "end_time": "2026-07-19T14:45:29.569698-07:00",
+  "rungs": {
+    "0": {
+      "name": "0",
+      "order": 0,
+      "checks": {
+        "forbidden-artifacts": {
+          "check_id": "forbidden-artifacts",
+          "state": "pass",
+          "duration_ms": 0
+        },
+        "format": {
+          "check_id": "format",
+          "state": "pass",
+          "duration_ms": 13
+        },
+        "lint": {
+          "check_id": "lint",
+          "state": "pass",
+          "duration_ms": 129
+        },
+        "machinery-protection": {
+          "check_id": "machinery-protection",
+          "state": "pass",
+          "duration_ms": 0
+        },
+        "secret-scan": {
+          "check_id": "secret-scan",
+          "state": "pass",
+          "duration_ms": 0
+        }
+      },
+      "state": "pass",
+      "duration_ms": 145,
+      "skipped": false
+    },
+    "1": {
+      "name": "1",
+      "order": 1,
+      "checks": {
+        "build": {
+          "check_id": "build",
+          "state": "pass",
+          "duration_ms": 382
+        }
+      },
+      "state": "pass",
+      "duration_ms": 383,
+      "skipped": false
+    },
+    "2": {
+      "name": "2",
+      "order": 2,
+      "checks": {
+        "no-new-failures": {
+          "check_id": "no-new-failures",
+          "state": "pass",
+          "duration_ms": 130
+        }
+      },
+      "state": "pass",
+      "duration_ms": 130,
+      "skipped": false
+    },
+    "3": {
+      "name": "3",
+      "order": 3,
+      "checks": {
+        "falsification": {
+          "check_id": "falsification",
+          "state": "pass",
+          "duration_ms": 0,
+          "message": "the proposal diff has no non-test change together with an added or modified test (FR-18)",
+          "skip_reason": "not-applicable"
+        },
+        "test-delta": {
+          "check_id": "test-delta",
+          "state": "pass",
+          "duration_ms": 0
+        }
+      },
+      "state": "pass",
+      "duration_ms": 22,
+      "skipped": false
+    },
+    "4": {
+      "name": "4",
+      "order": 4,
+      "checks": {
+        "exec-probe": {
+          "check_id": "exec-probe",
+          "state": "skip",
+          "duration_ms": 0,
+          "skip_reason": "verb-absent"
+        }
+      },
+      "state": "pass",
+      "duration_ms": 0,
+      "skipped": false
+    }
+  },
+  "findings": [],
+  "bindings": {
+    "head_sha": "d8ad7c37e04d3485e11be3fb4ad60b03b91303fe",
+    "diff_base": "d8ad7c37e04d3485e11be3fb4ad60b03b91303fe",
+    "manifest_hash": "d8c8d375de899df8807b46a507ffa55da8586fc6513226113011d7dbcf9a2dde",
+    "baseline_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "codegate_version": "1.0.0-dev",
+    "git_version": "2.50.1"
+  }
+}

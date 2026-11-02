@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2VWB18DFZ1G6WEV6DNX4X45",
+  "kind": "Document",
+  "subject": "review/memory-standalone-source-retirement",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/memory-standalone-source-retirement.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:20c5ae3176e1d802d2a5d20e09d12bd316c64559def9b5c9b03566405a177c3d"
+  ],
+  "body_sha256": "20c5ae3176e1d802d2a5d20e09d12bd316c64559def9b5c9b03566405a177c3d",
+  "literal_body": true,
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T03:46:10Z",
+  "provenance": {
+    "source": "docs/reviews/memory-standalone-source-retirement.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQW113EAEB3R7348214C",
+  "kind": "Expectation",
+  "subject": "prd/implementation-verification",
+  "family": "DOD-2",
+  "statement": "The catch suite blocks all three seed families (every case) and runs as a permanent CI suite",
+  "intent": "FR-8, FR-11, FR-12; M2",
+  "fit_criterion": "catch-suite CI link (EVT-4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17003cc28662e2ca425128df3c2f0e60468234b51b04e0e97aac45a20ac6754b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.753Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

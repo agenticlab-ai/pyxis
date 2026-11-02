@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMMPGJK2M80Q1SH3Q2E",
+  "kind": "Decision",
+  "subject": "design/argus-agent-v1",
+  "family": "decision.3.5.1",
+  "statement": "the uniform delta is *the decision principal answers* — the operator, or Argus under grant, per the glossary's ruled term — landed per stage **through that stage's own evolution channel, before Argus drives that stage unmanned** (design-brainstorm:argus-tech-design#D-5):",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:752fbf07f62270c61821f81355ee183379d68510a95ddc3cf71d7c3a8faf2f8b",
+    "source-design:8819235c5a03ebc20e8a41a309d7b00947d68c83161ce5dcc77d96f870647ba0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKMWJM6XXWJY18WKM9A6"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.492Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-agent-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-agent-v1.md lines 52-52 in section 3.5; sha256:752fbf07f62270c61821f81355ee183379d68510a95ddc3cf71d7c3a8faf2f8b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS13HCCSD154QFMT8NYM2G",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.9.1",
+  "statement": "The lock reads approval through the consumer-side approval port.\nHosted mode requires the operator's authenticated approving review of the draft\npull request as code owner: stale approvals are dismissed, the latest push must\nbe approved, and admins remain bound. Explicit local-git uses the declared\nreceipt in §3.16 and operator-invoked landing in §3.17. It supplies no\nauthenticated actor or host-level mainline protection (`FR-48`, `FR-50`,\n`FR-51`). A hosted proposal adding no contract records keeps its existing merge\npolicy, including the merge lane (`design:merge-lane-v1`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:be60a5ce3cefedacff0e9a7c7bf1b66dc59c6de0063fd416c8e9864a52a66ffe",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:29Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 205-212 in section 3.9; sha256:be60a5ce3cefedacff0e9a7c7bf1b66dc59c6de0063fd416c8e9864a52a66ffe"
+  }
+}

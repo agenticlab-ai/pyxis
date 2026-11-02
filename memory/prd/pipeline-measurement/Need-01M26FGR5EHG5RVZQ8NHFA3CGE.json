@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5EHG5RVZQ8NHFA3CGE",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "G3",
+  "statement": "We believe capturing spend on all four harnesses with honest degradation instead of a uniform pretence; expected result: the number is trustworthy: measured where possible, declared-absent where not, never fabricated",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5f8fca11eff27c4a90b018764089363f23023400e8c01564e6b025b3f5a9cfbb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.054Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3N1MMK5PDPMRYZTYJAAMY60",
+  "kind": "Question",
+  "subject": "prd/local-git-codehost",
+  "family": "P-7",
+  "statement": "`implement-now` task proposals can target a feature-integration branch, so verifying only a mainline result misses the actual code landing.",
+  "intent": "GitHub code review on PR #1312, discussion 4125958223, 2026-09-28.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

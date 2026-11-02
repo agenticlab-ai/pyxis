@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWXND5ZPJ70T41QFFRB",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-5",
+  "statement": "The harness shall read verb bindings exclusively from the repo's verification manifest (closed schema — unknown keys are errors), with the shipped ecosystem defaults supplying bindings only for fields the manifest's declared stack leaves to them.",
+  "rationale": "green's definition is frozen human-confirmed data, never a runtime guess",
+  "fit_criterion": "a manifest with an unknown key fails closed-parse in fixtures; a minimal manifest on a common-stack fixture resolves the full verb set from defaults; removing the manifest yields configuration-error (UB-3), never a defaults-only run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cd40608ee275b89ad1d5b28c1212c6028a7bc48b3b07ba0bf7fd4cfb02a4cce8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.781Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

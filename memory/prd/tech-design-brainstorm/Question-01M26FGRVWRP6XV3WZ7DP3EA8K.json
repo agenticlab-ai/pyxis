@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVWRP6XV3WZ7DP3EA8K",
+  "kind": "Question",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "Q4",
+  "statement": "The relationship between the needs-more-product bounce and the future escalation-brief machinery (do they converge on one decision-brief format?)",
+  "intent": "@mdarabi",
+  "rationale": "open",
+  "fit_criterion": "nothing — WR-1 era",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:8cb2ba3c4bc0a0827808324abf64db2028fb41cb088f7e52c4bbc605db0382b6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.772Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

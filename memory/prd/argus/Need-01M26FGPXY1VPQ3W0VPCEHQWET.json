@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGPXY1VPQ3W0VPCEHQWET",
+  "kind": "Need",
+  "subject": "prd/argus",
+  "family": "G1",
+  "statement": "We believe giving the pipeline a bounded, auditable decision authority (Argus) for P1; expected result: features delivered problem-stated → released with no structural human touch",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dcd22f572ff189c58fc4a2fc9446b0243a99780f66a25e39c39ea7189df4fc81",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.79Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

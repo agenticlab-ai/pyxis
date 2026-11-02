@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5VM1VBPYC3AQEVZJCABWERM",
+  "kind": "Document",
+  "subject": "authoring/tech-design-brainstorm",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/tech-design-brainstorm.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:77d58efb8e042b0a691c3f1161c80e0456950c1bc2da3e3371e3f330024afe26"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M3C7R5GNM0AFNGXSYW3CHD5B"
+    }
+  ],
+  "body_sha256": "77d58efb8e042b0a691c3f1161c80e0456950c1bc2da3e3371e3f330024afe26",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-26T08:08:26Z",
+  "provenance": {
+    "source": ".pyxis/authoring/tech-design-brainstorm.md",
+    "note": "offline reconciliation"
+  }
+}

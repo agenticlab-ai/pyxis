@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRCA7N1RC1Q3HJB99F56",
+  "kind": "Need",
+  "subject": "prd/prd-review",
+  "family": "G2",
+  "statement": "We believe a total verdict set with structural loop-brakes, completing unmanned; expected result: full reliance on the reviewer becomes evidence-backed",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cac4eb28bc0ceecdf3aa32c4695fc3618b9f8898b68cc477ec755a96f306ef14",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.274Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

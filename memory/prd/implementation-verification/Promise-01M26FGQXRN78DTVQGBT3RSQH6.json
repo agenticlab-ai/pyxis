@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQXRN78DTVQGBT3RSQH6",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "UB-11",
+  "statement": "If the seed verb finds no recognized marker files, or markers matching multiple stacks ambiguously, then the system shall write nothing and name the hand-authoring remedy (the manifest path and the declared-stack requirement)",
+  "intent": "a named refusal carrying the authoring instruction",
+  "fit_criterion": "on an empty fixture and on a mixed-marker fixture the verb writes nothing; the remedy names the manifest path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f2c69c9de6c16a59868ceadfd48cdaa341e71325d15ae544ac9ccd5ad16c0d6a",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.808Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

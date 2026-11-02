@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461QGSEXEVK3S8V52DVRTH2",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "ABUSE-3",
+  "statement": "A session wants a quick lock — vector: post-review contract revision",
+  "intent": "stale review certifies different content",
+  "fit_criterion": "FR-16, UB-2, UB-8",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a8e6c7c680f5a8b2edf3182d7b73a0cdbfa3ac1eeff2f803c6093833c11db129",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZHZT9KSC4PK40ANZ2EH0W"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:48:28Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

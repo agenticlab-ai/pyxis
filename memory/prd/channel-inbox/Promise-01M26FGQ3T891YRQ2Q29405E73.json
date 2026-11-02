@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ3T891YRQ2Q29405E73",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "EVT-2",
+  "statement": "inbox_blocking_emitted fires when a blocking bulletin is emitted",
+  "intent": "bulletin_id: string, cleared: bool",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d00ef6844b14440c73acc7764c294217bc439bddfa892b3c46a3054670eb3875",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.978Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

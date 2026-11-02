@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "worktracker.work-item-search/v1",
+  "description": "The schema-versioned machine projection of a search result (prd:local-work-tracker/FR-11, FR-15). carina search --json validates against this golden schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "query", "count", "items"],
+  "properties": {
+    "schema": { "const": "worktracker.work-item-search/v1" },
+    "query": { "type": "string" },
+    "count": { "type": "integer", "minimum": 0 },
+    "items": { "type": "array", "items": { "type": "object" } }
+  }
+}

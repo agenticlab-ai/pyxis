@@ -1,0 +1,55 @@
+{
+  "schema_version": "1",
+  "generated_by": "docgate",
+  "tool_version": "docgate/v1",
+  "subject": "subject-alpha",
+  "as_of": "002",
+  "content_fingerprint": "sha256:c7cfa2e50b30d7fe16d9e823a79e5787331f60d2fb1408151c704c7b2090051e",
+  "entries": [
+    {
+      "entry": "001",
+      "source": "conversation",
+      "author": "@reviewer-one",
+      "timestamp": "2026-07-13T09:30:00Z",
+      "subject_anchor": "review-feedback-capture#3.1",
+      "comment": "The fold should emit a content fingerprint so a stale hand-edited projection\nreds `verify-generated` in CI.",
+      "disposition": null,
+      "source_file": "001-conversation.md"
+    },
+    {
+      "entry": "002",
+      "source": "code-host",
+      "author": "@reviewer-two",
+      "timestamp": "2026-07-13T11:05:00Z",
+      "subject_anchor": "review-feedback-capture#3.4",
+      "comment": "Consider whether the disposition set should stay closed.",
+      "disposition": {
+        "disposition": "applied",
+        "outcome": "pr:216",
+        "resolved_by": "delivery:review-feedback-capture#E-4",
+        "edit_distance": 12
+      },
+      "source_file": "002-code-host.md"
+    }
+  ],
+  "measures": {
+    "total": 2,
+    "disposed": 1,
+    "open": 1,
+    "disposition_counts": {
+      "applied": 1,
+      "became-incident": 0,
+      "declined-with-reason": 0,
+      "no-action": 0
+    },
+    "applied_decline_ratio": {
+      "applied": 1,
+      "declined": 0,
+      "value": 1
+    },
+    "edit_distance": {
+      "count": 1,
+      "sum": 12
+    }
+  }
+}

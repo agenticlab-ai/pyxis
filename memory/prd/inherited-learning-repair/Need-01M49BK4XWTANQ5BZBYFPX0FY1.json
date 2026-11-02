@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M49BK4XWTANQ5BZBYFPX0FY1",
+  "kind": "Need",
+  "subject": "prd/inherited-learning-repair",
+  "family": "G2",
+  "statement": "We believe Checking fetched target state detects existing fixes; expected result: No new repair for stale callers",
+  "fit_criterion": "M2",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

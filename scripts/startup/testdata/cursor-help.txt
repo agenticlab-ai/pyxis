@@ -1,0 +1,25 @@
+Usage: agent [options] [command] [prompt...]
+
+Commands:
+  install-shell-integration    Install
+  uninstall-shell-integration  Uninstall
+  login                        Authenticate
+  logout                       Sign out
+  mcp                          MCP configuration
+  plugin                       Plugins
+  worker [options]             Worker
+  status|whoami [options]      Status
+  models                       Models
+  bedrock                      Configure
+  about [options]              Version information
+  update                       Update
+  create-chat                  Create
+  generate-rule|rule           Rule
+  agent [prompt...]            Interactive agent
+  ls                           Sessions
+  resume                       Resume
+  help [command]               Help
+  future-headless|future-alias  Synthetic future command
+
+Options:
+  --workspace <path-or-name>   Working directory

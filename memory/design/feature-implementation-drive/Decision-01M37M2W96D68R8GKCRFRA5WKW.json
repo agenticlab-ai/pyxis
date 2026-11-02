@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M2W96D68R8GKCRFRA5WKW",
+  "kind": "Decision",
+  "subject": "design/feature-implementation-drive",
+  "family": "decision.3.1.1",
+  "statement": "`feature-drive/v1` is a closed, additive schema. Unknown fields, unknown enum values, a missing basis fingerprint, or an impossible state combination refuse before any effect. Its logical fields are:",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346",
+    "source-design:0558479e6f79c912bff9bb8012b272d1e192e70ab1b87b76843fee87d622d14c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQY4VTW6EAH5SWT9T4W"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR75RX8P5YNNW8RWJ4YNK"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:47Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-implementation-drive.md lines 59-59 in section 3.1; sha256:8ef2940abd325b6f97cce2a65f523961b4e1b98ddd0f753bb00c0a5695b84346"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQNA0MPZN463AGRVKV86",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-7",
+  "statement": "seeded correctness-critic defect caught",
+  "intent": "edge/error/concurrency/leak fixtures at standard and deep effective depth",
+  "fit_criterion": "caught on every required run; deep leg ships load-bearing defect blocking under FR-22",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0d8d35133e9a6ca4cea27ac80fdaf0290217307008a4294495e178dfc110a004",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.538Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

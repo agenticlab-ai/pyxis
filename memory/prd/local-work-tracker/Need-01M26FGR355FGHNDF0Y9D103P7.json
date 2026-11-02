@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR355FGHNDF0Y9D103P7",
+  "kind": "Need",
+  "subject": "prd/local-work-tracker",
+  "family": "M2",
+  "statement": "M2: G1",
+  "intent": "the factory-in-a-box execution loop completes end-to-end offline",
+  "fit_criterion": "zero network syscalls in the tracker path at \"first hermetic e2e green\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9ae050a0cd68ac2a1f1dd5410996327e2a5158497216268c70b9bf967ef7b50a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.981Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

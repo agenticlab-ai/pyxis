@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/plan-viewer#Q1",
+  "feature": "plan-viewer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

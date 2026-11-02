@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP25Y3K2EFHBQGC9R146C",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "J1",
+  "statement": "When design or planning shows that a requirement is wrong, missing, or unbuildable, I want get a product ruling and correct the requirement in the same working contract, so I can keep the PRD and tech spec telling one story without a separate proposal",
+  "rationale": "brainstorm:feature-draft#F-6, brainstorm:feature-draft#F-11, brainstorm:feature-draft#D-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5a4fb01eb4b8f62ae079b582357c5419a81a7dce00e40bfdb86fa5de37cbd16f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:45Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

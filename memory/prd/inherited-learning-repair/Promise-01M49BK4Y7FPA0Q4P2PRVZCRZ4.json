@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4Y7FPA0Q4P2PRVZCRZ4",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "FR-9",
+  "statement": "When a bounded scan runs, the entry shall submit supported unresolved Learnings through the agent admission path.",
+  "rationale": "Daily use",
+  "fit_criterion": "Scan plus agent callers converge; empty scan creates nothing",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

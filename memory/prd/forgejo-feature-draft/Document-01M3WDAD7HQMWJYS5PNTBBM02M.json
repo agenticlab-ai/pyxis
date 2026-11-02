@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Document-01M3WDAD7HQMWJYS5PNTBBM02M",
+  "kind": "Document",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "problems",
+  "statement": "Draft problems.md",
+  "body_sha256": "659a007b3445ba8705aa0b6281acc04f2c2cbaaebbc3c2faf515056b1e04bf21",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

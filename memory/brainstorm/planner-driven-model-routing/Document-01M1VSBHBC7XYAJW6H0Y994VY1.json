@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBHBC7XYAJW6H0Y994VY1",
+  "kind": "Document",
+  "subject": "brainstorm/planner-driven-model-routing",
+  "family": "record",
+  "statement": "Imported Pyxis source document: docs/brainstorms/planner-driven-model-routing.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/brainstorms",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "2103c931823c70b58e47c9bf85ecc70eabe7af6ccc7309703b9b3d43a44fcc02",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:19Z",
+  "provenance": {
+    "source": "docs/brainstorms/planner-driven-model-routing.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

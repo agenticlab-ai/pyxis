@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3XFB426N9YGX7074JGAQD0X",
+  "kind": "Document",
+  "subject": "skill/implement-now",
+  "family": "entry",
+  "statement": "Captured authored source: .pyxis/skills/implement-now/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:766c93d413a5a229da5266c346c03c7f976fabf98bec03728be72021c173d0de"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB974VJ9WWG6ERGMDQSBY"
+    }
+  ],
+  "body_sha256": "766c93d413a5a229da5266c346c03c7f976fabf98bec03728be72021c173d0de",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:53:12Z",
+  "provenance": {
+    "source": ".pyxis/skills/implement-now/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

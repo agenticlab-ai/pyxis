@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M4MM8XG0EWDC7AA0PSGSKDBA",
+  "kind": "Promise",
+  "subject": "prd/prototype",
+  "family": "FR-1",
+  "statement": "When the provider of an idea asks for a prototype, Pyxis shall build a prototype of the idea before the feature's PRD is authored.",
+  "rationale": "\"when we give an idea we can also prototype it first\" (brainstorm:prototype#D-5)",
+  "fit_criterion": "On a feature whose provider asked for a prototype, the draft's history shows the findings record committed before the first authored PRD content; on a feature whose provider did not ask, no prototype is built",
+  "consequence": "low",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

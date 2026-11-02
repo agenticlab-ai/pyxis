@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ2M1N992284CAEWYTZ0",
+  "kind": "Need",
+  "subject": "prd/argus-unattended-drive",
+  "family": "J2",
+  "statement": "When a plan freezes at its merge, I want have the drive project it through the planning stage's own contract and verify the tagged items, with no prompt, so I can get the fleet building at plan-freeze, not at operator convenience",
+  "rationale": "delivery:argus-ledger-lint#E-36; prd:argus FR-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a1b7963cfec1a837abd6dea3ee74e85e29b40c567780060b42e04f7fb6baa188",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.94Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

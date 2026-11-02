@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M49BK4YF87SXEFXJ0B2GPNP1",
+  "kind": "Promise",
+  "subject": "prd/inherited-learning-repair",
+  "family": "UB-4",
+  "statement": "If If a waiter is cancelled, then the system shall stop only that wait",
+  "intent": "cancelled with repair handle",
+  "fit_criterion": "Shared operation remains observable",
+  "consequence": "medium",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T19:38:34Z"
+}

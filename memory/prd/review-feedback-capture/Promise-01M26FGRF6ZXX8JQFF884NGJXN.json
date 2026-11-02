@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF6ZXX8JQFF884NGJXN",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "UB-1",
+  "statement": "If If a ledger write fails during capture, then the system shall complete the review normally and preserve the comment for retry",
+  "intent": "review unaffected; comment not lost",
+  "fit_criterion": "in N simulated write failures, zero comments lost and zero reviews blocked",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ca9812db20e69cae35c90772b0675fa2874110fc877d13a1d53e07f8a647f204",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.366Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

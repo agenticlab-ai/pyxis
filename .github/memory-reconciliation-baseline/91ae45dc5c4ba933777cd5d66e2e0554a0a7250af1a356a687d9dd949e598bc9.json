@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/channel-inbox#R3",
+  "feature": "channel-inbox",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

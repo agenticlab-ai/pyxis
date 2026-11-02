@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1PW5MGYA0M0B5KHM6H",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-10",
+  "statement": "If git user identity (user.name / user.email) is unset at every level when init must create a commit, then the system shall establish a repo-local identity from the wizard's answers, or refuse with a named remediation — never attempt a commit that will fail",
+  "intent": "identity established, or the named remediation",
+  "fit_criterion": "identity-unset fixtures either produce a working repo-local identity or the named refusal; no failed-commit state is left behind",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d3c1e29c78cfa0a3902cc38de0a37747710b3196b7476551ea61438a8ee186f3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.934Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

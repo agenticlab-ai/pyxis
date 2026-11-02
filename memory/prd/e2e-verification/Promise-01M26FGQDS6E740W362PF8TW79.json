@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDS6E740W362PF8TW79",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NR-1",
+  "statement": "The existing pipeline skills and reviewer program (tech-design-new, plan-new, implement-now, prd-review/tech-design-review/impl-review) are untouched",
+  "rationale": "the three new skills are additive; landing them must not perturb the existing pipeline",
+  "fit_criterion": "the existing skills' behavior and their tests are byte-unchanged by this feature",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c81e0466dcd35626ed30052a07a8ac1ecce21a10e5770ee7c8f89efa9e91a0b1",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.297Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

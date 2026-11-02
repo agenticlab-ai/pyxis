@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMYE6YW1T9WR2Q8QV8X6J",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-38",
+  "statement": "The system shall treat a feature draft as ready only when none of its parts depends on another feature's superseded or retired content.",
+  "rationale": "Currency, carried over from the planning gate (brainstorm:feature-draft#D-20)",
+  "fit_criterion": "A draft whose tech spec builds on another feature's replaced decision, or serves another feature's retired requirement, is refused naming the stale dependency.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f71178752f316c3189c0e67a1f1756eb396754cd593d9d05ba1ce793f320d935",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:08Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

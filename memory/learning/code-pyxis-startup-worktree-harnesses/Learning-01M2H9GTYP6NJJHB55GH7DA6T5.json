@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2H9GTYP6NJJHB55GH7DA6T5",
+  "kind": "Learning",
+  "subject": "learning/code-pyxis-startup-worktree-harnesses",
+  "statement": "Fresh interactive harness worktrees inherit an independent copy of the optional .vscode directory before the harness starts. A missing directory permits startup, a refused or failed copy stops startup and removes only the new worktree, and existing worktrees keep their own editor settings.",
+  "intent": "Preserve machine-local Cursor and VS Code settings across isolated harness sessions without copying unrelated untracked files.",
+  "rationale": "Git worktree creation restores tracked files only. .vscode is gitignored like .pyxis/config.local.yaml, so the shared Zsh launcher snapshots it with the same fail-closed copy helper: never follow inner links or overwrite a repository-controlled destination.",
+  "fit_criterion": "Real Git and terminal tests cover absent, present, and empty .vscode, recursive file copy, copied permissions, independent edits, worktree reuse, source directory symlinks copied as real directories, inner symlinks preserved, copy failure, and repository-controlled destinations. Combined launches copy both local config and .vscode.",
+  "learned_from": [
+    "script/startup/README.md",
+    "script/startup/local_config_test.go",
+    "script/startup/worktree.zsh"
+  ],
+  "tags": [
+    "code:script/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M2H9GTYP6NJJHB55GH7DA6T4"
+    }
+  ],
+  "issuer": "agent:cursor",
+  "created_at": "2026-09-15T01:05:00Z",
+  "provenance": {
+    "source": "script/startup/worktree.zsh",
+    "commit": "81e29713f8b0ecbe85973364606c39f4d460cde8"
+  }
+}

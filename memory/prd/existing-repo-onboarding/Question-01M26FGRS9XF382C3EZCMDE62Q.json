@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRS9XF382C3EZCMDE62Q",
+  "kind": "Question",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "Q1",
+  "statement": "The mechanism for honouring the epoch inside tree-local gates (per-file unchanged-since-epoch test, caching)",
+  "intent": "technical design",
+  "rationale": "open — brainstorm:existing-repo-onboarding#P-1",
+  "fit_criterion": "design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:97d6c1e5ec4de536d31adbb7d367aef48bc00b8432c5e143d7e5ac8ac4e9ceab",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.689Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

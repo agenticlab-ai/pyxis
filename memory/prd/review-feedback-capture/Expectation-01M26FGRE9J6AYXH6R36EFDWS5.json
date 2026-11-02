@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRE9J6AYXH6R36EFDWS5",
+  "kind": "Expectation",
+  "subject": "prd/review-feedback-capture",
+  "family": "DOD-3",
+  "statement": "Closability: every captured entry reaches a typed disposition or a flagged pending state (M1)",
+  "intent": "FR-3, UB-3, UB-5",
+  "fit_criterion": "ledger inspection + test run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:aa519ec959c24dd5b41240ee94e9bb6690a1d974ea1769313631742d8af52428",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.337Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

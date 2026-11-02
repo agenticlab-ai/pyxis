@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJM3HR5KW5DRK9MBQN5",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-3",
+  "statement": "A local approval receipt is a versioned record of a declared operator review. It includes protocol version, proposal identity and kind, the current proposal record's full OID and monotonic event sequence, operation (`draft-lock`, `task-merge`, or `feature-final-merge`), branch, exact full head SHA, fully qualified target ref and its existing old full SHA, readiness digest or exact review/evidence ref, OID, and digest where applicable, and a unique request nonce. A draft lock names `refs/heads/\u003cconfigured mainline branch\u003e`, derived from `cfg.Branch` as in D-2; an implementation proposal names its actual feature-integration or mainline target. The normal Pyxis route refuses a missing receipt, replay for another proposal on the configured origin, moved head, changed proposal record or sequence, changed target ref or SHA, or changed digest. A revision from `H1` to `H2` and back to `H1` still has a new sequence and record OID, so the old `H1` receipt cannot authorize it. The record cannot authenticate who wrote the receipt or independently identify an origin because the operator waived an independent signing key and shares an OS account with the agent.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHD5E7B2FNSY2HDF1AF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHE97SP927A414491VA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHF077V2E29G9RPY63J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHG5QYJWDTZGY9P1Q3H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHQ72AFMRJVA4DV5PEA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHR1AAEM75D6MZ8DG8A"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

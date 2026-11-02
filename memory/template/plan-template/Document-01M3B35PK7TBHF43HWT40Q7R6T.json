@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3B35PK7TBHF43HWT40Q7R6T",
+  "kind": "Document",
+  "subject": "template/plan-template",
+  "family": "template",
+  "statement": "Captured authored source: .pyxis/templates/plan-template.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/templates",
+    "reconcile:source",
+    "sha256:1f6d2bd062d3e60b93a8ab7175819615b3f3d8b493f6ccb5f8ac39dc1c93cd4d"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBBDJVBMJM5E51D8T4YQV"
+    }
+  ],
+  "body_sha256": "1f6d2bd062d3e60b93a8ab7175819615b3f3d8b493f6ccb5f8ac39dc1c93cd4d",
+  "literal_body": true,
+  "issuer": "agent:native-routing",
+  "created_at": "2026-09-25T01:34:12Z",
+  "provenance": {
+    "source": ".pyxis/templates/plan-template.md",
+    "note": "offline reconciliation"
+  }
+}

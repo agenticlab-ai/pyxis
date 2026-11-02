@@ -1,0 +1,10 @@
+# Fixture mirror of the authored .pyxis/class-policy.yaml — the shape's
+# example rows over the real-shaped fixture payload tree.
+schema_version: class-policy/v1
+classes:
+  - { glob: ".pyxis/config.yaml", class: repo-owned }        # knobs + paths + pins + epoch
+  - { glob: ".pyxis/stamp/**", class: repo-owned }
+  - { glob: ".pyxis/vendor/**", class: engine-verbatim }
+  - { glob: ".pyxis/**", class: engine-verbatim }            # templates, skills, scripts, hooks, ui
+  - { glob: ".github/workflows/docs-gate.yml", class: engine-verbatim }
+  - { glob: "docs/tech-design/index.*", class: generated }

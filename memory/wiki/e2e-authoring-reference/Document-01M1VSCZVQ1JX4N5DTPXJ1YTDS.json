@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCZVQ1JX4N5DTPXJ1YTDS",
+  "kind": "Document",
+  "subject": "wiki/e2e-authoring-reference",
+  "family": "entry",
+  "statement": "Imported Pyxis source document: docs/wiki/e2e-authoring-reference.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/wiki",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "d2e38c7ca33e75484271810ed963db11a4fca5f68c522a224d4e5d9993c9a564",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:06Z",
+  "provenance": {
+    "source": "docs/wiki/e2e-authoring-reference.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

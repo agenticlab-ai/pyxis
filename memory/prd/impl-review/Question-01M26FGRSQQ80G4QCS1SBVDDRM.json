@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSQQ80G4QCS1SBVDDRM",
+  "kind": "Question",
+  "subject": "prd/impl-review",
+  "family": "Q1",
+  "statement": "Harvest source: proposal reads or review-feedback mirror",
+  "intent": "@mdarabi",
+  "rationale": "answered: FR-27/FR-30 join canonical append-only git events to linked proposal projections; a future feedback mirror is optional and non-authoritative",
+  "fit_criterion": "resolved by this amendment",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:7cea05800a38f71e178a1210c58a16c9fd1de588a03737493bad5e9bb23aa779",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.703Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

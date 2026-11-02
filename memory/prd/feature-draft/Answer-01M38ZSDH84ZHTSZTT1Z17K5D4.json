@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Answer-01M38ZSDH84ZHTSZTT1Z17K5D4",
+  "kind": "Answer",
+  "subject": "prd/feature-draft",
+  "statement": "Answered by the operator (design-brainstorm:feature-draft-tech-design#D-15): after the switch-over the gates also refuse new brainstorm records and review reports, plan documents stay allowed, and FR-27 and UB-5 carry the rule.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M38ZQSX1JJB7W70KP8FP7EAX"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:56:34Z"
+}

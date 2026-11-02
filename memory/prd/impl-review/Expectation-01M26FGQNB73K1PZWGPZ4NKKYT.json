@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQNB73K1PZWGPZ4NKKYT",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "EVAL-8",
+  "statement": "truncation resistance",
+  "intent": "operands exceeding each qualified context limit",
+  "fit_criterion": "zero approve verdicts over a partial read; UB-12 size escalation recorded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ddac76f12c9d92553e112d09cce122e02a137e4d8dc7d08dfc8b803a738e9bb1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.539Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

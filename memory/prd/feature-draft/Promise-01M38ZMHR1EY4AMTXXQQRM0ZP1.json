@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMHR1EY4AMTXXQQRM0ZP1",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-31",
+  "statement": "Where a feature is draft-born, the system shall accept its locked version as planning input in place of prd:plan-new/FR-1, prd:plan-new/FR-27, and prd:contract-gate/FR-1, with its readiness conditions — FR-12 through FR-14, FR-16, and FR-38 through FR-42 — as the planning-entry gate.",
+  "rationale": "This contract overrides the planning-entry rows for draft-born features (brainstorm:feature-draft#D-15)",
+  "fit_criterion": "A locked draft-born fixture plans and projects without a PRD projection document, a design document, or the document contract gate; an open draft is refused (FR-6).",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b8e6620099698dea486942193d71c8bb756d7450182a93772a3a22a5e042bbd8",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:55Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

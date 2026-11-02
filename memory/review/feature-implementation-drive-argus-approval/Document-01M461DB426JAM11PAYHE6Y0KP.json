@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M461DB426JAM11PAYHE6Y0KP",
+  "kind": "Document",
+  "subject": "review/feature-implementation-drive-argus-approval",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/feature-implementation-drive-argus-approval.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:26501ec942dbf9d50a0e755d8a5e39f724bc98f2fd82fb9103044e626347083e"
+  ],
+  "body_sha256": "26501ec942dbf9d50a0e755d8a5e39f724bc98f2fd82fb9103044e626347083e",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:54Z",
+  "provenance": {
+    "source": "docs/reviews/feature-implementation-drive-argus-approval.md",
+    "note": "offline reconciliation"
+  }
+}

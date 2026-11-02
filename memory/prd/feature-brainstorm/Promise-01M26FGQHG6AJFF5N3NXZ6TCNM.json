@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQHG6AJFF5N3NXZ6TCNM",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "NFR-2",
+  "statement": "The record shall carry gists and anchors, never transcript dumps.",
+  "intent": "Record compactness",
+  "fit_criterion": "a 15-ruling fixture record ≤ 350 lines; every decision entry ≤ 6 lines",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e4085263a983081362c9c0016a675618807007867a167594d00f116286e1954c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.416Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

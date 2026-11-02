@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKZSNS2JS4VQPC22V23",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-7",
+  "statement": "The feature drive shall add no model inference to idle, ownership, DAG, evidence-validity, or delivery-verification decisions.",
+  "intent": "Cost",
+  "fit_criterion": "Instrumentation attributes zero tokens to deterministic lifecycle transitions; model spend comes only from configured implementation/review/e2e judgment steps.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:16e0365c382f27b28e08257831531ca1f9012ff951582f6542e1fa693ff30128",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.495Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96FHWE8KRZ6S6JKYPAS",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "DOD-4",
+  "statement": "First job's prompt behaves within its measurement and publication policy",
+  "intent": "FR-13, EVAL-1, EVAL-2, EVAL-3",
+  "fit_criterion": "Authored positive/negative prompt cases and reviewed reports",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

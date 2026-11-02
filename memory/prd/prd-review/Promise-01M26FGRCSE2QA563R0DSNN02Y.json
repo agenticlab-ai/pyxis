@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCSE2QA563R0DSNN02Y",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "UB-1",
+  "statement": "If If the subject is invalid (unfolded draft, merged base outside an amendment, non-PRD), then the system shall refuse with the state and remedy named, writing nothing",
+  "intent": "an actionable refusal",
+  "fit_criterion": "refusal fixtures: named remedy, zero writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c2a19a889fff6c1620c7635dd047bdd1d8e777831fd5458c2aad950a8e518658",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.289Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

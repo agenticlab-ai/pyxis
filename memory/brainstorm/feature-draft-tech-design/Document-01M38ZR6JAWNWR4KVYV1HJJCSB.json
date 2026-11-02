@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M38ZR6JAWNWR4KVYV1HJJCSB",
+  "kind": "Document",
+  "subject": "brainstorm/feature-draft-tech-design",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/feature-draft-tech-design.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:44794f6748154702a35c972e4877b0f1b88fd4ceac0dbdb4abaab63bc6358a3b"
+  ],
+  "body_sha256": "44794f6748154702a35c972e4877b0f1b88fd4ceac0dbdb4abaab63bc6358a3b",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:55Z",
+  "provenance": {
+    "source": "docs/brainstorms/feature-draft-tech-design.md",
+    "note": "offline reconciliation"
+  }
+}

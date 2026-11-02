@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVCT2TM91J6C2R14N34",
+  "kind": "Decision",
+  "subject": "design/read-to-rule-v1",
+  "family": "decision.3.6.1",
+  "statement": "the synthesis flow writes §0 at base authoring — one additive prd-new step: §0 is composed from the document's own content, every routed item anchored per DINV-1 and §3.1's contract, before the fold and the review moments. Maintenance is the existing grammar, unchanged: an amendment whose ops change content §0 routes to carries `### op: supersede §0` with the complete replacement section body — the same wholesale-at-section-granularity rule every unanchored section already follows; the fold projects it with zero new logic. **Blast radius states the computed truth:** under the unchanged grammar any amendment carrying a §0 supersede computes `contract-changing` (a section supersede's computed tier; declared never understates computed), so the amendment declares `contract-changing` with the §0-only, informative-content scope named in the declared reason — the top-tier review bar this implies is accepted as the price of zero docgate change, and if practice shows it burdensome for pure §0 refreshes, an informative-section tier carve-out is a docgate-channel follow-up, deliberately not this feature's (the basis's NG-4). **Introduction into a pre-§0 ledger is deferred until first exercised** (the basis's NG-6 may-adopt posture).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c76f60d228a5b2d220d2305fb672ac077f15c589bcc87f908e1031067e292d4b",
+    "source-design:25b1caf111afb7fe5f498975cb5667ba253feffe1c41a59714604108dd2de64f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWA5X4CD0YY28TH6ZCAJ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.708Z",
+  "provenance": {
+    "source": "docs/tech-design/read-to-rule-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/read-to-rule-v1.md lines 65-65 in section 3.6; sha256:c76f60d228a5b2d220d2305fb672ac077f15c589bcc87f908e1031067e292d4b"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPS7E5YH0HT8GCAFYYBV",
+  "kind": "Decision",
+  "subject": "design/init-hardening-v1",
+  "family": "decision.3.8.1",
+  "statement": "The hosted workflow's class-policy entry becomes **knob-conditional**: the desired set converge computes includes the workflow exactly when `ci_mode` includes hosted CI. Excluded means **unlisted** — and converge never acts on unlisted paths (the never-touch complement property), so no deletion machinery exists anywhere (`#D-4`; O-2 of the record). Fresh installs are born right; an already-installed repo carrying the workflow under `ci_mode=local` gets a **doctor advisory** naming the mismatch and both remedies (flip the knob · delete the file). Desk hooks install in every mode (the hard-dependency ruling, `brainstorm:installer#D-6`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:25a1cc04bbd29a9c8408d5ca3b983352602049f45d147e266bf1e5399b64d73e",
+    "source-design:f1710649feb9b92664f344798b9e17d86efdcab1acaf8ee7bba343363531750c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSBE39JBM1VNM1VD0PKD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.639Z",
+  "provenance": {
+    "source": "docs/tech-design/init-hardening-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/init-hardening-v1.md lines 122-122 in section 3.8; sha256:25a1cc04bbd29a9c8408d5ca3b983352602049f45d147e266bf1e5399b64d73e"
+  }
+}

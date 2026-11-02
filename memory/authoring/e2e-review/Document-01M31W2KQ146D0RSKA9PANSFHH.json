@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W2KQ146D0RSKA9PANSFHH",
+  "kind": "Document",
+  "subject": "authoring/e2e-review",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/e2e-review.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:c1daacbff76a624faac1ec3b9d44fdc59ffb9a65536365ff896314c0dd41fd82"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB5E56GF861FWWHT6Y4ZE"
+    }
+  ],
+  "body_sha256": "c1daacbff76a624faac1ec3b9d44fdc59ffb9a65536365ff896314c0dd41fd82",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:00Z",
+  "provenance": {
+    "source": ".pyxis/authoring/e2e-review.md",
+    "note": "offline reconciliation"
+  }
+}

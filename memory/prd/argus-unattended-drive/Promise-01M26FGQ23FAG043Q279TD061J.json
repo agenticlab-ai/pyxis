@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ23FAG043Q279TD061J",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-14",
+  "statement": "When an awaited external completion occurs, the wake channel shall re-enter the drive at its front door with a normalized wake signal, and the drive shall resume through the resume protocol — journal replay plus goal-object verification — within the configured latency bound.",
+  "rationale": "the clock moves from the operator to the factory (AP-2)",
+  "fit_criterion": "live drill: a merged awaited proposal resumes the drive unattended within the bound; the resumed session verifies at goal objects before any act",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:140eef460ed94d5e459e9440124f0473a28147b9e543703d08ee7c7b009ee5d2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.923Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

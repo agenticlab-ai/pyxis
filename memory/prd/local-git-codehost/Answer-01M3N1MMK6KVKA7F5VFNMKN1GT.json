@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMK6KVKA7F5VFNMKN1GT",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Bind the implementation receipt to the workflow-derived feature-integration target and verify that ref's landed bytes. Refuse an alternate target chosen by the proposal. The operator still reviews each exact code head.",
+  "intent": "operator",
+  "rationale": "Verifying mainline can miss a task's actual landing result.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMK5PDPMRYZTYJAAMY60"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

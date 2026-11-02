@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRF3MW5NDH7ES8YC5SE1",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "NR-2",
+  "statement": "The reviewers' no-human-dependency posture",
+  "rationale": "human review stays an optional overlay (NG-4)",
+  "fit_criterion": "no pipeline path acquires a required human-review step; the reviewers' suites pass unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3dc01d223c127aefa1f9ec94976b145db0c2f2ae74daba970fb96b6e858fabe1",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.363Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

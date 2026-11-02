@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGEKWFH8WQYF5HXY5JY",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "EVAL-1",
+  "statement": "one question per turn, recommendation always attached",
+  "intent": "fixture corpus, all interview turns",
+  "fit_criterion": "≥ 95% single-question turns; 100% carry a recommendation",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:327407195f0e47025e71ee7e9d30b4b132fff1eab6c37d13052354476b9640bc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.382Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

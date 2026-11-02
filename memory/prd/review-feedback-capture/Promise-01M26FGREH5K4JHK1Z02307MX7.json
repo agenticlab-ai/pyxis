@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREH5K4JHK1Z02307MX7",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-7",
+  "statement": "The ledger shall be append-only and repo-portable, holding no dependency on any single code host.",
+  "rationale": "contractual data; no privileged substrate (AP-5, vision §2)",
+  "fit_criterion": "the ledger is readable and complete from the repo with no host API; entries are added, never rewritten (a disposition change is an appended transition)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:26d7910e513b17b5ecef33a9a7648378e360b81309cdca07609c5061b2d2b195",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.345Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPQGGR1RB3HZDZKT5FT8",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.4.2",
+  "statement": "the artifact class's well-formedness **checker is invoked by these skills** — e2e-design runs it over the document it has authored **before emitting it**, refusing to emit a malformed doc, and e2e-review runs it over the subject **at the start of a review round**. On a malformed subject e2e-review **refuses the round**, returning the checker's defects instead of running the lenses, so no review round is spent on a structural defect and no lens output is produced against a document that should not have been submitted. The checker's *rules* are the artifact contract's (`design:e2e-verification-artifacts-v2` §3.5); only the invocation and this refusal branch are behavior, and they live here because a checker nothing calls — or whose verdict nothing acts on — would leave that contract's integrity claim resting on a component with no consequence (`#DINV-12`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e5e45f496d5352121430e46caedab1c6295cf10eba534844419c1da06cd007b5",
+    "source-design:c0e92b035008945c7a680f55db892690be2f5f4a1e831350bb069e76a776ed35",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCPSE8DQV6D4QV1EK64F8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.584Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 114-114 in section 3.4; sha256:e5e45f496d5352121430e46caedab1c6295cf10eba534844419c1da06cd007b5"
+  }
+}

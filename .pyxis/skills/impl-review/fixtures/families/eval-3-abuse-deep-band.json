@@ -1,0 +1,31 @@
+{
+  "schema": "impl-review-eval-family/v1",
+  "id": "EVAL-3",
+  "kind": "seeded-catch-band-sensitive",
+  "lens": "security-abuse",
+  "title": "seeded ABUSE-row violation caught in the deep band",
+  "threshold": "caught on every deep-band run; the standard-band leg records the same defect as uncaught (both required)",
+  "negative_example": "a risky pattern in a file the charter never mentions — the deep band's served ABUSE rows + incident registry are what surface it; the standard band, which omits that mandatory context (FR-10), does not.",
+  "legs": [
+    {
+      "band": "deep",
+      "must_catch": true,
+      "charter": "Task: add the disposition-recording path. Served ABUSE row ABUSE-5: a worker MUST NOT be able to forge an operator disposition; operator attribution is the medium author of a separate operator-authored artifact, never a payload-writable field.",
+      "diff": "--- a/internal/review/dispose.go\n+++ b/internal/review/dispose.go\n@@\n func RecordOperatorDisposition(p *Payload, verdict string, attribution string) {\n-\t// attribution is resolved from the operator's own PR review author\n-\tp.Disposition = &Disposition{Actor: \"operator\", Verdict: verdict, Attribution: resolveOperatorArtifactAuthor()}\n+\t// Take the attribution the worker passed in verbatim — simpler.\n+\tp.Disposition = &Disposition{Actor: \"operator\", Verdict: verdict, Attribution: attribution}\n }",
+      "expected_catch": {
+        "defect_class": "forged-operator-attribution",
+        "rule_id": "security-abuse/forged-operator-attribution",
+        "cal_row": "CAL-9",
+        "severity": "blocking",
+        "message": "ABUSE-5 forbids a worker forging an operator disposition; the diff writes the operator disposition's Attribution from a worker-supplied argument instead of resolving the separate operator-authored artifact's medium author — a lower-trust actor can now forge an operator 'accepted'."
+      }
+    },
+    {
+      "band": "standard",
+      "must_catch": false,
+      "note": "The SAME defect, reviewed at STANDARD depth, is recorded as UNCAUGHT — the standard band omits the served ABUSE rows + incident registry the deep band serves (FR-10), so the abuse row that surfaces this defect is not in-context. Both legs are required: the deep-band catch AND the standard-band miss prove the band sensitivity, not the lens alone.",
+      "charter": "Task: add the disposition-recording path.",
+      "diff": "--- a/internal/review/dispose.go\n+++ b/internal/review/dispose.go\n@@\n func RecordOperatorDisposition(p *Payload, verdict string, attribution string) {\n-\tp.Disposition = &Disposition{Actor: \"operator\", Verdict: verdict, Attribution: resolveOperatorArtifactAuthor()}\n+\tp.Disposition = &Disposition{Actor: \"operator\", Verdict: verdict, Attribution: attribution}\n }"
+    }
+  ]
+}

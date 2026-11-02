@@ -1,0 +1,242 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Ecosystem help — the /help front door — plan 001",
+  "feature": "ecosystem-help",
+  "prd": "docs/prds/ecosystem-help",
+  "design": "docs/tech-design/ecosystem-help-v1.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Ship the /help front door — prompt-walk discovery over live surfaces",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "The /help skill: authoring guide, glue, vendor pointers, and the shipped-capability docs",
+      "goal": "The `/help` skill exists end to end on the vendor-neutral surface: invoking it bare yields the derived catalog, with a described problem yields the routed entry, and with `start` yields the first-steps path — honest at every failure edge.",
+      "current": "No help capability exists; a newcomer on an installed repo has only raw files and the pipeline map they don't know to open.",
+      "desired": "The authoring guide drives the design's derivation walk verbatim: read the shipped pipeline map whole plus every installed skill's frontmatter (`name` + `description` only), wiki routing headers on demand, paths resolved per the config-driven-portability binding. Bare invocation renders the catalog — every installed skill exactly once, every stage row with its built-status, grouped by pipeline position, ≤ 2 output lines per capability. A described problem gets its entry command with the map's why; a problem matching no entry gets an honest refusal plus the map pointer; an unbuilt stage is presented with its status and the nearest built entry, never as a command; a missing surface is named, never fabricated for. `start` lands directly on the first-steps path (two-sentence orientation + the one concrete first action). The skill holds no per-capability content, writes nothing, and is invocable from every supported CLI through vendor pointers. The pipeline map gains its additive cross-cutting row and the living rollups record the shipped capability.",
+      "scope": [
+        "the authoring guide encoding the derivation walk, the three answer modes, and the degraded/honesty behaviors as instructions",
+        "the skill glue on the vendor-neutral surface plus a pointer per supported CLI",
+        "the pipeline map's additive cross-cutting row and the living-rollup updates the shipped-capability convention requires"
+      ],
+      "out_of_scope": [
+        "any enumerator verb, generated index, or new binary (barred by the basis appetite — design §3.2)",
+        "the installer's welcome work-item template (installer-v1's surface; only the `/help start` string is fixed, design Q1)",
+        "edits to any existing skill, guide, or existing map content beyond the additive row (prd:ecosystem-help/NR-1)"
+      ],
+      "acceptance": [
+        "bare `/help` on this repo lists every installed skill exactly once and every stage row of the shipped map with its built-status, ≤ 2 output lines per capability, recorded as a transcript",
+        "`/help start` lands directly on the first-steps path with no interactive navigation, and the same content is reachable by asking where to start",
+        "the skill resolves through every vendor pointer present in the repo",
+        "the implementation diff outside help's own files is limited to vendor pointers, the additive map row, and the living-rollup updates"
+      ],
+      "key_interfaces": [
+        "the skill frontmatter contract (`name` + `description` as the catalog's per-skill line)",
+        "the pipeline map's stage table, built-status legend, and \"where a problem enters\" section as routing ground truth",
+        "the `/help start` invocation string (the installer welcome template's future pointer target)"
+      ],
+      "traces": [
+        "prd:ecosystem-help/FR-1",
+        "prd:ecosystem-help/FR-2",
+        "prd:ecosystem-help/FR-3",
+        "prd:ecosystem-help/FR-5",
+        "prd:ecosystem-help/FR-6",
+        "prd:ecosystem-help/UB-1",
+        "prd:ecosystem-help/UB-2",
+        "prd:ecosystem-help/UB-3",
+        "prd:ecosystem-help/NR-1",
+        "prd:ecosystem-help/NFR-1",
+        "design:ecosystem-help-v1#3.1",
+        "design:ecosystem-help-v1#DINV-2",
+        "design:ecosystem-help-v1#DINV-3",
+        "design:ecosystem-help-v1#DINV-4"
+      ],
+      "touches": [
+        "the system skills tree's help home (new) · the authoring-guide set's help guide (new) · the vendor pointer dirs (one pointer each) · the shipped pipeline map (one additive row) · docs/prd.md",
+        "docs/techspec.md (rollups)"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 220
+      },
+      "mechanical": false,
+      "plan_task_id": "ecosystem-help/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "The derivation-purity conformance test",
+      "goal": "The design's purity invariant is machine-checked: a conformance test proves help's own files hold no per-capability content and that the catalog tracks the live surface with zero help-side edits.",
+      "current": "After T1 the purity promise exists only as guide discipline — nothing mechanical fails when a capability literal creeps into help's files.",
+      "desired": "A test on the shipped scripts-test harness runs two arms. The scan arm harvests the live capability names (skills from the surface, stages from the map) at test time — the assertion list is derived, never hand-kept — and fails if any appears as catalog content in help's own files (the skill's own name and the invocation grammar are the stated exemptions). The fixture arm drops a throwaway skill into a sandbox copy of the surface and asserts the catalog answer includes it with zero edits under help's files, then removes it leaving no residue. Both arms also assert help's files contain no write, cache, or persistence instruction. The test is wired into the harness's normal run set.",
+      "scope": [
+        "the derived-assertion scan arm over help's own files",
+        "the add-a-skill sandbox fixture arm",
+        "the no-write/no-cache instruction assertion and harness wiring"
+      ],
+      "out_of_scope": [
+        "judging routing quality (T3's eval checklist owns behavior; this test owns text-level purity)"
+      ],
+      "acceptance": [
+        "the scan arm harvests skill and stage names from the live surfaces at test time and fails on a planted capability literal in help's files (proven by a red-run demonstration)",
+        "the fixture arm shows a throwaway skill appearing in the catalog with zero help-side edits, and cleans up its sandbox",
+        "a planted write/cache instruction in help's files turns the test red (proven by a red-run demonstration)",
+        "the test runs green in the harness's normal invocation on the clean tree"
+      ],
+      "key_interfaces": [
+        "the scripts-test harness's test-file convention and runner",
+        "the skill frontmatter contract and the map's stage table as the harvest sources"
+      ],
+      "traces": [
+        "prd:ecosystem-help/FR-4",
+        "design:ecosystem-help-v1#DINV-1",
+        "design:ecosystem-help-v1#DINV-3",
+        "design:ecosystem-help-v1#3.6"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "the scripts-test harness home (one new test)"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "ecosystem-help/001/T2",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "The routing eval checklist and the recorded evidence runs",
+      "goal": "The contract's eval bar is executable and executed once: the scenario checklist exists as a fixture, and a full recorded run proves the routing, refusal, unbuilt-stage, and degraded behaviors.",
+      "current": "After T1 the eval bar exists only as PRD prose — no scenario set, no recorded evidence.",
+      "desired": "A checklist fixture rides with the skill: the canonical set derived from the map's entry rules (one scenario per entry class plus the cross-cutting skills), a negative set of non-pyxis asks, and an unbuilt-stage set — each row naming the ask, the expected entry or refusal, and a result column. One full run is recorded against this repo: 100% correct entry naming on the canonical set, zero fabricated commands or stages on any set, zero commands recommended for unbuilt stages with the status stated every time. A sandbox run with a derivation surface removed shows zero entries derived from it and the absence named. The recorded results ride the task's proposal as its evidence.",
+      "scope": [
+        "the three-set scenario checklist fixture with expected outcomes",
+        "one full recorded run with per-row results",
+        "the removed-surface sandbox run and its transcript"
+      ],
+      "out_of_scope": [
+        "the newcomer-proxy protocol (the PRD's M1 dogfood — operator-owned judgment at the exposure checkpoint, not an executor task)"
+      ],
+      "acceptance": [
+        "the checklist covers every entry class of the map's entry rules, plus negative and unbuilt-stage sets, each row with an expected outcome",
+        "the recorded run shows 100% correct entry naming on the canonical set and zero fabricated commands or stages on all sets",
+        "every unbuilt-stage row shows the status stated and no command recommended",
+        "the removed-surface sandbox transcript shows zero entries from the absent surface and the absence named explicitly"
+      ],
+      "key_interfaces": [
+        "the pipeline map's \"where a problem enters\" rules as the canonical-set generator",
+        "the checklist row shape (ask · expected · result) as the eval record"
+      ],
+      "traces": [
+        "prd:ecosystem-help/FR-2",
+        "prd:ecosystem-help/UB-1",
+        "prd:ecosystem-help/UB-2",
+        "prd:ecosystem-help/UB-3",
+        "prd:ecosystem-help/EVAL-1",
+        "design:ecosystem-help-v1#3.6"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "the help skill's fixtures home (new checklist + transcripts)"
+      ],
+      "size_band": {
+        "lo": 60,
+        "hi": 140
+      },
+      "mechanical": false,
+      "plan_task_id": "ecosystem-help/001/T3",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:ecosystem-help/FR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/FR-2",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/FR-3",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/FR-4",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/FR-5",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/FR-6",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/UB-1",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/UB-2",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/UB-3",
+      "tasks": [
+        "T1",
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/NR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:ecosystem-help/NFR-1",
+      "tasks": [
+        "T1"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:fb6c3d8cb4b170e6b25a1c9e112aaf8be7460fb1851c290d676d11aaa0c10be9"
+}

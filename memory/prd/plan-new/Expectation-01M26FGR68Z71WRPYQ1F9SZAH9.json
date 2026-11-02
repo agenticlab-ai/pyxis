@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR68Z71WRPYQ1F9SZAH9",
+  "kind": "Expectation",
+  "subject": "prd/plan-new",
+  "family": "DOD-4",
+  "statement": "Idempotency, wiring-before-routing, and consent-gating proven under interruption and races",
+  "intent": "FR-17, FR-18, FR-19, UB-4, UB-5",
+  "fit_criterion": "interruption + race suites",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:368b1eafbdbbdf75cf32dac6ddd2df83a1848c0895af4c103efae2530d212e48",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.08Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

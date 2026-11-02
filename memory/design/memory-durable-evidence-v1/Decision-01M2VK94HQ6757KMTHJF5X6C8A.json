@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2VK94HQ6757KMTHJF5X6C8A",
+  "kind": "Decision",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "decision.3.1.1",
+  "statement": "Extend the existing record provenance with a closed, versioned\nevidence binding. Keep schema validation in `internal/memory/record`, Git\nreads in `internal/memory/gitsrc`, source/unit classification in the existing\nsource and code inventories, and orchestration in `internal/memory/cli`.\nNo new service, database, model integration, or abstract adapter is required.",
+  "tags": [
+    "code:internal/memory/cli",
+    "code:internal/memory/gitsrc",
+    "code:internal/memory/record",
+    "reconcile:design-decision",
+    "source-block:d9255360f773491c38dbede8285329b078f08648fea1c51f94fc781dad581745",
+    "source-design:d5d8f44b0c9b5f456fb8f4fb69663c0391ba020eb50ac180e9065002b3927f40",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2P69SD99WM3Z9D3T1X6NBBT"
+    }
+  ],
+  "issuer": "Codex",
+  "created_at": "2026-09-19T01:07:50Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-durable-evidence-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/memory-durable-evidence-v1.md lines 88-92 in section 3.1; sha256:d9255360f773491c38dbede8285329b078f08648fea1c51f94fc781dad581745"
+  }
+}

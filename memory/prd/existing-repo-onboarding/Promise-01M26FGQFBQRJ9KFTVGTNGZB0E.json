@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQFBQRJ9KFTVGTNGZB0E",
+  "kind": "Promise",
+  "subject": "prd/existing-repo-onboarding",
+  "family": "FR-7",
+  "statement": "When the system inspects the repository, the system shall detect and name the repository's stack in the plan and name the gate-command action the adopter must supply, inventing no build, test, or lint command.",
+  "rationale": "detect-and-surface, not ship-profiles (D-3)",
+  "fit_criterion": "for a Go and a non-Go fixture, the plan names the detected stack and the required gate-command action; no command is fabricated",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2bd8734a03684d5fccb3ed8ccfe4a937e22ea7ebede4761cb028e554b90dbd34",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.347Z",
+  "provenance": {
+    "source": "docs/prds/existing-repo-onboarding/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:450fde03ff09f222a1034ace0c35d631b17618e46cde194e457f5e6e4bfd3cbd"
+  }
+}

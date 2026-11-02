@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBJXT3YAJBAKDXN9FRVCA",
+  "kind": "Document",
+  "subject": "governance/architecture-principles",
+  "family": "compatibility-pointer",
+  "statement": "Imported Pyxis source document: docs/design-principles.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/root",
+    "watermark:0a05dfb",
+    "compatibility-pointer"
+  ],
+  "body_sha256": "5377805184bb2aec10bc81e16eb2a74c24e2972cc4385869fa97fd33432860bf",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:20Z",
+  "provenance": {
+    "source": "docs/design-principles.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

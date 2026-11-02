@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4KGYM6Z2Y53WNBC8NT",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "UB-2",
+  "statement": "If If the waiver or configuration surface is malformed or carries unknown keys, then the system shall refuse to load it with a named defect (closed parse) and treat the pass as faulted rather than silently sweeping without waivers",
+  "intent": "the named parse defect",
+  "fit_criterion": "malformed-waiver fixtures fault with the defect naming the line; no finding output emitted",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cc517c6034a453aa1349e1c89fc368fee97bb828c43e99de0e6ce4e4f33f6970",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.027Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M44ZPM3EESFP7ZT88WYV56E3",
+  "kind": "Expectation",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "DOD-1",
+  "statement": "Fresh installed Forgejo flow opens, iterates, prepares, and identifies one native PR without gh; separate abandonment fixtures preserve the required policy, reason, human review, and transition.",
+  "intent": "FR-1..FR-5, FR-7, UB-1..UB-3",
+  "fit_criterion": "Transcript with status/open/round/rebase, PR/head/digest, normal hook outcomes; a successful Forgejo abandonment fixture with affirmative policy, required reason Learning, and human review/abandon transition; false/missing/malformed/inaccessible policy fixtures proving zero reason-Learning, branch, or PR writes",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Expectation-01M3WDAD6E6XJW77BVJGQ9GBK4"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

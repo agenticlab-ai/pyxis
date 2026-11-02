@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWE1NAPX1SBDCQA9TCH",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-1",
+  "statement": "When invoked on a workspace with a diff base, the harness shall execute rungs in latency order and stop at the first failing rung, returning that rung's findings.",
+  "rationale": "earliest possible feedback; no wasted work past a known failure",
+  "fit_criterion": "on the fixture suite, a rung-0 failure returns with zero rung-1+ verb executions recorded",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:894046cd0de80d4190daeb198d9920fbd0df4e1593098f98f79de4c5c4839a29",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.766Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

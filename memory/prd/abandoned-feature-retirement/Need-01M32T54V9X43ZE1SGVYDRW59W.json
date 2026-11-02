@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T54V9X43ZE1SGVYDRW59W",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "M3",
+  "statement": "M3: G1, G2",
+  "intent": "Invalid destructive transitions refused",
+  "fit_criterion": "100% refusal across live-contract, unowned, shared, protected, stale, reintroduced, candidate-authored, dirty, and unavailable-history fixtures",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1312dcbab4b5b0804e962c750ee0b2540095ca2268208aa3949eea018448744b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:41Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

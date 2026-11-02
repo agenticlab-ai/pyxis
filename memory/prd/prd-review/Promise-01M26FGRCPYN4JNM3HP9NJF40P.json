@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRCPYN4JNM3HP9NJF40P",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "NR-1",
+  "statement": "prd-new and prd-amend flows are unchanged except one additive review step each; a flow that skips the reviewer (pre-adoption) still works",
+  "rationale": "the skill set composes; adoption is the ship rule's decision (§3.3)",
+  "fit_criterion": "both guide diffs are additive-only; recordless/reviewless paths follow unmodified text",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:db5f1ca4d963f62dfd4d4e1c7305e818b2cb665e9f489ec69074d9c31dcb895a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.286Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

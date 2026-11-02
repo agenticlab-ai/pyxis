@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRD2608VED4S8Y4W8DYZ",
+  "kind": "Expectation",
+  "subject": "prd/read-to-rule",
+  "family": "DOD-3",
+  "statement": "The capture line + sampled full read convention is stated at the sign-off surfaces, including the pre-§0 fallback and the stale-route fallback",
+  "intent": "FR-7, FR-8, FR-9, UB-2, UB-4",
+  "fit_criterion": "the convention text",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab9f6f4bfd65d875f3af6a0487033ba98f8c2553553063e70830e2aaf8f45017",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.298Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

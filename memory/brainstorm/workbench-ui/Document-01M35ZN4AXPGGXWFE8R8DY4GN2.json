@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZN4AXPGGXWFE8R8DY4GN2",
+  "kind": "Document",
+  "subject": "brainstorm/workbench-ui",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/workbench-ui.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:54fa3dd0f76d8d6746bec1cf60be8eac62c26b7803267881500e7d7958892ce7"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBJH4BK1CP4DT0RBWCVSE"
+    }
+  ],
+  "body_sha256": "54fa3dd0f76d8d6746bec1cf60be8eac62c26b7803267881500e7d7958892ce7",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:31Z",
+  "provenance": {
+    "source": "docs/brainstorms/workbench-ui.md",
+    "note": "offline reconciliation"
+  }
+}

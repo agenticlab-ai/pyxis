@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQDJJXAP4BE68VVPN3BX",
+  "kind": "Need",
+  "subject": "prd/e2e-verification",
+  "family": "M3",
+  "statement": "M3: G2",
+  "intent": "seeded hollow scenarios (a scenario that mocks away the behavior it names) flagged by the anti-gaming lens",
+  "fit_criterion": "every seeded hollow-scenario case flagged, measured at the catch-suite checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a9f6f732e935ec688925227b3383631f4485eb59ad400878df6cbb63c36f9df1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.29Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

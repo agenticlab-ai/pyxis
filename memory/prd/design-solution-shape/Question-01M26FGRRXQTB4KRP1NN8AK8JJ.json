@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRXQTB4KRP1NN8AK8JJ",
+  "kind": "Question",
+  "subject": "prd/design-solution-shape",
+  "family": "Q1",
+  "statement": "The shape's home and format — its own document class, or a distinctly-lifecycled region of the design",
+  "intent": "@mdarabi",
+  "rationale": "open",
+  "fit_criterion": "the follow-on technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:945cb8980fd08527e3cf966381a73d0a0c85d3886289a3b0c1925f0bb212f01e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.677Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

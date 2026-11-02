@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3AMPG6DZGS5236DN4Z",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "NFR-5",
+  "statement": "The tracker shall run as a single static binary over inspectable files, and every error shall name file, operation, reason, and remedy.",
+  "intent": "Operability",
+  "fit_criterion": "no runtime dependency beyond the binary; 100% of fixture defects name the quadruple",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b0555abb03730ed5f4401b5a44ab8a19d1b8d2c017f024ec0e4d0c004d080225",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.986Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVS2KGKS5B0A43JV44J",
+  "kind": "Question",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "Q1",
+  "statement": "The sibling record's home (share `docs/brainstorms/` with a class discriminator vs a sibling directory) and its lifecycle binding per verdict",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "Record-contract phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:4920df4630fc501becdb8c2bcdb2f7383d6d3f8ec4ba2deed4549aa43a30d72b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.769Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

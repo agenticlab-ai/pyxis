@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRFBDFSCKT1DGR9DA6C",
+  "kind": "Decision",
+  "subject": "design/fleet-bridge-v1",
+  "family": "decision.3.3.1",
+  "statement": "The pipeline map's stage-8 row and footer state the external-fleet binding as it operationally runs — frozen plans project onto the tracker with the repo-configured automated-implementation tag and an external fleet claims and implements them — and the map remains the live, PR-corrected surface owning that value (its own header already binds it descriptive and corrected-to-match). This design deliberately freezes no copy of the row's wording: the binding duty is FR-10's, the current value is the map's, and when the engine era changes the operational binding, the map moves and FR-10's fit re-pins by amendment (the basis's own hook). The correction lands with this design's implementation; its whole footprint is the map row and footer. What taught the deferral was the stale row itself, never a guidance directive — no guidance surface carries one today (the drive guide already directs the unconditional trigger) — so the durable duty is the standing negative one DINV-5 binds and A-4 inspects: no drive guidance may direct deferring materialization on the row's account, a duty that holds vacuously today.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5affc053f6e7fe6fa078bdff7c1ebe794588e5ef7d1c047c7ca4f8cd656563b2",
+    "source-design:5caf70f8c045d82995e2034d8f564b430b9b83ff89f853a639087478382c9f15",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQYHJS957C9Y9Z2SCKAF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.615Z",
+  "provenance": {
+    "source": "docs/tech-design/fleet-bridge-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/fleet-bridge-v1.md lines 38-38 in section 3.3; sha256:5affc053f6e7fe6fa078bdff7c1ebe794588e5ef7d1c047c7ca4f8cd656563b2"
+  }
+}

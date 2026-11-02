@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRNZAG7WRDAMT5XC53BG",
+  "kind": "Need",
+  "subject": "prd/workbench-ui",
+  "family": "J4",
+  "statement": "When I want the factory's state, I want see per-feature pipeline progress and pending human gates, so I can know what's in flight and what awaits me",
+  "rationale": "record idea (\"see the progress\")",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9f4c2f8ae49c4116a32b4df8dea3d15d8f294ebd6758d8f3448db2c28773de6c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.583Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

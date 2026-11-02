@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYH0J1T39X8MA2M2BAA",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "UB-3",
+  "statement": "If If a ruling would override an incident lesson or a prior breaking-call answer, then the system shall refuse; propose a supersession through the escalation channel instead",
+  "intent": "a brief with the proposal",
+  "fit_criterion": "EVAL-1: 100% routed to briefs",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d7d2f572c9ee02b75c651ff14fa853b22a50298c3780b9cfbf794986bf92d17e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.809Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

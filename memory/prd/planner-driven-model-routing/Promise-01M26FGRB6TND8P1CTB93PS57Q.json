@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB6TND8P1CTB93PS57Q",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-7",
+  "statement": "If routing telemetry cannot connect a selection or outcome to its frozen task/proposal decision, then the system shall refuse to treat the attempt as acceptance or calibration evidence and surface an audit-integrity failure",
+  "intent": "attempt is visibly non-evidentiary",
+  "fit_criterion": "orphaned-event fixtures never count toward M2–M5 or release",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6ae3ec4641fa11643ff57e683b1dbe8100edd9f576f8d41c5d1e5c95bde23c46",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.238Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

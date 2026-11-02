@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR72DKS18M8ZXT87S8Z6",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-30",
+  "statement": "Before approving or freezing a plan/v2 plan, the operator shall apply a task-by-task evidence-support rubric requiring one or more cited anchors to substantively support every recorded assessment axis and any planner assurance raise, shall reject the whole plan on irrelevant, contradictory, or partially supporting evidence, and shall persist the completed rubric with the checkpoint decision.",
+  "rationale": "citation resolution proves only that evidence exists; the accountable operator must judge whether it actually supports the frozen semantic demand",
+  "fit_criterion": "@mdarabi's checkpoint rubric records pass/fail for all six axes and any assurance raise on every task; an irrelevant, contradictory, or partial-support fixture returns the whole plan to the edit loop with zero approval/freeze/projection; a passing checkpoint persists the completed rubric beside the frozen plan",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f71cfec3cf67644c4c05e60eeaf69c80a6c91731999ade17b08d768217dc889a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.106Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMW1MHGAZ0VR13SJ5VG",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "decision.3.1.1",
+  "statement": "The `Argus-Drive: \u003cslug\u003e` authorship trailer is **produced by the commit-authoring actor** (the supervisor/harness) at the moment it authors a drive's commit, realized as a **repo-internal git commit-message hook** (`prepare-commit-msg`/`commit-msg`-class) on the existing `core.hooksPath` surface; it is keyed on the active drive's slug (the context the supervisor already holds) — never chosen by the model, never hand-added *(design-brainstorm:argus-attribution-hardening-tech-design#D-1)*.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:5f5753af9f42f64e692b883b58e8ab10f409e3afdf088d7a894c9abb5291a1ae",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.5Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-attribution-hardening.md lines 40-40 in section 3.1; sha256:5f5753af9f42f64e692b883b58e8ab10f409e3afdf088d7a894c9abb5291a1ae"
+  }
+}

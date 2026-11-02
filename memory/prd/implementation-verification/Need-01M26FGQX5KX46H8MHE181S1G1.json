@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQX5KX46H8MHE181S1G1",
+  "kind": "Need",
+  "subject": "prd/implementation-verification",
+  "family": "G4",
+  "statement": "We believe verdicts that enumerate what ran, what passed, and what was skipped-with-reason; expected result: the operator reviewing substance and trusting the badge — unprompted reliance on verdict evidence in review",
+  "fit_criterion": "verdict-consultation observed in dogfood and post-launch review sessions (§6.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3d4956b6f2c937b80c832ec975243188259abab9f82dadc748fc184e3a162ad0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.789Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

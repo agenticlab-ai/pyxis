@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V1P4ZW7355CYJSS6FKZ1YA",
+  "kind": "Learning",
+  "subject": "learning/parallel-memory-packet",
+  "statement": "Memory merge checks no longer reject a record solely because unrelated base history has a newer ID; they apply the shared historical-transition predicate alongside all existing graph and immutability checks.",
+  "intent": "Make rebases of disjoint memory work preserve record identities while retaining meaningful conflicts.",
+  "rationale": "Causal relation order, record collisions, moved heads, exclusive families, and historical activation remain independent refusal boundaries. A historical violation must still be reported when another projection defect is also present.",
+  "tags": [
+    "code:internal/memory/packet"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T20:00:23Z",
+  "provenance": {
+    "source": "internal/memory/packet/packet.go",
+    "commit": "30dcc43775174df02334c4b015784f481cdfec70"
+  }
+}

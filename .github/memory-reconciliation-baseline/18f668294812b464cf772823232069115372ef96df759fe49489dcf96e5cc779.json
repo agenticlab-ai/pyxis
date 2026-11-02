@@ -1,0 +1,8 @@
+{
+  "code": "prd-projection-divergence",
+  "scope": "prd/implement-now#NG-5",
+  "feature": "implement-now",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

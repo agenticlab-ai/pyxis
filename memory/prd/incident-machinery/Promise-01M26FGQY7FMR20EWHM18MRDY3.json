@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQY7FMR20EWHM18MRDY3",
+  "kind": "Promise",
+  "subject": "prd/incident-machinery",
+  "family": "FR-2",
+  "statement": "When invoked as `graduate` with an incident ID and a principle ID, the writer shall append `Graduated: AP-\u003cn\u003e` to that entry's `Links:` line — the one sanctioned mutation — and shall fail if the entry does not exist or already carries a graduation pointer.",
+  "rationale": "graduation stops being a hand edit to an append-only file",
+  "fit_criterion": "graduating a fixture entry grows only its `Links:` line (append-only check green); a second graduation of the same entry red; an unknown ID red",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a62f633772cfd06585658175c7207b20c44e16dbd9e188a825b4d0c3773164a5",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.823Z",
+  "provenance": {
+    "source": "docs/prds/incident-machinery/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:82a6e4d6bce3dfa328cccc63df1a7ecb87faa72d2b13f44638ac5b7176597f57"
+  }
+}

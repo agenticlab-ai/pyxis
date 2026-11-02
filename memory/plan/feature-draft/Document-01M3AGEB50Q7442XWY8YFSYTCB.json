@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3AGEB50Q7442XWY8YFSYTCB",
+  "kind": "Document",
+  "subject": "plan/feature-draft",
+  "family": "plan-001",
+  "statement": "Captured authored source: docs/plans/feature-draft/001-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/plans",
+    "reconcile:source",
+    "sha256:89ea3ef77f1770c2d017fdb0532f92764a88cdf1da4b9a78c16eda10093341d8"
+  ],
+  "body_sha256": "89ea3ef77f1770c2d017fdb0532f92764a88cdf1da4b9a78c16eda10093341d8",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T20:06:52Z",
+  "provenance": {
+    "source": "docs/plans/feature-draft/001-plan.md",
+    "note": "offline reconciliation"
+  }
+}

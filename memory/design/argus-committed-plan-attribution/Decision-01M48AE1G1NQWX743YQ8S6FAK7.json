@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Decision-01M48AE1G1NQWX743YQ8S6FAK7",
+  "kind": "Decision",
+  "subject": "design/argus-committed-plan-attribution",
+  "family": "implementation-scope-and-rebase",
+  "statement": "Argus draft commits use slug-scoped first-PR paths; lock preparation verifies source bindings, rejects multi-parent source commits before rebase, refreshes valid stamps, shares the installed cache with its temporary worktree, and leaves unstamped and generated commits unstamped. After a valid delivery ledger is committed, the shared predicate also admits only its own three-digit numbered plan Markdown/JSON under the configured literal plan root and its native problem captures; actual-lock planning readiness remains separate.",
+  "intent": "Keep ordinary single-user draft pushes and lock preparation attributable without losing merge-only edits.",
+  "rationale": "The old docs-only scope rejects draft rounds; copied bindings fail after a parent change; refreshing a stale source binding would launder it; plain rebase skips merge commits; and a linked worktree omits the ignored installed binary cache.",
+  "fit_criterion": "Boundary, real-hook rebase, stale-source and merge-source refusal, installed-cache, attribution-gate, and prepare-lock integration tests cover the changed production units.",
+  "tags": [
+    "code:cmd/argus-stamp",
+    "code:internal/argus/attribution",
+    "code:internal/argus/boundary",
+    "code:internal/argus/stamp",
+    "code:internal/draft/lock"
+  ],
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3QDB51TM8ZV5HSBFX80B19G"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M3QGSFS7FAK8WX902W04FDJY"
+    },
+    {
+      "type": "about",
+      "target": "Decision-01M4667876WNM5EVXMCVHA6ZDE"
+    }
+  ],
+  "issuer": "Codex AEC source coordinator",
+  "created_at": "2026-10-06T09:59:03Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-committed-plan-attribution.md",
+    "note": "Carry forward the retained predecessor decision Decision-01M4667876WNM5EVXMCVHA6ZDE on the live successor design identity. Scope and rebase behavior remain in force; the policy version is now v5. The immutable original remains the decision's historical evidence. This replaces the unlanded proposal capture Decision-01M47B3ZNMBR6WQZ1HA5SXRN51 after the root-path correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at ec23220418dbe9ff5e8d130afd6202187ad18e5c. This replaces the unlanded proposal capture Decision-01M47YAMJSZP9B2F1BH679C2PR after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at c74eda1694aeb8c3b4d0eca104c088afd41c5375. This replaces the unlanded proposal capture Decision-01M480XA3QDW9QYT8WN1GPRJS5 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 66dd6b211a353298b2c5bba073082f898085cd94. This replaces the unlanded proposal capture Decision-01M4829YAAKAGH4HQP5508TE22 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 2bbf4634b663cb97b3371f559b1fcb7e5e956960. This replaces the unlanded proposal capture Decision-01M483NAVX0110YDK5WGMJK7Q1 after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 0720a4f2ee8a9a292f44e3660fea3cfcf17bd0df. This replaces the unlanded proposal capture Decision-01M4849K1EYWCN934WJZKPB0DT after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 72f3927cf656e4248b3a77f83ddfc1a496038931. This replaces the unlanded proposal capture Decision-01M485WDMTKZ2TAJ8ZBWM5BR4V after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at ad49cd021f7d017faa31ab398870216747b81ab6. This replaces the unlanded proposal capture Decision-01M487Q7AN38K2FADR8NW8ZWWT after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at db91f998650704c3b9e4e1d1352dd02f3612bb21. This replaces the unlanded proposal capture Decision-01M488WR0HC1RC1YGVJEMFFCJM after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 8fd0c98adc89eea27a778b6495aa7761f285e773. This replaces the unlanded proposal capture Decision-01M489R3J95Z6N5HMSCJCY813B after the ledger-shape correction; its claim and relationships are unchanged. The original proposal bytes remain in Git history at 0ef50e5d5ce493defb9f92b7b7f2b1b1858f87dd."
+  }
+}

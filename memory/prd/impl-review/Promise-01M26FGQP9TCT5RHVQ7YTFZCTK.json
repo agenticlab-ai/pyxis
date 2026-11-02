@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP9TCT5RHVQ7YTFZCTK",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-31",
+  "statement": "When any assurance pass escalates because of a declined blocking finding, defective charter, or other judgment conflict, the reviewer shall record one decision brief on the proposal naming the conflict, options with risks, evidence, and decision needed; a pre-release brief authorizes no production acceptance, and after activation it shall hold PR-raise and route the proposal HUMAN through the required consuming merge-lane adapter.",
+  "rationale": "escalation remains brief+park, while direct activation removes the old production advisory state",
+  "fit_criterion": "each escalation class produces a schema-valid brief; pre-release fixtures cannot authorize production; post-activation end-to-end fixtures hold PR-raise and force HUMAN without granting AUTO",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:621735b5e4e268975b1ff774480b278024dd549c3f301d35a54f6d3acf94cbba",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.569Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

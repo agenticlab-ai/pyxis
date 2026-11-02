@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ5J17F9FFGM9HGKFY5Y",
+  "kind": "Promise",
+  "subject": "prd/config-driven-portability",
+  "family": "NFR-2",
+  "statement": "`doctor` shall report a configuration whose generated non-Go surfaces have drifted from the current config.",
+  "intent": "Operability",
+  "fit_criterion": "a drifted generated surface appears as a named `doctor` finding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:05df36abeb6450efefd714a4789dbcea87a60d1f36156a52554493b5c95dd033",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.034Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

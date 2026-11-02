@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ0BRQFBKF5HC0979GTZ",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "UB-6",
+  "statement": "If If the write hook process errors, crashes, or times out at evaluation for a candidate write on a supported CLI, then the system shall deny the write (fail closed) and name the reason",
+  "intent": "a denied write with an actionable reason",
+  "fit_criterion": "a forced-hook-error fixture (the hook process errors, crashes, or times out) on a supported CLI is denied, never allowed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:228189932d1619a837dbc934af22fd8eba83350d716e52042e6984b6248165f2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.867Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

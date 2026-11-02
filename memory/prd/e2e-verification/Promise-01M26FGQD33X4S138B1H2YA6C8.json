@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQD33X4S138B1H2YA6C8",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-26",
+  "statement": "Where e2e-plan emits a harness task or a conventions task, each scenario task shall carry an explicit blocked-by dependency on it, and where the repo already supplies either, scenario tasks shall carry no such dependency; each scenario task shall additionally name the one artifact it exclusively owns, taken from that scenario's normalization (FR-21), and no two scenario tasks in a plan shall name the same artifact.",
+  "rationale": "harness and conventions before scenarios where either is built, so parallel workers reuse a landed shape rather than each inventing one; exclusive artifact ownership is what stops concurrent scenario tasks colliding, and the executor already builds unblocked-first so only the edges need declaring",
+  "fit_criterion": "in a produced plan with a harness or conventions task, every scenario task is blocked-by it (native relation); in a plan where the repo supplies both, scenario tasks carry neither edge; every scenario task names exactly one owned artifact and no artifact is named twice; a scenario task with no owned artifact, or two tasks sharing one, is a plan defect",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:674def14b31e8ef14752d20cb6565fd7b92fc81a6ccf13050cdc19a058db63fb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.275Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

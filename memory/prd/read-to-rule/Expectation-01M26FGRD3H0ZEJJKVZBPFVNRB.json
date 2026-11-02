@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRD3H0ZEJJKVZBPFVNRB",
+  "kind": "Expectation",
+  "subject": "prd/read-to-rule",
+  "family": "DOD-4",
+  "statement": "The prove: the first §0-born base is gate-reviewed off §0 with the capture line recorded, and the operator rules the section worth-having",
+  "intent": "G3; FR-1..5, FR-7",
+  "fit_criterion": "that gate's sign-off record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1eb7522b995256806d2d6463af76755307289bbd891cf2b608043d10fc8855f3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.299Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

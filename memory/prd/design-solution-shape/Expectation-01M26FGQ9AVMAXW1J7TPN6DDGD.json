@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ9AVMAXW1J7TPN6DDGD",
+  "kind": "Expectation",
+  "subject": "prd/design-solution-shape",
+  "family": "DOD-6",
+  "statement": "Non-goals hold — no plan/decomposition, stage-6 validation, or Decision-model change shipped",
+  "intent": "NG-1..5",
+  "fit_criterion": "scope audit in the introducing PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c6059e9714ab8ba7523adbf7ef47af9e5fa73648e36752cd7997167cfb4133d0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.154Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

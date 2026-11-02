@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR168ZY6YGMJH3ZXNR1K",
+  "kind": "Need",
+  "subject": "prd/installer",
+  "family": "G3",
+  "statement": "We believe distribution-grade releases (binaries + payload + manifest + checksums); expected result: every capability Pyxis ships is installable anywhere, not resident in one repo",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d0a098de1e6ff0c2c1d2fa72dd4636105673ad880cacfc2ee68797f2cdda15fe",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.918Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

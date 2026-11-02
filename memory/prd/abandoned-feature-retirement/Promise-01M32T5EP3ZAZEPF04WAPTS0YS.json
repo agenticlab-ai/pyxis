@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5EP3ZAZEPF04WAPTS0YS",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-5",
+  "statement": "The system shall name the failed predicate and deterministic repair transition or explicit irreparable outcome for every refusal without requiring source-body inspection.",
+  "intent": "Operability",
+  "fit_criterion": "Every repairable negative fixture succeeds after its emitted repair and exact retry without policy weakening; irreparable fixtures remain refused; human and machine forms agree.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:02bd4b6e0580ff07d479c7c59b7c6e4b031d461174904e485772fdc6d828054c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:51Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

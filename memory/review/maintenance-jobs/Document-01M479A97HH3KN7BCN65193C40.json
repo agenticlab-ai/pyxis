@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Document-01M479A97HH3KN7BCN65193C40",
+  "kind": "Document",
+  "subject": "review/maintenance-jobs",
+  "family": "report-004",
+  "statement": "Draft reviews/004.md",
+  "tags": [
+    "draft-digest:sha256:bd0874fdde891b5c1a32df486772fda61bd3eb10d2990f8a30857a6c0902fde4"
+  ],
+  "body_sha256": "a467278ab2c0a95865c1f019ce793e5d745d64fd8e9a1460e0c67b38c6b4086b",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

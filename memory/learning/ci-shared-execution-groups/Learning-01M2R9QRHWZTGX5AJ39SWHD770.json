@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2R9QRHWZTGX5AJ39SWHD770",
+  "kind": "Learning",
+  "subject": "learning/ci-shared-execution-groups",
+  "statement": "CI parity includes execution grouping: define each check's group in shared configuration and run those same groups concurrently in GitHub, Forgejo, and local CI.",
+  "intent": "Keep the approved two-job execution consistent across providers and the in-process local-CI adapter.",
+  "rationale": "Sharing commands alone left hosted jobs parallel and local CI sequential. The operator requested consistent execution even though the warm local benchmark found little timing benefit. The optional group field now owns membership, with unassigned checks in the default group and process-boundary, catch-suite, and test-race in tests. One owned worker runs each group sequentially; all workers finish before returning, results retain file order, required failures do not skip peers, and cancellation fails closed. Hosted workers select entire groups. Standalone single-check diagnostic workflows remain permitted but cannot certify a partition or the complete gate. Cached verdict fingerprints include group membership.",
+  "fit_criterion": "Deterministic channel and synctest tests prove overlap, intra-group order, stable report order, continued execution after required failures, advisory semantics, and cancellation cleanup without wall-clock thresholds. Cache tests reject regrouped and partial verdict reuse. Provider mutation tests reject missing, repeated, sequential, manually partitioned, and shell-expanded groups. The local-CI adapter test uses its production runner and refuses publication when either group fails.",
+  "learned_from": [
+    "The operator requested that the CI execution change be the same across GitHub, Forgejo, and local CI after comparing local sequential and parallel timings."
+  ],
+  "tags": [
+    "code:cmd/code-gate",
+    "code:internal/ciparity",
+    "code:internal/codegatemirror",
+    "owner:design/code-gate-mirror",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Learning-01M2R9Q9ES4SHBPTAHEDC3P41F"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T18:23:21Z",
+  "provenance": {
+    "source": "code:internal/codegatemirror",
+    "commit": "f1476f61c2d7510fa4c28c507b3a41d5d88e5496"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCNMK68TJ2M47MQC8H6KH",
+  "kind": "Document",
+  "subject": "design/design-brainstorm-record-model",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/design-brainstorm-record-model.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "7bfc819d446e88b0f258bad6b410e95e2a2c0556fb68a2ea08df6f579a714aae",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:56Z",
+  "provenance": {
+    "source": "docs/tech-design/design-brainstorm-record-model.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

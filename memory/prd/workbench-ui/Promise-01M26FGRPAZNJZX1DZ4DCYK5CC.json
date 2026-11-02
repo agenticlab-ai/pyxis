@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRPAZNJZX1DZ4DCYK5CC",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "UB-4",
+  "statement": "If If the server cannot bind its port, or another session is already serving this repo, then the system shall refuse with a defect naming the path, operation, reason, and remedy, leaving no half-served state",
+  "intent": "named defect in the terminal",
+  "fit_criterion": "occupied-port and second-launch fixtures: each yields the quadruple; a process audit shows no partial listener",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ea501c02a15f01a200231de08def553130f9951ffd20a7d112040a8dae0d2c82",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.594Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

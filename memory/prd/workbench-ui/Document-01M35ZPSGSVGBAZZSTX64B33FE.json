@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPSGSVGBAZZSTX64B33FE",
+  "kind": "Document",
+  "subject": "prd/workbench-ui",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/workbench-ui/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:f2e22c52e2f7f8075d7088a7c0a760fc624e3960295149df4cb0475294ba8418"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC2YTCBKJCXCK5B5N19Q3"
+    }
+  ],
+  "body_sha256": "f2e22c52e2f7f8075d7088a7c0a760fc624e3960295149df4cb0475294ba8418",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:25Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

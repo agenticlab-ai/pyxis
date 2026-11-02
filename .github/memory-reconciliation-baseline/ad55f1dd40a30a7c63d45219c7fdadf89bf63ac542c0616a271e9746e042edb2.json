@@ -1,0 +1,7 @@
+{
+  "code": "design-decision-memory-drift",
+  "scope": "design/plan-viewer-v1#decision.3.6.1",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

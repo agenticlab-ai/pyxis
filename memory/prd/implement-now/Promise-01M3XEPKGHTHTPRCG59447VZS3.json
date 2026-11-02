@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XEPKGHTHTPRCG59447VZS3",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "NR-11",
+  "statement": "The existing plan→tracker projection remains the only plan projection; direct issue admission uses the current native task codec and the same claims, worker, and provider bindings.",
+  "rationale": "add an input without a parallel execution substrate or changing planning semantics",
+  "fit_criterion": "existing plan projection and execution fixtures remain unchanged; issue mode constructs no plan and instantiates no second worker or tracker binding",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a6d151ccfa399fdc7f4daeba0fc147a1f3c0ef6d94fd28d5f30ae3a63a97c360",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGQTZ2GFK9DPYSJKGYTK5"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T04:42:00Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "note": "compiled from sha256:fe30060db56225482bd76725fde9cffd880045f9def6e68b5af59f4c94c75b12"
+  }
+}

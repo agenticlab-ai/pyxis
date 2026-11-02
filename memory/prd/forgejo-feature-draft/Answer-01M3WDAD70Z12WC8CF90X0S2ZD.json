@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3WDAD70Z12WC8CF90X0S2ZD",
+  "kind": "Answer",
+  "subject": "prd/forgejo-feature-draft",
+  "statement": "Enforce the separately configured human’s authenticated approval of the exact current prepared head before merge, dismiss stale approval after a push, cover privileged actors, and fail closed with an enforceable protection remedy; preserve independent post-merge verification.",
+  "intent": "operator",
+  "rationale": "Working-draft repair instruction and bounded interpretation recorded in problem:forgejo-feature-draft#A-5",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3WDAD6ZEK63XBRG26A38JHR"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

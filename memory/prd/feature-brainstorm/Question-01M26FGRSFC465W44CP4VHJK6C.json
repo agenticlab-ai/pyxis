@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRSFC465W44CP4VHJK6C",
+  "kind": "Question",
+  "subject": "prd/feature-brainstorm",
+  "family": "Q2",
+  "statement": "The record template's field contract per section (the brainstorm-record/v1 schema) and the checklist's derivation from prd-template/v1",
+  "intent": "implementation",
+  "rationale": "open",
+  "fit_criterion": "Record-contract phase",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:d75e189d678efb06d6dd3922ddcf006ef6f1a08c458a4da279eba00624465cdb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.695Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

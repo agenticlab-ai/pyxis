@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZQW4365NW9EADTF7EYN2W",
+  "kind": "Document",
+  "subject": "design/docgate-v2",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/docgate-v2.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:8b5717694760885a5b0f8069fc67c9c8747519d5c5c540d4bf2f2a3251bb07d3"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCPC8J6YS2TYS3BYZ7FAG"
+    }
+  ],
+  "body_sha256": "8b5717694760885a5b0f8069fc67c9c8747519d5c5c540d4bf2f2a3251bb07d3",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:58:01Z",
+  "provenance": {
+    "source": "docs/tech-design/docgate-v2.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/feature-brainstorm#Q1",
+  "feature": "feature-brainstorm",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJYCVQJTHV254T1FVVW",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-24",
+  "statement": "When delivery is verified, the feature drive shall release execution ownership and routing before cleaning disposable state according to retention policy.",
+  "rationale": "End safely and prevent new work.",
+  "fit_criterion": "No post-delivery attempt is routable; cleanup never precedes ancestry verification; retained artifacts follow policy.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b33f5a24bf6ca61c57d09edced547ccf6deb0b3ca2c172315d047d1e564d5aba",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.462Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

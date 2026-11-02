@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461M3DGH14DE5SMKDJYDE0D",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.3-d-4-observe-publish-once-exact-read-observe-again.1",
+  "statement": "Require an open nondraft PR at the explicitly reviewed head.\nObserve its base, author, branch, state, and draft flag, together with the host\ndefault branch and its policy commit, before and immediately before publication.\nPreserve an outstanding operator changes-requested review.\nWrite once with the exact `commit_id`; never automatically retry a failed\nwrite. Read the returned review ID from its exact endpoint, require the same\nidentity and canonical body, then reobserve the target. Movement observed by the\nfinal preflight produces zero writes. GitHub provides no atomic expected-head\nor expected-base condition on review creation: movement after that observation,\nincluding before submission, can leave one exact old-head decision. The final\nobservation returns a stale result, and the decision cannot authorize the changed\nhead or policy. The command\ndoes not merge or mutate protection.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:cf578a2c604e3a88599a9c78ad8925e28762a9b7b53f4fc170fdf9412e03d103",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:36Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 125-137 in section 3-d-4-observe-publish-once-exact-read-observe-again; sha256:cf578a2c604e3a88599a9c78ad8925e28762a9b7b53f4fc170fdf9412e03d103"
+  }
+}

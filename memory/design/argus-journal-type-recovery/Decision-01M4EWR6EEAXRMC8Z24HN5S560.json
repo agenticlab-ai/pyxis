@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWR6EEAXRMC8Z24HN5S560",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.3.4.2",
+  "statement": "Stamped draft rebases remain exclusively `draft prepare-lock` operations: verify original bindings, refresh existing complete stamps for the new tree/parent, preserve unstamped source commits, refuse partial/stale stamps, keep the generated lock commit unstamped and share the pinned cache in the temporary installed worktree. The normal per-commit drive context and single-parent binding remain unchanged.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b230de42bb20cf528c72b1151875b293182cde0ab57ff5c9aacd6bb33ce7c32f",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:37Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 60-60 in section 3.4; sha256:b230de42bb20cf528c72b1151875b293182cde0ab57ff5c9aacd6bb33ce7c32f"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBRKZREEHH22SXG33QD",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-1",
+  "statement": "When invoked, the reviewer shall verify its subject — a post-fold draft 000-base, or a validated amendment with its folded effect — and shall refuse any other subject naming the state and remedy, writing nothing.",
+  "rationale": "wrong-subject reviews waste rounds and mislead verdicts",
+  "fit_criterion": "fixture subjects: draft and amendment admitted; merged-base-outside-amendment, non-PRD, and unfolded drafts refused with remedies, zero writes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2059aa7ba8a3740aa18d3bd8748a7539e7a8826c63fc20a52ef5565a83c92695",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.256Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

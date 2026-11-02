@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2V1P1G7AR0D1YJK32DN1YP1",
+  "kind": "Learning",
+  "subject": "learning/parallel-memory-cli",
+  "statement": "Memory writers admit records by their actual causal dependencies and historical effects. Baseline synchronization supports partitioned v2 policy while keeping v1 compatibility until a separate data-only migration.",
+  "intent": "Let unrelated branches preserve record IDs and avoid shared policy edits without weakening admission or debt checks.",
+  "rationale": "All record writers validate the trial projection and historical transitions, including Document bodies and each batch append. The explicit policy writer validates committed inputs, protects dirty files, pins directory ownership, writes the marker last, and converges on retry.",
+  "tags": [
+    "code:internal/memory/cli"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T20:00:19Z",
+  "provenance": {
+    "source": "internal/memory/cli/baseline_sync.go",
+    "commit": "30dcc43775174df02334c4b015784f481cdfec70"
+  }
+}

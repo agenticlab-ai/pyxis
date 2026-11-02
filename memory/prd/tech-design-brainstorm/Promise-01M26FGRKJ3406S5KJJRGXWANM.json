@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKJ3406S5KJJRGXWANM",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "UB-7",
+  "statement": "If If the panel produces alternatives that are variations rather than genuinely distinct shapes, then the system shall redo the divergence under sharpened orthogonal constraints before presenting",
+  "intent": "distinct shapes, not wallpaper",
+  "fit_criterion": "panel-quality fixture: presented alternatives differ structurally (distinct seams/interfaces), judged at the gate",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e0d7a04277dcb04f4dd52f27ac38f721cdab13925522e3268e65735267aa6a41",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.506Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

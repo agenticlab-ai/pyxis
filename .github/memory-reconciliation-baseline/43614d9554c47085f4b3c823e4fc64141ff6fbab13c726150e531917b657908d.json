@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/config-driven-portability#R1",
+  "feature": "config-driven-portability",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

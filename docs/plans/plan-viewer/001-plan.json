@@ -1,0 +1,306 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Plan viewer — the checkpoint's review surface — plan 001",
+  "feature": "plan-viewer",
+  "prd": "docs/prds/plan-viewer",
+  "design": "docs/tech-design/plan-viewer-v1.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Plan viewer — the checkpoint's review surface",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "The render spine: verb, refusal, and the page skeleton",
+      "goal": "The render verb exists end to end: a green plan becomes one self-contained page skeleton at the default scratch location, and a red or unusable plan refuses with named defects.",
+      "current": "Plans have no rendered form; the render verb does not exist and reviewers read raw source and machine faces.",
+      "desired": "Invoking render on a plan directory folds the named or highest version in memory. A fold-red plan yields no page and presents every fold defect. A green plan yields exactly one file — the page with its header region (feature, version, dialect, status, totals) and a footer stating the source fingerprint and tool version — at the default scratch location or the named output path. A missing directory, unknown version, stale machine face, or missing diagram bundle each refuse with a defect naming file, operation, reason, and remedy. Draft plans render; the verb reads repo files only and never touches the tracker.",
+      "scope": [
+        "the render verb with version and output selection over the in-memory fold",
+        "the refusal paths: fold defects presented, environment defects named, no partial page",
+        "the page skeleton: header region, fingerprint footer, inline styling, template escaping",
+        "the write discipline: exactly one output file, nothing else created or modified"
+      ],
+      "out_of_scope": [
+        "the graph, task-card, coverage, and flags regions (later tasks)"
+      ],
+      "acceptance": [
+        "a green fixture plan renders one file whose header region and fingerprint footer carry the plan's values",
+        "a fold-red fixture yields no page and every fold defect in the output",
+        "a missing directory, unknown version, and stale machine face each refuse with the named quadruple and zero writes",
+        "a filesystem audit across a render shows exactly one file created and none modified"
+      ],
+      "key_interfaces": [
+        "the render verb — version and output selection, defect rendering, exit codes",
+        "the page template — the skeleton the region tasks extend",
+        "the folded plan model — the only rendering input (the machine-face contract)"
+      ],
+      "traces": [
+        "prd:plan-viewer/FR-1",
+        "prd:plan-viewer/FR-6",
+        "prd:plan-viewer/FR-7",
+        "prd:plan-viewer/UB-1",
+        "prd:plan-viewer/UB-2",
+        "design:plan-viewer-v1#3.1",
+        "design:plan-viewer-v1#DINV-1",
+        "design:plan-viewer-v1#DINV-2"
+      ],
+      "touches": [
+        "internal/plangate/render",
+        "cmd/plangate"
+      ],
+      "size_band": {
+        "lo": 180,
+        "hi": 260
+      },
+      "mechanical": false,
+      "plan_task_id": "plan-viewer/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "The graph region: the dependency diagram",
+      "goal": "The page shows the plan's dependency shape: a diagram with every task exactly once, every edge exactly once, and foundation levels visually distinct.",
+      "current": "The page skeleton renders header and footer only; the dependency shape is invisible.",
+      "desired": "The graph region draws the task graph from the folded edge set — node labels carry the task identifier and title, styling distinguishes the foundation levels, and the diagram engine is the pinned vendored bundle inlined into the page at render time, keeping the page self-contained with zero external references.",
+      "scope": [
+        "the diagram definition generated from the folded model's tasks and edges",
+        "foundation-level styling on nodes",
+        "inlining the pinned vendored diagram bundle into the page"
+      ],
+      "out_of_scope": [
+        "any layout tuning beyond the engine's defaults"
+      ],
+      "acceptance": [
+        "the fixture plan's diagram definition contains each task node exactly once and each edge exactly once",
+        "distinct foundation levels render with distinct styles",
+        "an asset audit over the rendered bytes finds zero external references"
+      ],
+      "key_interfaces": [
+        "the graph-region template and the diagram-definition generator over the folded model"
+      ],
+      "traces": [
+        "prd:plan-viewer/FR-2",
+        "design:plan-viewer-v1#3.6",
+        "design:plan-viewer-v1#DINV-3",
+        "design:plan-viewer-v1#DINV-4"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/plangate/render"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 160
+      },
+      "mechanical": false,
+      "plan_task_id": "plan-viewer/001/T2",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "The task cards: every charter field, anchored",
+      "goal": "Each task renders as one anchored card carrying its complete charter, so the reviewer reads the contract the worker will execute.",
+      "current": "The page shows the plan's shape but none of its content; charters are only readable in the raw source.",
+      "desired": "One card per task, anchored by task identifier, renders every charter field of the task contract — goal, current and desired behavior, scope, out-of-scope, acceptance criteria, key interfaces, traces — plus badges for mechanical, size band, foundation, routing proposal, and any recorded size or overlap acceptance. Charter prose renders as escaped text: hostile markup in a plan displays inert.",
+      "scope": [
+        "the task-card template over the charter field set with its badges",
+        "in-page anchors per task",
+        "escaping verification for charter prose"
+      ],
+      "out_of_scope": [
+        "coverage links into the cards (the next task wires them)"
+      ],
+      "acceptance": [
+        "every charter field and badge of every fixture task appears in the page",
+        "a maximal fixture (every field populated) renders with no omission, guarding schema drift",
+        "a fixture task carrying hostile markup renders it inert"
+      ],
+      "key_interfaces": [
+        "the task-card template — the reviewer-facing form of the task contract"
+      ],
+      "traces": [
+        "prd:plan-viewer/FR-3",
+        "design:plan-viewer-v1#3.6",
+        "design:plan-viewer-v1#DINV-1"
+      ],
+      "blocked_by": [
+        "T2"
+      ],
+      "touches": [
+        "internal/plangate/render"
+      ],
+      "size_band": {
+        "lo": 140,
+        "hi": 220
+      },
+      "mechanical": false,
+      "plan_task_id": "plan-viewer/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Coverage links and the flags panel",
+      "goal": "The review's two attention surfaces render: the coverage matrix navigable by links into the task cards, and every recorded acceptance aggregated in one flags panel.",
+      "current": "Coverage and recorded acceptances exist in the plan but the page does not show them; the reviewer cross-references identifiers by hand.",
+      "desired": "The coverage region renders every matrix row with each task reference linking to that task's card anchor; deferred rows render visually distinct. The flags panel lists every recorded size and overlap acceptance with its task and reason — exactly those present in the machine face, no more and no fewer.",
+      "scope": [
+        "the coverage-region template with in-page links and distinct deferred styling",
+        "the flags panel aggregating recorded acceptances"
+      ],
+      "out_of_scope": [
+        "any inverse view across plans (the governing contract's waiting room)"
+      ],
+      "acceptance": [
+        "every coverage row renders and every task reference resolves to an in-page card anchor",
+        "deferred rows carry their distinct marking",
+        "the flags panel lists exactly the machine face's acceptances with task and reason"
+      ],
+      "key_interfaces": [
+        "the coverage-region and flags-panel templates"
+      ],
+      "traces": [
+        "prd:plan-viewer/FR-4",
+        "prd:plan-viewer/FR-5",
+        "design:plan-viewer-v1#3.6"
+      ],
+      "blocked_by": [
+        "T3"
+      ],
+      "touches": [
+        "internal/plangate/render"
+      ],
+      "size_band": {
+        "lo": 120,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "plan-viewer/001/T4",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "The proof pass: goldens, audits, and the live render",
+      "goal": "The finished viewer is proven whole: deterministic golden output, the self-containment and write audits as standing fixtures, the untouched-write-side evidence, and a live render of a real plan.",
+      "current": "Each region passes its own checks, but no end-to-end golden, audit suite, or real-plan render exists.",
+      "desired": "A maximal fixture plan renders byte-deterministically against a committed golden. The asset audit (zero external references) and the write audit (exactly one file) run as standing fixtures over the full page. The existing plan tooling suites pass unchanged beside the viewer, and the review-tooling scripts and vendor trees show zero diff. A real plan from the repository renders successfully as the demo evidence.",
+      "scope": [
+        "the end-to-end golden over a maximal fixture",
+        "the standing asset and write audits",
+        "the write-side and review-tooling non-regression evidence",
+        "the live render of a real plan in the repository"
+      ],
+      "out_of_scope": [
+        "the human checkpoint use itself (the operator's review is recorded on the plan PR it serves)"
+      ],
+      "acceptance": [
+        "two renders of one plan state are byte-identical and match the committed golden",
+        "the asset and write audits pass over the full page as standing fixtures",
+        "the plan tooling suites pass unchanged and the review-tooling scripts and vendor trees show zero diff",
+        "a real plan in the repository renders to a page that opens offline"
+      ],
+      "key_interfaces": [
+        "the golden suite and the audit fixtures — the viewer's proof surface"
+      ],
+      "traces": [
+        "prd:plan-viewer/NR-1",
+        "prd:plan-viewer/NR-2",
+        "prd:plan-viewer/FR-1",
+        "prd:plan-viewer/FR-6",
+        "design:plan-viewer-v1#DINV-1",
+        "design:plan-viewer-v1#DINV-3"
+      ],
+      "blocked_by": [
+        "T4"
+      ],
+      "touches": [
+        "internal/plangate/render"
+      ],
+      "size_band": {
+        "lo": 100,
+        "hi": 160
+      },
+      "mechanical": false,
+      "plan_task_id": "plan-viewer/001/T5",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:plan-viewer/FR-1",
+      "tasks": [
+        "T1",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-2",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-4",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-5",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-6",
+      "tasks": [
+        "T1",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/FR-7",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/UB-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:plan-viewer/UB-2",
+      "tasks": [
+        "T1"
+      ]
+    }
+  ],
+  "source_fingerprint": "sha256:28eb5dc03c17809b43f3497360caba473128951752204019274df0e92aadb7b4"
+}

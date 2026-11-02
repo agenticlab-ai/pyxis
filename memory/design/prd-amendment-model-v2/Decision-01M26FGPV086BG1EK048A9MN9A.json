@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPV086BG1EK048A9MN9A",
+  "kind": "Decision",
+  "subject": "design/prd-amendment-model-v2",
+  "family": "decision.3.4.1",
+  "statement": "`supersede \u003cID\u003e` accepts every live addressable prefix and\nrequires a complete fresh row with the same prefix, except that an unanswered\nQ uses `answer`, and NG/WR use `rescope`. An answered Q uses `supersede` with a\nfresh Q ID. `retire` means removal only and is never a replacement recipe.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:e98763d04543c2c3d1b405fffa52c7f17c9771851b431165122f2a4bd720ac32",
+    "source-design:552a8df2de15390d67bbff1fea20073207c7ec97b9198c4e72230f59f77874f6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCVCM5BFZ26EG3XVS19ZM"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.696Z",
+  "provenance": {
+    "source": "docs/tech-design/prd-amendment-model-v2.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/prd-amendment-model-v2.md lines 230-233 in section 3.4; sha256:e98763d04543c2c3d1b405fffa52c7f17c9771851b431165122f2a4bd720ac32"
+  }
+}

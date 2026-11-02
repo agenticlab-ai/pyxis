@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZP7HFCMA7HXZ1DXDQPRE0",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "J4",
+  "statement": "When several features' contracts are drafted in parallel sessions, I want have my lock checked against whatever locked before it, so I can avoid locking a contract that contradicts one locked meanwhile",
+  "rationale": "brainstorm:feature-draft#D-22",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6f14cf3af77161941b8b7b3876953d18101eb4a29ed51cb7a71d4306b8e4a408",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:50Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

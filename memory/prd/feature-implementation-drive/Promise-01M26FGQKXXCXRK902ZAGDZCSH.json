@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKXXCXRK902ZAGDZCSH",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "NFR-5",
+  "statement": "While awaiting human review or manual action, the feature drive shall require no live model session or worker process.",
+  "intent": "Idle cost",
+  "fit_criterion": "A full review-wait fixture records zero model calls and zero worker processes until a wake/re-invocation.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d1046214bc51b98b16ce0f13c7f9b942c72efd692a6906aba3352bfd3f1ca5cb",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.493Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

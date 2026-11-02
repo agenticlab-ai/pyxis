@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQEQF90C35BS9JSBNWV5",
+  "kind": "Promise",
+  "subject": "prd/ecosystem-help",
+  "family": "NR-1",
+  "statement": "Existing skills, authoring guides, and the pipeline map's existing content are unchanged by this feature's landing",
+  "rationale": "help composes the surfaces; it never edits them",
+  "fit_criterion": "the implementation diff outside the new skill's own files is limited to vendor pointers, an additive pipeline-map row, and the living-rollup updates the shipped-capability convention requires",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:204fc06183271651886e3e7c0175482a9f17ba1f2afd9392cc5781f00bbaa1b3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.327Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

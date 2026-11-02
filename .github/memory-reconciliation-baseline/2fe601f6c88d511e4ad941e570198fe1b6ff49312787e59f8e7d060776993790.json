@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/implement-now#Q-7",
+  "feature": "implement-now",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

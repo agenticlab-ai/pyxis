@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPW0W3GXED8EF1KV96NN",
+  "kind": "Decision",
+  "subject": "design/skill-command-prefix-v1",
+  "family": "decision.3.4.1",
+  "statement": "FR-4 is enforced by a **conformance test** in the scripts-test harness, reached by CI via a Go test wrapper in the payload package (same pattern as help purity) — **not** a docgate check. The test is absent until the closing PR (UB-2); once present it fails closed if any skills-tree directory basename or frontmatter `name:` violates `pyxis-*`, and fails if the closing precondition still sees an unprefixed skill (UB-3). (design-brainstorm:skill-command-prefix-tech-design#D-1; G-1 resolved here)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d8fa39bf65c11e28e069c1f28de2ac91ecd29b2db438e2aaf282fcc30e246765",
+    "source-design:3a6b8fea00e859a15e5cefba04a544e9cb943e9e3b66488645d62bb1b1923087",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCX5K2JNQRCGQ87X5EN31"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.728Z",
+  "provenance": {
+    "source": "docs/tech-design/skill-command-prefix-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/skill-command-prefix-v1.md lines 76-76 in section 3.4; sha256:d8fa39bf65c11e28e069c1f28de2ac91ecd29b2db438e2aaf282fcc30e246765"
+  }
+}

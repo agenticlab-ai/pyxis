@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Document-01M5GNA981BJDZDNW7XHWMXGBF",
+  "kind": "Document",
+  "subject": "review/prototype",
+  "family": "report-013",
+  "statement": "Draft reviews/013.md",
+  "tags": [
+    "draft-digest:sha256:af81d7a0c4377db50895d1e58be50da3d427f4a5ec8b2a6e9e647aef10aad1c8"
+  ],
+  "body_sha256": "8d65e619a73e0d6aa47a8fb957579eb64004b1920eabd04b1d8d2cacc5b270f5",
+  "literal_body": true,
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-22T01:58:52Z"
+}

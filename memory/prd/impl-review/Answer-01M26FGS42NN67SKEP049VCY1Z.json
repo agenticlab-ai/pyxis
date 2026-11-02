@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Answer-01M26FGS42NN67SKEP049VCY1Z",
+  "kind": "Answer",
+  "subject": "prd/impl-review",
+  "statement": "Actual deep alone remains one pass; planned critical assurance requires two mutually blind deep top-level passes in every actual band.",
+  "learned_from": [
+    "prd:impl-review/Q3"
+  ],
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M26FGRSS3D1GG475Q6DRKNCH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.034Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "resolved approved PRD row"
+  }
+}

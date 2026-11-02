@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7GPX2SP6D554SP8TKB",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "J5",
+  "statement": "When a projection run fails partway or is re-run, I want have it converge — finish the remainder, duplicate nothing, so I can trust the planner with the tracker",
+  "rationale": "harbormaster §5 halt-on-failure story; AP-22",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e2a25b4c674370440b36bd520eb179562cb5ee9d1480f6ba1266b81cf741a51f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.12Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

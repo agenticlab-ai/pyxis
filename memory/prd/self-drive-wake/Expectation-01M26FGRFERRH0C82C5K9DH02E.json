@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRFERRH0C82C5K9DH02E",
+  "kind": "Expectation",
+  "subject": "prd/self-drive-wake",
+  "family": "DOD-14",
+  "statement": "Every live §5.7 event is observed with its exact typed properties during conformance/proof, including EVT-4's ledger/depth/wait/deadline, EVT-7's round/obligation/provider-attempt/recovery/action/failure join and required immutable evidence refs for exhausted/rearmed, and EVT-8's whole-store unknown result.",
+  "intent": "EVT-1..EVT-8, §5.4",
+  "fit_criterion": "event-log wire extracts, schema assertions for all eight events, git-retained exhaustion/rearm records, replay/idempotence/conflict fixtures, and evidence-ref joins",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9406c23de3d95e87bb1a76d90d3919e1c776d55776c40cd87a929cfd89fce1c7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.374Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

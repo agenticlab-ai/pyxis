@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSDNEBQH804EKGB1Z29G93",
+  "kind": "Document",
+  "subject": "session-log/2026-08-20-1431-projection-congruence-restoration",
+  "family": "record",
+  "statement": "Imported Pyxis source document: logs/2026-08-20-1431-projection-congruence-restoration.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:logs",
+    "watermark:0a05dfb",
+    "historical",
+    "non-governing"
+  ],
+  "body_sha256": "8472226851c45103eddfb286011e638610c3e2d0163ff622820e671506d4fc68",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:28Z",
+  "provenance": {
+    "source": "logs/2026-08-20-1431-projection-congruence-restoration.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

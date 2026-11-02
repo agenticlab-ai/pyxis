@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMVTN8NGNWCVCA7CNM1",
+  "kind": "Decision",
+  "subject": "design/argus-attribution-hardening",
+  "family": "decision.2.1",
+  "statement": "Argus authorship is **produced by construction** — the commit-authoring actor (the supervisor/harness) stamps the contractual `Argus-Drive: \u003cslug\u003e` trailer on every commit a drive's work is landed as, via a **repo-internal git commit-message hook** on the same `core.hooksPath` surface the shipped desk hooks use; the drive authors files, not commits, so the producer sits **out of the drive's reach** and the model can neither add, omit, nor alter the trailer *(design-brainstorm:argus-attribution-hardening-tech-design#D-1, #ALT-1)*. The signal is given **forgery-resistant strength** from two repo-internal properties, **no new key**: the producer is out of the adversary-drive's reach (so the drive cannot forge/replay/omit), and the trailer carries an **in-tree binding to the commit's own content** (a binding the gate re-derives from the commit via `git`) so a trailer lifted onto a different commit is a detectable replay and derives *underivable* — the residual (a raw-commit-access forger) stays the frozen design's honestly-owned limit, backstopped by fail-closed-on-absence and the author-independent structure arm *(#D-2, #ALT-5)*. Human authorship is **positively established** on the protected subset by a **positive attestation trailer** — the shipped, credential-free `Governing-Change: operator` *pattern* (a single-sourced positive-human reader modeled on `hasOperatorTrailer`, read at the merge base via `git log`; §3.3), with a determinable in-tree committer identity as an explicitly **non-adversarial**, committer-settable best-effort disambiguation only (it carries no forgery-resistance; the primary and sole security-bearing positive-human signal is the attestation trailer). A protected-path diff resolves into the **three FR-13 states** under a **stated precedence — positively-Argus wins**: **a diff that is *both* positively-Argus and positively-human refuses** (the collision case; the positive-human attestation is a plaintext line the drive-influenced commit body can carry, so it can never launder a positively-Argus protected-path diff — §3.3), positively-Argus → refuse (FR-9); positively-human (and *not* positively-Argus) → pass, never refused (NR-4); underivable (neither positive signal) → fail closed (FR-10) *(#D-3, #ALT-7)*. The rollout is **from-here-forward**: the gate evaluates the PR's own commit range (`base..HEAD`, the shipped behavior), so pre-mechanism history is never in range and never retroactively refused, and the producer stamps every drive commit from the mechanism's landing forward, so no latent window remains; the mechanism's own introducing PR is the incident-I1 exception (operator review is its sole backstop) *(#D-4, #ALT-9)*. The **CI read stays exactly as shipped** — a `git` read of in-tree commit metadata, no ambient credential, no mutable badge — and the **scope-width derivation (DINV-6) and protected-path classification are unchanged**, reused verbatim from the superseded design and `internal/argus/boundary`.",
+  "tags": [
+    "code:internal/argus/boundary",
+    "reconcile:design-decision",
+    "source-block:96f025547f43bcf390c2d5bb618f09743d4d7fb90873c362175b99e211daee46",
+    "source-design:6b7254e792e9691ce7a93074a9043414715aeec69294eccdcd1d1cde74efda7c",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCM1XPQGYGP03NTAGS1TW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.499Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-attribution-hardening.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-attribution-hardening.md lines 32-32 in section 2; sha256:96f025547f43bcf390c2d5bb618f09743d4d7fb90873c362175b99e211daee46"
+  }
+}

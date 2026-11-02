@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR0TPB12HKTGBW3JMW2A",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-27",
+  "statement": "Where artifacts are resolved, the system shall fetch every artifact from the effective artifact source — the distribution door by default, or a configured override — under the same manifest-hash verification, and `preview` and `doctor` shall report that effective source and whether it is the default or an override.",
+  "rationale": "a mirror can serve bytes but never choose them, so the channel may move freely; what may not move is the operator's ability to see which channel is answering",
+  "fit_criterion": "default-source and override-configured fixtures both fetch from the effective source and both refuse checksum mismatches; preview and doctor name the effective source and label it default or override",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8e5e83d0548706835abcd663344fee68dfe2f7441c65d2b165ef0c4a6d03c044",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.906Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

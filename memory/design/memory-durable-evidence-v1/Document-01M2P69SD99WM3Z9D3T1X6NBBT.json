@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M2P69SD99WM3Z9D3T1X6NBBT",
+  "kind": "Document",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/memory-durable-evidence-v1.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:d5d8f44b0c9b5f456fb8f4fb69663c0391ba020eb50ac180e9065002b3927f40"
+  ],
+  "body_sha256": "d5d8f44b0c9b5f456fb8f4fb69663c0391ba020eb50ac180e9065002b3927f40",
+  "literal_body": true,
+  "issuer": "Codex",
+  "created_at": "2026-09-16T22:44:48Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-durable-evidence-v1.md",
+    "note": "offline reconciliation"
+  }
+}

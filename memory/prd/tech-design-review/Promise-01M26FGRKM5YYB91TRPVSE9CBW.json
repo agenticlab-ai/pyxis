@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKM5YYB91TRPVSE9CBW",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "ABUSE-2",
+  "statement": "whoever edits this class's calibration table — defanging — vector: severity rows dropped by data change",
+  "intent": "rubber-stamp by data",
+  "fit_criterion": "versioned, PR-reviewed data; the escalation band + M2 residual expose it",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a2337113e4ab59b770e90d8e016a82a2e6789466dfca43dad0c41d4a0a074273",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.508Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

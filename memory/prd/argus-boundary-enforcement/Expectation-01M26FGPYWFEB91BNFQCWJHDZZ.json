@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPYWFEB91BNFQCWJHDZZ",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-11",
+  "statement": "A forged / replayed / stripped signal cannot flip the derived class: no forged signal makes a human diff derive as Argus (framing → false refusal), and no stripped signal makes an Argus protected-path diff derive as human (masquerade → served) — the diff instead fails closed.",
+  "intent": "FR-12; FR-13; ABUSE-3",
+  "fit_criterion": "the forgery/replay/strip fixture corpus red at the gate (class does not flip in either direction)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cde9951fa76cd0ad151dc7cc28931fc8553facb12e41f6d2fa6af15099fb2f99",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.82Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

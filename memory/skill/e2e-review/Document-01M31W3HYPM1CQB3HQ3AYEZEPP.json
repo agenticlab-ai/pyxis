@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W3HYPM1CQB3HQ3AYEZEPP",
+  "kind": "Document",
+  "subject": "skill/e2e-review",
+  "family": "lens-buildability",
+  "statement": "Captured authored source: .pyxis/skills/e2e-review/lenses/buildability.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:e542fd130ac001401895735188838546294061bb3e2b1f5d406edba35a8b4b1e"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB8CE7RJ8P6RS2YH10V82"
+    }
+  ],
+  "body_sha256": "e542fd130ac001401895735188838546294061bb3e2b1f5d406edba35a8b4b1e",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:31Z",
+  "provenance": {
+    "source": ".pyxis/skills/e2e-review/lenses/buildability.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRPGQ2WAGTP8G499GYZ5",
+  "kind": "Expectation",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "DOD-3",
+  "statement": "Across a batch spanning every supported harness, both reconciliations run clean: every launched process in the authoritative launch record is accounted for by a schema-valid record or a capture-failure entry with none in neither (FR-13), and every required figure in every record is measured or declared unavailable with zero discrepancies (FR-15)",
+  "intent": "M1, M2, FR-4, FR-13, FR-15, UB-2",
+  "fit_criterion": "the batch's record set + capture-failure entries + both reconciliation outputs, each read against its independent source",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4f01ac36e96518678072df4e4d1406fcf424044813c5576312419f8383283af8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.6Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

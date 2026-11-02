@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYS06H8DV7A1E26Q2MH",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "ABUSE-3",
+  "statement": "a diff spoofs its authorship to appear human (evade FR-9) or to frame a human as Argus (false refusal) — vector: forging the attribution signal (badge, trailer)",
+  "intent": "bypass of the attribution gate, or a denial-of-service false refusal on a human PR",
+  "fit_criterion": "FR-11 (forgery-resistant, badge-independent derivation) + FR-8/FR-4..6 (the structure arm catches a structurally-illegal contract regardless of author, closing the evade path for the authority contract)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:79796b1d4236e9165be3242d76923f892e149be781865c917af52ec2dd63f4d0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.817Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

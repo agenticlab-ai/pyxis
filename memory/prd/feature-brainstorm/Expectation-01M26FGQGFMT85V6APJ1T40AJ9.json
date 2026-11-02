@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQGFMT85V6APJ1T40AJ9",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "EVAL-3",
+  "statement": "facts looked up, not asked",
+  "intent": "fixtures seeded with doc-answerable questions",
+  "fit_criterion": "≥ 95% resolved by lookup with source cited",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:965936b0ea22c5849cbceb10729b975636b5c109c69cbe1fe6dd14d45b940f4d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.383Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M1TJ80KWSA692F1A5QNS9",
+  "kind": "Decision",
+  "subject": "design/e2e-verification-skills-v2",
+  "family": "decision.3.1.1",
+  "statement": "e2e-design reads the feature's **PRD requirement rows** (the coverage backbone), its **live technical-design set**, and the **built code**, and authors the `e2e-design/v2` doc. It **refuses and produces nothing** if any input is absent — no PRD or live design → refuse naming the input (`prd:e2e-verification/UB-2`); not-yet-implemented → refuse naming the unlanded work (`UB-1`) — and it **produces nothing and signals the operator to stop the pipeline** when the feature has no meaningfully-automatable e2e surface (`UB-7`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:cf691fd3d922822c54b0a078a571f34c3145f4f14ca2a1de88cbb397e0a84361",
+    "source-design:3508462a6fb8b6b739ccfee9ea78d5c8e95242b483c987ee851b4df712cffe84",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQ9Z39NT2FGBYB7VCSB"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR0V7JNJC4TV5S6402BWF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:13Z",
+  "provenance": {
+    "source": "docs/tech-design/e2e-verification-skills-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/e2e-verification-skills-v2.md lines 61-61 in section 3.1; sha256:cf691fd3d922822c54b0a078a571f34c3145f4f14ca2a1de88cbb397e0a84361"
+  }
+}

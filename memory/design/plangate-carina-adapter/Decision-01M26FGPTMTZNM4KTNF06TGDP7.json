@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPTMTZNM4KTNF06TGDP7",
+  "kind": "Decision",
+  "subject": "design/plangate-carina-adapter",
+  "family": "decision.3.1.1",
+  "statement": "`plangate project` takes a `--tracker gh|carina` flag (default `gh`); `cmd/plangate/main.go` constructs the chosen adapter at the projection boundary (replacing the hardcoded `tracker.GH`). The Carina adapter takes a store-location option (`--carina-root`, default the repo's bucket-1 work-items root); the `gh` path is unchanged when unselected. Everything upstream of the `Tracker` interface — decomposition, sizing, the plan fold, the report — is untouched (DINV-1). Flag names fix at implementation (shape).",
+  "tags": [
+    "code:cmd/plangate",
+    "reconcile:design-decision",
+    "source-block:fe5dc1b26ec0495f482e3dfec4819b5dd8057b71c332d5fc1fbbfc2dbb5e9aa7",
+    "source-design:647f94d27667ba074481e31c553cff0b9eb989b1fb0fbd67fb0542abff257beb",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCV3N5XY0RZ2PSZQ5E5N8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.684Z",
+  "provenance": {
+    "source": "docs/tech-design/plangate-carina-adapter.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/plangate-carina-adapter.md lines 40-40 in section 3.1; sha256:fe5dc1b26ec0495f482e3dfec4819b5dd8057b71c332d5fc1fbbfc2dbb5e9aa7"
+  }
+}

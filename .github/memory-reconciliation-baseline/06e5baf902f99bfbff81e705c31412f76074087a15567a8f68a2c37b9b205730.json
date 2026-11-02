@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/e2e-verification-artifacts-v2",
+  "feature": "e2e-verification",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

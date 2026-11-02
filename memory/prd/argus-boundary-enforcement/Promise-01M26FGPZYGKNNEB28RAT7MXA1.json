@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPZYGKNNEB28RAT7MXA1",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "NFR-1",
+  "statement": "The enforcement shall introduce no new egress, identity, secret, or outward surface; all three layers operate on repo-internal artifacts.",
+  "intent": "Security",
+  "fit_criterion": "no new network destination, credential, or data class in any layer (design review confirms; matches argus-artifacts §3.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1236108a3aeadd7591d2822e70c65da96d3af67cb464bd977b3d4eabe579d8c6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.854Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

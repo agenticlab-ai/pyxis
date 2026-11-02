@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQESR9S3E9SA8ERWQ9YCH",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-49",
+  "statement": "Where Argus drives a feature draft, the system shall let Argus run rounds and request the lock, and the Argus workflow shall leave approval and local landing invocation to the human operator.",
+  "rationale": "Preserves the operator's decision while distinguishing workflow authority from actor authentication",
+  "fit_criterion": "An Argus-driven fixture reaches readiness and a review request without invoking approval or landing; a hosted agent approval is refused; local inspection establishes that an actor with the shared account could invoke the operator command and that Pyxis makes no contrary authentication claim.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1a6e4da5eb5dc4af64240bcffa453009a8ca86440c8bc6c70d99b548de4234f5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZMS1V2W52Z9CDY7E3S08F"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:13Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3XRQDMCWHSEVM0ZXADHCQJQ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-48",
+  "statement": "When a ready feature draft's lock is requested, the system shall request approval from the human operator and lock only with the approval evidence required by the selected approval surface in FR-50.",
+  "rationale": "Retains one operator review per lock and states the evidence boundary for each medium",
+  "fit_criterion": "Hosted fixtures require an authenticated human approval and refuse agent approval; local fixtures require a matching declared receipt and refuse a missing or inconsistent one; the local output states that human authorship is unauthenticated.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d1d8c3f97be17fbeb6e607557ba21f0aeb8cb57e9e379e5122439ebbfe252507",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M38ZKQ00CZJ1VT2WX4XW0FQJ"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:37:12Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:3ed467e4fba9963b8b776b36767f91df5eb0b7fbd9fd3dc48da0fbcac5337d8e"
+  }
+}

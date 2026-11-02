@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ78S9F0D3JR2YEYANAC",
+  "kind": "Expectation",
+  "subject": "prd/contract-gate",
+  "family": "DOD-13",
+  "statement": "Every live unwanted-behavior row is demonstrated fail-closed, including every currency-disposition configuration, expiry, ambiguity, and approval-authorization path.",
+  "intent": "UB-1..UB-10",
+  "fit_criterion": "failure-injection matrix with one result per live UB row and zero omitted critical path",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3cc5464fc0d796ec9d5a86ffdafef2b5f6e3fc8d5bd80468848f10d04979d4a9",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.088Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

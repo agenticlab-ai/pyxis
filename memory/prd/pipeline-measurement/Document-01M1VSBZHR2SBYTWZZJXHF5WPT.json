@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBZHR2SBYTWZZJXHF5WPT",
+  "kind": "Document",
+  "subject": "prd/pipeline-measurement",
+  "family": "base",
+  "statement": "Imported Pyxis source document: docs/prds/pipeline-measurement/000-base.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:33Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/000-base.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

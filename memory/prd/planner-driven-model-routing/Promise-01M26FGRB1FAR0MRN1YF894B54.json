@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRB1FAR0MRN1YF894B54",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "UB-14",
+  "statement": "If an effective mapping or native-profile qualification is found defective after production activation, then the system shall engage FR-27's strongest-profile kill switch, stop new affected claims, invalidate every affected in-flight or unaccepted routing and review-process evidence artifact, and require re-execution or the complete FR-25/FR-26 assurance-pass set on the exact revision before acceptance",
+  "intent": "exact affected policy/profile versions, attempts, tasks, proposals, assurance passes, and review processes marked `rerun_required`",
+  "fit_criterion": "a seeded post-cutover qualification defect prevents acceptance of every affected open attempt and proposal until replacement evidence passes; all required assurance passes rerun on the exact head; unaffected routes continue",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bed2507b02d05de743a5760f38a3306453caca1710c901cff4e5bebe5e730526",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.233Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

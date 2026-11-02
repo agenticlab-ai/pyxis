@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR2HM88D05QN015H9F6H",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "FR-17",
+  "statement": "The tracker shall operate entirely from local files adjacent to a repo, requiring no network, no database server, and no external service at any point in any operation.",
+  "rationale": "the stated constraint — \"no db, no dependency, filesystem alongside a repo\"; the RW-4 minimal form",
+  "fit_criterion": "a full lifecycle (create → link → transition → search → close) completes with zero network syscalls and no service process",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5aea331b48af1ff51f8ae1ea0ef5e4975f99b135e18582dc43ddbf27c149f83e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.961Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

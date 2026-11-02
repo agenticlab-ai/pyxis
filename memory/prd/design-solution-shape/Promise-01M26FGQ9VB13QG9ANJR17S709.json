@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9VB13QG9ANJR17S709",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NFR-3",
+  "statement": "The split shall introduce no new content egress.",
+  "intent": "Security",
+  "fit_criterion": "no prompt/diff/telemetry leaves the environment that did not before",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8ce1d6358684b8c290f4a0b1f3355945a415a87d43c94b7baea1b8b49f721e2b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.171Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

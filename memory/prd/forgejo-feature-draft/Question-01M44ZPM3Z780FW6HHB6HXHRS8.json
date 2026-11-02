@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M44ZPM3Z780FW6HHB6HXHRS8",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-8",
+  "statement": "FR-4 requires retaining abandonment semantics, but its fit criterion verifies only the reason record and DOD-1 does not exercise abandonment. The existing affirmative repository-policy precondition and required human review/abandon transition therefore lack blocking PRD DoD evidence. False, missing, malformed, or inaccessible policy observations could mutate the reason Learning, branch or proposal while the current DoD still passes.",
+  "intent": "Independent PRD review004 FND-1 at1922f691ad771e94a32ae075191b3a937573785e, digestsha256:f843506ca76232942082f628d67849343ad106d9785d18f506648cac130085ce.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

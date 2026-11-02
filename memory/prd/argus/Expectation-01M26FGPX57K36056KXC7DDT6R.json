@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPX57K36056KXC7DDT6R",
+  "kind": "Expectation",
+  "subject": "prd/argus",
+  "family": "DOD-6",
+  "statement": "The agent's home ships complete: guide, authority contract (initial grants), ledger templates, front door",
+  "intent": "§4.2 In",
+  "fit_criterion": "the introducing PR",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:12c939146f73df9c444d95e19f38c984e9f6b92e60cba7a36f26180ed47e82ba",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.765Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

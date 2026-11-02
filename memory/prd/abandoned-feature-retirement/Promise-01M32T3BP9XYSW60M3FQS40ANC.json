@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T3BP9XYSW60M3FQS40ANC",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "ABUSE-2",
+  "statement": "Feature owner over-selects shared or historical artifacts — vector: broad selectors or inferred ownership",
+  "intent": "unrelated behavior or decision history is lost",
+  "fit_criterion": "FR-1, FR-3, FR-4, UB-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:18d3ac44236cc68117ad2ba7cebb861c8785b562179ab26745c2044cf8e6facc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:42Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

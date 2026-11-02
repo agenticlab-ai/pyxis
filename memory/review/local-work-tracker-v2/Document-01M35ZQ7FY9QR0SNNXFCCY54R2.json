@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZQ7FY9QR0SNNXFCCY54R2",
+  "kind": "Document",
+  "subject": "review/local-work-tracker-v2",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/local-work-tracker-v2.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:6daf275d5ab145042cfa69674e18be7f207b87bc322d45f20237c69b32458b9b"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSCCVVTKMSRV4QN10YKD7Z"
+    }
+  ],
+  "body_sha256": "6daf275d5ab145042cfa69674e18be7f207b87bc322d45f20237c69b32458b9b",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:39Z",
+  "provenance": {
+    "source": "docs/reviews/local-work-tracker-v2.md",
+    "note": "offline reconciliation"
+  }
+}

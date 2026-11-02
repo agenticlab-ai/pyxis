@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZMGVBN71AGAFSYG3FAMTD",
+  "kind": "Document",
+  "subject": "brainstorm/gate-attention",
+  "family": "record",
+  "statement": "Captured authored source: docs/brainstorms/gate-attention.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/brainstorms",
+    "reconcile:source",
+    "sha256:45c30952bd8ee454a35fee509afa001f2ecc3f5950f2de8dbd91d0acd22ab72b"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSBFF4TB5R60RQ44JM70XW"
+    }
+  ],
+  "body_sha256": "45c30952bd8ee454a35fee509afa001f2ecc3f5950f2de8dbd91d0acd22ab72b",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:56:11Z",
+  "provenance": {
+    "source": "docs/brainstorms/gate-attention.md",
+    "note": "offline reconciliation"
+  }
+}

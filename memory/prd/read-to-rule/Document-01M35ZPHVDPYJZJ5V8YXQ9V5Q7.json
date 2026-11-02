@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZPHVDPYJZJ5V8YXQ9V5Q7",
+  "kind": "Document",
+  "subject": "prd/read-to-rule",
+  "family": "base",
+  "statement": "Captured authored source: docs/prds/read-to-rule/000-base.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:6fc072661b2d8b4e304a7ed6eb53ed92e3f607a765023ea72467370c4e2f3450"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSC1635HCR4A98V826HVWV"
+    }
+  ],
+  "body_sha256": "6fc072661b2d8b4e304a7ed6eb53ed92e3f607a765023ea72467370c4e2f3450",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:17Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/000-base.md",
+    "note": "offline reconciliation"
+  }
+}

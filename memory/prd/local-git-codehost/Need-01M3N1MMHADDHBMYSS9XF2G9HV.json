@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Need-01M3N1MMHADDHBMYSS9XF2G9HV",
+  "kind": "Need",
+  "subject": "prd/local-git-codehost",
+  "family": "M2",
+  "statement": "M2: G2",
+  "intent": "Stale or malformed receipt accepted in negative fixtures",
+  "fit_criterion": "0 across full conformance matrix",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

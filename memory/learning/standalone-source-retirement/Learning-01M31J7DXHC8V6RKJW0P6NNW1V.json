@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Learning-01M31J7DXHC8V6RKJW0P6NNW1V",
+  "kind": "Learning",
+  "subject": "learning/standalone-source-retirement",
+  "statement": "Standalone skill entries and vendor READMEs may retire only through exact seals already active in the trusted predecessor.",
+  "intent": "Permit the two approved Lavish source deletions after their evidence lands without weakening other source obligations.",
+  "rationale": "Bind clean mainline issuance, raw bytes, regular mode, introduction history, and the active literal capture; use the same deterministic predicate in writing, reconciliation, and offline verification.",
+  "fit_criterion": "Race-tested batch and transport-clone regressions reject self-authorized deletion, changed or reintroduced sources, revoked or conflicting captures, malformed seals, dirty or altered retries, unavailable history, and candidate-selected legacy enforcement. The v5 policy upgrade preserves the exact integrity inventory. Configured governing documents and contract corpora remain ineligible at issuance, the trusted base, and the candidate.",
+  "learned_from": [
+    "internal/memory/reconcile/source_retirement_test.go",
+    "internal/memory/cli/source_retirement_e2e_test.go"
+  ],
+  "tags": [
+    "code:internal/memory/cli",
+    "code:internal/memory/gitsrc",
+    "code:internal/memory/reconcile"
+  ],
+  "relations": [
+    {
+      "type": "about",
+      "target": "Need-01M2WBX3F93HQRC4G950SQA464"
+    },
+    {
+      "type": "about",
+      "target": "Need-01M2VZ5XAR59FX6F9AVNVH3NYC"
+    },
+    {
+      "type": "about",
+      "target": "Need-01M31FMF1ZJYFMRF92XKMCXQT6"
+    }
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T08:44:53Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-standalone-source-retirement.md"
+  }
+}

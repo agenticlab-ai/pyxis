@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M49AKPPA4KJP7QTVW9DPN58H",
+  "kind": "Document",
+  "subject": "problem/inherited-learning-repair",
+  "family": "delivery",
+  "statement": "Captured authored source: docs/problems/inherited-learning-repair/delivery.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/problems",
+    "reconcile:source",
+    "sha256:347a702800e210c04ad1d1e397cce09695736627cb6a21ba5d446136b1ee7c97"
+  ],
+  "body_sha256": "347a702800e210c04ad1d1e397cce09695736627cb6a21ba5d446136b1ee7c97",
+  "literal_body": true,
+  "issuer": "agent:argus",
+  "created_at": "2026-10-06T19:21:23Z",
+  "provenance": {
+    "source": "docs/problems/inherited-learning-repair/delivery.md",
+    "note": "offline reconciliation"
+  }
+}

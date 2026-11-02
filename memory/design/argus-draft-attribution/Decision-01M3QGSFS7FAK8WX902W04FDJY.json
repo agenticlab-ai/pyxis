@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3QGSFS7FAK8WX902W04FDJY",
+  "kind": "Decision",
+  "subject": "design/argus-draft-attribution",
+  "family": "implementation-scope-and-rebase",
+  "statement": "Argus draft commits use slug-scoped first-PR paths; lock preparation verifies source bindings, rejects multi-parent source commits before rebase, refreshes valid stamps, shares the installed cache with its temporary worktree, and leaves unstamped and generated commits unstamped.",
+  "intent": "Keep ordinary single-user draft pushes and lock preparation attributable without losing merge-only edits.",
+  "rationale": "The old docs-only scope rejects draft rounds; copied bindings fail after a parent change; refreshing a stale source binding would launder it; plain rebase skips merge commits; and a linked worktree omits the ignored installed binary cache.",
+  "fit_criterion": "Boundary, real-hook rebase, stale-source and merge-source refusal, installed-cache, attribution-gate, and prepare-lock integration tests cover the changed production units.",
+  "tags": [
+    "code:cmd/argus-stamp",
+    "code:internal/argus/attribution",
+    "code:internal/argus/boundary",
+    "code:internal/argus/stamp",
+    "code:internal/draft/lock"
+  ],
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3QDB51TM8ZV5HSBFX80B19G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T21:23:05Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md"
+  }
+}

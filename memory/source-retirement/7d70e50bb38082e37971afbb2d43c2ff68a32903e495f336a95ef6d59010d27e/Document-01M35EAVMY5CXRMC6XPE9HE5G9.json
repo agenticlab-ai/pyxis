@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EAVMY5CXRMC6XPE9HE5G9",
+  "kind": "Document",
+  "subject": "source-retirement/7d70e50bb38082e37971afbb2d43c2ff68a32903e495f336a95ef6d59010d27e",
+  "family": "seal",
+  "statement": "Retire the exact standalone source docs/wiki/e2e-authoring-reference.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "669139b089e2a046d81da29f31eb0609c41a870efc56f5f99a560ae7a519078e",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:48Z",
+  "provenance": {
+    "source": "source-retirement:docs/wiki/e2e-authoring-reference.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

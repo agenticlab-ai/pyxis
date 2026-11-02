@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M37KTK6VWNAX3AR0FDTDBBT0",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "NR-2",
+  "statement": "Reading-room launch and document presentation require no secondary language runtime or package installation",
+  "rationale": "the workbench must follow the Go-only system policy",
+  "fit_criterion": "a clean Go build launches and serves the fixture corpus without any package-install step",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:505d6df52d38488554ca10e525d499c953c7a91aa905c3d20f45dcb70353f5f4",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGRP5CYZG2G18ZHD8PG72"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:08:16Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "note": "compiled from sha256:f2e22c52e2f7f8075d7088a7c0a760fc624e3960295149df4cb0475294ba8418"
+  }
+}

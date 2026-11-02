@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ71YXCZVR5E16BSKTG9",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "ABUSE-2",
+  "statement": "a contract author avoiding the gate — vector: plans without invoking the precondition, or manually decomposes outside plan-new",
+  "intent": "the planning-entry stop is bypassed",
+  "fit_criterion": "the precondition is wired into plan-new (FR-1); the continuous context (FR-9) catches contract defects independently of whether anyone plans; a plan whose inputs the gate would bounce is detectable by re-running the gate over the plan's pinned inputs. Residual: fully-manual planning outside the factory is visible to the human lane",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6d10aea1966755364b88ffd5e511e8a2e0a30ab101290209c94d25edaf82a43a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.081Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZN7BW6VT4J7M5F2KDNRJV",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-42",
+  "statement": "The system shall treat a feature draft as ready only when the links among its requirements and tech-spec decisions form a consistent graph — no link to a nonexistent requirement, no broken supersession, and no cycle.",
+  "rationale": "Compilability, carried over from the planning gate (brainstorm:feature-draft#D-20)",
+  "fit_criterion": "Fixtures with a decision serving a nonexistent requirement, a broken supersession, and a dependency cycle are each refused naming the inconsistency.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5b02c78d3891c98a6841ddcc430a5ed80884f7b45bf206435d992ea48f653bad",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:17Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

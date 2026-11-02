@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8EE99NJQVJV694MS58",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "M3",
+  "statement": "M3: G3",
+  "intent": "seeded contract drift flagged at contract-doc-PR time",
+  "fit_criterion": "a fixture PR seeding a currency/link/structural defect is flagged by the advisory context, and a coverage-only gap is advisory-not-blocking, at the continuous-context checkpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6bcf71e573f6e7f5542f0f5661350ba9560aeee5a0c2aa643e73267d781106c3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.126Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95ZR4PT7RMKBQ14N0H8",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "UB-5",
+  "statement": "If If cron reconciliation fails or detects concurrent change, then the system shall Preserve backup evidence and report the failure without reporting successful installation",
+  "intent": "Recovery location and failure",
+  "fit_criterion": "Provider failure/concurrent Pyxis installer fixtures preserve unrelated entries and identify recovery evidence",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

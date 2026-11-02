@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Question-01M3WDAD711HC5P5WREY96F8BZ",
+  "kind": "Question",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "P-2",
+  "statement": "The current Must rows prove zero writes on an origin mismatch, but an authenticated read or Git request can disclose a credential before a write. ABUSE-3's intended pre-credential check lacks blocking acceptance evidence.",
+  "intent": "Independent PRD review `reviews/001.md`, FND-2.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

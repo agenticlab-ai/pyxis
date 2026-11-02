@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQC3B33H1612J1H1XGTS",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "ABUSE-2",
+  "statement": "e2e-design optimizing to look complete — vector: omits scenarios for required behaviors, leaving the feature under-covered",
+  "intent": "end-to-end gaps ship unproven",
+  "fit_criterion": "FR-2 (every required behavior mapped) + FR-24 (coverage lens)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2babd0c418381418851cc14a9ff912641b5b7649ad9dca9d2808c5d93d78879e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.243Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

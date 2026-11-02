@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQHD5V85396J115W4DHQ",
+  "kind": "Need",
+  "subject": "prd/feature-brainstorm",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "decision-questions `prd-new` asks the operator while synthesizing from a gated record",
+  "fit_criterion": "median 0, max ≤ 2, at checkpoint \"five features through stage 1\"",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b8f07137d2f430c67becf4c4145138ab046ceb114b008490bdd7887fa250015a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.413Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

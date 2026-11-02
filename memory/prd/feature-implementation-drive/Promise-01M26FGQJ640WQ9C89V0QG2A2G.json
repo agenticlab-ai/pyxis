@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJ640WQ9C89V0QG2A2G",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "EVT-1",
+  "statement": "feature_drive_transition fires when lifecycle state changes",
+  "intent": "feature_id: string, from: enum, to: enum, owner_domain: enum(local·remote·none), reason: enum",
+  "fit_criterion": "M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2ca145f1df9e09f768f58c9038a2613bd3bb3eaf59feda071e52f76aa98694fc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.438Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

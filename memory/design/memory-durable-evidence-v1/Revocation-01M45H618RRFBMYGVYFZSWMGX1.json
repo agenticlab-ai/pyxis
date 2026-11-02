@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M45H618RRFBMYGVYFZSWMGX1",
+  "kind": "Revocation",
+  "subject": "design/memory-durable-evidence-v1",
+  "statement": "Withdraw this proposed adoption-rule replacement: it collides with the lossless Decision projection of the frozen design. Propose the bounded recovery clarification in its own native family and retain the exact imported adoption rule.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M45DWKAZD8QHYVZKGFZ30HE9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T07:59:18Z"
+}

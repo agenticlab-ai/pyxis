@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRNX82NF313VSRHWZW71",
+  "kind": "Need",
+  "subject": "prd/workbench-ui",
+  "family": "J2",
+  "statement": "When I hold an ID or term (a requirement row, a principle, a decision anchor), I want search the corpus with IDs as exact matches, so I can land on the defining spot",
+  "rationale": "record idea",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cd411319db74d0612f73c119231080c15e76c32d04a9640cb89c35afd3ab309e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.581Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

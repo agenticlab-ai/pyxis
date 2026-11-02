@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRV76A4G4JQCM5FX015V",
+  "kind": "Question",
+  "subject": "prd/plan-viewer",
+  "family": "Q3",
+  "statement": "Diagram technology: reuse the pinned vendored diagram bundle the doc renderer embeds, or generate static markup",
+  "intent": "tech design",
+  "rationale": "open",
+  "fit_criterion": "implementation",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:ed4ec23e7eccd6a031868642872c7bbc25c50945abc68398984b03e255eabb84",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.751Z",
+  "provenance": {
+    "source": "docs/prds/plan-viewer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:b69d6a717bbb9de0ed0c80bd905386421a19ad84540d56438f86e601b158729b"
+  }
+}

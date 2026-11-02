@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC97KFKSBJG2DTF58KB16",
+  "kind": "Document",
+  "subject": "review/feature-implementation-drive-000",
+  "family": "report",
+  "statement": "Imported Pyxis source document: docs/reviews/feature-implementation-drive-000.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/reviews",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "6554b32da320b14fb7afa47e0017d6b94bb6ed1ab7a7f5a86b0f1c1996b50175",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:43Z",
+  "provenance": {
+    "source": "docs/reviews/feature-implementation-drive-000.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

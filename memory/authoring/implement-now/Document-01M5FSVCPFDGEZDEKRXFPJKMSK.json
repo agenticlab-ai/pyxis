@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M5FSVCPFDGEZDEKRXFPJKMSK",
+  "kind": "Document",
+  "subject": "authoring/implement-now",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/implement-now.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:c94124b9a4c12f2d60219a3ab62817f8c6af692537077368765581e04db4d0ea"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M53Q9Y0DX82SJWQMD5798947"
+    }
+  ],
+  "body_sha256": "c94124b9a4c12f2d60219a3ab62817f8c6af692537077368765581e04db4d0ea",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-21T17:58:52Z",
+  "provenance": {
+    "source": ".pyxis/authoring/implement-now.md",
+    "note": "offline reconciliation"
+  }
+}

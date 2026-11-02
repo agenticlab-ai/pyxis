@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQMTPVXM7T3S3MNDT96V",
+  "kind": "Expectation",
+  "subject": "prd/impl-review",
+  "family": "DOD-12",
+  "statement": "The ten-review pre-release checkpoint computes complete-process coverage, precision over the disposition floor, nit rate, assurance×band coverage, and floor/blindness/route/evidence violations from the harvested corpus alone; EVT-11 records the result as part of the single activation predicate.",
+  "intent": "M1/M2; §3.3; EVT-11; FR-30",
+  "fit_criterion": "checkpoint fixture + pre-release reading + activation-predicate record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cef0650c9d80b49400e2b64edf2633d4e182f722cb4c9740b18b6ad18372f915",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.522Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

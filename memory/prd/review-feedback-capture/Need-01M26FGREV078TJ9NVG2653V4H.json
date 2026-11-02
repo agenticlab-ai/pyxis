@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGREV078TJ9NVG2653V4H",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "M3",
+  "statement": "M3: G2",
+  "intent": "doc-review touchpoints that produce an entry",
+  "fit_criterion": "≥ 99% of doc-review touchpoints produce an entry (capture failures — tracked via UB-1 — are the only expected shortfall); any gap is itself visible in the ledger — at the checkpoint cohort",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:76adfd9eff26592a940c8d009be5e9ffab65bfe1ea11d92d88f684f5faf9f091",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.355Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

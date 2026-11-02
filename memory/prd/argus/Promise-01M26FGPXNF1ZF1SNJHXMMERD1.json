@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXNF1ZF1SNJHXMMERD1",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "FR-15",
+  "statement": "While a problem is parked on an unanswered decision brief — or any driven item (a stage escalation awaiting Argus, an unclaimed tracker item) exceeds its configured age — the delivery ledger shall expose the age, and when a threshold is crossed at a drive touchpoint, Argus shall raise the item's visibility on its tracker surface (label or comment per repo config).",
+  "rationale": "parks and aging items get louder, never quieter, at both spine levels; Argus is the outermost flow — nothing else alarms its briefs; event-driven at touchpoints, so the parked state's steady-state cost is zero (a session-form agent that is not running spends nothing; the bump fires at the next touch) (brainstorm:autonomous-developer#D-8)",
+  "fit_criterion": "a seeded park older than threshold triggers exactly one visibility bump at the next touchpoint",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1bb03e54b46a971f563a7c5a5305d9f91a09d3627ab2dfa446ab66c1e09c126e",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.781Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

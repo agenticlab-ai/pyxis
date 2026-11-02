@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ3P5TYGFDHZRN8KWXWV",
+  "kind": "Expectation",
+  "subject": "prd/channel-inbox",
+  "family": "DOD-5",
+  "statement": "The bad-rollout drill passes: a staged blocking bulletin reaches a test operand's next session with its remedy, even muted",
+  "intent": "M2, G2",
+  "fit_criterion": "drill record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:70abd2727f9da5dcb2f10bbb01c714b320d60f8b3b32b2a9669b7b696c14f9c0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.974Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

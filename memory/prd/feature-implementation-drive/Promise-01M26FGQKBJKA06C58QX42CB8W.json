@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQKBJKA06C58QX42CB8W",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-9",
+  "statement": "When review feedback requires work outside the task charter, the feature drive shall keep the task blocked and create a new dependency-linked work item.",
+  "rationale": "Keep scope explicit.",
+  "fit_criterion": "Seeded out-of-charter feedback creates exactly one linked task and does not silently widen the proposal.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6a53a83cc13a69a10e776c7fb481ec606c2d82f8fa4154cbfd9f54fd9461f28c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.475Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZM8WE39T9PEQMQ479FMQJ",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-26",
+  "statement": "The system shall keep a plan's handoff free of parts that only a feature can supply, so that a non-feature intake can produce the same handoff.",
+  "rationale": "Later lanes converge on the plan (brainstorm:feature-draft#D-8)",
+  "fit_criterion": "A hand-built non-feature fixture — intent cited from an existing requirement, one decision, one plan — yields a handoff the same projection accepts, with no feature-only field left empty or faked.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1a31b4b3c949348d634a8592d1a07c64dd901bbd170b7080eca203a86c3a17ea",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:46Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

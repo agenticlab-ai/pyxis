@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGJJMEM10YAGDN6GP8S",
+  "kind": "Decision",
+  "subject": "prd/prototype",
+  "family": "R2",
+  "statement": "Findings are recorded and then ignored by the contract",
+  "rationale": "FR-5, checked by both reviews; WR-2 adds a mechanical check if a contract locks with an unanswered finding",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

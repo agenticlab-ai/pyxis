@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M6A08P74M76EN8H26JB8S",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "decision.3.8.1",
+  "statement": "A docgate check enforces the split, fail-closed (AP-17), reusing docgate's check + defects-as-data pattern rather than a new tool (the emitted defects are enumerated in §3.4): a frozen design carrying concrete shape fails (DINV-1); a shape admitted to the design index fails (DINV-3); an unwitnessed invariant or untraceable shape element fails (DINV-4). The witness/trace check (DINV-4) keys on the binding markup already parsed for the design class, so the partition needs no new tagging grammar — *which file* it lives in is the tag.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:441b850d9b6e54c6595804541b2c1ffe410166eed9411b59a942458da3a5c5ab",
+    "source-design:ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPW5FVFC30YF3H6RPK22"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRZ599VTBS35Z9ENSAH28"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:40Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/solution-shape-v1.md lines 84-84 in section 3.8; sha256:441b850d9b6e54c6595804541b2c1ffe410166eed9411b59a942458da3a5c5ab"
+  }
+}

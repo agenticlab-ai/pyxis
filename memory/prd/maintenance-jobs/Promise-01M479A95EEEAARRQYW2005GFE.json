@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A95EEEAARRQYW2005GFE",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "FR-6",
+  "statement": "When machines contend for a daily job, the executor shall authorize at most one agent attempt per job ID and date through shared Git-ref coordination scoped to the configured repository remote.",
+  "rationale": "Daily cross-machine idempotency",
+  "fit_criterion": "Starts at different hours on the same configured-timezone date contend for one key; timezone/date-boundary and competing-client fixtures launch at most one agent; unproved ownership launches zero",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

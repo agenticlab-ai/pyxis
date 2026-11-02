@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGPZ0HHWRZ9DR4EPT4R52",
+  "kind": "Expectation",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "DOD-4",
+  "statement": "Each abuse case (ABUSE-1..4) has its mitigation proven — including the injection fixture (the write is still denied) and the out-of-band-bypass fixture (still caught at the merge boundary)",
+  "intent": "§5.3",
+  "fit_criterion": "abuse-fixture results",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1dd0577b4c4ffc196c8a3d5dbde703d565628922b581a227909c7139b61c5d0a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.824Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

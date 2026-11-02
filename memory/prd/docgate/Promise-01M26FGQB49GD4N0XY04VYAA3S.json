@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQB49GD4N0XY04VYAA3S",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-40",
+  "statement": "When a whole-section supersede restates a binding row whose canonical content under FR-38 is unchanged from immediately before the operation, docgate shall preserve that row's exact projected bytes, fold-state presence and value, and source-map-record presence and value, including lineage, and shall not refresh or annotate it.",
+  "rationale": "a byte-identical restatement must not manufacture a content delta or baseline mismatch merely because a neighboring row required repair",
+  "fit_criterion": "a mixed-section fixture with one changed lineage-less row, one unchanged lineage-less row, and one unchanged lineage-bearing row refreshes and annotates only the changed row; both unchanged rows remain byte/state/source-map identical, and a wholly byte-identical section restatement stays green under FR-34",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b34f9579d812ab7f4f02ebc56bcc277fb60002324e2f11515b256741979d95c7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.212Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

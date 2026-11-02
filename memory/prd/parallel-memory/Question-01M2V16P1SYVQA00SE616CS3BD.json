@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M2V16P1SYVQA00SE616CS3BD",
+  "kind": "Question",
+  "subject": "prd/parallel-memory",
+  "family": "Q1",
+  "statement": "Does this requirement ledger faithfully formalize the already approved scope?",
+  "intent": "@mdarabi",
+  "rationale": "open — review pending; no new technical decision is requested",
+  "fit_criterion": "Requirement-contract sign-off before frozen planning",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:3a1e9982b3d40702029ca33c67b9eca5759d5aaf2ef26940bc272e5adfa26836",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:56Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "captured from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

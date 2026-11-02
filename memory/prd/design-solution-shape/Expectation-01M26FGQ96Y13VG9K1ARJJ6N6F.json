@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQ96Y13VG9K1ARJJ6N6F",
+  "kind": "Expectation",
+  "subject": "prd/design-solution-shape",
+  "family": "DOD-2",
+  "statement": "No non-regression row broken",
+  "intent": "NR-1..2",
+  "fit_criterion": "existing design corpus + planner contract unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:17626d0b51e00439f6a5bfbecff12cffb8a8f0161f2ebedb507115e3af1afcd3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.15Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

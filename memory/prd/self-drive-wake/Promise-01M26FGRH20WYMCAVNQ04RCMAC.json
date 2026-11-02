@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRH20WYMCAVNQ04RCMAC",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "UB-3",
+  "statement": "If the drive process dies mid-await (crash, laptop closed), then the system shall lose nothing permanently: on next start, awaits re-derive from durable state and the first check reconciles reality",
+  "intent": "the restarted drive continues; no duplicate proposals",
+  "fit_criterion": "kill/restart drill on both media: continuation with zero duplicates (rides prd:implement-now FR-14)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d6c90f645b8b35a20c861bb930759d7db94a1366032bb14c120e15c295657b99",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.426Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

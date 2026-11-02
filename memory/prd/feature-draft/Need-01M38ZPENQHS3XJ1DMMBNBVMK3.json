@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZPENQHS3XJ1DMMBNBVMK3",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "M4",
+  "statement": "M4: G4",
+  "intent": "in-draft requirement changes carrying a ruling with author, reason, and triggering problem",
+  "fit_criterion": "100% across the first three draft-born features",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c415bc6afa20a66ec7fff8c0493863fbfe061033f35e5a13a86aae87c170b065",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:57Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2NQ3KZ2M2WZVBJA2Y4X53MK",
+  "kind": "Learning",
+  "subject": "learning/runner-deadline-test-clock",
+  "statement": "The verb runner separates its existing timeout, termination grace, and exit acknowledgment policy into waitForExit. Virtual-time tests check no signal before the deadline, TERM at expiry, KILL after grace, immediate caller cancellation, and no return before process exit. Real subprocess tests cancel after readiness and retain result classification and cleanup assertions.",
+  "intent": "Verify deadline behavior independently of process startup speed and host scheduling.",
+  "rationale": "Elapsed-time bounds mixed timer policy with operating-system scheduling. The production timeout values and signal policy are preserved; testing/synctest exercises boundary transitions while readiness signals coordinate actual processes.",
+  "learned_from": [
+    "internal/verify/runner/wait_test.go",
+    "internal/verify/runner/runner_test.go",
+    "Git tree 8142546c332bcad31ed23463fa9ad9e38ee722a8 at internal/verify/runner, retained by the mainline snapshot introducing this record. Resolve the source paths below in that tree; no topic commit is required.",
+    "SHA-256 e22388eec7d2f659d58ae3f951874c9c73ecc1b70964b4b4c7c6a91340cf59c6; Git mode 100644; path internal/verify/runner/confine.go",
+    "SHA-256 72f5ebcf5a360004bbe90389b04897d6df1dc37b2b021d57756b799fd2c3a235; Git mode 100644; path internal/verify/runner/confine_linux.go",
+    "SHA-256 6a790eb41cb14be12fb33f4021585c605e762eabf824bde07a86a69a5514987f; Git mode 100644; path internal/verify/runner/confine_other.go",
+    "SHA-256 6d189567e028ec139d01740353040b51d7fcdf3e1512e863622f5f2d466a1f09; Git mode 100644; path internal/verify/runner/landlock_linux.go",
+    "SHA-256 ca2549e90b8ba2376d94b6c45af1bcde6aac734bf6c96de2c25ccbf705f951cc; Git mode 100644; path internal/verify/runner/runner.go",
+    "SHA-256 5b1f946331fc785ea17d6bbf67f784c1a4c146901cd156ec97a6a1a950b0c54d; Git mode 100644; path internal/verify/runner/runner_test.go",
+    "SHA-256 56ad80b775f88de16378c4142e504bb61d938d7de59fd63caf9fdf726cc3a401; Git mode 100644; path internal/verify/runner/runner_unix.go",
+    "SHA-256 0c20af24ec83f746d77ab79f89cb1e2103a669a3301e535939c4d486de5db869; Git mode 100644; path internal/verify/runner/runner_windows.go",
+    "SHA-256 634ba01c88c9d583fb967b05cef0f35963d037321b2cbd4e55732dec07d1cbcb; Git mode 100644; path internal/verify/runner/wait_test.go"
+  ],
+  "tags": [
+    "code:internal/verify/runner",
+    "git-tree:8142546c332bcad31ed23463fa9ad9e38ee722a8",
+    "sha256:7721a30160747ee85be41843fee4ab8421bb437ab4cc5bc9fe7259e5e821acd5"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-16T18:19:17Z",
+  "provenance": {
+    "source": "internal/verify/runner/runner.go",
+    "pr": 1192,
+    "note": "Evidence is content-addressed by the git-tree tag and the file SHA-256 witnesses in learned_from. The tree is retained by the mainline snapshot introducing this record, including after a squash merge."
+  }
+}

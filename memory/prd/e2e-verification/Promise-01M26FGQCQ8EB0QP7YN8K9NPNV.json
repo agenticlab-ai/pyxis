@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCQ8EB0QP7YN8K9NPNV",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-11",
+  "statement": "The e2e review report shall be persisted alongside the e2e design doc and ride its introducing change.",
+  "rationale": "the review report is the design's evidence package, like the existing review reports",
+  "fit_criterion": "the dogfood produces a persisted review report riding the design doc's change",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f2eddabc6e7130920d42488b22b0162f3f22c4a8b3f12ba4a5d2345e787fd6d1",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.263Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

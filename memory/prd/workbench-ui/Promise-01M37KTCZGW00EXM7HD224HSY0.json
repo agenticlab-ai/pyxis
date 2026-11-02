@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M37KTCZGW00EXM7HD224HSY0",
+  "kind": "Promise",
+  "subject": "prd/workbench-ui",
+  "family": "FR-2",
+  "statement": "When presenting a document, the reading room shall route it through the class registry: safe read-only presentation for markdown classes and the Go plan viewer for plans.",
+  "rationale": "one declared presentation path per class; no drift between views",
+  "fit_criterion": "golden fixtures pin each class's output; a plan document routes through the plan viewer; hostile markup remains inert",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:af4930dc359df9b343d1e50898cf2d801f602e9814d0a746a9163bc212bbad74",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M26FGRNJQPW0ZWR5RXEFTCQF"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:08:09Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "note": "compiled from sha256:f2e22c52e2f7f8075d7088a7c0a760fc624e3960295149df4cb0475294ba8418"
+  }
+}

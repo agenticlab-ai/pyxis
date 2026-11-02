@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR78JZWCSX9C3HWCQ2Z8",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-9",
+  "statement": "Where preparatory refactoring would materially shrink following behavior tasks, the planner should emit it separately before them.",
+  "rationale": "make the change easy, then make the easy change",
+  "fit_criterion": "no approved charter contains refactor-then-implement compound scope",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:85b053024430864493d7c9529e571ad13d5b10feed9eb8e0f8d0808f0b524bc1",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.112Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

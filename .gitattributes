@@ -1,0 +1,4 @@
+/memory/** text eol=lf
+# Document bodies retain the exact bytes bound by their immutable body hash.
+/memory/**/Document-*.md -text
+/memory/**/*.md whitespace=-trailing-space

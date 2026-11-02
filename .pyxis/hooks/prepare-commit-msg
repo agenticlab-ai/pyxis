@@ -1,0 +1,11 @@
+#!/bin/sh
+# argus prepare-commit-msg — delegate-only shim; the stamp decision lives in
+# cmd/argus-stamp (docs/tech-design/argus-attribution-hardening.md §3.1). This
+# shim holds NO logic: it hands git's commit-message file to the stamper, which
+# appends the Argus-Drive trailer keyed on the active drive's slug
+# ($ARGUS_DRIVE_SLUG); a commit authored outside a drive is left un-stamped.
+# prepare-commit-msg (not commit-msg) is the deliberate hook class (design Q1):
+# it runs even under `git commit --no-verify`, so the stamp is not skippable
+# that way; a genuinely un-stamped protected-path commit still fails closed at
+# the merge-boundary gate (DINV-2). Activation: go run ./cmd/hooks-setup.
+exec "$(git rev-parse --show-toplevel)/.pyxis/scripts/argus-stamp-resolve.sh" "$@"

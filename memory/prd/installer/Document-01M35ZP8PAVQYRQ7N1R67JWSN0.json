@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M35ZP8PAVQYRQ7N1R67JWSN0",
+  "kind": "Document",
+  "subject": "prd/installer",
+  "family": "amendment-004",
+  "statement": "Captured authored source: docs/prds/installer/004-retire-browser-review-runtime.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/prds",
+    "reconcile:source",
+    "sha256:88178105742d9f1ff9d48d23e8ed9afe59e1f7ec338bf026d5f44a7e396f00c6"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2RQ2PG18QZZFP586W56ZHC1"
+    }
+  ],
+  "body_sha256": "88178105742d9f1ff9d48d23e8ed9afe59e1f7ec338bf026d5f44a7e396f00c6",
+  "literal_body": true,
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T01:57:08Z",
+  "provenance": {
+    "source": "docs/prds/installer/004-retire-browser-review-runtime.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M461DCS1F9J5XTR3GJ45T7H8",
+  "kind": "Document",
+  "subject": "review/feature-implementation-drive-failure-argus-approval",
+  "family": "report",
+  "statement": "Captured authored source: docs/reviews/feature-implementation-drive-failure-argus-approval.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/reviews",
+    "reconcile:source",
+    "sha256:dbc4e80cb6b82daecd265e94552d3c22b7fa7dcaf41457713a441eb576864dd7"
+  ],
+  "body_sha256": "dbc4e80cb6b82daecd265e94552d3c22b7fa7dcaf41457713a441eb576864dd7",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:56Z",
+  "provenance": {
+    "source": "docs/reviews/feature-implementation-drive-failure-argus-approval.md",
+    "note": "offline reconciliation"
+  }
+}

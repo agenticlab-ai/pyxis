@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M4MM8XFY0P0J5ZFPJNRZ7HJV",
+  "kind": "Need",
+  "subject": "prd/prototype",
+  "family": "J1",
+  "statement": "When I hand Pyxis an idea and cannot judge how hard it is or what it collides with, I want Have Pyxis try building it first, so I can See the technical challenges and product conflicts before the contract is written",
+  "rationale": "brainstorm:prototype#D-3",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

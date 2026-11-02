@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Decision-01M2V1GCS0XR1BE9V8Y4JDS5M7",
+  "kind": "Decision",
+  "subject": "design/memory-causal-admission-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:parallel-memory/FR-6 · prd:parallel-memory/FR-7 · prd:parallel-memory/FR-8 · prd:parallel-memory/FR-9 · prd:parallel-memory/NFR-1 · prd:parallel-memory/NFR-3 · prd:parallel-memory/NR-2 · prd:parallel-memory/UB-4 · prd:parallel-memory/UB-5 · prd:parallel-memory/UB-6.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M2V1F5Z1F7BZ7PPNX91JJ8PF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N5N7JWSW650HF8DZ9M8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N5X6M3KCR2VT42TYDDT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N655W0KT5KC9C8T7P5C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16N6P9WAWAVHGDVX7VCZW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NAS8626KVW6WRXA3X66"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NGFGED0DRREN6GJ9RFT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NJ1H01PT99HNXYP2RCG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16NXD3WD12C7B67HXRQYG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16P0G8NB3BV5ZA5E0QF55"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M2V16P0T7ZAER2YDQT4EVHXH"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:57:14Z",
+  "provenance": {
+    "source": "docs/tech-design/memory-causal-admission-v1.md",
+    "commit": "32aac478fcf8dda3a192ae2536053ee34055b1d5",
+    "note": "projected from exact design header 7f9e2ce45d359743a2f25208091e195c1fe70e2014f8b8bb17ced54250d72813"
+  }
+}

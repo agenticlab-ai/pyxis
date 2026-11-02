@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3YGAPEPA08MV3AY3XH3TKR4",
+  "kind": "Decision",
+  "subject": "design/implement-now-issue-entry",
+  "family": "decision.3.4.1",
+  "statement": "Dispatch the admitted task through the existing implementation path in `cmd/implement-now/run.go`, `internal/executor/dispatch`, and `internal/executor/worker`. Reuse backend resolution, native requirements routing, lease, deterministic branch, disposable workspace, fresh harness invocation, local gate, bounded repair, duplicate-proposal association, code-host adapters, checks, and durable review handoff.",
+  "tags": [
+    "code:cmd/implement-now",
+    "code:internal/executor/dispatch",
+    "code:internal/executor/worker",
+    "reconcile:design-decision",
+    "source-block:9b2ab7a51d9b9ac7a94d1a2eea089ed72b5312b411178db9e4afc4051a6e3032",
+    "source-design:b7b976439bd14fc92df09aafb7a30dd4eac98640eff1656b69e53d86dd1b0a47",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XEZCMZGWEHV57ACCAJV1SD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T14:29:41Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-issue-entry.md",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-issue-entry.md lines 94-94 in section 3.4; sha256:9b2ab7a51d9b9ac7a94d1a2eea089ed72b5312b411178db9e4afc4051a6e3032"
+  }
+}

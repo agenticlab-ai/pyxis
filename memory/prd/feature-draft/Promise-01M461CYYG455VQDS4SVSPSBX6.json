@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Promise-01M461CYYG455VQDS4SVSPSBX6",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-16",
+  "statement": "If If a draft changes after its approval request and before lock, or a local receipt's proposal generation, target, digest, or nonce no longer matches the current request, then the system shall void the approval and require fresh preparation and review of the current request through the applicable authorized approval route: on GitHub the configured operator or granted authenticated Argus driver; on explicit local-git the retained operator procedure",
+  "intent": "the changed field, stale approval, and current prepare-and-review remedy",
+  "fit_criterion": "H1→H2 refuses H1 approval; both independent H2 reviews and readiness complete before fresh granted Argus approval succeeds without an additional Pyxis operator review; local generation, target, digest, nonce, and H1→H2→H1 mismatches still refuse before writes; outstanding operator changes requests and native host protection remain enforced.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0da6ca42e341777ab16c8d916ff4f9f4af54e3b51246c78a531cba787174df76",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3XRQVVZRP39431PZWJFWQ8X"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:42:42Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:29fef49c38816512c173f498aa5c8a0408e040933f3b1b0e8da09225a0ebf64a"
+  }
+}

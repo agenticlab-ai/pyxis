@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQACN6FEY854MMJ0P2T8",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-18",
+  "statement": "When invoked as `check-governing`, docgate shall verify the vision and principles documents contain no relative markdown link and no baseline requirement-ID citation (the SCAF/PLAN/IMPL/GATE/FLEET/IDEN/GOV/KNOW/OBS/BENCH/VNEXT families); when additionally given a merge base, it shall fail any diff touching either document whose commits lack the `Governing-Change: operator` trailer, and shall fail line modifications or deletions in either document even with the trailer (append-only).",
+  "rationale": "the trust root's machine backing was half-built: only principles were line-checked, and link-direction purity was prompt-side only (#54 A2/A5)",
+  "fit_criterion": "trailered line-edit of the vision red; trailered append to the vision green; a vision fixture containing a relative link or a `VNEXT-1` citation red naming the line; principles behavior unchanged (trailered line-edit still red); the real corpus green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6904790d7021721b6dfa5c9f84dadf09251b7fb0aa732afa5889ec4512073a99",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.188Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

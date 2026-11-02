@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJN2D6DCPMK7Q8EH9JP",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-4",
+  "statement": "Draft open and preparation first resolve the configured origin's mainline ref. If absent, they refuse before writes and name the installed repository's first-mainline-push remedy from D-2. Once mainline exists, preparation retains the existing rebase, deterministic compile, readiness, memory gate, and change report against its pinned SHA. It pushes a prepared branch head and creates a review request for that head. The local lock command re-reads the remote branch and mainline, checks the receipt and all gates, performs the reviewed squash landing, writes a versioned lock record and tag, and confirms the remote mainline contains exactly the reviewed contract bytes. If any observed ref moved, it refuses and requires a new preparation and review. A clone of the configured origin checks receipt consistency, reviewed head, mainline landing, and lock tag, and reports that neither the review actor nor independent repository identity is authenticated.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHD5E7B2FNSY2HDF1AF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHE97SP927A414491VA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHF077V2E29G9RPY63J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHG5QYJWDTZGY9P1Q3H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHQ72AFMRJVA4DV5PEA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHR1AAEM75D6MZ8DG8A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHS251BV0J1VJYNDZPM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHTMCG16FHHG78WYHK1"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

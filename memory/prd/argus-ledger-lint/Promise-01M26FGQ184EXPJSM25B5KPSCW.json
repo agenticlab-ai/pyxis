@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ184EXPJSM25B5KPSCW",
+  "kind": "Promise",
+  "subject": "prd/argus-ledger-lint",
+  "family": "UB-1",
+  "statement": "If If the history arm is invoked with no merge base, then the system shall not run (be skipped by the umbrella as a base-requiring check), rather than error or run against an empty base",
+  "intent": "the base-free verdict, excluding the history arm, exactly as with `check-immutable`",
+  "fit_criterion": "on the no-base path, the gate exits cleanly, the history arm neither runs nor errors, and the verdict matches the `check-immutable`-skipped baseline",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f56f3187ee86ead44bc19efddbe5ba149a7bff74a3080e5f0bc10bff2bb8c4c3",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.896Z",
+  "provenance": {
+    "source": "docs/prds/argus-ledger-lint/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:e1b783d106baa8107a6dd3963f124b911fd1647c6a9d2c161f4829b9a758152e"
+  }
+}

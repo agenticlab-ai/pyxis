@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRGK641KG804A9XNN92",
+  "kind": "Decision",
+  "subject": "design/impl-review-host-persistence",
+  "family": "decision.2.1",
+  "statement": "The routed-assurance process is exact-incorporated unchanged. Its outer isolated execution returns one typed `ProcessHandoff` through a bounded one-way channel; the trusted host coordinator alone validates it and materializes the canonical completed aggregate. An impl-review-owned host persistence adapter, running outside every reviewer/pass context, preflights its medium capability, durably admits one publication attempt, performs the sole proposal write, exact-reads only the returned native receipt, and appends one EVT-13. The invoking host supplies the obligation/process/proposal/revision binding and distinct attempt-proof reference, consumes the receipt, and appends its separately contracted reciprocal terminal; it never writes the proposal or redefines the report.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:46a7b38f10711bd24064679e2003d096dc5d9a577c1752a26eb133edde7a3764",
+    "source-design:4baa323ea0fe7b75446dbd91387e5b95461a791f448fad4ef6bb4ff5751d8099",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCR35PGHC6GWPY0T42ZA4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.616Z",
+  "provenance": {
+    "source": "docs/tech-design/impl-review-host-persistence.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/impl-review-host-persistence.md lines 42-42 in section 2; sha256:46a7b38f10711bd24064679e2003d096dc5d9a577c1752a26eb133edde7a3764"
+  }
+}

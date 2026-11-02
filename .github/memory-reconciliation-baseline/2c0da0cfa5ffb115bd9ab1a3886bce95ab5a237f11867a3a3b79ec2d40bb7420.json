@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/channel-inbox#Q1",
+  "feature": "channel-inbox",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

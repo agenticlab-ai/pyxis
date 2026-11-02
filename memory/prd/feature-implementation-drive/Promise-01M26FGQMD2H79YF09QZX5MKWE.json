@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQMD2H79YF09QZX5MKWE",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "UB-5",
+  "statement": "If If task-proposal landing cannot be verified on the feature branch, then the system shall keep the task and dependents incomplete",
+  "intent": "landing-verification failure",
+  "fit_criterion": "Wrong-base, stale-head, and missing-revision fixtures advance nothing.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:492b76af763a4eff8b7229cbb1036436a2ada505270d7e10c5c91f8f651c8d12",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.509Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

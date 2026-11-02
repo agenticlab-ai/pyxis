@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZQ2E89Q2VCE51VGC746D9",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "UB-11",
+  "statement": "If If any part of a draft changes after its approval request and before the lock, then the system shall void the approval and request it again for the new version",
+  "intent": "the voided approval and a new approval request",
+  "fit_criterion": "Every change-after-request fixture voids the approval, and zero locks are granted on a voided approval",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6eb0add2cd4104ea0d710ea44b6264372a514860de669a0b203155b3ef879e29",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:55:18Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

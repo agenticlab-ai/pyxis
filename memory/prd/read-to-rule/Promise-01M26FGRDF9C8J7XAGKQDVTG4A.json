@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDF9C8J7XAGKQDVTG4A",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-7",
+  "statement": "When the reviewer signs a gate on a §0-bearing document, the sign-off record shall carry the capture line: minutes spent, and each feedback item marked in-§0 or outside-§0.",
+  "rationale": "metrics without capture are fiction (brainstorm:gate-attention#D-5)",
+  "fit_criterion": "every §0 gate in the window carries the line or stands as a recorded lineless miss — zero silent lineless gates; UB-4 voids lineless gates from metric arithmetic only",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9d126317e57815ac31b00cc6e79419822eed72879a2f48339a8dde85abea46a4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.311Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

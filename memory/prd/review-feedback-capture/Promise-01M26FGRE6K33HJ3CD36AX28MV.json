@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRE6K33HJ3CD36AX28MV",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "ABUSE-2",
+  "statement": "A captured verbatim comment leaks sensitive content into the corpus — vector: personal/sensitive text in a comment",
+  "intent": "unwanted disclosure",
+  "fit_criterion": "the redaction/access posture decided in the technical design's Security section (P-3)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc776301bab3f269fd14e1d73952e4b449e6eb0c9e02a0317ba16ce777d235d1",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.334Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

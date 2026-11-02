@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRCT28F5WK9FVV8QYH7",
+  "kind": "Decision",
+  "subject": "design/fleet-bridge-v1",
+  "family": "decision.2.1",
+  "statement": "The bridge changes **when**, never **how**: plan-freeze becomes an ordinary await — when the drive stops at a frozen plan's introducing proposal it registers \"plan merged at mainline\" with the wake channel; the resumed touch verifies the freeze at the goal object, then triggers projection **through the planning stage's own contract** — consent, staged modes, idempotency, and wiring order exactly as that design binds them — with no human prompt; each created item is verified at the goal object (it exists and carries the repo-configured automated-implementation tag) and journaled; re-triggers and racing wakes land the guarantee the projection contract actually gives, split by case — a re-trigger with the items already live records a journaled no-op and creates nothing (UB-6's case), and a true concurrent both-probe-miss race lands the stage's own **detected halt**: the report names both items, routing is withheld for the pair, and the drive surfaces it loudly (journaled, alarmed per the stage's posture) — never silent duplication, never auto-repair, never a bespoke lock around the stage. In-flight proposals are driven to **content-verified landings** through the lane's routing, and the feature closes only when every proposal's content is an ancestor of the mainline. The pipeline map's stage-8 row is corrected to state the binding **as it operationally runs** — the map is the live surface that owns that value, and no drive guidance may direct deferring materialization on the row's account. (design-brainstorm:argus-unattended-drive-tech-design#D-6)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:69f90add236b3e8b17d943353ef54e4cab6daf2aa64ae8c136aa7292c19e7bcb",
+    "source-design:5caf70f8c045d82995e2034d8f564b430b9b83ff89f853a639087478382c9f15",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQYHJS957C9Y9Z2SCKAF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.612Z",
+  "provenance": {
+    "source": "docs/tech-design/fleet-bridge-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/fleet-bridge-v1.md lines 24-24 in section 2; sha256:69f90add236b3e8b17d943353ef54e4cab6daf2aa64ae8c136aa7292c19e7bcb"
+  }
+}

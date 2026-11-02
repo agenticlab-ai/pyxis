@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRNYD8GSNGK3G2CRJY1",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "decision.3.4.1",
+  "statement": "`review-obligation/v1`, `review-attempt/v1`, and `review-terminal/v1` form a separate closed `implement-now-review-state/v1` event family behind `ReviewObligationStore`. Its production adapter uses one configured fetched git ref, the canonical identity/encoding and producer-proof primitives supplied by `routing-evidence-v1`, immutable identity-derived files, fast-forward compare-and-swap, exact-read proofs, and fresh-clone reduction. It does not add an undeclared event kind to the sibling's closed `routing-evidence/v1` schema, duplicate EVT-10, or authorize review from a report projection. The ref name and sharding are repository configuration/implementation data, not literals in this design.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:caa1d3b866af30733da765db052005f993612abe8aaf172eb9074016e8b43608",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.621Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-authenticated-review-obligations.md lines 151-151 in section 3.4; sha256:caa1d3b866af30733da765db052005f993612abe8aaf172eb9074016e8b43608"
+  }
+}

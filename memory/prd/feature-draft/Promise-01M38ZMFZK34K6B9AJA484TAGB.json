@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMFZK34K6B9AJA484TAGB",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-30",
+  "statement": "While the switch-over is in effect, the system shall apply the document pipeline's checks to existing documents only and none to a draft-born feature.",
+  "rationale": "The old checks only guard old documents (brainstorm:feature-draft#D-6, brainstorm:feature-draft#D-26)",
+  "fit_criterion": "Draft-born fixtures trigger zero document-pipeline check findings, while edit fixtures on existing documents still trigger the existing immutability refusals.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:283817e66a2d123d1d611c17c6bae1f26b850d95b25623ba2008a6d989fbf73a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:53Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5KW04ECVG00H5BRY6B2W",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-8",
+  "statement": "The system shall spend no model inference on publication, ownership, lineage, or gate verdicts.",
+  "intent": "Cost",
+  "fit_criterion": "Instrumentation attributes zero tokens and zero network requests to every deterministic retirement path.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d95b3ec2f3069b8ccc62bea7881f7f6a0eab9b85de3bf1ce16ea44a0ffe404ff",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:56Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

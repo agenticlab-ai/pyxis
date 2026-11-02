@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRDHQN659YNQFKQR00J1",
+  "kind": "Promise",
+  "subject": "prd/read-to-rule",
+  "family": "FR-9",
+  "statement": "Where a document predates the §0-bearing template, the gate review shall proceed as today, with no new required step.",
+  "rationale": "adoption never blocks; the convention grows with new bases only (brainstorm:gate-attention#D-8)",
+  "fit_criterion": "zero new obligations on pre-§0 documents; their gates sign unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7fc68271d768bd1f401686e6ec1812f7acbe167569e250593c1fafcae575a5b3",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.313Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

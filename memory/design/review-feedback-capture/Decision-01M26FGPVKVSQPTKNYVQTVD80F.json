@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVKVSQPTKNYVQTVD80F",
+  "kind": "Decision",
+  "subject": "design/review-feedback-capture",
+  "family": "decision.3.5.1",
+  "statement": "entries cite as **`review-feedback:\u003csubject-stem\u003e#\u003centry-anchor\u003e`** — a sibling of the `prd:`/`design:`/`brainstorm:` family, resolving by grep. Each entry's `outcome` names a **stable** ref (the merged/squash sha, the PR number, or an amendment id) — **never a working-branch sha** (squash-merge orphans it). Cross-links to reviewer M2 / Argus `E-n` are **one-directional** (we cite them; NG-5 forbids editing them to cite back). `Learned-from: review-thread` resolves to a `review-feedback:` anchor through the amendment model's existing free ref slot (docgate validates the *class*, not the *ref* — F-6), so **no amendment-model supersession**.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7a2917d39bc30e75d388a9032861eccd16fd3980539247fd3ca2442e86dc8e0b",
+    "source-design:4e3a8105ea45accb67ecd77d65b8eeb2a0f942e1231fc979c04f1bfd1bf82235",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWKDH895R5RT4YYW95E8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.715Z",
+  "provenance": {
+    "source": "docs/tech-design/review-feedback-capture.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/review-feedback-capture.md lines 66-66 in section 3.5; sha256:7a2917d39bc30e75d388a9032861eccd16fd3980539247fd3ca2442e86dc8e0b"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ078PTXJ4T9G12PJNNS",
+  "kind": "Promise",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "UB-2",
+  "statement": "If If a supported CLI's hook surface fails open by default (e.g. Cursor), then the system shall require the adapter to set the fail-closed option, and if none exists, document the gate/CI backstop as that CLI's guarantee",
+  "intent": "(operator) a stated per-CLI guarantee, never a silent fail-open",
+  "fit_criterion": "a per-CLI adapter fixture proves fail-closed, or the CLI is listed with the merge-boundary backstop as its guarantee",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e9569a3c6bc071194d09e20d6ee7ff2d6239adba745cb8607be02d41b6999d0c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.863Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

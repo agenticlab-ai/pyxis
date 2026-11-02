@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRMDJ7ZTQ2GJHNCKY3D4",
+  "kind": "Promise",
+  "subject": "prd/tech-design-review",
+  "family": "FR-4",
+  "statement": "The reviewer shall surface a candidate only after adversarial survival; discarded candidates shall leave no trace.",
+  "rationale": "few and hard (inherited, brainstorm:authoring-reviewers#D-2)",
+  "fit_criterion": "seeded plausible-but-wrong candidates die pre-report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b921d5d14953e3dac37a44d3f917eb9e48dcf4ecadc06aad9b7bebc843705d68",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.533Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:adee2a2ff921928426d5ff333d8ed7bd4437288e4e31d48a5dc7b3276a3561f2"
+  }
+}

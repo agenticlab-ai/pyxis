@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR9ECBAFNSJA9RQBZDJ8",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "FR-11",
+  "statement": "The routing policy shall specify an independent implementation-role and review-role result for every cell in the required routing domain.",
+  "rationale": "review must not inherit implementation capacity accidentally, and support cannot shrink by declaration",
+  "fit_criterion": "conformance enumerates the required domain from the runtime contract and derivation policy; every cell has a qualified satisfying mapping or the FR-10 unsupported result; no required harness or profile is omitted",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a695dfe9da48177cd2fdc39c95c849c5fe1c4e1355e5324ef419d1a2154e0c34",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.182Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

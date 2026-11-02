@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBX5QJF8WBJEQD63KP0",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "FR-14",
+  "statement": "The reviewer shall record the measurements in the report as it goes — per-finding disposition, round count, verdict history — and the report shall accept overlay corrections appended after an approve verdict (the M2 residual datum), attributed and dated.",
+  "rationale": "metrics without capture are fiction (— #D-11)",
+  "fit_criterion": "every report carries the measurement fields; a post-approve overlay correction appends without disturbing the frozen verdict history",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e3d2eaa2d340c51831183d5437c6fd8d6332fadf94401e419b9780e313ceb248",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.261Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

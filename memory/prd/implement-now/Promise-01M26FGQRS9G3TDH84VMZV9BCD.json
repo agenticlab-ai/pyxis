@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQRS9G3TDH84VMZV9BCD",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "EVT-15",
+  "statement": "`impl_review_terminal` fires when configured-review preflight/setup fails or one review-obligation attempt reaches an authenticated-verified or failed terminal",
+  "intent": "`drive_round_id:string?`, `review_attempt_id:string?`, `review_obligation_id:string?`, `task_id:string?`, `proposal_ref:string?`, `revision:string?`, `backend:string`, `reviewer_principal:string?`, `native_profile:string?`, `catalog:string?`, `policy:string?`, `model:string?`, `effort:string?`, `phase:enum{preflight,obligation,routing,launch,await,artifact,attribution}`, `status:enum{verified,failed}`, `obligation_status:enum{verified,pending,not_created}`, `failure_class:enum{artifact_unverified,artifact_untrusted,infrastructure}?`, `artifact_ref:string?`, `artifact_proof_ref:string?`, `reason:string?`, `escalated:boolean`",
+  "fit_criterion": "M7, FR-35, FR-40..FR-47, UB-20, UB-21",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:515e2dd11862c1801bc6d2e512ee456fa53b99117319509cda2648f169b5e783",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.649Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M38ZNV30C0NBYQB3TV6AM2VH",
+  "kind": "Need",
+  "subject": "prd/feature-draft",
+  "family": "G1",
+  "statement": "We believe drafting the PRD and tech spec together with one checked lock for the operator; expected result: one proposal per feature contract change instead of one per stage and per correction",
+  "fit_criterion": "M1",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:21caa35ead6349be2ddb8fcd70c7b2bfd4ace2fe59de2bb2a7102a435b89c1f0",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:37Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

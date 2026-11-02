@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M4YMS8RZKR6ABQTQ93ZYRW8W",
+  "kind": "Document",
+  "subject": "authoring/impl-review",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/impl-review.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:8c8a63ce447fb586403edca2a1b1289119e478314f6c337f7ec1c885635f5af0"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M4NTAMZ9NRJPJ5J3W23Y4NVH"
+    }
+  ],
+  "body_sha256": "8c8a63ce447fb586403edca2a1b1289119e478314f6c337f7ec1c885635f5af0",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-10-15T02:03:15Z",
+  "provenance": {
+    "source": ".pyxis/authoring/impl-review.md",
+    "note": "offline reconciliation"
+  }
+}

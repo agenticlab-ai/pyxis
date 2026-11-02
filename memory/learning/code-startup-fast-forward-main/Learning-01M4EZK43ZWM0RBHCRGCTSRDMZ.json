@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Learning-01M4EZK43ZWM0RBHCRGCTSRDMZ",
+  "kind": "Learning",
+  "subject": "learning/code-startup-fast-forward-main",
+  "statement": "The shared startup launcher fetches the repository's configured remote branch and fast-forwards the local branch of that name without switching the original checkout or merging into a feature branch; the new worktree still starts from the fetched tip. The pair is the remote and branch in the repository's .pyxis/config.yaml, read through `pyxis shell mainline`; it is origin/main when the configuration sets neither or no pyxis is on PATH. Configuration pyxis refuses, or a name that is not a plain git name, stops the launch before any fetch.",
+  "intent": "Give wrappers a current mainline source without clobbering in-progress work.",
+  "rationale": "A plain pull would merge into the current branch. Fetch plus ff-only on local main updates a checked-out main and leaves other branches and uncommitted files put. pyxis init records the branch a repository is actually on, so a fixed origin/main stopped the launch in a repository on another branch or remote. The launcher asks pyxis instead of parsing the configuration, so the shell carries no second copy of the values (config-driven-portability-v1 DINV-4). The remote and branch come from a tracked file and reach git as arguments, so the verb admits plain names only.",
+  "fit_criterion": "Tests cover fetch failure, fast-forward of checked-out main, and leaving a dirty or feature-branch main unchanged while still creating the worktree from origin/main. They also cover a configured upstream/trunk pair selecting the base while main stays untouched, a refused configuration stopping before any fetch or worktree, and the origin/main default without pyxis on PATH.",
+  "learned_from": [
+    "scripts/startup/worktree.zsh",
+    "scripts/startup/mainline_test.go",
+    "cmd/pyxis/shell.go",
+    "docs/tech-design/config-driven-portability-v1.md",
+    "Operator request, 2026-10-08: the launcher must work in any Pyxis-adopted repository."
+  ],
+  "tags": [
+    "code:scripts/startup/worktree.zsh",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Learning-01M2RJGWFMVQNRWV8G92G7CD80"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-10-09T00:04:17Z",
+  "provenance": {
+    "source": "scripts/startup/worktree.zsh",
+    "note": "Replaces the fixed origin/main base with the repository's configured mainline, and repoints the record to scripts/startup after the launcher moved there."
+  }
+}

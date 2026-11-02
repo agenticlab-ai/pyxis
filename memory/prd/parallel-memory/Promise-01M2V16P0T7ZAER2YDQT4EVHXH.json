@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16P0T7ZAER2YDQT4EVHXH",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "UB-6",
+  "statement": "If If required pinned history or evidence is unavailable, then the system shall Refuse transition certification",
+  "intent": "Missing-input remedy and snapshot/transition scope",
+  "fit_criterion": "Missing base/replay fixtures fail; no ambient-ref, model, or network fallback supplies authority",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a1414c30fe182939b5e8f629195fda5233e6374a084a6e71eb92490068e625b7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:56Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

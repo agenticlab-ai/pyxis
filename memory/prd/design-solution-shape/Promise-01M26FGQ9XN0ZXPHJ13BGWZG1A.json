@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ9XN0ZXPHJ13BGWZG1A",
+  "kind": "Promise",
+  "subject": "prd/design-solution-shape",
+  "family": "NR-1",
+  "statement": "Existing frozen technical designs and their immutability, supersession, and index behavior",
+  "rationale": "the Decision model is built on, not altered (NG-3)",
+  "fit_criterion": "no existing frozen design changes; the design index still computes liveness unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:11d0dd576a5de9c457f4950a3e87d410d75f281592f6fe77c68035266713f1b2",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.173Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

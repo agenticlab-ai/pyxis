@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQZN47CC8GEV8CAZD7H",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-2",
+  "statement": "If If capture fails for a process, then the system shall complete the run unaffected and leave no partial or invalid record",
+  "intent": "no record for that process, and the run's outcome unchanged",
+  "fit_criterion": "an injected capture failure changes no task outcome and produces no schema-invalid record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7553a3c40d98bcbdcb2b6bf08ce52a69f0077ada4ed46d3598a8e25e4c5aba0b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.647Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

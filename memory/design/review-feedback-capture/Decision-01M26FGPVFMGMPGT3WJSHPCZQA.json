@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPVFMGMPGT3WJSHPCZQA",
+  "kind": "Decision",
+  "subject": "design/review-feedback-capture",
+  "family": "decision.2.1",
+  "statement": "The review-feedback ledger is a **per-subject directory of append-only markdown entry files plus a docgate-folded machine projection** (`design-brainstorm:review-feedback-capture-tech-design#D-1`) — the PRD-ledger pattern, giving a human-readable/diff-reviewable face and a native machine face for FR-5. Entries are written **only by a coded writer**, fed through **one consumer-side `CaptureSource` port** with two adapters — doc-review and code-host — so the writer core imports no adapter (`#D-3`, AP-1/AP-3/RW-3). The writer **tags each entry's typed disposition + stable outcome-ref at the observed resolving event** — never by inference (`#D-2`, AP-18/I3). Entries cite as `review-feedback:\u003csubject-stem\u003e#\u003centry-anchor\u003e`, carry a **stable** outcome-ref (merged sha / PR / amendment id, never a working-branch sha) and **one-directional** cross-links to reviewer M2 / Argus `E-n` (NG-5); `Learned-from: review-thread` resolves to a `review-feedback:` anchor through the amendment model's **existing free ref slot** (no model change — `#D-4`/F-6), **enforced** by a registry-born docgate resolution check (`#D-4`, AP-10). FR-5's measures are **ledger-native** — disposition counts + applied/decline ratio over disposed entries + an `edit_distance` frozen at write (`#D-5`, AP-21). Captured comments are **verbatim, repo-internal, secret-gate-backstopped** (`#D-6`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:b1cb588650155c6aa29770dc679566ec8320254f65193464bc6a38eac42c9b2e",
+    "source-design:4e3a8105ea45accb67ecd77d65b8eeb2a0f942e1231fc979c04f1bfd1bf82235",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCWKDH895R5RT4YYW95E8"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.711Z",
+  "provenance": {
+    "source": "docs/tech-design/review-feedback-capture.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/review-feedback-capture.md lines 24-24 in section 2; sha256:b1cb588650155c6aa29770dc679566ec8320254f65193464bc6a38eac42c9b2e"
+  }
+}

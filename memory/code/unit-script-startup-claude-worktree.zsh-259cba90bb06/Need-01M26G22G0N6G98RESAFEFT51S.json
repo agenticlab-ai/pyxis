@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26G22G0N6G98RESAFEFT51S",
+  "kind": "Need",
+  "subject": "code/unit-script-startup-claude-worktree.zsh-259cba90bb06",
+  "family": "anchor",
+  "statement": "Production code unit script/startup/claude-worktree.zsh exists.",
+  "intent": "Provide a stable target for explicit memory-to-code associations.",
+  "rationale": "The offline inventory identified this unit from regular tracked production files at one pinned commit.",
+  "fit_criterion": "The pinned tree contains the exact code unit at script/startup/claude-worktree.zsh.",
+  "tags": [
+    "code:script/startup/claude-worktree.zsh",
+    "reconcile:anchor"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:27:30Z",
+  "provenance": {
+    "source": "code:script/startup/claude-worktree.zsh",
+    "commit": "1033cdd340f5015ddd1db35a901155935cb59cfc",
+    "note": "offline code inventory 0134bb27c3f4eb4a9cb6c9e592bb354259160b7be141f57a1daa0e49c38c461c"
+  }
+}

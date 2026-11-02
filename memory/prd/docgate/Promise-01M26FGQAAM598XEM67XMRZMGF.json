@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAAM598XEM67XMRZMGF",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-13",
+  "statement": "When invoked as `lint-wiki` or `lint-rollups`, docgate shall verify the class's metadata header rows are present and well-formed (wiki: In one line, Relevant-when, Authority, Sources, Last reviewed; rollups: In one line, Relevant-when, Authority, Update rule, Seeded).",
+  "rationale": "routing metadata becomes checkable",
+  "fit_criterion": "missing-row and malformed-date fixtures red; real corpus green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0c7c107cf66370d29423bb1ef589e5c9609e8c209cfa9f535af5bcbeaf8beab5",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.186Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

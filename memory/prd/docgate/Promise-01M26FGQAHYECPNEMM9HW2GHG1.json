@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQAHYECPNEMM9HW2GHG1",
+  "kind": "Promise",
+  "subject": "prd/docgate",
+  "family": "FR-22",
+  "statement": "When invoked with a merge base, docgate shall fail any diff to the configured system-map documents (defaults `docs/domain-model.md` and `docs/system-design.md`) that removes or renumbers an `INV-\u003cn\u003e` invariant-registry row or a `D\u003cn\u003e` open-decision row present at the merge base; a map file absent from the tree is skipped without defect.",
+  "rationale": "registry IDs are permanent citation anchors inside deliberately mutable documents — the one quasi-authoritative class with zero protection (#54 C3)",
+  "fit_criterion": "fixtures: removing INV-33 red; renumbering an INV row red; appending a fresh INV row green; editing non-registry prose green; absent `system-design.md` produces no defect; the real corpus green",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d59463187289ca84bb4b99bf0f9496b37b9cb4e8f5e6348a864e1c447904eef7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.193Z",
+  "provenance": {
+    "source": "docs/prds/docgate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:8082671640acb50ce754188d2f7e7d75da56fd385209e6635d8d462b51d0e944"
+  }
+}

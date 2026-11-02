@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVBTBS0VJJ9D02G6M5Y",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-14",
+  "statement": "If a task originates from an e2e plan but its feature has no e2e design doc, that document is not `approved`, it is malformed against its class checklist, or the task resolves to no scenario or to more than one, then the system shall refuse the task before claim, name the feature, the expected document, and the defect, spawn no worker, and continue the other independent ready tasks",
+  "intent": "task unclaimed with a named e2e-basis error",
+  "fit_criterion": "one fixture per missing, not-approved, malformed, unresolvable, and ambiguous class performs zero claims and zero model invocations and names the defect; independent valid tasks in the same run still complete",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4fb2086504453bce86a36ba88b7495ecb1b80ef6b6aa045335a94949596d20fb",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.731Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXBVA0SK9AKXB7020K2",
+  "kind": "Decision",
+  "subject": "design/plan-new-routed-demand",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:plan-new/ABUSE-2 · prd:plan-new/ABUSE-3 · prd:plan-new/EVAL-2 · prd:plan-new/FR-1 · prd:plan-new/FR-10 · prd:plan-new/FR-11 · prd:plan-new/FR-12 · prd:plan-new/FR-13 · prd:plan-new/FR-16 · prd:plan-new/FR-17 · prd:plan-new/FR-18 · prd:plan-new/FR-19 · prd:plan-new/FR-2 · prd:plan-new/FR-20 · prd:plan-new/FR-21 · prd:plan-new/FR-22 · prd:plan-new/FR-23 · prd:plan-new/FR-24 · prd:plan-new/FR-25 · prd:plan-new/FR-26 · prd:plan-new/FR-27 · prd:plan-new/FR-28 · prd:plan-new/FR-29 · prd:plan-new/FR-3 · prd:plan-new/FR-30 · prd:plan-new/FR-4 · prd:plan-new/FR-5 · prd:plan-new/FR-6 · prd:plan-new/FR-7 · prd:plan-new/FR-8 · prd:plan-new/FR-9 · prd:plan-new/NFR-1 · prd:plan-new/NFR-3 · prd:plan-new/NFR-4 · prd:plan-new/NFR-5 · prd:plan-new/NFR-6 · prd:plan-new/NFR-7 · prd:plan-new/NFR-8 · prd:plan-new/NR-1 · prd:plan-new/NR-2 · prd:plan-new/NR-3 · prd:plan-new/NR-4 · prd:plan-new/UB-1 · prd:plan-new/UB-2 · prd:plan-new/UB-3 · prd:plan-new/UB-4 · prd:plan-new/UB-5 · prd:plan-new/UB-6 · prd:plan-new/UB-7.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:2ab87137b5d7a8635d2a5dc697e7525dd8de80f53ec455b977d7afc3d7033dc2",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCTN5XVD1NFJ51EMC2RJ8"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGR6CQTZC7T1T62DHY03T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR62WY21CHXT5HJ0K1WM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR63Y063VC61PHQYF6A2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6DD3X4MTTGWTC9XR4K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6EWTZVE2JZSE2R5M7T"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6F1PTJN8N4JZFQD257"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6G12TKJWTXYK6NJM2Y"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6HB11SSK4QD4XZGT50"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6JNYBH9MZW1F2WERNK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6KZQ2QPVXQFZZ7EMAP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6MQ9FS32954K944R93"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6N59ZRKEYDMJDJF3BR"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6PA9KAJR0Q0ZXTPQT2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6Q4T8ZHDW2YJBXTBHC"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6R704RZ62SB7AKGZP0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6SYPFVHBNXF1P6WHP8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6T69K3Y0DE3CR0AWXY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6V6JKJBKV4NWNCA8C5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6WPS4VAA3CV17X1KGV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6XW91YEGREE1G5AQX9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6YC03H1D149V3WV8MD"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6ZEWPXC12AQ448KTPE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR70KHTJ6B84CGR8P5Y2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR71PST2CC5NZ2VD92QJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR72DKS18M8ZXT87S8Z6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR73MQN0D2CFDHHZCKG8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR74MHR6HFFC4WBKQJST"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7515E3B313NJPHV1XK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR76QWN2QXVTSCYJ6JED"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR77Q8B0BTEDH1Y3SDHS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR78JZWCSX9C3HWCQ2Z8"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7MX69QB11SE582XNAT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7NWTGT1T2BJ8Q56GNH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7PK1KZFPM21K1PTV06"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7QBK7ZE5VXAHHZXDG6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7RXV8ZD3ZPXF76T9KK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7S002TZ0Y760JZFW8E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7TYNXHSZDAXE815YFJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7VGHVQS2W8FMJ92EPJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7WGQPBN6Q8TQCZQ6RX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7XMKQ9CX0J510AFJHM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7Y7F9X8XR01ZSRVF61"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7Z8S4PVKNW32ZKVFAX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR803F4AC77AV0Z12QWV"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR81BH08W70J6C3MGZ9B"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR8264VAQ49N30FY00YT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR83SYNB411X0G3X7XCW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR844KY8700ECSS2MF3R"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR852RWCZ7DTDT7EN8EF"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.819Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-new-routed-demand.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 2ab87137b5d7a8635d2a5dc697e7525dd8de80f53ec455b977d7afc3d7033dc2"
+  }
+}

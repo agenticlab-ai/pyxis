@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3979VSHS1TK872DRE72QBMW",
+  "kind": "Decision",
+  "subject": "design/feature-draft-reopen",
+  "family": "decision.3.6.4",
+  "statement": "Lock preparation refuses a reopened draft whose PRD and tech-spec text equal the binding version's, naming the remedy: abandon the draft (`design:feature-draft-v1` §3.14). There is no change to lock, and a version number marks a contract change. The binding version stays, no lock tag is written, and the abandonment keeps the reason (`design-brainstorm:feature-draft-tech-design-2#D-3`; #DINV-7).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:775420bb8506486e7fe52c7432de1d56fc5c23b33bd9e1bcd5e759078c1b5a5c",
+    "source-design:401f0718161afe959baa76dc3e56c7e788f94fa5ec7e13de51c7e8b57a98d8ee",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3971GHBTEA3ECWC7H7R79T6"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T08:07:53Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-reopen.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-reopen.md lines 110-110 in section 3.6; sha256:775420bb8506486e7fe52c7432de1d56fc5c23b33bd9e1bcd5e759078c1b5a5c"
+  }
+}

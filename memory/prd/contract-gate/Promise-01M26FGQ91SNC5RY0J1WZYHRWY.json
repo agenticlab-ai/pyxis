@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ91SNC5RY0J1WZYHRWY",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-6",
+  "statement": "If the severity-map policy is malformed (unknown keys, unparseable), then the system shall emit a `configuration-error` verdict naming the policy defect, with zero checks run; a *missing* policy falls back to the built-in default map (the `#D-4` split), never fails",
+  "intent": "configuration-error verdict",
+  "fit_criterion": "the malformed-severity-map fixture yields configuration-error naming the defect; the absent-policy fixture runs on the default split",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d2eddf6121ce16ab3d94884fa20df3d0367bc775c24e5fa3359b3841e7f3ed10",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.145Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

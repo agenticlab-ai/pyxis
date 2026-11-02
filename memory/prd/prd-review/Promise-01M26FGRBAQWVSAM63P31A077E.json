@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRBAQWVSAM63P31A077E",
+  "kind": "Promise",
+  "subject": "prd/prd-review",
+  "family": "ABUSE-3",
+  "statement": "whoever edits a report post-verdict — laundering the evidence package — vector: rewriting findings/dispositions after approve",
+  "intent": "audit trail corrupted (J5)",
+  "fit_criterion": "reports ride the introducing PR (human-reviewed together today); verdict history append-only by schema; mechanization staged with the artifact class",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f39d6eb8a8265893d3f80d87caa78b2fd03b2415c42dd2432c5a0a871dcc4dd",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.242Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XRVB1D553CX2TAF4HTWC99",
+  "kind": "Decision",
+  "subject": "prd/feature-draft",
+  "family": "R3",
+  "statement": "Existing documents keep their authoring rules and bindings; automated legacy checks remain only where enabled, and the approved Pyxis-source bypass remains (FR-54, NR-7, NR-5); moving existing features into drafts waits in WR-5",
+  "intent": "Preserve the current source risk mitigation in the proposed contract for operator PR review.",
+  "rationale": "Existing features stay in the document pipeline and must use its established evolution rules until migration is designed",
+  "fit_criterion": "Enabled document-pipeline fixtures retain existing-document immutability refusals and produce zero such findings for draft-born parts. A trusted Pyxis-source fixture continues to bypass legacy document checks at push and CI in both hosted and local mode; retained non-document checks still run. Inspection confirms that source authoring rules for frozen documents remain binding. Existing documents are byte-identical through cutover. Enabled-repository immutability fixtures still refuse edits and sanctioned retirement fixtures still pass. Source gate fixtures retain the bypass, while source instructions continue to forbid edits to frozen documents and permit their established evolution routes.",
+  "tags": [
+    "source-unit:cccf9544c8c3ea3b26e6819cc82b74db352c19fe82e1218a684b7055b7808b81",
+    "source:prd-ledger",
+    "reconcile:prd-disposition"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M38ZWS8GH9AD7BNW55JPAQGT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:39:21Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "Native transition proposed with amendment 001 for operator PR review and human merge; no prior source approval is asserted."
+  }
+}

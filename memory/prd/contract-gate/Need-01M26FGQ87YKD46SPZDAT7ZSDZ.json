@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ87YKD46SPZDAT7ZSDZ",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "G4",
+  "statement": "We believe emitting one structured, named, dual-face defect report per bounce; expected result: contract owners fixing the contract straight from the report without re-deriving what broke",
+  "fit_criterion": "unprompted reliance on the report in dogfood + post-launch review (§6.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0458c1a6cca380bdb1169ee24bd144a83fbfc39a26584c071c18d134302cd1a4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.119Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

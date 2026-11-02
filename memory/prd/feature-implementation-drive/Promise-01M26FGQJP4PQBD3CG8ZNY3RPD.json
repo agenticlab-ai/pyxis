@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQJP4PQBD3CG8ZNY3RPD",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-17",
+  "statement": "While terminal evidence is pending or accepted, the feature drive shall invalidate that evidence when either candidate input head changes.",
+  "rationale": "Prevent stale authorization.",
+  "fit_criterion": "All feature-head and main-head mutation fixtures invalidate prior evidence and block final eligibility.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:de5ddcb13eaddffa7943a09e53ad858bbc1dbcec413493709e1b130d4287d8a7",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.454Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

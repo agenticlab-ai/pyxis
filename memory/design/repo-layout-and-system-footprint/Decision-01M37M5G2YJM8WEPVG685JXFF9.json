@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M5G2YJM8WEPVG685JXFF9",
+  "kind": "Decision",
+  "subject": "design/repo-layout-and-system-footprint",
+  "family": "decision.2.1",
+  "statement": "Every pyxis-operated repo is partitioned into three buckets\nwith a removal test as the boundary oracle. Bucket 1 — **operand content**\n(the repo's own documents, ledgers, rollups, and code): survives pyxis's\nremoval untouched. Bucket 2 — **system footprint**: everything pyxis\ninstalls, consolidated under one directory, **`.pyxis/`** (config,\ntemplates, authoring guides, skills, scripts, hooks, vendored tools, a\ngitignored binary cache). Bucket 3 — **root integration points** vendors\ndictate (`AGENTS.md`, `.claude/`, `.codex/`, `.github/workflows/`): kept,\nbut as pointers/thin callers into `.pyxis/` only — the repo root is\ntreated as just another vendor surface (AP-25 generalized). Docgate\nreaches operands as a **versioned, sha256-pinned static release binary**\nresolved by shim and CI identically; `source` mode (`go run`) is a config\nmode reserved for this repo, where the source lives.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:3d6f7d6ea7066161b21fde6435edb0a77273e80686aa52d1eef949c0542eb287",
+    "source-design:8f2733754e318ac531bd9307e90a04a5e45569d3c7b5e7d06143ef1317843db6",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPVE42P48WBRSA6J9XG6"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRVXZDF67V8G79076WJQ1"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:13Z",
+  "provenance": {
+    "source": "docs/tech-design/repo-layout-and-system-footprint.md",
+    "note": "exact Decision evidence at docs/tech-design/repo-layout-and-system-footprint.md lines 31-43 in section 2; sha256:3d6f7d6ea7066161b21fde6435edb0a77273e80686aa52d1eef949c0542eb287"
+  }
+}

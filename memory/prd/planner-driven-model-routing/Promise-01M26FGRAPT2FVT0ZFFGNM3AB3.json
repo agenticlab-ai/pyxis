@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAPT2FVT0ZFFGNM3AB3",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NR-1",
+  "statement": "Harness selection remains an upstream explicit decision; routing never switches harnesses.",
+  "rationale": "credentials, egress, and availability policy are outside this feature",
+  "fit_criterion": "all unsupported-profile fixtures retain the selected harness and end in FR-10",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3239d7fae46288160fbdef105979bf26961461a10854c5e072c64a0b7b0bcf7a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.222Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

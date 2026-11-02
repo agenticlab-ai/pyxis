@@ -1,0 +1,8 @@
+{
+  "code": "design-coverage-memory-drift",
+  "scope": "design/prd-review-artifacts",
+  "feature": "prd-review",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M2VZ5QX9ZT1ZW2WJVV2APRYW",
+  "kind": "Document",
+  "subject": "tool/memory",
+  "family": "readme",
+  "statement": "Captured authored source: cmd/memory/README.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:cmd/memory",
+    "reconcile:source",
+    "sha256:dbdacc71cc17efad9447e5b05cab048ebe642fc213fb92fd73f18e3e55cc9530"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M2VW0Y85ZVTRX93Z1X52BCJZ"
+    }
+  ],
+  "body_sha256": "dbdacc71cc17efad9447e5b05cab048ebe642fc213fb92fd73f18e3e55cc9530",
+  "literal_body": true,
+  "issuer": "mdarabi@users.noreply.github.com",
+  "created_at": "2026-09-19T04:35:42Z",
+  "provenance": {
+    "source": "cmd/memory/README.md",
+    "note": "offline reconciliation"
+  }
+}

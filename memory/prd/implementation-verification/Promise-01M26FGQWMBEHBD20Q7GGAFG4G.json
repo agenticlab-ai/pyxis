@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQWMBEHBD20Q7GGAFG4G",
+  "kind": "Promise",
+  "subject": "prd/implementation-verification",
+  "family": "FR-15",
+  "statement": "The harness shall run headless from a clean checkout with no agent, interactive-session, or factory-metadata dependency, producing its exit code, verdict artifact, and structured run log as its sole outputs.",
+  "rationale": "portability by construction — the identical artifact is the future remote gate",
+  "fit_criterion": "the advisory CI dry-run: on the same commit, the GitHub Actions invocation and the local invocation produce rung-for-rung identical verdicts (M4)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ff3da3513f954d8f524453620c4110e4d5c27099fa45c55792e1bac4ea049028",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.772Z",
+  "provenance": {
+    "source": "docs/prds/implementation-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:cf720e4497788aaf595f1e5048bc3ae71e4b6cc47ba664211d0251758937f857"
+  }
+}

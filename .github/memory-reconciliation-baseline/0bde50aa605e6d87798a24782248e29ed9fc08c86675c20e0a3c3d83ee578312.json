@@ -1,0 +1,8 @@
+{
+  "code": "missing-serves-memory",
+  "scope": "design/init-hardening-v1 -\u003e prd:installer/UB-11",
+  "feature": "installer",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

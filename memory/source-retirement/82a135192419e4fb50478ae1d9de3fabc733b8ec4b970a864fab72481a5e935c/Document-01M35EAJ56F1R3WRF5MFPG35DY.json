@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M35EAJ56F1R3WRF5MFPG35DY",
+  "kind": "Document",
+  "subject": "source-retirement/82a135192419e4fb50478ae1d9de3fabc733b8ec4b970a864fab72481a5e935c",
+  "family": "seal",
+  "statement": "Retire the exact standalone source .pyxis/skills/e2e-design/SKILL.md.",
+  "intent": "Preserve exact source evidence before its later deletion.",
+  "rationale": "Retire the abandoned E2E test-generation feature",
+  "fit_criterion": "The retained mainline, source introduction, bytes, mode and active capture all match this seal.",
+  "tags": [
+    "reconcile:source-retirement"
+  ],
+  "body_sha256": "eab349bd0e9d14e3a0d991acd4d4ad5c9bf28f2ae50a18c28b52547e2ca1d6e3",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-22T20:53:39Z",
+  "provenance": {
+    "source": "source-retirement:.pyxis/skills/e2e-design/SKILL.md",
+    "commit": "9f2fbe9884316e280286f19809e7e61ef10ea997",
+    "note": "memory-source-retirement/v1"
+  }
+}

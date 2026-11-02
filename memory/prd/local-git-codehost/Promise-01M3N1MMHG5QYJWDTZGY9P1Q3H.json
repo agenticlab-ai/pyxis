@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3N1MMHG5QYJWDTZGY9P1Q3H",
+  "kind": "Promise",
+  "subject": "prd/local-git-codehost",
+  "family": "FR-6",
+  "statement": "When a local lock lands, Pyxis shall retain a versioned record that a clone of the configured origin can check against the reviewed head and landing commit.",
+  "rationale": "Durable consistency evidence",
+  "fit_criterion": "Clone validates bytes, receipt fields, version, and landing commit without claiming approver or independent repository identity",
+  "consequence": "high",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

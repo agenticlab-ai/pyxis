@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPWE038ZAT40B3W3KFAA",
+  "kind": "Decision",
+  "subject": "design/wake-channel-v1",
+  "family": "decision.3.2.1",
+  "statement": "Three paths, one door, one bound. **Push (preferred, per-adapter):** where the code host or CI can observe a completion (a merge, a check settling, an answer append touching a problem ledger), the adapter normalizes it to the wake signal — slug + touch reason only (AP-2; the glossary's ruled term) — and re-enters the drive at its existing front door; a signal is a latency optimization, never the guarantee. **The backstop tick (always):** a scheduled pass on the drive host at the configured interval — read the awaits from the ledgers, probe each awaited goal object exactly (ancestry for merges, record existence for items and appends — AP-15/AP-18/AP-26), invoke the CLI once per due touch, exit. Nothing resident, nothing between ticks; the idle tick (no awaits) reads and exits at a stated ~0 cost (UB-7). The channel's knobs live as closed-parse keys at the repo's config surface (final keys at implementation; only the host's *scheduler binding* stays per-adapter — §7 Q1), with their relations bound here: **the tick interval realizes the configured latency bound** — interval = the bound, the record's pinned identity — and **the staleness bound strictly exceeds the interval**, so a staleness alarm can never fire on an await the very next tick would legally serve. **Manual (the stated fallback):** a human front-door touch, unchanged — the sequential fallback the behavior design's DINV-5 requires, and the `delivered-by: manual` value the basis's EVT-3 row records. The per-CLI/per-host invocation adapters form a table that grows additively (AP-25; AP-27).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:f0e463aa0a934da85d8ee9369d06ccb8d84b1b93c1467efc583d8cfd1f5c26ab",
+    "source-design:aae4d57146f02d49d30efa8c027ac2e00f1290bbbc91042e9af5651e5f43671e",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCYKH1ZFTCXZ2HF1JBR2G"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.742Z",
+  "provenance": {
+    "source": "docs/tech-design/wake-channel-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/wake-channel-v1.md lines 34-34 in section 3.2; sha256:f0e463aa0a934da85d8ee9369d06ccb8d84b1b93c1467efc583d8cfd1f5c26ab"
+  }
+}

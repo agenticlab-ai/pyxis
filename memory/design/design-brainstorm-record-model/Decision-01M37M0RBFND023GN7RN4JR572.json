@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M0RBFND023GN7RN4JR572",
+  "kind": "Decision",
+  "subject": "design/design-brainstorm-record-model",
+  "family": "decision.2.1",
+  "statement": "A design-brainstorm record is **one markdown file per session in the shared `docs/brainstorms/` home, named `<slug>-tech-design.md`** — the class-bearing filename suffix (review ruling, 2026-07-10), the template version, and the routing pair distinguish it from its stage-1 sibling — instantiated from `design-brainstorm-record/v1`, whose typed sections extend the proven spine (routing-pair header, dense anchors, gate mechanics, freeze-at-merge) with four stage-3 organs: a **Basis** header row (the admitted requirement basis, replacing *Idea*), an **Alternatives ledger** (`ALT-n` — every candidate shape with trade-offs, principle citations, and matched incidents), a **Panel log** (one audited line per design question: seam call → fired/skipped/forced/waived → why), and a **Seam map** (`S-n` — the seams the direction opens or extends, feeding the design's Scope and Serves). Citations follow the sibling grammar as `design-brainstorm:<slug>#<anchor>`; the lifecycle is verdict-driven with one stage-3 addition — a **needs-more-product record commits on its own PR as the amendment's evidence** — and merge freezes uniformly.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:8a660875fb0e167e5be4395843786ed386b470e82748a1a816641f246988caa2",
+    "source-design:88f45a80c391d0fef232797f4d9326abb1c7641f1be53701b889ff87e0f44e49",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPPNY8BXV0QBJJCYBTEV"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQRWSTA3WXKR9HA3174WR"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:11:38Z",
+  "provenance": {
+    "source": "docs/tech-design/design-brainstorm-record-model.md",
+    "note": "exact Decision evidence at docs/tech-design/design-brainstorm-record-model.md lines 24-24 in section 2; sha256:8a660875fb0e167e5be4395843786ed386b470e82748a1a816641f246988caa2"
+  }
+}

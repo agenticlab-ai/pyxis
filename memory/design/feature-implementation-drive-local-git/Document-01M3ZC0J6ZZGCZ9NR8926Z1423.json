@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3ZC0J6ZZGCZ9NR8926Z1423",
+  "kind": "Document",
+  "subject": "design/feature-implementation-drive-local-git",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/feature-implementation-drive-local-git.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982"
+  ],
+  "body_sha256": "ea6421cbf3b48fee9b106753044c7c71128ae219ddae16b185a3712117800982",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T22:33:29Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-implementation-drive-local-git.md",
+    "note": "offline reconciliation"
+  }
+}

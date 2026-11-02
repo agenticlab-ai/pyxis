@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSQCJ1H3HBGD1N2ZRSC",
+  "kind": "Decision",
+  "subject": "design/maintenance-sweep-v1",
+  "family": "decision.3.1.1",
+  "statement": "One binary, named for the glossary term, delegating to one focused package that owns the policy load, the three detectors, the report assembly, and the exit-code mapping (#D-1). The pass order is fixed: parse invocation (fail-closed on misparse — incident I3's lesson, prd UB-5) → load policy (closed parse; absent = empty policy + default bound, a legal advisory-tool state; malformed = fault, prd UB-2) → run detectors in fixed order, each isolated (a detector fault is named in the report and the pass continues — prd UB-3) → emit the report + exit code. The concrete package and binary names, flags, and layout are the shape's (shape:maintenance-sweep-v1).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6ac2de2196f394fcb2bd3aff9f2e3bcaafa4be4c017c4e8e830b91830656b310",
+    "source-design:b49c1108056cb6e27cfdc8f53a55107ec21c42fdc8b75770b06d9bdfc579d2e8",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCSY3QQRTC6KH6V2VMXAT"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.655Z",
+  "provenance": {
+    "source": "docs/tech-design/maintenance-sweep-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/maintenance-sweep-v1.md lines 50-50 in section 3.1; sha256:6ac2de2196f394fcb2bd3aff9f2e3bcaafa4be4c017c4e8e830b91830656b310"
+  }
+}

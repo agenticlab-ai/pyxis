@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPP7146YQYHYEYB1PBM9",
+  "kind": "Decision",
+  "subject": "design/context-pack-v1",
+  "family": "decision.2.1",
+  "statement": "The context pack is a **deterministic projection** — a manifest header followed by the verbatim content of a **declared, closed set of stable-context classes**, concatenated in declared order — built **fresh on demand** by a `docgate` verb and never stored as authoritative. Freshness is structural: because the pack is always assembled from current sources at the point of use and never cached to disk as truth, a stale pack cannot exist; the manifest records the source revision and a content digest so any consumer can prove what it read. Determinism (a pure function of the declaration and the sources at a revision, with no wall-clock in the bytes) makes independent builds byte-identical, so one build shared to N sessions — or N independent builds — all present the same cacheable prefix. The independence boundary is **structural, not a filter**: the set of admissible class *kinds* is a closed enum containing no authoring-trail kind, so a declaration cannot name the delivery journal, dispositions, or orchestration — a cold reviewer's pack is free of the answer key by construction.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:7a2298c8e9fd14ec88d63bcb49f978bd7fdc40797148e9e935eebfc679b147ef",
+    "source-design:0eda89b54f774ceeba16b812a431c85f38941582676f642e93662ed26fe49f3f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCN812B4QY6CRBZJRAPBW"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.543Z",
+  "provenance": {
+    "source": "docs/tech-design/context-pack-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/context-pack-v1.md lines 24-24 in section 2; sha256:7a2298c8e9fd14ec88d63bcb49f978bd7fdc40797148e9e935eebfc679b147ef"
+  }
+}

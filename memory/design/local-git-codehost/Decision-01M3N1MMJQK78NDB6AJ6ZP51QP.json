@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3N1MMJQK78NDB6AJ6ZP51QP",
+  "kind": "Decision",
+  "subject": "design/local-git-codehost",
+  "family": "D-6",
+  "statement": "Run the same proposal lifecycle conformance suite against hosted and local adapters. The local suite uses real temporary bare origins under the shared-account policy. It covers the separate first configured-mainline push from the pinned init epoch, wrong/missing-epoch first-push refusal, subsequent history-gate refusal, missing-mainline draft open/prepare refusal with the first-push remedy, a configured mainline branch other than `main`, initialized-origin open, round, concurrent branch/proposal publication, stale push, prepare, readiness failure, missing receipt refusal, exact-head receipt, stale receipt refusal, proposal-head ABA (`H1→H2→H1`) with old-receipt refusal, a branch move between final read and landing push, lock, same-origin fresh-clone consistency verification after deleting the review worktree, missing or altered receipt-ref detection against the embedded bytes, reopen, abandonment, implementation proposal to a feature-integration ref, wrong-target refusal, missing/partial/stale task review aggregates, immutable aggregate-ref publication and fresh-clone recovery after the review worktree is deleted, absent/altered aggregate-ref refusal before landing and `RecordLanding`, two parallel-root task proposals on one base in each human-chosen order (second stale target refuses, reviewed rebase yields a squash child of the first landed revision, and both remain ancestors), reviewed task landing, missing/negative/stale final candidate evidence, immutable candidate-evidence-ref publication and fresh-clone recovery after the evidence worktree is deleted, absent/altered candidate-evidence-ref refusal before landing and after a landing crash, a target-main advance during final landing, distinct final proposal and feature refs, and accepted final delivery with candidate-tree and mainline-ancestry proof. It also checks that outputs disclose the unauthenticated approver, lack of independent repository identity, and absent host protection. It records every spawned command and fails if `gh`, Forgejo, or network is used.",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHBGVY99DQGG93E40VJ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHCW55FT4157JHZ1S0K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHD5E7B2FNSY2HDF1AF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHE97SP927A414491VA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHF077V2E29G9RPY63J"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHG5QYJWDTZGY9P1Q3H"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHH8BQ2D9ZVE6ANYFV0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHJB0QSSFNDPJFC5NJ3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHKBJRH7JKPZHPJ07Z3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHM9C7KZG8XAVGCV30C"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHQ72AFMRJVA4DV5PEA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHR1AAEM75D6MZ8DG8A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHS251BV0J1VJYNDZPM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHTMCG16FHHG78WYHK1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHY3Z80BH30DNYHR1M1"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMHZJ0HJ836EFBW8GQRH"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3N1MMJ0MEVAHKN7NRYDF168"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

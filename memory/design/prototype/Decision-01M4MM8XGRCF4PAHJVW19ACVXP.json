@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4MM8XGRCF4PAHJVW19ACVXP",
+  "kind": "Decision",
+  "subject": "design/prototype",
+  "family": "D-1",
+  "statement": "`pyxis draft prototype \u003cfeature\u003e --idea \u003cfile\u003e` creates a local branch `prototype/\u003cfeature\u003e` and a worktree for it from the fetched mainline, and `pyxis draft prototype \u003cfeature\u003e --remove` deletes both; neither form publishes anything, and the prototype stays on the local machine until the feature's draft locks or is abandoned (design-brainstorm:prototype-tech-design#D-3).",
+  "relations": [
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG16DM2AQGYGQN4XVTQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG6AQ6SHR58Q85ZYN33"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M4MM8XG8XVNH77C45BHE5PXB"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-11T04:41:54Z"
+}

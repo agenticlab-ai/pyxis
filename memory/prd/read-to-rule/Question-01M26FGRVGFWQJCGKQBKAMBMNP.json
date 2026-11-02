@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRVGFWQJCGKQBKAMBMNP",
+  "kind": "Question",
+  "subject": "prd/read-to-rule",
+  "family": "Q2",
+  "statement": "The reviewer ledgers' adoption of the §0 skip (the D-7 end-state) — event-timed: ruled before the first §0-bearing draft reaches a reviewer moment, or immediately on the first §0-anchored reviewer finding; until adoption, reviewer coverage of §0 is lawful and their §0 findings are ordinary advisory data",
+  "intent": "the reviewer ledgers (routed; @mdarabi decides timing)",
+  "rationale": "open",
+  "fit_criterion": "before the prove's synthesis — non-blocking for this contract (NG-5)",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:861e576d266819433bd8b2a42d9dd77e59f3a864590d7eba38fcfb2893e1d85c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.76Z",
+  "provenance": {
+    "source": "docs/prds/read-to-rule/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:ffa01667d7cb59ca7fdec395344246f0b9ce84009f9d023b11c10321cc9ac6aa"
+  }
+}

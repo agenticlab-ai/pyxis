@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR09X300X2GYCDWR3ZWE",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "EVT-5",
+  "statement": "welcome_emitted fires when the welcome path fires",
+  "intent": "tracker_ref: str",
+  "fit_criterion": "—",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c7bd10998a8c1ecd66380903f94f6a7fd7429d1f12bf9511bd3754ab18577a29",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.889Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQKKB0CCGF3Y1EGZ1JDF",
+  "kind": "Need",
+  "subject": "prd/feature-implementation-drive",
+  "family": "J4",
+  "statement": "When integrated e2e fails, I want route the evidence into reviewable repair work and re-verify, so I can correct the feature without rewriting merged history",
+  "rationale": "`brainstorm:feature-implementation-drive#D-10`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab2a6ac4eec2a8aa5899e4383b664b079cc1f4e3296440392f098a95530c90f6",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.483Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

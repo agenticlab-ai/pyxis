@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPXE4BDDF2PKQ3XBCWAP",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "EVT-5",
+  "statement": "tier_changed fires when promotion at checkpoint / demotion on breach",
+  "intent": "tier, direction, evidence refs",
+  "fit_criterion": "§3.3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2d56f18278e2ce2f4935e12a28174f4256082348a1c2072544600b34eb7bfd0f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.774Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

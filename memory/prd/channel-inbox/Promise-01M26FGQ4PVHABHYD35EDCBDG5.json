@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4PVHABHYD35EDCBDG5",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "NR-2",
+  "statement": "The installer offline floor (installer FR-13): zero network operations post-fetch in the carina + local-CI combo",
+  "rationale": "medium-independence stays proven",
+  "fit_criterion": "`pyxis inbox --hook` performs zero network operations in the network-denied combo; any network op fails the run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7ed219adee5adf972e9120066837f7fabbc7adf6beef353d472cd4f7726049ba",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.006Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

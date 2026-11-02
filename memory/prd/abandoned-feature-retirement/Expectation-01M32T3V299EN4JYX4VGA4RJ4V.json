@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M32T3V299EN4JYX4VGA4RJ4V",
+  "kind": "Expectation",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "DOD-7",
+  "statement": "The operator judges the final pilot diff to match the approved retirement perimeter with no unexplained deletion or residual active surface",
+  "intent": "G2, FR-14, NG-1–NG-6",
+  "fit_criterion": "final proposal review record",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8d288876f8c316b36e244ea7ec7cc1d26c903a48ea6093ea75e7c5ff38c3a8ba",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:21:58Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

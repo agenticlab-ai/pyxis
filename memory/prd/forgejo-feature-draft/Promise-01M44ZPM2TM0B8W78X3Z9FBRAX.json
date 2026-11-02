@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "Promise-01M44ZPM2TM0B8W78X3Z9FBRAX",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "FR-5",
+  "statement": "When a ready draft is prepared, the system shall preserve valid Argus content-bound trailers across rebase, compile the contract against current mainline, publish the exact prepared head with a lease, update the same selected-host PR, and request the configured human's review of that head; for installed Forgejo, require that human's latest authenticated exact-head approval before authorizing a lock under P-9's trusted-repository model; retain existing GitHub approval and protection behavior.",
+  "rationale": "Present exactly what may lock.",
+  "fit_criterion": "Source/rebased bindings validate; digest equals stored texts; PR head equals prepared SHA; reviewer differs from agent; Forgejo preparation does not require proof of privileged/direct/force-push or path-exemption enforcement; unapproved, stale, agent-approved, rejected, changed-head or uncertain-review lock attempts produce zero lock-tag writes; valid configured-human approval plus verified merged contents permits the lock; existing GitHub checks pass.",
+  "consequence": "high",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Promise-01M3WDAD5T5ZQVZYDJEW09H3JK"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-05T02:53:47Z"
+}

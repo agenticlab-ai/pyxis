@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ2R4R4K5AH85AEJGJX",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-14",
+  "statement": "The system shall enumerate, per harness, the figures it requires, and shall resolve each required figure for a recorded process to a measured value or an explicit unavailability.",
+  "rationale": "M2 counts absent figures against a universe; without an enumerated required set, \"absent\" has no denominator and the metric cannot fail",
+  "fit_criterion": "for each supported harness the required-figure set is enumerable from the contract and its frozen capability enumeration (FR-2); every required figure in every record resolves to one of the two states",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:550f901462ae26967f95260229baafb386a8a58d1fa4408ca1d51229af67f8e4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.618Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

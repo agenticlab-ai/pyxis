@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKFNH0EEFH6D0QV7TBS",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "UB-4",
+  "statement": "If If orientation finds a live design already deciding the question, then the system shall present it and, on confirmation, gate covered naming the design — no duplicate exploration",
+  "intent": "a pointer, not a re-litigation",
+  "fit_criterion": "covered fixture: gates covered citing the design; no framings/panel afterward",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:700400c3278eec1a5c3d2f555be05020f8d58f443fecb4c97c7952a0cf057a72",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.503Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

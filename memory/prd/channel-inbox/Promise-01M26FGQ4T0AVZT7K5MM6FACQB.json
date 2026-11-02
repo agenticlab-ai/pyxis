@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ4T0AVZT7K5MM6FACQB",
+  "kind": "Promise",
+  "subject": "prd/channel-inbox",
+  "family": "UB-3",
+  "statement": "If If a bulletin is malformed or of an unknown schema version, then the system shall skip that bulletin and continue with the rest, emitting nothing for it",
+  "intent": "other bulletins only",
+  "fit_criterion": "a malformed bulletin among valid ones is skipped; valid ones still emit",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a3504f354c2fdc3f347e8679d3596435c1f00b2383476d71cd50b7c6df9bab8a",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.01Z",
+  "provenance": {
+    "source": "docs/prds/channel-inbox/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:9e77031a66cb6807deaca4750f1d12e13201ea363a73bc2bbce1c9f6f8a4f278"
+  }
+}

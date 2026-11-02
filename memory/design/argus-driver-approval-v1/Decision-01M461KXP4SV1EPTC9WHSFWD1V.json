@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M461KXP4SV1EPTC9WHSFWD1V",
+  "kind": "Decision",
+  "subject": "design/argus-driver-approval-v1",
+  "family": "decision.2.1",
+  "statement": "`pyxis approve` publishes an exact-head decision through the GitHub approval\nadapter. The account and grant are read from immutable mainline objects. The\nreview carries the driver's evidence and canonical decision. A lock recorder\nuses the merge's first parent as its policy version and verifies the host\nreview before emitting an immutable lock tag. A fresh clone reads that tag\nand the existing exact compiled contract.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:52d49ba316c6afdce26de0124b27787c7dce124f83c4891d3af414e0c0172a02",
+    "source-design:c51278f5431415b8b8087c8780624c166622beef7fa00243d167bd82dc1acbf4",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M461DEEXFK1TDXR3XK0NCE5J"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T12:46:30Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-driver-approval-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-driver-approval-v1.md lines 68-73 in section 2; sha256:52d49ba316c6afdce26de0124b27787c7dce124f83c4891d3af414e0c0172a02"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR5MGWDF8A9TGHMCFS2S",
+  "kind": "Need",
+  "subject": "prd/pipeline-measurement",
+  "family": "M3",
+  "statement": "M3 — cost-per-feature reachable: G1",
+  "intent": "a feature's phases roll up via the carried run/feature id",
+  "fit_criterion": "for the reference feature, its phase records sum to one cost-per-feature figure with no record missing its run/feature id — checkpoint: the reference feature's front-half run",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:84fb5f4c6f03bfb681a2c83efb76a8d3c0bbda8890791e491bec8b878be9c016",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.06Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

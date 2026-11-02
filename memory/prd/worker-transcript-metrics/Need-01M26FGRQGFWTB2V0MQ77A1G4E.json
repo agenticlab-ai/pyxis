@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRQGFWTB2V0MQ77A1G4E",
+  "kind": "Need",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "J2",
+  "statement": "When a run took longer or cost more than expected, I want see where inside the run the time, tokens and context went — per turn, per tool use, so I can change the harness, its prompts, or its tooling on evidence rather than intuition",
+  "rationale": "brainstorm:worker-transcript-metrics#D-7 · #D-9",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3ac6a015772b1fc36e29b92f3ae1faa2c447593be1c46f9e61e591a6f3059b7b",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.632Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

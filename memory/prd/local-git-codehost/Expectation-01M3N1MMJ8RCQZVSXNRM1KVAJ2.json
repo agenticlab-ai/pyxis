@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M3N1MMJ8RCQZVSXNRM1KVAJ2",
+  "kind": "Expectation",
+  "subject": "prd/local-git-codehost",
+  "family": "DOD-5",
+  "statement": "Before local mode is enabled, the feature-draft contract has an approved scoped amendment and superseding design for unauthenticated shared-account approval.",
+  "intent": "prd:feature-draft/FR-17; prd:feature-draft/FR-46; prd:feature-draft/UB-3",
+  "fit_criterion": "Merged amendment, folded projection, and reviewed successor design",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

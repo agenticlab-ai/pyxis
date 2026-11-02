@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR6V6JKJBKV4NWNCA8C5",
+  "kind": "Promise",
+  "subject": "prd/plan-new",
+  "family": "FR-24",
+  "statement": "When projection completes or halts, the planner shall emit a schema-versioned report mapping tasks to tracker IDs/status and naming failures.",
+  "rationale": "success is verified and resumable",
+  "fit_criterion": "report validates and matches tracker reality",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fb559afa2c613f07904345374406f53b709bd25d8247b6c148335c1519f27a10",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.099Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

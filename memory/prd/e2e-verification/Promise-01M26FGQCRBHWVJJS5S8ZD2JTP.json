@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQCRBHWVJJS5S8ZD2JTP",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "FR-14",
+  "statement": "The e2e-plan tasks shall be ordinary tracker tasks in the shape the existing executor already consumes, adding no e2e-specific task type.",
+  "rationale": "so implement-now picks them up unchanged; e2e-specific handling is the deferred adaptation",
+  "fit_criterion": "inspection confirms the produced tasks use the existing task/charter schema with no new required field; the executor's frontier computation accepts them unchanged",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:47fef70b9214864734b517f0374501af348fdf2521c506325922f01d6f8ad25f",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.264Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRR6G9BAZSW461TMBKX9",
+  "kind": "Question",
+  "subject": "prd/argus-boundary-enforcement",
+  "family": "Q2",
+  "statement": "How is \"Argus-authored\" derived so it is forgery-resistant and available in CI without ambient credentials? (P-2)",
+  "intent": "technical design",
+  "rationale": "resolved (001) — The attribution-gate derivation property is now contracted in full: the signal is produced by construction on every drive-authored commit, forgery-resistant in strength, badge-independent and credential-free at CI evaluation time (FR-12), with authorship resolved into three positively-established states on the protected subset (FR-13). Q2 remains **open at the mechanism altitude** and is handed to the stage-3 technical design (a supersession of `docs/tech-design/argus-attribution-gate.md`): *how* the signal is produced (producer site — the commit-authoring actor, not the drive prose), *how* forgery-resistance is constructed, *how* human authorship is positively established, and the pre-mechanism/post-mechanism transition rule.",
+  "fit_criterion": "part-3 design gate",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:abd037868043671a63b02bd153260fabb7a98cb75f544bb8564721743d72dea8",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.654Z",
+  "provenance": {
+    "source": "docs/prds/argus-boundary-enforcement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:aed5f5adabae9326be7a55227cfed6b46df80405254305a40a8d44df67713fc8"
+  }
+}

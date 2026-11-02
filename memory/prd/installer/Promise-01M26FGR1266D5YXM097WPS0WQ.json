@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1266D5YXM097WPS0WQ",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "FR-8",
+  "statement": "When init completes, the installed repository's hook-run gate shall pass locally.",
+  "rationale": "install ends green — the D-4 invariant",
+  "fit_criterion": "gate exit 0 in every matrix combo immediately post-init",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3fedda13326ad0d674e8960af84b166dde12f2fd670406a46e3a2730a4ba31fa",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.914Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

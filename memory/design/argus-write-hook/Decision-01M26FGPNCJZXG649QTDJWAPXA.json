@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPNCJZXG649QTDJWAPXA",
+  "kind": "Decision",
+  "subject": "design/argus-write-hook",
+  "family": "decision.2.1",
+  "statement": "The write-time deny is realized as a **per-CLI native pre-write hook** — each supported agent CLI's own pre-write hook surface, wired via configuration on the **vendor-neutral agent surface** with the canonical deny logic authored once and per-CLI adapters pointing at it (never forked content; AP-25) — each adapter set to **fail closed** *(design-brainstorm:argus-boundary-enforcement-tech-design#D-4, #ALT-6)*. The deny logic classifies the pending write's target against the protected-path set and the drive's declared scope, and **denies before any bytes are written**, returning a reason naming the path and the boundary. Where a supported CLI's hook defaults to fail-open, the adapter sets its fail-closed option explicitly; where a CLI exposes no honoring pre-write hook, that CLI is documented with the merge-boundary layers (parts 2+3) as its stated guarantee (UB-2). An **unresolvable declared scope ⇒ deny** (FR-2, AP-17); a **hook process error / crash / timeout ⇒ deny** (UB-6). An OS/container **sandbox** is deliberately **not** the mechanism — it needs privilege beyond the repo (a new operator-owned surface) and is unnecessary because the out-of-band guarantee belongs to the merge-boundary layers (§4, ABUSE-4).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:15c0598360072623c4351cc42462324d18211372b8d910ebd633d0bae6952291",
+    "source-design:dfc6f23a4cc2dece296b198784ba922223f6de3cf3c1852c94d19d33d77b9cde",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMF34NB9FBM4E3AAG4J4"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.516Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-write-hook.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-write-hook.md lines 26-26 in section 2; sha256:15c0598360072623c4351cc42462324d18211372b8d910ebd633d0bae6952291"
+  }
+}

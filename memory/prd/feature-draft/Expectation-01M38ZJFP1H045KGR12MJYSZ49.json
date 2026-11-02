@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M38ZJFP1H045KGR12MJYSZ49",
+  "kind": "Expectation",
+  "subject": "prd/feature-draft",
+  "family": "DOD-3",
+  "statement": "Every unwanted-behavior and abuse row is refused as specified",
+  "intent": "UB-1 through UB-11, ABUSE-1 through ABUSE-8, NFR-1",
+  "fit_criterion": "refusal and failure-injection matrix",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:be653d7a59302b7cca8d47c01b591edf8ff6ca9518f19d157b957d22104674e7",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:52:47Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

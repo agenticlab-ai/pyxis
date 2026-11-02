@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR4B5JEGANAV61JY87KP",
+  "kind": "Need",
+  "subject": "prd/maintenance-sweep",
+  "family": "M2",
+  "statement": "M2: G1",
+  "intent": "false positives among live-sweep emissions (evaluated state: a current mainline checkout, §4.1)",
+  "fit_criterion": "0 at the adoption checkpoint (first five scheduled sweeps)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7603ed7d15b83401f0b896289e78ee916a2a42af947f067b46c5fa2d999686fc",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.019Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

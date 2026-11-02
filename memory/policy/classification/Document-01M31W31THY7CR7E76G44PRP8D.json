@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W31THY7CR7E76G44PRP8D",
+  "kind": "Document",
+  "subject": "policy/classification",
+  "family": "policy",
+  "statement": "Captured authored source: .pyxis/class-policy.yaml",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/class-policy.yaml",
+    "reconcile:source",
+    "sha256:ed90ecd0ce060837610f9a85294b43631262a5d2106b78d6d47d9eaae227f3c2"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB6J69B4Q8Z3PM5N8BQR6"
+    }
+  ],
+  "body_sha256": "ed90ecd0ce060837610f9a85294b43631262a5d2106b78d6d47d9eaae227f3c2",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:37:15Z",
+  "provenance": {
+    "source": ".pyxis/class-policy.yaml",
+    "note": "offline reconciliation"
+  }
+}

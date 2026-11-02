@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVD9XMVDMK9BBN0PZ6G",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-16",
+  "statement": "If a recognized e2e task's proposal changes the feature behavior under test outside the charter's stated scope, or exercises a route other than the scenario's recorded one, then the system shall withhold the succeeded class, mark the task failed naming the violated mandate or route, preserve its work, escalate, and continue the independent tasks",
+  "intent": "task in the failed class with the scenario, the recorded route, and the offending change named",
+  "fit_criterion": "seeded feature-edit and route-substitution fixtures are never counted succeeded even with every required check green; each violation names the scenario, the recorded route, and the offending change",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1ef3458dc47d1ac69e11712fa816fa5763ca34c12efb57c1592ef45b75f0ed8e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.733Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

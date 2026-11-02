@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M3QEXBNV1JSCVM6XR3V2ZYM0",
+  "kind": "Document",
+  "subject": "design/argus-draft-attribution",
+  "family": "design",
+  "statement": "Captured authored source: docs/tech-design/argus-draft-attribution.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:docs/tech-design",
+    "reconcile:source",
+    "sha256:50840bb44ee6bd5ac4ef45d4549e97811137877a00fcf9c7d76e5f2e0d12f77e"
+  ],
+  "body_sha256": "50840bb44ee6bd5ac4ef45d4549e97811137877a00fcf9c7d76e5f2e0d12f77e",
+  "literal_body": true,
+  "issuer": "agent:codex",
+  "created_at": "2026-09-29T20:50:14Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-draft-attribution.md",
+    "note": "offline reconciliation"
+  }
+}

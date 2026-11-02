@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNTZM4BBP3MAFF0Z6A3",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-16",
+  "statement": "The reviewer and the harvest shall treat an operator-class disposition as valid only when it is attributable to the operator's own identity on the tracker medium (not a bot-writable field); an unattributable operator-class disposition shall be excluded from the calibration corpus.",
+  "rationale": "the disposition is the adoption ground truth; a forgeable one is worse than none",
+  "fit_criterion": "a fixture where a worker-authored \"operator accepted\" disposition is excluded from M2; inspection confirms operator-class dispositions derive from the operator's medium act, never a bot-editable payload field",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e6c8dd0d0afd1f962d46ca6088729f72dea825317c3d00b00d7eb42cbd6de601",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.554Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

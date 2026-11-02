@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/skill-command-prefix#Q1",
+  "feature": "skill-command-prefix",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

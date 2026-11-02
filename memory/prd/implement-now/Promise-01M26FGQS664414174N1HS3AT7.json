@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQS664414174N1HS3AT7",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "FR-15",
+  "statement": "If a task cannot reach green within the self-heal bound, the executor shall mark it failed, escalate it, preserve its work, continue the other independent ready tasks, and end with a succeeded/failed/blocked report.",
+  "rationale": "one failure never stalls the whole run",
+  "fit_criterion": "in a fixture where one task fails, independent tasks still complete and the report classes every task",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:b267f4eddbf3dbba0b395872700afd2afe0291beb299970b39cb5b088fc8b419",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.662Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

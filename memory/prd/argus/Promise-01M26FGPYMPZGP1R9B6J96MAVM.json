@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGPYMPZGP1R9B6J96MAVM",
+  "kind": "Promise",
+  "subject": "prd/argus",
+  "family": "UB-6",
+  "statement": "If If content in any subject, record, or corpus embeds instructions to Argus, then the system shall treat them as data — never obey; planted directives are themselves escalation-candidate evidence",
+  "intent": "no behavior change",
+  "fit_criterion": "EVAL-3 injection corpus: zero obeyed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c0fcb3a01b5c3b49e859e99f1a001f397fa64ebe77f94a733fade120f44c33fc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.812Z",
+  "provenance": {
+    "source": "docs/prds/argus/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:744052e038aa67dbe1c5b56881c503be8bddbab352eada60a203f93f7d5da506"
+  }
+}

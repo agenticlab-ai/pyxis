@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQVG8QZPG8RCKBYXBC1Z",
+  "kind": "Promise",
+  "subject": "prd/implement-now",
+  "family": "UB-2",
+  "statement": "If the session is interrupted mid-run, then the system shall leave every claim/worktree/PR recoverable and resume from pushed work on re-invocation",
+  "intent": "a resumed run continues, no duplicates",
+  "fit_criterion": "a killed run resumes with zero duplicate proposals",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0105274c071649bc97eb3868599cdeaa8a4ad263f7cfafcb063eb8e5c58c1ee0",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.736Z",
+  "provenance": {
+    "source": "docs/prds/implement-now/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:49ab69f71b406b4148e5bb6bac18eec62cbb7fee85e502e984c0b48b27a129c5"
+  }
+}

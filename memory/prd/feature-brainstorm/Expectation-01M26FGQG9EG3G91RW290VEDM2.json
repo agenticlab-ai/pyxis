@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGQG9EG3G91RW290VEDM2",
+  "kind": "Expectation",
+  "subject": "prd/feature-brainstorm",
+  "family": "DOD-3",
+  "statement": "The eval suite passes its thresholds, with EVAL-2 at zero failures",
+  "intent": "§5.9",
+  "fit_criterion": "eval report on the committed fixture corpus",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1cb06adaf82e272ed494e4cd6851275a250b1b7391331477aecae60edb5d1005",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.377Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

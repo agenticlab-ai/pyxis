@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPMQYMJPESYNQ3C8R06K",
+  "kind": "Decision",
+  "subject": "design/argus-artifacts",
+  "family": "decision.3.1.1",
+  "statement": "`docs/problems/\u003cslug\u003e/problem.md` holds: a closed header of intake-time facts only (slug · principal identity · authority-contract version at intake · optional per-problem envelope override — **no mutable cell**: status lives on the delivery side, where the derived block owns it), the **Idea** section (the human's words, verbatim, never edited), and the **`A-n` family** — one dense, append-only sequence of human authority entries: pre-rulings recorded at intake, then every breaking-call answer as it arrives, each entry dated, attributed to its human author, carrying the authority-contract version current at recording, and (for answers) citing the brief it answers (`delivery:\u003cslug\u003e#E-k`). An `A-n` binds as a ruling-in-advance for everything downstream; the file is append-only forever with no exceptions — DINV-1 is absolute. The slug is kebab-case, minted at intake from the idea; a collision appends `-2`, `-3`.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:87096122195cddee8d1f9d1b0b0a71c0548d6120d89244f40d50c0e651896f5c",
+    "source-design:8dc33c9a39f15198ce210bc812c53d02af3d5705440dc4da5b52660419b4df20",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCKS61Z7RSCT74WBKMMRN"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.495Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-artifacts.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/argus-artifacts.md lines 32-32 in section 3.1; sha256:87096122195cddee8d1f9d1b0b0a71c0548d6120d89244f40d50c0e651896f5c"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M31W2HQH5784GCVYAPVVA6AJ",
+  "kind": "Document",
+  "subject": "authoring/e2e-plan",
+  "family": "guide",
+  "statement": "Captured authored source: .pyxis/authoring/e2e-plan.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/authoring",
+    "reconcile:source",
+    "sha256:79e445ebaa000bdc6d83c5e0059d6347c78e8a6c01f30aae772bd57a5ddc7001"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB5BMD1W44J7GRTT5W52F"
+    }
+  ],
+  "body_sha256": "79e445ebaa000bdc6d83c5e0059d6347c78e8a6c01f30aae772bd57a5ddc7001",
+  "literal_body": true,
+  "issuer": "codex",
+  "created_at": "2026-09-21T11:36:58Z",
+  "provenance": {
+    "source": ".pyxis/authoring/e2e-plan.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M67Q8VEJT26F4K44AVM20",
+  "kind": "Decision",
+  "subject": "design/solution-shape-v1",
+  "family": "decision.3.7.1",
+  "statement": "The design and its shape are authored as a pair and reviewed in **one operator conversation**. The handoff names both repository paths and presents their exact source content, so the reviewer sees what freezes (the design) beside what stays live (the shape); nothing is transformed or invented. Approval is one gate over the pair; only the design's approval is a freezing event.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:eb49c9bff21541da76365734d714732b768a217cde24c2b637193a85247a0922",
+    "source-design:ff86343d310dd7a395b18958ae13fbe31a41267748cf8ed385b7547d0cabbd8f",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPW480XK9MYYTZAWY66E"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZRZ599VTBS35Z9ENSAH28"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:14:37Z",
+  "provenance": {
+    "source": "docs/tech-design/solution-shape-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/solution-shape-v1.md lines 80-80 in section 3.7; sha256:eb49c9bff21541da76365734d714732b768a217cde24c2b637193a85247a0922"
+  }
+}

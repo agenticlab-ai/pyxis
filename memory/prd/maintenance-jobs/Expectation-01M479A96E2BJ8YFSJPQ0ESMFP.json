@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M479A96E2BJ8YFSJPQ0ESMFP",
+  "kind": "Expectation",
+  "subject": "prd/maintenance-jobs",
+  "family": "DOD-3",
+  "statement": "Language, platform, privacy, and diagnostic requirements pass",
+  "intent": "NFR-1, NFR-2, NFR-3, NFR-4",
+  "fit_criterion": "Build/quality evidence and artifact inspection",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

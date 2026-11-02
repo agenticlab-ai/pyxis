@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRHHS20MDEQ692RC0253",
+  "kind": "Need",
+  "subject": "prd/skill-command-prefix",
+  "family": "G2",
+  "statement": "We believe a mechanical prefix gate after the train; expected result: new skills cannot reintroduce unprefixed names",
+  "fit_criterion": "qual: gate green on closing PR; future skill PRs fail closed if unprefixed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:4baccf390526ce65316d93a1bd02d676db98bb7f9adbb91dac782737c7975629",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.441Z",
+  "provenance": {
+    "source": "docs/prds/skill-command-prefix/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:2e57c57b208715842a1eb6333d94655604f71086d71ce00112dc9c7cd9331e44"
+  }
+}

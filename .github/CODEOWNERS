@@ -1,0 +1,10 @@
+# Contract records added by a draft lock require the operator's review.
+/memory/prd/ @mdarabi
+/memory/design/*/Document-*.json @mdarabi
+/memory/design/*/Document-*.md @mdarabi
+
+# Abandonment writes one Learning under learning/draft-abandonment-<feature>.
+/memory/learning/draft-abandonment-*/ @mdarabi
+
+# The ownership rule itself is operator owned.
+/.github/CODEOWNERS @mdarabi

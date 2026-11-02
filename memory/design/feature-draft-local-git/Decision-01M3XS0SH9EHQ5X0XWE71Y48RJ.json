@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3XS0SH9EHQ5X0XWE71Y48RJ",
+  "kind": "Decision",
+  "subject": "design/feature-draft-local-git",
+  "family": "decision.3.17.1",
+  "statement": "The operator invokes local lock landing after review. The command\nre-reads the prepared proposal, branch, and mainline from the configured origin;\nverifies every receipt field against that pre-landing record, including an\nexact comparison with its stored `review_request` nonce and readiness digest;\nand rechecks all current readiness and memory-integrity conditions. A moved\ngeneration, branch, target, readiness digest, or mismatched nonce refuses and\nnames fresh preparation and review as the remedy. Argus can present the request\nand observe the outcome; its workflow\ndoes not invoke approval or landing (`FR-49`).",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:808e6b830766bd4145f2ae88a9a1b7039aa6138e30d58a27374a9b03880905af",
+    "source-design:0e8b6fb91a4ae8d1d77b43ed206520e9419d8a5c2d215c0dbb507c1242e1bced",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M3XRQZMYMCY9JTEY7C1700KD"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-02T07:42:19Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-local-git.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-local-git.md lines 325-333 in section 3.17; sha256:808e6b830766bd4145f2ae88a9a1b7039aa6138e30d58a27374a9b03880905af"
+  }
+}

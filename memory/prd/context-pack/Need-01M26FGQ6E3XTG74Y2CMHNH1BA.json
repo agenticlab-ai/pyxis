@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ6E3XTG74Y2CMHNH1BA",
+  "kind": "Need",
+  "subject": "prd/context-pack",
+  "family": "J1",
+  "statement": "When I spawn several sessions for one stage, I want hand each the same governing context without each re-reading the corpus, so I can pay for the shared context roughly once per stage, not once per session",
+  "rationale": "the drive prompts",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:e578d644cb151c5b3960030a123e17c3afef2afdd70836f1002fe92a44b9779e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.062Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

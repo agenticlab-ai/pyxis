@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ8E9A9EHRWHX8EZK5D",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-6",
+  "statement": "When every process of a task has ended, the system shall record one task-level rollup aggregating those processes' figures, marking any figure whose parts are not all measured as incomplete rather than summing over what is present.",
+  "rationale": "J1 and J3 are task-level questions; the operator ruled the rollup stored rather than derived *(#D-3, #D-7)*. A sum over an incomplete set is indistinguishable from a complete one, which would make the rollup the contract's one silently-wrong number",
+  "fit_criterion": "for a multi-process task whose parts are all measured, exactly one rollup exists and each figure equals the sum of its parts; for a task where any part carries an FR-4 unavailability or lacks a record (UB-2), the corresponding rollup figure is marked incomplete and names the processes it could not include — never a sum presented as whole",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e0f2f4842dc286041f2114d20d1ddf354b326ac0658c48d186c4f7eaa686895",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.624Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

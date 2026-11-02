@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR3G86T0MBTXP7T9SHY6",
+  "kind": "Promise",
+  "subject": "prd/local-work-tracker",
+  "family": "UB-1",
+  "statement": "If If a mutation targets a nonexistent or malformed work item, then the system shall abort with a defect naming the id, the operation, the reason, and the remedy, writing nothing",
+  "intent": "named defect, no partial write",
+  "fit_criterion": "every fixture case names the quadruple; the store is unchanged after the abort",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:81f13345ee9a9f902c4b104cda26be5129bea83ecb1fc447ed3d24d3e99b3515",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.992Z",
+  "provenance": {
+    "source": "docs/prds/local-work-tracker/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:54ba13940b13102c4a03b7d8948d689114004f980ea7e7560350f50927269ce2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8Z71R5KY1GY816QVG9",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-4",
+  "statement": "If a check itself raises (an internal fault, not a contract defect), then the system shall record that check as `error` in the verdict, fail-closed, and refuse planning — never a false pass",
+  "intent": "error verdict naming the failed check",
+  "fit_criterion": "a fault-injected check yields an `error` verdict, overall not-clean; planning does not proceed; no other check's result is silently dropped",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:2a5e69e6b13190b8e075c4d542f14bdeaf0dac6d8bdb1c9f7bf080fd05c9ac95",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.143Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

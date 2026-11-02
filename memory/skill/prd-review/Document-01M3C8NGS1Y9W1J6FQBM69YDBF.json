@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "Document-01M3C8NGS1Y9W1J6FQBM69YDBF",
+  "kind": "Document",
+  "subject": "skill/prd-review",
+  "family": "entry",
+  "statement": "Captured authored source: .pyxis/skills/prd-review/SKILL.md",
+  "intent": "Preserve the authored feature context until closeout proves its important content is represented in native memory.",
+  "rationale": "The offline reconciler binds exact source bytes to an immutable record at a pinned repository commit.",
+  "tags": [
+    "class:.pyxis/skills",
+    "reconcile:source",
+    "sha256:984b4f6427a3c43006b14aed4b14b7c741f91cf4590d8c62fe9dbc99a8e05273"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Document-01M1VSB9NS9AY73T2V402CWN0J"
+    }
+  ],
+  "body_sha256": "984b4f6427a3c43006b14aed4b14b7c741f91cf4590d8c62fe9dbc99a8e05273",
+  "literal_body": true,
+  "issuer": "mdarabiassistant@users.noreply.github.com",
+  "created_at": "2026-09-25T12:29:27Z",
+  "provenance": {
+    "source": ".pyxis/skills/prd-review/SKILL.md",
+    "note": "offline reconciliation"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ9M3339MNJGZ0ZT632J",
+  "kind": "Need",
+  "subject": "prd/design-solution-shape",
+  "family": "J1",
+  "statement": "When authoring a feature's design that creates state or an interface, I want lay out the concrete schema/interfaces and have them reviewed in native form, so I can catch shape-level gaps before the factory builds",
+  "rationale": "this session",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:d2c2fb2c8dd7dfc59ea26e35b36908c42f9ba4061e422eef69b1d1ae4405132a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.164Z",
+  "provenance": {
+    "source": "docs/prds/design-solution-shape/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7fef782fa3ee2e153b466ee373da1ed9eedf21f84db347a4598a17c9a630ba04"
+  }
+}

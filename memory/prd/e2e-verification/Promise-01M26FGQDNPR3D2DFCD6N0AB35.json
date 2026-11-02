@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQDNPR3D2DFCD6N0AB35",
+  "kind": "Promise",
+  "subject": "prd/e2e-verification",
+  "family": "NFR-2",
+  "statement": "The three skills shall be invocable independently and resumable, each reading its input from committed artifacts (finished feature; drafted design; approved design) rather than in-memory session state.",
+  "intent": "Operability",
+  "fit_criterion": "each skill run cold from the committed inputs reproduces its behavior; a fresh session resumes at the right step",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9e6617bfee2446eb2c7f9e5e0af706c6b6bd900f6ecc51add7f80d06621b3f43",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.293Z",
+  "provenance": {
+    "source": "docs/prds/e2e-verification/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:0c25332d46a7da688ad5af8abd82cdddaad981dd44d7abaae44ab2c75223b678"
+  }
+}

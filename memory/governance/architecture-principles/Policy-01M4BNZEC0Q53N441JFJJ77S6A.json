@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Policy-01M4BNZEC0Q53N441JFJJ77S6A",
+  "kind": "Policy",
+  "subject": "governance/architecture-principles",
+  "family": "AP-31",
+  "statement": "The operator adopted AP-31 (Build what was asked, at the scale that exists) as an engineering principle: a contract admits a commitment only when a stated need asks for it. The registry entry in docs/architecture-principles.md holds the binding text.",
+  "intent": "Lets a worker auditing governance provenance treat AP-31 as an operator ruling. The registry's memory capture was issued by an agent, which records who captured the bytes, not who holds authority over the principle.",
+  "rationale": "The operator asked for the design principles to be updated to steer PRD and tech-spec authoring, after the maintenance-jobs draft grew from a request for one scheduled job into a thirty-task plan (incident I13). An agent drafted the text from that instruction; the operator read it, attested it with a Governing-Change: operator commit, and approved and merged the change. Two automated review comments on that change had read the agent issuer on the capture record as agent authorship of the rule.",
+  "issuer": "agent:claude",
+  "created_at": "2026-10-07T17:18:31Z",
+  "provenance": {
+    "source": "docs/architecture-principles.md",
+    "pr": 1507,
+    "commit": "04707e3af21f9dbb18ff980f62d7af64e7bedb61",
+    "note": "Operator instruction in the work session on 2026-10-06: \"if needed update the design principles to help with steering agents on the prd and techspec write up.\" Drafted by Claude from that instruction. The operator recorded the attestation on 2026-10-07 and merged PR #1507 the same day; the landed commit's message carries the Governing-Change: operator trailer."
+  }
+}

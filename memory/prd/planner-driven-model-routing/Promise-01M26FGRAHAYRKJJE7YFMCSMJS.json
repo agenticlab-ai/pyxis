@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRAHAYRKJJE7YFMCSMJS",
+  "kind": "Promise",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "NFR-3",
+  "statement": "The system shall parse assessment, profile, compatibility, and native-policy data as closed schemas.",
+  "intent": "Security / integrity",
+  "fit_criterion": "every unknown-key, unknown-enum, and incompatible-version fixture fails before dispatch",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0724d36017a63ed11d45be755ec8acd2eff8772f4347df173edf6c75771cc280",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.217Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZK4ZZMNRY7Z2X2R5MRTWT",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "EVT-6",
+  "statement": "draft_reopened fires when a locked feature is reopened",
+  "intent": "feature: string, from_version: int, cause: new-need·dependency-change·gap-lock-should-have-caught·other, cause_ref: string",
+  "fit_criterion": "M2",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f1b4840b062c7b74b11114c8ba5ea56c324332ce4428917c602efe0c0be64053",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:09Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

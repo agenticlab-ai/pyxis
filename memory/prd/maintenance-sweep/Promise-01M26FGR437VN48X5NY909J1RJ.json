@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR437VN48X5NY909J1RJ",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "FR-9",
+  "statement": "When the touches-underdelivery detector runs, the sweep shall report, for each frozen plan task, every Touches surface absent from the evaluated state (§4.1), phrased as an advisory reconciliation signal, excluding tasks of plans a plan waiver names (FR-10).",
+  "rationale": "the charter under-delivery class (T4/T8) (D-2; F-4's semantics), with the in-flight-plan control contracted rather than extended by analogy (design-brainstorm:maintenance-sweep-tech-design#D-4)",
+  "fit_criterion": "on the pinned replay fixture, the two never-shipped wiring surfaces are reported citing plan + task; a fully-delivered plan fixture yields zero; a fixture whose in-flight plan carries a plan waiver yields zero touches findings for that plan and an applied-waiver line",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ce2f509efd44b209fc5b92dd8150487709aeb845e042323808e97a2a2eb443e1",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.011Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

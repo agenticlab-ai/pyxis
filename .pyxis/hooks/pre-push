@@ -1,0 +1,14 @@
+#!/bin/sh
+# docgate + code-gate pre-push — delegate-only shims; resolution lives in the
+# *-resolve.sh scripts (layout §3.7; code-gate-mirror.md §3.6, DINV-1). Both
+# predicates gate a human push: doc-gate first (fast), then code-gate.
+# Activation: go run ./cmd/hooks-setup
+#
+# The doc-gate delegate carries NO branch/remote literal (config-driven-
+# portability-v1 §3.1, DINV-1/DINV-4): it passes no --merge-base, and pyxis
+# resolves the default merge-base ref from the configured branch+remote at
+# runtime, so the hook body stays byte-identical across repos.
+set -e
+ROOT="$(git rev-parse --show-toplevel)"
+"$ROOT/.pyxis/scripts/docgate-resolve.sh" pre-push
+exec "$ROOT/.pyxis/scripts/code-gate-resolve.sh" run

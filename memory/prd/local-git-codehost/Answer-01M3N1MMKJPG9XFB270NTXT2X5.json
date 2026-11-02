@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMKJPG9XFB270NTXT2X5",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Require the configured mainline ref on the selected bare origin before opening or preparing a local draft; if absent, refuse with an actionable first-push remedy. Keep FR-9's base-free proof for that separate first mainline push, then use normal history gates. The already initialized AEC origin needs no additional mainline commit.",
+  "intent": "operator",
+  "rationale": "Drafts should use the normal prepared-mainline path after the first mainline push.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMKHQ64P2J8DE1DKX55F"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

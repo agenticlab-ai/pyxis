@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ57Y8NAV1DH1RD635E",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-3",
+  "statement": "The system shall record, for each tool use within a recorded process, its kind identifier, its duration, and the token usage attributed to it.",
+  "rationale": "J2 needs an attributable operation, not an unattributed spike *(#D-2, #D-9)*",
+  "fit_criterion": "for a run on a harness exposing tool events, every tool use in the transcript appears in the record with those three figures present or declared unavailable",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cffd26c36512079db61499f86e5cabfeb70660c50e0a4e49527ae9f36c098d0b",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.621Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T4Q7VSC9AAB3Q99ZNM2A2",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-9",
+  "statement": "When an authorized cleanup proposal is evaluated, the system shall accept only disappearance of exact selected identities and shall apply ordinary change reconciliation to every present changed or unselected identity.",
+  "rationale": "Retirement authority must not become edit authority.",
+  "fit_criterion": "Mixed deletion/change fixtures accept exact authorized absences and refuse changed, unselected, or partially removed identities without fresh ordinary evidence.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:eccfc9e405146dcb9172405c29c3d8debe0325e0723614d12ab9ae295d3130bc",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:27Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

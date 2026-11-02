@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ6XNKZK6776FPP3YK97",
+  "kind": "Promise",
+  "subject": "prd/context-pack",
+  "family": "UB-2",
+  "statement": "If If a subject is passed that does not exist, then the system shall refuse and name the subject; emit nothing",
+  "intent": "an error naming the subject",
+  "fit_criterion": "an unknown subject yields no artifact and a clear error",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c8269844323cfbfe216dc80b4f860b7a5fc32644de23d204ff505ae9d4041378",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.077Z",
+  "provenance": {
+    "source": "docs/prds/context-pack/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:babcc6ab4de60bda563d5c38d82ce0af4ac840bf593b46958a9a31f7f0ca6f18"
+  }
+}

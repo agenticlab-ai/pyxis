@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBK48RCYW312FD9Q56ZX7",
+  "kind": "Document",
+  "subject": "feedback/002-plan",
+  "family": "entry-001-doc-review",
+  "statement": "Imported Pyxis source document: docs/feedback/002-plan/001-doc-review.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/feedback",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "4fc2066ee6efd9e252525cd73069fe0f7b0e22b1d530b68bd97eadc1c70a63ac",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:21Z",
+  "provenance": {
+    "source": "docs/feedback/002-plan/001-doc-review.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

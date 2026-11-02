@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1S0H66BX6H4R1E6TA1",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "UB-13",
+  "statement": "If the door credential is absent, malformed, or rejected by the artifact source, then the system shall refuse with zero execution, name the credential's environment variable and the refusing host, and exit non-zero without attempting another channel",
+  "intent": "a named door refusal carrying the environment variable and the host",
+  "fit_criterion": "absent, malformed, and 401/403 fixtures each refuse with zero execution and zero cross-channel requests; the refusal text names both the variable and the host",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:cf9292d1a831b5ad4bf358eb1e8337dc4803deb284afbe5e5294b5214a34f934",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.937Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

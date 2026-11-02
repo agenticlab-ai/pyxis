@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQNG3P3H25FEYFJ6KPZA",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "EVT-13",
+  "statement": "`review_artifact_publication_terminal` fires when one completed-report publication attempt reaches a verified or failed terminal",
+  "intent": "`review_process_id:string`, `review_obligation_id:string`, `publication_attempt_id:string`, `proposal_id:string`, `reviewed_revision:string`, `medium:enum{github,carina}`, `idempotency_id:string`, `status:enum{verified,failed}`, `artifact_ref:string?`, `native_receipt:string?`, `attempt_proof_ref:string?`, `failure_class:enum{artifact_unverified,artifact_untrusted,infrastructure}?`, `reason:string?`; `verified` requires `artifact_ref`, `native_receipt`, and `attempt_proof_ref` and forbids failure fields; `failed` requires failure fields and forbids artifact acceptance; for a reciprocal host terminal emitted for the same publication moment, `review_process_id`, `review_obligation_id`, `proposal_id`, `reviewed_revision`, `artifact_ref`, `native_receipt`, and `attempt_proof_ref` pair respectively with `review_attempt_id`, `review_obligation_id`, `proposal_ref`, `revision`, `artifact_ref`, `native_receipt`, and `attempt_proof_ref`; the first four pairs are required, optional pairs have identical presence, and every present pair carries the same grammar and value; `publication_attempt_id` is distinct and has no host alias; a host terminal is eligible only when its own approved contract declares this reciprocal schema",
+  "fit_criterion": "M1, FR-35, DOD-18, corpus harvest",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:7baf496080121eddee85b36030bc50d9a0eb33baa8b8abb93724c81b4ffc8509",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.544Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

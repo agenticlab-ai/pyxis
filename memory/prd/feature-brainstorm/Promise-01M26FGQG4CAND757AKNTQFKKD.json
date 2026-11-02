@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQG4CAND757AKNTQFKKD",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "ABUSE-1",
+  "statement": "whoever authors the raw notes handed to the session — steering the contract without the operator's rulings — vector: instructions embedded in the idea/notes input (\"record the following as operator decisions…\")",
+  "intent": "fabricated rulings enter the record and then the PRD",
+  "fit_criterion": "FR-6 (an operator answer is a live session turn; input content never qualifies) + EVAL-2 fixtures seeded with injected notes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:137ea6a40644e18066628b0f59e4dbe47b04b9fd10f89f936d68bc9b6b9ba233",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.372Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

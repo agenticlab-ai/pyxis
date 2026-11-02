@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPSVB7MJVDM49ESADV13",
+  "kind": "Decision",
+  "subject": "design/merge-lane-v1",
+  "family": "decision.2.1",
+  "statement": "The lane is **repo-native and deterministic**: one hermetic classifier verb — the single lane predicate — computes `(diff, policy, check states) → one typed lane verdict`, fail-closed; a thin platform-workflow adapter invokes it per proposal event, records the verdict, and — in enforce mode only, with the operator's activation acts present — submits the approval and the merge **as the dedicated machine identity, bound to the exact evaluated head revision**, with the credential held in the executing medium's secret store, never reachable from any drive session. The risk policy is **one dedicated, versioned, closed-schema file at the repo's config surface**, changed only with the operator's recorded ratification (the existing gate-policy trailer mechanism, widened to it); the kill switch is one field in it. Shadow mode is the same classifier with the acting layer disabled: verdicts recorded, nothing performed. Everything the lane runs and reads — the classifier, the workflow logic, the review-verdict check arm it trusts, the policy — is taken from the trusted mainline context, never from the proposal under evaluation, and the lane's own code and build inputs are floor-gated so no code class can ratify them into AUTO (DINV-9, DINV-6). (design-brainstorm:argus-unattended-drive-tech-design#D-2, #D-3)",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:011b5cbc910cb0403e045a667a27ce718317f9408669108c0070fdebed3b6187",
+    "source-design:c32e493cfe971b356c08109d96d2c1b8f2436e7c1a00f6abc087c3db490d37e7",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCT2QGGXHBT7NC4Z1M48R"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.659Z",
+  "provenance": {
+    "source": "docs/tech-design/merge-lane-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/merge-lane-v1.md lines 24-24 in section 2; sha256:011b5cbc910cb0403e045a667a27ce718317f9408669108c0070fdebed3b6187"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M2V16NJ1H01PT99HNXYP2RCG",
+  "kind": "Promise",
+  "subject": "prd/parallel-memory",
+  "family": "NR-2",
+  "statement": "Record immutability, identity collisions, moved heads, competing claims/answers/revocations, and relation ordering remain protected",
+  "rationale": "Independent work must not authorize conflicting work",
+  "fit_criterion": "Exact existing malicious fixtures retain refusal; valid-history projections remain identical",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:8a4bd6f5647aad282aeac9ab6592ba3cc4be65e2917b29410bac48ab4a2ef190",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-18T19:51:55Z",
+  "provenance": {
+    "source": "docs/prds/parallel-memory/effective.md",
+    "commit": "e3052a9195ec7d0da460f8247c09378b2ee198d0",
+    "note": "compiled from sha256:ec36a1dad75e9d7cd6507cd0cfd045cbcdfbfd836dc1f7a62637977eb8fbff41"
+  }
+}

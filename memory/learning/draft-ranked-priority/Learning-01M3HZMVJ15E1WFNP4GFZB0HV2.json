@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "Learning-01M3HZMVJ15E1WFNP4GFZB0HV2",
+  "kind": "Learning",
+  "subject": "learning/draft-ranked-priority",
+  "statement": "Draft readiness recognizes the leading Must priority class when the PRD template adds a rank, so ranked Must requirements retain mandatory design coverage and fit-criterion verification.",
+  "rationale": "The scripted authoring fixture emitted the template-supported Must (rank 1) form. Comparing the entire cell to Must allowed an unserved requirement to pass readiness and classified its missing fit criteria as non-Must. Read the class without changing the literal row.",
+  "fit_criterion": "TestRankedMustRequirementsHoldReadiness compiles ranked rows and refuses missing serving decisions, fit criteria, and verification under FR-13 and FR-14.",
+  "tags": [
+    "code:internal/draft/readiness"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-27T17:47:15Z",
+  "provenance": {
+    "source": "internal/draft/readiness/content_test.go",
+    "pr": 1298
+  }
+}

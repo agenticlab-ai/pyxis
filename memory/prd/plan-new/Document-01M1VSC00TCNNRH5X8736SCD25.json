@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSC00TCNNRH5X8736SCD25",
+  "kind": "Document",
+  "subject": "prd/plan-new",
+  "family": "amendment-003",
+  "statement": "Imported Pyxis source document: docs/prds/plan-new/003-contract-gate-precondition.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/prds",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "c6d5b7a0798bf5397b2a1158d667f8d346893ad05163fda6615d5d8afa1d47cb",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:34Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/003-contract-gate-precondition.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

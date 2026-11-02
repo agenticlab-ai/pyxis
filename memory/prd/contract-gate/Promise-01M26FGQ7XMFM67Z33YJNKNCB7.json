@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ7XMFM67Z33YJNKNCB7",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "FR-19",
+  "statement": "When a PRD, design, or currency-disposition PR would merge, the gate shall run the five checks over the affected feature's candidate contract as a CI context, reporting currency, link-resolution, structural, and disposition-integrity defects as blocking and inverse-coverage defects as advisory.",
+  "rationale": "the record that can clear a critical currency edge must be validated before activation, while a PRD legitimately merges before its serving designs exist",
+  "fit_criterion": "fixture PRs seeding a currency/link/structural defect or malformed/expired/unauthorized disposition fail the context; a valid exact disposition clears only its edge; a coverage-only gap remains advisory; a clean PR passes",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:6701a81636672e75cb7207f35d95293f4ea94e934a8980d2b353ee4ad6137361",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.109Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

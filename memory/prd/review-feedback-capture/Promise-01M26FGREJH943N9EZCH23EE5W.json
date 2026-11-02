@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGREJH943N9EZCH23EE5W",
+  "kind": "Promise",
+  "subject": "prd/review-feedback-capture",
+  "family": "FR-8",
+  "statement": "The system shall cross-link entries to the reviewer M2 residual and the Argus `E-n` dispositions without modifying `review-report/v1` or the Argus ledgers.",
+  "rationale": "federate, don't subsume (`#D-6`)",
+  "fit_criterion": "cross-links resolve in both directions; `review-report/v1` and `argus-artifacts` files are unchanged by this feature",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a9928ed09e61493bdc3e36f749032b6bb37ff13b21fe064e35798f46f99ba705",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.346Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

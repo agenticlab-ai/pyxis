@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGREND41DGBV2HS7WCS25",
+  "kind": "Need",
+  "subject": "prd/review-feedback-capture",
+  "family": "G2",
+  "statement": "We believe making capture automatic and additive; expected result: no new human review toil and no dependency on human review being present",
+  "fit_criterion": "M3 (coverage) + the §3.3 guardrails",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a479e64ec52849dcfa454ac395d97f02493648eb748130a0704041a4c68ce2b3",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.349Z",
+  "provenance": {
+    "source": "docs/prds/review-feedback-capture/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:67fde8e3d150cd54148efb816a59130def185378f5b4d8695082630ed99a6e1e"
+  }
+}

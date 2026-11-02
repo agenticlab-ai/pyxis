@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQK4RNYH2JYC3DX7WX7P",
+  "kind": "Promise",
+  "subject": "prd/feature-implementation-drive",
+  "family": "FR-3",
+  "statement": "When a feature is first assigned, the feature drive shall establish a remote feature integration branch as the base and proposal target for its tasks.",
+  "rationale": "Isolate incomplete integration from main.",
+  "fit_criterion": "Every task proposal in both fixtures targets the feature branch; zero targets main.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3aa4df2eac3d6e6aec755dace2dd001c81c19976d72166e1df2914c3d8984131",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.468Z",
+  "provenance": {
+    "source": "docs/prds/feature-implementation-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6b1b552dea7cf9779335a3d1398aeaf4911e69de93f99c131253def30e4660ab"
+  }
+}

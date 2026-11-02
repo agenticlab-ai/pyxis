@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "Need-01M32T4TJKWFW5FS729QXT57RN",
+  "kind": "Need",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "G2",
+  "statement": "We believe typed product-state, lifecycle, inventory, and ownership prerequisites can contain destructive scope; expected result: protected history and unrelated E2E test sources remain byte-identical, shared identities are never retired, and unrelated behavior keeps passing",
+  "fit_criterion": "M2, M3, M4",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:465953756d162ec3c361d16fb810206e528c9de476ffcf89bcdbbd6b17d6c5e1",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:30Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

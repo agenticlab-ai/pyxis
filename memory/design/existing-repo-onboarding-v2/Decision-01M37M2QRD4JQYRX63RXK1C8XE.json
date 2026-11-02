@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37M2QRD4JQYRX63RXK1C8XE",
+  "kind": "Decision",
+  "subject": "design/existing-repo-onboarding-v2",
+  "family": "decision.3.6.1",
+  "statement": "detection reuses the existing ecosystem marker registry (go/python/node marker files); the plan **names every detected stack** and the required `executor.gate.<command>` action for each, and **invents no command** (`design-brainstorm:…#D-5`; `prd:existing-repo-onboarding/FR-7`, basis NG-1 detect-and-surface). A repository no marker matches yields a single `unknown stack — set your gate commands` plan line — never an error (UB-3). Detection's only output is the plan's `stack` block; it wires nothing.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:c4dcd45250b33aa7dac96a04cc1f602255dd9469c877dbf5c9ee3558f416591f",
+    "source-design:391b7e5b557a6f3e5a74e3de11e245a069bc6e84b0036bd6fabfa241cd5c40df",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPQWS19WXSK3RT758YTG"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZR5M8VSD8XT5FX6ZKW1Y0"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:12:43Z",
+  "provenance": {
+    "source": "docs/tech-design/existing-repo-onboarding-v2.md",
+    "note": "exact Decision evidence at docs/tech-design/existing-repo-onboarding-v2.md lines 114-114 in section 3.6; sha256:c4dcd45250b33aa7dac96a04cc1f602255dd9469c877dbf5c9ee3558f416591f"
+  }
+}

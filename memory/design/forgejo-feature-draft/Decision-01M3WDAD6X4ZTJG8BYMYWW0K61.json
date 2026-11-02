@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6X4ZTJG8BYMYWW0K61",
+  "kind": "Decision",
+  "subject": "design/forgejo-feature-draft",
+  "family": "D-4",
+  "statement": "Keep the supported detached-worktree preparation and content-bound stamp refresh, require full final readiness/memory integrity, compile exact reviewed texts, then publish the locally known prepared head under its remote-head lease and update that same selected-host proposal. (design-brainstorm:forgejo-feature-draft-tech-design#D-4)",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6SFWB7A007BEB6XGS5"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6T8AJB5D1GSX1MGSNZ"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6VDGGAM3FSN5BJECHN"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6WBF2JFRTFGQCZMYZT"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6E6XJW77BVJGQ9GBK4"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6KA1XQ6K734GDGEBDY"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5T5ZQVZYDJEW09H3JK"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5W0XDJ0F1VHVZ7DRWM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD62FEQ5XZMDD9JPRSG2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD64TWPWAGF26KV3F6AE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD65VA25KH924C4219TT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD69WAWTVD6NBP1HCBEG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6CETYJXHV3SSCFAPHJ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

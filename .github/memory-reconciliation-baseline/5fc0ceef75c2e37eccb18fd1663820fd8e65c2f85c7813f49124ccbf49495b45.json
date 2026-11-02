@@ -1,0 +1,8 @@
+{
+  "code": "unmapped-prd-unit",
+  "scope": "prd/tech-design-brainstorm#R6",
+  "feature": "tech-design-brainstorm",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPRJP2K6P4X1KZ3J2F4Q",
+  "kind": "Decision",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "family": "decision.3.16.1",
+  "statement": "One closed `routing-activation-proof/v2` manifest is committed on main before activation. It pins the exact candidate mainline object; compatible demand, native-policy, routing-evidence, implementation executor, review-state, impl-review process/persistence, event, driver-consumer, and adapter generations; effective catalog/qualification digests; both configured evidence-ref heads and every relied-on event ID/digest, including the EVT-13↔EVT-17 schema pair; conformance/abuse/crash/dogfood/DoD evidence digests; operator qualification and release signatures; fallback/invalidation drill results; and a retired-path reachability report. Unknown, missing, stale, incompatible, unsigned, non-mainline, or cross-generation input invalidates the whole manifest.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:6bd1110564b81b33eb19bebf1bffcf1f0c8e0a0279c1421f57536bf1f80b880b",
+    "source-design:9fa45230795fa50115f9fd080951789e2b8f4f40e60c600f7484e0dde70286c0",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCRGS35CJVX3ZK29NHTAY"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.618Z",
+  "provenance": {
+    "source": "docs/tech-design/implement-now-authenticated-review-obligations.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/implement-now-authenticated-review-obligations.md lines 283-283 in section 3.16; sha256:6bd1110564b81b33eb19bebf1bffcf1f0c8e0a0279c1421f57536bf1f80b880b"
+  }
+}

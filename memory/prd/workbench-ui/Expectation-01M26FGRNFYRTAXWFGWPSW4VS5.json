@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRNFYRTAXWFGWPSW4VS5",
+  "kind": "Expectation",
+  "subject": "prd/workbench-ui",
+  "family": "DOD-4",
+  "statement": "The operator completes real doc-system tasks using only the reading room",
+  "intent": "G1",
+  "fit_criterion": "task log on the Tracking ref",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ab75abad7601293051b45292bd1902ad02900ed9ad8cea528a938fbaa94669ac",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.567Z",
+  "provenance": {
+    "source": "docs/prds/workbench-ui/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:6202fcc0345ed2dc3d07a6ce2bbe2b6e89889c50b7a4fd9a2dd2c284fda2cc80"
+  }
+}

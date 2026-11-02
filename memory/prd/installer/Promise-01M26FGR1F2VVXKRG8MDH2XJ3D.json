@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR1F2VVXKRG8MDH2XJ3D",
+  "kind": "Promise",
+  "subject": "prd/installer",
+  "family": "NFR-5",
+  "statement": "Installer logic shall be Go; shell shall be limited to the bootstrap line and hook shims, each a locate-and-delegate shim within the repo's shell floor.",
+  "intent": "Maintainability",
+  "fit_criterion": "inspection of the shipped surface finds no logic-bearing shell beyond the admissible shims",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:a1b55f14f2188be3df91419d444aa32a31d70a32a68c9ae6b4e40f681c7a0ae5",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.927Z",
+  "provenance": {
+    "source": "docs/prds/installer/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:5f088c06c77211413f82346378dce28c586e97de5ce57fad0c9136db7e7d3cc7"
+  }
+}

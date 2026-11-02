@@ -1,0 +1,8 @@
+{
+  "code": "open-prd-question",
+  "scope": "prd/existing-repo-onboarding#Q2",
+  "feature": "existing-repo-onboarding",
+  "count": 1,
+  "blocking": true,
+  "writable": false
+}

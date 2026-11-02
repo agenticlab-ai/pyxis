@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR52Q7TJZCJG7RQ4WG66",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "FR-1",
+  "statement": "When a pipeline phase completes, the system shall record one per-phase run record carrying the phase identity, the run/feature id, and — for each model the phase used — the input/output/cache token quartet.",
+  "rationale": "the per-phase spend substrate (J1)",
+  "fit_criterion": "for a reference run, every completed phase yields exactly one record whose per-model token quartet reconciles to the harness's own accounting — exact where the harness reports an authoritative per-model total, else within the design-set tolerance (Q2)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:50ec106eeb8f0670b1dfa138155215b5682fc7d60487b1c8c7be51b81ab3e959",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.042Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

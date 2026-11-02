@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZMS1V2W52Z9CDY7E3S08F",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-35",
+  "statement": "Where Argus drives a feature draft, the system shall let Argus run rounds and request the lock and leave the lock approval to the human operator.",
+  "rationale": "Argus can drive; only a human locks (brainstorm:feature-draft#D-4)",
+  "fit_criterion": "An Argus-driven fixture draft reaches readiness and an approval request, and Argus's own approval attempt is refused.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:366f73279d4d8383ebf98b74c50cf84574eb3e12617fef7d6d383d01cc0de39e",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:02Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

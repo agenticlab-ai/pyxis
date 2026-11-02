@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Decision-01M45H6P3HYQQVG6CPGRRHV41W",
+  "kind": "Decision",
+  "subject": "design/memory-durable-evidence-v1",
+  "family": "frozen-learning-recovery",
+  "statement": "An unchanged Learning already present at the trusted base with a proven file or unit witness mismatch may be replaced by an evidence-verified, non-revoked Learning through an honored supersedes relation. Keep the failed predecessor and every defect as historical-unresolved, including its exact introduction, expected and observed witnesses, and verified successor ID. Only the verified successor supplies current knowledge; the historical witness remains unresolved. The predecessor must already fail at the pinned base and remain superseded in the candidate. New invalid records, unbound or invalid successors, other record kinds, malformed schemas, rewritten identities, unavailable history and invalid relations remain blocking. Later valid successors preserve this repair while the verified replacement remains unrevoked.",
+  "intent": "Permit an explicit repair of inherited failed Learning evidence while keeping the failed historical claim visible and preventing same-proposal evidence laundering.",
+  "rationale": "The frozen design requires successor-based repair, but the current verifier blocks the unchanged predecessor forever. Rewriting its JSON would destroy the retained historical claim; reusing a topic snapshot would violate mainline retention. A separately verified successor can restore usable knowledge without certifying the failed witness.",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M2P69YH7CYWGGW9ZGSZZN4A9"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-05T07:59:39Z",
+  "provenance": {
+    "source": "https://github.com/agenticlab-ai/pyxis/issues/1434",
+    "note": "Proposed native clarification of successor recovery under section 3.7, separate from the lossless legacy design projection. The original imported adoption rule remains authoritative. No operator approval is asserted; human review and merge are required before adoption."
+  }
+}

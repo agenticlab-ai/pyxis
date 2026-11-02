@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRGPF8FHR2SM6BFCAXP2",
+  "kind": "Promise",
+  "subject": "prd/self-drive-wake",
+  "family": "NFR-1",
+  "statement": "While one feature is driven, the state reader's steady-state consumption shall stay within a tenth of the medium's read budget.",
+  "intent": "Cost",
+  "fit_criterion": "measured over the proof run: read-points consumed ≤ 10% of the budget window, from EVT-1 sums",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1d931c076541df9eb622359fdf3a90355cbc44276904ae3d6d38765bd5fe158e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.414Z",
+  "provenance": {
+    "source": "docs/prds/self-drive-wake/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d400a2a201c6b6dc503b6be6a3549cfecf39fd0e66d65ce77ccab50968d4f9e6"
+  }
+}

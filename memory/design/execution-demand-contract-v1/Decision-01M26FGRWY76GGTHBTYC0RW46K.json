@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRWY76GGTHBTYC0RW46K",
+  "kind": "Decision",
+  "subject": "design/execution-demand-contract-v1",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:implement-now/FR-21 · prd:implement-now/FR-22 · prd:implement-now/NFR-7 · prd:implement-now/NR-5 · prd:implement-now/UB-11 · prd:implement-now/UB-9 · prd:plan-new/ABUSE-3 · prd:plan-new/EVAL-2 · prd:plan-new/FR-17 · prd:plan-new/FR-21 · prd:plan-new/FR-28 · prd:plan-new/FR-29 · prd:plan-new/FR-30 · prd:plan-new/FR-7 · prd:plan-new/NFR-7 · prd:plan-new/NR-4 · prd:plan-new/UB-7 · prd:planner-driven-model-routing/ABUSE-2 · prd:planner-driven-model-routing/ABUSE-3 · prd:planner-driven-model-routing/EVAL-1 · prd:planner-driven-model-routing/EVT-1 · prd:planner-driven-model-routing/EVT-6 · prd:planner-driven-model-routing/FR-15 · prd:planner-driven-model-routing/FR-22 · prd:planner-driven-model-routing/FR-23 · prd:planner-driven-model-routing/FR-24 · prd:planner-driven-model-routing/FR-3 · prd:planner-driven-model-routing/FR-4 · prd:planner-driven-model-routing/FR-5 · prd:planner-driven-model-routing/FR-6 · prd:planner-driven-model-routing/FR-7 · prd:planner-driven-model-routing/NFR-2 · prd:planner-driven-model-routing/NR-3 · prd:planner-driven-model-routing/NR-4 · prd:planner-driven-model-routing/UB-11 · prd:planner-driven-model-routing/UB-2 · prd:planner-driven-model-routing/UB-3 · prd:planner-driven-model-routing/UB-8.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:1803a578f24d1fcd4e72fe323beac1ad9b7a2b7372c40c5c9193c843565778fd",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCQ6Z9AT7JMH430AQVRK2"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGR6CQTZC7T1T62DHY03T"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M26FGR92WZD95N2NVQFAKYHN"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSDERQHNKWBKEX8W31P"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQSENBYTA8YFM1V9MZ5K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQTX89SWYP488FF76YF9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV4359J43SB9JZDZ9T3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQV8XMQ6R9VV0XFRYYWA"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQVS0VTZ34PF8S5BGPZ6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR63Y063VC61PHQYF6A2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6KZQ2QPVXQFZZ7EMAP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6R704RZ62SB7AKGZP0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR6ZEWPXC12AQ448KTPE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR70KHTJ6B84CGR8P5Y2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR72DKS18M8ZXT87S8Z6"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR76QWN2QXVTSCYJ6JED"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7S002TZ0Y760JZFW8E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR7Y7F9X8XR01ZSRVF61"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR852RWCZ7DTDT7EN8EF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR8PKJT6GB92JJAHK47S"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR8QPW1W7AZY9KYBTG0A"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR94B9MYT8XRE16ZKCWW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9AMA0QYXAYT0B7JMFB"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9HTDZD9ZGYNH4T8YJF"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9NZZY1ZWW0YDET2BXS"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9P0AR11SY6VFFPCP62"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9Q9D8NXEYSPPTTT93E"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9VK82VJBRGR1WW8TF9"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9WDKQQ1WADV7CKMKJQ"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9XW4R9ZAQDMAZREH3F"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9Y8PMACYA37R23CTM3"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGR9Z2HZ0NEJE6Z0X8V1N"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAGVYEHBED24QVKM49K"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAQ8F8K6DNWRGQ4395M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRARKXTZ9Q4ZY1YC8NPX"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRAYY80DX8EAD4JKHYB0"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB2DM78JPQXH4HAR9M5"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB30DE13EWKK5K0GBZP"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGRB7FJ7MSA8PH3NVGS65"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.806Z",
+  "provenance": {
+    "source": "docs/tech-design/execution-demand-contract-v1.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header 1803a578f24d1fcd4e72fe323beac1ad9b7a2b7372c40c5c9193c843565778fd"
+  }
+}

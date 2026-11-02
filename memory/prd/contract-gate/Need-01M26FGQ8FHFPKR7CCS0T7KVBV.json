@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ8FHFPKR7CCS0T7KVBV",
+  "kind": "Need",
+  "subject": "prd/contract-gate",
+  "family": "M4",
+  "statement": "M4 *(qualitative)*: G4",
+  "intent": "the defect report validates against its schema and its human face is read at review",
+  "fit_criterion": "both faces validate on every fixture bounce; the report is consulted in the dogfood review (§6.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c4915b1192d946710650bd23eb355dfc7bee275b254052801886e10cd913772c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.127Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

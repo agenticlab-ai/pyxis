@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR5548RY2Y3JXPT6Q12Y",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "FR-3",
+  "statement": "The system shall attribute a phase's spend and turns using the deterministic phase boundary — skill-invocation (open) to artifact-write (close).",
+  "rationale": "correct attribution is the core claim (J1)",
+  "fit_criterion": "for a reference run, 100% of recorded spend falls within its correct phase boundary; a turn outside any boundary is attributed to none, never mis-attributed to a neighbor",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:68a9f1195d2146c3d80a6a131227406f264dd78dcbeb7e71009f8476b5b1335c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.045Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

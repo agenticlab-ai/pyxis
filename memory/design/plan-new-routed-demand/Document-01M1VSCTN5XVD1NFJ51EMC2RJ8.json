@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSCTN5XVD1NFJ51EMC2RJ8",
+  "kind": "Document",
+  "subject": "design/plan-new-routed-demand",
+  "family": "design",
+  "statement": "Imported Pyxis source document: docs/tech-design/plan-new-routed-demand.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:docs/tech-design",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "2ab87137b5d7a8635d2a5dc697e7525dd8de80f53ec455b977d7afc3d7033dc2",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:39:01Z",
+  "provenance": {
+    "source": "docs/tech-design/plan-new-routed-demand.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

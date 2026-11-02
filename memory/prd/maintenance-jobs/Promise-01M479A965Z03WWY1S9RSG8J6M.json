@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M479A965Z03WWY1S9RSG8J6M",
+  "kind": "Promise",
+  "subject": "prd/maintenance-jobs",
+  "family": "NFR-2",
+  "statement": "The maintenance capability shall support the core's Darwin and Linux architectures where compatible native cron is available.",
+  "intent": "Platforms",
+  "fit_criterion": "Build and adapter fixtures pass for Darwin/Linux on arm64/amd64; unsupported scheduling is explicitly refused",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQ5GS7QMVCP36P6S810P",
+  "kind": "Need",
+  "subject": "prd/config-driven-portability",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "the pyxis repo runs green under a non-default config",
+  "fit_criterion": "all gates + local `gate` + `doctor` green under a config setting non-default doc paths, branch, remote, and surface pointers",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:3e1e8dd10abf6b736609f818d84436b74a709c4e6042101c6b23fd9e946c9d91",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.032Z",
+  "provenance": {
+    "source": "docs/prds/config-driven-portability/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:d6e96c8a0890d7a8f9a8c46b89d08e4773da5c1d053ff7e47887fd689bd0e9b4"
+  }
+}

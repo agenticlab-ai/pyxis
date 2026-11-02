@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8NF62MGXZPDNPG6VJ9",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NFR-6",
+  "statement": "The gate shall be read-only and network-free by construction: it reads committed repo files and writes only its verdict and (on failure) the defect report at its declared sink.",
+  "intent": "Security",
+  "fit_criterion": "FR-11's audit; zero writes elsewhere; zero network calls observed",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1060f9c16f697d32fdacff04008f3e638bdc88122aa5b3b16dbd228de76eeba2",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.133Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

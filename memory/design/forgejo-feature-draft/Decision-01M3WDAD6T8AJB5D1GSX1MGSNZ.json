@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Decision-01M3WDAD6T8AJB5D1GSX1MGSNZ",
+  "kind": "Decision",
+  "subject": "design/forgejo-feature-draft",
+  "family": "D-3",
+  "statement": "Derive status and reconcile lifecycle mutations from complete selected-host observations, deterministic draft branch identity, exact working bytes, and leased remote heads; translate Forgejo draft intent through native title-prefix behavior and verify actual draft state. (design-brainstorm:forgejo-feature-draft-tech-design#D-3)",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6RCA9TV7H429MMZ5B0"
+    },
+    {
+      "type": "depends_on",
+      "target": "Decision-01M3WDAD6SFWB7A007BEB6XGS5"
+    },
+    {
+      "type": "serves",
+      "target": "Expectation-01M3WDAD6E6XJW77BVJGQ9GBK4"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5Q6HZ29R2KF8KD40NW"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5RMDRD9374B1NNRD0M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5SAK4HQJ0BMDJRYM1M"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD5ZCNSY4A07H2B4SP5Z"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD62FEQ5XZMDD9JPRSG2"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD64TWPWAGF26KV3F6AE"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD65VA25KH924C4219TT"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD69WAWTVD6NBP1HCBEG"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M3WDAD6CETYJXHV3SSCFAPHJ"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

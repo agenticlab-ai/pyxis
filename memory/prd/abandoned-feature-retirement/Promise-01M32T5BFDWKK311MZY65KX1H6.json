@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T5BFDWKK311MZY65KX1H6",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "NFR-3",
+  "statement": "The system shall make authority publication all-or-nothing and exact retries convergent.",
+  "intent": "Atomicity and recovery",
+  "fit_criterion": "Failure injection at every boundary yields either the complete expected batch or no usable authority; retry writes no duplicate.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:ddb1a640f338277469f149fe0963952a63284cd172503e18c201e77d57dc431d",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:48Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

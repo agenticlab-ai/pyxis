@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGRXJFS9PMHSCR39GD8VR",
+  "kind": "Decision",
+  "subject": "design/prepush-ref-awareness",
+  "family": "D-SERVES",
+  "statement": "The approved design declares its Serves contract as: prd:docgate/FR-29.",
+  "intent": "Preserve the approved design-to-requirement coverage contract without assigning targets to unrelated prose decisions.",
+  "rationale": "The source design's Serves header is the authoritative coverage declaration.",
+  "fit_criterion": "Every durable, memory-eligible PRD target in the declared header is carried by one serves relation; exact live NG/WR rows remain non-relational context and unresolved targets remain explicit reconciliation findings.",
+  "tags": [
+    "reconcile:design-coverage",
+    "source-design:af1c66d49b3f9588c789f30034e06a4bbbc5c93396f098799e04cea76d63d0f5",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCW01SAB0TNZFRK3VTMFM"
+    },
+    {
+      "type": "serves",
+      "target": "Promise-01M26FGQAQQ2MR4QEVWY43PCME"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.826Z",
+  "provenance": {
+    "source": "docs/tech-design/prepush-ref-awareness.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "projected from exact design header af1c66d49b3f9588c789f30034e06a4bbbc5c93396f098799e04cea76d63d0f5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRR1S0TZHMPP39RBTN2A",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-4",
+  "statement": "If If a task ends without every process ending, then the system shall record no rollup for that task",
+  "intent": "absence of a rollup, distinguishable from a zero rollup",
+  "fit_criterion": "an interrupted task has readable process records and no rollup; a consumer can tell this from a rollup of zero",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:90cb57f9ca75e6c92c794cf75acee41e908fff71133f02171929b2467f34efc4",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.649Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

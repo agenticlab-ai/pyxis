@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "Decision-01M26FGPPQRH1C1SVGAER5BA05",
+  "kind": "Decision",
+  "subject": "design/distributed-check-registration",
+  "family": "decision.2.1",
+  "statement": "Each check contributes itself — its verb, help, applicability, and\nrun behavior — by registering a descriptor from its own file; the umbrella, the\nCLI dispatch, and the help are **assembled from the registry**, ordered\ndeterministically by verb, never hand-enumerated. Adding a check is creating one\nfile and editing no shared line, so two tasks adding two checks touch two\ndisjoint files and cannot conflict — and, living in separate files, their bodies\nnever interleave. The plan-layer overlap gate is retained unchanged as the\nsafety net for surfaces that genuinely cannot be distributed; the registry\nremoves the gate enumeration from that category, so independent checks stop\nforcing a sequence-or-accept choice.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ab49cef7e1961f9b09ee9561fdcd21f767c165a4b6f9ad77507a9358c5e9519b",
+    "source-design:6b20e2c7691634af8abe8fe944c23ca2bf4a6a3af0158ee8674ee882b8e940e9",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCNRXX0S9GRA146KH2655"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.559Z",
+  "provenance": {
+    "source": "docs/tech-design/distributed-check-registration.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "exact Decision evidence at docs/tech-design/distributed-check-registration.md lines 51-60 in section 2; sha256:ab49cef7e1961f9b09ee9561fdcd21f767c165a4b6f9ad77507a9358c5e9519b"
+  }
+}

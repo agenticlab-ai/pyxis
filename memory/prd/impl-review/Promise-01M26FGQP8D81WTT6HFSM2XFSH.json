@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP8D81WTT6HFSM2XFSH",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-30",
+  "statement": "The persisted review corpus shall be mechanically harvestable by joining immutable git event records to their proposal projections without reading free text, reproducing findings, attribution-bound dispositions, planned assurance, actual band, effective depth, required/completed passes, per-pass route/outcome and verdict, aggregate result, review presence/absence, and invalidation state; only a losslessly consistent satisfying complete pass set shall count toward production coverage.",
+  "rationale": "the dataset must expose floor, route, and independence violations rather than letting an editable projection, skip, or favorable subset appear reviewed",
+  "fit_criterion": "a fresh-clone harvest over git plus both proposal media reproduces the dogfood corpus, rejects face mismatches, computes M1/M2/nit and matrix coverage, excludes unattributable dispositions and invalid/stale/incomplete processes, and counts `skip` only after `standard×1` completion",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:f1e299fdea2f87850f32862fa1a2990d297a57806084a68852c60d04374efab5",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.568Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

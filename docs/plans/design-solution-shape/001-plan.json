@@ -1,0 +1,383 @@
+{
+  "schema_version": "plan/v1",
+  "generated_by": "plangate/v1",
+  "title": "Design solution-shape — the non-frozen shape artifact and its co-reviewed split — plan 001",
+  "feature": "design-solution-shape",
+  "prd": "docs/prds/design-solution-shape",
+  "design": "docs/tech-design/solution-shape-v1.md",
+  "plan_version": "001",
+  "dialect": "harbormaster/fs-spec:v1",
+  "epic_title": "Implement solution-shape v1 — the non-frozen shape artifact, co-reviewed split, and docgate gate",
+  "status": "Draft — freezes at merge",
+  "template_version": "plan-template/v1",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "The solution-shape document class, home, and parser",
+      "goal": "A solution-shape is a first-class document with its own configured home outside the design corpus, parsing to a typed value with a paired-design slug, a status, and a concrete body.",
+      "current": "No solution-shape document type exists. The config surface carries `tech_designs` and `plans` roots but no shapes root, and `docs/tech-design/` is the only design-adjacent corpus a document may live in.",
+      "desired": "A new closed config key roots the solution-shape corpus at a directory distinct from — and never nested under — the technical-design corpus. A shape parses to a typed value with a closed header (its paired design's slug and a status drawn from a closed set whose members are `authoritative` and `superseded-by-code`) and a concrete body carrying the schema and interfaces. Pairing resolves by slug. A malformed header, an unknown status, or a shape whose paired design is absent each yields a typed defect naming file, reason, and remedy.",
+      "scope": [
+        "the new closed config key, its default, and its unknown-key rejection",
+        "the shape document parse: closed header, the status enum, and the concrete body",
+        "pairing resolution by slug between a design and its shape",
+        "typed defects for a malformed shape, an unknown status, and an unpaired shape"
+      ],
+      "out_of_scope": [
+        "any gate check that runs over designs or shapes (T3, T4, T5, T6)",
+        "the co-render (T2)"
+      ],
+      "acceptance": [
+        "a well-formed shape parses to its typed value with slug, status, and body populated",
+        "a shape with an unknown status yields the named defect and no value",
+        "a shape whose paired design is absent yields the named defect",
+        "the shapes root resolves to a directory outside the technical-design corpus"
+      ],
+      "key_interfaces": [
+        "`config.Config` — a new solution-shapes path field, its `paths.*` parse case, and its default",
+        "a shape parser producing the typed shape value (header, status enum, body)",
+        "`schema.Defect` — the typed defect the parser emits"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-1",
+        "prd:design-solution-shape/NR-2",
+        "design:solution-shape-v1#3.1",
+        "design:solution-shape-v1#DINV-3"
+      ],
+      "touches": [
+        "internal/docgate/config",
+        "internal/docgate/techdesigns"
+      ],
+      "size_band": {
+        "lo": 130,
+        "hi": 250
+      },
+      "mechanical": false,
+      "plan_task_id": "design-solution-shape/001/T1",
+      "foundation": {
+        "level": "high",
+        "reason": "common-root"
+      }
+    },
+    {
+      "id": "T2",
+      "title": "The combined review: present a design and its shape together",
+      "goal": "Reviewing a technical design that has a paired solution-shape presents both the design's decisions and the shape's concrete content in one operator conversation.",
+      "current": "A design and its shape are separate source files, so a reviewer needs a defined combined-review order and exact source references.",
+      "desired": "When a design has a paired shape (resolved by slug from T1), the operator conversation presents both source files together — the decisions and the concrete schema and interfaces visible in one review. The presentation identifies exact tracked paths, so the reviewed bytes are the bytes that will freeze. A design with no paired shape is reviewed alone.",
+      "scope": [
+        "resolve a design's paired shape before human review",
+        "present the design and shape together with exact source paths",
+        "preserve the ordinary review path for a design without a shape"
+      ],
+      "out_of_scope": [
+        "the gate checks (T3, T4, T5) and the lifecycle (T6)",
+        "the shape parser itself (T1)"
+      ],
+      "acceptance": [
+        "a design-and-shape pair is presented together with both decisions and concrete shape visible",
+        "a design with no paired shape follows the ordinary single-document review path",
+        "the presentation identifies the exact two tracked source files and their reviewed bytes"
+      ],
+      "key_interfaces": [
+        "the conversation presenter — where a design is joined with its paired shape for human review",
+        "the T1 pairing resolution — the only linkage between the two files"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-2",
+        "prd:design-solution-shape/NFR-1",
+        "design:solution-shape-v1#3.7",
+        "design:solution-shape-v1#DINV-2"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "design-and-shape conversation presentation"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 200
+      },
+      "mechanical": false,
+      "plan_task_id": "design-solution-shape/001/T2",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T3",
+      "title": "The gate: a frozen design carries no concrete shape",
+      "goal": "The gate fails a technical design that carries concrete solution-shape content and passes one that only references its shape.",
+      "current": "The gate lints design headers and structure but nothing forbids concrete schema or interface content from living inside a design body, so a design can freeze carrying volatile shape.",
+      "desired": "A new check emits a `design-carries-shape` defect when a design body carries concrete schema or interface content that belongs to a shape; a design that only references its shape passes. Every technical design already merged passes unchanged. The defect names file, reason, and remedy.",
+      "scope": [
+        "detect concrete-shape content inside a design body",
+        "emit the `design-carries-shape` typed defect and wire the check into the gate run",
+        "leave every existing frozen design passing"
+      ],
+      "out_of_scope": [
+        "witness, trace, and completeness checks (T4)",
+        "index exclusion (T5) and lifecycle (T6)"
+      ],
+      "acceptance": [
+        "a design carrying concrete shape yields `design-carries-shape` with file, reason, and remedy",
+        "a design that only references its shape passes clean",
+        "every existing frozen design still passes the gate unchanged"
+      ],
+      "key_interfaces": [
+        "a new gate check returning `[]schema.Defect`, enumerated in the `Gate` run",
+        "`techdesigns.Design` — the parsed design body the check inspects"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-3",
+        "prd:design-solution-shape/NR-1",
+        "prd:design-solution-shape/NFR-2",
+        "design:solution-shape-v1#3.8",
+        "design:solution-shape-v1#DINV-1"
+      ],
+      "blocked_by": [
+        "T1"
+      ],
+      "touches": [
+        "internal/docgate/gate",
+        "internal/docgate/techdesigns"
+      ],
+      "size_band": {
+        "lo": 90,
+        "hi": 180
+      },
+      "mechanical": false,
+      "plan_task_id": "design-solution-shape/001/T3",
+      "foundation": {
+        "level": "medium",
+        "reason": "derived-internal"
+      }
+    },
+    {
+      "id": "T4",
+      "title": "The gate: witness, trace, and shape-completeness",
+      "goal": "The gate flags a design invariant with no witnessing shape element, a shape element that traces to no decision, and a stateful design approved with no shape.",
+      "current": "Nothing cross-checks a design's binding markup against its shape, so an invariant can lack any concrete witness and a stateful design can be approved with no shape at all.",
+      "desired": "An `unwitnessed-invariant` defect fires when a design `DINV-n` has no witnessing element in its shape; an `untraced-shape-element` defect fires when a shape element cites no decision in its design; a `shape-incomplete` defect fires when a design that creates state or an interface has no paired shape. A pure-decision design that creates no state passes with no shape.",
+      "scope": [
+        "the witness check across a design's invariants and its shape",
+        "the trace check from each shape element back to a decision",
+        "the shape-incomplete check for a stateful design lacking a shape",
+        "wire the three checks into the gate run"
+      ],
+      "out_of_scope": [
+        "the design-carries-shape check (T3), index exclusion (T5), lifecycle (T6)"
+      ],
+      "acceptance": [
+        "a design invariant with no witnessing shape element yields `unwitnessed-invariant`",
+        "a shape element citing no decision yields `untraced-shape-element`",
+        "a stateful design with no paired shape yields `shape-incomplete`",
+        "a pure-decision design with no state passes with no shape"
+      ],
+      "key_interfaces": [
+        "three new gate checks returning `[]schema.Defect`, enumerated in the `Gate` run",
+        "`techdesigns.Design` — the invariant and decision anchors the checks read",
+        "the T1 shape value — the witness/trace counterpart"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-7",
+        "prd:design-solution-shape/UB-1",
+        "design:solution-shape-v1#3.8",
+        "design:solution-shape-v1#DINV-4"
+      ],
+      "blocked_by": [
+        "T1",
+        "T3"
+      ],
+      "touches": [
+        "internal/docgate/gate",
+        "internal/docgate/techdesigns"
+      ],
+      "size_band": {
+        "lo": 130,
+        "hi": 260
+      },
+      "mechanical": false,
+      "overlap_accepted": "shares the gate enumeration with T3, T5, T6; each adds an independent check function, no shared body",
+      "plan_task_id": "design-solution-shape/001/T4",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T5",
+      "title": "The index excludes the solution-shape",
+      "goal": "The technical-design index never contains a solution-shape, and a shape admitted to the design corpus is a defect.",
+      "current": "The index is generated from designs under the technical-design corpus; nothing asserts that shapes stay out of it or that a shape file cannot sit in the design corpus.",
+      "desired": "Index generation ignores the shapes root entirely. A solution-shape found in the generated design index — or a shape document placed under the technical-design corpus — yields a `shape-indexed-as-design` defect. The index still computes design liveness exactly as before (existing entries byte-unchanged).",
+      "scope": [
+        "keep index generation blind to the shapes root",
+        "the `shape-indexed-as-design` defect for a shape reaching the design corpus or index",
+        "preserve every existing design's index entry byte-for-byte"
+      ],
+      "out_of_scope": [
+        "lifecycle transitions (T6) and the other checks (T3, T4)"
+      ],
+      "acceptance": [
+        "a solution-shape never appears in the generated technical-design index",
+        "a shape document under the design corpus yields `shape-indexed-as-design`",
+        "existing designs' index entries are byte-identical before and after"
+      ],
+      "key_interfaces": [
+        "`techdesigns.GenIndexBytes` and `IndexEntry` — the generation the shape stays out of",
+        "the `Gate` run — where the shape-reaching-corpus defect is enumerated"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-5",
+        "prd:design-solution-shape/NR-1",
+        "design:solution-shape-v1#DINV-3"
+      ],
+      "blocked_by": [
+        "T1",
+        "T3"
+      ],
+      "touches": [
+        "internal/docgate/techdesigns",
+        "internal/docgate/gate"
+      ],
+      "size_band": {
+        "lo": 80,
+        "hi": 170
+      },
+      "mechanical": false,
+      "overlap_accepted": "shares the gate enumeration with T3, T4, T6; independent check function, no shared body",
+      "plan_task_id": "design-solution-shape/001/T5",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    },
+    {
+      "id": "T6",
+      "title": "The shape lifecycle: authoritative, superseded-by-code, and the change branch",
+      "goal": "A shape's status flips from authoritative to superseded-by-code, a stale authoritative shape is flagged, a shape-confined change leaves the frozen design untouched, and a change to a design's binding markup is refused as a shape change.",
+      "current": "T1 gives a status field but no transition rule, no stale detection, and no way to tell a shape-confined change from a change that alters the paired design's binding markup.",
+      "desired": "The status flips authoritative → superseded-by-code as an explicit authoring act recorded in the shape header (the interim signal until an automatic code-exists signal is designed). A `stale-shape` defect fires when an `authoritative` shape's implementing code already exists. A change confined to shape content is legal on the non-frozen shape and edits no design; a change that would alter the paired design's binding markup is refused as a shape change and routed to the design's supersession path.",
+      "scope": [
+        "the status transition over the closed enum, recorded in the shape header",
+        "the `stale-shape` defect for an authoritative shape whose code exists",
+        "the discrimination between a shape-confined change and a binding-markup change",
+        "wire the lifecycle check into the gate run"
+      ],
+      "out_of_scope": [
+        "an automatic code-exists signal (deferred — design Q2)",
+        "the code-diverges-from-shape detector (deferred — UB-2)"
+      ],
+      "acceptance": [
+        "a shape flips to superseded-by-code via the explicit authoring act",
+        "an authoritative shape whose implementing code exists yields `stale-shape`",
+        "a shape-confined change leaves the paired frozen design untouched",
+        "a change altering a design's binding markup is refused as a shape change"
+      ],
+      "key_interfaces": [
+        "the T1 shape value — the status enum this task transitions",
+        "a lifecycle gate check returning `[]schema.Defect`, enumerated in the `Gate` run",
+        "`techdesigns.Design` — the binding markup a change is tested against"
+      ],
+      "traces": [
+        "prd:design-solution-shape/FR-4",
+        "prd:design-solution-shape/FR-6",
+        "design:solution-shape-v1#3.6",
+        "design:solution-shape-v1#DINV-5"
+      ],
+      "blocked_by": [
+        "T1",
+        "T3"
+      ],
+      "touches": [
+        "internal/docgate/gate",
+        "internal/docgate/techdesigns"
+      ],
+      "size_band": {
+        "lo": 130,
+        "hi": 250
+      },
+      "mechanical": false,
+      "overlap_accepted": "shares the gate enumeration with T3, T4, T5; independent check function, no shared body",
+      "plan_task_id": "design-solution-shape/001/T6",
+      "foundation": {
+        "level": "low",
+        "reason": "derived-leaf"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "requirement": "prd:design-solution-shape/FR-1",
+      "tasks": [
+        "T1"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-2",
+      "tasks": [
+        "T2"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-3",
+      "tasks": [
+        "T3"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-4",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-5",
+      "tasks": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-6",
+      "tasks": [
+        "T6"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/FR-7",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/UB-1",
+      "tasks": [
+        "T4"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/NR-1",
+      "tasks": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "requirement": "prd:design-solution-shape/NR-2",
+      "tasks": [
+        "T1"
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "requirement": "prd:design-solution-shape/UB-2",
+      "reason": "The code-diverges-from-approved-shape detector is a separate code↔shape comparison capability; the shape retires on code (FR-5, T6) regardless. Plan when a shape-vs-code diff surface is built."
+    }
+  ],
+  "source_fingerprint": "sha256:8b8bdd3b64a9f28fe92ebbafcd989aa3e6402a1c82ea7e2cd1f886cd7bf4996f"
+}

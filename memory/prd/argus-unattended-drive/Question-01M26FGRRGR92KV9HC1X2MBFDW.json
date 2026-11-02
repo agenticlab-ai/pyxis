@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRRGR92KV9HC1X2MBFDW",
+  "kind": "Question",
+  "subject": "prd/argus-unattended-drive",
+  "family": "Q6",
+  "statement": "The unattended-materialization mechanics: where the plan-freeze completion is observed (the wake's own signal class), how projection idempotency behaves under racing wakes (AP-22), and the shape of the item-verification loop at the goal object (prd:argus FR-9's confirm arm) (brainstorm:argus-unattended-drive#P-4)",
+  "intent": "design (stages 3–4)",
+  "rationale": "open",
+  "fit_criterion": "Phase A design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:c151da5e6ddecb371636027df3d29b6dc0bacf35dd853eb16f8242456e54f126",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.664Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

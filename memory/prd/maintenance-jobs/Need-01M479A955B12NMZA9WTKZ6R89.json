@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "Need-01M479A955B12NMZA9WTKZ6R89",
+  "kind": "Need",
+  "subject": "prd/maintenance-jobs",
+  "family": "G3",
+  "statement": "We believe Supplying measured CI work and bounded execution; expected result: Inspectable proposals and failures",
+  "fit_criterion": "M3",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-06T00:20:17Z"
+}

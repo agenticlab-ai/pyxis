@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Learning-01M26FGS5JHAGK4KH141KBKQ5R",
+  "kind": "Learning",
+  "subject": "learning/memory-baseline-generator-compatibility",
+  "statement": "The memory ratchet reproduces a trusted baseline with only the historical classifications named by its generator: v1 includes legacy session-log sources, and v1 or v2 uses the pre-sourced-zsh code inventory. The candidate always uses current v3 rules, so newly admitted zsh units remain visible and require fresh structural and semantic memory.",
+  "intent": "Allow exact baseline verification across compiler upgrades without laundering new code or source debt.",
+  "rationale": "Main's trusted v2 baseline predates sourced-zsh inventory. Rebuilding it with current classification changes its code digest even when its bytes are authentic; generator-bounded compatibility restores reproducibility while transition checks from the legacy snapshot preserve the new obligations.",
+  "fit_criterion": "Unit and real-Git E2E tests prove v1 and v2 compatibility is closed, current and unknown generators cannot enable it, direct trusted-base rebuild ignores an unavailable replay ref, fallback replay requires unchanged baseline bytes and all four identities, changed legacy inputs are rejected, and v3 still blocks until sourced zsh has fresh semantic memory.",
+  "learned_from": [
+    "Learning-01M2647SASX7NTNTP240G7SHTR",
+    "baseline:origin/main@cd287eee3e6d"
+  ],
+  "tags": [
+    "code:internal/memory/cli",
+    "code:internal/memory/codeinventory",
+    "code:internal/memory/reconcile",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS5F66G3CJTJKW5A8S0K"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS5G3TD0SX6XZGQQP4YT"
+    },
+    {
+      "type": "depends_on",
+      "target": "Need-01M26FGS5HQS1SH815R6K1PB1M"
+    },
+    {
+      "type": "refines",
+      "target": "Learning-01M2647SASX7NTNTP240G7SHTR"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:04.082Z",
+  "provenance": {
+    "source": "internal/memory/cli/baseline_replay.go",
+    "commit": "dcf09319f0af20c28f17f87d9114137ff9443d60",
+    "note": "Generator-bounded compatibility added after v3 admitted sourced zsh into code inventory."
+  }
+}

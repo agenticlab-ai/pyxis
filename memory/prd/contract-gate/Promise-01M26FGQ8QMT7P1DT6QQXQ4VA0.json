@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ8QMT7P1DT6QQXQ4VA0",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "NR-1",
+  "statement": "plan-new's decomposition, sizing, plan-vs-design coverage, fog bounce, and projection stay byte-behaviorally unchanged except for the added planning-entry precondition",
+  "rationale": "the gate confines its change to a new precondition, not a rewrite; plan-new is merged, so the integration lands as a typed amendment to its ledger adding the precondition FR, touching nothing else",
+  "fit_criterion": "plan-new's existing fixtures stay green; the amendment to its ledger adds only the precondition, and a diff shows its other rows untouched",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fa599806e28488b3de5e07fb9c6908afe65a2efd53c6f1123530f9b31b4c9d70",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.135Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

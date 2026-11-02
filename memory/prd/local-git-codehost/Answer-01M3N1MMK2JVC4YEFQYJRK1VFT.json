@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "id": "Answer-01M3N1MMK2JVC4YEFQYJRK1VFT",
+  "kind": "Answer",
+  "subject": "prd/local-git-codehost",
+  "statement": "Remove the repository-ID ref and cross-origin receipt guarantee. A fresh clone of its configured origin can still check stored record and Git-object consistency; a copy preserving refs and objects may reuse those records, and verification must state that it does not prove repository identity.",
+  "intent": "operator",
+  "rationale": "The single-operator local route needs to validate the configured origin's proposal, head, target, and landing, but cannot meaningfully authenticate a distinct origin under the accepted shared-account policy.",
+  "relations": [
+    {
+      "type": "answers",
+      "target": "Question-01M3N1MMK1NJP60HJFS8BVYGPW"
+    }
+  ],
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-09-28T22:19:48Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQGNYWX8NZZV8G3WX97K",
+  "kind": "Promise",
+  "subject": "prd/feature-brainstorm",
+  "family": "FR-10",
+  "statement": "When the idea or a ruling falls outside the product vision's scope, the skill shall surface the gap explicitly, record the operator's ruling on it, and leave every governing document unmodified.",
+  "rationale": "governing docs are human-authored inputs; the factory never extends them from below (AP-24)",
+  "fit_criterion": "on a fixture seeded with an out-of-vision idea, the gap is surfaced and named; across all sessions, zero writes to governed documents (also §3.3, FR-15)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:5c88cbe737e603c1a5267bfa2f2baf622530c14a9b5424589b259f46111bd110",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.389Z",
+  "provenance": {
+    "source": "docs/prds/feature-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:7753e5d254d1661fa4307914df4f3e3a1c98ec61b55d9fcf8cb457473137e77e"
+  }
+}

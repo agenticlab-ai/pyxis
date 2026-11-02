@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGR7BG00MD7VGJV6MJBH3",
+  "kind": "Need",
+  "subject": "prd/plan-new",
+  "family": "G3",
+  "statement": "We believe a non-skippable whole-plan checkpoint before any write; expected result: operator trust: approval rounds per plan trend down while edits move from the tracker to the checkpoint",
+  "fit_criterion": "qual: checkpoint edit counts on the first plans (§6.7)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:1865b9ebb625c2c156b2e14cb72d59f298b5d7ef3972cff3a02f22bed71c8e12",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.115Z",
+  "provenance": {
+    "source": "docs/prds/plan-new/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:c8256b67823ba463cbc1ab05ae7089a0c3645e569b757521fdfaefa88b258178"
+  }
+}

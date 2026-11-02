@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "Decision-01M37KZBTDAGV3VV6BRYCJW321",
+  "kind": "Decision",
+  "subject": "design/acquisition-trust-v1",
+  "family": "decision.3.1.1",
+  "statement": "A tool binary is verified against its manifest pin **when it is fetched** — streamed to a temp file, hashed in flight, chmod 0755, atomically renamed. A version-named cache entry that is already present is **trusted and executed as-is**, without re-hashing, on every later invocation.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:d12ada6ca646291ebcca51b4e08828f10b3bd73712c57b2019259fe2abcbe408",
+    "source-design:74e1681d397e90ae2742cf27eab479ded67658721c7e86309994dc40a7947686",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "Decision-01M26FGPMCCYFRX5SAK6R4B9AM"
+    },
+    {
+      "type": "depends_on",
+      "target": "Document-01M35ZQJ7NKMA97Y40JQF54VGD"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-23T17:10:52Z",
+  "provenance": {
+    "source": "docs/tech-design/acquisition-trust-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/acquisition-trust-v1.md lines 55-55 in section 3.1; sha256:d12ada6ca646291ebcca51b4e08828f10b3bd73712c57b2019259fe2abcbe408"
+  }
+}

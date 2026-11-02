@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGRBD3ZDEF49G0TSRA0ZR",
+  "kind": "Expectation",
+  "subject": "prd/prd-review",
+  "family": "DOD-3",
+  "statement": "The eval suite passes with the zero-tolerance families at zero (re-judging/edits; scope-lock; injection)",
+  "intent": "§5.9",
+  "fit_criterion": "eval report",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:fd5412a04546a2aac85d38f0ca699cb28c236cf3c080f1e943aa7a989bd69b6a",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.245Z",
+  "provenance": {
+    "source": "docs/prds/prd-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f278f36b241c9884191ce4c190d53f1dbb6d5e7a40cb95ccfdae8e6b08e5329e"
+  }
+}

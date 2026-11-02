@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRA5RSA29BYZTKQEF3KM",
+  "kind": "Need",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "J1",
+  "statement": "When a planner freezes a model-backed task, I want describe its workload and consequences once, with evidence, so I can downstream workers consume the same minimum demand without re-judging it",
+  "rationale": "`brainstorm:planner-driven-model-routing#D-2`..`#D-8`",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:296f7118567a06aa4ec32e54526425062ceeccc027190c75354b39e16481a46f",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.205Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

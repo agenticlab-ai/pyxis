@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TBK0GMJ73XW9GH47G1AG0",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R4",
+  "statement": "Require positive exclusive ownership and zero outside owners before treating an E2E code unit as retirement-eligible.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Executor and planning seams may contain both E2E generation behavior and unrelated behavior. FR-4 and FR-14 classify shared identities for ordinary reconciliation instead of destructive authority.",
+  "fit_criterion": "The mixed pilot fixture accepts only exact exclusive units; zero-owner, multiple-owner, changed-owner, and ambiguous-unit selections refuse.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:0896e30ca66a4008548452daf193c44f88894e5434a6ada7655eb060c18c6935",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:26:12Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

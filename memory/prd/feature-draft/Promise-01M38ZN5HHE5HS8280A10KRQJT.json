@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZN5HHE5HS8280A10KRQJT",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-41",
+  "statement": "The system shall treat a feature draft as ready only when its PRD holds every section the PRD template in force requires, §0 read-to-rule, the definition of done, and contract readiness included.",
+  "rationale": "Draft-born PRDs follow the PRD template (brainstorm:feature-draft#D-20, brainstorm:feature-draft#D-21)",
+  "fit_criterion": "A draft PRD missing §0, the definition of done, or contract readiness is refused naming the section; a complete PRD passes.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:002e7d3e96a7c049f719601167757ade1fe43347b63a484b141c6a270c045754",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:54:15Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQ61XTRT9B8JY9QAGWS",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "FR-4",
+  "statement": "If a harness cannot expose a figure this contract requires, then the system shall record an explicit unavailability naming the harness and the missing figure.",
+  "rationale": "a consumer must be able to distinguish \"not measurable here\" from \"measured as zero\" *(#D-6)*",
+  "fit_criterion": "in the checkpoint batch, every figure absent from a record is accompanied by an unavailability entry; zero figures are absent without one",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:c06cf92373cd0ad5b420d798afec19cc5be25dbc92934525e2d6e2e4b5830b56",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.622Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

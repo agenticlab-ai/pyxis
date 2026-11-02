@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Expectation-01M26FGR8SX1R6YHN811NFF4DH",
+  "kind": "Expectation",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "DOD-10",
+  "statement": "Every live Must functional and failure requirement passes its own fit criterion.",
+  "intent": "FR-3..FR-12, FR-14..FR-15, FR-17, FR-20..FR-27, UB-2..UB-4, UB-6..UB-8, UB-10..UB-14",
+  "fit_criterion": "per-requirement evidence index linked from the proposal",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0f6eb795445a87e9984acefbd5162bd50af2e760f92f2ac9a60f3eec2aa4e503",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.161Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

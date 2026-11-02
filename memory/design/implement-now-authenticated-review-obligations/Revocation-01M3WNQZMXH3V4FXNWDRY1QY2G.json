@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M3WNQZMXH3V4FXNWDRY1QY2G",
+  "kind": "Revocation",
+  "subject": "design/implement-now-authenticated-review-obligations",
+  "statement": "The live impl-review-source-write-guard design incorporates this design's unchanged contracts and replaces its reviewer filesystem and native tool restrictions. The successor's captured narrative retains the exact predecessor Git blob and requirement bindings; this earlier design identity is superseded, not a current implementation authority.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Decision-01M26FGPRNYD8GSNGK3G2CRJY1"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-01T21:25:50Z"
+}

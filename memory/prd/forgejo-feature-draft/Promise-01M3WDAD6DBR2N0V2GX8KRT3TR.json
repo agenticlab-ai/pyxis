@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "id": "Promise-01M3WDAD6DBR2N0V2GX8KRT3TR",
+  "kind": "Promise",
+  "subject": "prd/forgejo-feature-draft",
+  "family": "NFR-3",
+  "statement": "Existing GitHub and Forgejo execution remain supported.",
+  "intent": "Compatibility",
+  "fit_criterion": "Source GitHub draft and native Forgejo code-host/tracker suites pass beside installed draft E2E.",
+  "issuer": "agent:mdarabiassistant",
+  "created_at": "2026-10-01T18:58:37Z"
+}

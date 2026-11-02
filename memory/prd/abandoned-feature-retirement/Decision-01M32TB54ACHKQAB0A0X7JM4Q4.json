@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Decision-01M32TB54ACHKQAB0A0X7JM4Q4",
+  "kind": "Decision",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "R2",
+  "statement": "Bind code retirement to a unit-generation identity that changes when a unit disappears and returns inside a persistent file.",
+  "intent": "Record the approved mitigation for this exact requirement-ledger risk.",
+  "rationale": "Matching content and a stable file introduction cannot distinguish restored code from the generation the operator approved for retirement. FR-6 and UB-5 require retained history to make that transition visible.",
+  "fit_criterion": "The identical-unit same-file removal, restoration, and second-deletion fixture refuses old authority in every validation mode.",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:ef01f22d3486eb820d51b8c7867ba3df4793e47d3c57ee3f13906e1e41c6c1ee",
+    "source:prd-ledger"
+  ],
+  "issuer": "codex",
+  "created_at": "2026-09-21T20:25:58Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md"
+  }
+}

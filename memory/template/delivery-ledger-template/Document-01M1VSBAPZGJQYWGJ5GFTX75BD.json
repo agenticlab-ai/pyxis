@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Document-01M1VSBAPZGJQYWGJ5GFTX75BD",
+  "kind": "Document",
+  "subject": "template/delivery-ledger-template",
+  "family": "template",
+  "statement": "Imported Pyxis source document: .pyxis/templates/delivery-ledger-template.md",
+  "intent": "Preserve the complete authored Pyxis corpus at a pinned migration watermark.",
+  "rationale": "The exact legacy source remains retrievable with path and byte-level provenance; generated duplicates are verified separately.",
+  "tags": [
+    "migration:pyxis-doc-corpus-0a05dfb",
+    "class:.pyxis/templates",
+    "watermark:0a05dfb"
+  ],
+  "body_sha256": "423b1d8a536a3dcbee41ff430f9160677f5dc3d9b31d781782b3d7ff8c5b5a4d",
+  "literal_body": true,
+  "issuer": "pyxis-memory-import",
+  "created_at": "2026-09-06T16:38:12Z",
+  "provenance": {
+    "source": ".pyxis/templates/delivery-ledger-template.md",
+    "commit": "0a05dfb7e55536efea9452733b767bde2050e6ab"
+  }
+}

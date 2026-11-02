@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGRA9Q75D2GQV4F712VT2",
+  "kind": "Need",
+  "subject": "prd/planner-driven-model-routing",
+  "family": "M1",
+  "statement": "M1 (primary): G1",
+  "intent": "valid model-backed demand contracts ÷ every plan/v2 task presented for `/implement-now` freeze",
+  "fit_criterion": "100% at pre-release acceptance",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:dc20bc8938638f9392c6d9eba48cfa3fa9725e334bbfab27fcff240ccd497d4e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.209Z",
+  "provenance": {
+    "source": "docs/prds/planner-driven-model-routing/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1f6fa412f99da42f4b9aa0ca277dd912c011bd4acbe9b8c9881706f03f74f6f4"
+  }
+}

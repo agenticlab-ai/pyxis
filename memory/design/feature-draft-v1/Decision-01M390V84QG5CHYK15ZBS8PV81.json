@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M390V84QG5CHYK15ZBS8PV81",
+  "kind": "Decision",
+  "subject": "design/feature-draft-v1",
+  "family": "decision.3.6.1",
+  "statement": "Authors and stage skills edit markdown working files on the draft branch, close to today's templates, and one deterministic compiler turns them into memory records (`design-brainstorm:feature-draft-tech-design#D-3`, `#D-11`). Every reader of an open draft — readiness, the pull request's packet, the in-flight notice — calls the same compiler in process and writes nothing.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:ce429c5b3433e35bda1d87d4ac2d67c8be942eaad1abfea63754c116313cb2d4",
+    "source-design:6756001a6610759571f68c5a19dea52b32c9746d651b534fc23d6f993abd0a76",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M390PK87J0YRYSDH5T0KPWGW"
+    }
+  ],
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T06:15:03Z",
+  "provenance": {
+    "source": "docs/tech-design/feature-draft-v1.md",
+    "note": "exact Decision evidence at docs/tech-design/feature-draft-v1.md lines 115-115 in section 3.6; sha256:ce429c5b3433e35bda1d87d4ac2d67c8be942eaad1abfea63754c116313cb2d4"
+  }
+}

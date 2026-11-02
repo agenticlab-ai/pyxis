@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "Revocation-01M44FQ3Z30H307Z7WCC14N2EQ",
+  "kind": "Revocation",
+  "subject": "learning/retained-evidence-document-classification",
+  "statement": "PR #1339 (71e4a03d3c8e97bdf36a4c69ca8698c1eb0cf68b) retired reproducible memory verification reports and their standalone-document exemption. Tracking .pyxis/evidence/memory now fails the shared gate. Retain this historical record for provenance; use cmd/memory/README.md for the current verification-report procedure.",
+  "relations": [
+    {
+      "type": "revokes",
+      "target": "Learning-01M2W657XRG93NGHQVGCFDCR8X"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-10-04T22:14:26Z"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M32T46TV8V6BHJ74ZR319VC1",
+  "kind": "Promise",
+  "subject": "prd/abandoned-feature-retirement",
+  "family": "FR-13",
+  "statement": "Before authority publication or cleanup acceptance, the system shall require the checked-in integrity policy to admit the pinned repository state without widening, replacing, or bypassing existing debt.",
+  "rationale": "Retirement cannot hide a new regression.",
+  "fit_criterion": "Exact admitted baseline passes; every added allowance, evaluator change, missing input, and new finding refuses.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:08569279f0d0d762ca33176302b7578af9d5af5ae3659e679e7dadc016fee696",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-21T20:22:10Z",
+  "provenance": {
+    "source": "docs/prds/abandoned-feature-retirement/effective.md",
+    "note": "compiled from sha256:34b935dbe9ceca4bddebf94f288d31c12d9f08b926a90b3c6bb37479c69e603f"
+  }
+}

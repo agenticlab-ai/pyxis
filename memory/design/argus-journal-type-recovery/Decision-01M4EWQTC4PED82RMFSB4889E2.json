@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "Decision-01M4EWQTC4PED82RMFSB4889E2",
+  "kind": "Decision",
+  "subject": "design/argus-journal-type-recovery",
+  "family": "decision.2.1",
+  "statement": "Keep the ten canonical event types unchanged. A native writer appends typed `reconciliation` entries with a closed, versioned body gist that identifies the original event, its exact bytes, the erroneous type and its canonical replacement. Readers validate the complete correction chain and compute the effective type without modifying the original entry.",
+  "tags": [
+    "reconcile:design-decision",
+    "source-block:72e57da2750cce45b35851144ef25d66c1aeeab12f48a1855a520bc991a6eaf8",
+    "source-design:5db775f8159742c74bf6b1da42d4cd0798a3730da5fce67d21a984a47bfd9553",
+    "source:tech-design"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M4EWJP5WEHVJ67CRK352CZN8"
+    }
+  ],
+  "issuer": "mdarabiassistant",
+  "created_at": "2026-10-08T23:14:25Z",
+  "provenance": {
+    "source": "docs/tech-design/argus-journal-type-recovery.md",
+    "note": "exact Decision evidence at docs/tech-design/argus-journal-type-recovery.md lines 28-28 in section 2; sha256:72e57da2750cce45b35851144ef25d66c1aeeab12f48a1855a520bc991a6eaf8"
+  }
+}

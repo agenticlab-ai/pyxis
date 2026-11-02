@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR4PP20R3SV9ASBA004A",
+  "kind": "Promise",
+  "subject": "prd/maintenance-sweep",
+  "family": "UB-5",
+  "statement": "If If the invocation carries an unknown flag or a flag-like positional, then the system shall refuse with a usage defect and the fault exit code before evaluating any detector (incident I3: consequential CLIs fail closed on misparse)",
+  "intent": "the usage refusal",
+  "fit_criterion": "misparse fixtures (unknown flag; flag-like positional) produce the fault code and zero finding lines",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:709a4abaa1a88a4748a304d82e874cd15706e2286a1150e5d6db88bab27ebdbc",
+    "source:prd-ledger"
+  ],
+  "consequence": "low",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.03Z",
+  "provenance": {
+    "source": "docs/prds/maintenance-sweep/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:33e489b9a131c4ce010f9b6f8260f1b249ffa11ebffb217b2ab5dbfde27af4e7"
+  }
+}

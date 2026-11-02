@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQP5JYH0HZKYK68KGAK6",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "FR-28",
+  "statement": "Where the strongest-profile kill switch is engaged for review, the selected harness adapter shall prefer its strongest approved native review profile only when it satisfies every joined semantic minimum, while preserving effective depth, required pass count, mutual blindness, revision binding, and aggregation; otherwise FR-25's unsupported path applies.",
+  "rationale": "rollback of model selection must not become rollback of assurance",
+  "fit_criterion": "per-harness drills never change harness, depth, count, contexts, or aggregation; the strongest qualified profile dominates each request; an unsatisfiable request invokes zero passes and remains non-accepting",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0a26c9b72832e8c66bf32aabd18ef0cae97d7babbd4fc1b4880547989abfb99c",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.565Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

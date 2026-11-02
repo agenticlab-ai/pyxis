@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRKEZA7RT9W2P1C703SJ",
+  "kind": "Promise",
+  "subject": "prd/tech-design-brainstorm",
+  "family": "UB-3",
+  "statement": "If If the record has been hand-edited into an unparseable form, then the system shall surface a named defect (section, entry, reason, remedy), preserving the authority's text",
+  "intent": "a named defect and a proposed fix",
+  "fit_criterion": "invalid-edit fixture: defect names the location; text preserved verbatim",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:126aa72c05aa5ba2496a9c2fd67a5474bbafeaa4b56be5cd980391c516fc3f37",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.502Z",
+  "provenance": {
+    "source": "docs/prds/tech-design-brainstorm/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:f3b8216cfa31fafea3efe131679be09f2c85f9a89b151e484884b21f41c9e84c"
+  }
+}

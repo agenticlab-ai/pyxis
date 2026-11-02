@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "Need-01M26FGQEKX19G0NM6ASW6JWSS",
+  "kind": "Need",
+  "subject": "prd/ecosystem-help",
+  "family": "J2",
+  "statement": "When I have a concrete idea, problem, or task and don't know which command or stage it enters at, I want ask where my problem enters and get the right skill with a why, so I can start correctly instead of guessing",
+  "rationale": "brainstorm:ecosystem-help#D-3",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9cde27524ceefad715e13621d0ebc9d631d0a7de6f89deea2a016c6976bb2dc4",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.323Z",
+  "provenance": {
+    "source": "docs/prds/ecosystem-help/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:1de724a6124e7f2d8d900210e5489f4fa71e6af8ba68cd68357915b32beec7e3"
+  }
+}

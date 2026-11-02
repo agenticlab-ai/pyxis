@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Learning-01M2R9Q9ES4SHBPTAHEDC3P41F",
+  "kind": "Learning",
+  "subject": "learning/ci-parallel-gates",
+  "statement": "Hosted CI can partition the shared checks across independent jobs while preserving local parity and the required docs-gate status through an all-success aggregate.",
+  "intent": "Reduce CI feedback time without omitting required checks or allowing a failed, cancelled, or skipped worker to certify the change.",
+  "rationale": "The operator approved two check jobs. The tests job selects process-boundary, catch-suite, and test-race; quality selects their complement and runs the document gate. Both selections preserve configuration order and reuse canonical commands. New shared checks enter the complement automatically. CI parity verifies complete, nonduplicated required-check coverage and a closed final assertion over every direct dependency. Separate mainline cache keys let both workers publish their compile caches.",
+  "fit_criterion": "Selection regressions prove canonical ordering, complement coverage, malformed-input refusal, and that a cached subset cannot certify unexecuted checks. Workflow mutation regressions reject omissions, duplicate execution, conditional or advisory workers, missing dependencies, status-name collisions, and overridden result assertions. The real aggregate shell assertion accepts only the successful pair across all 25 pairs of success, failure, cancelled, skipped, and missing results.",
+  "learned_from": [
+    "The operator approved the two-job proposal after the retrospective CI timing analysis. GitHub branch protection requires docs-gate, so parallel workers must feed a final required status that explicitly rejects every non-success result."
+  ],
+  "tags": [
+    "code:cmd/code-gate",
+    "code:internal/ciparity",
+    "code:internal/codegatemirror",
+    "owner:design/code-gate-mirror",
+    "reconcile:code-semantics"
+  ],
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "Document-01M1VSCMVF4SXG45QTQ9Z76B67"
+    }
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-17T18:23:05Z",
+  "provenance": {
+    "source": "code:internal/ciparity",
+    "commit": "9b3a99d5901e761a9cf8e4fa31d26ac1bfc26d44"
+  }
+}

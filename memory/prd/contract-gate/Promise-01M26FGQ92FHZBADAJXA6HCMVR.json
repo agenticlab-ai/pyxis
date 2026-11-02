@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ92FHZBADAJXA6HCMVR",
+  "kind": "Promise",
+  "subject": "prd/contract-gate",
+  "family": "UB-7",
+  "statement": "If a currency-disposition projection or record is missing when referenced, unreadable, malformed, carries an unknown schema version or key, or lacks a required field, then the system shall emit a `configuration-error` verdict naming the projection, record, and defect, run no currency exception for that record, and refuse planning fail-closed",
+  "intent": "configuration error with the exact record and repair",
+  "fit_criterion": "one fixture per malformed class produces no cleared edge and no clean verdict; independent ordinary checks remain represented according to the verdict contract",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:181b6e9f74a02c1f97bacb31a4ce73d1389c270c46d4694b676f49a50da24b4a",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.146Z",
+  "provenance": {
+    "source": "docs/prds/contract-gate/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ff9b983532ed839cbafc0466870823c27a846e6058f4e900fb3dc5047ac0f016"
+  }
+}

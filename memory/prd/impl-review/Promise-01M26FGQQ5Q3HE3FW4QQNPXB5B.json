@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQQ5Q3HE3FW4QQNPXB5B",
+  "kind": "Promise",
+  "subject": "prd/impl-review",
+  "family": "NFR-8",
+  "statement": "Every process shall record demand and derivation versions, selected review harness and routing policy, prompt/calibration versions, per-pass native profile and top-level context identity, internal round identities, exact reviewed revision, and aggregate identity.",
+  "intent": "Provenance",
+  "fit_criterion": "100% of dogfood processes carry all fields; context/revision/blindness validators reject omissions, reuse, or mismatch; harvest stratifies by profile, depth, and pass count",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:333283ddd3bc187dd96f2b030fc00931dbb5f4c973422d182e7b5bb394f4079c",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:02.597Z",
+  "provenance": {
+    "source": "docs/prds/impl-review/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:20640ff35944f3065dabfcaae71d6ea1ba9d31503bf6d646e88e544def8ef2b1"
+  }
+}

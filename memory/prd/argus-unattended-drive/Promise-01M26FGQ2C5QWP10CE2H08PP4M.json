@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGQ2C5QWP10CE2H08PP4M",
+  "kind": "Promise",
+  "subject": "prd/argus-unattended-drive",
+  "family": "FR-7",
+  "statement": "The risk policy — floor classes, AUTO classes, activation state, thresholds — shall be versioned, closed-schema data with a validator and an operator kill switch, and unknown keys shall be defects.",
+  "rationale": "policy as human-ratified data (AP-6, AP-8, AP-24); one-change kill",
+  "fit_criterion": "a malformed or unknown-key policy refuses to load and the lane treats everything HUMAN; the kill switch flips the lane to HUMAN-only in one data change (drill)",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:bfa19a80d1be4622f2630ee286a074acee8039c461bf0d58ec0e6b52398ad4ca",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:01.932Z",
+  "provenance": {
+    "source": "docs/prds/argus-unattended-drive/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:56aaae623cfdc1ad6f656c291fba4b7602d507c1ba98933e8d1bbaba9042b6ee"
+  }
+}

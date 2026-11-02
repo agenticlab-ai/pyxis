@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGR61KYGW30DWAJEGA25F",
+  "kind": "Promise",
+  "subject": "prd/pipeline-measurement",
+  "family": "UB-5",
+  "statement": "If If a phase invokes a sub-skill (a nested phase), then the system shall record the nested phase's spend distinctly under its own phase identity and never blend it into the parent; the exact nested-attribution rule is design-owned (Q4)",
+  "intent": "a nested-phase record",
+  "fit_criterion": "a nested-invocation fixture yields distinct records per phase, with no silent blending into the parent",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:9232236c6947f13d0ae9e38e3c84a79f8997e08b97d388e98c88247bf84b19fe",
+    "source:prd-ledger"
+  ],
+  "consequence": "medium",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.073Z",
+  "provenance": {
+    "source": "docs/prds/pipeline-measurement/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:ddcc767001c750416dadb801d4033e1d3ef7edd51c194df5f5e3ab76c1e18086"
+  }
+}

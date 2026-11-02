@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Question-01M26FGRW8KNEPNSQG1FW0AT1B",
+  "kind": "Question",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "Q2",
+  "statement": "Is the task rollup written once at task end, or amended as each process completes?",
+  "intent": "@mdarabi",
+  "rationale": "open — bears on FR-6 and R1",
+  "fit_criterion": "technical design",
+  "tags": [
+    "reconcile:prd-disposition",
+    "source-unit:a2b076ab7077068268189425fcb024f7870247ff67523b843f63912504d9e20e",
+    "source:prd-ledger"
+  ],
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.784Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "captured from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

@@ -1,0 +1,4 @@
+# hand-managed header
+# pyxis-maintenance/v1 repo=2861aa6c79e595be59d6245707499455d5a51e76c155cab76fd8d525169f890a job=daily
+0 2 * * * PATH='/usr/local/bin:/usr/bin:/bin' '/opt/pyxis/bin/pyxis' maintenance run --repo '/srv/pyxis' --job 'daily' >> '/srv/pyxis/.pyxis/logs/maintenance/cron.log' 2>&1
+17 1 * * * echo untouched

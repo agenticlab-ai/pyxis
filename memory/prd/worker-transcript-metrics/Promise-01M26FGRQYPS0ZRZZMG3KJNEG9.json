@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "Promise-01M26FGRQYPS0ZRZZMG3KJNEG9",
+  "kind": "Promise",
+  "subject": "prd/worker-transcript-metrics",
+  "family": "UB-1",
+  "statement": "If If a harness exposes a figure as zero and that zero was never measured, then the system shall record it as an unavailability rather than as a zero",
+  "intent": "an explicit unavailability",
+  "fit_criterion": "two cases are distinguished and both tested: a transcript carrying an all-zero block **with no measurement having occurred** yields an unavailability; a transcript carrying a **legitimately measured zero** (an operation that genuinely consumed none of that quantity) yields the value zero. A rule that mapped every zero to unavailability would destroy real measurements, and one that mapped none would restore the silent zero",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:04018f72a031bfcda6b82a029ba719e0056d4af37f56e3951e7be9fb2d81fe85",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:codex",
+  "created_at": "2026-09-10T20:18:03.646Z",
+  "provenance": {
+    "source": "docs/prds/worker-transcript-metrics/effective.md",
+    "commit": "0daf48dabae40160f2f3bc950cc567f640b5d914",
+    "note": "compiled from sha256:96825f5cf4a5c383a1bf65fa0249568c25f75ef531f6be6165cb74a2923c64e8"
+  }
+}

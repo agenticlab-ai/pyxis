@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "Promise-01M38ZKKB8WATY4BNYFY8E7GYF",
+  "kind": "Promise",
+  "subject": "prd/feature-draft",
+  "family": "FR-15",
+  "statement": "When a plan is generated from a locked feature draft, the system shall require every requirement in the locked PRD to be covered by at least one plan task or explicitly deferred with a reason.",
+  "rationale": "Every requirement is covered by the plan or deferred; the plan follows the lock (brainstorm:feature-draft#D-25)",
+  "fit_criterion": "A plan leaving one requirement uncovered and undeferred is refused naming it; covered and deferred-with-reason requirements pass.",
+  "tags": [
+    "reconcile:prd",
+    "source-unit:0da45d4d654cee79254615bb294d8ced5d7a6c01ecff39914f65645de375d22b",
+    "source:prd-ledger"
+  ],
+  "consequence": "high",
+  "issuer": "agent:claude",
+  "created_at": "2026-09-24T05:53:24Z",
+  "provenance": {
+    "source": "docs/prds/feature-draft/effective.md",
+    "note": "compiled from sha256:7c1c5c8173d908453589861be31bdf10b6aab9724095b7c55e5022f4a3a6739e"
+  }
+}
