@@ -26,6 +26,12 @@ The installer downloads the `pyxis` binary from
 [GitHub Releases](https://github.com/agenticlab-ai/pyxis/releases), verifies its
 checksum before anything runs, and installs it to `~/.local/bin`.
 
+On zsh, the installer also adds a marked block to `~/.zshrc`. Inside a Pyxis
+repository, the block makes `claude`, `codex`, `cursor`, and `opencode` start in a
+fresh Git worktree. Other repositories aren't affected, and `command claude`
+skips it for one launch. [Shell startup setup](scripts/startup/README.md) has the
+details.
+
 **Set up a repository.** Inside an empty directory or empty Git repository:
 
 ```bash
@@ -150,8 +156,8 @@ Run `pyxis` with no arguments for the full list.
 - [Product vision](docs/product-vision.md): the goals behind the design.
 - [Architecture principles](docs/architecture-principles.md): the rules every
   design cites.
-- [Shell startup setup](scripts/startup/README.md): optionally launch agent
-  sessions in a fresh worktree automatically.
+- [Shell startup setup](scripts/startup/README.md): how agent sessions start in a
+  fresh worktree.
 - [Releasing Pyxis](docs/runbooks/releasing.md): for maintainers.
 
 ## Contributing
