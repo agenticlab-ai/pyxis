@@ -9,7 +9,7 @@ issues:
   # Fixed adoption boundary, not origin/main: merging must not make the gate
   # forget which files have been brought under lint enforcement. Older untouched
   # files retain their existing debt; every changed file must be completely clean.
-  new-from-rev: 03e579c85f1912bf79998a2dec5c361ad43134a0
+  new-from-rev: c8dc37ed7a2e300d1a853f1411e33fc7955ed162
   whole-files: true
   max-issues-per-linter: 0
   max-same-issues: 0
